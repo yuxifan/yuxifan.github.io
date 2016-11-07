@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2016-11-04T16:34:43.000Z</updated>
+  <updated>2016-11-07T11:02:01.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ruby gem command</title>
+    <link href="https://www.yuxifan.com/2016/11/06/ruby-gem-command/"/>
+    <id>https://www.yuxifan.com/2016/11/06/ruby-gem-command/</id>
+    <published>2016-11-06T02:10:12.000Z</published>
+    <updated>2016-11-07T11:02:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/ruby/gem.jpg" alt="Ruby Gems"></p>
+<h2 id="Install-Ruby-gems-from-Github-source-repository"><a href="#Install-Ruby-gems-from-Github-source-repository" class="headerlink" title="Install Ruby gems from Github source repository"></a>Install Ruby gems from Github source repository</h2><p>To to this, you have to install a gem called specific_install first.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gem install specific_install</div><div class="line">gem specific_install https://github.com/XXX/YYY.git [BRANCH NAME]</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/ruby/gem.jpg&quot; alt=&quot;Ruby Gems&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Install-Ruby-gems-from-Github-source-repository&quot;&gt;&lt;a href=&quot;#Install-Ruby-gems
+    
+    </summary>
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
+    
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
+    
+      <category term="gem" scheme="https://www.yuxifan.com/tags/gem/"/>
+    
+  </entry>
   
   <entry>
     <title>Two/multi phases XSLT processing</title>
@@ -639,36 +667,6 @@
       <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
     
       <category term="gem" scheme="https://www.yuxifan.com/tags/gem/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to run sudo command without entering password</title>
-    <link href="https://www.yuxifan.com/2016/02/02/2016-02-02-how-to-run-sudo-command-without-password/"/>
-    <id>https://www.yuxifan.com/2016/02/02/2016-02-02-how-to-run-sudo-command-without-password/</id>
-    <published>2016-02-02T09:51:12.000Z</published>
-    <updated>2016-10-04T21:35:42.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/linux/sudo.png" alt=""></p>
-<p><strong>Note: it’s UNSECURE, so only use it in a controlled environment!!!</strong></p>
-<p>Run:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo visudo</div></pre></td></tr></table></figure>
-<p>With content:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">your_user_name (USERID) ALL=(ALL) NOPASSWD: ALL</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/linux/sudo.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note: it’s UNSECURE, so only use it in a controlled environment!!!&lt;/strong&gt;&lt;/p&gt;
-
-    
-    </summary>
-    
-      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
     
   </entry>
   
