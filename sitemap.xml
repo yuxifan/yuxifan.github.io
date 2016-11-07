@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2016/01/12/2016-01-12-push-git-repository-to-multiple-hosts/</loc>
+    
+    <lastmod>2016-11-07T09:49:28.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/01/14/2016-01-14-git-basic-commands/</loc>
+    
+    <lastmod>2016-11-07T09:48:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2016/11/04/multi-phases-xslt-processing/</loc>
     
     <lastmod>2016-11-04T16:34:43.000Z</lastmod>
@@ -68,13 +82,6 @@
     <loc>https://www.yuxifan.com/2016/10/10/how-to-generate-qrcode-in-ruby/</loc>
     
     <lastmod>2016-10-10T11:57:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/01/14/2016-01-14-git-basic-commands/</loc>
-    
-    <lastmod>2016-10-07T14:46:16.000Z</lastmod>
     
   </url>
   
@@ -173,13 +180,6 @@
     <loc>https://www.yuxifan.com/2016/09/06/2016-09-06-how-to-implement-hierarchical-faces/</loc>
     
     <lastmod>2016-10-04T21:14:38.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/01/12/2016-01-12-push-git-repository-to-multiple-hosts/</loc>
-    
-    <lastmod>2016-10-04T14:50:39.000Z</lastmod>
     
   </url>
   
