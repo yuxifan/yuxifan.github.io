@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2016-11-07T11:02:01.000Z</updated>
+  <updated>2016-11-07T11:09:10.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -20,17 +20,17 @@
     <link href="https://www.yuxifan.com/2016/11/06/ruby-gem-command/"/>
     <id>https://www.yuxifan.com/2016/11/06/ruby-gem-command/</id>
     <published>2016-11-06T02:10:12.000Z</published>
-    <updated>2016-11-07T11:02:01.000Z</updated>
+    <updated>2016-11-07T11:09:10.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/images/ruby/gem.jpg" alt="Ruby Gems"></p>
+    <content type="html"><![CDATA[<p><img src="/images/ruby/gems.jpg" alt="Ruby Gems"></p>
 <h2 id="Install-Ruby-gems-from-Github-source-repository"><a href="#Install-Ruby-gems-from-Github-source-repository" class="headerlink" title="Install Ruby gems from Github source repository"></a>Install Ruby gems from Github source repository</h2><p>To to this, you have to install a gem called specific_install first.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gem install specific_install</div><div class="line">gem specific_install https://github.com/XXX/YYY.git [BRANCH NAME]</div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/images/ruby/gem.jpg&quot; alt=&quot;Ruby Gems&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Install-Ruby-gems-from-Github-source-repository&quot;&gt;&lt;a href=&quot;#Install-Ruby-gems
+      &lt;p&gt;&lt;img src=&quot;/images/ruby/gems.jpg&quot; alt=&quot;Ruby Gems&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Install-Ruby-gems-from-Github-source-repository&quot;&gt;&lt;a href=&quot;#Install-Ruby-gem
     
     </summary>
     
