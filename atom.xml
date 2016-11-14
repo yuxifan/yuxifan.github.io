@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2016-11-10T14:25:23.000Z</updated>
+  <updated>2016-11-14T10:21:06.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to trigger a cron job based on file modifications</title>
+    <link href="https://www.yuxifan.com/2016/11/14/how-to-trigger-a-cron-job-based-on-file-modifications/"/>
+    <id>https://www.yuxifan.com/2016/11/14/how-to-trigger-a-cron-job-based-on-file-modifications/</id>
+    <published>2016-11-14T06:51:12.000Z</published>
+    <updated>2016-11-14T10:21:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Cron is an amazon tool that allowing Linux and Unix users to run commands or scripts at a given date and time. However, sometimes people want to trigger a job based on file modifications / creations. Here we can use incron to do this kinds of automation.</p>
+<p><img src="/images/linux/incron.png" alt="incron"></p>
+<h2 id="Incron-installation"><a href="#Incron-installation" class="headerlink" title="Incron installation"></a>Incron installation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install incron</div></pre></td></tr></table></figure>
+<h2 id="Using-Incron"><a href="#Using-Incron" class="headerlink" title="Using Incron"></a>Using Incron</h2><p>If /etc/incron.allow exists only users listed here may use incron. Otherwise if /etc/incron.deny exists only users NOT listed here may use incron. If none of these files exists everyone is allowed to use incron.</p>
+<p>So firstly, we need to modify incron.allow to add users in:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nano incron.allow</div></pre></td></tr></table></figure>
+<p>Add users e.g. root, yuxi into the list:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">root</div><div class="line">yuxi</div></pre></td></tr></table></figure>
+<p>Now we can list all incron jobs:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">incrontab <span class="_">-l</span></div></pre></td></tr></table></figure>
+<p>Set up incron job for user ‘yuxi’</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">incrontab <span class="_">-e</span></div></pre></td></tr></table></figure>
+<p>Add the following line to do an auto deployment to git repository:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/home/yuxi/website_src/ IN_MODIFY /home/yuxi/deploy_website.sh</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Cron is an amazon tool that allowing Linux and Unix users to run commands or scripts at a given date and time. However, sometimes people 
+    
+    </summary>
+    
+      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
+    
+      <category term="incron" scheme="https://www.yuxifan.com/tags/incron/"/>
+    
+  </entry>
   
   <entry>
     <title>Upload files to Dropbox in Linux command line</title>
@@ -642,41 +680,6 @@
       <category term="windows" scheme="https://www.yuxifan.com/tags/windows/"/>
     
       <category term="notepad++" scheme="https://www.yuxifan.com/tags/notepad/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to add hyperlink cues in CSS by using fontawesome</title>
-    <link href="https://www.yuxifan.com/2016/05/05/how-to-add-hyperlink-cues-by-using-fontawesome/"/>
-    <id>https://www.yuxifan.com/2016/05/05/how-to-add-hyperlink-cues-by-using-fontawesome/</id>
-    <published>2016-05-05T08:51:12.000Z</published>
-    <updated>2016-10-07T09:31:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/css/font-awesome-hd.jpg" alt=""></p>
-<p>I like the little icons<img src="/images/css/external_link.gif" alt=""> next to hyperlinks that indicate if that link will take me offsite, open a popup, or link to a file (as opposed to another page within the site). Here’s how to do it using fontawesome, purely in CSS.</p>
-<p>First, add fontawesome CDN url, ideally in your header:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">href</span>=<span class="string">"https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>Then, define the styles (below is in stylus syntax):</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">a</span>[rel^=<span class="string">"external"</span>]:after</div><div class="line">    <span class="attribute">content</span> <span class="string">"\f08e"</span></div><div class="line">    <span class="attribute">font-family</span> FontAwesome</div><div class="line">    <span class="attribute">font-weight</span> normal</div><div class="line">    <span class="attribute">font-style</span> normal</div><div class="line">    <span class="attribute">display</span> inline-block</div><div class="line">    <span class="attribute">text-decoration</span> none</div><div class="line">    <span class="attribute">padding-left</span> <span class="number">3px</span></div><div class="line"></div><div class="line"><span class="selector-tag">a</span>[href^=<span class="string">"http://www.YOURDOMAIN.com"</span>]:after,</div><div class="line">    <span class="selector-tag">a</span><span class="selector-class">.no_icon</span>:after</div><div class="line">    <span class="attribute">content</span> <span class="string">""</span> !important</div><div class="line">    <span class="attribute">padding-left</span> <span class="number">0</span></div><div class="line"></div><div class="line"><span class="selector-tag">a</span>[href^=<span class="string">"https://www.YOURDOMAIN.com"</span>]:after,</div><div class="line">    <span class="selector-tag">a</span><span class="selector-class">.no_icon</span>:after</div><div class="line">    <span class="attribute">content</span> <span class="string">""</span> !important</div><div class="line">    <span class="attribute">padding-left</span> <span class="number">0</span></div></pre></td></tr></table></figure>
-<p>If you are not familar with stylus, here is the CSS code:</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">a</span><span class="selector-attr">[rel^="external"]</span><span class="selector-pseudo">:after</span> &#123;</div><div class="line">  <span class="attribute">content</span>: <span class="string">"\f08e"</span>;</div><div class="line">  <span class="attribute">font-family</span>: FontAwesome;</div><div class="line">  <span class="attribute">font-weight</span>: normal;</div><div class="line">  <span class="attribute">font-style</span>: normal;</div><div class="line">  <span class="attribute">display</span>: inline-block;</div><div class="line">  <span class="attribute">text-decoration</span>: none;</div><div class="line">  <span class="attribute">padding-left</span>: <span class="number">3px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">a</span><span class="selector-attr">[href^="http://www.YOURDOMAIN.com"]</span><span class="selector-pseudo">:after</span>,</div><div class="line"><span class="selector-tag">a</span><span class="selector-class">.no_icon</span><span class="selector-pseudo">:after</span> &#123;</div><div class="line">  <span class="attribute">content</span>: <span class="string">""</span> <span class="meta">!important</span>;</div><div class="line">  <span class="attribute">padding-left</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">a</span><span class="selector-attr">[href^="https://www.YOURDOMAIN.com"]</span><span class="selector-pseudo">:after</span>,</div><div class="line"><span class="selector-tag">a</span><span class="selector-class">.no_icon</span><span class="selector-pseudo">:after</span> &#123;</div><div class="line">  <span class="attribute">content</span>: <span class="string">""</span> <span class="meta">!important</span>;</div><div class="line">  <span class="attribute">padding-left</span>: <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/css/font-awesome-hd.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;I like the little icons&lt;img src=&quot;/images/css/external_link.gif&quot; alt=&quot;&quot;&gt; next to
-    
-    </summary>
-    
-      <category term="css" scheme="https://www.yuxifan.com/categories/css/"/>
-    
-    
-      <category term="css" scheme="https://www.yuxifan.com/tags/css/"/>
-    
-      <category term="fontawesome" scheme="https://www.yuxifan.com/tags/fontawesome/"/>
-    
-      <category term="hyperlink" scheme="https://www.yuxifan.com/tags/hyperlink/"/>
     
   </entry>
   
