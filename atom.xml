@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2016-11-14T10:21:06.000Z</updated>
+  <updated>2016-11-15T11:30:56.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,77 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Convert between simplified Chinese and traditional Chinese</title>
+    <link href="https://www.yuxifan.com/2016/11/15/simplified-chinese-traditional-chinese-converter/"/>
+    <id>https://www.yuxifan.com/2016/11/15/simplified-chinese-traditional-chinese-converter/</id>
+    <published>2016-11-15T06:40:12.000Z</published>
+    <updated>2016-11-15T11:30:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" media="all" href="/css/foundation.min.css">
+<script src="/js/gb-big5.js"></script>
+<script src="/js/foundation.min.js"></script>
+
+<img src="/images/javascript/gb-big5.jpg"><br>
+
+<div class="row">
+  <div class="large-10 large-offset-1">
+      <div class="row">
+        <div class="medium-4 columns">
+          <label>From:
+            <select id="source_lang">
+              <option value="zh_TW">Traditional</option>
+              <option value="zh_CN">Simplified</option>
+            </select>
+          </label>
+        </div>
+        <div class="medium-4 columns">
+          <label>To:
+            <select id="tar_lang">
+              <option value="zh_CN">Simplified</option>
+              <option value="zh_TW">Traditional</option>
+            </select>
+          </label>
+        </div>
+        <div class="medium-4 columns">
+          <button class="button" id="trans">Convert</button>
+        </div>
+          
+        </div>
+	  Enter text to convert：
+      <textarea id="content" style="width: 600px; height:200px;"></textarea>
+	  
+      <br>
+      Result：
+      <textarea id="res_content" style="width: 600px; height:200px;"></textarea>
+  </div>
+	  <div style="display:none;">
+        Source language encoding：
+        <textarea id="source_encode"></textarea>
+        Target language encoding：
+        <textarea id="tar_encode"></textarea>
+	  </div>
+  </div>  
+<script>
+  Trans.init(); 
+</script> 
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;link rel=&quot;stylesheet&quot; media=&quot;all&quot; href=&quot;/css/foundation.min.css&quot;&gt;
+&lt;script src=&quot;/js/gb-big5.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/js/foundation.min.js
+    
+    </summary>
+    
+      <category term="tool" scheme="https://www.yuxifan.com/categories/tool/"/>
+    
+    
+      <category term="Chinese converter" scheme="https://www.yuxifan.com/tags/Chinese-converter/"/>
+    
+  </entry>
   
   <entry>
     <title>How to trigger a cron job based on file modifications</title>
@@ -650,36 +721,6 @@
       <category term="java" scheme="https://www.yuxifan.com/tags/java/"/>
     
       <category term="JSTL" scheme="https://www.yuxifan.com/tags/JSTL/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Notepad++ not starting - problem and solution</title>
-    <link href="https://www.yuxifan.com/2016/08/24/2016-08-20-notepad-plus-plus-not-starting/"/>
-    <id>https://www.yuxifan.com/2016/08/24/2016-08-20-notepad-plus-plus-not-starting/</id>
-    <published>2016-08-24T08:51:12.000Z</published>
-    <updated>2016-10-04T21:21:43.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/windows/notepadplusplus.png" alt=""></p>
-<p>Notepad++ has suddenly stopped launching, e.g. although it shows in the Windows task manager, but no window appears. </p>
-<p>Somebody has found it is caused by a recent dropbox update. The problem is in the Shell Explorer DLL of Dropbox which manages things like sync icons in Windows Explorer. Uninstalling Dropbox can fix this problem. But for most people, Dropbox is more important than Notepad++. </p>
-<p>What I did to fix this problem is to disable Explorer plugin of Notepad++, e.g. just move Explorer.dll from Notepad++ plugins folder to its sub folder ‘disabled’. (Make sure you’ve killed all NPP++ processes before moving.</p>
-<p>I’m sure NPP will release a fix soon.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/windows/notepadplusplus.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Notepad++ has suddenly stopped launching, e.g. although it shows in the Win
-    
-    </summary>
-    
-      <category term="windows" scheme="https://www.yuxifan.com/categories/windows/"/>
-    
-    
-      <category term="windows" scheme="https://www.yuxifan.com/tags/windows/"/>
-    
-      <category term="notepad++" scheme="https://www.yuxifan.com/tags/notepad/"/>
     
   </entry>
   
