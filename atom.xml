@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2016-11-17T14:52:18.000Z</updated>
+  <updated>2016-11-17T15:32:29.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,73 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>QR code generator</title>
+    <link href="https://www.yuxifan.com/2016/11/17/qrcode-generator/"/>
+    <id>https://www.yuxifan.com/2016/11/17/qrcode-generator/</id>
+    <published>2016-11-17T06:40:12.000Z</published>
+    <updated>2016-11-17T15:32:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" media="all" href="/css/foundation.min.css">
+<script type="text/javascript" src="/js/qrcode.min.js"></script>
+
+<div class="row">
+  <div class="large-10 large-offset-1">
+	  Enter url：
+      <input type="text" id="text" value="http://www.yuxifan.com" style="width: 600px;">
+	  <br>
+      <div id="qrcode" style="width:150px; height:150px; margin-top:15px;"></div>
+  </div>
+</div> 
+
+<script type="text/javascript">
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+	width : 150,
+	height : 150
+});
+
+function makeCode () {		
+	var elText = document.getElementById("text");
+	
+	if (!elText.value) {
+		alert("Input a text");
+		elText.focus();
+		return;
+	}
+	
+	qrcode.makeCode(elText.value);
+}
+
+makeCode();
+
+$("#text").
+	on("blur", function () {
+		makeCode();
+	}).
+	on("keydown", function (e) {
+		if (e.keyCode == 13) {
+			makeCode();
+		}
+});
+</script>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;link rel=&quot;stylesheet&quot; media=&quot;all&quot; href=&quot;/css/foundation.min.css&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/qrcode.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;div cl
+    
+    </summary>
+    
+      <category term="tool" scheme="https://www.yuxifan.com/categories/tool/"/>
+    
+    
+      <category term="QR code" scheme="https://www.yuxifan.com/tags/QR-code/"/>
+    
+  </entry>
   
   <entry>
     <title>How to implement a distributed Redis message processing system by using Redis / Resque in Rails</title>
@@ -703,37 +770,6 @@
       <category term="sitemap" scheme="https://www.yuxifan.com/tags/sitemap/"/>
     
       <category term="feed" scheme="https://www.yuxifan.com/tags/feed/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to close an iframe within iframe itself</title>
-    <link href="https://www.yuxifan.com/2016/09/02/2016-09-02-how-to-close-an-iframe-within-iframe-itself/"/>
-    <id>https://www.yuxifan.com/2016/09/02/2016-09-02-how-to-close-an-iframe-within-iframe-itself/</id>
-    <published>2016-09-02T08:51:12.000Z</published>
-    <updated>2016-10-04T21:17:56.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/javascript/iframe.png" alt=""></p>
-<p>It depends on how the iframe window is created. For example, if the iframe window has an ID or name which can be used to identify the iframe, the iframe can be closed from the parent window.</p>
-<p>In iframe, the javascript code is:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">parent.closeIframe();</div></pre></td></tr></table></figure>
-<p>In parent, the code is:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">closeIframe</span>(<span class="params"></span>) </span>&#123;</div><div class="line"> $(<span class="string">'#iframeID'</span>).remove();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>If you don’t know the iframe ID, iframe usually can be closed by clicking anywhere in the parent window. For instance, the iframe opened by thickbox. The javascript code in iframe is:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">parent.document.elementFromPoint(<span class="number">0</span>, <span class="number">0</span>).click();</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/javascript/iframe.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;It depends on how the iframe window is created. For example, if the iframe window
-    
-    </summary>
-    
-      <category term="javascript" scheme="https://www.yuxifan.com/categories/javascript/"/>
-    
-    
-      <category term="javascript" scheme="https://www.yuxifan.com/tags/javascript/"/>
     
   </entry>
   
