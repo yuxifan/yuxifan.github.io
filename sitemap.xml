@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2016/02/01/2016-02-01-standalone-ruby-application-error-messages-and-fixes/</loc>
+    
+    <lastmod>2016-11-24T14:44:24.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2016/11/23/report-disk-space-in-ruby/</loc>
     
     <lastmod>2016-11-23T10:36:45.000Z</lastmod>
@@ -187,13 +194,6 @@
     <loc>https://www.yuxifan.com/2015/08/20/2016-08-20-create-ubuntu-16-vagrant-box/</loc>
     
     <lastmod>2016-10-04T21:32:29.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/02/01/2016-02-01-standalone-ruby-application-error-messages-and-fixes/</loc>
-    
-    <lastmod>2016-10-04T21:28:43.000Z</lastmod>
     
   </url>
   
