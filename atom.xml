@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2016-11-23T10:36:45.000Z</updated>
+  <updated>2016-11-25T13:53:16.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu image manipulation commands</title>
+    <link href="https://www.yuxifan.com/2016/11/25/image-manipulation-commands-in-ubuntu/"/>
+    <id>https://www.yuxifan.com/2016/11/25/image-manipulation-commands-in-ubuntu/</id>
+    <published>2016-11-25T05:51:12.000Z</published>
+    <updated>2016-11-25T13:53:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/linux/image-tool/imagemagick.jpg" alt="image tool"></p>
+<h2 id="Resize-image-and-convert"><a href="#Resize-image-and-convert" class="headerlink" title="Resize image (and convert)"></a>Resize image (and convert)</h2><p>First, install imagemagick:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update </div><div class="line">sudo apt-get install imagemagick --fix-missing</div></pre></td></tr></table></figure>
+<p>Image resize command:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">convert source.jpg -resize 200x100 target.jpg</div><div class="line">convert -resize 50% source.jpg target.png</div><div class="line">convert -resize 600x source.jpg target.jpg</div></pre></td></tr></table></figure></p>
+<h2 id="Compress-or-Optimize-images"><a href="#Compress-or-Optimize-images" class="headerlink" title="Compress or Optimize images"></a>Compress or Optimize images</h2><p>For JPG images:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install jpegoptim</div><div class="line">jpegoptim test.jpg</div></pre></td></tr></table></figure></p>
+<p>For PNG images:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install optipng</div><div class="line">optipng filename.png</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/linux/image-tool/imagemagick.jpg&quot; alt=&quot;image tool&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Resize-image-and-convert&quot;&gt;&lt;a href=&quot;#Resize-image-and-co
+    
+    </summary>
+    
+      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
+    
+      <category term="image" scheme="https://www.yuxifan.com/tags/image/"/>
+    
+      <category term="imagemagick" scheme="https://www.yuxifan.com/tags/imagemagick/"/>
+    
+  </entry>
   
   <entry>
     <title>How to check available disk space and email a report in Ruby</title>
@@ -708,46 +741,6 @@ $("#text").
       <category term="hexo" scheme="https://www.yuxifan.com/tags/hexo/"/>
     
       <category term="slider" scheme="https://www.yuxifan.com/tags/slider/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to implement hierarchical facets</title>
-    <link href="https://www.yuxifan.com/2016/09/06/2016-09-06-how-to-implement-hierarchical-faces/"/>
-    <id>https://www.yuxifan.com/2016/09/06/2016-09-06-how-to-implement-hierarchical-faces/</id>
-    <published>2016-09-06T08:51:12.000Z</published>
-    <updated>2016-10-04T21:14:38.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/solr/solr.png" alt=""></p>
-<h2 id="0-Environments"><a href="#0-Environments" class="headerlink" title="0. Environments"></a>0. Environments</h2><p>Ubuntu 14.x</p>
-<p>Open JDK 7.x</p>
-<p>Solr 3.6.x</p>
-<p>Apache Tomcat 7.x</p>
-<h2 id="1-The-problem"><a href="#1-The-problem" class="headerlink" title="1. The problem"></a>1. The problem</h2><p>The solr documentation summaries approaches to implement hierarchical facets in: <a href="[http://wiki.apache.org/solr/HierarchicalFaceting#Approaches_to_Hierarchical_Facets_in_Solr">http://wiki.apache.org/solr/HierarchicalFaceting#Approaches_to_Hierarchical_Facets_in_Solr</a> in different ways:</p>
-<h3 id="1-Use-a-prefix-before-the-data-to-store-hierarchy-information-e-g"><a href="#1-Use-a-prefix-before-the-data-to-store-hierarchy-information-e-g" class="headerlink" title="1) Use a prefix before the data to store hierarchy information, e.g."></a>1) Use a prefix before the data to store hierarchy information, e.g.</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Doc#1: 0/Fruit, 1/Apple, 2/Red</div><div class="line">Doc#2: 0/Fruit, 1/Pear</div><div class="line">Doc#3: 0/Fruit, 1/Apple, 2/Yellow</div></pre></td></tr></table></figure>
-<p>OR (even worse)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Doc#1: 0/Fruit, 1/Fruit/Apple, 2/Fruit/Apple/Red</div><div class="line">Doc#2: 0/Fruit, 1/Fruit/Pear</div><div class="line">Doc#3: 0/Fruit, 1/Fruit/Apple, 2/Fruit/Apple/Yellow</div></pre></td></tr></table></figure>
-<p>The problem of this approach is that we have to store extra data into solr and the hierarchy information is duplicated across solr. </p>
-<h3 id="2-“breadcrumbs”"><a href="#2-“breadcrumbs”" class="headerlink" title="2) “breadcrumbs”"></a>2) “breadcrumbs”</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Doc#1: Fruit &gt; Apple &gt; Red</div><div class="line">Doc#2: Fruit &gt; Pear</div><div class="line">Doc#3: Fruit &gt; Apple &gt; Yellow</div></pre></td></tr></table></figure>
-<p>The above 2 suggested solutions all contain duplicated data, which is really bad. Actually, the hierarchy information should be stored separately to avoid duplication.</p>
-<h2 id="2-The-solution"><a href="#2-The-solution" class="headerlink" title="2. The solution"></a>2. The solution</h2><h3 id="1-Store-hierarchy-information-into-an-XML-e-g-a-data-dictionary"><a href="#1-Store-hierarchy-information-into-an-XML-e-g-a-data-dictionary" class="headerlink" title="1) Store hierarchy information into an XML, e.g. a data dictionary:"></a>1) Store hierarchy information into an XML, e.g. a data dictionary:</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">fruits</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">apple</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">red</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">yellow</span>/&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">apple</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">pear</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">pear</span>&gt;</span></div><div class="line">  ......</div><div class="line"><span class="tag">&lt;<span class="name">fruits</span>&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="2-Aggregate-the-hierarchy-information-with-the-actual-solr-data-while-retrieving-data-e-g"><a href="#2-Aggregate-the-hierarchy-information-with-the-actual-solr-data-while-retrieving-data-e-g" class="headerlink" title="2) Aggregate the hierarchy information with the actual solr data while retrieving data, e.g."></a>2) Aggregate the hierarchy information with the actual solr data while retrieving data, e.g.</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ITERATE ALL FACETS</div><div class="line">    GET DATA DICTIONARY FOR CURRENT FACET</div><div class="line">    ITERATE FACET ITEMS in CURRENT FACET</div><div class="line">      AGGREGATE DD WITH FACET ITEMS AND SAVE TO A HIERARCHICAL LIST</div><div class="line">    END</div><div class="line">END</div></pre></td></tr></table></figure>
-<h3 id="3-In-the-client-code-based-on-the-hierarchical-list-constructing-HTML-elements-e-g-in-JSP"><a href="#3-In-the-client-code-based-on-the-hierarchical-list-constructing-HTML-elements-e-g-in-JSP" class="headerlink" title="3) In the client code, based on the hierarchical list, constructing HTML elements, e.g, in JSP."></a>3) In the client code, based on the hierarchical list, constructing HTML elements, e.g, in JSP.</h3><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;c:forEach items="$&#123;availableFacets&#125;" var="fc"&gt;</div><div class="line"></div><div class="line">  &lt;ul class="XXXX"&gt;</div><div class="line">     &lt;c:forEach items="$&#123;fc.iterator&#125;" var="facetElement"&gt;</div><div class="line">        &lt;li class="expanded"&gt;</div><div class="line">          &lt;c:out value="$&#123;facetElement.label&#125;"&gt;&lt;/c:out&gt;[&lt;c:out value="$&#123;facetElement.count&#125;" /&gt;]&lt;/a&gt;</div><div class="line">        &lt;/li&gt;</div><div class="line">        &lt;!-- Second level --&gt;</div><div class="line">        &lt;ul&gt;</div><div class="line">           &lt;c:forEach items="$&#123;facetElement.iterator&#125;" var="secondLevelFacetElement"&gt;</div><div class="line">              &lt;li class="expanded"&gt;</div><div class="line">                 &lt;c:out value="$&#123;secondLevelFacetElement.label&#125;"&gt;&lt;/c:out&gt;[&lt;c:out value="$&#123;secondLevelFacetElement.count&#125;" /&gt;]&lt;/a&gt;</div><div class="line">              &lt;/li&gt;</div><div class="line">              &lt;!-- deeper levels --&gt;</div><div class="line">           &lt;/c:forEach&gt;</div><div class="line">        &lt;/ul&gt;</div><div class="line">     &lt;/c:forEach&gt;</div><div class="line">  &lt;/ul&gt;</div><div class="line">&lt;/c:forEach&gt;</div></pre></td></tr></table></figure>
-<h3 id="4-Based-on-the-ul-li-tags-render-the-hierarchical-facets-in-Javascript-e-g-using-jsTree-https-www-jstree-com"><a href="#4-Based-on-the-ul-li-tags-render-the-hierarchical-facets-in-Javascript-e-g-using-jsTree-https-www-jstree-com" class="headerlink" title="4) Based on the ul / li tags, render the hierarchical facets in Javascript, e.g. using jsTree (https://www.jstree.com/)"></a>4) Based on the ul / li tags, render the hierarchical facets in Javascript, e.g. using jsTree (<a href="https://www.jstree.com/" rel="external nofollow" target="_blank">https://www.jstree.com/</a>)</h3>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/solr/solr.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;0-Environments&quot;&gt;&lt;a href=&quot;#0-Environments&quot; class=&quot;headerlink&quot; title=&quot;0. Environments&quot;
-    
-    </summary>
-    
-      <category term="solr" scheme="https://www.yuxifan.com/categories/solr/"/>
-    
-    
-      <category term="JSTL" scheme="https://www.yuxifan.com/tags/JSTL/"/>
-    
-      <category term="solr" scheme="https://www.yuxifan.com/tags/solr/"/>
     
   </entry>
   
