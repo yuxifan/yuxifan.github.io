@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2016-11-25T13:53:16.000Z</updated>
+  <updated>2016-11-28T11:00:53.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ruby tutorials - rss</title>
+    <link href="https://www.yuxifan.com/2016/11/28/ruby-tutorials-rss/"/>
+    <id>https://www.yuxifan.com/2016/11/28/ruby-tutorials-rss/</id>
+    <published>2016-11-28T02:10:12.000Z</published>
+    <updated>2016-11-28T11:00:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/ruby/rss.png" alt="RSS"></p>
+<h2 id="Install-gem"><a href="#Install-gem" class="headerlink" title="Install gem"></a>Install gem</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem install feedjira</div></pre></td></tr></table></figure>
+<h2 id="Parse-RSS"><a href="#Parse-RSS" class="headerlink" title="Parse RSS"></a>Parse RSS</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'feedjira'</span></div><div class="line"></div><div class="line">feedurl = <span class="string">'https://www.yuxifan.com/atom.xml'</span></div><div class="line"></div><div class="line">feed = Feedjira::Feed.fetch_and_parse feedurl</div><div class="line"></div><div class="line">puts feed.title</div><div class="line">puts feed.url</div><div class="line">puts feed.entries.length</div><div class="line"></div><div class="line">feed.entries.each <span class="keyword">do</span> <span class="params">|item|</span></div><div class="line">  puts item.title</div><div class="line">  puts <span class="string">'------------'</span></div><div class="line">  puts item.url</div><div class="line">  puts <span class="string">' '</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/ruby/rss.png&quot; alt=&quot;RSS&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Install-gem&quot;&gt;&lt;a href=&quot;#Install-gem&quot; class=&quot;headerlink&quot; title=&quot;Install gem&quot;&gt;&lt;/a&gt;Ins
+    
+    </summary>
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
+    
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
+    
+      <category term="rss" scheme="https://www.yuxifan.com/tags/rss/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu image manipulation commands</title>
@@ -708,39 +736,6 @@ $("#text").
       <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
     
       <category term="redis" scheme="https://www.yuxifan.com/tags/redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Implement a slider in Hexo</title>
-    <link href="https://www.yuxifan.com/2016/09/10/implement-a-slider-in-hexo/"/>
-    <id>https://www.yuxifan.com/2016/09/10/implement-a-slider-in-hexo/</id>
-    <published>2016-09-10T21:51:12.000Z</published>
-    <updated>2016-10-07T10:37:22.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/hexo/bxslider.jpg" alt="Hexo slider"></p>
-<h2 id="Download-bxslider"><a href="#Download-bxslider" class="headerlink" title="Download bxslider"></a>Download bxslider</h2><p>Download from <a href="http://bxslider.com/" rel="external nofollow" target="_blank">http://bxslider.com/</a> and copy jquery.bxslider.css to hexo project css folder and copy js file to js folder.</p>
-<h2 id="Create-file-bxslider-ejs"><a href="#Create-file-bxslider-ejs" class="headerlink" title="Create file bxslider.ejs"></a>Create file bxslider.ejs</h2><p>Add file into your theme folder, e.g. themes/YOUR_THEME/layout/common/bxslider.ejs</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"/js/bxslider/jquery.bxslider.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">media</span>=<span class="string">"all"</span> <span class="attr">href</span>=<span class="string">"/css/bxslider/jquery.bxslider.css"</span> /&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"bxslider"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">%</span> <span class="attr">for</span> (<span class="attr">var</span> <span class="attr">slider</span> <span class="attr">in</span> <span class="attr">theme.sliders</span>) &#123; %&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span> (<span class="attr">slider</span>) &#123; %&gt;</span></div><div class="line">       <span class="tag">&lt;<span class="name">li</span>&gt;</span></div><div class="line">         <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;%= theme.sliders[slider]['url']%&gt;"</span>&gt;</span></div><div class="line">           <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"&lt;%= theme.sliders[slider]['image']%&gt;"</span> <span class="attr">title</span>=<span class="string">"&lt;%= theme.sliders[slider]['text'] %&gt;"</span>/&gt;</span></div><div class="line">         <span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line">       <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">%</span> &#125; %&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  $(<span class="string">'.bxslider'</span>).bxSlider(&#123;</div><div class="line">    <span class="attr">mode</span>: <span class="string">'fade'</span>,</div><div class="line">    <span class="attr">captions</span>: <span class="literal">true</span></div><div class="line">  &#125;);</div><div class="line">&#125;);</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
-<h2 id="Modify-index-ejs"><a href="#Modify-index-ejs" class="headerlink" title="Modify index.ejs"></a>Modify index.ejs</h2><p>Add a reference to bxslider:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">%-</span> <span class="attr">partial</span>('<span class="attr">common</span>/<span class="attr">bxslider</span>') %&gt;</span></div></pre></td></tr></table></figure></p>
-<h2 id="Define-slider-in-config-yml"><a href="#Define-slider-in-config-yml" class="headerlink" title="Define slider in _config.yml"></a>Define slider in _config.yml</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="symbol">sliders:</span></div><div class="line">  <span class="symbol">slider1:</span></div><div class="line">    <span class="symbol">image:</span> /images/slider/<span class="number">1</span>.jpg</div><div class="line">    <span class="symbol">url:</span>   /post1/</div><div class="line">    <span class="symbol">text:</span>  slider1 text</div><div class="line">  <span class="symbol">slider2:</span></div><div class="line">    <span class="symbol">image:</span> /images/slider/<span class="number">2</span>.jpg</div><div class="line">    <span class="symbol">url:</span>   /post2/</div><div class="line">    <span class="symbol">text:</span>  slider2 text</div><div class="line">  <span class="symbol">slider3:</span></div><div class="line">    <span class="symbol">image:</span> /images/slider/<span class="number">3</span>.jpg</div><div class="line">    <span class="symbol">url:</span>   /post3/</div><div class="line">    <span class="symbol">text:</span>  slider3 text</div></pre></td></tr></table></figure>
-<h2 id="More-configurations"><a href="#More-configurations" class="headerlink" title="More configurations"></a>More configurations</h2><p>Change default style for .bx-wrapper .bx-viewport in the css, e.g. border, and left</p>
-<p>You may change the slider width in style.styl</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/hexo/bxslider.jpg&quot; alt=&quot;Hexo slider&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Download-bxslider&quot;&gt;&lt;a href=&quot;#Download-bxslider&quot; class=&quot;headerlink&quot; ti
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://www.yuxifan.com/categories/hexo/"/>
-    
-    
-      <category term="hexo" scheme="https://www.yuxifan.com/tags/hexo/"/>
-    
-      <category term="slider" scheme="https://www.yuxifan.com/tags/slider/"/>
     
   </entry>
   
