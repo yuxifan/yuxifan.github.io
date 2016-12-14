@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2016-12-14T14:08:36.000Z</updated>
+  <updated>2016-12-14T14:16:21.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -17,29 +17,29 @@
   
   <entry>
     <title>Sending and receiving custom domain emails by mailgun and gmail</title>
-    <link href="https://www.yuxifan.com/2016/12/14/setting-and-receiving-custom-emails-by-mailgun-and-gmail/"/>
-    <id>https://www.yuxifan.com/2016/12/14/setting-and-receiving-custom-emails-by-mailgun-and-gmail/</id>
+    <link href="https://www.yuxifan.com/2016/12/14/sending-and-receiving-custom-domain-emails-by-mailgun-and-gmail/"/>
+    <id>https://www.yuxifan.com/2016/12/14/sending-and-receiving-custom-domain-emails-by-mailgun-and-gmail/</id>
     <published>2016-12-14T09:51:12.000Z</published>
-    <updated>2016-12-14T14:08:36.000Z</updated>
+    <updated>2016-12-14T14:16:21.000Z</updated>
     
     <content type="html"><![CDATA[<p>Setting up a custom domain email address is widely discussed and there are lots of ways to do it, e.g. by using Zoho mail services. However, we have to say the most popular web mail client is Gmail. Gmail is fast, robust and awesome. Here is the way on how to use Mailgun and Gmail to send and receive emails without installing / configuring anything on your server!</p>
 <p><img src="/images/linux/mailgun.jpg" alt="Mailgun"></p>
 <h2 id="Create-a-mailgun-account"><a href="#Create-a-mailgun-account" class="headerlink" title="Create a mailgun account"></a>Create a mailgun account</h2><p>Register a mailgun account by using your gmail. <strong>Don’t use your custom email account</strong> (you want to create later within Mailgun) as it will cause trouble while validating your Mailgun account.</p>
 <p>You may be asked to validating both your email address and a mobile number.</p>
 <p>After validation, you will be presented with a dashboard. </p>
-<p><img src="/images/linux/1.jpg" alt="Mailgun"></p>
+<p><img src="/images/linux/mailgun/1.jpg" alt="Mailgun"></p>
 <h2 id="Add-a-domain"><a href="#Add-a-domain" class="headerlink" title="Add a domain"></a>Add a domain</h2><p>Now under “Domains”, click “Add New Domain”.</p>
 <p>Follow the instructions and set your DNS records with whoever manages your DNS.</p>
-<p>Here is my configurations:<br><img src="/images/linux/2.jpg" alt="Mailgun"></p>
-<h2 id="Create-email-address-under-custom-domain"><a href="#Create-email-address-under-custom-domain" class="headerlink" title="Create email address under custom domain"></a>Create email address under custom domain</h2><p>Click “Manage SMTP Credentials”, then click “New SMTP Credential”. Create your own email address.<br><img src="/images/linux/3.jpg" alt="Mailgun"></p>
+<p>Here is my configurations:<br><img src="/images/linux/mailgun/2.jpg" alt="Mailgun"></p>
+<h2 id="Create-email-address-under-custom-domain"><a href="#Create-email-address-under-custom-domain" class="headerlink" title="Create email address under custom domain"></a>Create email address under custom domain</h2><p>Click “Manage SMTP Credentials”, then click “New SMTP Credential”. Create your own email address.<br><img src="/images/linux/mailgun/3.jpg" alt="Mailgun"></p>
 <h2 id="Add-routes"><a href="#Add-routes" class="headerlink" title="Add routes"></a>Add routes</h2><p>Click on the “Routes” link on the top to set up email forwarding.</p>
-<p><img src="/images/linux/4.jpg" alt="Mailgun"></p>
+<p><img src="/images/linux/mailgun/4.jpg" alt="Mailgun"></p>
 <p>The most simple route is to ‘Catch all’ emails to your domain and forward them to your gmail.</p>
 <p>Now you can receive emails sending to the custom domain email address. </p>
 <h2 id="Sending-within-Gmail"><a href="#Sending-within-Gmail" class="headerlink" title="Sending within Gmail"></a>Sending within Gmail</h2><p>Within Gmail, go to the Accounts tab and click “Add another email address you own”. Once you open this window, enter the email address you wish to send from.</p>
-<p><img src="/images/linux/5.jpg" alt="Mailgun"></p>
+<p><img src="/images/linux/mailgun/5.jpg" alt="Mailgun"></p>
 <p>Then click “Add Account”, now you’re done! As shown below, you can send emails from your custom domain email within Gmail!</p>
-<p><img src="/images/linux/6.jpg" alt="Mailgun"></p>
+<p><img src="/images/linux/mailgun/6.jpg" alt="Mailgun"></p>
 <p>Enjoy your free email service for up to 10,000 emails a month!</p>
 ]]></content>
     
