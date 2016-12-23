@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2016-12-14T14:16:21.000Z</updated>
+  <updated>2016-12-23T16:28:28.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sqlite3 command line</title>
+    <link href="https://www.yuxifan.com/2016/12/23/sqlite3-command-line/"/>
+    <id>https://www.yuxifan.com/2016/12/23/sqlite3-command-line/</id>
+    <published>2016-12-23T02:10:12.000Z</published>
+    <updated>2016-12-23T16:28:28.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/database/sqlite.png" alt="sqlite"></p>
+<p>To load sqlite3 cli:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sqlite3 DB_NAME</div></pre></td></tr></table></figure>
+<p>List tables:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">.tables</div></pre></td></tr></table></figure>
+<p>List all table schemas </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.schema</div><div class="line">.schema TABLE_NAME</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/database/sqlite.png&quot; alt=&quot;sqlite&quot;&gt;&lt;/p&gt;
+&lt;p&gt;To load sqlite3 cli:&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=
+    
+    </summary>
+    
+      <category term="database" scheme="https://www.yuxifan.com/categories/database/"/>
+    
+    
+      <category term="sqlite" scheme="https://www.yuxifan.com/tags/sqlite/"/>
+    
+  </entry>
   
   <entry>
     <title>Sending and receiving custom domain emails by mailgun and gmail</title>
@@ -716,36 +747,6 @@ $("#text").
       <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
     
       <category term="shortener" scheme="https://www.yuxifan.com/tags/shortener/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to generate QR code in Ruby</title>
-    <link href="https://www.yuxifan.com/2016/10/10/how-to-generate-qrcode-in-ruby/"/>
-    <id>https://www.yuxifan.com/2016/10/10/how-to-generate-qrcode-in-ruby/</id>
-    <published>2016-10-10T00:10:12.000Z</published>
-    <updated>2016-10-10T11:57:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>How to generate a QR code in Ruby</p>
-<p><img src="/images/ruby/qr.jpg" alt="QR Code"></p>
-<h2 id="Install-gem"><a href="#Install-gem" class="headerlink" title="Install gem:"></a>Install gem:</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem install rqrcode</div></pre></td></tr></table></figure>
-<h2 id="Ruby-code"><a href="#Ruby-code" class="headerlink" title="Ruby code"></a>Ruby code</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'rqrcode'</span></div><div class="line"></div><div class="line">qrcode = RQRCode::QRCode.new(<span class="string">"https://www.yuxifan.com/"</span>)</div><div class="line">png = qrcode.as_png(</div><div class="line">          <span class="symbol">resize_gte_to:</span> <span class="literal">false</span>,</div><div class="line">          <span class="symbol">resize_exactly_to:</span> <span class="literal">false</span>,</div><div class="line">          <span class="symbol">fill:</span> <span class="string">'white'</span>,</div><div class="line">          <span class="symbol">color:</span> <span class="string">'black'</span>,</div><div class="line">          <span class="symbol">size:</span> <span class="number">360</span>,</div><div class="line">          <span class="symbol">border_modules:</span> <span class="number">4</span>,</div><div class="line">          <span class="symbol">module_px_size:</span> <span class="number">6</span>,</div><div class="line">          <span class="symbol">file:</span> <span class="string">"/var/tmp/qrx360.png"</span> </div><div class="line">          )</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;How to generate a QR code in Ruby&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/ruby/qr.jpg&quot; alt=&quot;QR Code&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Install-gem&quot;&gt;&lt;a href=&quot;#Install-gem&quot; cl
-    
-    </summary>
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
-    
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
-    
-      <category term="qr" scheme="https://www.yuxifan.com/tags/qr/"/>
     
   </entry>
   
