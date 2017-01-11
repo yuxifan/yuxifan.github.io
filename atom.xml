@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-01-04T09:57:26.000Z</updated>
+  <updated>2017-01-11T14:16:47.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Create a shared folder between VirtualBox host and guest</title>
+    <link href="https://www.yuxifan.com/2017/01/11/create-shared-folder-in-virtualbox-vm/"/>
+    <id>https://www.yuxifan.com/2017/01/11/create-shared-folder-in-virtualbox-vm/</id>
+    <published>2017-01-11T09:51:12.000Z</published>
+    <updated>2017-01-11T14:16:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/linux/shared-folder.jpg" alt="shared folder in VM"></p>
+<p>(1) Configure a shared folder in VM settings</p>
+<p>(2) Start VM box</p>
+<p>(3) Click “Devices -&gt; Insert Guest Additions CD Image”</p>
+<p>(4) Log in to the VM</p>
+<p>(5) Mount CD-ROM:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo mount /dev/cdrom /media/cdrom</div><div class="line"><span class="built_in">cd</span> /media/cdrom</div></pre></td></tr></table></figure>
+<p>(6) Install dependencies:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -y dkms build-essential linux-headers-generic linux-headers-$(uname -r)</div></pre></td></tr></table></figure>
+<p>(7)<br>Install Guest Additions</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo su -</div><div class="line">./VBoxLinuxAdditions.run</div></pre></td></tr></table></figure>
+<p>(8)<br>Check that kernel extensions are up and running:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo modprobe vboxsf</div></pre></td></tr></table></figure>
+<p>If cannot find vboxsf, run following commands:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/opt/VBoxGuestAdditions-4.3.30/init/vboxadd setup</div><div class="line">sudo apt-get install virtualbox-guest-utils</div><div class="line">sudo apt-get install virtualbox-guest-dkms</div></pre></td></tr></table></figure>
+<p>(9) When get vboxsf working,</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo mkdir /mnt/rubysrc</div><div class="line">mount -t vboxsf rubysrc /mnt/rubysrc</div></pre></td></tr></table></figure>
+<p>(10) To do auto mount, edit /etc/fstab and add:<br>SharedFolder   /mnt/share  vboxsf defaults 0 0</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/linux/shared-folder.jpg&quot; alt=&quot;shared folder in VM&quot;&gt;&lt;/p&gt;
+&lt;p&gt;(1) Configure a shared folder in VM settings&lt;/p&gt;
+&lt;p&gt;(2) Star
+    
+    </summary>
+    
+      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
+    
+    
+      <category term="virtualbox" scheme="https://www.yuxifan.com/tags/virtualbox/"/>
+    
+  </entry>
   
   <entry>
     <title>Useful linux commands</title>
@@ -718,37 +760,6 @@ $("#text").
       <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
     
       <category term="vultr" scheme="https://www.yuxifan.com/tags/vultr/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Image Manipulation in Ruby</title>
-    <link href="https://www.yuxifan.com/2016/10/11/image-manipulation-in-ruby/"/>
-    <id>https://www.yuxifan.com/2016/10/11/image-manipulation-in-ruby/</id>
-    <published>2016-10-11T01:10:12.000Z</published>
-    <updated>2016-10-11T11:22:52.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/ruby/image.jpg" alt=""></p>
-<h2 id="Resize-an-image"><a href="#Resize-an-image" class="headerlink" title="Resize an image"></a>Resize an image</h2><p>Install RMagick<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install imagemagick libmagickwand-dev</div><div class="line">gem install rmagick</div></pre></td></tr></table></figure></p>
-<p>Code:<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'rmagick'</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ImageProcessor</span></span></div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">self</span>.<span class="title">resize</span><span class="params">(srcimg, tgtimg, width, height)</span></span></div><div class="line">    img = Magick::Image.read(srcimg).first</div><div class="line">    target = Magick::Image.new(width, height) <span class="keyword">do</span></div><div class="line">      <span class="comment">#self.background_color = 'white'</span></div><div class="line">    <span class="keyword">end</span></div><div class="line">    img.resize_to_fit!(width, height)</div><div class="line">    target.composite(img, Magick::CenterGravity, Magick::CopyCompositeOp).write(tgtimg)</div><div class="line">  <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line">ImageProcessor.resize(<span class="string">"src.png"</span>,<span class="string">"tgt.png"</span>, <span class="number">100</span>, <span class="number">60</span>)</div></pre></td></tr></table></figure></p>
-<h2 id="Watermark"><a href="#Watermark" class="headerlink" title="Watermark"></a>Watermark</h2><h3 id="Watermark-with-image"><a href="#Watermark-with-image" class="headerlink" title="Watermark with image"></a>Watermark with image</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'rmagick'</span></div><div class="line"></div><div class="line">img  = Magick::Image.read(<span class="string">"test.png"</span>).first</div><div class="line">mark = Magick::Image.read(<span class="string">"cc.jpg"</span>).first</div><div class="line"></div><div class="line">mark.background_color = <span class="string">"Transparent"</span></div><div class="line"></div><div class="line"><span class="comment"># resize the watermark to 60% of the image we want to watermark</span></div><div class="line">watermark = mark.resize_to_fit(img.rows * <span class="number">0</span>.<span class="number">6</span>, img.columns * <span class="number">0</span>.<span class="number">6</span>)</div><div class="line"></div><div class="line"><span class="comment"># rotate this mark by 45 degrees anticlockwise (optional)</span></div><div class="line">watermark.rotate!(-<span class="number">45</span>)</div><div class="line"></div><div class="line"><span class="comment"># add watermark with 40% opacity for watermark, 100% opacity for image and position is center</span></div><div class="line">newimg = img.dissolve(watermark, <span class="number">0</span>.<span class="number">4</span>, <span class="number">1</span>, Magick::CenterGravity)</div><div class="line">new.write(<span class="string">"watermark_img.jpg"</span>)</div></pre></td></tr></table></figure>
-<h3 id="Watermark-with-text"><a href="#Watermark-with-text" class="headerlink" title="Watermark with text"></a>Watermark with text</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'rmagick'</span></div><div class="line"></div><div class="line">img = Magick::Image.read(<span class="string">"test.png"</span>).first</div><div class="line">mark = Magick::Image.new(img.rows, img.columns) &#123;<span class="keyword">self</span>.background_color = <span class="string">"none"</span>&#125;</div><div class="line">draw = Magick::Draw.new</div><div class="line"></div><div class="line">draw.annotate(mark, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="string">"www.yuxifan.com"</span>) <span class="keyword">do</span></div><div class="line">  draw.gravity = Magick::CenterGravity</div><div class="line">  draw.pointsize = <span class="number">50</span></div><div class="line">  draw.font_family = <span class="string">"Arial Mono"</span> <span class="comment"># set font</span></div><div class="line">  draw.fill   = <span class="string">"black"</span> <span class="comment"># set text color</span></div><div class="line">  draw.stroke = <span class="string">"none"</span>  <span class="comment"># remove stroke</span></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line">mark = mark.rotate(-<span class="number">45</span>)</div><div class="line">img2 = img.watermark(mark, <span class="number">0</span>.<span class="number">2</span>, <span class="number">0</span>.<span class="number">5</span>, Magick::CenterGravity)</div><div class="line">img2.write(<span class="string">"text_watermark.jpg"</span>)</div></pre></td></tr></table></figure>
-<h3 id="Watermark-with-both-image-and-text"><a href="#Watermark-with-both-image-and-text" class="headerlink" title="Watermark with both image and text"></a>Watermark with both image and text</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'rmagick'</span></div><div class="line"></div><div class="line">img = Magick::Image.read(<span class="string">"test.png"</span>).first</div><div class="line">mark = Magick::Image.new(img.rows, img.columns) &#123;<span class="keyword">self</span>.background_color = <span class="string">"none"</span>&#125;</div><div class="line">draw = Magick::Draw.new</div><div class="line"></div><div class="line">draw.annotate(mark, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="string">"www.yuxifan.com"</span>) <span class="keyword">do</span></div><div class="line">  draw.gravity = Magick::CenterGravity</div><div class="line">  draw.pointsize = <span class="number">50</span></div><div class="line">  draw.font_family = <span class="string">"Arial"</span></div><div class="line">  draw.fill   = <span class="string">"black"</span> <span class="comment"># set text color</span></div><div class="line">  draw.stroke = <span class="string">"none"</span>  <span class="comment"># remove stroke</span></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line">mark = mark.rotate(-<span class="number">45</span>)</div><div class="line">img2 = img.watermark(mark, <span class="number">0</span>.<span class="number">2</span>, <span class="number">0</span>.<span class="number">5</span>, Magick::CenterGravity)</div><div class="line"></div><div class="line">markimg = Magick::Image.read(<span class="string">"cc.jpg"</span>).first</div><div class="line">markimg.background_color = <span class="string">"Transparent"</span></div><div class="line"></div><div class="line">watermark = markimg.resize_to_fit(img2.rows * <span class="number">0</span>.<span class="number">3</span>, img2.columns * <span class="number">0</span>.<span class="number">3</span>)</div><div class="line">img3 = img2.watermark(watermark, <span class="number">0</span>.<span class="number">2</span>, <span class="number">0</span>.<span class="number">3</span>, Magick::SouthEastGravity)</div><div class="line">img3.write(<span class="string">"watermark_txtimg.jpg"</span>)</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/ruby/image.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Resize-an-image&quot;&gt;&lt;a href=&quot;#Resize-an-image&quot; class=&quot;headerlink&quot; title=&quot;Resize an ima
-    
-    </summary>
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
-    
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
-    
-      <category term="image" scheme="https://www.yuxifan.com/tags/image/"/>
     
   </entry>
   
