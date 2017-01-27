@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-01-11T14:16:47.000Z</updated>
+  <updated>2017-01-27T10:11:41.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SSL certificate error for rubygems.org and the fix</title>
+    <link href="https://www.yuxifan.com/2017/01/27/ssl-certificate-problem-for-ruby-gems-and-solution/"/>
+    <id>https://www.yuxifan.com/2017/01/27/ssl-certificate-problem-for-ruby-gems-and-solution/</id>
+    <published>2017-01-27T02:10:12.000Z</published>
+    <updated>2017-01-27T10:11:41.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/ruby/ssl.png" alt="SSL Certificate"></p>
+<p>While running bundle install in my rails application, I have seen this error message:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">Fetching <span class="built_in">source</span> index from https://rubygems.org/</div><div class="line">Retrying fetcher due to error (2/4): Bundler::Fetcher::CertificateFailureError Could not verify the SSL certificate <span class="keyword">for</span> https://rubygems.org/.</div><div class="line">There is a chance you are experiencing a man-in-the-middle attack, but most likely your system doesn<span class="string">'t have the CA certificates needed for verification. For information about OpenSSL certificates, see http://bit.ly/ruby-ssl. To connect without using SSL, edit your Gemfile sources and change '</span>https<span class="string">' to '</span>http<span class="string">'.</span></div><div class="line">Retrying fetcher due to error (3/4): Bundler::Fetcher::CertificateFailureError Could not verify the SSL certificate for https://rubygems.org/.</div><div class="line">There is a chance you are experiencing a man-in-the-middle attack, but most likely your system doesn't have the CA certificates needed <span class="keyword">for</span> verification. For information about OpenSSL certificates, see http://bit.ly/ruby-ssl. To connect without using SSL, edit your Gemfile sources and change <span class="string">'https'</span> to <span class="string">'http'</span>.</div><div class="line">Retrying fetcher due to error (4/4): Bundler::Fetcher::CertificateFailureError Could not verify the SSL certificate <span class="keyword">for</span> https://rubygems.org/.</div><div class="line">There is a chance you are experiencing a man-in-the-middle attack, but most likely your system doesn<span class="string">'t have the CA certificates needed for verification. For information about OpenSSL certificates, see http://bit.ly/ruby-ssl. To connect without using SSL, edit your Gemfile sources and change '</span>https<span class="string">' to '</span>http<span class="string">'.</span></div><div class="line">Could not verify the SSL certificate for https://rubygems.org/.</div><div class="line">There is a chance you are experiencing a man-in-the-middle attack, but most likely your system doesn't have the CA certificates needed <span class="keyword">for</span> verification. For information about OpenSSL certificates, see http://bit.ly/ruby-ssl. To connect</div><div class="line">without using SSL, edit your Gemfile sources and change <span class="string">'https'</span> to <span class="string">'http'</span>.</div></pre></td></tr></table></figure>
+<p>Here is the solution for this problem:</p>
+<h2 id="Update-gem-version"><a href="#Update-gem-version" class="headerlink" title="Update gem version"></a>Update gem version</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /var/tmp</div><div class="line">wget --no-check-certificate https://rubygems.org/downloads/rubygems-update-2.6.7.gem</div><div class="line">gem install --local /var/tmp/rubygems-update-2.6.7.gem</div><div class="line">update_rubygems --no-ri --no-rdoc</div></pre></td></tr></table></figure>
+<p>Restart VM and try to run bundle install again.</p>
+<h2 id="If-the-above-solution-is-not-working"><a href="#If-the-above-solution-is-not-working" class="headerlink" title="If the above solution is not working"></a>If the above solution is not working</h2><p>If this process does not work for you, you can try manually adding the new certificate.</p>
+<h3 id="Step-1-Download-certificate-manually"><a href="#Step-1-Download-certificate-manually" class="headerlink" title="Step 1: Download certificate manually"></a>Step 1: Download certificate manually</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget https://raw.githubusercontent.com/rubygems/rubygems/master/lib/rubygems/ssl_certs/index.rubygems.org/GlobalSignRootCA.pem -O /var/tmp/GlobalSignRootCA.pem</div></pre></td></tr></table></figure>
+<h3 id="Step-2-Locate-RubyGems-certificate-directory-in-your-installation"><a href="#Step-2-Locate-RubyGems-certificate-directory-in-your-installation" class="headerlink" title="Step 2: Locate RubyGems certificate directory in your installation"></a>Step 2: Locate RubyGems certificate directory in your installation</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">gem <span class="built_in">which</span> rubygems</div><div class="line"><span class="built_in">cd</span> /home/frank/.rbenv/versions/2.3.1/lib/ruby/site_ruby/2.3.0/rubygems/ssl_certs/rubygems.org</div><div class="line">cp /var/tmp/GlobalSignRootCA.pem .</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/ruby/ssl.png&quot; alt=&quot;SSL Certificate&quot;&gt;&lt;/p&gt;
+&lt;p&gt;While running bundle install in my rails application, I have seen this erro
+    
+    </summary>
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
+    
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
+    
+      <category term="gem" scheme="https://www.yuxifan.com/tags/gem/"/>
+    
+      <category term="ssl" scheme="https://www.yuxifan.com/tags/ssl/"/>
+    
+  </entry>
   
   <entry>
     <title>Create a shared folder between VirtualBox host and guest</title>
@@ -730,36 +766,6 @@ $("#text").
       <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
     
       <category term="URL redirects" scheme="https://www.yuxifan.com/tags/URL-redirects/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to send a vultr account balance report in Ruby</title>
-    <link href="https://www.yuxifan.com/2016/10/12/vultr-account-balance-report-in-ruby/"/>
-    <id>https://www.yuxifan.com/2016/10/12/vultr-account-balance-report-in-ruby/</id>
-    <published>2016-10-12T01:10:12.000Z</published>
-    <updated>2016-10-12T09:27:43.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/ruby/vultr-credit.png" alt="Vultr balance"></p>
-<p><a href="https://www.vultr.com/?ref=6856003" rel="external nofollow" target="_blank">Vultr</a> is a great VPS provider. I have a couple of VMs hosted in Vultr. However, according to Vultr T&amp;C: “Failure to make payment of Fees for Services when due may result in the suspension or termination of Services.” It would be nice to have an alert when the Vultr account balance reaches a threshold. Here is the implementation in Ruby.</p>
-<p>I prefer to have a monthly report no matter if the threshold has been reached. However, if you want to have an email alert when the threshold is reached, the following code can be easily modified to do that.</p>
-<h2 id="Install-gems"><a href="#Install-gems" class="headerlink" title="Install gems"></a>Install gems</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">gem install faraday</div><div class="line">gem install json</div><div class="line">gem install gmail</div></pre></td></tr></table></figure>
-<h2 id="The-Ruby-code"><a href="#The-Ruby-code" class="headerlink" title="The Ruby code"></a>The Ruby code</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'faraday'</span></div><div class="line"><span class="keyword">require</span> <span class="string">'json'</span></div><div class="line"><span class="keyword">require</span> <span class="string">'gmail'</span></div><div class="line"></div><div class="line">conn = Faraday.new(<span class="symbol">:url</span> =&gt; <span class="string">'https://api.vultr.com'</span>) <span class="keyword">do</span> <span class="params">|c|</span></div><div class="line">  c.use Faraday::Request::UrlEncoded</div><div class="line">  c.use Faraday::Adapter::NetHttp</div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line">response = conn.get <span class="keyword">do</span> <span class="params">|req|</span></div><div class="line">  req.url <span class="string">'/v1/account/info'</span></div><div class="line">  req.headers[<span class="string">'API-Key'</span>] = <span class="string">'your API key'</span></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line">responseStr  = response.body</div><div class="line">responseJson = JSON.parse(responseStr)</div><div class="line">balance = responseJson[<span class="string">'balance'</span>]</div><div class="line">pending_charges = responseJson[<span class="string">'pending_charges'</span>]</div><div class="line"></div><div class="line">user = <span class="string">"your gmail"</span></div><div class="line">pass = <span class="string">"your gmail password"</span></div><div class="line">gmail = Gmail.connect(user, pass)</div><div class="line"></div><div class="line">email = gmail.compose <span class="keyword">do</span></div><div class="line">  to <span class="string">"the email address receiving reports"</span></div><div class="line">  subject <span class="string">"Your Vultr balance"</span></div><div class="line">  body <span class="string">"Balance: "</span> + balance + <span class="string">"\n"</span> + <span class="string">"Pending charges: "</span> + pending_charges</div><div class="line"><span class="keyword">end</span></div><div class="line">email.deliver!</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/ruby/vultr-credit.png&quot; alt=&quot;Vultr balance&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.vultr.com/?ref=6856003&quot; rel=&quot;external nofollow&quot;
-    
-    </summary>
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
-    
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
-    
-      <category term="vultr" scheme="https://www.yuxifan.com/tags/vultr/"/>
     
   </entry>
   
