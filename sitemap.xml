@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2016/10/16/ruby-tutorials-nokogiri/</loc>
+    
+    <lastmod>2017-02-07T14:48:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2017/01/29/parse-excel-spreadsheet-in-ruby/</loc>
     
     <lastmod>2017-01-30T10:34:47.000Z</lastmod>
@@ -152,13 +159,6 @@
     <loc>https://www.yuxifan.com/2016/10/17/ruby-tutorials-json/</loc>
     
     <lastmod>2016-10-18T10:14:45.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/10/16/ruby-tutorials-nokogiri/</loc>
-    
-    <lastmod>2016-10-17T13:04:23.000Z</lastmod>
     
   </url>
   
