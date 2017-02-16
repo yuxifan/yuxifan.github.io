@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2016/01/10/2016-01-10-send-email-via-gmail-in-ruby/</loc>
+    
+    <lastmod>2017-02-16T10:23:43.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2016/01/09/2016-01-09-use-restful-web-services-in-faraday/</loc>
     
     <lastmod>2017-02-08T11:10:20.000Z</lastmod>
@@ -292,13 +299,6 @@
     <loc>https://www.yuxifan.com/2016/09/06/2016-09-06-how-to-implement-hierarchical-faces/</loc>
     
     <lastmod>2016-10-04T21:14:38.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/01/10/2016-01-10-send-email-via-gmail-in-ruby/</loc>
-    
-    <lastmod>2016-10-04T14:47:10.000Z</lastmod>
     
   </url>
   
