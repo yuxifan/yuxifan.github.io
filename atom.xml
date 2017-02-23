@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-01-30T10:34:47.000Z</updated>
+  <updated>2017-02-23T15:05:32.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Config Tomcat session timeout</title>
+    <link href="https://www.yuxifan.com/2017/02/23/config-tomcat-session-timeout/"/>
+    <id>https://www.yuxifan.com/2017/02/23/config-tomcat-session-timeout/</id>
+    <published>2017-02-23T09:51:12.000Z</published>
+    <updated>2017-02-23T15:05:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/java/tomcat.png" alt="Where to config Tomcat session timeout"></p>
+<p>There are three places to config Tomcat web application session timeout:</p>
+<p>$tomcat_home/conf/web.xml<br>$your_webapp/WEB-INF/web.xml<br>manual invocation of HttpSession.setMaxInactiveInterval(int)</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/java/tomcat.png&quot; alt=&quot;Where to config Tomcat session timeout&quot;&gt;&lt;/p&gt;
+&lt;p&gt;There are three places to config Tomcat web appli
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.yuxifan.com/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://www.yuxifan.com/tags/java/"/>
+    
+      <category term="Tomcat" scheme="https://www.yuxifan.com/tags/Tomcat/"/>
+    
+  </entry>
   
   <entry>
     <title>Parse Excel spreadsheet in Ruby</title>
@@ -740,37 +768,6 @@ $("#text").
       <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
     
       <category term="json" scheme="https://www.yuxifan.com/tags/json/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ruby tutorials - nokogiri</title>
-    <link href="https://www.yuxifan.com/2016/10/16/ruby-tutorials-nokogiri/"/>
-    <id>https://www.yuxifan.com/2016/10/16/ruby-tutorials-nokogiri/</id>
-    <published>2016-10-16T08:51:12.000Z</published>
-    <updated>2017-02-07T14:48:16.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/ruby/nokogiri.png" alt="nokogiri"></p>
-<h2 id="The-XML-file"><a href="#The-XML-file" class="headerlink" title="The XML file"></a>The XML file</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">bookstore</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">book</span> <span class="attr">category</span>=<span class="string">"cooking"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span>Everyday Italian<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">author</span>&gt;</span>Giada De Laurentiis<span class="tag">&lt;/<span class="name">author</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">year</span>&gt;</span>2005<span class="tag">&lt;/<span class="name">year</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">price</span>&gt;</span>30.00<span class="tag">&lt;/<span class="name">price</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">book</span>&gt;</span></div><div class="line"></div><div class="line">  <span class="tag">&lt;<span class="name">book</span> <span class="attr">category</span>=<span class="string">"children"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span>Harry Potter<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">author</span>&gt;</span>J K. Rowling<span class="tag">&lt;/<span class="name">author</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">year</span>&gt;</span>2005<span class="tag">&lt;/<span class="name">year</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">price</span>&gt;</span>29.99<span class="tag">&lt;/<span class="name">price</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">book</span>&gt;</span></div><div class="line"></div><div class="line">  <span class="tag">&lt;<span class="name">book</span> <span class="attr">category</span>=<span class="string">"web"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span>XQuery Kick Start<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">author</span>&gt;</span>James McGovern<span class="tag">&lt;/<span class="name">author</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">author</span>&gt;</span>Per Bothner<span class="tag">&lt;/<span class="name">author</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">author</span>&gt;</span>Kurt Cagle<span class="tag">&lt;/<span class="name">author</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">author</span>&gt;</span>James Linn<span class="tag">&lt;/<span class="name">author</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">author</span>&gt;</span>Vaidyanathan Nagarajan<span class="tag">&lt;/<span class="name">author</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">year</span>&gt;</span>2003<span class="tag">&lt;/<span class="name">year</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">price</span>&gt;</span>49.99<span class="tag">&lt;/<span class="name">price</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">book</span>&gt;</span></div><div class="line"></div><div class="line">  <span class="tag">&lt;<span class="name">book</span> <span class="attr">category</span>=<span class="string">"web"</span> <span class="attr">cover</span>=<span class="string">"paperback"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span>Learning XML<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">author</span>&gt;</span>Erik T. Ray<span class="tag">&lt;/<span class="name">author</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">year</span>&gt;</span>2003<span class="tag">&lt;/<span class="name">year</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">price</span>&gt;</span>39.95<span class="tag">&lt;/<span class="name">price</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">book</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">bookstore</span>&gt;</span></div></pre></td></tr></table></figure>
-<h2 id="Read-from-file"><a href="#Read-from-file" class="headerlink" title="Read from file"></a>Read from file</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'nokogiri'</span></div><div class="line"></div><div class="line">doc = Nokogiri::XML(File.open(<span class="string">'books.xml'</span>))</div><div class="line"></div><div class="line">books = doc.xpath(<span class="string">'/bookstore/book'</span>)</div><div class="line"></div><div class="line">books.each <span class="keyword">do</span> <span class="params">|book|</span></div><div class="line">  puts <span class="string">'------------------'</span></div><div class="line">  puts <span class="string">'Category: '</span> + book.attr(<span class="string">'category'</span>)</div><div class="line">  puts <span class="string">'Title:    '</span> + book.xpath(<span class="string">'title'</span>)[<span class="number">0</span>].content</div><div class="line">  puts <span class="string">'Author:   '</span> + book.xpath(<span class="string">'author'</span>)[<span class="number">0</span>].content</div><div class="line">  puts <span class="string">'Year:     '</span> + book.xpath(<span class="string">'year'</span>)[<span class="number">0</span>].content</div><div class="line">  puts <span class="string">'Price:    '</span> + book.xpath(<span class="string">'price'</span>)[<span class="number">0</span>].content</div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line"><span class="comment"># return a single element</span></div><div class="line">cooking_book = doc.at_xpath(<span class="string">"/bookstore/book[@category='cooking']"</span>)</div><div class="line"></div><div class="line"><span class="comment"># Update content of an element</span></div><div class="line">cooking_book_author = cooking_book.xpath(<span class="string">'author'</span>)[<span class="number">0</span>]</div><div class="line">cooking_book_author.content = <span class="string">'David Robinson'</span></div></pre></td></tr></table></figure>
-<h2 id="Read-from-string"><a href="#Read-from-string" class="headerlink" title="Read from string"></a>Read from string</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'nokogiri'</span></div><div class="line"></div><div class="line">doc = Nokogiri::XML(<span class="string">"&lt;staff_list&gt;&lt;staff&gt;&lt;name&gt;Paul&lt;/name&gt;&lt;/staff&gt;&lt;staff&gt;&lt;name&gt;Andrew&lt;/name&gt;&lt;/staff&gt;&lt;/staff_list&gt;"</span>)</div><div class="line"></div><div class="line">puts doc.root</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/ruby/nokogiri.png&quot; alt=&quot;nokogiri&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;The-XML-file&quot;&gt;&lt;a href=&quot;#The-XML-file&quot; class=&quot;headerlink&quot; title=&quot;The XML 
-    
-    </summary>
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
-    
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
-    
-      <category term="nokogiri" scheme="https://www.yuxifan.com/tags/nokogiri/"/>
-    
-      <category term="tutorials" scheme="https://www.yuxifan.com/tags/tutorials/"/>
     
   </entry>
   
