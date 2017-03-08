@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2016/09/05/top-hexo-plugins/</loc>
+    
+    <lastmod>2017-03-08T09:51:13.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2017/02/28/install-lemp-and-wordpress-in-ubuntu-16-lts/</loc>
     
     <lastmod>2017-03-03T13:28:35.000Z</lastmod>
@@ -222,13 +229,6 @@
     <loc>https://www.yuxifan.com/2016/10/10/how-to-generate-qrcode-in-ruby/</loc>
     
     <lastmod>2016-10-10T11:57:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/09/05/top-hexo-plugins/</loc>
-    
-    <lastmod>2016-10-07T10:37:32.000Z</lastmod>
     
   </url>
   
