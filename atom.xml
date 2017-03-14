@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-03-14T12:22:55.000Z</updated>
+  <updated>2017-03-14T12:55:15.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://www.yuxifan.com/2017/03/14/suppport-multiple-domains-in-nginx/"/>
     <id>https://www.yuxifan.com/2017/03/14/suppport-multiple-domains-in-nginx/</id>
     <published>2017-03-14T05:51:12.000Z</published>
-    <updated>2017-03-14T12:22:55.000Z</updated>
+    <updated>2017-03-14T12:55:15.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/linux/nginx.jpg" alt="Host multiple domains in Nginx"></p>
 <p>By default, Nginx on Ubuntu 16.04 has one server block enabled by default. It is configured to serve documents at /var/www/html.</p>
@@ -39,7 +39,7 @@
 <p>Test:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nginx -t</div></pre></td></tr></table></figure></p>
 <p>Restart Nginx:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl restart nginx</div></pre></td></tr></table></figure></p>
 <h2 id="Add-hosts"><a href="#Add-hosts" class="headerlink" title="Add hosts"></a>Add hosts</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /etc/hosts</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">45.76.114.85 www.DOMAIN-1.com</div><div class="line">45.76.114.85 www.DOMAIN-2.com</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">YOUR_IP www.DOMAIN-1.com</div><div class="line">YOUR_IP www.DOMAIN-2.com</div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
