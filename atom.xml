@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-03-08T11:41:05.000Z</updated>
+  <updated>2017-03-14T12:22:55.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -16,11 +16,56 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Host multiple domains in Nginx</title>
+    <link href="https://www.yuxifan.com/2017/03/14/suppport-multiple-domains-in-nginx/"/>
+    <id>https://www.yuxifan.com/2017/03/14/suppport-multiple-domains-in-nginx/</id>
+    <published>2017-03-14T05:51:12.000Z</published>
+    <updated>2017-03-14T12:22:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/linux/nginx.jpg" alt="Host multiple domains in Nginx"></p>
+<p>By default, Nginx on Ubuntu 16.04 has one server block enabled by default. It is configured to serve documents at /var/www/html.</p>
+<p>To serve multiple sites/domains. We need to do the following:</p>
+<h2 id="Create-directories"><a href="#Create-directories" class="headerlink" title="Create directories"></a>Create directories</h2><p>We need to create these directories for each of our domains:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo mkdir -p /var/www/DOMAIN-1.com/html</div><div class="line">sudo mkdir -p /var/www/DOMAIN-2.com/html</div><div class="line"></div><div class="line">sudo chown -R <span class="variable">$USER</span>:<span class="variable">$USER</span> /var/www/DOMAIN-1.com/html</div><div class="line">sudo chown -R <span class="variable">$USER</span>:<span class="variable">$USER</span> /var/www/DOMAIN-2.com/html</div></pre></td></tr></table></figure>
+<h2 id="Create-Server-Block-Files-for-Each-Domain"><a href="#Create-Server-Block-Files-for-Each-Domain" class="headerlink" title="Create Server Block Files for Each Domain"></a>Create Server Block Files for Each Domain</h2><p>File: /etc/nginx/sites-available/DOMAIN-1.com</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">        listen 80;</div><div class="line">        listen [::]:80;</div><div class="line"></div><div class="line">        root /var/www/DOMAIN-1/html;</div><div class="line"></div><div class="line">        index index.html index.htm;</div><div class="line"></div><div class="line">        server_name www.DOMAIN-1.com;</div><div class="line"></div><div class="line">        location / &#123;</div><div class="line">                try_files <span class="variable">$uri</span> <span class="variable">$uri</span>/ =404;</div><div class="line">        &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>File: /etc/nginx/sites-available/DOMAIN-2.com</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">        listen 80;</div><div class="line">        listen [::]:80;</div><div class="line"></div><div class="line">        root /var/www/DOMAIN-2/html;</div><div class="line"></div><div class="line">        index index.html index.htm;</div><div class="line"></div><div class="line">        server_name www.DOMAIN-2.com;</div><div class="line"></div><div class="line">        location / &#123;</div><div class="line">                try_files <span class="variable">$uri</span> <span class="variable">$uri</span>/ =404;</div><div class="line">        &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Run:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo ln <span class="_">-s</span> /etc/nginx/sites-available/DOMAIN-1.com /etc/nginx/sites-enabled/</div><div class="line">sudo ln <span class="_">-s</span> /etc/nginx/sites-available/DOMAIN-2.com /etc/nginx/sites-enabled/</div></pre></td></tr></table></figure></p>
+<p>In order to avoid a possible hash bucket memory problem while adding additional server names, modify /etc/nginx/nginx.conf. </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /etc/nginx/nginx.conf</div></pre></td></tr></table></figure>
+<p>Uncomment this line:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">server_names_hash_bucket_size 64;</div></pre></td></tr></table></figure>
+<p>Test:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nginx -t</div></pre></td></tr></table></figure></p>
+<p>Restart Nginx:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl restart nginx</div></pre></td></tr></table></figure></p>
+<h2 id="Add-hosts"><a href="#Add-hosts" class="headerlink" title="Add hosts"></a>Add hosts</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /etc/hosts</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">45.76.114.85 www.DOMAIN-1.com</div><div class="line">45.76.114.85 www.DOMAIN-2.com</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/linux/nginx.jpg&quot; alt=&quot;Host multiple domains in Nginx&quot;&gt;&lt;/p&gt;
+&lt;p&gt;By default, Nginx on Ubuntu 16.04 has one server block en
+    
+    </summary>
+    
+      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
+    
+    
+      <category term="Linux" scheme="https://www.yuxifan.com/tags/Linux/"/>
+    
+      <category term="Nginx" scheme="https://www.yuxifan.com/tags/Nginx/"/>
+    
+      <category term="Ubuntu" scheme="https://www.yuxifan.com/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Install LEMP + Wordpress in Ubuntu 16.04 LTS step by step</title>
     <link href="https://www.yuxifan.com/2017/02/28/install-lemp-and-wordpress-in-ubuntu-16-lts/"/>
     <id>https://www.yuxifan.com/2017/02/28/install-lemp-and-wordpress-in-ubuntu-16-lts/</id>
     <published>2017-02-28T05:51:12.000Z</published>
-    <updated>2017-03-08T11:41:05.000Z</updated>
+    <updated>2017-03-14T12:05:43.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/linux/lemp-wordpress.jpg" alt="Install LEMP + Wordpress in Ubuntu 16.04 LTS"></p>
 <h2 id="User-and-authentications"><a href="#User-and-authentications" class="headerlink" title="User and authentications"></a>User and authentications</h2><h3 id="Create-user"><a href="#Create-user" class="headerlink" title="Create user"></a>Create user</h3><p>Login as root</p>
@@ -101,9 +146,10 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /var/www/html</div><div class="line">wp plugin update --all</div><div class="line">wp core update</div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chmod 700 ~/scripts/systemupdats.sh</div></pre></td></tr></table></figure>
 <p>You may want to add it into cron job list</p>
-<h3 id="fails2ban"><a href="#fails2ban" class="headerlink" title="fails2ban"></a>fails2ban</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -qq -y fail2ban</div><div class="line">sudo /etc/fail2ban/jail.local</div></pre></td></tr></table></figure>
+<h3 id="fails2ban"><a href="#fails2ban" class="headerlink" title="fails2ban"></a>fails2ban</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -qq -y fail2ban</div><div class="line">sudo nano /etc/fail2ban/jail.local</div></pre></td></tr></table></figure>
 <p>Content of jail.local</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">[DEFAULT]</div><div class="line">bantime = 3600</div><div class="line">ignoreip = 127.0.0.1/8 YOUR_IPs</div><div class="line"></div><div class="line">[nginx-http-auth]</div><div class="line">enabled = <span class="literal">true</span></div><div class="line">filter  = nginx-http-auth</div><div class="line">port    = http,https</div><div class="line">logpath = %(nginx_error_log)s</div><div class="line"></div><div class="line">[nginx-badbots]</div><div class="line">enabled  = <span class="literal">true</span></div><div class="line">port     = http,https</div><div class="line">filter   = nginx-badbots</div><div class="line">logpath  = /var/<span class="built_in">log</span>/nginx/access.log</div><div class="line">maxretry = 2</div><div class="line"></div><div class="line">[nginx-noproxy]</div><div class="line">enabled  = <span class="literal">true</span></div><div class="line">port     = http,https</div><div class="line">filter   = nginx-noproxy</div><div class="line">logpath  = /var/<span class="built_in">log</span>/nginx/access.log</div><div class="line">maxretry = 2</div><div class="line">```bash</div><div class="line"></div><div class="line">```bash</div><div class="line">sudo nano /etc/fail2ban/filter.d/nginx-http-auth.conf</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">[DEFAULT]</div><div class="line">bantime = 3600</div><div class="line">ignoreip = 127.0.0.1/8 YOUR_IPs</div><div class="line"></div><div class="line">[nginx-http-auth]</div><div class="line">enabled = <span class="literal">true</span></div><div class="line">filter  = nginx-http-auth</div><div class="line">port    = http,https</div><div class="line">logpath = %(nginx_error_log)s</div><div class="line"></div><div class="line">[nginx-badbots]</div><div class="line">enabled  = <span class="literal">true</span></div><div class="line">port     = http,https</div><div class="line">filter   = nginx-badbots</div><div class="line">logpath  = /var/<span class="built_in">log</span>/nginx/access.log</div><div class="line">maxretry = 2</div><div class="line"></div><div class="line">[nginx-noproxy]</div><div class="line">enabled  = <span class="literal">true</span></div><div class="line">port     = http,https</div><div class="line">filter   = nginx-noproxy</div><div class="line">logpath  = /var/<span class="built_in">log</span>/nginx/access.log</div><div class="line">maxretry = 2</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /etc/fail2ban/filter.d/nginx-http-auth.conf</div></pre></td></tr></table></figure>
 <p>Update file with:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">failregex = ^ \[error\] \d+<span class="comment">#\d+: \*\d+ user "\S+":? (password mismatch|was not found in ".*"), client: &lt;HOST&gt;, server: \S+, request: "\S+ \S+ HTTP/\d+\.\d+", host: "\S+"\s*$</span></div><div class="line">                ^ \[error\] \d+<span class="comment">#\d+: \*\d+ no user/password was provided for basic authentication, client: &lt;HOST&gt;, server: \S+, request: "\S+ \S+ HTTP/\d+\.\d+", host: "\S+"\s*$</span></div></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo cp /etc/fail2ban/filter.d/apache-badbots.conf /etc/fail2ban/filter.d/nginx-badbots.conf</div><div class="line"><span class="built_in">cd</span> /etc/fail2ban/filter.d</div><div class="line">sudo nano nginx-nohome.conf</div></pre></td></tr></table></figure>
@@ -117,6 +163,12 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">location /wp-admin &#123;</div><div class="line">      auth_basic <span class="string">"Restricted"</span>;</div><div class="line">      auth_basic_user_file /etc/nginx/.htpasswd;</div><div class="line">&#125;</div><div class="line"></div><div class="line">location /wp-admin/admin-ajax.php &#123;</div><div class="line">     allow all;</div><div class="line">&#125;</div><div class="line"></div><div class="line">location = /wp-login.php &#123;</div><div class="line">    auth_basic <span class="string">"Restricted"</span>;</div><div class="line">    auth_basic_user_file /etc/nginx/.htpasswd;</div><div class="line">    include fastcgi_params;</div><div class="line">    fastcgi_pass unix:/run/php/php7.0-fpm.sock;</div><div class="line">    fastcgi_param SCRIPT_FILENAME <span class="variable">$document_root</span><span class="variable">$fastcgi_script_name</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>Disable xml-rpc.php by using plugin:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">wp plugin install <span class="built_in">disable</span>-xml-rpc</div><div class="line">wp plugin activate <span class="built_in">disable</span>-xml-rpc</div><div class="line">sudo service nginx restart</div></pre></td></tr></table></figure>
+<h3 id="Disable-ping-responses"><a href="#Disable-ping-responses" class="headerlink" title="Disable ping responses"></a>Disable ping responses</h3><p>To temporarily disable ping, under root run:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> 1 &gt; /proc/sys/net/ipv4/icmp_echo_ignore_all</div></pre></td></tr></table></figure>
+<p>To permanently disable ping:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /etc/sysctl.conf</div></pre></td></tr></table></figure>
+<p>Then add: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">net.ipv4.icmp_echo_ignore_all = 1</div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
@@ -834,34 +886,6 @@ $("#text").
       <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
     
       <category term="proxy server" scheme="https://www.yuxifan.com/tags/proxy-server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu apt problem and solution</title>
-    <link href="https://www.yuxifan.com/2016/10/24/ubuntu-apt-update-problems-and-solutions/"/>
-    <id>https://www.yuxifan.com/2016/10/24/ubuntu-apt-update-problems-and-solutions/</id>
-    <published>2016-10-24T08:51:12.000Z</published>
-    <updated>2016-10-26T10:54:53.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/linux/apt.jpg" alt=""></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">While running sudo apt-get update, I was hitting this problem:</div><div class="line"></div><div class="line">W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. GPG error: http://apt.puppetlabs.com precise Release: The following signatures couldn<span class="string">'t be verified because the public key is not available: NO_PUBKEY 7F438280EF8D349F</span></div><div class="line"></div><div class="line">W: Failed to fetch http://apt.puppetlabs.com/dists/precise/Release</div><div class="line"></div><div class="line">W: Some index files failed to download. They have been ignored, or old ones used instead.</div></pre></td></tr></table></figure>
-<p>The solution is to run the following commands:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys </div><div class="line">sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7F438280EF8D349F</div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/linux/apt.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;
-    
-    </summary>
-    
-      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
-    
-      <category term="apt" scheme="https://www.yuxifan.com/tags/apt/"/>
     
   </entry>
   
