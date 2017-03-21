@@ -855,7 +855,7 @@ $("#text").
     <link href="https://www.yuxifan.com/2016/10/31/how-to-configure-a-proxy-server-in-ubuntu-step-by-step/"/>
     <id>https://www.yuxifan.com/2016/10/31/how-to-configure-a-proxy-server-in-ubuntu-step-by-step/</id>
     <published>2016-10-31T09:51:12.000Z</published>
-    <updated>2017-03-21T10:05:14.000Z</updated>
+    <updated>2017-03-21T10:10:01.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/linux/proxy-server.jpg" alt=""></p>
 <p>Sometimes people wants to get access to their favorite websites while they are travelling. As some websites are blocked in some countries. Here is the step by step tutorial on how to configure a proxy server on ubuntu.</p>
@@ -867,7 +867,7 @@ $("#text").
 <p>Run server:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nohup ssserver -c proxy/config.json</div></pre></td></tr></table></figure>
 <p>You may need to add a new firewall rule if you use ufw:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ufw status</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ufw allow 8888</div></pre></td></tr></table></figure>
 <h2 id="Configure-client-software"><a href="#Configure-client-software" class="headerlink" title="Configure client software"></a>Configure client software</h2><p>Download client from: <a href="https://shadowsocks.org/en/download/clients.html" rel="external nofollow" target="_blank">https://shadowsocks.org/en/download/clients.html</a></p>
 <p>Configure proxy client as showing in the following screen dump:</p>
 <p><img src="/images/linux/proxy-client.jpg" alt=""></p>
