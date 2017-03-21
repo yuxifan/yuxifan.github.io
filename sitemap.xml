@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2016/10/31/how-to-configure-a-proxy-server-in-ubuntu-step-by-step/</loc>
+    
+    <lastmod>2017-03-21T10:05:14.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2017/03/14/suppport-multiple-domains-in-nginx/</loc>
     
     <lastmod>2017-03-14T12:55:15.000Z</lastmod>
@@ -180,13 +187,6 @@
     <loc>https://www.yuxifan.com/2016/11/04/multi-phases-xslt-processing/</loc>
     
     <lastmod>2016-11-04T16:34:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/10/31/how-to-configure-a-proxy-server-in-ubuntu-step-by-step/</loc>
-    
-    <lastmod>2016-11-01T10:10:18.000Z</lastmod>
     
   </url>
   
