@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-03-14T12:55:15.000Z</updated>
+  <updated>2017-05-05T14:23:12.000Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Install Android Nougat into Samsung Galaxy S5 step by step</title>
+    <link href="https://www.yuxifan.com/2017/05/04/install-android-nougat-into-galaxy-s5/"/>
+    <id>https://www.yuxifan.com/2017/05/04/install-android-nougat-into-galaxy-s5/</id>
+    <published>2017-05-04T20:51:12.000Z</published>
+    <updated>2017-05-05T14:23:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/mobile/s5/android-nougat.jpg" alt="Android Nougat"></p>
+<h2 id="1-Install-Odin-to-Windows-PC"><a href="#1-Install-Odin-to-Windows-PC" class="headerlink" title="1) Install Odin to Windows PC"></a>1) Install Odin to Windows PC</h2><p>Download Odin from: <a href="http://odindownload.com/SamsungOdin/" rel="external nofollow" target="_blank">http://odindownload.com/SamsungOdin/</a></p>
+<p>Extract download Odin zip file to Windows PC, then double click app to run it:</p>
+<p><img src="/images/mobile/s5/odin.jpg" alt="Install odin"></p>
+<h2 id="2-Install-TWRP"><a href="#2-Install-TWRP" class="headerlink" title="2) Install TWRP"></a>2) Install TWRP</h2><p>Download TWRP to your PC from: <a href="https://twrp.me/" rel="external nofollow" target="_blank">https://twrp.me/</a></p>
+<p><img src="/images/mobile/s5/odin-2.jpg" alt="Install TWRP in odin"></p>
+<p>Switch off your phone and press Volume up + Home + Power to Download mode. Connect your phone to PC via USB cable, then Odin should detect your phone. Now press ‘Start’ to flash TWRP to your phone.</p>
+<p>Power off your phone. </p>
+<h2 id="3-Install-Cyanogenmod-14-1-and-GAPPS-7-1"><a href="#3-Install-Cyanogenmod-14-1-and-GAPPS-7-1" class="headerlink" title="3) Install Cyanogenmod 14.1 and GAPPS 7.1"></a>3) Install Cyanogenmod 14.1 and GAPPS 7.1</h2><p>Download Cyanogenmod(CM) 14.1 from: <a href="http://mirror41.download.highonandroid.com/download/CM14.1/GalaxyS5/" rel="external nofollow" target="_blank">http://mirror41.download.highonandroid.com/download/CM14.1/GalaxyS5/</a><br>Download GAPPS 7.1 from: <a href="http://opengapps.org/" rel="external nofollow" target="_blank">http://opengapps.org/</a></p>
+<p><strong>NB</strong>: I have tried the recommended version of GAPPS, e.g. ‘stock’ but it won’t work in my phone and gives me “Unfortunately, Google Play Services has stopped “ error. When I switched to the minimal version, e.g. ‘pico’, it works fine.</p>
+<p>Copy downloaded GAPPS and Cyanogenmod zip files into your phone’s SD card. </p>
+<p>Now press Volume up + Home + Power to enter TWRP screen. Then Wipe your phone and install from Cyanogenmod and GAPPS zip files. </p>
+<p>Restart your phone and it’s ready to use!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/mobile/s5/android-nougat.jpg&quot; alt=&quot;Android Nougat&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-Install-Odin-to-Windows-PC&quot;&gt;&lt;a href=&quot;#1-Install-Odin-
+    
+    </summary>
+    
+      <category term="mobile" scheme="https://www.yuxifan.com/categories/mobile/"/>
+    
+    
+      <category term="odin" scheme="https://www.yuxifan.com/tags/odin/"/>
+    
+      <category term="twrp" scheme="https://www.yuxifan.com/tags/twrp/"/>
+    
+      <category term="cyanogenmod" scheme="https://www.yuxifan.com/tags/cyanogenmod/"/>
+    
+      <category term="gapps" scheme="https://www.yuxifan.com/tags/gapps/"/>
+    
+      <category term="samsung" scheme="https://www.yuxifan.com/tags/samsung/"/>
+    
+  </entry>
   
   <entry>
     <title>Host multiple domains in Nginx</title>
@@ -847,47 +891,6 @@ $("#text").
     
     
       <category term="xslt" scheme="https://www.yuxifan.com/tags/xslt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to configure a proxy server in ubuntu - step by step</title>
-    <link href="https://www.yuxifan.com/2016/10/31/how-to-configure-a-proxy-server-in-ubuntu-step-by-step/"/>
-    <id>https://www.yuxifan.com/2016/10/31/how-to-configure-a-proxy-server-in-ubuntu-step-by-step/</id>
-    <published>2016-10-31T09:51:12.000Z</published>
-    <updated>2017-03-21T10:10:01.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/linux/proxy-server.jpg" alt=""></p>
-<p>Sometimes people wants to get access to their favorite websites while they are travelling. As some websites are blocked in some countries. Here is the step by step tutorial on how to configure a proxy server on ubuntu.</p>
-<h2 id="Get-a-VPS-server"><a href="#Get-a-VPS-server" class="headerlink" title="Get a VPS server"></a>Get a VPS server</h2><p>First you need to get a VPS server up and running. I recommend <a href="http://bit.ly/2d1U9rx" rel="external nofollow" target="_blank">Vultr’s</a>  $5 plan. </p>
-<h2 id="Install-server-software"><a href="#Install-server-software" class="headerlink" title="Install server software"></a>Install server software</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install python-gevent python</div><div class="line">sudo apt-get install python-pip</div><div class="line">sudo pip install setuptools</div><div class="line">sudo pip install shadowsocks</div></pre></td></tr></table></figure>
-<p>Then create the configuration file:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~</div><div class="line">mkdir proxy</div><div class="line">nano proxy/config.json</div></pre></td></tr></table></figure>
-<p>The content  is:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;server&quot;:&quot;YOUR_VPS_IP&quot;,</div><div class="line">  &quot;server_port&quot;:8888,</div><div class="line">  &quot;local_port&quot;:1080,</div><div class="line">  &quot;password&quot;:&quot;YOUR_PROXY_SERVER_PASSWORD&quot;,</div><div class="line">  &quot;timeout&quot;:600,</div><div class="line">  &quot;method&quot;:&quot;aes-256-cfb&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>Run server:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nohup ssserver -c proxy/config.json</div></pre></td></tr></table></figure>
-<p>You may need to add a new firewall rule if you use ufw:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ufw allow 8888</div></pre></td></tr></table></figure>
-<h2 id="Configure-client-software"><a href="#Configure-client-software" class="headerlink" title="Configure client software"></a>Configure client software</h2><p>Download client from: <a href="https://shadowsocks.org/en/download/clients.html" rel="external nofollow" target="_blank">https://shadowsocks.org/en/download/clients.html</a></p>
-<p>Configure proxy client as showing in the following screen dump:</p>
-<p><img src="/images/linux/proxy-client.jpg" alt=""></p>
-<p>Then right client the proxy client application icon in the task bar and tick ‘Enable system Proxy’</p>
-<p><strong>Enjoy free browsing now!</strong></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/linux/proxy-server.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Sometimes people wants to get access to their favorite websites while they are t
-    
-    </summary>
-    
-      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
-    
-      <category term="proxy server" scheme="https://www.yuxifan.com/tags/proxy-server/"/>
     
   </entry>
   
