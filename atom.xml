@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-05-10T08:40:03.000Z</updated>
+  <updated>2017-06-16T10:17:52.230Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://www.yuxifan.com/2017/05/09/how-to-remove-ads-from-android-charging-screen/"/>
     <id>https://www.yuxifan.com/2017/05/09/how-to-remove-ads-from-android-charging-screen/</id>
     <published>2017-05-09T20:51:12.000Z</published>
-    <updated>2017-05-10T08:40:03.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/mobile/android-charging-screen-ads.jpg" alt="Android lock screen ads"></p>
 <p>Recently a large number of users have been complaining that while charging their Android phone, instead of just showing date, time, battery status, the screen also shows advertisements. </p>
@@ -47,17 +47,17 @@
     <link href="https://www.yuxifan.com/2017/05/04/install-android-nougat-into-galaxy-s5/"/>
     <id>https://www.yuxifan.com/2017/05/04/install-android-nougat-into-galaxy-s5/</id>
     <published>2017-05-04T20:51:12.000Z</published>
-    <updated>2017-05-05T14:23:12.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/mobile/s5/android-nougat.jpg" alt="Android Nougat"></p>
-<h2 id="1-Install-Odin-to-Windows-PC"><a href="#1-Install-Odin-to-Windows-PC" class="headerlink" title="1) Install Odin to Windows PC"></a>1) Install Odin to Windows PC</h2><p>Download Odin from: <a href="http://odindownload.com/SamsungOdin/" rel="external nofollow" target="_blank">http://odindownload.com/SamsungOdin/</a></p>
+<h2 id="1-Install-Odin-to-Windows-PC"><a href="#1-Install-Odin-to-Windows-PC" class="headerlink" title="1) Install Odin to Windows PC"></a>1) Install Odin to Windows PC</h2><p>Download Odin from: <a href="http://odindownload.com/SamsungOdin/" rel="external nofollow noopener noreferrer" target="_blank">http://odindownload.com/SamsungOdin/</a></p>
 <p>Extract download Odin zip file to Windows PC, then double click app to run it:</p>
 <p><img src="/images/mobile/s5/odin.jpg" alt="Install odin"></p>
-<h2 id="2-Install-TWRP"><a href="#2-Install-TWRP" class="headerlink" title="2) Install TWRP"></a>2) Install TWRP</h2><p>Download TWRP to your PC from: <a href="https://twrp.me/" rel="external nofollow" target="_blank">https://twrp.me/</a></p>
+<h2 id="2-Install-TWRP"><a href="#2-Install-TWRP" class="headerlink" title="2) Install TWRP"></a>2) Install TWRP</h2><p>Download TWRP to your PC from: <a href="https://twrp.me/" rel="external nofollow noopener noreferrer" target="_blank">https://twrp.me/</a></p>
 <p><img src="/images/mobile/s5/odin-2.jpg" alt="Install TWRP in odin"></p>
 <p>Switch off your phone and press Volume up + Home + Power to Download mode. Connect your phone to PC via USB cable, then Odin should detect your phone. Now press ‘Start’ to flash TWRP to your phone.</p>
 <p>Power off your phone. </p>
-<h2 id="3-Install-Cyanogenmod-14-1-and-GAPPS-7-1"><a href="#3-Install-Cyanogenmod-14-1-and-GAPPS-7-1" class="headerlink" title="3) Install Cyanogenmod 14.1 and GAPPS 7.1"></a>3) Install Cyanogenmod 14.1 and GAPPS 7.1</h2><p>Download Cyanogenmod(CM) 14.1 from: <a href="http://mirror41.download.highonandroid.com/download/CM14.1/GalaxyS5/" rel="external nofollow" target="_blank">http://mirror41.download.highonandroid.com/download/CM14.1/GalaxyS5/</a><br>Download GAPPS 7.1 from: <a href="http://opengapps.org/" rel="external nofollow" target="_blank">http://opengapps.org/</a></p>
+<h2 id="3-Install-Cyanogenmod-14-1-and-GAPPS-7-1"><a href="#3-Install-Cyanogenmod-14-1-and-GAPPS-7-1" class="headerlink" title="3) Install Cyanogenmod 14.1 and GAPPS 7.1"></a>3) Install Cyanogenmod 14.1 and GAPPS 7.1</h2><p>Download Cyanogenmod(CM) 14.1 from: <a href="http://mirror41.download.highonandroid.com/download/CM14.1/GalaxyS5/" rel="external nofollow noopener noreferrer" target="_blank">http://mirror41.download.highonandroid.com/download/CM14.1/GalaxyS5/</a><br>Download GAPPS 7.1 from: <a href="http://opengapps.org/" rel="external nofollow noopener noreferrer" target="_blank">http://opengapps.org/</a></p>
 <p><strong>NB</strong>: I have tried the recommended version of GAPPS, e.g. ‘stock’ but it won’t work in my phone and gives me “Unfortunately, Google Play Services has stopped “ error. When I switched to the minimal version, e.g. ‘pico’, it works fine.</p>
 <p>Copy downloaded GAPPS and Cyanogenmod zip files into your phone’s SD card. </p>
 <p>Now press Volume up + Home + Power to enter TWRP screen. Then Wipe your phone and install from Cyanogenmod and GAPPS zip files. </p>
@@ -91,7 +91,7 @@
     <link href="https://www.yuxifan.com/2017/03/14/suppport-multiple-domains-in-nginx/"/>
     <id>https://www.yuxifan.com/2017/03/14/suppport-multiple-domains-in-nginx/</id>
     <published>2017-03-14T05:51:12.000Z</published>
-    <updated>2017-03-14T12:55:15.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/linux/nginx.jpg" alt="Host multiple domains in Nginx"></p>
 <p>By default, Nginx on Ubuntu 16.04 has one server block enabled by default. It is configured to serve documents at /var/www/html.</p>
@@ -102,7 +102,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">        listen 80;</div><div class="line">        listen [::]:80;</div><div class="line"></div><div class="line">        root /var/www/DOMAIN-1/html;</div><div class="line"></div><div class="line">        index index.html index.htm;</div><div class="line"></div><div class="line">        server_name www.DOMAIN-1.com;</div><div class="line"></div><div class="line">        location / &#123;</div><div class="line">                try_files <span class="variable">$uri</span> <span class="variable">$uri</span>/ =404;</div><div class="line">        &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>File: /etc/nginx/sites-available/DOMAIN-2.com</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">        listen 80;</div><div class="line">        listen [::]:80;</div><div class="line"></div><div class="line">        root /var/www/DOMAIN-2/html;</div><div class="line"></div><div class="line">        index index.html index.htm;</div><div class="line"></div><div class="line">        server_name www.DOMAIN-2.com;</div><div class="line"></div><div class="line">        location / &#123;</div><div class="line">                try_files <span class="variable">$uri</span> <span class="variable">$uri</span>/ =404;</div><div class="line">        &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>Run:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo ln <span class="_">-s</span> /etc/nginx/sites-available/DOMAIN-1.com /etc/nginx/sites-enabled/</div><div class="line">sudo ln <span class="_">-s</span> /etc/nginx/sites-available/DOMAIN-2.com /etc/nginx/sites-enabled/</div></pre></td></tr></table></figure></p>
+<p>Run:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /etc/nginx/sites-available/DOMAIN-1.com /etc/nginx/sites-enabled/</div><div class="line">sudo ln -s /etc/nginx/sites-available/DOMAIN-2.com /etc/nginx/sites-enabled/</div></pre></td></tr></table></figure></p>
 <p>In order to avoid a possible hash bucket memory problem while adding additional server names, modify /etc/nginx/nginx.conf. </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /etc/nginx/nginx.conf</div></pre></td></tr></table></figure>
 <p>Uncomment this line:</p>
@@ -136,13 +136,13 @@
     <link href="https://www.yuxifan.com/2017/02/28/install-lemp-and-wordpress-in-ubuntu-16-lts/"/>
     <id>https://www.yuxifan.com/2017/02/28/install-lemp-and-wordpress-in-ubuntu-16-lts/</id>
     <published>2017-02-28T05:51:12.000Z</published>
-    <updated>2017-03-14T12:05:43.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/linux/lemp-wordpress.jpg" alt="Install LEMP + Wordpress in Ubuntu 16.04 LTS"></p>
 <h2 id="User-and-authentications"><a href="#User-and-authentications" class="headerlink" title="User and authentications"></a>User and authentications</h2><h3 id="Create-user"><a href="#Create-user" class="headerlink" title="Create user"></a>Create user</h3><p>Login as root</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">adduser --gecos <span class="string">""</span> yuxi   [OR YOUR_USER_NAME]</div><div class="line">gpasswd <span class="_">-a</span> yuxi sudo</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">adduser --gecos <span class="string">""</span> yuxi   [OR YOUR_USER_NAME]</div><div class="line">gpasswd -a yuxi sudo</div></pre></td></tr></table></figure>
 <p>OR</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">usermod <span class="_">-a</span>G sudo yuxi</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">usermod -aG sudo yuxi</div></pre></td></tr></table></figure>
 <p>Get your public keys ready, e.g. running “ssh-keygen” in Linux machines which will be connecting to your WP server via SSH.</p>
 <p>Login as the new user just being created, and type:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mkdir ~/.ssh</div><div class="line">chmod 700 ~/.ssh</div><div class="line">touch ~/.ssh/authorized_keys</div><div class="line">chmod 600 ~/.ssh/authorized_keys</div></pre></td></tr></table></figure>
@@ -156,9 +156,9 @@
 <p>Reload sshd service:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl reload sshd</div></pre></td></tr></table></figure>
 <h3 id="Basic-firewall-settings"><a href="#Basic-firewall-settings" class="headerlink" title="Basic firewall settings"></a>Basic firewall settings</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo ufw <span class="built_in">enable</span></div><div class="line">sudo ufw delete allow OpenSSH</div><div class="line">sudo ufw allow from any to any port 2224</div><div class="line">sudo ufw status</div></pre></td></tr></table></figure>
-<h2 id="System"><a href="#System" class="headerlink" title="System"></a>System</h2><h3 id="Basic-libraries"><a href="#Basic-libraries" class="headerlink" title="Basic libraries"></a>Basic libraries</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -qq -y curl </div><div class="line">sudo apt-get install -qq -y lynx-cur</div><div class="line">sudo apt-get install -qq -y git</div><div class="line">sudo apt-get install -qq -y whois</div><div class="line">sudo apt-get install -qq -y apache2-utils</div><div class="line">sudo apt-get install -qq -y unzip</div><div class="line">sudo -H -u root bash -c <span class="string">"echo 'Europe/London' &gt; /etc/timezone"</span> </div><div class="line">sudo dpkg-reconfigure <span class="_">-f</span> noninteractive tzdata </div><div class="line">sudo apt-get install -qq -y ntp &gt; /dev/null 2&gt;err.log </div><div class="line"></div><div class="line">git config --global user.email <span class="string">"YOUR_EMAIL"</span></div><div class="line">git config --global user.name  <span class="string">"YOUR NAME"</span></div></pre></td></tr></table></figure>
+<h2 id="System"><a href="#System" class="headerlink" title="System"></a>System</h2><h3 id="Basic-libraries"><a href="#Basic-libraries" class="headerlink" title="Basic libraries"></a>Basic libraries</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -qq -y curl </div><div class="line">sudo apt-get install -qq -y lynx-cur</div><div class="line">sudo apt-get install -qq -y git</div><div class="line">sudo apt-get install -qq -y whois</div><div class="line">sudo apt-get install -qq -y apache2-utils</div><div class="line">sudo apt-get install -qq -y unzip</div><div class="line">sudo -H -u root bash -c <span class="string">"echo 'Europe/London' &gt; /etc/timezone"</span> </div><div class="line">sudo dpkg-reconfigure -f noninteractive tzdata </div><div class="line">sudo apt-get install -qq -y ntp &gt; /dev/null 2&gt;err.log </div><div class="line"></div><div class="line">git config --global user.email <span class="string">"YOUR_EMAIL"</span></div><div class="line">git config --global user.name  <span class="string">"YOUR NAME"</span></div></pre></td></tr></table></figure>
 <h3 id="Swap-space"><a href="#Swap-space" class="headerlink" title="Swap space"></a>Swap space</h3><p>You may want to create a swap space:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo fallocate <span class="_">-l</span> <span class="variable">$SWAP_SPACE_SIZE</span> /swapfile</div><div class="line">sudo chmod 600 /swapfile</div><div class="line">sudo mkswap /swapfile</div><div class="line">sudo swapon /swapfile</div><div class="line">sudo sh -c <span class="string">'echo "/swapfile none swap sw 0 0" &gt;&gt; /etc/fstab'</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo fallocate -l <span class="variable">$SWAP_SPACE_SIZE</span> /swapfile</div><div class="line">sudo chmod 600 /swapfile</div><div class="line">sudo mkswap /swapfile</div><div class="line">sudo swapon /swapfile</div><div class="line">sudo sh -c <span class="string">'echo "/swapfile none swap sw 0 0" &gt;&gt; /etc/fstab'</span></div></pre></td></tr></table></figure>
 <h2 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install nginx</div><div class="line">sudo ufw allow <span class="string">'Nginx HTTP'</span></div></pre></td></tr></table></figure>
 <p>To find out the IP of VM, run:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ip addr show eth0 | grep inet | awk <span class="string">'&#123; print $2; &#125;'</span> | sed <span class="string">'s/\/.*$//'</span></div></pre></td></tr></table></figure>
@@ -183,15 +183,15 @@
 <p>Reload:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl reload nginx</div></pre></td></tr></table></figure>
 <p>Install Wordpress</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /tmp</div><div class="line">curl -O https://wordpress.org/latest.tar.gz</div><div class="line">tar xvf latest.tar.gz</div><div class="line">cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php</div><div class="line">sudo cp <span class="_">-a</span> /tmp/wordpress/. /var/www/html</div><div class="line">mkdir  /var/www/html/wp-content/uploads</div><div class="line">mkdir  /var/www/html/wp-content/upgrade</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /tmp</div><div class="line">curl -O https://wordpress.org/latest.tar.gz</div><div class="line">tar xvf latest.tar.gz</div><div class="line">cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php</div><div class="line">sudo cp -a /tmp/wordpress/. /var/www/html</div><div class="line">mkdir  /var/www/html/wp-content/uploads</div><div class="line">mkdir  /var/www/html/wp-content/upgrade</div></pre></td></tr></table></figure>
 <p>Change permissions:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chown -R yuxi:www-data /var/www/html</div></pre></td></tr></table></figure></p>
-<p>Next, we will set the setgid bit on each of the directories within the document root. This causes new files created within these directories to inherit the group of the parent directory (which we just set to www-data) instead of the creating user’s primary group.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo find /var/www/html -type d -exec chmod g+s &#123;&#125; \;</div></pre></td></tr></table></figure></p>
+<p>Next, we will set the setgid bit on each of the directories within the document root. This causes new files created within these directories to inherit the group of the parent directory (which we just set to www-data) instead of the creating user’s primary group.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo find /var/www/html -<span class="built_in">type</span> d -<span class="built_in">exec</span> chmod g+s &#123;&#125; \;</div></pre></td></tr></table></figure></p>
 <p>There are a few other fine-grained permissions we’ll adjust. First, we’ll give group write access to the wp-content directory so that the web interface can make theme and plugin changes:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chmod g+w /var/www/html/wp-content</div></pre></td></tr></table></figure></p>
 <p>As part of this process, we will give the web server write access to all of the content in these two directories:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo chmod -R g+w /var/www/html/wp-content/themes</div><div class="line">sudo chmod -R g+w /var/www/html/wp-content/plugins</div></pre></td></tr></table></figure>
 <p>When we open the file, our first order of business will be to adjust some secret keys to provide some security for our installation. WordPress provides a secure generator for these values so that you do not have to try to come up with good values on your own.</p>
 <p>To grab secure values from the WordPress secret key generator, type:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl <span class="_">-s</span> https://api.wordpress.org/secret-key/1.1/salt/</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -s https://api.wordpress.org/secret-key/1.1/salt/</div></pre></td></tr></table></figure>
 <p>Open /var/www/html/wp-config.php,  update these lines with the keys just being generated:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">define(<span class="string">'AUTH_KEY'</span>,         <span class="string">'put your unique phrase here'</span>);</div><div class="line">define(<span class="string">'SECURE_AUTH_KEY'</span>,  <span class="string">'put your unique phrase here'</span>);</div><div class="line">define(<span class="string">'LOGGED_IN_KEY'</span>,    <span class="string">'put your unique phrase here'</span>);</div><div class="line">define(<span class="string">'NONCE_KEY'</span>,        <span class="string">'put your unique phrase here'</span>);</div><div class="line">define(<span class="string">'AUTH_SALT'</span>,        <span class="string">'put your unique phrase here'</span>);</div><div class="line">define(<span class="string">'SECURE_AUTH_SALT'</span>, <span class="string">'put your unique phrase here'</span>);</div><div class="line">define(<span class="string">'LOGGED_IN_SALT'</span>,   <span class="string">'put your unique phrase here'</span>);</div><div class="line">define(<span class="string">'NONCE_SALT'</span>,       <span class="string">'put your unique phrase here'</span>);</div></pre></td></tr></table></figure></p>
 <p>Config database: change the following lines in /var/www/html/wp-config.php:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">define(<span class="string">'DB_NAME'</span>, <span class="string">'wordpress'</span>);</div><div class="line">define(<span class="string">'DB_USER'</span>, <span class="string">'wordpressuser'</span>);</div><div class="line">define(<span class="string">'DB_PASSWORD'</span>, <span class="string">'password'</span>);</div></pre></td></tr></table></figure>
@@ -265,7 +265,7 @@
     <link href="https://www.yuxifan.com/2017/02/23/config-tomcat-session-timeout/"/>
     <id>https://www.yuxifan.com/2017/02/23/config-tomcat-session-timeout/</id>
     <published>2017-02-23T09:51:12.000Z</published>
-    <updated>2017-02-23T15:05:32.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/java/tomcat.png" alt="Where to config Tomcat session timeout"></p>
 <p>There are three places to config Tomcat web application session timeout:</p>
@@ -293,10 +293,10 @@
     <link href="https://www.yuxifan.com/2017/01/29/parse-excel-spreadsheet-in-ruby/"/>
     <id>https://www.yuxifan.com/2017/01/29/parse-excel-spreadsheet-in-ruby/</id>
     <published>2017-01-29T02:10:12.000Z</published>
-    <updated>2017-01-30T10:34:47.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/ruby/excel.png" alt="parse excel spreadsheet in Ruby"></p>
-<p>First, install this gem: <a href="https://github.com/roo-rb/roo" rel="external nofollow" target="_blank">Roo</a></p>
+<p>First, install this gem: <a href="https://github.com/roo-rb/roo" rel="external nofollow noopener noreferrer" target="_blank">Roo</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem install roo</div></pre></td></tr></table></figure>
 <p>Then, use classes/methods provided in Roo to access Excel data, e.g. there is my example to iterate Excel spreadsheet data.</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># gem install roo</span></div><div class="line"></div><div class="line"><span class="keyword">require</span> <span class="string">'roo'</span></div><div class="line"></div><div class="line">xsl = Roo::Spreadsheet.open(<span class="string">'./test1.xlsx'</span>)</div><div class="line"></div><div class="line">xsl.sheets.each <span class="keyword">do</span> <span class="params">|sheet_name|</span></div><div class="line">  puts <span class="string">''</span></div><div class="line">  puts sheet_name</div><div class="line">  puts <span class="string">'--------------'</span></div><div class="line">  sheet = xsl.sheet(sheet_name)</div><div class="line"></div><div class="line">  <span class="keyword">if</span> !sheet.<span class="literal">nil</span>?</div><div class="line">    last_row    = sheet.last_row</div><div class="line">    last_column = sheet.last_column</div><div class="line"></div><div class="line">    <span class="keyword">if</span> !last_row.<span class="literal">nil</span>? <span class="keyword">and</span> !last_column.<span class="literal">nil</span>?</div><div class="line">      <span class="keyword">for</span> row <span class="keyword">in</span> <span class="number">1</span>..last_row</div><div class="line">        <span class="keyword">for</span> col <span class="keyword">in</span> <span class="number">1</span>..last_column</div><div class="line">          v = sheet.cell(row, col)</div><div class="line"></div><div class="line">          <span class="keyword">if</span> v.<span class="literal">nil</span>?</div><div class="line">            puts <span class="string">"NIL"</span></div><div class="line">          <span class="keyword">else</span></div><div class="line">            puts <span class="string">"["</span>+row.to_s+<span class="string">","</span>+col.to_s+<span class="string">"]: "</span> + sheet.cell(row, col)</div><div class="line">          <span class="keyword">end</span></div><div class="line">        <span class="keyword">end</span></div><div class="line">      <span class="keyword">end</span></div><div class="line">    <span class="keyword">else</span></div><div class="line">      puts <span class="string">'Seems no data in sheet: '</span> + sheet_name</div><div class="line">    <span class="keyword">end</span></div><div class="line">  <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
@@ -325,13 +325,13 @@
     <link href="https://www.yuxifan.com/2017/01/27/ssl-certificate-problem-for-ruby-gems-and-solution/"/>
     <id>https://www.yuxifan.com/2017/01/27/ssl-certificate-problem-for-ruby-gems-and-solution/</id>
     <published>2017-01-27T02:10:12.000Z</published>
-    <updated>2017-01-27T10:17:37.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/ruby/ssl.png" alt="SSL Certificate"></p>
 <p>While running bundle install in my rails application, I have seen this error message:</p>
-<p>Fetching source index from <a href="https://rubygems.org/" rel="external nofollow" target="_blank">https://rubygems.org/</a><br>Retrying fetcher due to error (2/4): Bundler::Fetcher::CertificateFailureError Could not verify the SSL certificate for <a href="https://rubygems.org/" rel="external nofollow" target="_blank">https://rubygems.org/</a>.<br>There is a chance you are experiencing a man-in-the-middle attack, but most likely your system doesn’t have the CA certificates needed for verification. For information about OpenSSL certificates, see <a href="http://bit.ly/ruby-ssl" rel="external nofollow" target="_blank">http://bit.ly/ruby-ssl</a>. To connect without using SSL, edit your Gemfile sources and change ‘https’ to ‘http’.<br>Retrying fetcher due to error (3/4): Bundler::Fetcher::CertificateFailureError Could not verify the SSL certificate for <a href="https://rubygems.org/" rel="external nofollow" target="_blank">https://rubygems.org/</a>.<br>There is a chance you are experiencing a man-in-the-middle attack, but most likely your system doesn’t have the CA certificates needed for verification. For information about OpenSSL certificates, see <a href="http://bit.ly/ruby-ssl" rel="external nofollow" target="_blank">http://bit.ly/ruby-ssl</a>. To connect without using SSL, edit your Gemfile sources and change ‘https’ to ‘http’.<br>Retrying fetcher due to error (4/4): Bundler::Fetcher::CertificateFailureError Could not verify the SSL certificate for <a href="https://rubygems.org/" rel="external nofollow" target="_blank">https://rubygems.org/</a>.<br>There is a chance you are experiencing a man-in-the-middle attack, but most likely your system doesn’t have the CA certificates needed for verification. For information about OpenSSL certificates, see <a href="http://bit.ly/ruby-ssl" rel="external nofollow" target="_blank">http://bit.ly/ruby-ssl</a>. To connect without using SSL, edit your Gemfile sources and change ‘https’ to ‘http’.<br>Could not verify the SSL certificate for <a href="https://rubygems.org/" rel="external nofollow" target="_blank">https://rubygems.org/</a>.<br>There is a chance you are experiencing a man-in-the-middle attack, but most likely your system doesn’t have the CA certificates needed for verification. For information about OpenSSL certificates, see <a href="http://bit.ly/ruby-ssl" rel="external nofollow" target="_blank">http://bit.ly/ruby-ssl</a>. To connect<br>without using SSL, edit your Gemfile sources and change ‘https’ to ‘http’.</p>
+<p>Fetching source index from <a href="https://rubygems.org/" rel="external nofollow noopener noreferrer" target="_blank">https://rubygems.org/</a><br>Retrying fetcher due to error (2/4): Bundler::Fetcher::CertificateFailureError Could not verify the SSL certificate for <a href="https://rubygems.org/" rel="external nofollow noopener noreferrer" target="_blank">https://rubygems.org/</a>.<br>There is a chance you are experiencing a man-in-the-middle attack, but most likely your system doesn’t have the CA certificates needed for verification. For information about OpenSSL certificates, see <a href="http://bit.ly/ruby-ssl" rel="external nofollow noopener noreferrer" target="_blank">http://bit.ly/ruby-ssl</a>. To connect without using SSL, edit your Gemfile sources and change ‘https’ to ‘http’.<br>Retrying fetcher due to error (3/4): Bundler::Fetcher::CertificateFailureError Could not verify the SSL certificate for <a href="https://rubygems.org/" rel="external nofollow noopener noreferrer" target="_blank">https://rubygems.org/</a>.<br>There is a chance you are experiencing a man-in-the-middle attack, but most likely your system doesn’t have the CA certificates needed for verification. For information about OpenSSL certificates, see <a href="http://bit.ly/ruby-ssl" rel="external nofollow noopener noreferrer" target="_blank">http://bit.ly/ruby-ssl</a>. To connect without using SSL, edit your Gemfile sources and change ‘https’ to ‘http’.<br>Retrying fetcher due to error (4/4): Bundler::Fetcher::CertificateFailureError Could not verify the SSL certificate for <a href="https://rubygems.org/" rel="external nofollow noopener noreferrer" target="_blank">https://rubygems.org/</a>.<br>There is a chance you are experiencing a man-in-the-middle attack, but most likely your system doesn’t have the CA certificates needed for verification. For information about OpenSSL certificates, see <a href="http://bit.ly/ruby-ssl" rel="external nofollow noopener noreferrer" target="_blank">http://bit.ly/ruby-ssl</a>. To connect without using SSL, edit your Gemfile sources and change ‘https’ to ‘http’.<br>Could not verify the SSL certificate for <a href="https://rubygems.org/" rel="external nofollow noopener noreferrer" target="_blank">https://rubygems.org/</a>.<br>There is a chance you are experiencing a man-in-the-middle attack, but most likely your system doesn’t have the CA certificates needed for verification. For information about OpenSSL certificates, see <a href="http://bit.ly/ruby-ssl" rel="external nofollow noopener noreferrer" target="_blank">http://bit.ly/ruby-ssl</a>. To connect<br>without using SSL, edit your Gemfile sources and change ‘https’ to ‘http’.</p>
 <p>Here is the solution for this problem:</p>
-<h2 id="Update-gem-version"><a href="#Update-gem-version" class="headerlink" title="Update gem version"></a>Update gem version</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /var/tmp</div><div class="line">wget --no-check-certificate https://rubygems.org/downloads/rubygems-update-2.6.7.gem</div><div class="line">gem install --local /var/tmp/rubygems-update-2.6.7.gem</div><div class="line">update_rubygems --no-ri --no-rdoc</div></pre></td></tr></table></figure>
+<h2 id="Update-gem-version"><a href="#Update-gem-version" class="headerlink" title="Update gem version"></a>Update gem version</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /var/tmp</div><div class="line">wget --no-check-certificate https://rubygems.org/downloads/rubygems-update-2.6.7.gem</div><div class="line">gem install --<span class="built_in">local</span> /var/tmp/rubygems-update-2.6.7.gem</div><div class="line">update_rubygems --no-ri --no-rdoc</div></pre></td></tr></table></figure>
 <p>Restart VM and try to run bundle install again.</p>
 <h2 id="If-the-above-solution-is-not-working"><a href="#If-the-above-solution-is-not-working" class="headerlink" title="If the above solution is not working"></a>If the above solution is not working</h2><p>If this process does not work for you, you can try manually adding the new certificate.</p>
 <h3 id="Step-1-Download-certificate-manually"><a href="#Step-1-Download-certificate-manually" class="headerlink" title="Step 1: Download certificate manually"></a>Step 1: Download certificate manually</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget https://raw.githubusercontent.com/rubygems/rubygems/master/lib/rubygems/ssl_certs/index.rubygems.org/GlobalSignRootCA.pem -O /var/tmp/GlobalSignRootCA.pem</div></pre></td></tr></table></figure>
@@ -361,7 +361,7 @@
     <link href="https://www.yuxifan.com/2017/01/11/create-shared-folder-in-virtualbox-vm/"/>
     <id>https://www.yuxifan.com/2017/01/11/create-shared-folder-in-virtualbox-vm/</id>
     <published>2017-01-11T09:51:12.000Z</published>
-    <updated>2017-01-11T14:16:47.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/linux/shared-folder.jpg" alt="shared folder in VM"></p>
 <p>(1) Configure a shared folder in VM settings</p>
@@ -403,7 +403,7 @@
     <link href="https://www.yuxifan.com/2017/01/03/useful-linux-commands/"/>
     <id>https://www.yuxifan.com/2017/01/03/useful-linux-commands/</id>
     <published>2017-01-03T05:51:12.000Z</published>
-    <updated>2017-01-04T09:57:26.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/linux/command-line.jpg" alt="Useful linux commands"></p>
 <h2 id="Fix-typos-in-the-command-line"><a href="#Fix-typos-in-the-command-line" class="headerlink" title="Fix typos in the command line"></a>Fix typos in the command line</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">dp *.txt /var/tmp</div><div class="line">^dp^cp</div></pre></td></tr></table></figure>
@@ -439,7 +439,7 @@
     <link href="https://www.yuxifan.com/2016/12/23/sqlite3-command-line/"/>
     <id>https://www.yuxifan.com/2016/12/23/sqlite3-command-line/</id>
     <published>2016-12-23T02:10:12.000Z</published>
-    <updated>2016-12-23T16:28:28.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/database/sqlite.png" alt="sqlite"></p>
 <p>To load sqlite3 cli:</p>
@@ -470,7 +470,7 @@
     <link href="https://www.yuxifan.com/2016/12/14/sending-and-receiving-custom-domain-emails-by-mailgun-and-gmail/"/>
     <id>https://www.yuxifan.com/2016/12/14/sending-and-receiving-custom-domain-emails-by-mailgun-and-gmail/</id>
     <published>2016-12-14T09:51:12.000Z</published>
-    <updated>2016-12-14T14:16:21.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p>Setting up a custom domain email address is widely discussed and there are lots of ways to do it, e.g. by using Zoho mail services. However, we have to say the most popular web mail client is Gmail. Gmail is fast, robust and awesome. Here is the way on how to use Mailgun and Gmail to send and receive emails without installing / configuring anything on your server!</p>
 <p><img src="/images/linux/mailgun.jpg" alt="Mailgun"></p>
@@ -513,7 +513,7 @@
     <link href="https://www.yuxifan.com/2016/11/28/ruby-tutorials-rss/"/>
     <id>https://www.yuxifan.com/2016/11/28/ruby-tutorials-rss/</id>
     <published>2016-11-28T02:10:12.000Z</published>
-    <updated>2016-11-28T11:00:53.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/ruby/rss.png" alt="RSS"></p>
 <h2 id="Install-gem"><a href="#Install-gem" class="headerlink" title="Install gem"></a>Install gem</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem install feedjira</div></pre></td></tr></table></figure>
@@ -541,7 +541,7 @@
     <link href="https://www.yuxifan.com/2016/11/25/image-manipulation-commands-in-ubuntu/"/>
     <id>https://www.yuxifan.com/2016/11/25/image-manipulation-commands-in-ubuntu/</id>
     <published>2016-11-25T05:51:12.000Z</published>
-    <updated>2016-11-25T13:53:16.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/linux/image-tool/imagemagick.jpg" alt="image tool"></p>
 <h2 id="Resize-image-and-convert"><a href="#Resize-image-and-convert" class="headerlink" title="Resize image (and convert)"></a>Resize image (and convert)</h2><p>First, install imagemagick:</p>
@@ -574,7 +574,7 @@
     <link href="https://www.yuxifan.com/2016/11/23/report-disk-space-in-ruby/"/>
     <id>https://www.yuxifan.com/2016/11/23/report-disk-space-in-ruby/</id>
     <published>2016-11-23T02:10:12.000Z</published>
-    <updated>2016-11-23T10:36:45.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/ruby/diskspace.png" alt=""></p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># gem install sys-filesystem</span></div><div class="line"><span class="comment"># gem install gmail</span></div><div class="line"></div><div class="line"><span class="keyword">require</span> <span class="string">'sys/filesystem'</span></div><div class="line"><span class="keyword">require</span> <span class="string">'gmail'</span></div><div class="line"></div><div class="line">threshold = <span class="number">9000</span></div><div class="line"></div><div class="line">stat = Sys::Filesystem.stat(<span class="string">"/"</span>)</div><div class="line">mb_available = stat.block_size * stat.blocks_available / <span class="number">1024</span> / <span class="number">1024</span></div><div class="line">mb_s = mb_available.to_s</div><div class="line">gb_s = (mb_available / <span class="number">1024</span>).to_s</div><div class="line">puts <span class="string">'Available space: '</span> + mb_s + <span class="string">' MB / '</span> + gb_s + <span class="string">' GB'</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> mb_available &lt; threshold</div><div class="line">  puts <span class="string">'Sending email ... '</span></div><div class="line">  user = <span class="string">"YOUR GMAIL"</span></div><div class="line">  pass = <span class="string">"PASSWORD"</span></div><div class="line">  gmail = Gmail.connect(user, pass)</div><div class="line">  email = gmail.compose <span class="keyword">do</span></div><div class="line">    to <span class="string">"XXXX@gmail.com"</span></div><div class="line">    subject <span class="string">"Your available disk space"</span></div><div class="line">    body <span class="string">"Space available: "</span> + mb_s + <span class="string">"MB / "</span> + gb_s + <span class="string">"GB"</span></div><div class="line">  <span class="keyword">end</span></div><div class="line">  email.deliver!</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
@@ -602,7 +602,7 @@
     <link href="https://www.yuxifan.com/2016/11/17/qrcode-generator/"/>
     <id>https://www.yuxifan.com/2016/11/17/qrcode-generator/</id>
     <published>2016-11-17T06:40:12.000Z</published>
-    <updated>2016-11-17T15:49:44.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" media="all" href="/css/foundation.min.css">
 <script type="text/javascript" src="/js/qrcode.min.js"></script>
@@ -671,7 +671,7 @@ $("#text").
     <link href="https://www.yuxifan.com/2016/11/15/implement-a-distributed-redis-message-processing-system-in-rails/"/>
     <id>https://www.yuxifan.com/2016/11/15/implement-a-distributed-redis-message-processing-system-in-rails/</id>
     <published>2016-11-15T09:51:12.000Z</published>
-    <updated>2016-11-17T14:52:18.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p>I’ve written a post introducing how to implement a distributed message processing system in standalone Ruby application. Now I will do the same, but in Rails.</p>
 <h2 id="Architecture-design"><a href="#Architecture-design" class="headerlink" title="Architecture design"></a>Architecture design</h2><p><img src="/images/ruby/redis-architecture2.jpg" alt=""></p>
@@ -679,7 +679,7 @@ $("#text").
 <p>Also, modify Rakefile:<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">"resque"</span></div><div class="line"><span class="keyword">require</span> <span class="string">"resque/tasks"</span></div></pre></td></tr></table></figure></p>
 <h2 id="Add-resque-web-admin-UI"><a href="#Add-resque-web-admin-UI" class="headerlink" title="Add resque web admin UI:"></a>Add resque web admin UI:</h2><p>In Gemfile:</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem <span class="string">'resque-web'</span>, <span class="symbol">require:</span> <span class="string">'resque_web'</span></div></pre></td></tr></table></figure>
-<p>Later you should be able to access it via: <a href="http://SERVER:PORT/resque" rel="external nofollow" target="_blank">http://SERVER:PORT/resque</a></p>
+<p>Later you should be able to access it via: <a href="http://SERVER:PORT/resque" rel="external nofollow noopener noreferrer" target="_blank">http://SERVER:PORT/resque</a></p>
 <h2 id="Define-a-worker-message-consumer"><a href="#Define-a-worker-message-consumer" class="headerlink" title="Define a worker (message consumer)"></a>Define a worker (message consumer)</h2><p>Add file app/workers/my_worker.rb<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyWorker</span></span></div><div class="line"></div><div class="line">  @queue = <span class="string">"mymessages"</span></div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">self</span>.<span class="title">perform</span><span class="params">(message)</span></span></div><div class="line">    puts <span class="string">"worker is processing job: <span class="subst">#&#123;message&#125;</span>"</span></div><div class="line">    </div><div class="line">	<span class="comment"># implement your logic here ...</span></div><div class="line">	</div><div class="line">    puts <span class="string">"Successfully processed: <span class="subst">#&#123;message&#125;</span>"</span></div><div class="line">  <span class="keyword">end</span></div><div class="line"></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure></p>
 <p>Don’t forget to update Rakefile:</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">require_relative <span class="string">"app/workers/my_worker.rb"</span></div></pre></td></tr></table></figure>
@@ -717,7 +717,7 @@ $("#text").
     <link href="https://www.yuxifan.com/2016/11/15/simplified-chinese-traditional-chinese-converter/"/>
     <id>https://www.yuxifan.com/2016/11/15/simplified-chinese-traditional-chinese-converter/</id>
     <published>2016-11-15T06:40:12.000Z</published>
-    <updated>2016-11-15T11:37:52.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" media="all" href="/css/foundation.min.css">
 <script src="/js/gb-big5.js"></script>
@@ -788,7 +788,7 @@ $("#text").
     <link href="https://www.yuxifan.com/2016/11/14/how-to-trigger-a-cron-job-based-on-file-modifications/"/>
     <id>https://www.yuxifan.com/2016/11/14/how-to-trigger-a-cron-job-based-on-file-modifications/</id>
     <published>2016-11-14T06:51:12.000Z</published>
-    <updated>2016-11-14T10:21:06.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p>Cron is an amazon tool that allowing Linux and Unix users to run commands or scripts at a given date and time. However, sometimes people want to trigger a job based on file modifications / creations. Here we can use incron to do this kinds of automation.</p>
 <p><img src="/images/linux/incron.png" alt="incron"></p>
@@ -799,9 +799,9 @@ $("#text").
 <p>Add users e.g. root, yuxi into the list:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">root</div><div class="line">yuxi</div></pre></td></tr></table></figure>
 <p>Now we can list all incron jobs:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">incrontab <span class="_">-l</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">incrontab -l</div></pre></td></tr></table></figure>
 <p>Set up incron job for user ‘yuxi’</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">incrontab <span class="_">-e</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">incrontab -e</div></pre></td></tr></table></figure>
 <p>Add the following line to do an auto deployment to git repository:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/home/yuxi/website_src/ IN_MODIFY /home/yuxi/deploy_website.sh</div></pre></td></tr></table></figure>
 ]]></content>
@@ -826,12 +826,12 @@ $("#text").
     <link href="https://www.yuxifan.com/2016/11/09/how-to-upload-files-to-dropbox-in-linux-command-line/"/>
     <id>https://www.yuxifan.com/2016/11/09/how-to-upload-files-to-dropbox-in-linux-command-line/</id>
     <published>2016-11-09T09:51:12.000Z</published>
-    <updated>2016-11-10T14:25:23.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p>Here is the instruction on how to upload files to your Dropbox without installing Dropbox:</p>
 <p><img src="/images/windows/dropbox.png" alt=""></p>
-<p>1) First, install the amazing <a href="https://github.com/andreafabrizi/Dropbox-Uploader" rel="external nofollow" target="_blank">Dropbox Uploader script</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/andreafabrizi/Dropbox-Uploader.git</div></pre></td></tr></table></figure></p>
-<p>2) Open the following URL in your Browser, and log in using your account: <a href="https://www.dropbox.com/developers/apps" rel="external nofollow" target="_blank">https://www.dropbox.com/developers/apps</a></p>
+<p>1) First, install the amazing <a href="https://github.com/andreafabrizi/Dropbox-Uploader" rel="external nofollow noopener noreferrer" target="_blank">Dropbox Uploader script</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/andreafabrizi/Dropbox-Uploader.git</div></pre></td></tr></table></figure></p>
+<p>2) Open the following URL in your Browser, and log in using your account: <a href="https://www.dropbox.com/developers/apps" rel="external nofollow noopener noreferrer" target="_blank">https://www.dropbox.com/developers/apps</a></p>
 <p>3) Click on “Create App”, then select “Dropbox API app”</p>
 <p>4) As shown below, configure your dropbox app, choosing the app permissions and access restrictions to your DropBox folder”<br><img src="/images/linux/dropbox-app-conf.jpg" alt=""></p>
 <p>5) Enter the “App Name” you like, e.g. YuxiUploader</p>
@@ -866,7 +866,7 @@ $("#text").
     <link href="https://www.yuxifan.com/2016/11/06/ruby-gem-command/"/>
     <id>https://www.yuxifan.com/2016/11/06/ruby-gem-command/</id>
     <published>2016-11-06T02:10:12.000Z</published>
-    <updated>2016-11-07T11:09:10.000Z</updated>
+    <updated>2017-06-16T10:17:52.230Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/ruby/gems.jpg" alt="Ruby Gems"></p>
 <h2 id="Install-Ruby-gems-from-Github-source-repository"><a href="#Install-Ruby-gems-from-Github-source-repository" class="headerlink" title="Install Ruby gems from Github source repository"></a>Install Ruby gems from Github source repository</h2><p>To to this, you have to install a gem called specific_install first.</p>

@@ -27,7 +27,7 @@ Here is the example of using stomp:
 Publisher’s code
 1234567891011121314151617181920212223242526272">
 <meta property="og:image" content="https://www.yuxifan.com/images/ruby/activemq.png">
-<meta property="og:updated_time" content="2016-10-04T21:27:01.000Z">
+<meta property="og:updated_time" content="2017-06-16T10:17:52.230Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to connect to ActiveMQ in Ruby">
 <meta name="twitter:description" content="There are some Ruby gems to do the job, e.g. 
@@ -197,9 +197,9 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
             <p><img src="/images/ruby/activemq.png" alt=""></p>
 <p>There are some Ruby gems to do the job, e.g. </p>
-<p><a href="https://github.com/kookster/activemessaging" rel="external nofollow" target="_blank">activemessaging</a></p>
+<p><a href="https://github.com/kookster/activemessaging" rel="external nofollow noopener noreferrer" target="_blank">activemessaging</a></p>
 <p>and</p>
-<p><a href="https://github.com/stompgem/stomp" rel="external nofollow" target="_blank">https://github.com/stompgem/stomp</a></p>
+<p><a href="https://github.com/stompgem/stomp" rel="external nofollow noopener noreferrer" target="_blank">https://github.com/stompgem/stomp</a></p>
 <p>Here is the example of using stomp:</p>
 <p>Publisher’s code</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'rubygems'</span></div><div class="line"><span class="keyword">require</span> <span class="string">'stomp'</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">StompPublisherTest</span></span></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">initialize</span></span></div><div class="line">  <span class="keyword">end</span></div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">run</span></span></div><div class="line"></div><div class="line">    user = <span class="string">""</span></div><div class="line">    pass = <span class="string">""</span></div><div class="line">    host = <span class="string">"YOUR HOST NAME"</span></div><div class="line">    port = <span class="string">'61613'</span></div><div class="line">    publish_to = <span class="string">'/queue/test_messages'</span></div><div class="line"></div><div class="line">    client = Stomp::Client.new(user, pass, host, port)</div><div class="line">    message = <span class="string">"test_messages <span class="subst">#&#123;ARGV[<span class="number">0</span>]&#125;</span>"</span></div><div class="line"></div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> (<span class="number">1</span>..<span class="number">5</span>)</div><div class="line">      puts <span class="string">'Sending message'</span></div><div class="line">      client.publish(publish_to, <span class="string">"<span class="subst">#&#123;i&#125;</span>: <span class="subst">#&#123;message&#125;</span>"</span>, &#123;<span class="symbol">:persistent</span> =&gt; <span class="literal">true</span>&#125;)</div><div class="line">      puts <span class="string">"(<span class="subst">#&#123;Time.now&#125;</span>)Message sent: <span class="subst">#&#123;i&#125;</span>"</span></div><div class="line">      sleep <span class="number">0</span>.<span class="number">2</span></div><div class="line">    <span class="keyword">end</span></div><div class="line"></div><div class="line">  <span class="keyword">end</span></div><div class="line"></div><div class="line"><span class="keyword">end</span></div><div class="line"></div><div class="line">spt = StompPublisherTest.new</div><div class="line">spt.run</div></pre></td></tr></table></figure>
@@ -212,7 +212,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://www.yuxifan.com/2016/01/13/2016-01-13-how-to-connect-to-activemq-in-ruby/" data-id="cj2bxnhqe001nmsg6fd5w4bdx" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://www.yuxifan.com/2016/01/13/2016-01-13-how-to-connect-to-activemq-in-ruby/" data-id="cj3zpr7cd000njyxu6wsofoqj" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -296,7 +296,7 @@ ga('send', 'pageview');
             
                 
                 <li>
-                    <a class="social-tooltip" title="google-plus" href="https://plus.google.com/104826207350368986265" target="_blank" rel="external nofollow">
+                    <a class="social-tooltip" title="google-plus" href="https://plus.google.com/104826207350368986265" target="_blank" rel="external nofollow noopener noreferrer">
                         <i class="icon fa fa-google-plus"></i>
                     </a>
                 </li>
@@ -331,7 +331,7 @@ ga('send', 'pageview');
             
                 <div class="widget-wrap widget-list">
     <div class="widget">
-      <a href="https://www.vultr.com/?ref=6856003" target="_blank" rel="external nofollow">
+      <a href="https://www.vultr.com/?ref=6856003" target="_blank" rel="external nofollow noopener noreferrer">
         <img src="/images/ads/vultr2_300x250.png">
       </a>
     </div>
@@ -462,7 +462,7 @@ ga('send', 'pageview');
             
                 <div class="widget-wrap widget-list">
     <div class="widget">
-      <a href="https://m.do.co/c/65b73b833dd9" target="_blank" rel="external nofollow">
+      <a href="https://m.do.co/c/65b73b833dd9" target="_blank" rel="external nofollow noopener noreferrer">
         <img src="/images/ads/digital-ocean-promo.gif">
       </a>
     </div>
@@ -491,7 +491,7 @@ ga('send', 'pageview');
         <div class="container-inner">
             <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
             <div class="credit">
-                <p style="text-align: center;">Contact me: <a href="mailto:yuxifanr@gmail.com" rel="external nofollow" target="_blank">yuxifanr@gmail.com</a></p><br>
+                <p style="text-align: center;">Contact me: <a href="mailto:yuxifanr@gmail.com" rel="external nofollow noopener noreferrer" target="_blank">yuxifanr@gmail.com</a></p><br>
             </div>
         </div>
     </div>

@@ -19,7 +19,7 @@ Create d">
 To serve multiple sites/domains. We need to do the following:
 Create d">
 <meta property="og:image" content="https://www.yuxifan.com/images/linux/nginx.jpg">
-<meta property="og:updated_time" content="2017-03-14T12:55:15.000Z">
+<meta property="og:updated_time" content="2017-06-16T10:17:52.230Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Host multiple domains in Nginx">
 <meta name="twitter:description" content="By default, Nginx on Ubuntu 16.04 has one server block enabled by default. It is configured to serve documents at /var/www/html.
@@ -192,7 +192,7 @@ ga('send', 'pageview');
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">        listen 80;</div><div class="line">        listen [::]:80;</div><div class="line"></div><div class="line">        root /var/www/DOMAIN-1/html;</div><div class="line"></div><div class="line">        index index.html index.htm;</div><div class="line"></div><div class="line">        server_name www.DOMAIN-1.com;</div><div class="line"></div><div class="line">        location / &#123;</div><div class="line">                try_files <span class="variable">$uri</span> <span class="variable">$uri</span>/ =404;</div><div class="line">        &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>File: /etc/nginx/sites-available/DOMAIN-2.com</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">        listen 80;</div><div class="line">        listen [::]:80;</div><div class="line"></div><div class="line">        root /var/www/DOMAIN-2/html;</div><div class="line"></div><div class="line">        index index.html index.htm;</div><div class="line"></div><div class="line">        server_name www.DOMAIN-2.com;</div><div class="line"></div><div class="line">        location / &#123;</div><div class="line">                try_files <span class="variable">$uri</span> <span class="variable">$uri</span>/ =404;</div><div class="line">        &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>Run:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo ln <span class="_">-s</span> /etc/nginx/sites-available/DOMAIN-1.com /etc/nginx/sites-enabled/</div><div class="line">sudo ln <span class="_">-s</span> /etc/nginx/sites-available/DOMAIN-2.com /etc/nginx/sites-enabled/</div></pre></td></tr></table></figure></p>
+<p>Run:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /etc/nginx/sites-available/DOMAIN-1.com /etc/nginx/sites-enabled/</div><div class="line">sudo ln -s /etc/nginx/sites-available/DOMAIN-2.com /etc/nginx/sites-enabled/</div></pre></td></tr></table></figure></p>
 <p>In order to avoid a possible hash bucket memory problem while adding additional server names, modify /etc/nginx/nginx.conf. </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /etc/nginx/nginx.conf</div></pre></td></tr></table></figure>
 <p>Uncomment this line:</p>
@@ -208,7 +208,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://www.yuxifan.com/2017/03/14/suppport-multiple-domains-in-nginx/" data-id="cj2bxnhuf007cmsg66q5c5mot" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://www.yuxifan.com/2017/03/14/suppport-multiple-domains-in-nginx/" data-id="cj3zpr7jj004cjyxu58zn8oa9" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -292,7 +292,7 @@ ga('send', 'pageview');
             
                 
                 <li>
-                    <a class="social-tooltip" title="google-plus" href="https://plus.google.com/104826207350368986265" target="_blank" rel="external nofollow">
+                    <a class="social-tooltip" title="google-plus" href="https://plus.google.com/104826207350368986265" target="_blank" rel="external nofollow noopener noreferrer">
                         <i class="icon fa fa-google-plus"></i>
                     </a>
                 </li>
@@ -327,7 +327,7 @@ ga('send', 'pageview');
             
                 <div class="widget-wrap widget-list">
     <div class="widget">
-      <a href="https://www.vultr.com/?ref=6856003" target="_blank" rel="external nofollow">
+      <a href="https://www.vultr.com/?ref=6856003" target="_blank" rel="external nofollow noopener noreferrer">
         <img src="/images/ads/vultr2_300x250.png">
       </a>
     </div>
@@ -458,7 +458,7 @@ ga('send', 'pageview');
             
                 <div class="widget-wrap widget-list">
     <div class="widget">
-      <a href="https://m.do.co/c/65b73b833dd9" target="_blank" rel="external nofollow">
+      <a href="https://m.do.co/c/65b73b833dd9" target="_blank" rel="external nofollow noopener noreferrer">
         <img src="/images/ads/digital-ocean-promo.gif">
       </a>
     </div>
@@ -487,7 +487,7 @@ ga('send', 'pageview');
         <div class="container-inner">
             <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
             <div class="credit">
-                <p style="text-align: center;">Contact me: <a href="mailto:yuxifanr@gmail.com" rel="external nofollow" target="_blank">yuxifanr@gmail.com</a></p><br>
+                <p style="text-align: center;">Contact me: <a href="mailto:yuxifanr@gmail.com" rel="external nofollow noopener noreferrer" target="_blank">yuxifanr@gmail.com</a></p><br>
             </div>
         </div>
     </div>

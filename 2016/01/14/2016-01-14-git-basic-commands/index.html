@@ -25,7 +25,7 @@ Switch back to master:
 Push to remote server:
 1git push -u origin feature_branch_name">
 <meta property="og:image" content="https://www.yuxifan.com/images/git/git2.png">
-<meta property="og:updated_time" content="2016-12-23T14:12:18.000Z">
+<meta property="og:updated_time" content="2017-06-16T10:25:21.226Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git basic commands and tips">
 <meta name="twitter:description" content="BranchCreate a new branch “feature_x” and switch to that branch:
@@ -207,10 +207,12 @@ ga('send', 'pageview');
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git branch -D &lt;branch_name&gt;</div><div class="line">git push origin --delete &lt;branch_name&gt;</div></pre></td></tr></table></figure>
 <p>Rollback a merge</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">log</span>  <span class="comment"># find the commit/merge ID</span></div><div class="line">git reset --hard ID</div></pre></td></tr></table></figure>
+<p>Compare file in 2 branches</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff mybranch..master -- myfile.cs</div></pre></td></tr></table></figure>
 <h2 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h2><p>Create a new tag</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git tag <span class="_">-a</span> v1.4 -m <span class="string">"my version 1.4"</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git tag -a v1.4 -m <span class="string">"my version 1.4"</span></div></pre></td></tr></table></figure>
 <p>List tags</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git tag <span class="_">-l</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git tag -l</div></pre></td></tr></table></figure>
 <h2 id="Update-git-to-latest-version"><a href="#Update-git-to-latest-version" class="headerlink" title="Update git to latest version"></a>Update git to latest version</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install python-software-properties </div><div class="line">sudo add-apt-repository ppa:git-core/ppa </div><div class="line">sudo apt-get update </div><div class="line">sudo apt-get install git</div></pre></td></tr></table></figure>
 <h2 id="Reset-all-changes-after-last-commit-to-git"><a href="#Reset-all-changes-after-last-commit-to-git" class="headerlink" title="Reset all changes after last commit to git"></a>Reset all changes after last commit to git</h2><p>First reset the changes</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset HEAD --hard</div></pre></td></tr></table></figure>
@@ -223,7 +225,7 @@ ga('send', 'pageview');
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git rm -r target --cached</div><div class="line">git rm -r .idea --cached</div><div class="line">git add .</div><div class="line">git commit -m <span class="string">"XXX"</span></div><div class="line">git push</div></pre></td></tr></table></figure>
 <p>Then, any further changes to target / .idea will be ignored</p>
 <h2 id="Statistics"><a href="#Statistics" class="headerlink" title="Statistics"></a>Statistics</h2><p>List authors ordered by the number of commits</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git shortlog <span class="_">-s</span> -n</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git shortlog -s -n</div></pre></td></tr></table></figure>
 <p>List files being changed between SHAs<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff --name-only SHA1 SHA2</div></pre></td></tr></table></figure></p>
 <p>List files being changed between the tenth latest commit and the fifth latest.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff --name-only HEAD~10 HEAD~5</div></pre></td></tr></table></figure></p>
 <p>List files being changed between days<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git diff --name-only <span class="string">"@&#123;3 days ago&#125;"</span> <span class="string">"@&#123;0 days ago&#125;"</span></div></pre></td></tr></table></figure></p>
@@ -235,7 +237,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://www.yuxifan.com/2016/01/14/2016-01-14-git-basic-commands/" data-id="cj2bxnhq9001imsg61kwpas9h" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://www.yuxifan.com/2016/01/14/2016-01-14-git-basic-commands/" data-id="cj3zpr7ci000rjyxu589l8wo8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -319,7 +321,7 @@ ga('send', 'pageview');
             
                 
                 <li>
-                    <a class="social-tooltip" title="google-plus" href="https://plus.google.com/104826207350368986265" target="_blank" rel="external nofollow">
+                    <a class="social-tooltip" title="google-plus" href="https://plus.google.com/104826207350368986265" target="_blank" rel="external nofollow noopener noreferrer">
                         <i class="icon fa fa-google-plus"></i>
                     </a>
                 </li>
@@ -354,7 +356,7 @@ ga('send', 'pageview');
             
                 <div class="widget-wrap widget-list">
     <div class="widget">
-      <a href="https://www.vultr.com/?ref=6856003" target="_blank" rel="external nofollow">
+      <a href="https://www.vultr.com/?ref=6856003" target="_blank" rel="external nofollow noopener noreferrer">
         <img src="/images/ads/vultr2_300x250.png">
       </a>
     </div>
@@ -485,7 +487,7 @@ ga('send', 'pageview');
             
                 <div class="widget-wrap widget-list">
     <div class="widget">
-      <a href="https://m.do.co/c/65b73b833dd9" target="_blank" rel="external nofollow">
+      <a href="https://m.do.co/c/65b73b833dd9" target="_blank" rel="external nofollow noopener noreferrer">
         <img src="/images/ads/digital-ocean-promo.gif">
       </a>
     </div>
@@ -514,7 +516,7 @@ ga('send', 'pageview');
         <div class="container-inner">
             <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
             <div class="credit">
-                <p style="text-align: center;">Contact me: <a href="mailto:yuxifanr@gmail.com" rel="external nofollow" target="_blank">yuxifanr@gmail.com</a></p><br>
+                <p style="text-align: center;">Contact me: <a href="mailto:yuxifanr@gmail.com" rel="external nofollow noopener noreferrer" target="_blank">yuxifanr@gmail.com</a></p><br>
             </div>
         </div>
     </div>

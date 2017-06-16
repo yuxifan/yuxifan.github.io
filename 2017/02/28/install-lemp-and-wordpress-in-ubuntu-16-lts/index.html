@@ -23,7 +23,7 @@ OR
 1usermod -aG sudo yuxi
 Get your public keys ready, e.g. running “ssh-keygen” in">
 <meta property="og:image" content="https://www.yuxifan.com/images/linux/lemp-wordpress.jpg">
-<meta property="og:updated_time" content="2017-03-14T12:05:43.000Z">
+<meta property="og:updated_time" content="2017-06-16T10:17:52.230Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Install LEMP + Wordpress in Ubuntu 16.04 LTS step by step">
 <meta name="twitter:description" content="User and authenticationsCreate userLogin as root
@@ -191,9 +191,9 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
             <p><img src="/images/linux/lemp-wordpress.jpg" alt="Install LEMP + Wordpress in Ubuntu 16.04 LTS"></p>
 <h2 id="User-and-authentications"><a href="#User-and-authentications" class="headerlink" title="User and authentications"></a>User and authentications</h2><h3 id="Create-user"><a href="#Create-user" class="headerlink" title="Create user"></a>Create user</h3><p>Login as root</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">adduser --gecos <span class="string">""</span> yuxi   [OR YOUR_USER_NAME]</div><div class="line">gpasswd <span class="_">-a</span> yuxi sudo</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">adduser --gecos <span class="string">""</span> yuxi   [OR YOUR_USER_NAME]</div><div class="line">gpasswd -a yuxi sudo</div></pre></td></tr></table></figure>
 <p>OR</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">usermod <span class="_">-a</span>G sudo yuxi</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">usermod -aG sudo yuxi</div></pre></td></tr></table></figure>
 <p>Get your public keys ready, e.g. running “ssh-keygen” in Linux machines which will be connecting to your WP server via SSH.</p>
 <p>Login as the new user just being created, and type:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">mkdir ~/.ssh</div><div class="line">chmod 700 ~/.ssh</div><div class="line">touch ~/.ssh/authorized_keys</div><div class="line">chmod 600 ~/.ssh/authorized_keys</div></pre></td></tr></table></figure>
@@ -207,9 +207,9 @@ ga('send', 'pageview');
 <p>Reload sshd service:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl reload sshd</div></pre></td></tr></table></figure>
 <h3 id="Basic-firewall-settings"><a href="#Basic-firewall-settings" class="headerlink" title="Basic firewall settings"></a>Basic firewall settings</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo ufw <span class="built_in">enable</span></div><div class="line">sudo ufw delete allow OpenSSH</div><div class="line">sudo ufw allow from any to any port 2224</div><div class="line">sudo ufw status</div></pre></td></tr></table></figure>
-<h2 id="System"><a href="#System" class="headerlink" title="System"></a>System</h2><h3 id="Basic-libraries"><a href="#Basic-libraries" class="headerlink" title="Basic libraries"></a>Basic libraries</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -qq -y curl </div><div class="line">sudo apt-get install -qq -y lynx-cur</div><div class="line">sudo apt-get install -qq -y git</div><div class="line">sudo apt-get install -qq -y whois</div><div class="line">sudo apt-get install -qq -y apache2-utils</div><div class="line">sudo apt-get install -qq -y unzip</div><div class="line">sudo -H -u root bash -c <span class="string">"echo 'Europe/London' &gt; /etc/timezone"</span> </div><div class="line">sudo dpkg-reconfigure <span class="_">-f</span> noninteractive tzdata </div><div class="line">sudo apt-get install -qq -y ntp &gt; /dev/null 2&gt;err.log </div><div class="line"></div><div class="line">git config --global user.email <span class="string">"YOUR_EMAIL"</span></div><div class="line">git config --global user.name  <span class="string">"YOUR NAME"</span></div></pre></td></tr></table></figure>
+<h2 id="System"><a href="#System" class="headerlink" title="System"></a>System</h2><h3 id="Basic-libraries"><a href="#Basic-libraries" class="headerlink" title="Basic libraries"></a>Basic libraries</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -qq -y curl </div><div class="line">sudo apt-get install -qq -y lynx-cur</div><div class="line">sudo apt-get install -qq -y git</div><div class="line">sudo apt-get install -qq -y whois</div><div class="line">sudo apt-get install -qq -y apache2-utils</div><div class="line">sudo apt-get install -qq -y unzip</div><div class="line">sudo -H -u root bash -c <span class="string">"echo 'Europe/London' &gt; /etc/timezone"</span> </div><div class="line">sudo dpkg-reconfigure -f noninteractive tzdata </div><div class="line">sudo apt-get install -qq -y ntp &gt; /dev/null 2&gt;err.log </div><div class="line"></div><div class="line">git config --global user.email <span class="string">"YOUR_EMAIL"</span></div><div class="line">git config --global user.name  <span class="string">"YOUR NAME"</span></div></pre></td></tr></table></figure>
 <h3 id="Swap-space"><a href="#Swap-space" class="headerlink" title="Swap space"></a>Swap space</h3><p>You may want to create a swap space:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo fallocate <span class="_">-l</span> <span class="variable">$SWAP_SPACE_SIZE</span> /swapfile</div><div class="line">sudo chmod 600 /swapfile</div><div class="line">sudo mkswap /swapfile</div><div class="line">sudo swapon /swapfile</div><div class="line">sudo sh -c <span class="string">'echo "/swapfile none swap sw 0 0" &gt;&gt; /etc/fstab'</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo fallocate -l <span class="variable">$SWAP_SPACE_SIZE</span> /swapfile</div><div class="line">sudo chmod 600 /swapfile</div><div class="line">sudo mkswap /swapfile</div><div class="line">sudo swapon /swapfile</div><div class="line">sudo sh -c <span class="string">'echo "/swapfile none swap sw 0 0" &gt;&gt; /etc/fstab'</span></div></pre></td></tr></table></figure>
 <h2 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install nginx</div><div class="line">sudo ufw allow <span class="string">'Nginx HTTP'</span></div></pre></td></tr></table></figure>
 <p>To find out the IP of VM, run:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ip addr show eth0 | grep inet | awk <span class="string">'&#123; print $2; &#125;'</span> | sed <span class="string">'s/\/.*$//'</span></div></pre></td></tr></table></figure>
@@ -234,15 +234,15 @@ ga('send', 'pageview');
 <p>Reload:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl reload nginx</div></pre></td></tr></table></figure>
 <p>Install Wordpress</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /tmp</div><div class="line">curl -O https://wordpress.org/latest.tar.gz</div><div class="line">tar xvf latest.tar.gz</div><div class="line">cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php</div><div class="line">sudo cp <span class="_">-a</span> /tmp/wordpress/. /var/www/html</div><div class="line">mkdir  /var/www/html/wp-content/uploads</div><div class="line">mkdir  /var/www/html/wp-content/upgrade</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /tmp</div><div class="line">curl -O https://wordpress.org/latest.tar.gz</div><div class="line">tar xvf latest.tar.gz</div><div class="line">cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php</div><div class="line">sudo cp -a /tmp/wordpress/. /var/www/html</div><div class="line">mkdir  /var/www/html/wp-content/uploads</div><div class="line">mkdir  /var/www/html/wp-content/upgrade</div></pre></td></tr></table></figure>
 <p>Change permissions:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chown -R yuxi:www-data /var/www/html</div></pre></td></tr></table></figure></p>
-<p>Next, we will set the setgid bit on each of the directories within the document root. This causes new files created within these directories to inherit the group of the parent directory (which we just set to www-data) instead of the creating user’s primary group.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo find /var/www/html -type d -exec chmod g+s &#123;&#125; \;</div></pre></td></tr></table></figure></p>
+<p>Next, we will set the setgid bit on each of the directories within the document root. This causes new files created within these directories to inherit the group of the parent directory (which we just set to www-data) instead of the creating user’s primary group.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo find /var/www/html -<span class="built_in">type</span> d -<span class="built_in">exec</span> chmod g+s &#123;&#125; \;</div></pre></td></tr></table></figure></p>
 <p>There are a few other fine-grained permissions we’ll adjust. First, we’ll give group write access to the wp-content directory so that the web interface can make theme and plugin changes:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chmod g+w /var/www/html/wp-content</div></pre></td></tr></table></figure></p>
 <p>As part of this process, we will give the web server write access to all of the content in these two directories:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo chmod -R g+w /var/www/html/wp-content/themes</div><div class="line">sudo chmod -R g+w /var/www/html/wp-content/plugins</div></pre></td></tr></table></figure>
 <p>When we open the file, our first order of business will be to adjust some secret keys to provide some security for our installation. WordPress provides a secure generator for these values so that you do not have to try to come up with good values on your own.</p>
 <p>To grab secure values from the WordPress secret key generator, type:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl <span class="_">-s</span> https://api.wordpress.org/secret-key/1.1/salt/</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl -s https://api.wordpress.org/secret-key/1.1/salt/</div></pre></td></tr></table></figure>
 <p>Open /var/www/html/wp-config.php,  update these lines with the keys just being generated:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">define(<span class="string">'AUTH_KEY'</span>,         <span class="string">'put your unique phrase here'</span>);</div><div class="line">define(<span class="string">'SECURE_AUTH_KEY'</span>,  <span class="string">'put your unique phrase here'</span>);</div><div class="line">define(<span class="string">'LOGGED_IN_KEY'</span>,    <span class="string">'put your unique phrase here'</span>);</div><div class="line">define(<span class="string">'NONCE_KEY'</span>,        <span class="string">'put your unique phrase here'</span>);</div><div class="line">define(<span class="string">'AUTH_SALT'</span>,        <span class="string">'put your unique phrase here'</span>);</div><div class="line">define(<span class="string">'SECURE_AUTH_SALT'</span>, <span class="string">'put your unique phrase here'</span>);</div><div class="line">define(<span class="string">'LOGGED_IN_SALT'</span>,   <span class="string">'put your unique phrase here'</span>);</div><div class="line">define(<span class="string">'NONCE_SALT'</span>,       <span class="string">'put your unique phrase here'</span>);</div></pre></td></tr></table></figure></p>
 <p>Config database: change the following lines in /var/www/html/wp-config.php:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">define(<span class="string">'DB_NAME'</span>, <span class="string">'wordpress'</span>);</div><div class="line">define(<span class="string">'DB_USER'</span>, <span class="string">'wordpressuser'</span>);</div><div class="line">define(<span class="string">'DB_PASSWORD'</span>, <span class="string">'password'</span>);</div></pre></td></tr></table></figure>
@@ -298,7 +298,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://www.yuxifan.com/2017/02/28/install-lemp-and-wordpress-in-ubuntu-16-lts/" data-id="cj2bxnhti0060msg65epq0jiu" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://www.yuxifan.com/2017/02/28/install-lemp-and-wordpress-in-ubuntu-16-lts/" data-id="cj3zpr7he0031jyxupqpymu7h" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -382,7 +382,7 @@ ga('send', 'pageview');
             
                 
                 <li>
-                    <a class="social-tooltip" title="google-plus" href="https://plus.google.com/104826207350368986265" target="_blank" rel="external nofollow">
+                    <a class="social-tooltip" title="google-plus" href="https://plus.google.com/104826207350368986265" target="_blank" rel="external nofollow noopener noreferrer">
                         <i class="icon fa fa-google-plus"></i>
                     </a>
                 </li>
@@ -417,7 +417,7 @@ ga('send', 'pageview');
             
                 <div class="widget-wrap widget-list">
     <div class="widget">
-      <a href="https://www.vultr.com/?ref=6856003" target="_blank" rel="external nofollow">
+      <a href="https://www.vultr.com/?ref=6856003" target="_blank" rel="external nofollow noopener noreferrer">
         <img src="/images/ads/vultr2_300x250.png">
       </a>
     </div>
@@ -548,7 +548,7 @@ ga('send', 'pageview');
             
                 <div class="widget-wrap widget-list">
     <div class="widget">
-      <a href="https://m.do.co/c/65b73b833dd9" target="_blank" rel="external nofollow">
+      <a href="https://m.do.co/c/65b73b833dd9" target="_blank" rel="external nofollow noopener noreferrer">
         <img src="/images/ads/digital-ocean-promo.gif">
       </a>
     </div>
@@ -577,7 +577,7 @@ ga('send', 'pageview');
         <div class="container-inner">
             <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
             <div class="credit">
-                <p style="text-align: center;">Contact me: <a href="mailto:yuxifanr@gmail.com" rel="external nofollow" target="_blank">yuxifanr@gmail.com</a></p><br>
+                <p style="text-align: center;">Contact me: <a href="mailto:yuxifanr@gmail.com" rel="external nofollow noopener noreferrer" target="_blank">yuxifanr@gmail.com</a></p><br>
             </div>
         </div>
     </div>
