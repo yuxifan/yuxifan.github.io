@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2017/06/28/graphicsmagick/</loc>
+    
+    <lastmod>2017-06-28T10:22:44.373Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2016/01/14/2016-01-14-git-basic-commands/</loc>
     
     <lastmod>2017-06-16T10:25:21.226Z</lastmod>
@@ -9,14 +16,7 @@
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2016/10/05/how-to-implement-a-distributed-redis-in-ruby-standalone-application/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2017/01/03/useful-linux-commands/</loc>
+    <loc>https://www.yuxifan.com/2016/10/12/vultr-account-balance-report-in-ruby/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
@@ -79,7 +79,7 @@
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2016/10/12/vultr-account-balance-report-in-ruby/</loc>
+    <loc>https://www.yuxifan.com/2017/05/09/how-to-remove-ads-from-android-charging-screen/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
@@ -191,14 +191,14 @@
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2016/10/24/ubuntu-apt-update-problems-and-solutions/</loc>
+    <loc>https://www.yuxifan.com/2016/10/05/how-to-implement-a-distributed-redis-in-ruby-standalone-application/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2017/05/09/how-to-remove-ads-from-android-charging-screen/</loc>
+    <loc>https://www.yuxifan.com/2017/01/03/useful-linux-commands/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
@@ -360,6 +360,13 @@
   
   <url>
     <loc>https://www.yuxifan.com/2016/09/05/top-hexo-plugins/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/10/24/ubuntu-apt-update-problems-and-solutions/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     

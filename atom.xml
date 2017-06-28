@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-06-16T10:17:52.230Z</updated>
+  <updated>2017-06-28T10:22:44.373Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GraphicsMagick</title>
+    <link href="https://www.yuxifan.com/2017/06/28/graphicsmagick/"/>
+    <id>https://www.yuxifan.com/2017/06/28/graphicsmagick/</id>
+    <published>2017-06-28T01:10:12.000Z</published>
+    <updated>2017-06-28T10:22:44.373Z</updated>
+    
+    <content type="html"><![CDATA[<p>GraphicsMagick is originally derived from ImageMagick 5.5.2 as of November 2002 but has been completely independent of the ImageMagick project since then. As states in <a href="http://www.graphicsmagick.org/index.html" rel="external nofollow noopener noreferrer" target="_blank">GraphicsMagick’s website</a>: GraphicsMagick is better than ImageMagick.</p>
+<p><img src="/images/linux/graphicsmagick.jpg" alt="GraphicsMagick"></p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install graphicsmagick</div></pre></td></tr></table></figure>
+<h2 id="Identify-images"><a href="#Identify-images" class="headerlink" title="Identify images"></a>Identify images</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gm identify filename.jpg</div></pre></td></tr></table></figure>
+<p>Identify image height only:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gm identify -format %h filename.jpg</div></pre></td></tr></table></figure></p>
+<p>Identify image and output filename, size, height, and width:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gm identify -format %f/%b/%h/%w filename.jpg</div></pre></td></tr></table></figure></p>
+<h2 id="Resize-images"><a href="#Resize-images" class="headerlink" title="Resize images"></a>Resize images</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gm convert -monitor -resize 50% source.jpg target.jpg</div><div class="line">gm convert -monitor -resize 600x source.jpg target.jpg</div></pre></td></tr></table></figure>
+<h2 id="Convert"><a href="#Convert" class="headerlink" title="Convert"></a>Convert</h2><p>To convert a multi-page PostScript document to individual FAX pages:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gm convert -monochrome document.ps fax:page</div></pre></td></tr></table></figure></p>
+<h2 id="Rotating-Images"><a href="#Rotating-Images" class="headerlink" title="Rotating Images"></a>Rotating Images</h2><h3 id="Clockwise-Rotation"><a href="#Clockwise-Rotation" class="headerlink" title="Clockwise Rotation"></a>Clockwise Rotation</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gm convert -monitor rotate 45 source.jpg target.jpg</div></pre></td></tr></table></figure>
+<h3 id="Anti-clockwise-Rotation"><a href="#Anti-clockwise-Rotation" class="headerlink" title="Anti-clockwise Rotation"></a>Anti-clockwise Rotation</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gm convert -monitor rotate -45 source.jpg target.jpg</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;GraphicsMagick is originally derived from ImageMagick 5.5.2 as of November 2002 but has been completely independent of the ImageMagick pr
+    
+    </summary>
+    
+      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
+    
+      <category term="ImageMagick" scheme="https://www.yuxifan.com/tags/ImageMagick/"/>
+    
+      <category term="GraphicsMagick" scheme="https://www.yuxifan.com/tags/GraphicsMagick/"/>
+    
+  </entry>
   
   <entry>
     <title>How to remove ads from Android screen while charging?</title>
@@ -858,34 +894,6 @@ $("#text").
       <category term="dropbox" scheme="https://www.yuxifan.com/tags/dropbox/"/>
     
       <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ruby gem command</title>
-    <link href="https://www.yuxifan.com/2016/11/06/ruby-gem-command/"/>
-    <id>https://www.yuxifan.com/2016/11/06/ruby-gem-command/</id>
-    <published>2016-11-06T02:10:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/ruby/gems.jpg" alt="Ruby Gems"></p>
-<h2 id="Install-Ruby-gems-from-Github-source-repository"><a href="#Install-Ruby-gems-from-Github-source-repository" class="headerlink" title="Install Ruby gems from Github source repository"></a>Install Ruby gems from Github source repository</h2><p>To to this, you have to install a gem called specific_install first.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gem install specific_install</div><div class="line">gem specific_install https://github.com/XXX/YYY.git [BRANCH NAME]</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/ruby/gems.jpg&quot; alt=&quot;Ruby Gems&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Install-Ruby-gems-from-Github-source-repository&quot;&gt;&lt;a href=&quot;#Install-Ruby-gem
-    
-    </summary>
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
-    
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
-    
-      <category term="gem" scheme="https://www.yuxifan.com/tags/gem/"/>
     
   </entry>
   
