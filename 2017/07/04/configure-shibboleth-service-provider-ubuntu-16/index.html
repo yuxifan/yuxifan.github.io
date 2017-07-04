@@ -25,7 +25,7 @@ Enable ssl:
 1sudo a2enmod ssl
 Activate the SSL Vi">
 <meta property="og:image" content="https://www.yuxifan.com/images/linux/shibboleth.png">
-<meta property="og:updated_time" content="2017-07-04T15:35:09.008Z">
+<meta property="og:updated_time" content="2017-07-04T15:40:01.263Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Configure Shibboleth Service Provider on Ubuntu 16">
 <meta name="twitter:description" content="EnvironmentsUbuntu 16Apache 2Shibboleth 2
@@ -228,7 +228,7 @@ ga('send', 'pageview');
 <p>Upload SP metadata on <a href="https://www.testshib.org/register.html" rel="external nofollow noopener noreferrer" target="_blank">https://www.testshib.org/register.html</a></p>
 <p>Now you should be redirected to TestShib login page. </p>
 <p>Enter the default name/password and you will be redirected back to your secure service page, e.g. /myservice/index.html (/var/www/myservice/index.html)</p>
-<h2 id="Further-configuration"><a href="#Further-configuration" class="headerlink" title="Further configuration"></a>Further configuration</h2><p>Allow access only to York users (On Apache 2.4)</p>
+<h2 id="Further-configuration"><a href="#Further-configuration" class="headerlink" title="Further configuration"></a>Further configuration</h2><p>Allow access only to users from www.XYZ.com (On Apache 2.4)</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;Location /myservice/&gt;</div><div class="line">        AuthType shibboleth</div><div class="line">        ShibRequestSetting requireSession 1</div><div class="line">        Require shib-attr affiliation ~ ^.+@www\.XYZ\.com$</div><div class="line">&lt;/Location&gt;</div></pre></td></tr></table></figure>
 <p>Allow access to specified user</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;Location /myservice/&gt;</div><div class="line">        AuthType shibboleth</div><div class="line">        ShibRequestSetting requireSession 1</div><div class="line">        Require user xxxx@XYZ.com</div><div class="line">&lt;/Location&gt;</div></pre></td></tr></table></figure>
@@ -356,20 +356,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2017/05/09/how-to-remove-ads-from-android-charging-screen/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            How to remove ads from Android screen while charging?
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2017/03/14/suppport-multiple-domains-in-nginx/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2017/06/28/graphicsmagick/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Host multiple domains in Nginx</p>
+        <p class="article-nav-title">GraphicsMagick</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
