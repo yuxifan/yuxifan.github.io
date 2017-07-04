@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Configure Shibboleth Service Provider on Ubuntu 16 | Yuxi Fan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="ubuntu,shibboleth">
+    
+    <meta name="description" content="EnvironmentsUbuntu 16Apache 2Shibboleth 2
+Get Apache ready for ShibbolethMake sure Apache is installed, otherwise, run:
+1sudo apt-get install apache2
+Enable ssl:
+1sudo a2enmod ssl
+Activate the SSL Vi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Configure Shibboleth Service Provider on Ubuntu 16">
+<meta property="og:url" content="https://www.yuxifan.com/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/index.html">
+<meta property="og:site_name" content="Yuxi Fan">
+<meta property="og:description" content="EnvironmentsUbuntu 16Apache 2Shibboleth 2
+Get Apache ready for ShibbolethMake sure Apache is installed, otherwise, run:
+1sudo apt-get install apache2
+Enable ssl:
+1sudo a2enmod ssl
+Activate the SSL Vi">
+<meta property="og:image" content="https://www.yuxifan.com/images/linux/shibboleth.png">
+<meta property="og:updated_time" content="2017-07-04T15:35:09.008Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Configure Shibboleth Service Provider on Ubuntu 16">
+<meta name="twitter:description" content="EnvironmentsUbuntu 16Apache 2Shibboleth 2
+Get Apache ready for ShibbolethMake sure Apache is installed, otherwise, run:
+1sudo apt-get install apache2
+Enable ssl:
+1sudo a2enmod ssl
+Activate the SSL Vi">
+<meta name="twitter:image" content="https://www.yuxifan.com/images/linux/shibboleth.png">
+    
+
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="Yuxi Fan" type="application/atom+xml">
+    
+
+    
+
+    
+        <link rel="icon" href="/favicon.ico">
+    
+
+    <link rel="stylesheet" href="/js/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/js/titillium-web/styles.css">
+    <link rel="stylesheet" href="/js/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/js/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/js/lightgallery/css/lightgallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-67297895-9', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">Yuxi Fan - Yuxi&#39;s development blog</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item">
+                                    <a class="main-nav-list-link" href="/">home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/css/">css</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/database/">database</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/git/">git</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/hexo/">hexo</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/java/">java</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/javascript/">javascript</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/jekyll/">jekyll</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/linux/">linux</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/mobile/">mobile</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/ruby/">ruby</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/solr/">solr</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/tool/">tool</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/windows/">windows</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/xslt/">xslt</a></li></ul>
+                                    
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+
+  
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/linux/">linux</a>
+    </h1>
+  
+
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-configure-shibboleth-service-provider-ubuntu-16" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Configure Shibboleth Service Provider on Ubuntu 16
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-subtitle">
+                <a href="/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/" class="article-date">
+    <time datetime="2017-07-04T08:51:12.000Z" itemprop="datePublished">2017-07-04</time>
+</a>
+                
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shibboleth/">shibboleth</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ubuntu/">ubuntu</a></li></ul>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="/images/linux/shibboleth.png" alt="Shibboleth"></p>
+<h2 id="Environments"><a href="#Environments" class="headerlink" title="Environments"></a>Environments</h2><p>Ubuntu 16<br>Apache 2<br>Shibboleth 2</p>
+<h2 id="Get-Apache-ready-for-Shibboleth"><a href="#Get-Apache-ready-for-Shibboleth" class="headerlink" title="Get Apache ready for Shibboleth"></a>Get Apache ready for Shibboleth</h2><p>Make sure Apache is installed, otherwise, run:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install apache2</div></pre></td></tr></table></figure>
+<p>Enable ssl:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo a2enmod ssl</div></pre></td></tr></table></figure>
+<p>Activate the SSL Virtual Host:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo a2ensite default-ssl.conf</div></pre></td></tr></table></figure>
+<p>Creating a self-signed SSL certificate:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo mkdir /etc/apache2/ssl</div><div class="line">sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt</div></pre></td></tr></table></figure>
+<h2 id="Add-Shibboleth-protected-application-service-for-testing"><a href="#Add-Shibboleth-protected-application-service-for-testing" class="headerlink" title="Add Shibboleth protected application/service for testing"></a>Add Shibboleth protected application/service for testing</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo mkdir /var/www/myservice</div></pre></td></tr></table></figure>
+<p>Create index page:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /var/www/myservice/index.html</div></pre></td></tr></table></figure></p>
+<p>Add content to index.html, e.g. </p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">Shibboleth protected service</div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="Install-Shibboleth"><a href="#Install-Shibboleth" class="headerlink" title="Install Shibboleth"></a>Install Shibboleth</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install libapache2-mod-shib2</div><div class="line">sudo a2enmod shib2</div></pre></td></tr></table></figure>
+<p>Set up a Shibboleth certificate: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo shib-keygen -h localhost</div></pre></td></tr></table></figure>
+<p>Check certificate:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">openssl x509 -text -noout -<span class="keyword">in</span> /etc/shibboleth/sp-cert.pem</div></pre></td></tr></table></figure>
+<p>Edit /etc/shibboleth/shibboleth2.xml. Make sure <strong>backup the original file</strong> before editing!</p>
+<p>Actually, by providing the hostname, testshib.org can generate a sample configuration, e.g. shibboleth2.xml for you automatically at:</p>
+<p><a href="https://www.testshib.org/configure.html" rel="external nofollow noopener noreferrer" target="_blank">https://www.testshib.org/configure.html</a> </p>
+<p>Sample content below:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">SPConfig</span> <span class="attr">xmlns</span>=<span class="string">"urn:mace:shibboleth:2.0:native:sp:config"</span> <span class="attr">xmlns:md</span>=<span class="string">"urn:oasis:names:tc:SAML:2.0:metadata"</span> <span class="attr">clockSkew</span>=<span class="string">"1800"</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">ApplicationDefaults</span> <span class="attr">entityID</span>=<span class="string">"https://localhost/shibboleth"</span> <span class="attr">REMOTE_USER</span>=<span class="string">"eppn"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">Sessions</span> <span class="attr">lifetime</span>=<span class="string">"28800"</span> <span class="attr">timeout</span>=<span class="string">"3600"</span> <span class="attr">checkAddress</span>=<span class="string">"false"</span> <span class="attr">relayState</span>=<span class="string">"ss:mem"</span> <span class="attr">handlerSSL</span>=<span class="string">"true"</span>&gt;</span></div><div class="line"></div><div class="line">            <span class="tag">&lt;<span class="name">SSO</span> <span class="attr">entityID</span>=<span class="string">"https://idp.testshib.org/idp/shibboleth"</span>&gt;</span> SAML2 SAML1 <span class="tag">&lt;/<span class="name">SSO</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">Logout</span>&gt;</span>SAML2 Local<span class="tag">&lt;/<span class="name">Logout</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">Handler</span> <span class="attr">type</span>=<span class="string">"MetadataGenerator"</span> <span class="attr">Location</span>=<span class="string">"/Metadata"</span> <span class="attr">signing</span>=<span class="string">"false"</span>/&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">Handler</span> <span class="attr">type</span>=<span class="string">"Status"</span> <span class="attr">Location</span>=<span class="string">"/Status"</span> <span class="attr">acl</span>=<span class="string">"127.0.0.1 ::1"</span>/&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">Handler</span> <span class="attr">type</span>=<span class="string">"Session"</span> <span class="attr">Location</span>=<span class="string">"/Session"</span> <span class="attr">showAttributeValues</span>=<span class="string">"true"</span>/&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">Handler</span> <span class="attr">type</span>=<span class="string">"DiscoveryFeed"</span> <span class="attr">Location</span>=<span class="string">"/DiscoFeed"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">Sessions</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">Errors</span> <span class="attr">supportContact</span>=<span class="string">"root@localhost"</span> <span class="attr">logoLocation</span>=<span class="string">"/shibboleth-sp/logo.jpg"</span> <span class="attr">styleSheet</span>=<span class="string">"/shibboleth-sp/main.css"</span>/&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">MetadataProvider</span> <span class="attr">type</span>=<span class="string">"XML"</span> <span class="attr">uri</span>=<span class="string">"http://www.testshib.org/metadata/testshib-providers.xml"</span> <span class="attr">backingFilePath</span>=<span class="string">"testshib-two-idp-metadata.xml"</span> <span class="attr">reloadInterval</span>=<span class="string">"180000"</span>/&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">AttributeExtractor</span> <span class="attr">type</span>=<span class="string">"XML"</span> <span class="attr">validate</span>=<span class="string">"true"</span> <span class="attr">path</span>=<span class="string">"attribute-map.xml"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">AttributeResolver</span> <span class="attr">type</span>=<span class="string">"Query"</span> <span class="attr">subjectMatch</span>=<span class="string">"true"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">AttributeFilter</span> <span class="attr">type</span>=<span class="string">"XML"</span> <span class="attr">validate</span>=<span class="string">"true"</span> <span class="attr">path</span>=<span class="string">"attribute-policy.xml"</span>/&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">CredentialResolver</span> <span class="attr">type</span>=<span class="string">"File"</span> <span class="attr">key</span>=<span class="string">"sp-key.pem"</span> <span class="attr">certificate</span>=<span class="string">"sp-cert.pem"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">ApplicationDefaults</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">SecurityPolicyProvider</span> <span class="attr">type</span>=<span class="string">"XML"</span> <span class="attr">validate</span>=<span class="string">"true"</span> <span class="attr">path</span>=<span class="string">"security-policy.xml"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">ProtocolProvider</span> <span class="attr">type</span>=<span class="string">"XML"</span> <span class="attr">validate</span>=<span class="string">"true"</span> <span class="attr">reloadChanges</span>=<span class="string">"false"</span> <span class="attr">path</span>=<span class="string">"protocols.xml"</span>/&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">SPConfig</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="Add-protected-service-into-Apache-configuration"><a href="#Add-protected-service-into-Apache-configuration" class="headerlink" title="Add protected service into Apache configuration"></a>Add protected service into Apache configuration</h2><p>Edit /etc/apache2/sites-available/default-ssl.conf with content:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">&lt;IfModule mod_ssl.c&gt;</div><div class="line">        &lt;VirtualHost _default_:443&gt;</div><div class="line">                ServerAdmin info@yuxifan.com</div><div class="line">                ServerName localhost</div><div class="line">                DocumentRoot /var/www/html</div><div class="line"></div><div class="line">                ErrorLog <span class="variable">$&#123;APACHE_LOG_DIR&#125;</span>/error.log</div><div class="line">                CustomLog <span class="variable">$&#123;APACHE_LOG_DIR&#125;</span>/access.log combined</div><div class="line">                SSLEngine on</div><div class="line">                SSLCertificateFile /etc/apache2/ssl/apache.crt</div><div class="line">                SSLCertificateKeyFile /etc/apache2/ssl/apache.key</div><div class="line"></div><div class="line">                &lt;FilesMatch <span class="string">"\.(cgi|shtml|phtml|php)$"</span>&gt;</div><div class="line">                                SSLOptions +StdEnvVars</div><div class="line">                &lt;/FilesMatch&gt;</div><div class="line">                &lt;Directory /usr/lib/cgi-bin&gt;</div><div class="line">                                SSLOptions +StdEnvVars</div><div class="line">                &lt;/Directory&gt;</div><div class="line"></div><div class="line">                BrowserMatch <span class="string">"MSIE [2-6]"</span> \</div><div class="line">                                nokeepalive ssl-unclean-shutdown \</div><div class="line">                                downgrade-1.0 force-response-1.0</div><div class="line">                BrowserMatch <span class="string">"MSIE [17-9]"</span> ssl-unclean-shutdown</div><div class="line"></div><div class="line">               Alias /myservice/ /var/www/myservice/</div><div class="line">              &lt;Location /myservice/&gt;</div><div class="line">                     AuthType shibboleth</div><div class="line">                     ShibRequestSetting requireSession 1</div><div class="line">                     Require valid-user</div><div class="line">              &lt;/Location&gt;</div><div class="line"></div><div class="line">        &lt;/VirtualHost&gt;</div><div class="line">&lt;/IfModule&gt;</div></pre></td></tr></table></figure>
+<h2 id="Start-Shibboleth-service"><a href="#Start-Shibboleth-service" class="headerlink" title="Start Shibboleth service"></a>Start Shibboleth service</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo service shibd start</div></pre></td></tr></table></figure>
+<p>You may want to enable Shibboleth at startup:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl <span class="built_in">enable</span> shibd</div></pre></td></tr></table></figure>
+<p>Test Shibboleth SP:<br><a href="https://localhost/Shibboleth.sso/DiscoFeed" rel="external nofollow noopener noreferrer" target="_blank">https://localhost/Shibboleth.sso/DiscoFeed</a></p>
+<p>Download Metadata:<br><a href="https://FQDN/Shibboleth.sso/Metadata" rel="external nofollow noopener noreferrer" target="_blank">https://FQDN/Shibboleth.sso/Metadata</a></p>
+<p>NB: Status page may <strong>NOT</strong> work, e.g. <a href="https://localhost/Shibboleth.sso/Metadata" rel="external nofollow noopener noreferrer" target="_blank">https://localhost/Shibboleth.sso/Metadata</a> may returns 403 Error.</p>
+<p>Now accessing <a href="https://localhost/myservice/" rel="external nofollow noopener noreferrer" target="_blank">https://localhost/myservice/</a> will redirect you to testshib site.</p>
+<p>Upload SP metadata on <a href="https://www.testshib.org/register.html" rel="external nofollow noopener noreferrer" target="_blank">https://www.testshib.org/register.html</a></p>
+<p>Now you should be redirected to TestShib login page. </p>
+<p>Enter the default name/password and you will be redirected back to your secure service page, e.g. /myservice/index.html (/var/www/myservice/index.html)</p>
+<h2 id="Further-configuration"><a href="#Further-configuration" class="headerlink" title="Further configuration"></a>Further configuration</h2><p>Allow access only to York users (On Apache 2.4)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;Location /myservice/&gt;</div><div class="line">        AuthType shibboleth</div><div class="line">        ShibRequestSetting requireSession 1</div><div class="line">        Require shib-attr affiliation ~ ^.+@www\.XYZ\.com$</div><div class="line">&lt;/Location&gt;</div></pre></td></tr></table></figure>
+<p>Allow access to specified user</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;Location /myservice/&gt;</div><div class="line">        AuthType shibboleth</div><div class="line">        ShibRequestSetting requireSession 1</div><div class="line">        Require user xxxx@XYZ.com</div><div class="line">&lt;/Location&gt;</div></pre></td></tr></table></figure>
+
+
+            
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+              <!-- autosize -->
+              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9869806761757481" data-ad-slot="8827673952" data-ad-format="auto"></ins>
+
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://www.yuxifan.com/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/" data-id="cj4pqkkgr0000faxu7yrhgjge" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="https://plus.google.com/104826207350368986265" target="_blank" rel="external nofollow noopener noreferrer">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/atom.xml" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/05/09/how-to-remove-ads-from-android-charging-screen/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            How to remove ads from Android screen while charging?
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2017/03/14/suppport-multiple-domains-in-nginx/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Host multiple domains in Nginx</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                <div class="widget-wrap widget-list">
+    <div class="widget">
+      <a href="https://www.vultr.com/?ref=6856003" target="_blank" rel="external nofollow noopener noreferrer">
+        <img src="/images/ads/vultr2_300x250.png">
+      </a>
+    </div>
+</div>
+
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/linux/shibboleth.png)" alt="Configure Shibboleth Service Provider on Ubuntu 16" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
+                            <p class="item-title"><a href="/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/" class="title">Configure Shibboleth Service Provider on Ubuntu 16</a></p>
+                            <p class="item-date"><time datetime="2017-07-04T08:51:12.000Z" itemprop="datePublished">2017-07-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/06/28/graphicsmagick/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/linux/graphicsmagick.jpg)" alt="GraphicsMagick" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
+                            <p class="item-title"><a href="/2017/06/28/graphicsmagick/" class="title">GraphicsMagick</a></p>
+                            <p class="item-date"><time datetime="2017-06-28T01:10:12.000Z" itemprop="datePublished">2017-06-28</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/05/09/how-to-remove-ads-from-android-charging-screen/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/mobile/android-charging-screen-ads.jpg)" alt="How to remove ads from Android screen while charging?" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/mobile/">mobile</a></p>
+                            <p class="item-title"><a href="/2017/05/09/how-to-remove-ads-from-android-charging-screen/" class="title">How to remove ads from Android screen while charging?</a></p>
+                            <p class="item-date"><time datetime="2017-05-09T20:51:12.000Z" itemprop="datePublished">2017-05-09</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/05/04/install-android-nougat-into-galaxy-s5/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/mobile/s5/android-nougat.jpg)" alt="Install Android Nougat into Samsung Galaxy S5 step by step" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/mobile/">mobile</a></p>
+                            <p class="item-title"><a href="/2017/05/04/install-android-nougat-into-galaxy-s5/" class="title">Install Android Nougat into Samsung Galaxy S5 step by step</a></p>
+                            <p class="item-date"><time datetime="2017-05-04T20:51:12.000Z" itemprop="datePublished">2017-05-04</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/03/14/suppport-multiple-domains-in-nginx/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/linux/nginx.jpg)" alt="Host multiple domains in Nginx" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/linux/">linux</a></p>
+                            <p class="item-title"><a href="/2017/03/14/suppport-multiple-domains-in-nginx/" class="title">Host multiple domains in Nginx</a></p>
+                            <p class="item-date"><time datetime="2017-03-14T05:51:12.000Z" itemprop="datePublished">2017-03-14</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/css/">css</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/database/">database</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/java/">java</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jekyll/">jekyll</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mobile/">mobile</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ruby/">ruby</a><span class="category-list-count">20</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/solr/">solr</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/">tool</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/windows/">windows</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/xslt/">xslt</a><span class="category-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                <div class="widget-wrap widget-list">
+    <div class="widget">
+      <a href="https://m.do.co/c/65b73b833dd9" target="_blank" rel="external nofollow noopener noreferrer">
+        <img src="/images/ads/digital-ocean-promo.gif">
+      </a>
+    </div>
+</div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Chinese-converter/" style="font-size: 10px;">Chinese converter</a> <a href="/tags/GraphicsMagick/" style="font-size: 10px;">GraphicsMagick</a> <a href="/tags/ImageMagick/" style="font-size: 10px;">ImageMagick</a> <a href="/tags/JSTL/" style="font-size: 12.5px;">JSTL</a> <a href="/tags/LEMP/" style="font-size: 10px;">LEMP</a> <a href="/tags/Linux/" style="font-size: 12.5px;">Linux</a> <a href="/tags/Nginx/" style="font-size: 10px;">Nginx</a> <a href="/tags/QR-code/" style="font-size: 10px;">QR code</a> <a href="/tags/Tomcat/" style="font-size: 10px;">Tomcat</a> <a href="/tags/URL-redirects/" style="font-size: 10px;">URL redirects</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/VM/" style="font-size: 10px;">VM</a> <a href="/tags/Wordpress/" style="font-size: 10px;">Wordpress</a> <a href="/tags/activemq/" style="font-size: 10px;">activemq</a> <a href="/tags/ads/" style="font-size: 10px;">ads</a> <a href="/tags/apt/" style="font-size: 10px;">apt</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/cyanogenmod/" style="font-size: 10px;">cyanogenmod</a> <a href="/tags/disqus/" style="font-size: 10px;">disqus</a> <a href="/tags/dropbox/" style="font-size: 12.5px;">dropbox</a> <a href="/tags/excel/" style="font-size: 10px;">excel</a> <a href="/tags/faraday/" style="font-size: 10px;">faraday</a> <a href="/tags/feed/" style="font-size: 10px;">feed</a> <a href="/tags/fontawesome/" style="font-size: 10px;">fontawesome</a> <a href="/tags/gapps/" style="font-size: 10px;">gapps</a> <a href="/tags/gem/" style="font-size: 15px;">gem</a> <a href="/tags/git/" style="font-size: 12.5px;">git</a> <a href="/tags/gmail/" style="font-size: 12.5px;">gmail</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/hyperlink/" style="font-size: 10px;">hyperlink</a> <a href="/tags/image/" style="font-size: 12.5px;">image</a> <a href="/tags/imagemagick/" style="font-size: 10px;">imagemagick</a> <a href="/tags/incron/" style="font-size: 10px;">incron</a> <a href="/tags/java/" style="font-size: 15px;">java</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/jekyll/" style="font-size: 10px;">jekyll</a> <a href="/tags/json/" style="font-size: 10px;">json</a> <a href="/tags/linux/" style="font-size: 17.5px;">linux</a> <a href="/tags/mailgun/" style="font-size: 10px;">mailgun</a> <a href="/tags/minify/" style="font-size: 12.5px;">minify</a> <a href="/tags/nofollow/" style="font-size: 10px;">nofollow</a> <a href="/tags/nokogiri/" style="font-size: 12.5px;">nokogiri</a> <a href="/tags/notepad/" style="font-size: 12.5px;">notepad++</a> <a href="/tags/odin/" style="font-size: 10px;">odin</a> <a href="/tags/plugin/" style="font-size: 10px;">plugin</a> <a href="/tags/proxy-server/" style="font-size: 10px;">proxy server</a> <a href="/tags/qr/" style="font-size: 10px;">qr</a> <a href="/tags/rails/" style="font-size: 10px;">rails</a> <a href="/tags/redis/" style="font-size: 12.5px;">redis</a> <a href="/tags/rss/" style="font-size: 10px;">rss</a> <a href="/tags/ruby/" style="font-size: 20px;">ruby</a> <a href="/tags/samsung/" style="font-size: 10px;">samsung</a> <a href="/tags/seo/" style="font-size: 10px;">seo</a> <a href="/tags/shibboleth/" style="font-size: 10px;">shibboleth</a> <a href="/tags/shortener/" style="font-size: 10px;">shortener</a> <a href="/tags/sitemap/" style="font-size: 10px;">sitemap</a> <a href="/tags/slider/" style="font-size: 10px;">slider</a> <a href="/tags/solr/" style="font-size: 10px;">solr</a> <a href="/tags/spreadsheet/" style="font-size: 10px;">spreadsheet</a> <a href="/tags/sqlite/" style="font-size: 10px;">sqlite</a> <a href="/tags/ssl/" style="font-size: 10px;">ssl</a> <a href="/tags/tutorials/" style="font-size: 10px;">tutorials</a> <a href="/tags/twrp/" style="font-size: 10px;">twrp</a> <a href="/tags/ubuntu/" style="font-size: 15px;">ubuntu</a> <a href="/tags/virtualbox/" style="font-size: 10px;">virtualbox</a> <a href="/tags/vultr/" style="font-size: 10px;">vultr</a> <a href="/tags/windows/" style="font-size: 12.5px;">windows</a> <a href="/tags/xslt/" style="font-size: 15px;">xslt</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <p style="text-align: center;">Contact me: <a href="mailto:yuxifanr@gmail.com" rel="external nofollow noopener noreferrer" target="_blank">yuxifanr@gmail.com</a></p><br>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'yuxifan';
+    
+    
+    var disqus_url = 'https://www.yuxifan.com/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+    
+        <script src="/js/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/js/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/js/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/js/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/js/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/js/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/js/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/js/lightgallery/js/lg-share.min.js"></script>
+        <script src="/js/lightgallery/js/lg-video.min.js"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+

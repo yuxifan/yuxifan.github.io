@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-06-28T10:22:44.373Z</updated>
+  <updated>2017-07-04T15:35:09.008Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,71 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Configure Shibboleth Service Provider on Ubuntu 16</title>
+    <link href="https://www.yuxifan.com/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/"/>
+    <id>https://www.yuxifan.com/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/</id>
+    <published>2017-07-04T08:51:12.000Z</published>
+    <updated>2017-07-04T15:35:09.008Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/linux/shibboleth.png" alt="Shibboleth"></p>
+<h2 id="Environments"><a href="#Environments" class="headerlink" title="Environments"></a>Environments</h2><p>Ubuntu 16<br>Apache 2<br>Shibboleth 2</p>
+<h2 id="Get-Apache-ready-for-Shibboleth"><a href="#Get-Apache-ready-for-Shibboleth" class="headerlink" title="Get Apache ready for Shibboleth"></a>Get Apache ready for Shibboleth</h2><p>Make sure Apache is installed, otherwise, run:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install apache2</div></pre></td></tr></table></figure>
+<p>Enable ssl:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo a2enmod ssl</div></pre></td></tr></table></figure>
+<p>Activate the SSL Virtual Host:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo a2ensite default-ssl.conf</div></pre></td></tr></table></figure>
+<p>Creating a self-signed SSL certificate:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo mkdir /etc/apache2/ssl</div><div class="line">sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt</div></pre></td></tr></table></figure>
+<h2 id="Add-Shibboleth-protected-application-service-for-testing"><a href="#Add-Shibboleth-protected-application-service-for-testing" class="headerlink" title="Add Shibboleth protected application/service for testing"></a>Add Shibboleth protected application/service for testing</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo mkdir /var/www/myservice</div></pre></td></tr></table></figure>
+<p>Create index page:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /var/www/myservice/index.html</div></pre></td></tr></table></figure></p>
+<p>Add content to index.html, e.g. </p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">Shibboleth protected service</div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="Install-Shibboleth"><a href="#Install-Shibboleth" class="headerlink" title="Install Shibboleth"></a>Install Shibboleth</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install libapache2-mod-shib2</div><div class="line">sudo a2enmod shib2</div></pre></td></tr></table></figure>
+<p>Set up a Shibboleth certificate: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo shib-keygen -h localhost</div></pre></td></tr></table></figure>
+<p>Check certificate:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">openssl x509 -text -noout -<span class="keyword">in</span> /etc/shibboleth/sp-cert.pem</div></pre></td></tr></table></figure>
+<p>Edit /etc/shibboleth/shibboleth2.xml. Make sure <strong>backup the original file</strong> before editing!</p>
+<p>Actually, by providing the hostname, testshib.org can generate a sample configuration, e.g. shibboleth2.xml for you automatically at:</p>
+<p><a href="https://www.testshib.org/configure.html" rel="external nofollow noopener noreferrer" target="_blank">https://www.testshib.org/configure.html</a> </p>
+<p>Sample content below:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">SPConfig</span> <span class="attr">xmlns</span>=<span class="string">"urn:mace:shibboleth:2.0:native:sp:config"</span> <span class="attr">xmlns:md</span>=<span class="string">"urn:oasis:names:tc:SAML:2.0:metadata"</span> <span class="attr">clockSkew</span>=<span class="string">"1800"</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">ApplicationDefaults</span> <span class="attr">entityID</span>=<span class="string">"https://localhost/shibboleth"</span> <span class="attr">REMOTE_USER</span>=<span class="string">"eppn"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">Sessions</span> <span class="attr">lifetime</span>=<span class="string">"28800"</span> <span class="attr">timeout</span>=<span class="string">"3600"</span> <span class="attr">checkAddress</span>=<span class="string">"false"</span> <span class="attr">relayState</span>=<span class="string">"ss:mem"</span> <span class="attr">handlerSSL</span>=<span class="string">"true"</span>&gt;</span></div><div class="line"></div><div class="line">            <span class="tag">&lt;<span class="name">SSO</span> <span class="attr">entityID</span>=<span class="string">"https://idp.testshib.org/idp/shibboleth"</span>&gt;</span> SAML2 SAML1 <span class="tag">&lt;/<span class="name">SSO</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">Logout</span>&gt;</span>SAML2 Local<span class="tag">&lt;/<span class="name">Logout</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">Handler</span> <span class="attr">type</span>=<span class="string">"MetadataGenerator"</span> <span class="attr">Location</span>=<span class="string">"/Metadata"</span> <span class="attr">signing</span>=<span class="string">"false"</span>/&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">Handler</span> <span class="attr">type</span>=<span class="string">"Status"</span> <span class="attr">Location</span>=<span class="string">"/Status"</span> <span class="attr">acl</span>=<span class="string">"127.0.0.1 ::1"</span>/&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">Handler</span> <span class="attr">type</span>=<span class="string">"Session"</span> <span class="attr">Location</span>=<span class="string">"/Session"</span> <span class="attr">showAttributeValues</span>=<span class="string">"true"</span>/&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">Handler</span> <span class="attr">type</span>=<span class="string">"DiscoveryFeed"</span> <span class="attr">Location</span>=<span class="string">"/DiscoFeed"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">Sessions</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">Errors</span> <span class="attr">supportContact</span>=<span class="string">"root@localhost"</span> <span class="attr">logoLocation</span>=<span class="string">"/shibboleth-sp/logo.jpg"</span> <span class="attr">styleSheet</span>=<span class="string">"/shibboleth-sp/main.css"</span>/&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">MetadataProvider</span> <span class="attr">type</span>=<span class="string">"XML"</span> <span class="attr">uri</span>=<span class="string">"http://www.testshib.org/metadata/testshib-providers.xml"</span> <span class="attr">backingFilePath</span>=<span class="string">"testshib-two-idp-metadata.xml"</span> <span class="attr">reloadInterval</span>=<span class="string">"180000"</span>/&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">AttributeExtractor</span> <span class="attr">type</span>=<span class="string">"XML"</span> <span class="attr">validate</span>=<span class="string">"true"</span> <span class="attr">path</span>=<span class="string">"attribute-map.xml"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">AttributeResolver</span> <span class="attr">type</span>=<span class="string">"Query"</span> <span class="attr">subjectMatch</span>=<span class="string">"true"</span>/&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">AttributeFilter</span> <span class="attr">type</span>=<span class="string">"XML"</span> <span class="attr">validate</span>=<span class="string">"true"</span> <span class="attr">path</span>=<span class="string">"attribute-policy.xml"</span>/&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">CredentialResolver</span> <span class="attr">type</span>=<span class="string">"File"</span> <span class="attr">key</span>=<span class="string">"sp-key.pem"</span> <span class="attr">certificate</span>=<span class="string">"sp-cert.pem"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">ApplicationDefaults</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">SecurityPolicyProvider</span> <span class="attr">type</span>=<span class="string">"XML"</span> <span class="attr">validate</span>=<span class="string">"true"</span> <span class="attr">path</span>=<span class="string">"security-policy.xml"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">ProtocolProvider</span> <span class="attr">type</span>=<span class="string">"XML"</span> <span class="attr">validate</span>=<span class="string">"true"</span> <span class="attr">reloadChanges</span>=<span class="string">"false"</span> <span class="attr">path</span>=<span class="string">"protocols.xml"</span>/&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">SPConfig</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="Add-protected-service-into-Apache-configuration"><a href="#Add-protected-service-into-Apache-configuration" class="headerlink" title="Add protected service into Apache configuration"></a>Add protected service into Apache configuration</h2><p>Edit /etc/apache2/sites-available/default-ssl.conf with content:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">&lt;IfModule mod_ssl.c&gt;</div><div class="line">        &lt;VirtualHost _default_:443&gt;</div><div class="line">                ServerAdmin info@yuxifan.com</div><div class="line">                ServerName localhost</div><div class="line">                DocumentRoot /var/www/html</div><div class="line"></div><div class="line">                ErrorLog <span class="variable">$&#123;APACHE_LOG_DIR&#125;</span>/error.log</div><div class="line">                CustomLog <span class="variable">$&#123;APACHE_LOG_DIR&#125;</span>/access.log combined</div><div class="line">                SSLEngine on</div><div class="line">                SSLCertificateFile /etc/apache2/ssl/apache.crt</div><div class="line">                SSLCertificateKeyFile /etc/apache2/ssl/apache.key</div><div class="line"></div><div class="line">                &lt;FilesMatch <span class="string">"\.(cgi|shtml|phtml|php)$"</span>&gt;</div><div class="line">                                SSLOptions +StdEnvVars</div><div class="line">                &lt;/FilesMatch&gt;</div><div class="line">                &lt;Directory /usr/lib/cgi-bin&gt;</div><div class="line">                                SSLOptions +StdEnvVars</div><div class="line">                &lt;/Directory&gt;</div><div class="line"></div><div class="line">                BrowserMatch <span class="string">"MSIE [2-6]"</span> \</div><div class="line">                                nokeepalive ssl-unclean-shutdown \</div><div class="line">                                downgrade-1.0 force-response-1.0</div><div class="line">                BrowserMatch <span class="string">"MSIE [17-9]"</span> ssl-unclean-shutdown</div><div class="line"></div><div class="line">               Alias /myservice/ /var/www/myservice/</div><div class="line">              &lt;Location /myservice/&gt;</div><div class="line">                     AuthType shibboleth</div><div class="line">                     ShibRequestSetting requireSession 1</div><div class="line">                     Require valid-user</div><div class="line">              &lt;/Location&gt;</div><div class="line"></div><div class="line">        &lt;/VirtualHost&gt;</div><div class="line">&lt;/IfModule&gt;</div></pre></td></tr></table></figure>
+<h2 id="Start-Shibboleth-service"><a href="#Start-Shibboleth-service" class="headerlink" title="Start Shibboleth service"></a>Start Shibboleth service</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo service shibd start</div></pre></td></tr></table></figure>
+<p>You may want to enable Shibboleth at startup:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl <span class="built_in">enable</span> shibd</div></pre></td></tr></table></figure>
+<p>Test Shibboleth SP:<br><a href="https://localhost/Shibboleth.sso/DiscoFeed" rel="external nofollow noopener noreferrer" target="_blank">https://localhost/Shibboleth.sso/DiscoFeed</a></p>
+<p>Download Metadata:<br><a href="https://FQDN/Shibboleth.sso/Metadata" rel="external nofollow noopener noreferrer" target="_blank">https://FQDN/Shibboleth.sso/Metadata</a></p>
+<p>NB: Status page may <strong>NOT</strong> work, e.g. <a href="https://localhost/Shibboleth.sso/Metadata" rel="external nofollow noopener noreferrer" target="_blank">https://localhost/Shibboleth.sso/Metadata</a> may returns 403 Error.</p>
+<p>Now accessing <a href="https://localhost/myservice/" rel="external nofollow noopener noreferrer" target="_blank">https://localhost/myservice/</a> will redirect you to testshib site.</p>
+<p>Upload SP metadata on <a href="https://www.testshib.org/register.html" rel="external nofollow noopener noreferrer" target="_blank">https://www.testshib.org/register.html</a></p>
+<p>Now you should be redirected to TestShib login page. </p>
+<p>Enter the default name/password and you will be redirected back to your secure service page, e.g. /myservice/index.html (/var/www/myservice/index.html)</p>
+<h2 id="Further-configuration"><a href="#Further-configuration" class="headerlink" title="Further configuration"></a>Further configuration</h2><p>Allow access only to York users (On Apache 2.4)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;Location /myservice/&gt;</div><div class="line">        AuthType shibboleth</div><div class="line">        ShibRequestSetting requireSession 1</div><div class="line">        Require shib-attr affiliation ~ ^.+@www\.XYZ\.com$</div><div class="line">&lt;/Location&gt;</div></pre></td></tr></table></figure>
+<p>Allow access to specified user</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;Location /myservice/&gt;</div><div class="line">        AuthType shibboleth</div><div class="line">        ShibRequestSetting requireSession 1</div><div class="line">        Require user xxxx@XYZ.com</div><div class="line">&lt;/Location&gt;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/linux/shibboleth.png&quot; alt=&quot;Shibboleth&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Environments&quot;&gt;&lt;a href=&quot;#Environments&quot; class=&quot;headerlink&quot; title=&quot;Env
+    
+    </summary>
+    
+      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
+    
+    
+      <category term="ubuntu" scheme="https://www.yuxifan.com/tags/ubuntu/"/>
+    
+      <category term="shibboleth" scheme="https://www.yuxifan.com/tags/shibboleth/"/>
+    
+  </entry>
   
   <entry>
     <title>GraphicsMagick</title>
@@ -854,46 +919,6 @@ $("#text").
       <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
     
       <category term="incron" scheme="https://www.yuxifan.com/tags/incron/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Upload files to Dropbox in Linux command line</title>
-    <link href="https://www.yuxifan.com/2016/11/09/how-to-upload-files-to-dropbox-in-linux-command-line/"/>
-    <id>https://www.yuxifan.com/2016/11/09/how-to-upload-files-to-dropbox-in-linux-command-line/</id>
-    <published>2016-11-09T09:51:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p>Here is the instruction on how to upload files to your Dropbox without installing Dropbox:</p>
-<p><img src="/images/windows/dropbox.png" alt=""></p>
-<p>1) First, install the amazing <a href="https://github.com/andreafabrizi/Dropbox-Uploader" rel="external nofollow noopener noreferrer" target="_blank">Dropbox Uploader script</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/andreafabrizi/Dropbox-Uploader.git</div></pre></td></tr></table></figure></p>
-<p>2) Open the following URL in your Browser, and log in using your account: <a href="https://www.dropbox.com/developers/apps" rel="external nofollow noopener noreferrer" target="_blank">https://www.dropbox.com/developers/apps</a></p>
-<p>3) Click on “Create App”, then select “Dropbox API app”</p>
-<p>4) As shown below, configure your dropbox app, choosing the app permissions and access restrictions to your DropBox folder”<br><img src="/images/linux/dropbox-app-conf.jpg" alt=""></p>
-<p>5) Enter the “App Name” you like, e.g. YuxiUploader</p>
-<p>6) Click on the “Create App” button</p>
-<p>7) When your new App is successfully created, click on the Generate button. under the ‘Generated access token’ section, then copy and paste the new access token here to your Linux command line.</p>
-<p>8) Now you are ready to upload files to your dropbox, e.g. </p>
-<p>Upload file:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./dropbox_uploader.sh upload YOUR_LOCAL_FILE_NAME /</div></pre></td></tr></table></figure></p>
-<p>List files:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">./dropbox_uploader.sh list</div><div class="line">./dropbox_uploader.sh list subfolder</div></pre></td></tr></table></figure></p>
-<p>Download file:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./dropbox_uploader.sh download subfolder/1.pdf ./1.pdf</div></pre></td></tr></table></figure></p>
-<p>Create a remote folder:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./dropbox_uploader.sh mkdir /subfolder</div></pre></td></tr></table></figure></p>
-<p>Delete a remote folder<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./dropbox_uploader.sh delete /subfolder</div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Here is the instruction on how to upload files to your Dropbox without installing Dropbox:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/windows/dropbox.png&quot; 
-    
-    </summary>
-    
-      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
-    
-    
-      <category term="dropbox" scheme="https://www.yuxifan.com/tags/dropbox/"/>
-    
-      <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
     
   </entry>
   
