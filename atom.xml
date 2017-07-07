@@ -57,6 +57,36 @@
   </entry>
   
   <entry>
+    <title>Setting up Ruby development environments</title>
+    <link href="https://www.yuxifan.com/2017/07/06/setting-up-ruby-development-environments/"/>
+    <id>https://www.yuxifan.com/2017/07/06/setting-up-ruby-development-environments/</id>
+    <published>2017-07-06T08:51:12.000Z</published>
+    <updated>2017-07-07T12:44:32.957Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/ruby/ruby.png" alt="Ruby"></p>
+<h2 id="Install-development-libraries"><a href="#Install-development-libraries" class="headerlink" title="Install development libraries"></a>Install development libraries</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get -y update</div><div class="line">sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline6-dev libyaml-dev</div></pre></td></tr></table></figure>
+<h2 id="Install-rbenv"><a href="#Install-rbenv" class="headerlink" title="Install rbenv"></a>Install rbenv</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~</div><div class="line">git <span class="built_in">clone</span> git://github.com/sstephenson/rbenv.git .rbenv                        </div><div class="line"><span class="built_in">echo</span> <span class="string">'export PATH="$HOME/.rbenv/bin:$PATH"'</span> &gt;&gt; ~/.bash_profile</div><div class="line"><span class="built_in">echo</span> <span class="string">'eval "$(rbenv init -)"'</span> &gt;&gt; ~/.bash_profile</div><div class="line">git <span class="built_in">clone</span> git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build</div><div class="line"><span class="built_in">echo</span> <span class="string">'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"'</span> &gt;&gt; ~/.bash_profile</div><div class="line"><span class="built_in">source</span> ~/.bash_profile</div></pre></td></tr></table></figure>
+<h2 id="Install-ruby"><a href="#Install-ruby" class="headerlink" title="Install ruby"></a>Install ruby</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">rbenv install -v 2.3.1</div><div class="line">rbenv global 2.3.1</div><div class="line">ruby -v</div></pre></td></tr></table></figure>
+<h2 id="Install-gems"><a href="#Install-gems" class="headerlink" title="Install gems"></a>Install gems</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">gem install bundler</div><div class="line">gem install nokogiri</div><div class="line">gem install rails</div><div class="line">rbenv <span class="built_in">rehash</span></div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/ruby/ruby.png&quot; alt=&quot;Ruby&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Install-development-libraries&quot;&gt;&lt;a href=&quot;#Install-development-libraries&quot; class=&quot;h
+    
+    </summary>
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
+    
+    
+      <category term="Ruby" scheme="https://www.yuxifan.com/tags/Ruby/"/>
+    
+      <category term="rbenv" scheme="https://www.yuxifan.com/tags/rbenv/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Configure Shibboleth Service Provider on Ubuntu 16</title>
     <link href="https://www.yuxifan.com/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/"/>
     <id>https://www.yuxifan.com/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/</id>
@@ -851,77 +881,6 @@ $("#text").
       <category term="redis" scheme="https://www.yuxifan.com/tags/redis/"/>
     
       <category term="rails" scheme="https://www.yuxifan.com/tags/rails/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Convert between simplified Chinese and traditional Chinese</title>
-    <link href="https://www.yuxifan.com/2016/11/15/simplified-chinese-traditional-chinese-converter/"/>
-    <id>https://www.yuxifan.com/2016/11/15/simplified-chinese-traditional-chinese-converter/</id>
-    <published>2016-11-15T06:40:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" media="all" href="/css/foundation.min.css">
-<script src="/js/gb-big5.js"></script>
-<script src="/js/foundation.min.js"></script>
-
-<img src="/images/javascript/gb-big5.jpg"><br>
-
-<div class="row">
-  <div class="large-10 large-offset-1">
-      <div class="row">
-        <div class="medium-4 columns">
-          <label>From:
-            <select id="source_lang">
-              <option value="zh_TW">Traditional Chinese</option>
-              <option value="zh_CN">Simplified Chinese</option>
-            </select>
-          </label>
-        </div>
-        <div class="medium-4 columns">
-          <label>To:
-            <select id="tar_lang">
-              <option value="zh_CN">Simplified Chinese</option>
-              <option value="zh_TW">Traditional Chinese</option>
-            </select>
-          </label>
-        </div>
-        <div class="medium-4 columns">
-          <button class="button" id="trans">Convert</button>
-        </div>
-          
-        </div>
-	  Enter text to convert：
-      <textarea id="content" style="width: 600px; height:200px;"></textarea>
-	  
-      <br>
-      Result：
-      <textarea id="res_content" style="width: 600px; height:200px;"></textarea>
-  </div>
-	  <div style="display:none;">
-        Source language encoding：
-        <textarea id="source_encode"></textarea>
-        Target language encoding：
-        <textarea id="tar_encode"></textarea>
-	  </div>
-  </div>  
-<script>
-  Trans.init(); 
-</script> 
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;link rel=&quot;stylesheet&quot; media=&quot;all&quot; href=&quot;/css/foundation.min.css&quot;&gt;
-&lt;script src=&quot;/js/gb-big5.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;/js/foundation.min.js
-    
-    </summary>
-    
-      <category term="tool" scheme="https://www.yuxifan.com/categories/tool/"/>
-    
-    
-      <category term="Chinese converter" scheme="https://www.yuxifan.com/tags/Chinese-converter/"/>
     
   </entry>
   
