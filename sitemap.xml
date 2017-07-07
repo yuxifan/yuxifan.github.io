@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2017/07/07/phusion-passenger/</loc>
+    
+    <lastmod>2017-07-07T10:55:12.189Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/</loc>
     
     <lastmod>2017-07-04T15:40:01.263Z</lastmod>
@@ -65,13 +72,6 @@
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2016/01/12/2016-01-12-push-git-repository-to-multiple-hosts/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.yuxifan.com/2016/01/13/2016-01-13-how-to-connect-to-activemq-in-ruby/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
@@ -79,7 +79,7 @@
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2017/05/09/how-to-remove-ads-from-android-charging-screen/</loc>
+    <loc>https://www.yuxifan.com/2016/10/10/how-to-shorten-url-in-ruby/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
@@ -198,14 +198,14 @@
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2016/01/06/2016-01-06-how-to-convert-string-to-inputstream-in-java/</loc>
+    <loc>https://www.yuxifan.com/2017/05/09/how-to-remove-ads-from-android-charging-screen/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2016/10/10/how-to-shorten-url-in-ruby/</loc>
+    <loc>https://www.yuxifan.com/2016/01/06/2016-01-06-how-to-convert-string-to-inputstream-in-java/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
@@ -374,6 +374,13 @@
   
   <url>
     <loc>https://www.yuxifan.com/2017/01/03/useful-linux-commands/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/01/12/2016-01-12-push-git-repository-to-multiple-hosts/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-07-04T15:40:01.263Z</updated>
+  <updated>2017-07-07T10:55:12.189Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Setting up Phusion Passenger with Apache 2.4 on Ubuntu</title>
+    <link href="https://www.yuxifan.com/2017/07/07/phusion-passenger/"/>
+    <id>https://www.yuxifan.com/2017/07/07/phusion-passenger/</id>
+    <published>2017-07-07T08:51:12.000Z</published>
+    <updated>2017-07-07T10:55:12.189Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/ruby/phusion-passenger.jpg" alt="Phusion Passenger"></p>
+<h2 id="Install-Apache-2"><a href="#Install-Apache-2" class="headerlink" title="Install Apache 2"></a>Install Apache 2</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install apache2</div><div class="line">sudo a2enmod headers</div><div class="line">sudo a2enmod expires</div></pre></td></tr></table></figure>
+<h2 id="Configure-Apache-SSL"><a href="#Configure-Apache-SSL" class="headerlink" title="Configure Apache SSL"></a>Configure Apache SSL</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo a2enmod ssl</div><div class="line">sudo a2ensite default-ssl.conf</div><div class="line">sudo mkdir /etc/apache2/ssl</div><div class="line">sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt</div></pre></td></tr></table></figure>
+<h2 id="Install-Phusion-Passenger"><a href="#Install-Phusion-Passenger" class="headerlink" title="Install Phusion Passenger"></a>Install Phusion Passenger</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gem install passenger</div><div class="line">passenger-install-apache2-module</div></pre></td></tr></table></figure>
+<p>Follow on screen instructions, so the apache configuration file /etc/apache2/apache2.conf looks like:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">LoadModule passenger_module /home/yuxi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/passenger-5.1.5/buildout/apache2/mod_passenger.so</div><div class="line">&lt;IfModule mod_passenger.c&gt;</div><div class="line">     PassengerRoot /home/yuxi/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/passenger-5.1.5</div><div class="line">     PassengerDefaultRuby /home/yuxi/.rbenv/versions/2.3.1/bin/ruby</div><div class="line">&lt;/IfModule&gt;</div></pre></td></tr></table></figure>
+<h2 id="Configure-Rails-application-in-Apache-2-x"><a href="#Configure-Rails-application-in-Apache-2-x" class="headerlink" title="Configure Rails application in Apache 2.x"></a>Configure Rails application in Apache 2.x</h2><p>Edit /etc/apache2/sites-enabled/default-ssl.conf:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">&lt;IfModule mod_ssl.c&gt;</div><div class="line">  &lt;VirtualHost _default_:443&gt;</div><div class="line">    ServerAdmin info@yuxifan.com</div><div class="line">    ServerName localhost</div><div class="line"></div><div class="line">    SSLEngine on</div><div class="line">    SSLCertificateFile /etc/apache2/ssl/apache.crt</div><div class="line">    SSLCertificateKeyFile /etc/apache2/ssl/apache.key</div><div class="line"></div><div class="line">    RailsEnv production</div><div class="line">    RailsBaseURI /</div><div class="line"></div><div class="line">    Alias / /home/yuxi/rails_app/public</div><div class="line">    &lt;Location /&gt;</div><div class="line">      PassengerBaseURI /</div><div class="line">      PassengerAppRoot /home/yuxi/rails_app</div><div class="line">    &lt;/Location&gt;</div><div class="line">    &lt;Directory /home/yuxi/rails_app/public&gt;</div><div class="line">      Require all granted</div><div class="line">      AllowOverride None</div><div class="line">      Options -MultiViews +FollowSymLinks</div><div class="line">      Require all granted</div><div class="line">    &lt;/Directory&gt;</div><div class="line"></div><div class="line">    &lt;Location /assets/&gt;</div><div class="line">      Require all granted</div><div class="line">      Header <span class="built_in">unset</span> ETag</div><div class="line">      FileETag None</div><div class="line">      ExpiresActive On</div><div class="line">      ExpiresDefault <span class="string">"access plus 1 year"</span></div><div class="line">    &lt;/Location&gt;</div><div class="line">  &lt;/VirtualHost&gt;</div><div class="line">&lt;/IfModule&gt;</div></pre></td></tr></table></figure>
+<h2 id="Configurations-within-Rails-application"><a href="#Configurations-within-Rails-application" class="headerlink" title="Configurations within Rails application"></a>Configurations within Rails application</h2><p>Generate assets for production:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rake assets:precompile RAILS_ENV=production</div></pre></td></tr></table></figure>
+<p>Edit config/environments/production.rb, make sure:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">config.public_file_server.enabled = <span class="literal">true</span></div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/ruby/phusion-passenger.jpg&quot; alt=&quot;Phusion Passenger&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Install-Apache-2&quot;&gt;&lt;a href=&quot;#Install-Apache-2&quot; class=&quot;h
+    
+    </summary>
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
+    
+    
+      <category term="ubuntu" scheme="https://www.yuxifan.com/tags/ubuntu/"/>
+    
+      <category term="Phusion Passenger" scheme="https://www.yuxifan.com/tags/Phusion-Passenger/"/>
+    
+      <category term="Rails" scheme="https://www.yuxifan.com/tags/Rails/"/>
+    
+      <category term="Apache" scheme="https://www.yuxifan.com/tags/Apache/"/>
+    
+  </entry>
   
   <entry>
     <title>Configure Shibboleth Service Provider on Ubuntu 16</title>
@@ -881,44 +922,6 @@ $("#text").
     
     
       <category term="Chinese converter" scheme="https://www.yuxifan.com/tags/Chinese-converter/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to trigger a cron job based on file modifications</title>
-    <link href="https://www.yuxifan.com/2016/11/14/how-to-trigger-a-cron-job-based-on-file-modifications/"/>
-    <id>https://www.yuxifan.com/2016/11/14/how-to-trigger-a-cron-job-based-on-file-modifications/</id>
-    <published>2016-11-14T06:51:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p>Cron is an amazon tool that allowing Linux and Unix users to run commands or scripts at a given date and time. However, sometimes people want to trigger a job based on file modifications / creations. Here we can use incron to do this kinds of automation.</p>
-<p><img src="/images/linux/incron.png" alt="incron"></p>
-<h2 id="Incron-installation"><a href="#Incron-installation" class="headerlink" title="Incron installation"></a>Incron installation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install incron</div></pre></td></tr></table></figure>
-<h2 id="Using-Incron"><a href="#Using-Incron" class="headerlink" title="Using Incron"></a>Using Incron</h2><p>If /etc/incron.allow exists only users listed here may use incron. Otherwise if /etc/incron.deny exists only users NOT listed here may use incron. If none of these files exists everyone is allowed to use incron.</p>
-<p>So firstly, we need to modify incron.allow to add users in:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nano incron.allow</div></pre></td></tr></table></figure>
-<p>Add users e.g. root, yuxi into the list:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">root</div><div class="line">yuxi</div></pre></td></tr></table></figure>
-<p>Now we can list all incron jobs:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">incrontab -l</div></pre></td></tr></table></figure>
-<p>Set up incron job for user ‘yuxi’</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">incrontab -e</div></pre></td></tr></table></figure>
-<p>Add the following line to do an auto deployment to git repository:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/home/yuxi/website_src/ IN_MODIFY /home/yuxi/deploy_website.sh</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Cron is an amazon tool that allowing Linux and Unix users to run commands or scripts at a given date and time. However, sometimes people 
-    
-    </summary>
-    
-      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
-    
-      <category term="incron" scheme="https://www.yuxifan.com/tags/incron/"/>
     
   </entry>
   
