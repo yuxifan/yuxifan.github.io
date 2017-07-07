@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2017/07/07/implementing-shibboleth-in-rails/</loc>
+    
+    <lastmod>2017-07-07T14:48:09.295Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2017/07/06/setting-up-ruby-development-environments/</loc>
     
     <lastmod>2017-07-07T12:44:32.957Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>https://www.yuxifan.com/2017/06/28/graphicsmagick/</loc>
     
     <lastmod>2017-06-28T10:22:44.373Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/10/10/how-to-shorten-url-in-ruby/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
   </url>
   
@@ -205,14 +205,14 @@
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2016/01/06/2016-01-06-how-to-convert-string-to-inputstream-in-java/</loc>
+    <loc>https://www.yuxifan.com/2016/10/10/how-to-shorten-url-in-ruby/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2016/11/14/how-to-trigger-a-cron-job-based-on-file-modifications/</loc>
+    <loc>https://www.yuxifan.com/2016/01/06/2016-01-06-how-to-convert-string-to-inputstream-in-java/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
@@ -388,6 +388,13 @@
   
   <url>
     <loc>https://www.yuxifan.com/2016/01/13/2016-01-13-how-to-connect-to-activemq-in-ruby/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/11/14/how-to-trigger-a-cron-job-based-on-file-modifications/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     

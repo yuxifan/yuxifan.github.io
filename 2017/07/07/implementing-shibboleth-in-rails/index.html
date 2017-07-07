@@ -3,26 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>How to get latest year in xslt | Yuxi Fan</title>
+    <title>Implementing Shibboleth login in Rails application | Yuxi Fan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="xslt">
+        <meta name="keywords" content="rails,shibboleth,passenger">
     
-    <meta name="description" content="###XML
-1234567891011121314151617181920212223&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&amp;lt;publications&amp;gt;    &amp;lt;publication&amp;gt;        &amp;lt;author&amp;gt;Fan&amp;lt;/author&amp;gt;        &amp;lt;year&amp;gt;1999&amp;lt;">
+    <meta name="description" content="Further to the basic configuration to make Shibboleth working with Apache 2, it’s time to configure Rails application with Shibboleth. You may want to get Phusion Passenger working first, here is the">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to get latest year in xslt">
-<meta property="og:url" content="https://www.yuxifan.com/2016/01/15/2016-01-15-get-latest-year-in-xslt/index.html">
+<meta property="og:title" content="Implementing Shibboleth login in Rails application">
+<meta property="og:url" content="https://www.yuxifan.com/2017/07/07/implementing-shibboleth-in-rails/index.html">
 <meta property="og:site_name" content="Yuxi Fan">
-<meta property="og:description" content="###XML
-1234567891011121314151617181920212223&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&amp;lt;publications&amp;gt;    &amp;lt;publication&amp;gt;        &amp;lt;author&amp;gt;Fan&amp;lt;/author&amp;gt;        &amp;lt;year&amp;gt;1999&amp;lt;">
-<meta property="og:image" content="https://www.yuxifan.com/images/xslt/open_xslt.gif">
-<meta property="og:updated_time" content="2017-06-16T10:17:52.230Z">
+<meta property="og:description" content="Further to the basic configuration to make Shibboleth working with Apache 2, it’s time to configure Rails application with Shibboleth. You may want to get Phusion Passenger working first, here is the">
+<meta property="og:image" content="https://www.yuxifan.com/images/ruby/rails.png">
+<meta property="og:updated_time" content="2017-07-07T14:48:09.295Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to get latest year in xslt">
-<meta name="twitter:description" content="###XML
-1234567891011121314151617181920212223&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;&amp;lt;publications&amp;gt;    &amp;lt;publication&amp;gt;        &amp;lt;author&amp;gt;Fan&amp;lt;/author&amp;gt;        &amp;lt;year&amp;gt;1999&amp;lt;">
-<meta name="twitter:image" content="https://www.yuxifan.com/images/xslt/open_xslt.gif">
+<meta name="twitter:title" content="Implementing Shibboleth login in Rails application">
+<meta name="twitter:description" content="Further to the basic configuration to make Shibboleth working with Apache 2, it’s time to configure Rails application with Shibboleth. You may want to get Phusion Passenger working first, here is the">
+<meta name="twitter:image" content="https://www.yuxifan.com/images/ruby/rails.png">
     
 
     
@@ -148,21 +145,21 @@ ga('send', 'pageview');
   
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/xslt/">xslt</a>
+    <a class="page-title-link" href="/categories/ruby/">ruby</a>
     </h1>
   
 
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-2016-01-15-get-latest-year-in-xslt" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+                            <article id="post-implementing-shibboleth-in-rails" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        How to get latest year in xslt
+        Implementing Shibboleth login in Rails application
         </h1>
     
 
@@ -170,23 +167,45 @@ ga('send', 'pageview');
         
         
             <div class="article-subtitle">
-                <a href="/2016/01/15/2016-01-15-get-latest-year-in-xslt/" class="article-date">
-    <time datetime="2016-01-15T09:51:12.000Z" itemprop="datePublished">2016-01-15</time>
+                <a href="/2017/07/07/implementing-shibboleth-in-rails/" class="article-date">
+    <time datetime="2017-07-07T11:51:12.000Z" itemprop="datePublished">2017-07-07</time>
 </a>
                 
-    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/xslt/">xslt</a></li></ul>
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/passenger/">passenger</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rails/">rails</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shibboleth/">shibboleth</a></li></ul>
 
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p><img src="/images/xslt/open_xslt.gif" alt=""></p>
-<p>###XML</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line"><span class="tag">&lt;<span class="name">publications</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">publication</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">author</span>&gt;</span>Fan<span class="tag">&lt;/<span class="name">author</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">year</span>&gt;</span>1999<span class="tag">&lt;/<span class="name">year</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>test1<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">publication</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">publication</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">author</span>&gt;</span>Fan<span class="tag">&lt;/<span class="name">author</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">year</span>&gt;</span>2012<span class="tag">&lt;/<span class="name">year</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>test2<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">publication</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">publication</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">author</span>&gt;</span>Fan<span class="tag">&lt;/<span class="name">author</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">year</span>&gt;</span>1980<span class="tag">&lt;/<span class="name">year</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>test3<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">publication</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">publication</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">author</span>&gt;</span>Fan<span class="tag">&lt;/<span class="name">author</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">year</span>&gt;</span>2007<span class="tag">&lt;/<span class="name">year</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>test4<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">publication</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">publications</span>&gt;</span></div></pre></td></tr></table></figure>
-<p>###XSLT:</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line"><span class="tag">&lt;<span class="name">xsl:stylesheet</span> <span class="attr">version</span>=<span class="string">"1.0"</span> <span class="attr">xmlns:xsl</span>=<span class="string">"http://www.w3.org/1999/XSL/Transform"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">xsl:output</span> <span class="attr">method</span>=<span class="string">"xml"</span> <span class="attr">indent</span>=<span class="string">"yes"</span> <span class="attr">encoding</span>=<span class="string">"UTF-8"</span>/&gt;</span></div><div class="line">   </div><div class="line">    <span class="tag">&lt;<span class="name">xsl:template</span> <span class="attr">match</span>=<span class="string">"/"</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- get latest year --&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">xsl:for-each</span> <span class="attr">select</span>=<span class="string">"/publications/publication/year"</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">xsl:variable</span> <span class="attr">name</span>=<span class="string">"currentYear"</span> <span class="attr">select</span>=<span class="string">"normalize-space(text())"</span>/&gt;</span></div><div class="line">           </div><div class="line">            <span class="tag">&lt;<span class="name">xsl:if</span> <span class="attr">test</span>=<span class="string">"self::node()[count(../..//year[. &amp;gt; $currentYear])=0]"</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">latestYear</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">xsl:value-of</span> <span class="attr">select</span>=<span class="string">"$currentYear"</span>/&gt;</span></div><div class="line">                <span class="tag">&lt;/<span class="name">latestYear</span>&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">xsl:if</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">xsl:for-each</span>&gt;</span></div><div class="line">       </div><div class="line">    <span class="tag">&lt;/<span class="name">xsl:template</span>&gt;</span></div><div class="line">   </div><div class="line"><span class="tag">&lt;/<span class="name">xsl:stylesheet</span>&gt;</span></div></pre></td></tr></table></figure>
+            <p>Further to the basic configuration to <a href="/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/">make Shibboleth working with Apache 2</a>, it’s time to configure Rails application with Shibboleth. You may want to get Phusion Passenger working first, here is the tutorial: <a href="/2017/07/07/phusion-passenger/">Setting up Phusion Passenger with Apache2</a>.</p>
+<p><img src="/images/ruby/rails.png" alt="Rails"></p>
+<h2 id="0-Environements"><a href="#0-Environements" class="headerlink" title="0) Environements"></a>0) Environements</h2><p>Ubuntu: 16<br>Apache: 2.4.7<br>Ruby: 2.3.1<br>Phusion Passenger: 5.1.5<br>Shibboleth: 2.5.2</p>
+<h2 id="1-Configure-Apache2"><a href="#1-Configure-Apache2" class="headerlink" title="1) Configure Apache2"></a>1) Configure Apache2</h2><p>First, edit /etc/apache2/sites-enabled/default-ssl.conf and add:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;Location <span class="string">"/Shibboleth.sso"</span>&gt;</div><div class="line">  Require all granted</div><div class="line">  PassengerEnabled off</div><div class="line">&lt;/Location&gt;</div></pre></td></tr></table></figure>
+<p>and</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;Location <span class="string">"/users/auth/shibboleth"</span>&gt;</div><div class="line">  AuthType shibboleth</div><div class="line">  ShibRequestSetting requireSession 1</div><div class="line">  require valid-user</div><div class="line">&lt;/Location&gt;</div></pre></td></tr></table></figure>
+<p>You may want to comment out the following line in /etc/apache2/apache2.conf, otherwise, you have to grant acess to each individual path.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#&lt;Directory /&gt;</span></div><div class="line"><span class="comment">#       Options FollowSymLinks</span></div><div class="line"><span class="comment">#       AllowOverride None</span></div><div class="line"><span class="comment">#       Require all denied</span></div><div class="line"><span class="comment">#&lt;/Directory&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="2-Configure-develop-Rails-application-to-support-Shibooleth"><a href="#2-Configure-develop-Rails-application-to-support-Shibooleth" class="headerlink" title="2) Configure/develop Rails application to support Shibooleth"></a>2) Configure/develop Rails application to support Shibooleth</h2><h3 id="2-1-Add-gem-‘omniauth-shibboleth’-into-Gemfile-and-run"><a href="#2-1-Add-gem-‘omniauth-shibboleth’-into-Gemfile-and-run" class="headerlink" title="2.1) Add gem ‘omniauth-shibboleth’ into Gemfile and run"></a>2.1) Add gem ‘omniauth-shibboleth’ into Gemfile and run</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bundle install</div></pre></td></tr></table></figure>
+<h3 id="2-2-Edit-config-initializers-devise-rb"><a href="#2-2-Edit-config-initializers-devise-rb" class="headerlink" title="2.2) Edit config/initializers/devise.rb:"></a>2.2) Edit config/initializers/devise.rb:</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">config.omniauth <span class="symbol">:shibboleth</span>, &#123;<span class="symbol">:uid_field</span> =&gt; <span class="string">'eppn'</span>,</div><div class="line">                                <span class="symbol">:info_fields</span> =&gt; &#123;</div><div class="line">                                <span class="symbol">:affiliation</span> =&gt; lambda &#123;<span class="params">|request_param|</span> request_param.call(<span class="string">'unscoped-affiliation'</span>).split(<span class="string">';'</span>)&#125;,</div><div class="line">                                &#125;,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="2-3-Edit-app-models-user-rb"><a href="#2-3-Edit-app-models-user-rb" class="headerlink" title="2.3) Edit app/models/user.rb"></a>2.3) Edit app/models/user.rb</h3><p>Add method:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">self</span>.<span class="title">from_omniauth</span><span class="params">(auth)</span></span></div><div class="line">    where(<span class="symbol">provider:</span> auth.provider, <span class="symbol">uid:</span> auth.uid).first_or_create <span class="keyword">do</span> <span class="params">|user|</span></div><div class="line">      user.provider = auth.provider</div><div class="line">      user.uid      = auth.uid</div><div class="line">      user.email    = auth.uid</div><div class="line">      user.password = Devise.friendly_token[<span class="number">0</span>,<span class="number">20</span>]</div><div class="line">    <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<p>Also add :omniauthable to declaration in user.rb</p>
+<h3 id="2-4-Add-a-controller-e-g-app-controllers-omniauthcallbacks-controller-rb"><a href="#2-4-Add-a-controller-e-g-app-controllers-omniauthcallbacks-controller-rb" class="headerlink" title="2.4) Add a controller, e.g. app/controllers/omniauthcallbacks_controller.rb"></a>2.4) Add a controller, e.g. app/controllers/omniauthcallbacks_controller.rb</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">OmniauthcallbacksController</span> &lt; Devise::OmniauthCallbacksController</span></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">shibboleth</span></span></div><div class="line">    @user = User.from_omniauth(request.env[<span class="string">"omniauth.auth"</span>])</div><div class="line">    session[<span class="string">'shib_user_data'</span>] = request.env[<span class="string">"omniauth.auth"</span>]</div><div class="line">    sign_in_and_redirect @user</div><div class="line">  <span class="keyword">end</span></div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">failure</span></span></div><div class="line">    redirect_to new_local_user_session_path, <span class="symbol">:notice</span> =&gt; <span class="string">"Cannot login via Shibboleth - redirect to local login ..."</span></div><div class="line">  <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h3 id="2-5-edit-config-routes-rb"><a href="#2-5-edit-config-routes-rb" class="headerlink" title="2.5) edit config/routes.rb"></a>2.5) edit config/routes.rb</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">devise_for <span class="symbol">:users</span>, <span class="symbol">:controllers</span> =&gt; &#123; <span class="symbol">:omniauth_callbacks</span> =&gt; <span class="string">"omniauthcallbacks"</span> &#125;, <span class="symbol">:skip</span> =&gt; [<span class="symbol">:sessions</span>]</div></pre></td></tr></table></figure>
+<p>Run:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rails g migration AddColumnsToUsers provider uid</div><div class="line">rake db:migrate</div></pre></td></tr></table></figure></p>
+<h3 id="2-6-edit-routes-rb-and-add"><a href="#2-6-edit-routes-rb-and-add" class="headerlink" title="2.6) edit routes.rb and add:"></a>2.6) edit routes.rb and add:</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">devise_scope <span class="symbol">:user</span> <span class="keyword">do</span></div><div class="line">    match <span class="string">"/users/auth/shibboleth"</span> =&gt; <span class="string">"omniauth_callbacks#passthru"</span>, <span class="symbol">as:</span> <span class="string">"new_user_session"</span>,       <span class="symbol">via:</span> [<span class="symbol">:get</span>]</div><div class="line">    match <span class="string">"/users/sign_in"</span>         =&gt; <span class="string">"devise/sessions#new"</span>,         <span class="symbol">as:</span> <span class="string">"new_local_user_session"</span>, <span class="symbol">via:</span> [<span class="symbol">:get</span>]</div><div class="line">    match <span class="string">"/users/sign_in"</span>         =&gt; <span class="string">"devise/sessions#create"</span>,      <span class="symbol">as:</span> <span class="string">"user_session"</span>,           <span class="symbol">via:</span> [<span class="symbol">:post</span>]</div><div class="line">    match <span class="string">"/users/sign_out"</span>        =&gt; <span class="string">"devise/sessions#destroy"</span>,     <span class="symbol">as:</span> <span class="string">"destroy_user_session"</span>,   <span class="symbol">via:</span> [<span class="symbol">:get</span>]</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
 
 
+            
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+              <!-- autosize -->
+              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9869806761757481" data-ad-slot="8827673952" data-ad-format="auto"></ins>
+
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
             
 
         </div>
@@ -195,7 +214,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://www.yuxifan.com/2016/01/15/2016-01-15-get-latest-year-in-xslt/" data-id="cj3zpr7cl000sjyxu1mt2zk99" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://www.yuxifan.com/2017/07/07/implementing-shibboleth-in-rails/" data-id="cj4tz7j4q0000oyxu6ohfexml" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -497,7 +516,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'yuxifan';
     
     
-    var disqus_url = 'https://www.yuxifan.com/2016/01/15/2016-01-15-get-latest-year-in-xslt/';
+    var disqus_url = 'https://www.yuxifan.com/2017/07/07/implementing-shibboleth-in-rails/';
     
     (function() {
     var dsq = document.createElement('script');

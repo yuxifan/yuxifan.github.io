@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-07-07T10:55:12.189Z</updated>
+  <updated>2017-07-07T14:48:09.295Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Implementing Shibboleth login in Rails application</title>
+    <link href="https://www.yuxifan.com/2017/07/07/implementing-shibboleth-in-rails/"/>
+    <id>https://www.yuxifan.com/2017/07/07/implementing-shibboleth-in-rails/</id>
+    <published>2017-07-07T11:51:12.000Z</published>
+    <updated>2017-07-07T14:48:09.295Z</updated>
+    
+    <content type="html"><![CDATA[<p>Further to the basic configuration to <a href="/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/">make Shibboleth working with Apache 2</a>, it’s time to configure Rails application with Shibboleth. You may want to get Phusion Passenger working first, here is the tutorial: <a href="/2017/07/07/phusion-passenger/">Setting up Phusion Passenger with Apache2</a>.</p>
+<p><img src="/images/ruby/rails.png" alt="Rails"></p>
+<h2 id="0-Environements"><a href="#0-Environements" class="headerlink" title="0) Environements"></a>0) Environements</h2><p>Ubuntu: 16<br>Apache: 2.4.7<br>Ruby: 2.3.1<br>Phusion Passenger: 5.1.5<br>Shibboleth: 2.5.2</p>
+<h2 id="1-Configure-Apache2"><a href="#1-Configure-Apache2" class="headerlink" title="1) Configure Apache2"></a>1) Configure Apache2</h2><p>First, edit /etc/apache2/sites-enabled/default-ssl.conf and add:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;Location <span class="string">"/Shibboleth.sso"</span>&gt;</div><div class="line">  Require all granted</div><div class="line">  PassengerEnabled off</div><div class="line">&lt;/Location&gt;</div></pre></td></tr></table></figure>
+<p>and</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;Location <span class="string">"/users/auth/shibboleth"</span>&gt;</div><div class="line">  AuthType shibboleth</div><div class="line">  ShibRequestSetting requireSession 1</div><div class="line">  require valid-user</div><div class="line">&lt;/Location&gt;</div></pre></td></tr></table></figure>
+<p>You may want to comment out the following line in /etc/apache2/apache2.conf, otherwise, you have to grant acess to each individual path.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#&lt;Directory /&gt;</span></div><div class="line"><span class="comment">#       Options FollowSymLinks</span></div><div class="line"><span class="comment">#       AllowOverride None</span></div><div class="line"><span class="comment">#       Require all denied</span></div><div class="line"><span class="comment">#&lt;/Directory&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="2-Configure-develop-Rails-application-to-support-Shibooleth"><a href="#2-Configure-develop-Rails-application-to-support-Shibooleth" class="headerlink" title="2) Configure/develop Rails application to support Shibooleth"></a>2) Configure/develop Rails application to support Shibooleth</h2><h3 id="2-1-Add-gem-‘omniauth-shibboleth’-into-Gemfile-and-run"><a href="#2-1-Add-gem-‘omniauth-shibboleth’-into-Gemfile-and-run" class="headerlink" title="2.1) Add gem ‘omniauth-shibboleth’ into Gemfile and run"></a>2.1) Add gem ‘omniauth-shibboleth’ into Gemfile and run</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bundle install</div></pre></td></tr></table></figure>
+<h3 id="2-2-Edit-config-initializers-devise-rb"><a href="#2-2-Edit-config-initializers-devise-rb" class="headerlink" title="2.2) Edit config/initializers/devise.rb:"></a>2.2) Edit config/initializers/devise.rb:</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">config.omniauth <span class="symbol">:shibboleth</span>, &#123;<span class="symbol">:uid_field</span> =&gt; <span class="string">'eppn'</span>,</div><div class="line">                                <span class="symbol">:info_fields</span> =&gt; &#123;</div><div class="line">                                <span class="symbol">:affiliation</span> =&gt; lambda &#123;<span class="params">|request_param|</span> request_param.call(<span class="string">'unscoped-affiliation'</span>).split(<span class="string">';'</span>)&#125;,</div><div class="line">                                &#125;,</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="2-3-Edit-app-models-user-rb"><a href="#2-3-Edit-app-models-user-rb" class="headerlink" title="2.3) Edit app/models/user.rb"></a>2.3) Edit app/models/user.rb</h3><p>Add method:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">self</span>.<span class="title">from_omniauth</span><span class="params">(auth)</span></span></div><div class="line">    where(<span class="symbol">provider:</span> auth.provider, <span class="symbol">uid:</span> auth.uid).first_or_create <span class="keyword">do</span> <span class="params">|user|</span></div><div class="line">      user.provider = auth.provider</div><div class="line">      user.uid      = auth.uid</div><div class="line">      user.email    = auth.uid</div><div class="line">      user.password = Devise.friendly_token[<span class="number">0</span>,<span class="number">20</span>]</div><div class="line">    <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<p>Also add :omniauthable to declaration in user.rb</p>
+<h3 id="2-4-Add-a-controller-e-g-app-controllers-omniauthcallbacks-controller-rb"><a href="#2-4-Add-a-controller-e-g-app-controllers-omniauthcallbacks-controller-rb" class="headerlink" title="2.4) Add a controller, e.g. app/controllers/omniauthcallbacks_controller.rb"></a>2.4) Add a controller, e.g. app/controllers/omniauthcallbacks_controller.rb</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">OmniauthcallbacksController</span> &lt; Devise::OmniauthCallbacksController</span></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">shibboleth</span></span></div><div class="line">    @user = User.from_omniauth(request.env[<span class="string">"omniauth.auth"</span>])</div><div class="line">    session[<span class="string">'shib_user_data'</span>] = request.env[<span class="string">"omniauth.auth"</span>]</div><div class="line">    sign_in_and_redirect @user</div><div class="line">  <span class="keyword">end</span></div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">failure</span></span></div><div class="line">    redirect_to new_local_user_session_path, <span class="symbol">:notice</span> =&gt; <span class="string">"Cannot login via Shibboleth - redirect to local login ..."</span></div><div class="line">  <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h3 id="2-5-edit-config-routes-rb"><a href="#2-5-edit-config-routes-rb" class="headerlink" title="2.5) edit config/routes.rb"></a>2.5) edit config/routes.rb</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">devise_for <span class="symbol">:users</span>, <span class="symbol">:controllers</span> =&gt; &#123; <span class="symbol">:omniauth_callbacks</span> =&gt; <span class="string">"omniauthcallbacks"</span> &#125;, <span class="symbol">:skip</span> =&gt; [<span class="symbol">:sessions</span>]</div></pre></td></tr></table></figure>
+<p>Run:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rails g migration AddColumnsToUsers provider uid</div><div class="line">rake db:migrate</div></pre></td></tr></table></figure></p>
+<h3 id="2-6-edit-routes-rb-and-add"><a href="#2-6-edit-routes-rb-and-add" class="headerlink" title="2.6) edit routes.rb and add:"></a>2.6) edit routes.rb and add:</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">devise_scope <span class="symbol">:user</span> <span class="keyword">do</span></div><div class="line">    match <span class="string">"/users/auth/shibboleth"</span> =&gt; <span class="string">"omniauth_callbacks#passthru"</span>, <span class="symbol">as:</span> <span class="string">"new_user_session"</span>,       <span class="symbol">via:</span> [<span class="symbol">:get</span>]</div><div class="line">    match <span class="string">"/users/sign_in"</span>         =&gt; <span class="string">"devise/sessions#new"</span>,         <span class="symbol">as:</span> <span class="string">"new_local_user_session"</span>, <span class="symbol">via:</span> [<span class="symbol">:get</span>]</div><div class="line">    match <span class="string">"/users/sign_in"</span>         =&gt; <span class="string">"devise/sessions#create"</span>,      <span class="symbol">as:</span> <span class="string">"user_session"</span>,           <span class="symbol">via:</span> [<span class="symbol">:post</span>]</div><div class="line">    match <span class="string">"/users/sign_out"</span>        =&gt; <span class="string">"devise/sessions#destroy"</span>,     <span class="symbol">as:</span> <span class="string">"destroy_user_session"</span>,   <span class="symbol">via:</span> [<span class="symbol">:get</span>]</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Further to the basic configuration to &lt;a href=&quot;/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/&quot;&gt;make Shibboleth working with
+    
+    </summary>
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
+    
+    
+      <category term="rails" scheme="https://www.yuxifan.com/tags/rails/"/>
+    
+      <category term="shibboleth" scheme="https://www.yuxifan.com/tags/shibboleth/"/>
+    
+      <category term="passenger" scheme="https://www.yuxifan.com/tags/passenger/"/>
+    
+  </entry>
   
   <entry>
     <title>Setting up Phusion Passenger with Apache 2.4 on Ubuntu</title>
@@ -835,52 +879,6 @@ $("#text").
     
     
       <category term="QR code" scheme="https://www.yuxifan.com/tags/QR-code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to implement a distributed Redis message processing system by using Redis / Resque in Rails</title>
-    <link href="https://www.yuxifan.com/2016/11/15/implement-a-distributed-redis-message-processing-system-in-rails/"/>
-    <id>https://www.yuxifan.com/2016/11/15/implement-a-distributed-redis-message-processing-system-in-rails/</id>
-    <published>2016-11-15T09:51:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p>I’ve written a post introducing how to implement a distributed message processing system in standalone Ruby application. Now I will do the same, but in Rails.</p>
-<h2 id="Architecture-design"><a href="#Architecture-design" class="headerlink" title="Architecture design"></a>Architecture design</h2><p><img src="/images/ruby/redis-architecture2.jpg" alt=""></p>
-<h2 id="Add-dependencies"><a href="#Add-dependencies" class="headerlink" title="Add dependencies"></a>Add dependencies</h2><p>add it in Gemfile:<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem <span class="string">'resque'</span></div></pre></td></tr></table></figure></p>
-<p>Also, modify Rakefile:<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">"resque"</span></div><div class="line"><span class="keyword">require</span> <span class="string">"resque/tasks"</span></div></pre></td></tr></table></figure></p>
-<h2 id="Add-resque-web-admin-UI"><a href="#Add-resque-web-admin-UI" class="headerlink" title="Add resque web admin UI:"></a>Add resque web admin UI:</h2><p>In Gemfile:</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem <span class="string">'resque-web'</span>, <span class="symbol">require:</span> <span class="string">'resque_web'</span></div></pre></td></tr></table></figure>
-<p>Later you should be able to access it via: <a href="http://SERVER:PORT/resque" rel="external nofollow noopener noreferrer" target="_blank">http://SERVER:PORT/resque</a></p>
-<h2 id="Define-a-worker-message-consumer"><a href="#Define-a-worker-message-consumer" class="headerlink" title="Define a worker (message consumer)"></a>Define a worker (message consumer)</h2><p>Add file app/workers/my_worker.rb<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyWorker</span></span></div><div class="line"></div><div class="line">  @queue = <span class="string">"mymessages"</span></div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">self</span>.<span class="title">perform</span><span class="params">(message)</span></span></div><div class="line">    puts <span class="string">"worker is processing job: <span class="subst">#&#123;message&#125;</span>"</span></div><div class="line">    </div><div class="line">	<span class="comment"># implement your logic here ...</span></div><div class="line">	</div><div class="line">    puts <span class="string">"Successfully processed: <span class="subst">#&#123;message&#125;</span>"</span></div><div class="line">  <span class="keyword">end</span></div><div class="line"></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure></p>
-<p>Don’t forget to update Rakefile:</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">require_relative <span class="string">"app/workers/my_worker.rb"</span></div></pre></td></tr></table></figure>
-<h2 id="Connect-to-your-remote-Redis-server-in-your-Rails-application"><a href="#Connect-to-your-remote-Redis-server-in-your-Rails-application" class="headerlink" title="Connect to your remote Redis server in your Rails application"></a>Connect to your remote Redis server in your Rails application</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">RAILS_RESQUE_REDIS=YOUR_REDIS_SERVER_IP:PORT rails s -b0.0.0.0</div></pre></td></tr></table></figure>
-<p>If you want to set up a basic HTTP authentication for your Resque web admin UI, run:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">RESQUE_WEB_HTTP_BASIC_AUTH_USER=YOUR_USERNAME RESQUE_WEB_HTTP_BASIC_AUTH_PASSWORD=YOUR_PASSWORD RAILS_RESQUE_REDIS=YOUR_REDIS_SERVER_IP:PORT rails s -b0.0.0.0</div></pre></td></tr></table></figure>
-<h2 id="To-load-the-worker"><a href="#To-load-the-worker" class="headerlink" title="To load the worker"></a>To load the worker</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">RAILS_RESQUE_REDIS=YOUR_REDIS_SERVER_IP:PORT rake environment resque:work QUEUE=*</div></pre></td></tr></table></figure>
-<p>Note: there is an additional parameter ‘environment’ which is required by Rails 5 (don’t know why - it just works)</p>
-<h2 id="The-client-side-message-producer"><a href="#The-client-side-message-producer" class="headerlink" title="The client side (message producer)"></a>The client side (message producer)</h2><p>First, you need to copy over ‘MyWorker.rb’ to your client application, e.g. the message producer. </p>
-<p>In the appropriate class, e.g. controller / actor class, add:</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">require_relative <span class="string">'my_worker'</span></div></pre></td></tr></table></figure>
-<p>Also, make a call to send message to Redis, which will be consumed by your worker later.</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Resque.enqueue(MyWorker, your_message)</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;I’ve written a post introducing how to implement a distributed message processing system in standalone Ruby application. Now I will do th
-    
-    </summary>
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
-    
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
-    
-      <category term="redis" scheme="https://www.yuxifan.com/tags/redis/"/>
-    
-      <category term="rails" scheme="https://www.yuxifan.com/tags/rails/"/>
     
   </entry>
   
