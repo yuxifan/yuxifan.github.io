@@ -25,7 +25,7 @@ Enable ssl:
 1sudo a2enmod ssl
 Activate the SSL Vi">
 <meta property="og:image" content="https://www.yuxifan.com/images/linux/shibboleth.png">
-<meta property="og:updated_time" content="2017-07-04T15:40:01.263Z">
+<meta property="og:updated_time" content="2017-07-13T14:39:35.501Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Configure Shibboleth Service Provider on Ubuntu 16">
 <meta name="twitter:description" content="EnvironmentsUbuntu 16Apache 2Shibboleth 2
@@ -206,7 +206,7 @@ ga('send', 'pageview');
 <p>Create index page:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /var/www/myservice/index.html</div></pre></td></tr></table></figure></p>
 <p>Add content to index.html, e.g. </p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">Shibboleth protected service</div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
-<h2 id="Install-Shibboleth"><a href="#Install-Shibboleth" class="headerlink" title="Install Shibboleth"></a>Install Shibboleth</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install libapache2-mod-shib2</div><div class="line">sudo a2enmod shib2</div></pre></td></tr></table></figure>
+<h2 id="Install-Shibboleth"><a href="#Install-Shibboleth" class="headerlink" title="Install Shibboleth"></a>Install Shibboleth</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install libapache2-mod-shib2</div><div class="line">sudo a2enmod auth_basic</div><div class="line">sudo a2enmod shib2</div></pre></td></tr></table></figure>
 <p>Set up a Shibboleth certificate: </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo shib-keygen -h localhost</div></pre></td></tr></table></figure>
 <p>Check certificate:</p>
@@ -356,20 +356,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            Configure Shibboleth Service Provider on Ubuntu 16
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2017/05/09/how-to-remove-ads-from-android-charging-screen/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2017/07/07/phusion-passenger/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">How to remove ads from Android screen while charging?</p>
+        <p class="article-nav-title">Setting up Phusion Passenger with Apache 2.4 on Ubuntu</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     

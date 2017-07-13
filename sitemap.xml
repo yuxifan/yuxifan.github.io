@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/</loc>
+    
+    <lastmod>2017-07-13T14:39:35.501Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2017/07/07/implementing-shibboleth-in-rails/</loc>
     
     <lastmod>2017-07-07T14:48:09.295Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://www.yuxifan.com/2017/07/07/phusion-passenger/</loc>
     
     <lastmod>2017-07-07T10:55:12.189Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/</loc>
-    
-    <lastmod>2017-07-04T15:40:01.263Z</lastmod>
     
   </url>
   
