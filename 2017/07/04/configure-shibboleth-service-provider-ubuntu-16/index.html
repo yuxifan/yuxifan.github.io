@@ -25,7 +25,7 @@ Enable ssl:
 1sudo a2enmod ssl
 Activate the SSL Vi">
 <meta property="og:image" content="https://www.yuxifan.com/images/linux/shibboleth.png">
-<meta property="og:updated_time" content="2017-07-13T14:39:35.501Z">
+<meta property="og:updated_time" content="2017-07-13T15:31:57.631Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Configure Shibboleth Service Provider on Ubuntu 16">
 <meta name="twitter:description" content="EnvironmentsUbuntu 16Apache 2Shibboleth 2
@@ -223,7 +223,7 @@ ga('send', 'pageview');
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl <span class="built_in">enable</span> shibd</div></pre></td></tr></table></figure>
 <p>Test Shibboleth SP:<br><a href="https://localhost/Shibboleth.sso/DiscoFeed" rel="external nofollow noopener noreferrer" target="_blank">https://localhost/Shibboleth.sso/DiscoFeed</a></p>
 <p>Download Metadata:<br><a href="https://FQDN/Shibboleth.sso/Metadata" rel="external nofollow noopener noreferrer" target="_blank">https://FQDN/Shibboleth.sso/Metadata</a></p>
-<p>NB: Status page may <strong>NOT</strong> work, e.g. <a href="https://localhost/Shibboleth.sso/Metadata" rel="external nofollow noopener noreferrer" target="_blank">https://localhost/Shibboleth.sso/Metadata</a> may returns 403 Error.</p>
+<p>NB: Status page may <strong>NOT</strong> work, e.g. <a href="https://localhost/Shibboleth.sso/Status" rel="external nofollow noopener noreferrer" target="_blank">https://localhost/Shibboleth.sso/Status</a> may returns 403 Error.</p>
 <p>Now accessing <a href="https://localhost/myservice/" rel="external nofollow noopener noreferrer" target="_blank">https://localhost/myservice/</a> will redirect you to testshib site.</p>
 <p>Upload SP metadata on <a href="https://www.testshib.org/register.html" rel="external nofollow noopener noreferrer" target="_blank">https://www.testshib.org/register.html</a></p>
 <p>Now you should be redirected to TestShib login page. </p>

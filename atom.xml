@@ -135,7 +135,7 @@
     <link href="https://www.yuxifan.com/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/"/>
     <id>https://www.yuxifan.com/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/</id>
     <published>2017-07-04T08:51:12.000Z</published>
-    <updated>2017-07-13T14:39:35.501Z</updated>
+    <updated>2017-07-13T15:31:57.631Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/linux/shibboleth.png" alt="Shibboleth"></p>
 <h2 id="Environments"><a href="#Environments" class="headerlink" title="Environments"></a>Environments</h2><p>Ubuntu 16<br>Apache 2<br>Shibboleth 2</p>
@@ -168,7 +168,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl <span class="built_in">enable</span> shibd</div></pre></td></tr></table></figure>
 <p>Test Shibboleth SP:<br><a href="https://localhost/Shibboleth.sso/DiscoFeed" rel="external nofollow noopener noreferrer" target="_blank">https://localhost/Shibboleth.sso/DiscoFeed</a></p>
 <p>Download Metadata:<br><a href="https://FQDN/Shibboleth.sso/Metadata" rel="external nofollow noopener noreferrer" target="_blank">https://FQDN/Shibboleth.sso/Metadata</a></p>
-<p>NB: Status page may <strong>NOT</strong> work, e.g. <a href="https://localhost/Shibboleth.sso/Metadata" rel="external nofollow noopener noreferrer" target="_blank">https://localhost/Shibboleth.sso/Metadata</a> may returns 403 Error.</p>
+<p>NB: Status page may <strong>NOT</strong> work, e.g. <a href="https://localhost/Shibboleth.sso/Status" rel="external nofollow noopener noreferrer" target="_blank">https://localhost/Shibboleth.sso/Status</a> may returns 403 Error.</p>
 <p>Now accessing <a href="https://localhost/myservice/" rel="external nofollow noopener noreferrer" target="_blank">https://localhost/myservice/</a> will redirect you to testshib site.</p>
 <p>Upload SP metadata on <a href="https://www.testshib.org/register.html" rel="external nofollow noopener noreferrer" target="_blank">https://www.testshib.org/register.html</a></p>
 <p>Now you should be redirected to TestShib login page. </p>
