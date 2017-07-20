@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-07-07T14:48:09.295Z</updated>
+  <updated>2017-07-20T08:30:21.552Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Upload via SFTP in Java</title>
+    <link href="https://www.yuxifan.com/2017/07/14/upload-via-sftp-in-java/"/>
+    <id>https://www.yuxifan.com/2017/07/14/upload-via-sftp-in-java/</id>
+    <published>2017-07-14T11:51:12.000Z</published>
+    <updated>2017-07-20T08:30:21.552Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/linux/sftp.png" alt=""></p>
+<h2 id="1-Add-Maven-dependency"><a href="#1-Add-Maven-dependency" class="headerlink" title="1) Add Maven dependency"></a>1) Add Maven dependency</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.jcraft<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jsch<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.1.42<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="2-Java-code"><a href="#2-Java-code" class="headerlink" title="2) Java code"></a>2) Java code</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.io.File;</div><div class="line"><span class="keyword">import</span> java.io.FileInputStream;</div><div class="line"></div><div class="line"><span class="keyword">import</span> com.jcraft.jsch.Channel;</div><div class="line"><span class="keyword">import</span> com.jcraft.jsch.ChannelSftp;</div><div class="line"><span class="keyword">import</span> com.jcraft.jsch.JSch;</div><div class="line"><span class="keyword">import</span> com.jcraft.jsch.Session;</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestJSftp</span> </span>&#123;</div><div class="line">       </div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">upload</span><span class="params">(String username,</span></span></div><div class="line">                              String password,</div><div class="line">                              String host,</div><div class="line">                              <span class="keyword">int</span> port,</div><div class="line">                              String workingDir,</div><div class="line">                              String localFilename)&#123;</div><div class="line">        <span class="keyword">try</span> &#123;</div><div class="line">            JSch jsch = <span class="keyword">new</span> JSch();</div><div class="line">            Session session = jsch.getSession(username, host, port);</div><div class="line">            session.setPassword(password);</div><div class="line">            java.util.Properties config = <span class="keyword">new</span> java.util.Properties();</div><div class="line">            config.put(<span class="string">"StrictHostKeyChecking"</span>, <span class="string">"no"</span>);</div><div class="line">            session.setConfig(config);</div><div class="line">            session.connect();</div><div class="line">            Channel channel = session.openChannel(<span class="string">"sftp"</span>);</div><div class="line">            channel.connect();</div><div class="line">            ChannelSftp channelSftp = (ChannelSftp) channel;</div><div class="line">            channelSftp.cd(workingDir);</div><div class="line">    </div><div class="line">            File f1 = <span class="keyword">new</span> File(localFilename);</div><div class="line">            channelSftp.put(<span class="keyword">new</span> FileInputStream(f1), f1.getName(), ChannelSftp.OVERWRITE);</div><div class="line">                </div><div class="line">            channelSftp.exit();</div><div class="line">            session.disconnect();</div><div class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</div><div class="line">            e.printStackTrace();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      Upload via SFTP in Java
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.yuxifan.com/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://www.yuxifan.com/tags/java/"/>
+    
+      <category term="sftp" scheme="https://www.yuxifan.com/tags/sftp/"/>
+    
+  </entry>
   
   <entry>
     <title>Implementing Shibboleth login in Rails application</title>
@@ -810,75 +837,6 @@
       <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
     
       <category term="ubuntu" scheme="https://www.yuxifan.com/tags/ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>QR code generator</title>
-    <link href="https://www.yuxifan.com/2016/11/17/qrcode-generator/"/>
-    <id>https://www.yuxifan.com/2016/11/17/qrcode-generator/</id>
-    <published>2016-11-17T06:40:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" media="all" href="/css/foundation.min.css">
-<script type="text/javascript" src="/js/qrcode.min.js"></script>
-
-<img src="/images/javascript/how-to-make-qrcode.jpg">
-
-<br>
-
-<div class="row">
-  Enter url：<br>
-  <input type="text" id="text" value="http://www.yuxifan.com" style="width: 600px; height: 30px;">
-  <br>
-  <div id="qrcode" style="width:150px; height:150px; margin-top:15px;"></div>
-</div> 
-
-<script type="text/javascript">
-var qrcode = new QRCode(document.getElementById("qrcode"), {
-	width : 150,
-	height : 150
-});
-
-function makeCode () {		
-	var elText = document.getElementById("text");
-	
-	if (!elText.value) {
-		alert("Input a text");
-		elText.focus();
-		return;
-	}
-	
-	qrcode.makeCode(elText.value);
-}
-
-makeCode();
-
-$("#text").
-	on("blur", function () {
-		makeCode();
-	}).
-	on("keydown", function (e) {
-		if (e.keyCode == 13) {
-			makeCode();
-		}
-});
-</script>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;link rel=&quot;stylesheet&quot; media=&quot;all&quot; href=&quot;/css/foundation.min.css&quot;&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;/js/qrcode.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;img sr
-    
-    </summary>
-    
-      <category term="tool" scheme="https://www.yuxifan.com/categories/tool/"/>
-    
-    
-      <category term="QR code" scheme="https://www.yuxifan.com/tags/QR-code/"/>
     
   </entry>
   
