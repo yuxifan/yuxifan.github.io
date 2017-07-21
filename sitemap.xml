@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2017/07/21/multi-select-faceting/</loc>
+    
+    <lastmod>2017-07-21T14:47:44.170Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2017/07/14/upload-via-sftp-in-java/</loc>
     
     <lastmod>2017-07-20T08:30:21.552Z</lastmod>
@@ -89,13 +96,6 @@
     <loc>https://www.yuxifan.com/2017/06/28/graphicsmagick/</loc>
     
     <lastmod>2017-06-28T10:22:44.373Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/02/01/2016-02-01-standalone-ruby-application-error-messages-and-fixes/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
   </url>
   
@@ -212,14 +212,14 @@
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2016/01/06/2016-01-06-how-to-convert-string-to-inputstream-in-java/</loc>
+    <loc>https://www.yuxifan.com/2016/11/14/how-to-trigger-a-cron-job-based-on-file-modifications/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2016/11/09/how-to-upload-files-to-dropbox-in-linux-command-line/</loc>
+    <loc>https://www.yuxifan.com/2016/01/06/2016-01-06-how-to-convert-string-to-inputstream-in-java/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
@@ -394,7 +394,7 @@
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2016/11/14/how-to-trigger-a-cron-job-based-on-file-modifications/</loc>
+    <loc>https://www.yuxifan.com/2016/11/09/how-to-upload-files-to-dropbox-in-linux-command-line/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
@@ -402,6 +402,13 @@
   
   <url>
     <loc>https://www.yuxifan.com/2016/01/15/2016-01-15-get-latest-year-in-xslt/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/02/01/2016-02-01-standalone-ruby-application-error-messages-and-fixes/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-07-20T08:30:21.552Z</updated>
+  <updated>2017-07-21T14:47:44.170Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Multi-select facting in Java</title>
+    <link href="https://www.yuxifan.com/2017/07/21/multi-select-faceting/"/>
+    <id>https://www.yuxifan.com/2017/07/21/multi-select-faceting/</id>
+    <published>2017-07-21T21:51:12.000Z</published>
+    <updated>2017-07-21T14:47:44.170Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/java/solr.png" alt="Apache Solr"></p>
+<h2 id="What-is-multi-select-facting"><a href="#What-is-multi-select-facting" class="headerlink" title="What is multi-select facting?"></a>What is multi-select facting?</h2><p>Multi-select faceting means that users can see and select multiple facet items (facet values) for particular facets. Thanks to Solr’s filter tagging and excluding features to support this type of faceting.</p>
+<h2 id="Online-PC-shop-example"><a href="#Online-PC-shop-example" class="headerlink" title="Online PC shop example"></a>Online PC shop example</h2><p>For example, we have 2 facets: memory, and brand. We want to support multi-select faceting because while searching, users may want to choose a range of memory size e.g. 4GB-8GB and a list of interested brands, e.g. Lenovo and HP. </p>
+<p>From the initial search of keyword “Home desktop PC”, the result looks like:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">------memory------     ------brand------      </div><div class="line">[  ]  2GB (30)             [  ] Acer (13)</div><div class="line">[  ]  4GB (50)             [  ] HP (20)</div><div class="line">[  ]  8GB (25)             [  ] Lenovo (33)</div><div class="line">[  ]  16GB (10)            [  ] Toshiba (20)</div></pre></td></tr></table></figure>
+<p>Then user may want to narrow down the search results by selecting 4GB and 8GB in memory facet,  also HP and Lenovo in the brand facet. </p>
+<p>Ideally, after selecting 4GB and 8GB, users expect to see:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">------memory------     ------brand------      </div><div class="line">[ ]  2GB (30)             [  ] Acer (5)</div><div class="line">[x]  4GB (50)             [  ] HP (10)</div><div class="line">[x]  8GB (25)             [  ] Lenovo (13)</div><div class="line">[ ]  16GB (10)            [  ] Toshiba (10)</div></pre></td></tr></table></figure>
+<p>You may notice that the numbers after each brand facet item is also changed. That is just because the search results have been narrowed down after first select of “4GB” and “8GB” in memory facet. </p>
+<h2 id="Solr-query-to-support-multi-select-faceting"><a href="#Solr-query-to-support-multi-select-faceting" class="headerlink" title="Solr query to support multi-select faceting"></a>Solr query to support multi-select faceting</h2><p>According to <a href="https://wiki.apache.org/solr/SimpleFacetParameters#Multi-Select_Faceting_and_LocalParams" rel="external nofollow noopener noreferrer" target="_blank">solr’s documentation</a>, tagging and excluding filters can be used to perform the multi-select faceting.</p>
+<p>The solr query is:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">q=Home%20desktop%20PC&amp;facet=on&amp;facet.field=&#123;!ex=tagmem&#125;&amp;fq=&#123;!tag=tagmem&#125; memory:%28%224GB%208GB%22%29&amp;facet.field=&#123;!ex=tagbrand&#125;&amp;fq=&#123;!tag=tagbrand&#125;brand:%28%22Lenobo%20HP%22%29</div></pre></td></tr></table></figure>
+<p>Human readable version (should not send it to Solr in your application):</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">q=Home desktop PC&amp;facet=on&amp;facet.field=&#123;!ex=tagmem&#125;&amp;fq=&#123;!tag=tagmem&#125;memory:(<span class="string">"4GB"</span> <span class="string">"8GB"</span>)&amp;facet.field=&#123;!ex=tagbrand&#125;&amp;fq=&#123;!tag=tagbrand&#125;brand:(<span class="string">"Lenobo"</span> <span class="string">"HP"</span>)</div></pre></td></tr></table></figure>
+<h2 id="Solrj-implementation"><a href="#Solrj-implementation" class="headerlink" title="Solrj implementation"></a>Solrj implementation</h2><p>For facet:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">SolrQuery query = <span class="keyword">new</span> SolrQuery();</div><div class="line">......</div><div class="line">query.addFacetField(<span class="string">"&#123;!ex=tagmem&#125;memory"</span>;</div><div class="line">......</div><div class="line">query.addFacetField(<span class="string">"&#123;!ex=tagbrand&#125;brand"</span>;</div></pre></td></tr></table></figure>
+<p>For facet items:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">query.addFilterQuery(<span class="string">"&#123;!tag=tagbrand&#125;brand:"</span>+YOUR_BRAND_FACET_VALUES_FROM_FRONTEND)</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      multi-select facting in Java
+    
+    </summary>
+    
+      <category term="java" scheme="https://www.yuxifan.com/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://www.yuxifan.com/tags/java/"/>
+    
+      <category term="solr" scheme="https://www.yuxifan.com/tags/solr/"/>
+    
+      <category term="faceting" scheme="https://www.yuxifan.com/tags/faceting/"/>
+    
+  </entry>
   
   <entry>
     <title>Upload via SFTP in Java</title>
@@ -809,34 +853,6 @@
       <category term="image" scheme="https://www.yuxifan.com/tags/image/"/>
     
       <category term="imagemagick" scheme="https://www.yuxifan.com/tags/imagemagick/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to check available disk space and email a report in Ruby</title>
-    <link href="https://www.yuxifan.com/2016/11/23/report-disk-space-in-ruby/"/>
-    <id>https://www.yuxifan.com/2016/11/23/report-disk-space-in-ruby/</id>
-    <published>2016-11-23T02:10:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/ruby/diskspace.png" alt=""></p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># gem install sys-filesystem</span></div><div class="line"><span class="comment"># gem install gmail</span></div><div class="line"></div><div class="line"><span class="keyword">require</span> <span class="string">'sys/filesystem'</span></div><div class="line"><span class="keyword">require</span> <span class="string">'gmail'</span></div><div class="line"></div><div class="line">threshold = <span class="number">9000</span></div><div class="line"></div><div class="line">stat = Sys::Filesystem.stat(<span class="string">"/"</span>)</div><div class="line">mb_available = stat.block_size * stat.blocks_available / <span class="number">1024</span> / <span class="number">1024</span></div><div class="line">mb_s = mb_available.to_s</div><div class="line">gb_s = (mb_available / <span class="number">1024</span>).to_s</div><div class="line">puts <span class="string">'Available space: '</span> + mb_s + <span class="string">' MB / '</span> + gb_s + <span class="string">' GB'</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> mb_available &lt; threshold</div><div class="line">  puts <span class="string">'Sending email ... '</span></div><div class="line">  user = <span class="string">"YOUR GMAIL"</span></div><div class="line">  pass = <span class="string">"PASSWORD"</span></div><div class="line">  gmail = Gmail.connect(user, pass)</div><div class="line">  email = gmail.compose <span class="keyword">do</span></div><div class="line">    to <span class="string">"XXXX@gmail.com"</span></div><div class="line">    subject <span class="string">"Your available disk space"</span></div><div class="line">    body <span class="string">"Space available: "</span> + mb_s + <span class="string">"MB / "</span> + gb_s + <span class="string">"GB"</span></div><div class="line">  <span class="keyword">end</span></div><div class="line">  email.deliver!</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
-<p>You may want to add it into cron job list. </p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/ruby/diskspace.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/
-    
-    </summary>
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
-    
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
-    
-      <category term="ubuntu" scheme="https://www.yuxifan.com/tags/ubuntu/"/>
     
   </entry>
   
