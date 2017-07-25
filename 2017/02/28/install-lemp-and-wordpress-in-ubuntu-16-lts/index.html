@@ -23,7 +23,7 @@ OR
 1usermod -aG sudo yuxi
 Get your public keys ready, e.g. running “ssh-keygen” in">
 <meta property="og:image" content="https://www.yuxifan.com/images/linux/lemp-wordpress.jpg">
-<meta property="og:updated_time" content="2017-06-28T13:12:58.871Z">
+<meta property="og:updated_time" content="2017-07-25T09:04:58.025Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Install LEMP + Wordpress in Ubuntu 16.04 LTS step by step">
 <meta name="twitter:description" content="User and authenticationsCreate userLogin as root
@@ -205,7 +205,9 @@ ga('send', 'pageview');
 <p>Switch to root user and run:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">'YOUR_USER_NAME ALL=(ALL) NOPASSWD: ALL'</span> &gt;&gt; /etc/sudoers</div></pre></td></tr></table></figure></p>
 <p>System update:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">sudo apt-get -y update  </div><div class="line">sudo apt-get -y upgrade </div><div class="line">```bash</div><div class="line"></div><div class="line">Update user profile</div><div class="line">```bash</div><div class="line"><span class="built_in">echo</span> <span class="string">'export LS_COLORS=$(echo $LS_COLORS | sed "s/di=\(..\);../di=\1;32/") '</span> &gt;&gt; ~/.bashrc</div><div class="line"><span class="built_in">echo</span> <span class="string">"PS1='\\$ '"</span> &gt;&gt; ~/.bashrc</div></pre></td></tr></table></figure></p>
 <h3 id="Authentications"><a href="#Authentications" class="headerlink" title="Authentications"></a>Authentications</h3><p>Run</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">sudo nano /etc/ssh/sshd_config</div><div class="line">```bash</div><div class="line"></div><div class="line">Then make the following changes:</div><div class="line"></div><div class="line">```bash</div><div class="line">PasswordAuthentication no</div><div class="line">PubkeyAuthentication yes</div><div class="line">ChallengeResponseAuthentication no</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /etc/ssh/sshd_config</div></pre></td></tr></table></figure>
+<p>Then make the following changes:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">PasswordAuthentication no</div><div class="line">PubkeyAuthentication yes</div><div class="line">ChallengeResponseAuthentication no</div></pre></td></tr></table></figure>
 <p>Also, change port from default ‘22’ to other number, e.g. 2244</p>
 <p>Reload sshd service:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl reload sshd</div></pre></td></tr></table></figure>
@@ -418,20 +420,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2017/07/07/phusion-passenger/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            Setting up Phusion Passenger with Apache 2.4 on Ubuntu
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2017/07/14/upload-via-sftp-in-java/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Configure Shibboleth Service Provider on Ubuntu 16</p>
+        <p class="article-nav-title">Upload via SFTP in Java</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     

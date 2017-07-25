@@ -423,7 +423,7 @@
     <link href="https://www.yuxifan.com/2017/02/28/install-lemp-and-wordpress-in-ubuntu-16-lts/"/>
     <id>https://www.yuxifan.com/2017/02/28/install-lemp-and-wordpress-in-ubuntu-16-lts/</id>
     <published>2017-02-28T05:51:12.000Z</published>
-    <updated>2017-06-28T13:12:58.871Z</updated>
+    <updated>2017-07-25T09:04:58.025Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/linux/lemp-wordpress.jpg" alt="Install LEMP + Wordpress in Ubuntu 16.04 LTS"></p>
 <h2 id="User-and-authentications"><a href="#User-and-authentications" class="headerlink" title="User and authentications"></a>User and authentications</h2><h3 id="Create-user"><a href="#Create-user" class="headerlink" title="Create user"></a>Create user</h3><p>Login as root</p>
@@ -438,7 +438,9 @@
 <p>Switch to root user and run:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">'YOUR_USER_NAME ALL=(ALL) NOPASSWD: ALL'</span> &gt;&gt; /etc/sudoers</div></pre></td></tr></table></figure></p>
 <p>System update:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">sudo apt-get -y update  </div><div class="line">sudo apt-get -y upgrade </div><div class="line">```bash</div><div class="line"></div><div class="line">Update user profile</div><div class="line">```bash</div><div class="line"><span class="built_in">echo</span> <span class="string">'export LS_COLORS=$(echo $LS_COLORS | sed "s/di=\(..\);../di=\1;32/") '</span> &gt;&gt; ~/.bashrc</div><div class="line"><span class="built_in">echo</span> <span class="string">"PS1='\\$ '"</span> &gt;&gt; ~/.bashrc</div></pre></td></tr></table></figure></p>
 <h3 id="Authentications"><a href="#Authentications" class="headerlink" title="Authentications"></a>Authentications</h3><p>Run</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">sudo nano /etc/ssh/sshd_config</div><div class="line">```bash</div><div class="line"></div><div class="line">Then make the following changes:</div><div class="line"></div><div class="line">```bash</div><div class="line">PasswordAuthentication no</div><div class="line">PubkeyAuthentication yes</div><div class="line">ChallengeResponseAuthentication no</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /etc/ssh/sshd_config</div></pre></td></tr></table></figure>
+<p>Then make the following changes:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">PasswordAuthentication no</div><div class="line">PubkeyAuthentication yes</div><div class="line">ChallengeResponseAuthentication no</div></pre></td></tr></table></figure>
 <p>Also, change port from default ‘22’ to other number, e.g. 2244</p>
 <p>Reload sshd service:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl reload sshd</div></pre></td></tr></table></figure>
