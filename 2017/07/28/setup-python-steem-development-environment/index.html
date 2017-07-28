@@ -19,7 +19,7 @@ Then">
 12sudo apt-get updatesudo apt-get -y upgrade
 Then">
 <meta property="og:image" content="https://www.yuxifan.com/images/linux/steem/python-steem.png">
-<meta property="og:updated_time" content="2017-07-28T08:16:38.597Z">
+<meta property="og:updated_time" content="2017-07-28T08:21:26.600Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Setup python development environment for Steem on Ubuntu 16">
 <meta name="twitter:description" content="Install python 3Both Python 3 and Python 2 have been pre-installed on Ubuntu 16, you just need to make sure you have the latest versions by running:
@@ -199,8 +199,8 @@ ga('send', 'pageview');
 <h2 id="Setting-up-python-steem-libraries"><a href="#Setting-up-python-steem-libraries" class="headerlink" title="Setting up python steem libraries"></a>Setting up python steem libraries</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">pip3 install wheel </div><div class="line">pip3 install piston-lib</div><div class="line">pip3 install steem</div></pre></td></tr></table></figure>
 <h2 id="Test-it-works"><a href="#Test-it-works" class="headerlink" title="Test it works"></a>Test it works</h2><p>To test the development environment has been set up correctly, run the following script to list the tags used by latest posts:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> piston <span class="keyword">import</span> Steem</div><div class="line">steem = Steem()</div><div class="line"><span class="keyword">for</span> c <span class="keyword">in</span> steem.stream_comments():</div><div class="line">  <span class="keyword">if</span> c.is_main_post():</div><div class="line">    <span class="keyword">print</span> (c.meta[<span class="string">"tags"</span>])</div></pre></td></tr></table></figure>
-<p><img src="https://steemitimages.com/DQmU3Qdt7dKuahNv3gtrRkFhcRQz3becPzXRWa3Kc56HTni/image.png" alt=""></p>
-<p>Originally posted on <a href="https://steemit.com" rel="external nofollow noopener noreferrer" target="_blank">https://steemit.com</a>. Thank you for reading my post, feel free to FOLLOW and Upvote @yuxi, which will motivate me to create more quality posts.</p>
+<p><img src="/images/yuxi-steemit.png" alt="@yuxi"></p>
+<p>Thank you for reading my post, feel free to FOLLOW and Upvote <a href="https://steemit.com/@yuxi" rel="external nofollow noopener noreferrer" target="_blank">@yuxi</a>, which will motivate me to create more quality posts.</p>
 
 
             
@@ -325,20 +325,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2017/07/28/setup-python-steem-development-environment/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            Setup python development environment for Steem on Ubuntu 16
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2017/07/14/upload-via-sftp-in-java/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2017/07/21/multi-select-faceting/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Upload via SFTP in Java</p>
+        <p class="article-nav-title">Multi-select facting in Java</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
