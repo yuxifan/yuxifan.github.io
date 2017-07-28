@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2017/07/28/setup-python-steem-development-environment/</loc>
+    
+    <lastmod>2017-07-28T08:16:38.597Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2017/02/28/install-lemp-and-wordpress-in-ubuntu-16-lts/</loc>
     
     <lastmod>2017-07-25T09:04:58.025Z</lastmod>
@@ -96,13 +103,6 @@
     <loc>https://www.yuxifan.com/2017/06/28/graphicsmagick/</loc>
     
     <lastmod>2017-06-28T10:22:44.373Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/02/02/2016-02-02-how-to-run-sudo-command-without-password/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
   </url>
   
@@ -409,6 +409,13 @@
   
   <url>
     <loc>https://www.yuxifan.com/2016/02/01/2016-02-01-standalone-ruby-application-error-messages-and-fixes/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/02/02/2016-02-02-how-to-run-sudo-command-without-password/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     

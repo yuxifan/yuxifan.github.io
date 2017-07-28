@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-07-21T14:47:44.170Z</updated>
+  <updated>2017-07-28T08:16:38.597Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Setup python development environment for Steem on Ubuntu 16</title>
+    <link href="https://www.yuxifan.com/2017/07/28/setup-python-steem-development-environment/"/>
+    <id>https://www.yuxifan.com/2017/07/28/setup-python-steem-development-environment/</id>
+    <published>2017-07-28T04:51:12.000Z</published>
+    <updated>2017-07-28T08:16:38.597Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/linux/steem/python-steem.png" alt="Python &amp; Steem"></p>
+<h2 id="Install-python-3"><a href="#Install-python-3" class="headerlink" title="Install python 3"></a>Install python 3</h2><p>Both Python 3 and Python 2 have been pre-installed on Ubuntu 16, you just need to make sure you have the latest versions by running:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get -y upgrade</div></pre></td></tr></table></figure>
+<p>Then run the following command to check the version of Python 3:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python -v</div></pre></td></tr></table></figure>
+<p>You also need to install pip to manage software packages:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -y python3-pip</div></pre></td></tr></table></figure>
+<p>Install development libraries:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install build-essential libffi-dev libssl-dev python3-dev</div></pre></td></tr></table></figure>
+<h2 id="Setting-up-a-virtual-environment"><a href="#Setting-up-a-virtual-environment" class="headerlink" title="Setting up a virtual environment"></a>Setting up a virtual environment</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install python3-venv</div><div class="line">mkdir environments</div><div class="line"><span class="built_in">cd</span> environments</div><div class="line">python3 -m venv myenv</div><div class="line"><span class="built_in">source</span> myenv/bin/activate</div></pre></td></tr></table></figure>
+<h2 id="Setting-up-python-steem-libraries"><a href="#Setting-up-python-steem-libraries" class="headerlink" title="Setting up python steem libraries"></a>Setting up python steem libraries</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">pip3 install wheel </div><div class="line">pip3 install piston-lib</div><div class="line">pip3 install steem</div></pre></td></tr></table></figure>
+<h2 id="Test-it-works"><a href="#Test-it-works" class="headerlink" title="Test it works"></a>Test it works</h2><p>To test the development environment has been set up correctly, run the following script to list the tags used by latest posts:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> piston <span class="keyword">import</span> Steem</div><div class="line">steem = Steem()</div><div class="line"><span class="keyword">for</span> c <span class="keyword">in</span> steem.stream_comments():</div><div class="line">  <span class="keyword">if</span> c.is_main_post():</div><div class="line">    <span class="keyword">print</span> (c.meta[<span class="string">"tags"</span>])</div></pre></td></tr></table></figure>
+<p><img src="https://steemitimages.com/DQmU3Qdt7dKuahNv3gtrRkFhcRQz3becPzXRWa3Kc56HTni/image.png" alt=""></p>
+<p>Originally posted on <a href="https://steemit.com" rel="external nofollow noopener noreferrer" target="_blank">https://steemit.com</a>. Thank you for reading my post, feel free to FOLLOW and Upvote @yuxi, which will motivate me to create more quality posts.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/linux/steem/python-steem.png&quot; alt=&quot;Python &amp;amp; Steem&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Install-python-3&quot;&gt;&lt;a href=&quot;#Install-python-3&quot; class
+    
+    </summary>
+    
+      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
+    
+    
+      <category term="Linux" scheme="https://www.yuxifan.com/tags/Linux/"/>
+    
+      <category term="Python" scheme="https://www.yuxifan.com/tags/Python/"/>
+    
+      <category term="Steem" scheme="https://www.yuxifan.com/tags/Steem/"/>
+    
+  </entry>
   
   <entry>
     <title>Multi-select facting in Java</title>
@@ -822,39 +864,6 @@
       <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
     
       <category term="rss" scheme="https://www.yuxifan.com/tags/rss/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu image manipulation commands</title>
-    <link href="https://www.yuxifan.com/2016/11/25/image-manipulation-commands-in-ubuntu/"/>
-    <id>https://www.yuxifan.com/2016/11/25/image-manipulation-commands-in-ubuntu/</id>
-    <published>2016-11-25T05:51:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/linux/image-tool/imagemagick.jpg" alt="image tool"></p>
-<h2 id="Resize-image-and-convert"><a href="#Resize-image-and-convert" class="headerlink" title="Resize image (and convert)"></a>Resize image (and convert)</h2><p>First, install imagemagick:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update </div><div class="line">sudo apt-get install imagemagick --fix-missing</div></pre></td></tr></table></figure>
-<p>Image resize command:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">convert source.jpg -resize 200x100 target.jpg</div><div class="line">convert -resize 50% source.jpg target.png</div><div class="line">convert -resize 600x source.jpg target.jpg</div></pre></td></tr></table></figure></p>
-<h2 id="Compress-or-Optimize-images"><a href="#Compress-or-Optimize-images" class="headerlink" title="Compress or Optimize images"></a>Compress or Optimize images</h2><p>For JPG images:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install jpegoptim</div><div class="line">jpegoptim test.jpg</div></pre></td></tr></table></figure></p>
-<p>For PNG images:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install optipng</div><div class="line">optipng filename.png</div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/linux/image-tool/imagemagick.jpg&quot; alt=&quot;image tool&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Resize-image-and-convert&quot;&gt;&lt;a href=&quot;#Resize-image-and-co
-    
-    </summary>
-    
-      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
-    
-      <category term="image" scheme="https://www.yuxifan.com/tags/image/"/>
-    
-      <category term="imagemagick" scheme="https://www.yuxifan.com/tags/imagemagick/"/>
     
   </entry>
   
