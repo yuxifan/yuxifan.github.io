@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><id>https://www.yuxifan.com/atom/atom_steemit_travel.xml</id><title>Yuxi ATOM feed for category: travel</title><updated>2017-08-24T09:36:35.658258+00:00</updated><author><name>Yuxi</name><email>info@yuxifan.com</email></author><link href="https://www.yuxifan.com/atom/atom_steemit_travel.xml" rel="self"/><generator>yuxi</generator><entry><id>https://www.yuxifan.com/atom/atom_steemit_cn/2017-08-23</id><title>travel daily popular posts 2017-08-23</title><updated>2017-08-24T09:36:35.658324+00:00</updated><content>&lt;style type="text/css"&gt;
+.responstable {
+  margin: 1em 0;
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92;
+}
+.responstable tr {
+  border: 1px solid #D9E4E6;
+}
+.responstable tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+.responstable th {
+  display: none;
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+  padding: 1em;
+}
+.responstable th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+.responstable th:nth-child(2) {
+  display: table-cell;
+}
+.responstable th:nth-child(2) span {
+  display: none;
+}
+.responstable th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  .responstable th:nth-child(2) span {
+    display: block;
+  }
+  .responstable th:nth-child(2):after {
+    display: none;
+  }
+}
+.responstable td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em;
+}
+.responstable td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #D9E4E6;
+}
+@media (min-width: 480px) {
+  .responstable td {
+    border: 1px solid #D9E4E6;
+  }
+}
+.responstable th, .responstable td {
+  text-align: left;
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .responstable th, .responstable td {
+    display: table-cell;
+    padding: 1em;
+  }
+}
+ 
+&lt;/style&gt;
+
+&lt;h1&gt;Top 20 posts in category: travel on 2017-08-23&lt;/h1&gt;
+&lt;table class="responstable"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Ranking&lt;/th&gt;
+    &lt;th&gt;Payouts&lt;/th&gt;
+    &lt;th&gt;Votes&lt;/th&gt;
+    &lt;th&gt;Author&lt;/th&gt;
+    &lt;th&gt;Rep&lt;/th&gt;
+    &lt;th&gt;Date&lt;/th&gt;
+    &lt;th&gt;Title/URL&lt;/th&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;113.57&lt;/td&gt;
+    &lt;td&gt;84&lt;/td&gt;
+    &lt;td&gt;kiligirl&lt;/td&gt;
+    &lt;td&gt;63.60&lt;/td&gt;
+    &lt;td&gt;2017-08-23 15:47:03&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@kiligirl/whirlwind-tour-of-paris-pas-de-calais-bruges-and-amsterdam"&gt;Whirlwind tour of Paris, Pas-de-Calais, Bruges and Amsterdam&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;109.03&lt;/td&gt;
+    &lt;td&gt;100&lt;/td&gt;
+    &lt;td&gt;rideofpassion&lt;/td&gt;
+    &lt;td&gt;56.37&lt;/td&gt;
+    &lt;td&gt;2017-08-23 10:59:36&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@rideofpassion/yashas-travelogue-13-how-to-use-public-transport-in-kuala-lumpur-malaysia-my-experience"&gt;Yashas Travelogue #13 - How To Use Public Transport In Kuala Lumpur, Malaysia - My Experience&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;96.82&lt;/td&gt;
+    &lt;td&gt;348&lt;/td&gt;
+    &lt;td&gt;papa-pepper&lt;/td&gt;
+    &lt;td&gt;75.94&lt;/td&gt;
+    &lt;td&gt;2017-08-23 13:07:39&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@papa-pepper/papa-travels-cave-point-county-park-in-door-county"&gt;PAPA TRAVELS - CAVE POINT COUNTY PARK IN DOOR COUNTY&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;95.48&lt;/td&gt;
+    &lt;td&gt;363&lt;/td&gt;
+    &lt;td&gt;papa-pepper&lt;/td&gt;
+    &lt;td&gt;75.94&lt;/td&gt;
+    &lt;td&gt;2017-08-23 02:22:54&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@papa-pepper/horseback-riding-at-kurtz-corral"&gt;HORSEBACK RIDING AT KURTZ CORRAL&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;68.99&lt;/td&gt;
+    &lt;td&gt;32&lt;/td&gt;
+    &lt;td&gt;lilsweet&lt;/td&gt;
+    &lt;td&gt;48.65&lt;/td&gt;
+    &lt;td&gt;2017-08-23 11:31:00&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@lilsweet/tammy-travel-log-immerse-yourself-in-the-paddy-field-sekinchan"&gt;Tammy Travel Log ❤️ 大米小小游记 ❤️"Immerse yourself in the paddy field - Sekinchan"❤️【马来西亚鱼米之乡-适耕庄】❤️❤️❤️&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;66.97&lt;/td&gt;
+    &lt;td&gt;148&lt;/td&gt;
+    &lt;td&gt;guyverckw&lt;/td&gt;
+    &lt;td&gt;62.36&lt;/td&gt;
+    &lt;td&gt;2017-08-23 01:11:15&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@guyverckw/universal-studio-l-a-theme-park-series-2"&gt;Universal Studio L.A. - Theme Park series (2) / 洛杉磯環球影城 - 主題樂園系列 (二)&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;63.83&lt;/td&gt;
+    &lt;td&gt;74&lt;/td&gt;
+    &lt;td&gt;artguru&lt;/td&gt;
+    &lt;td&gt;62.84&lt;/td&gt;
+    &lt;td&gt;2017-08-23 08:07:36&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@artguru/the-diversity-of-new-zealand-is-stupendous"&gt;The diversity of New Zealand is Stupendous!&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;50.94&lt;/td&gt;
+    &lt;td&gt;62&lt;/td&gt;
+    &lt;td&gt;thenightflier&lt;/td&gt;
+    &lt;td&gt;60.64&lt;/td&gt;
+    &lt;td&gt;2017-08-23 08:12:45&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@thenightflier/castello-ursino"&gt;Castello Ursino&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;9&lt;/td&gt;
+    &lt;td&gt;39.12&lt;/td&gt;
+    &lt;td&gt;104&lt;/td&gt;
+    &lt;td&gt;twinner&lt;/td&gt;
+    &lt;td&gt;66.92&lt;/td&gt;
+    &lt;td&gt;2017-08-23 13:00:24&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@twinner/twinnertravels-sardinia-6-gala-gonone-and-gola-di-goroppu"&gt;TwinnerTravels - Sardinia (6) - Cala Gonone, Gola di Goroppu and Cala Cartoe&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;37.52&lt;/td&gt;
+    &lt;td&gt;94&lt;/td&gt;
+    &lt;td&gt;imperfect-one&lt;/td&gt;
+    &lt;td&gt;56.34&lt;/td&gt;
+    &lt;td&gt;2017-08-23 10:16:09&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@imperfect-one/poland-is-beautiful-9-the-trip-to-the-bieszczady-mountains-30-photos-part-1"&gt;Poland is beautiful #9 - The trip to the Bieszczady Mountains [30 photos] - part 1&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;11&lt;/td&gt;
+    &lt;td&gt;34.35&lt;/td&gt;
+    &lt;td&gt;131&lt;/td&gt;
+    &lt;td&gt;rok-sivante&lt;/td&gt;
+    &lt;td&gt;71.84&lt;/td&gt;
+    &lt;td&gt;2017-08-23 21:14:21&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@rok-sivante/the-wrath-of-mercury-retrograde-bangin-heads-against-the-wall-for-steemit-updates-on-the-euro-trip"&gt;The Wrath Of Mercury Retrograde: Bangin' Heads Against The Wall For Steemit Updates On The Euro-Trip...&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;12&lt;/td&gt;
+    &lt;td&gt;33.96&lt;/td&gt;
+    &lt;td&gt;56&lt;/td&gt;
+    &lt;td&gt;livinguktaiwan&lt;/td&gt;
+    &lt;td&gt;56.24&lt;/td&gt;
+    &lt;td&gt;2017-08-23 13:14:12&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@livinguktaiwan/holiday-at-okinawa-japan"&gt;衝!衝!衝!衝到沖繩 !  Holiday at Okinawa, Japan&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;13&lt;/td&gt;
+    &lt;td&gt;33.39&lt;/td&gt;
+    &lt;td&gt;47&lt;/td&gt;
+    &lt;td&gt;travelgirl&lt;/td&gt;
+    &lt;td&gt;61.85&lt;/td&gt;
+    &lt;td&gt;2017-08-23 23:06:27&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@travelgirl/traveling-the-world-41-europe-series-bike-riding-in-cascais-portugal-2-41"&gt;Traveling the World #41 (Europe Series) Bike Riding in Cascais @ Portugal ???? (2)- 向世界出發 #41 (歐洲系列) - 騎單車遊卡斯凯什 @ 葡萄牙 ???? (下）&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td&gt;25.97&lt;/td&gt;
+    &lt;td&gt;76&lt;/td&gt;
+    &lt;td&gt;velimir&lt;/td&gt;
+    &lt;td&gt;62.45&lt;/td&gt;
+    &lt;td&gt;2017-08-23 13:50:45&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@velimir/motorcycle-travel-series-by-velimir-zagorje-10-part-65"&gt;Motorcycle travel series by @velimir 'Zagorje 10' (Part #65)&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;15&lt;/td&gt;
+    &lt;td&gt;23.39&lt;/td&gt;
+    &lt;td&gt;69&lt;/td&gt;
+    &lt;td&gt;greenman&lt;/td&gt;
+    &lt;td&gt;61.54&lt;/td&gt;
+    &lt;td&gt;2017-08-23 21:56:39&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@greenman/forced-into-living-in-a-vw-campervan-and-traveling-boo-hoo-update-getting-rich-rich-on-cryptos-and-why-the-war-on-drugs-is-a"&gt;Forced into living in a VW CamperVan and traveling boo-hoo (update), getting rich rich on cryptos and why the war on drugs is a scam which includes terrorism and money laundering...&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;16&lt;/td&gt;
+    &lt;td&gt;22.82&lt;/td&gt;
+    &lt;td&gt;110&lt;/td&gt;
+    &lt;td&gt;boxmining&lt;/td&gt;
+    &lt;td&gt;65.20&lt;/td&gt;
+    &lt;td&gt;2017-08-23 15:34:33&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@boxmining/epic-typhoon-hurricane-hits-hong-kong"&gt;Epic Typhoon (Hurricane) hits Hong Kong&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;17&lt;/td&gt;
+    &lt;td&gt;21.74&lt;/td&gt;
+    &lt;td&gt;16&lt;/td&gt;
+    &lt;td&gt;karensuestudios&lt;/td&gt;
+    &lt;td&gt;61.10&lt;/td&gt;
+    &lt;td&gt;2017-08-23 19:50:42&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@karensuestudios/spending-quality-time-with-my-family"&gt;❤️ Spending quality time with my family! ❤️&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;18&lt;/td&gt;
+    &lt;td&gt;21.19&lt;/td&gt;
+    &lt;td&gt;45&lt;/td&gt;
+    &lt;td&gt;agusdiansyah&lt;/td&gt;
+    &lt;td&gt;52.26&lt;/td&gt;
+    &lt;td&gt;2017-08-23 08:03:03&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@agusdiansyah/bukan-mancing-mania-tapi-mantap-2017823t15255920z"&gt;Bukan "Mancing Mania", tapi mantap&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;19&lt;/td&gt;
+    &lt;td&gt;20.16&lt;/td&gt;
+    &lt;td&gt;62&lt;/td&gt;
+    &lt;td&gt;pinaynomad&lt;/td&gt;
+    &lt;td&gt;55.69&lt;/td&gt;
+    &lt;td&gt;2017-08-23 08:47:03&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@pinaynomad/old-town-san-diego-california-a-simple-date-with-my-dad"&gt;Old Town San Diego, California (a simple date with my dad)&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;20&lt;/td&gt;
+    &lt;td&gt;18.88&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;roamingnomad&lt;/td&gt;
+    &lt;td&gt;47.36&lt;/td&gt;
+    &lt;td&gt;2017-08-23 14:30:00&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/travel/@roamingnomad/4-gross-things-no-one-tells-you-about-the-camino-de-santiago"&gt;4 Gross things no one tells you about the Camino de Santiago&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/table&gt;
+</content></entry></feed>
