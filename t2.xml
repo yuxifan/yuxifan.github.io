@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><id>https://www.yuxifan.com/atom/atom_steemit_cn.xml</id><title>Yuxi ATOM feed for category: cn</title><updated>2017-08-24T09:36:34.444646+00:00</updated><author><name>Yuxi</name><email>info@yuxifan.com</email></author><link href="https://www.yuxifan.com/atom/atom_steemit_cn.xml" rel="self"/><generator>yuxi</generator><entry><id>https://www.yuxifan.com/atom/atom_steemit_cn/2017-08-23</id><title>cn daily popular posts 2017-08-23</title><updated>2017-08-24T09:36:34.444744+00:00</updated><content>&lt;style type="text/css"&gt;
+.responstable {
+  margin: 1em 0;
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92;
+}
+.responstable tr {
+  border: 1px solid #D9E4E6;
+}
+.responstable tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+.responstable th {
+  display: none;
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+  padding: 1em;
+}
+.responstable th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+.responstable th:nth-child(2) {
+  display: table-cell;
+}
+.responstable th:nth-child(2) span {
+  display: none;
+}
+.responstable th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  .responstable th:nth-child(2) span {
+    display: block;
+  }
+  .responstable th:nth-child(2):after {
+    display: none;
+  }
+}
+.responstable td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em;
+}
+.responstable td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #D9E4E6;
+}
+@media (min-width: 480px) {
+  .responstable td {
+    border: 1px solid #D9E4E6;
+  }
+}
+.responstable th, .responstable td {
+  text-align: left;
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .responstable th, .responstable td {
+    display: table-cell;
+    padding: 1em;
+  }
+}
+ 
+&lt;/style&gt;
+
+&lt;h1&gt;Top 20 posts in category: cn on 2017-08-23&lt;/h1&gt;
+&lt;table class="responstable"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Ranking&lt;/th&gt;
+    &lt;th&gt;Payouts&lt;/th&gt;
+    &lt;th&gt;Votes&lt;/th&gt;
+    &lt;th&gt;Author&lt;/th&gt;
+    &lt;th&gt;Rep&lt;/th&gt;
+    &lt;th&gt;Date&lt;/th&gt;
+    &lt;th&gt;Title/URL&lt;/th&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;274.22&lt;/td&gt;
+    &lt;td&gt;308&lt;/td&gt;
+    &lt;td&gt;oflyhigh&lt;/td&gt;
+    &lt;td&gt;72.00&lt;/td&gt;
+    &lt;td&gt;2017-08-23 13:24:33&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@oflyhigh/7rsrch"&gt;放羊娃的故事与那些年的乐趣&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;250.28&lt;/td&gt;
+    &lt;td&gt;260&lt;/td&gt;
+    &lt;td&gt;someone&lt;/td&gt;
+    &lt;td&gt;65.93&lt;/td&gt;
+    &lt;td&gt;2017-08-23 11:25:51&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@someone/--hiking-duilishan-and-trying-aiyu-by-livinguktaiwan"&gt;在獨立山上吃愛玉  Hiking Duilishan and trying Aiyu by @livinguktaiwan&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;210.09&lt;/td&gt;
+    &lt;td&gt;189&lt;/td&gt;
+    &lt;td&gt;rivalhw&lt;/td&gt;
+    &lt;td&gt;69.67&lt;/td&gt;
+    &lt;td&gt;2017-08-23 15:07:42&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@rivalhw/4r7uc2-13"&gt;失去的恋人 13&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;165.84&lt;/td&gt;
+    &lt;td&gt;126&lt;/td&gt;
+    &lt;td&gt;blackbunny&lt;/td&gt;
+    &lt;td&gt;64.24&lt;/td&gt;
+    &lt;td&gt;2017-08-23 15:48:18&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@blackbunny/36yovz-steemit"&gt;如果李白来玩STEEMIT ——前十章章节目录以及涉及诗词概览&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;151.00&lt;/td&gt;
+    &lt;td&gt;148&lt;/td&gt;
+    &lt;td&gt;jubi&lt;/td&gt;
+    &lt;td&gt;66.57&lt;/td&gt;
+    &lt;td&gt;2017-08-23 12:10:09&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@jubi/2bummy-and"&gt;第三期“谷哥点名”活动结束 &amp; 第四期开始！&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;148.95&lt;/td&gt;
+    &lt;td&gt;179&lt;/td&gt;
+    &lt;td&gt;linuslee0216&lt;/td&gt;
+    &lt;td&gt;62.98&lt;/td&gt;
+    &lt;td&gt;2017-08-23 06:47:12&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@linuslee0216/6ydynh"&gt;吃货小知识——三文鱼刺身该不该吃？&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;7&lt;/td&gt;
+    &lt;td&gt;148.69&lt;/td&gt;
+    &lt;td&gt;146&lt;/td&gt;
+    &lt;td&gt;connieleung&lt;/td&gt;
+    &lt;td&gt;50.38&lt;/td&gt;
+    &lt;td&gt;2017-08-23 10:25:12&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@connieleung/introduce-myself-i-am-a-new-steemitan-steemit-eng"&gt;Introduce myself: I am a new Steemitan!! 大家好！初加入Steemit大家庭~ (ENG/中文)&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;126.73&lt;/td&gt;
+    &lt;td&gt;128&lt;/td&gt;
+    &lt;td&gt;kitcat&lt;/td&gt;
+    &lt;td&gt;63.25&lt;/td&gt;
+    &lt;td&gt;2017-08-23 12:51:06&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@kitcat/800-my-thought-when-i-got-800-followers"&gt;寫在800追隨者的隨想隨筆 My Thought when I got 800 Followers&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;9&lt;/td&gt;
+    &lt;td&gt;120.13&lt;/td&gt;
+    &lt;td&gt;81&lt;/td&gt;
+    &lt;td&gt;dapeng&lt;/td&gt;
+    &lt;td&gt;60.53&lt;/td&gt;
+    &lt;td&gt;2017-08-23 20:06:00&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@dapeng/steem-htliao-steem-s-watch-a2"&gt;Steem 史记： @htliao 列传（大鹏观察 Steem's Watch A2）&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;92.28&lt;/td&gt;
+    &lt;td&gt;103&lt;/td&gt;
+    &lt;td&gt;aaronli&lt;/td&gt;
+    &lt;td&gt;60.00&lt;/td&gt;
+    &lt;td&gt;2017-08-23 13:05:30&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@aaronli/50-sbd-giveaway-thanks-every-one-who-support-me-1000-followers-50-sbd-1000-followers"&gt;50 SBD GIVEAWAY! THANKS EVERY ONE WHO SUPPORT ME! 1000+ FOLLOWERS! 感激每一位支持者！送你們50 SBD！我突破1000 followers 了！&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;11&lt;/td&gt;
+    &lt;td&gt;91.59&lt;/td&gt;
+    &lt;td&gt;94&lt;/td&gt;
+    &lt;td&gt;justyy&lt;/td&gt;
+    &lt;td&gt;66.40&lt;/td&gt;
+    &lt;td&gt;2017-08-23 21:12:00&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@justyy/steem-use-brainfuck-to-protect-your-steem-wallet-password-s"&gt;通过脑残语言来保护你的STEEM钱包密码 - Use BrainFuck to Protect Your Steem Wallet Password(s)&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;12&lt;/td&gt;
+    &lt;td&gt;90.14&lt;/td&gt;
+    &lt;td&gt;90&lt;/td&gt;
+    &lt;td&gt;justyy&lt;/td&gt;
+    &lt;td&gt;66.40&lt;/td&gt;
+    &lt;td&gt;2017-08-23 11:51:54&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@justyy/steemvoter"&gt;不会写程序也能自动点赞 - 通过 SteemVoter 添加点赞规则&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;13&lt;/td&gt;
+    &lt;td&gt;79.88&lt;/td&gt;
+    &lt;td&gt;38&lt;/td&gt;
+    &lt;td&gt;jacklcp&lt;/td&gt;
+    &lt;td&gt;51.68&lt;/td&gt;
+    &lt;td&gt;2017-08-23 04:39:03&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@jacklcp/travel-life"&gt;[Travel Life 香港遊] 勇闖香港南極之地 - (中文)&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td&gt;69.14&lt;/td&gt;
+    &lt;td&gt;57&lt;/td&gt;
+    &lt;td&gt;tumuta&lt;/td&gt;
+    &lt;td&gt;58.85&lt;/td&gt;
+    &lt;td&gt;2017-08-23 06:48:36&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@tumuta/5iix97"&gt;“入乡”是否要“随俗”？ [贺庆媛老师作品]&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;15&lt;/td&gt;
+    &lt;td&gt;67.40&lt;/td&gt;
+    &lt;td&gt;68&lt;/td&gt;
+    &lt;td&gt;sylvia1997&lt;/td&gt;
+    &lt;td&gt;58.02&lt;/td&gt;
+    &lt;td&gt;2017-08-23 12:08:15&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@sylvia1997/2nxq1m"&gt;不求如愿以偿，但求心甘情愿&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;16&lt;/td&gt;
+    &lt;td&gt;66.36&lt;/td&gt;
+    &lt;td&gt;33&lt;/td&gt;
+    &lt;td&gt;nasywaalifta&lt;/td&gt;
+    &lt;td&gt;47.27&lt;/td&gt;
+    &lt;td&gt;2017-08-23 18:22:57&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@nasywaalifta/introduce-myself-i-m-just-a-new-steemit-here-steemit"&gt;Introduce myself, I'm just a new Steemit here !!介绍自己，我只是一个新的Steemit在这里！&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;17&lt;/td&gt;
+    &lt;td&gt;62.84&lt;/td&gt;
+    &lt;td&gt;105&lt;/td&gt;
+    &lt;td&gt;tumutanzi&lt;/td&gt;
+    &lt;td&gt;65.66&lt;/td&gt;
+    &lt;td&gt;2017-08-23 13:55:39&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@tumutanzi/2017-4"&gt;2017年暑假：英格兰湖区风光（4）—在湖泊里玩水&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;18&lt;/td&gt;
+    &lt;td&gt;61.74&lt;/td&gt;
+    &lt;td&gt;22&lt;/td&gt;
+    &lt;td&gt;susanli3769&lt;/td&gt;
+    &lt;td&gt;55.63&lt;/td&gt;
+    &lt;td&gt;2017-08-23 03:04:00&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@susanli3769/do-instead-of-want-to-do"&gt;Do, Instead of Want To Do 不管三七二十一，撸起袖子去干！践行是一切成功之本&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;19&lt;/td&gt;
+    &lt;td&gt;55.11&lt;/td&gt;
+    &lt;td&gt;50&lt;/td&gt;
+    &lt;td&gt;sunnyjolly&lt;/td&gt;
+    &lt;td&gt;56.09&lt;/td&gt;
+    &lt;td&gt;2017-08-23 17:21:12&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@sunnyjolly/i-am-addicted-to-steemit"&gt;I am addicted to steemit 就这样无可救药地爱上了&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;20&lt;/td&gt;
+    &lt;td&gt;52.81&lt;/td&gt;
+    &lt;td&gt;48&lt;/td&gt;
+    &lt;td&gt;dixonloveart&lt;/td&gt;
+    &lt;td&gt;63.62&lt;/td&gt;
+    &lt;td&gt;2017-08-23 14:46:06&lt;/td&gt;
+    &lt;td&gt;&lt;a href="https://www.steemit.com/cn/@dixonloveart/dixonart-sketching-18-happy-chinese-valentine-s-day-steemit-18-steemit"&gt;Dixonart Sketching #18 Happy Chinese Valentine's Day,Steemit 原创手稿 # 18 彩铅插画-七夕快乐,Steemit的朋友们&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/table&gt;
+</content></entry></feed>
