@@ -1,29 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><id>https://www.yuxifan.com/atom/atom_steemit_cn.xml</id><title>羽西Steemit每日文章导读</title><updated>2017-09-02T04:05:02.566102+00:00</updated><author><name>羽西</name><email>info@yuxifan.com</email></author><link href="https://steemit.com/@yuxi" rel="self"/><generator>羽西</generator><entry><id>https://www.yuxifan.com/atom/atom_steemit/cn/cn/2017-09-01</id><title>Steemit中文区每日文章推荐：2017-09-01</title><updated>2017-09-02T04:05:02.686209+00:00</updated><content><style type="text/css">
-.responstable {
-  margin: 1em 0;
-  width: 100%;
-  overflow: hidden;
-  background: #FFF;
-  color: #024457;
-  border-radius: 10px;
-  border-collapse: collapse;
-  border: 1px solid #167F92;
-}
-.responstable tr {
-  border: 1px solid #D9E4E6;
-}
-.responstable tr:nth-child(odd) {
-  background-color: #EAF3F3;
-}
-</style>
-
-<h2>每日文章排行榜：cn 2017-09-01</h2>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><id>https://www.yuxifan.com/atom/atom_steemit_cn.xml</id><title>羽西Steemit每日文章导读</title><updated>2017-09-03T04:05:02.804320+00:00</updated><author><name>羽西</name><email>info@yuxifan.com</email></author><link href="https://steemit.com/@yuxi" rel="self"/><generator>羽西</generator><entry><id>https://www.yuxifan.com/atom/atom_steemit/cn/cn/2017-09-02</id><title>Steemit中文区每日文章推荐：2017-09-02</title><updated>2017-09-03T04:05:02.909563+00:00</updated><content><h2>每日文章排行榜：cn 2017-09-02</h2>
 
 <img src="https://www.yuxifan.com/images/steem-statistics.jpg"/><br/>
 
 <table class="responstable" border="1" style="margin: 1em 0;border-radius: 10px;border-collapse: collapse;border: 1px solid #167F92;">
-  <th style="background-color: #167F92;">
+  <tr style="background-color: #167F92;">
     <td style="width:50px;">排名</td>
     <td style="width:80px;">可能收入</td>
     <td style="width:80px;">票数</td>
@@ -31,366 +12,366 @@
     <td style="width:80px;">威望值</td>
     <td style="width:100px;">日期</td>
     <td>文章标题/链接</td>
-  </th>
+  </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>277.97</td>
-    <td>206</td>
-    <td><a href="https://www.steemit.com/@rivalhw">rivalhw</a></td>
-    <td>70.10</td>
-    <td>2017-09-01 07:18:57</td>
-    <td><a href="https://www.steemit.com/cn/@rivalhw/steemit-09-01">七夕情人节Steemit中文社区文学群爱情征文大赛 最后投稿日（09-01）入选文章</a></td>
+    <td>292.70</td>
+    <td>293</td>
+    <td><a href="https://www.steemit.com/@deanliu">deanliu</a></td>
+    <td>71.00</td>
+    <td>2017-09-02 13:55:12</td>
+    <td><a href="https://www.steemit.com/cn/@deanliu/6bu8qo">社區二三事，與子三五聊。</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>267.03</td>
-    <td>216</td>
+    <td>255.36</td>
+    <td>188</td>
     <td><a href="https://www.steemit.com/@rivalhw">rivalhw</a></td>
-    <td>70.10</td>
-    <td>2017-09-01 09:44:18</td>
-    <td><a href="https://www.steemit.com/cn/@rivalhw/5jdadw-steemit">全民投票参与  共同决定获奖者 ---七夕情人节Steemit中文社区文学群爱情征文大赛正式投票开始</a></td>
+    <td>70.14</td>
+    <td>2017-09-02 14:18:00</td>
+    <td><a href="https://www.steemit.com/cn/@rivalhw/5bbsyz">写在七夕活动赛事投票公布之前的话</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>260.98</td>
-    <td>220</td>
+    <td>238.06</td>
+    <td>192</td>
     <td><a href="https://www.steemit.com/@someone">someone</a></td>
-    <td>66.37</td>
-    <td>2017-09-01 11:32:42</td>
-    <td><a href="https://www.steemit.com/cn/@someone/-----a-hongkonger-view-of-taiwan---hotel-royal-chiao-hsi-by-wilkinshui">港仔帶你看台灣 - 礁溪老爺酒店 / A HongKonger view of Taiwan - Hotel Royal Chiao hsi by @wilkinshui</a></td>
+    <td>66.46</td>
+    <td>2017-09-02 10:30:27</td>
+    <td><a href="https://www.steemit.com/cn/@someone/the-marvelous-experience-in-the-world-of-wedgwood----by-aafeng">The marvelous experience in The World of Wedgwood - 美轮美奂的英国瓷都之旅 by @aafeng</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>193.94</td>
-    <td>161</td>
+    <td>207.57</td>
+    <td>140</td>
     <td><a href="https://www.steemit.com/@htliao">htliao</a></td>
-    <td>64.83</td>
-    <td>2017-09-01 03:21:27</td>
-    <td><a href="https://www.steemit.com/cn/@htliao/r4cc7">《摔跤吧！爸爸》一部值得我極力推薦的感人印度電影</a></td>
+    <td>64.95</td>
+    <td>2017-09-02 10:48:09</td>
+    <td><a href="https://www.steemit.com/cn/@htliao/neo">NEO的基本背景資料整理</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>5</td>
-    <td>185.20</td>
-    <td>155</td>
-    <td><a href="https://www.steemit.com/@elfkitchen">elfkitchen</a></td>
-    <td>72.26</td>
-    <td>2017-09-01 12:26:36</td>
-    <td><a href="https://www.steemit.com/cn/@elfkitchen/roses-bread">Roses bread 玫瑰花面包</a></td>
+    <td>200.45</td>
+    <td>149</td>
+    <td><a href="https://www.steemit.com/@blackbunny">blackbunny</a></td>
+    <td>65.27</td>
+    <td>2017-09-02 14:48:06</td>
+    <td><a href="https://www.steemit.com/cn/@blackbunny/4verwv-steemit">如果李白来玩STEEMIT （十八）</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>6</td>
-    <td>183.32</td>
-    <td>118</td>
-    <td><a href="https://www.steemit.com/@linuslee0216">linuslee0216</a></td>
-    <td>63.98</td>
-    <td>2017-09-01 14:27:06</td>
-    <td><a href="https://www.steemit.com/cn/@linuslee0216/3jmjji">我与甜品的故事</a></td>
+    <td>195.31</td>
+    <td>166</td>
+    <td><a href="https://www.steemit.com/@elfkitchen">elfkitchen</a></td>
+    <td>72.27</td>
+    <td>2017-09-02 13:45:33</td>
+    <td><a href="https://www.steemit.com/cn/@elfkitchen/the-children-s-dinner-party">The children's dinner party 孩子们的聚餐</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>7</td>
-    <td>182.69</td>
-    <td>127</td>
-    <td><a href="https://www.steemit.com/@twinkledrop">twinkledrop</a></td>
-    <td>63.75</td>
-    <td>2017-09-01 01:26:39</td>
-    <td><a href="https://www.steemit.com/cn/@twinkledrop/travel-with-rainie-in-miniland-of-legoland-windsor-part-4-the-lego-edition-of-london-part-4">Travel with Rainie in Miniland of Legoland Windsor Part 4---The Lego edition of London . 畅游温莎的乐高主题公园Part 4---爱在乐高积木版伦敦小世界。</a></td>
+    <td>192.03</td>
+    <td>107</td>
+    <td><a href="https://www.steemit.com/@dapeng">dapeng</a></td>
+    <td>61.36</td>
+    <td>2017-09-02 14:15:54</td>
+    <td><a href="https://www.steemit.com/cn/@dapeng/steemit-cn">豪华版 Steemit CN 微信群名单</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>8</td>
-    <td>180.76</td>
-    <td>114</td>
-    <td><a href="https://www.steemit.com/@ygern">ygern</a></td>
-    <td>60.78</td>
-    <td>2017-09-01 13:28:03</td>
-    <td><a href="https://www.steemit.com/cn/@ygern/steem-the-chinese-translation-for-the-new-version-of-the-steem-whitepaper">我決定承擔STEEM《新版白皮書》的中文翻譯工作｜The Chinese Translation for the New Version of the STEEM whitepaper</a></td>
+    <td>154.49</td>
+    <td>171</td>
+    <td><a href="https://www.steemit.com/@linuslee0216">linuslee0216</a></td>
+    <td>63.99</td>
+    <td>2017-09-02 00:20:18</td>
+    <td><a href="https://www.steemit.com/cn/@linuslee0216/2ggsjd">随笔 ——一个什么都不相信的时代</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>9</td>
-    <td>169.74</td>
-    <td>74</td>
-    <td><a href="https://www.steemit.com/@stacee">stacee</a></td>
-    <td>65.90</td>
-    <td>2017-09-01 17:05:33</td>
-    <td><a href="https://www.steemit.com/cn/@stacee/my-boy-first-day-in-kindergarten">My Boy First Day in Kindergarten 小朋友第一天上幼儿园</a></td>
+    <td>142.33</td>
+    <td>132</td>
+    <td><a href="https://www.steemit.com/@victorier">victorier</a></td>
+    <td>61.49</td>
+    <td>2017-09-02 02:48:54</td>
+    <td><a href="https://www.steemit.com/cn/@victorier/7">淺談中國語文 #7 – 這種想法真的不足為訓</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>10</td>
-    <td>156.86</td>
-    <td>134</td>
-    <td><a href="https://www.steemit.com/@blackbunny">blackbunny</a></td>
-    <td>65.17</td>
-    <td>2017-09-01 13:35:21</td>
-    <td><a href="https://www.steemit.com/cn/@blackbunny/5gwywc-steemit">如果李白来玩STEEMIT （十七）</a></td>
+    <td>133.86</td>
+    <td>129</td>
+    <td><a href="https://www.steemit.com/@birds90">birds90</a></td>
+    <td>71.77</td>
+    <td>2017-09-02 13:54:45</td>
+    <td><a href="https://www.steemit.com/cn/@birds90/peculiar-coconut-tree">Peculiar coconut tree 奇特的椰子树</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>11</td>
-    <td>138.30</td>
-    <td>77</td>
-    <td><a href="https://www.steemit.com/@yyyy">yyyy</a></td>
-    <td>61.84</td>
-    <td>2017-09-01 05:01:18</td>
-    <td><a href="https://www.steemit.com/cn/@yyyy/2xmayb">因为爱情： （十） 预感</a></td>
+    <td>132.03</td>
+    <td>166</td>
+    <td><a href="https://www.steemit.com/@tumutanzi">tumutanzi</a></td>
+    <td>66.43</td>
+    <td>2017-09-02 11:04:27</td>
+    <td><a href="https://www.steemit.com/cn/@tumutanzi/rtn3z">真实性是好文字作品的秘诀之一</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>12</td>
-    <td>133.56</td>
-    <td>79</td>
-    <td><a href="https://www.steemit.com/@btsabc">btsabc</a></td>
-    <td>64.95</td>
-    <td>2017-09-01 16:35:42</td>
-    <td><a href="https://www.steemit.com/cn/@btsabc/2difc8">区块链其实并不免费</a></td>
+    <td>125.50</td>
+    <td>121</td>
+    <td><a href="https://www.steemit.com/@guyverckw">guyverckw</a></td>
+    <td>63.43</td>
+    <td>2017-09-02 07:39:36</td>
+    <td><a href="https://www.steemit.com/cn/@guyverckw/new-school-year-starts-or">New School Year Starts | 新學年開始了 - 談談孩子的教和養（五)</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>13</td>
-    <td>129.97</td>
-    <td>126</td>
-    <td><a href="https://www.steemit.com/@victorier">victorier</a></td>
-    <td>61.46</td>
-    <td>2017-09-01 01:41:48</td>
-    <td><a href="https://www.steemit.com/cn/@victorier/did-you-have-your-dream-today-or-5">你今天發夢了嗎? (Did you have your dream today?) |#5电影</a></td>
+    <td>118.38</td>
+    <td>97</td>
+    <td><a href="https://www.steemit.com/@btsabc">btsabc</a></td>
+    <td>65.02</td>
+    <td>2017-09-02 17:02:18</td>
+    <td><a href="https://www.steemit.com/cn/@btsabc/2017-8-29">比特股网络状态报告-2017年8月29日</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>14</td>
-    <td>121.20</td>
-    <td>122</td>
-    <td><a href="https://www.steemit.com/@birds90">birds90</a></td>
-    <td>71.76</td>
-    <td>2017-09-01 13:34:03</td>
-    <td><a href="https://www.steemit.com/cn/@birds90/school-s-opening-ceremony-9-1">School's opening ceremony 9月1日开学典礼</a></td>
+    <td>114.68</td>
+    <td>123</td>
+    <td><a href="https://www.steemit.com/@aaronli">aaronli</a></td>
+    <td>61.47</td>
+    <td>2017-09-02 12:15:00</td>
+    <td><a href="https://www.steemit.com/cn/@aaronli/or-5">我曾经短暂的电影梦，很快的结束了，又再次萌生 | 谷哥点名#5</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>15</td>
-    <td>118.73</td>
-    <td>110</td>
-    <td><a href="https://www.steemit.com/@aaronli">aaronli</a></td>
-    <td>61.32</td>
-    <td>2017-09-01 12:53:21</td>
-    <td><a href="https://www.steemit.com/cn/@aaronli/my-work-6-my-new-edited-dance-video-20-mins-with-japan-classic-anime-songs-20">My Work(6) – My new edited dance video 20 mins, with Japan classic anime songs! 童年回憶！我最新剪輯的舞蹈視頻出爐了！以日本經典動漫歌曲為主題的20分鐘精彩舞蹈！</a></td>
+    <td>103.32</td>
+    <td>91</td>
+    <td><a href="https://www.steemit.com/@twinkledrop">twinkledrop</a></td>
+    <td>63.84</td>
+    <td>2017-09-02 01:52:45</td>
+    <td><a href="https://www.steemit.com/cn/@twinkledrop/foodie-s-diary-33-the-coolest-restaurant-ermei-empress-sichuan-in-london-33">Foodie's diary #33--- The coolest restaurant---Ermei Empress Sichuan in London. 吃货日记#33---伦敦最酷四川菜馆---峨眉一派。</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>16</td>
-    <td>104.99</td>
-    <td>69</td>
-    <td><a href="https://www.steemit.com/@rezaolow">rezaolow</a></td>
-    <td>49.43</td>
-    <td>2017-09-01 00:11:45</td>
-    <td><a href="https://www.steemit.com/cn/@rezaolow/nasa-cassini-reveals-the-secrets-of-saturn-s-ring-before-suicide-201791t71142173z">NASA: Cassini Reveals The Secrets of Saturn's Ring Before Suicide</a></td>
+    <td>95.55</td>
+    <td>99</td>
+    <td><a href="https://www.steemit.com/@jubi">jubi</a></td>
+    <td>66.96</td>
+    <td>2017-09-02 11:04:51</td>
+    <td><a href="https://www.steemit.com/cn/@jubi/yours-org-and-4">关于YOURS.ORG首页"高收益"的小解释 &amp; 一点想法4</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>17</td>
-    <td>95.63</td>
+    <td>91.69</td>
     <td>67</td>
-    <td><a href="https://www.steemit.com/@jubi">jubi</a></td>
-    <td>66.92</td>
-    <td>2017-09-01 14:33:36</td>
-    <td><a href="https://www.steemit.com/cn/@jubi/or-5">跳不出的死循环《恐怖游轮》 | #5电影</a></td>
+    <td><a href="https://www.steemit.com/@liflorence">liflorence</a></td>
+    <td>62.73</td>
+    <td>2017-09-02 06:45:54</td>
+    <td><a href="https://www.steemit.com/cn/@liflorence/jubi">虞姬虞姬奈若何？——《霸王别姬》谷哥点名#5 谈电影</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>18</td>
-    <td>94.70</td>
-    <td>83</td>
-    <td><a href="https://www.steemit.com/@mcw">mcw</a></td>
-    <td>56.57</td>
-    <td>2017-09-01 09:36:48</td>
-    <td><a href="https://www.steemit.com/cn/@mcw/why-drug-development-are-so-challenging">Why drug development are so challenging ? 發展新藥真的有那麽具挑戰性嗎?</a></td>
+    <td>85.94</td>
+    <td>92</td>
+    <td><a href="https://www.steemit.com/@coldhair">coldhair</a></td>
+    <td>63.08</td>
+    <td>2017-09-02 14:51:03</td>
+    <td><a href="https://www.steemit.com/cn/@coldhair/6vaz39">如何让你的文章赚到更多的钱</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>19</td>
-    <td>90.84</td>
-    <td>84</td>
-    <td><a href="https://www.steemit.com/@herlife">herlife</a></td>
-    <td>58.21</td>
-    <td>2017-09-01 01:02:30</td>
-    <td><a href="https://www.steemit.com/cn/@herlife/78kyfx">你若不离，我便不弃</a></td>
+    <td>68.49</td>
+    <td>62</td>
+    <td><a href="https://www.steemit.com/@sylvia1997">sylvia1997</a></td>
+    <td>59.72</td>
+    <td>2017-09-02 06:29:00</td>
+    <td><a href="https://www.steemit.com/cn/@sylvia1997/2qbyzw-1">美食之家1----奶奶的红烧肉</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>20</td>
-    <td>90.44</td>
-    <td>113</td>
-    <td><a href="https://www.steemit.com/@jubi">jubi</a></td>
-    <td>66.92</td>
-    <td>2017-09-01 04:49:36</td>
-    <td><a href="https://www.steemit.com/cn/@jubi/yours-org-and-3">关于YOURS.ORG 投票赚钱 &amp; 一点想法 3</a></td>
+    <td>68.15</td>
+    <td>86</td>
+    <td><a href="https://www.steemit.com/@justyy">justyy</a></td>
+    <td>66.90</td>
+    <td>2017-09-02 09:04:36</td>
+    <td><a href="https://www.steemit.com/cn/@justyy/how-to-calculate-fibonacci-numbers-using-excel-excel">How to Calculate Fibonacci Numbers using Excel? 在EXCEL里也可以计算斐波那契数列</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>21</td>
-    <td>87.83</td>
-    <td>66</td>
-    <td><a href="https://www.steemit.com/@bring">bring</a></td>
-    <td>57.86</td>
-    <td>2017-09-01 00:46:54</td>
-    <td><a href="https://www.steemit.com/cn/@bring/little-stories-contain-rich-life-philosophy-1">滴水藏海（二）  Little Stories Contain Rich Life Philosophy (2)</a></td>
+    <td>63.81</td>
+    <td>43</td>
+    <td><a href="https://www.steemit.com/@karasui">karasui</a></td>
+    <td>52.17</td>
+    <td>2017-09-02 06:59:09</td>
+    <td><a href="https://www.steemit.com/cn/@karasui/or-5">个人英雄主义| #5电影</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>22</td>
-    <td>81.83</td>
-    <td>37</td>
-    <td><a href="https://www.steemit.com/@skenan">skenan</a></td>
-    <td>50.74</td>
-    <td>2017-09-01 01:42:45</td>
-    <td><a href="https://www.steemit.com/cn/@skenan/steemit-ui">记录在阿里云部署steemit UI的过程</a></td>
+    <td>63.02</td>
+    <td>95</td>
+    <td><a href="https://www.steemit.com/@czechglobalhosts">czechglobalhosts</a></td>
+    <td>61.89</td>
+    <td>2017-09-02 11:51:36</td>
+    <td><a href="https://www.steemit.com/cn/@czechglobalhosts/pravcicka-gate-czech-saxon-switzerland-czech-republic">Pravcicka Gate - Czech-Saxon Switzerland, Czech republic/普拉伏奇斯卡之門 - 薩克森瑞士, 捷克共和國</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>23</td>
-    <td>80.44</td>
-    <td>121</td>
-    <td><a href="https://www.steemit.com/@tumutanzi">tumutanzi</a></td>
-    <td>66.35</td>
-    <td>2017-09-01 12:03:03</td>
-    <td><a href="https://www.steemit.com/cn/@tumutanzi/532wzy">我老师和表哥都有各自的Steemit账号了，欢迎围观</a></td>
+    <td>61.15</td>
+    <td>75</td>
+    <td><a href="https://www.steemit.com/@justyy">justyy</a></td>
+    <td>66.90</td>
+    <td>2017-09-02 20:31:39</td>
+    <td><a href="https://www.steemit.com/cn/@justyy/steem-eos-steemit">STEEM 和 EOS 价格预测 - Steemit 商业智能</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>24</td>
-    <td>80.39</td>
-    <td>45</td>
-    <td><a href="https://www.steemit.com/@up7">up7</a></td>
-    <td>46.44</td>
-    <td>2017-09-01 00:20:42</td>
-    <td><a href="https://www.steemit.com/cn/@up7/2017-9-1">2017年9月1日 新闻早报</a></td>
+    <td>53.83</td>
+    <td>64</td>
+    <td><a href="https://www.steemit.com/@susanli3769">susanli3769</a></td>
+    <td>58.49</td>
+    <td>2017-09-02 13:04:57</td>
+    <td><a href="https://www.steemit.com/cn/@susanli3769/young-frankenstein-5">Young Frankenstein - #5 电影</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>25</td>
-    <td>79.79</td>
-    <td>29</td>
-    <td><a href="https://www.steemit.com/@xiaolizi">xiaolizi</a></td>
-    <td>51.78</td>
-    <td>2017-09-01 06:03:57</td>
-    <td><a href="https://www.steemit.com/cn/@xiaolizi/49qwoo">遇“踢皮球”有感</a></td>
+    <td>51.82</td>
+    <td>76</td>
+    <td><a href="https://www.steemit.com/@superhardness">superhardness</a></td>
+    <td>57.95</td>
+    <td>2017-09-02 00:52:12</td>
+    <td><a href="https://www.steemit.com/cn/@superhardness/schindler-s-list-or-5">《辛德勒的名单》Schindler's List  |谷歌点名#5电影</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>26</td>
-    <td>79.71</td>
-    <td>74</td>
-    <td><a href="https://www.steemit.com/@lawrenceho84">lawrenceho84</a></td>
-    <td>58.92</td>
-    <td>2017-09-01 01:18:45</td>
-    <td><a href="https://www.steemit.com/cn/@lawrenceho84/good-morning-steemians-good-morning-singapore-happy-long-weekend-happy-hari-raya-haji">Good Morning Steemians!! Good Morning Singapore! Happy Long Weekend! Happy Hari Raya Haji!</a></td>
+    <td>46.12</td>
+    <td>37</td>
+    <td><a href="https://www.steemit.com/@yinlovesu0914">yinlovesu0914</a></td>
+    <td>53.72</td>
+    <td>2017-09-02 06:52:48</td>
+    <td><a href="https://www.steemit.com/cn/@yinlovesu0914/or-as-usual-many-first-time-in-one-day"><日常> 實現了很多的第一次 | <As usual> Many first time in one day !</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>27</td>
-    <td>75.85</td>
-    <td>67</td>
-    <td><a href="https://www.steemit.com/@livinguktaiwan">livinguktaiwan</a></td>
-    <td>57.31</td>
-    <td>2017-09-01 04:09:45</td>
-    <td><a href="https://www.steemit.com/cn/@livinguktaiwan/or-5">為看电影在公司的抗爭 | 谷哥点名#5</a></td>
+    <td>43.85</td>
+    <td>20</td>
+    <td><a href="https://www.steemit.com/@luojia">luojia</a></td>
+    <td>54.23</td>
+    <td>2017-09-02 12:27:45</td>
+    <td><a href="https://www.steemit.com/cn/@luojia/2dgtuj">卧底鼠与老猫的虐爱大戏（连载）</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>28</td>
-    <td>75.55</td>
-    <td>89</td>
-    <td><a href="https://www.steemit.com/@marylaw">marylaw</a></td>
-    <td>60.31</td>
-    <td>2017-09-01 03:38:18</td>
-    <td><a href="https://www.steemit.com/cn/@marylaw/apple-apple-special-event-september-12-iphone">Apple正式發邀請函 Apple Special Event September 12 IPhone 準備發佈了。</a></td>
+    <td>39.83</td>
+    <td>23</td>
+    <td><a href="https://www.steemit.com/@xuran">xuran</a></td>
+    <td>49.14</td>
+    <td>2017-09-02 13:08:09</td>
+    <td><a href="https://www.steemit.com/cn/@xuran/steemit-faq-8-plagiarism-spam-abuse">Steemit FAQ 中文翻译（8）Plagiarism, Spam, Abuse 抄袭、发送垃圾信息、滥用</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>29</td>
-    <td>73.21</td>
-    <td>80</td>
-    <td><a href="https://www.steemit.com/@czechglobalhosts">czechglobalhosts</a></td>
-    <td>61.67</td>
-    <td>2017-09-01 11:03:39</td>
-    <td><a href="https://www.steemit.com/cn/@czechglobalhosts/3j7bfs-petrin-lookout-tower-prague-czech-republic">Petřín Lookout Tower, Prague - Czech Republic/佩特辛山上的觀景塔</a></td>
+    <td>38.62</td>
+    <td>22</td>
+    <td><a href="https://www.steemit.com/@bullda">bullda</a></td>
+    <td>53.56</td>
+    <td>2017-09-02 12:34:21</td>
+    <td><a href="https://www.steemit.com/cn/@bullda/steemit-rss">关于 steemit 对 RSS 的支持</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>30</td>
-    <td>69.80</td>
-    <td>30</td>
-    <td><a href="https://www.steemit.com/@ericyh">ericyh</a></td>
-    <td>47.84</td>
-    <td>2017-09-01 02:44:18</td>
-    <td><a href="https://www.steemit.com/cn/@ericyh/decentraland">可能是今年最酷的区块链项目（Decentraland解读）</a></td>
+    <td>38.25</td>
+    <td>75</td>
+    <td><a href="https://www.steemit.com/@hannahwu">hannahwu</a></td>
+    <td>61.66</td>
+    <td>2017-09-02 15:56:21</td>
+    <td><a href="https://www.steemit.com/cn/@hannahwu/5yzbpg">【七夕征文大赛】请动动小手投我一票，谢谢！</a></td>
   </tr>
   
 </table>
