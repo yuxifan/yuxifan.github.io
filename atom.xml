@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-07-28T08:21:26.600Z</updated>
+  <updated>2017-09-05T11:19:10.831Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to run a temporary http server without installing Nginx / Apache in Ubuntu</title>
+    <link href="https://www.yuxifan.com/2017/09/05/run-temporary-http-server/"/>
+    <id>https://www.yuxifan.com/2017/09/05/run-temporary-http-server/</id>
+    <published>2017-09-05T01:10:12.000Z</published>
+    <updated>2017-09-05T11:19:10.831Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/linux/web-server.jpg" alt=""></p>
+<p>Sometimes we only want to open HTTP ports temporarily, here is how:</p>
+<p>If you have enabled ufw, add ufw rule to allow the port being used by HTTP server. For example. to open port 3000 for HTTP server:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ufw allow from any to any port 3000</div></pre></td></tr></table></figure>
+<p>Now check all ufw rules:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ufw status numbered</div></pre></td></tr></table></figure>
+<p>Go to your website folder. Create html files, e.g. index.html if you don’t have them.</p>
+<p>Run the following command to start your web server by typing: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python3 -m http.server 3000</div></pre></td></tr></table></figure>
+<p>Now you can access that page in your browser.</p>
+<p>After running it, delete the rule (the number can be found from above command, e.g. sudo ufw status numbered):</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ufw delete THE_RULE_NUMBER</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/linux/web-server.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Sometimes we only want to open HTTP ports temporarily, here is how:&lt;/p&gt;
+&lt;p&gt;If you 
+    
+    </summary>
+    
+      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
+    
+      <category term="python" scheme="https://www.yuxifan.com/tags/python/"/>
+    
+      <category term="http server" scheme="https://www.yuxifan.com/tags/http-server/"/>
+    
+  </entry>
   
   <entry>
     <title>Setup python development environment for Steem on Ubuntu 16</title>
@@ -836,34 +876,6 @@
       <category term="gmail" scheme="https://www.yuxifan.com/tags/gmail/"/>
     
       <category term="mailgun" scheme="https://www.yuxifan.com/tags/mailgun/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ruby tutorials - rss</title>
-    <link href="https://www.yuxifan.com/2016/11/28/ruby-tutorials-rss/"/>
-    <id>https://www.yuxifan.com/2016/11/28/ruby-tutorials-rss/</id>
-    <published>2016-11-28T02:10:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/ruby/rss.png" alt="RSS"></p>
-<h2 id="Install-gem"><a href="#Install-gem" class="headerlink" title="Install gem"></a>Install gem</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem install feedjira</div></pre></td></tr></table></figure>
-<h2 id="Parse-RSS"><a href="#Parse-RSS" class="headerlink" title="Parse RSS"></a>Parse RSS</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'feedjira'</span></div><div class="line"></div><div class="line">feedurl = <span class="string">'https://www.yuxifan.com/atom.xml'</span></div><div class="line"></div><div class="line">feed = Feedjira::Feed.fetch_and_parse feedurl</div><div class="line"></div><div class="line">puts feed.title</div><div class="line">puts feed.url</div><div class="line">puts feed.entries.length</div><div class="line"></div><div class="line">feed.entries.each <span class="keyword">do</span> <span class="params">|item|</span></div><div class="line">  puts item.title</div><div class="line">  puts <span class="string">'------------'</span></div><div class="line">  puts item.url</div><div class="line">  puts <span class="string">' '</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/ruby/rss.png&quot; alt=&quot;RSS&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Install-gem&quot;&gt;&lt;a href=&quot;#Install-gem&quot; class=&quot;headerlink&quot; title=&quot;Install gem&quot;&gt;&lt;/a&gt;Ins
-    
-    </summary>
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
-    
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
-    
-      <category term="rss" scheme="https://www.yuxifan.com/tags/rss/"/>
     
   </entry>
   
