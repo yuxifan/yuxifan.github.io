@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2017/09/07/paste-image-by-using-html5-clipboard-api/</loc>
+    
+    <lastmod>2017-09-07T10:54:48.370Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2017/09/05/run-temporary-http-server/</loc>
     
     <lastmod>2017-09-05T11:19:10.831Z</lastmod>
@@ -110,13 +117,6 @@
     <loc>https://www.yuxifan.com/2017/06/28/graphicsmagick/</loc>
     
     <lastmod>2017-06-28T10:22:44.373Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2015/08/20/2016-08-20-create-ubuntu-16-vagrant-box/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
   </url>
   
@@ -423,6 +423,13 @@
   
   <url>
     <loc>https://www.yuxifan.com/2016/05/01/2016-05-01-how-to-add-configuration-to-ruby-gem/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2015/08/20/2016-08-20-create-ubuntu-16-vagrant-box/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     

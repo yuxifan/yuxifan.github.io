@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-09-05T11:19:10.831Z</updated>
+  <updated>2017-09-07T10:54:48.370Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to use HTML5 clipboard API to paste image in HTML</title>
+    <link href="https://www.yuxifan.com/2017/09/07/paste-image-by-using-html5-clipboard-api/"/>
+    <id>https://www.yuxifan.com/2017/09/07/paste-image-by-using-html5-clipboard-api/</id>
+    <published>2017-09-07T01:10:12.000Z</published>
+    <updated>2017-09-07T10:54:48.370Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://w3c.github.io/clipboard-apis/" rel="external nofollow noopener noreferrer" target="_blank">HTML5 Clipboard API</a> allows user to paste image from their operating system clipboard which makes users’ life much easier. Here is how:</p>
+<p>First, create an HTML file, together with javascript and css stylesheet:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">  .pastebox &#123;</div><div class="line">    background: lightgreen; </div><div class="line">	border-style: dashed; </div><div class="line">	width: 400px; </div><div class="line">	height: 200px;</div><div class="line">  &#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="xml"></span></div><div class="line">window.onload = function() &#123;</div><div class="line">    document.getElementById("pasteDiv").addEventListener("paste", pasteHandler);</div><div class="line">&#125;;</div><div class="line">  </div><div class="line">function pasteHandler(e) &#123;</div><div class="line">    var items = e.clipboardData.items;</div><div class="line">	for (var i = 0 ; i <span class="tag">&lt; <span class="attr">items.length</span> ; <span class="attr">i</span>++) &#123;</span></div><div class="line">		<span class="attr">var</span> <span class="attr">item</span> = <span class="string">items[i];</span></div><div class="line"></div><div class="line">		<span class="attr">if</span> (<span class="attr">item.type.indexOf</span>("<span class="attr">image</span>") &gt;=0) &#123;</div><div class="line">			var xhr = new XMLHttpRequest();</div><div class="line">			xhr.onload = function() &#123;</div><div class="line">				if (xhr.status == 200) &#123;</div><div class="line">					console.log("uploaded.");</div><div class="line">				&#125; else &#123;</div><div class="line">					console.log("oops, something wrong.")</div><div class="line">				&#125;</div><div class="line">			&#125;;</div><div class="line">			xhr.onerror = function() &#123;</div><div class="line">				console.log("cannot connect to server.");</div><div class="line">			&#125;;</div><div class="line">			xhr.open("POST", "/servlet/upload", true);</div><div class="line">			xhr.setRequestHeader("Content-Type", item.getAsFile().type);</div><div class="line">			xhr.send(item.getAsFile());</div><div class="line">		&#125; else &#123;</div><div class="line">			console.log("Ignoring non-image.");</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"pastebox"</span> <span class="attr">id</span>=<span class="string">"pasteDiv"</span>&gt;</span></div><div class="line">		Paste image here.</div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>The server side Java code to receive and process pasted image data:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">String fileName = <span class="string">"/tmp/"</span> + UUID.randomUUID() + <span class="string">".png"</span>;</div><div class="line"></div><div class="line">InputStream in = request.getInputStream();</div><div class="line">FileOutputStream o = <span class="keyword">null</span>;</div><div class="line"></div><div class="line"><span class="keyword">try</span> &#123;</div><div class="line">    File f = <span class="keyword">new</span> File(fileName);</div><div class="line">	o = <span class="keyword">new</span> FileOutputStream(f);</div><div class="line">    <span class="keyword">byte</span> buffer[] = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span> * <span class="number">1024</span>];</div><div class="line">    <span class="keyword">int</span> n;</div><div class="line">    <span class="keyword">while</span> ((n = in.read(buffer)) != -<span class="number">1</span>) &#123;</div><div class="line">        o.write(buffer, <span class="number">0</span>, n);</div><div class="line">    &#125;</div><div class="line">&#125; <span class="keyword">catch</span> (IOException e) &#123;</div><div class="line">    <span class="comment">// error handling code</span></div><div class="line">&#125; <span class="keyword">finally</span> &#123;</div><div class="line">	o.close();</div><div class="line">    in.close();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://w3c.github.io/clipboard-apis/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;HTML5 Clipboard API&lt;/a&gt; allow
+    
+    </summary>
+    
+      <category term="javascript" scheme="https://www.yuxifan.com/categories/javascript/"/>
+    
+    
+      <category term="java" scheme="https://www.yuxifan.com/tags/java/"/>
+    
+      <category term="javascript" scheme="https://www.yuxifan.com/tags/javascript/"/>
+    
+      <category term="html5" scheme="https://www.yuxifan.com/tags/html5/"/>
+    
+      <category term="clipboard API" scheme="https://www.yuxifan.com/tags/clipboard-API/"/>
+    
+  </entry>
   
   <entry>
     <title>How to run a temporary http server without installing Nginx / Apache in Ubuntu</title>
@@ -833,49 +866,6 @@
     
     
       <category term="sqlite" scheme="https://www.yuxifan.com/tags/sqlite/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sending and receiving custom domain emails by mailgun and gmail</title>
-    <link href="https://www.yuxifan.com/2016/12/14/sending-and-receiving-custom-domain-emails-by-mailgun-and-gmail/"/>
-    <id>https://www.yuxifan.com/2016/12/14/sending-and-receiving-custom-domain-emails-by-mailgun-and-gmail/</id>
-    <published>2016-12-14T09:51:12.000Z</published>
-    <updated>2017-06-28T13:16:21.028Z</updated>
-    
-    <content type="html"><![CDATA[<p>Setting up a custom domain email address is widely discussed and there are lots of ways to do it, e.g. by using Zoho mail services. However, we have to say the most popular web mail client is Gmail. Gmail is fast, robust and awesome. Here is the way on how to use Mailgun and Gmail to send and receive emails without installing / configuring anything on your server!</p>
-<p><img src="/images/linux/mailgun.jpg" alt="Mailgun"></p>
-<h2 id="Create-a-mailgun-account"><a href="#Create-a-mailgun-account" class="headerlink" title="Create a mailgun account"></a>Create a mailgun account</h2><p>Register a mailgun account by using your gmail. <strong>Don’t use your custom email account</strong> (you want to create later within Mailgun) as it will cause trouble while validating your Mailgun account.</p>
-<p>You may be asked to validating both your email address and a mobile number.</p>
-<p>After validation, you will be presented with a dashboard. </p>
-<p><img src="/images/linux/mailgun/1.jpg" alt="Mailgun"></p>
-<h2 id="Add-a-domain"><a href="#Add-a-domain" class="headerlink" title="Add a domain"></a>Add a domain</h2><p>Now under “Domains”, click “Add New Domain”.</p>
-<p>Follow the instructions and set your DNS records with whoever manages your DNS.</p>
-<p>Here is my configurations:<br><img src="/images/linux/mailgun/2.jpg" alt="Mailgun"></p>
-<h2 id="Create-email-address-under-custom-domain"><a href="#Create-email-address-under-custom-domain" class="headerlink" title="Create email address under custom domain"></a>Create email address under custom domain</h2><p>Click “Manage SMTP Credentials”, then click “New SMTP Credential”. Create your own email address.<br><img src="/images/linux/mailgun/3.jpg" alt="Mailgun"></p>
-<h2 id="Add-routes"><a href="#Add-routes" class="headerlink" title="Add routes"></a>Add routes</h2><p>Click on the “Routes” link on the top to set up email forwarding.</p>
-<p><img src="/images/linux/mailgun/4.jpg" alt="Mailgun"></p>
-<p>The most simple route is to ‘Catch all’ emails to your domain and forward them to your gmail.</p>
-<p>Now you can receive emails sending to the custom domain email address. </p>
-<h2 id="Sending-within-Gmail"><a href="#Sending-within-Gmail" class="headerlink" title="Sending within Gmail"></a>Sending within Gmail</h2><p>Within Gmail, go to the Accounts tab and click “Add another email address you own”. Once you open this window, enter the email address you wish to send from.</p>
-<p><img src="/images/linux/mailgun/5.jpg" alt="Mailgun"></p>
-<p>Then click “Add Account”, now you’re done! As shown below, you can send emails from your custom domain email within Gmail!</p>
-<p><img src="/images/linux/mailgun/6.jpg" alt="Mailgun"></p>
-<p>Enjoy your free email service for up to 10,000 emails a month!</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Setting up a custom domain email address is widely discussed and there are lots of ways to do it, e.g. by using Zoho mail services. Howev
-    
-    </summary>
-    
-      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
-    
-    
-      <category term="gmail" scheme="https://www.yuxifan.com/tags/gmail/"/>
-    
-      <category term="mailgun" scheme="https://www.yuxifan.com/tags/mailgun/"/>
     
   </entry>
   
