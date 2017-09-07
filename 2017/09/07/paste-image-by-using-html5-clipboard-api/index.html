@@ -9,18 +9,20 @@
         <meta name="keywords" content="java,javascript,html5,clipboard API">
     
     <meta name="description" content="HTML5 Clipboard API allows user to paste image from their operating system clipboard which makes users’ life much easier. Here is how:
-First, create an HTML file, together with javascript and css styl">
+First, create an HTML file, together with javascript and css sty">
 <meta property="og:type" content="article">
 <meta property="og:title" content="How to use HTML5 clipboard API to paste image in HTML">
 <meta property="og:url" content="https://www.yuxifan.com/2017/09/07/paste-image-by-using-html5-clipboard-api/index.html">
 <meta property="og:site_name" content="Yuxi Fan">
 <meta property="og:description" content="HTML5 Clipboard API allows user to paste image from their operating system clipboard which makes users’ life much easier. Here is how:
-First, create an HTML file, together with javascript and css styl">
-<meta property="og:updated_time" content="2017-09-07T10:54:48.370Z">
+First, create an HTML file, together with javascript and css sty">
+<meta property="og:image" content="https://www.yuxifan.com/images/javascript/clipboard-api.jpg">
+<meta property="og:updated_time" content="2017-09-07T11:01:30.988Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to use HTML5 clipboard API to paste image in HTML">
 <meta name="twitter:description" content="HTML5 Clipboard API allows user to paste image from their operating system clipboard which makes users’ life much easier. Here is how:
-First, create an HTML file, together with javascript and css styl">
+First, create an HTML file, together with javascript and css sty">
+<meta name="twitter:image" content="https://www.yuxifan.com/images/javascript/clipboard-api.jpg">
     
 
     
@@ -181,7 +183,8 @@ ga('send', 'pageview');
 
             
 
-            <p><a href="https://w3c.github.io/clipboard-apis/" rel="external nofollow noopener noreferrer" target="_blank">HTML5 Clipboard API</a> allows user to paste image from their operating system clipboard which makes users’ life much easier. Here is how:</p>
+            <p><img src="/images/javascript/clipboard-api.jpg" alt=""></p>
+<p><a href="https://w3c.github.io/clipboard-apis/" rel="external nofollow noopener noreferrer" target="_blank">HTML5 Clipboard API</a> allows user to paste image from their operating system clipboard which makes users’ life much easier. Here is how:</p>
 <p>First, create an HTML file, together with javascript and css stylesheet:</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">  .pastebox &#123;</div><div class="line">    background: lightgreen; </div><div class="line">	border-style: dashed; </div><div class="line">	width: 400px; </div><div class="line">	height: 200px;</div><div class="line">  &#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="xml"></span></div><div class="line">window.onload = function() &#123;</div><div class="line">    document.getElementById("pasteDiv").addEventListener("paste", pasteHandler);</div><div class="line">&#125;;</div><div class="line">  </div><div class="line">function pasteHandler(e) &#123;</div><div class="line">    var items = e.clipboardData.items;</div><div class="line">	for (var i = 0 ; i <span class="tag">&lt; <span class="attr">items.length</span> ; <span class="attr">i</span>++) &#123;</span></div><div class="line">		<span class="attr">var</span> <span class="attr">item</span> = <span class="string">items[i];</span></div><div class="line"></div><div class="line">		<span class="attr">if</span> (<span class="attr">item.type.indexOf</span>("<span class="attr">image</span>") &gt;=0) &#123;</div><div class="line">			var xhr = new XMLHttpRequest();</div><div class="line">			xhr.onload = function() &#123;</div><div class="line">				if (xhr.status == 200) &#123;</div><div class="line">					console.log("uploaded.");</div><div class="line">				&#125; else &#123;</div><div class="line">					console.log("oops, something wrong.")</div><div class="line">				&#125;</div><div class="line">			&#125;;</div><div class="line">			xhr.onerror = function() &#123;</div><div class="line">				console.log("cannot connect to server.");</div><div class="line">			&#125;;</div><div class="line">			xhr.open("POST", "/servlet/upload", true);</div><div class="line">			xhr.setRequestHeader("Content-Type", item.getAsFile().type);</div><div class="line">			xhr.send(item.getAsFile());</div><div class="line">		&#125; else &#123;</div><div class="line">			console.log("Ignoring non-image.");</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"pastebox"</span> <span class="attr">id</span>=<span class="string">"pasteDiv"</span>&gt;</span></div><div class="line">		Paste image here.</div><div class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>The server side Java code to receive and process pasted image data:</p>
@@ -310,20 +313,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2017/09/07/paste-image-by-using-html5-clipboard-api/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            How to use HTML5 clipboard API to paste image in HTML
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2017/07/28/setup-python-steem-development-environment/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2017/09/05/run-temporary-http-server/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Setup python development environment for Steem on Ubuntu 16</p>
+        <p class="article-nav-title">How to run a temporary http server without installing Nginx / Apache in Ubuntu</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -355,7 +348,7 @@ ga('send', 'pageview');
                             <a href="/2017/09/07/paste-image-by-using-html5-clipboard-api/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(/images/javascript/clipboard-api.jpg)" alt="How to use HTML5 clipboard API to paste image in HTML" class="thumbnail-image"></span>
     
     
 </a>
