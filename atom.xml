@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-09-11T08:31:26.508Z</updated>
+  <updated>2017-09-26T10:15:37.760Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to check if an email address is managed by google</title>
+    <link href="https://www.yuxifan.com/2017/09/26/check-mail-domain/"/>
+    <id>https://www.yuxifan.com/2017/09/26/check-mail-domain/</id>
+    <published>2017-09-26T01:10:12.000Z</published>
+    <updated>2017-09-26T10:15:37.760Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/linux/google.jpg" alt=""></p>
+<p>Lots of institutions have used Google’s mail service and there is a simple way to check if a mail domain is managed by Google, or NOT.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">host -tmx sheffield.ac.uk</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/linux/google.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Lots of institutions have used Google’s mail service and there is a simple way to chec
+    
+    </summary>
+    
+      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
+    
+    
+      <category term="gmail" scheme="https://www.yuxifan.com/tags/gmail/"/>
+    
+      <category term="google" scheme="https://www.yuxifan.com/tags/google/"/>
+    
+  </entry>
   
   <entry>
     <title>How to use HTML5 clipboard API to paste image in HTML</title>
@@ -844,37 +872,6 @@
     
     
       <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sqlite3 command line</title>
-    <link href="https://www.yuxifan.com/2016/12/23/sqlite3-command-line/"/>
-    <id>https://www.yuxifan.com/2016/12/23/sqlite3-command-line/</id>
-    <published>2016-12-23T02:10:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/database/sqlite.png" alt="sqlite"></p>
-<p>To load sqlite3 cli:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sqlite3 DB_NAME</div></pre></td></tr></table></figure>
-<p>List tables:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">.tables</div></pre></td></tr></table></figure>
-<p>List all table schemas </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.schema</div><div class="line">.schema TABLE_NAME</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/database/sqlite.png&quot; alt=&quot;sqlite&quot;&gt;&lt;/p&gt;
-&lt;p&gt;To load sqlite3 cli:&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=
-    
-    </summary>
-    
-      <category term="database" scheme="https://www.yuxifan.com/categories/database/"/>
-    
-    
-      <category term="sqlite" scheme="https://www.yuxifan.com/tags/sqlite/"/>
     
   </entry>
   
