@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-09-27T09:13:41.566Z</updated>
+  <updated>2017-09-27T09:17:25.662Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="https://www.yuxifan.com/2017/09/27/how-to-use-imagemagick-in-ruby/"/>
     <id>https://www.yuxifan.com/2017/09/27/how-to-use-imagemagick-in-ruby/</id>
     <published>2017-09-27T01:10:12.000Z</published>
-    <updated>2017-09-27T09:13:41.566Z</updated>
+    <updated>2017-09-27T09:17:25.662Z</updated>
     
     <content type="html"><![CDATA[<p>Using imagemagick is quite straightforward, here is how:</p>
-<p><img src="/images/linuximagemagick.gif" alt=""></p>
+<p><img src="/images/linuximagemagick.jpg" alt=""></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install libmagickwand-dev imagemagick</div><div class="line">gem install rmagick</div></pre></td></tr></table></figure>
 <p>The Ruby code:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line">require <span class="string">'rmagick'</span></div><div class="line"></div><div class="line">class ImageProcessor</div><div class="line"></div><div class="line">  def self.resize(srcimg,tgtimg,width,height)</div><div class="line">    img = Magick::Image.read(srcimg).first</div><div class="line">    target = Magick::Image.new(width, height) <span class="keyword">do</span></div><div class="line">          <span class="comment">#self.background_color = 'white'</span></div><div class="line">        end</div><div class="line">        img.resize_to_fit!(width, height)</div><div class="line">        target.composite(img, Magick::CenterGravity, Magick::CopyCompositeOp).write(tgtimg)</div><div class="line">  end</div><div class="line"></div><div class="line">  <span class="comment"># !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! make tgtimg is PNG to be loseless</span></div><div class="line">  def self.scale(srcimg,tgtimg,width,height)</div><div class="line">    img = Magick::Image.read(srcimg).first</div><div class="line">    target = Magick::Image.new(width, height) <span class="keyword">do</span></div><div class="line">          <span class="comment">#self.background_color = 'white'</span></div><div class="line">        end</div><div class="line">        img.scale!(width, height)</div><div class="line">        target.composite(img, Magick::CenterGravity, Magick::CopyCompositeOp).write(tgtimg)</div><div class="line">  end</div><div class="line"></div><div class="line">  def self.scale_width_only(srcimg,tgtimg,width)</div><div class="line">    img = Magick::Image.read(srcimg).first</div><div class="line">    x = img.columns</div><div class="line">    y = img.rows</div><div class="line">    ratio = (1.0*x)/y</div><div class="line">    height = width / ratio</div><div class="line">    target = Magick::Image.new(width, height)</div><div class="line">    target.composite(img, Magick::CenterGravity, Magick::CopyCompositeOp).write(tgtimg)</div><div class="line">  end</div><div class="line"></div><div class="line">end</div><div class="line"></div><div class="line">ImageProcessor.resize(<span class="string">"test.png"</span>,<span class="string">"test_resize1.png"</span>, 100, 60)</div><div class="line">ImageProcessor.resize(<span class="string">"test.png"</span>,<span class="string">"test_resize2.png"</span>, 200, 400)</div><div class="line"></div><div class="line">ImageProcessor.scale(<span class="string">"test.png"</span>,<span class="string">"test_scale1.png"</span>, 100, 60)</div><div class="line">ImageProcessor.scale(<span class="string">"test.png"</span>,<span class="string">"test_scale2.png"</span>, 200, 400)</div><div class="line"></div><div class="line">ImageProcessor.scale_width_only(<span class="string">"test.png"</span>,<span class="string">"test_scale3.png"</span>, 200)</div></pre></td></tr></table></figure>
@@ -32,7 +32,7 @@
     <summary type="html">
     
       &lt;p&gt;Using imagemagick is quite straightforward, here is how:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/linuximagemagick.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/linuximagemagick.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;figure class=&quot;highli
     
     </summary>
