@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2017-09-26T10:15:37.760Z</updated>
+  <updated>2017-09-27T09:13:41.566Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -16,15 +16,49 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>How to use imagemagick in Ruby</title>
+    <link href="https://www.yuxifan.com/2017/09/27/how-to-use-imagemagick-in-ruby/"/>
+    <id>https://www.yuxifan.com/2017/09/27/how-to-use-imagemagick-in-ruby/</id>
+    <published>2017-09-27T01:10:12.000Z</published>
+    <updated>2017-09-27T09:13:41.566Z</updated>
+    
+    <content type="html"><![CDATA[<p>Using imagemagick is quite straightforward, here is how:</p>
+<p><img src="/images/linuximagemagick.gif" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install libmagickwand-dev imagemagick</div><div class="line">gem install rmagick</div></pre></td></tr></table></figure>
+<p>The Ruby code:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line">require <span class="string">'rmagick'</span></div><div class="line"></div><div class="line">class ImageProcessor</div><div class="line"></div><div class="line">  def self.resize(srcimg,tgtimg,width,height)</div><div class="line">    img = Magick::Image.read(srcimg).first</div><div class="line">    target = Magick::Image.new(width, height) <span class="keyword">do</span></div><div class="line">          <span class="comment">#self.background_color = 'white'</span></div><div class="line">        end</div><div class="line">        img.resize_to_fit!(width, height)</div><div class="line">        target.composite(img, Magick::CenterGravity, Magick::CopyCompositeOp).write(tgtimg)</div><div class="line">  end</div><div class="line"></div><div class="line">  <span class="comment"># !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! make tgtimg is PNG to be loseless</span></div><div class="line">  def self.scale(srcimg,tgtimg,width,height)</div><div class="line">    img = Magick::Image.read(srcimg).first</div><div class="line">    target = Magick::Image.new(width, height) <span class="keyword">do</span></div><div class="line">          <span class="comment">#self.background_color = 'white'</span></div><div class="line">        end</div><div class="line">        img.scale!(width, height)</div><div class="line">        target.composite(img, Magick::CenterGravity, Magick::CopyCompositeOp).write(tgtimg)</div><div class="line">  end</div><div class="line"></div><div class="line">  def self.scale_width_only(srcimg,tgtimg,width)</div><div class="line">    img = Magick::Image.read(srcimg).first</div><div class="line">    x = img.columns</div><div class="line">    y = img.rows</div><div class="line">    ratio = (1.0*x)/y</div><div class="line">    height = width / ratio</div><div class="line">    target = Magick::Image.new(width, height)</div><div class="line">    target.composite(img, Magick::CenterGravity, Magick::CopyCompositeOp).write(tgtimg)</div><div class="line">  end</div><div class="line"></div><div class="line">end</div><div class="line"></div><div class="line">ImageProcessor.resize(<span class="string">"test.png"</span>,<span class="string">"test_resize1.png"</span>, 100, 60)</div><div class="line">ImageProcessor.resize(<span class="string">"test.png"</span>,<span class="string">"test_resize2.png"</span>, 200, 400)</div><div class="line"></div><div class="line">ImageProcessor.scale(<span class="string">"test.png"</span>,<span class="string">"test_scale1.png"</span>, 100, 60)</div><div class="line">ImageProcessor.scale(<span class="string">"test.png"</span>,<span class="string">"test_scale2.png"</span>, 200, 400)</div><div class="line"></div><div class="line">ImageProcessor.scale_width_only(<span class="string">"test.png"</span>,<span class="string">"test_scale3.png"</span>, 200)</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Using imagemagick is quite straightforward, here is how:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/linuximagemagick.gif&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highli
+    
+    </summary>
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
+    
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
+    
+      <category term="imagemagick" scheme="https://www.yuxifan.com/tags/imagemagick/"/>
+    
+  </entry>
+  
+  <entry>
     <title>How to check if an email address is managed by google</title>
     <link href="https://www.yuxifan.com/2017/09/26/check-mail-domain/"/>
     <id>https://www.yuxifan.com/2017/09/26/check-mail-domain/</id>
     <published>2017-09-26T01:10:12.000Z</published>
-    <updated>2017-09-26T10:15:37.760Z</updated>
+    <updated>2017-09-26T10:20:41.255Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/linux/google.jpg" alt=""></p>
 <p>Lots of institutions have used Google’s mail service and there is a simple way to check if a mail domain is managed by Google, or NOT.</p>
+<p>For example, </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">host -tmx sheffield.ac.uk</div></pre></td></tr></table></figure>
+<p>The result is:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sheffield.ac.uk mail is handled by 20 alt1.aspmx.l.google.com.</div><div class="line">sheffield.ac.uk mail is handled by 30 aspmx2.googlemail.com.</div><div class="line">sheffield.ac.uk mail is handled by 30 aspmx3.googlemail.com.</div><div class="line">sheffield.ac.uk mail is handled by 20 alt2.aspmx.l.google.com.</div><div class="line">sheffield.ac.uk mail is handled by 10 aspmx.l.google.com.</div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
@@ -836,42 +870,6 @@
     
     
       <category term="virtualbox" scheme="https://www.yuxifan.com/tags/virtualbox/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Useful linux commands</title>
-    <link href="https://www.yuxifan.com/2017/01/03/useful-linux-commands/"/>
-    <id>https://www.yuxifan.com/2017/01/03/useful-linux-commands/</id>
-    <published>2017-01-03T05:51:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/linux/command-line.jpg" alt="Useful linux commands"></p>
-<h2 id="Fix-typos-in-the-command-line"><a href="#Fix-typos-in-the-command-line" class="headerlink" title="Fix typos in the command line"></a>Fix typos in the command line</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">dp *.txt /var/tmp</div><div class="line">^dp^cp</div></pre></td></tr></table></figure>
-<h2 id="Find-commands-that-you-don’t-know"><a href="#Find-commands-that-you-don’t-know" class="headerlink" title="Find commands that you don’t know"></a>Find commands that you don’t know</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">apropos <span class="string">"mount file"</span></div></pre></td></tr></table></figure>
-<h2 id="Execute-command-from-bash-history"><a href="#Execute-command-from-bash-history" class="headerlink" title="Execute command from bash history"></a>Execute command from bash history</h2><p>Execute the last executed command<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">!!</div></pre></td></tr></table></figure></p>
-<p>Execute the command with all the arguments passed to the previous command<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">!*</div></pre></td></tr></table></figure></p>
-<p>Get the first argument of the last executed command<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">!ˆ</div></pre></td></tr></table></figure></p>
-<p>Get the last argument of the last executed command<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">!$</div></pre></td></tr></table></figure></p>
-<p>Execute the third command in bash history<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">!3</div></pre></td></tr></table></figure></p>
-<h2 id="Use-comma-and-braces-to-simplify-commands"><a href="#Use-comma-and-braces-to-simplify-commands" class="headerlink" title="Use comma and braces to simplify commands"></a>Use comma and braces to simplify commands</h2><p>Backup system.yaml to system.bak<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cp system.yaml&#123;,.bak&#125;</div></pre></td></tr></table></figure></p>
-<p>Restore it<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mv system.yaml&#123;.bak,&#125;</div></pre></td></tr></table></figure></p>
-<p>Copy a file, with target filename with prefix ‘bak’<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cp system.yaml bak-!<span class="comment">#^</span></div></pre></td></tr></table></figure></p>
-<h2 id="Display-process-tree"><a href="#Display-process-tree" class="headerlink" title="Display process tree"></a>Display process tree</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ps -aux -forest</div></pre></td></tr></table></figure>
-<p>Ncdu - ncurses disk usage analyzer<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install ncdu </div><div class="line">ncdu</div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/linux/command-line.jpg&quot; alt=&quot;Useful linux commands&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Fix-typos-in-the-command-line&quot;&gt;&lt;a href=&quot;#Fix-typos-in-
-    
-    </summary>
-    
-      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
     
   </entry>
   
