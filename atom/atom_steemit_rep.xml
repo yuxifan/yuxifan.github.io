@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><id>https://www.yuxifan.com/atom/atom_steemit_rep.xml</id><title>Yuxi Steemit ATOM feed by rep</title><updated>2017-10-01T00:05:02.242069+00:00</updated><author><name>Yuxi</name><email>info@yuxifan.com</email></author><link href="https://www.yuxifan.com/atom/atom_steemit_rep.xml" rel="self"/><generator>yuxi</generator><entry><id>https://www.yuxifan.com/atom/atom_steemit_rep/cn/2017-09-30</id><title>daily popular posts by rep in cn on 2017-09-30</title><updated>2017-10-01T00:05:02.936417+00:00</updated><content type="html"><![CDATA[
-<h2>Top 20 posts in category: cn group by rep on 2017-09-30</h2>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><id>https://www.yuxifan.com/atom/atom_steemit_rep.xml</id><title>Yuxi Steemit ATOM feed by rep</title><updated>2017-10-02T00:05:06.867209+00:00</updated><author><name>Yuxi</name><email>info@yuxifan.com</email></author><link href="https://www.yuxifan.com/atom/atom_steemit_rep.xml" rel="self"/><generator>yuxi</generator><entry><id>https://www.yuxifan.com/atom/atom_steemit_rep/cn/2017-10-01</id><title>daily popular posts by rep in cn on 2017-10-01</title><updated>2017-10-02T00:05:08.486552+00:00</updated><content type="html"><![CDATA[
+<h2>Top 20 posts in category: cn group by rep on 2017-10-01</h2>
 
 <img src="https://www.yuxifan.com/images/steem-statistics.jpg"/><br/>
 
@@ -21,60 +21,48 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>229.85</td>
-    <td>287</td>
-    <td>oflyhigh</td>
-    <td>72.98</td>
-    <td>2017-09-30 13:11:06</td>
-    <td><a href="https://www.steemit.com/cn/@oflyhigh/2xxlfx">如何计算内部市场当前参考价格</a></td>
+    <td>296.17</td>
+    <td>195</td>
+    <td>helene</td>
+    <td>70.70</td>
+    <td>2017-10-01 13:58:42</td>
+    <td><a href="https://www.steemit.com/cn/@helene/homemade-lotus-paste-yolk-moon-cake">Homemade Lotus Paste Yolk Moon Cake    莲蓉蛋黄月饼</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>139.88</td>
-    <td>172</td>
-    <td>helene</td>
-    <td>70.65</td>
-    <td>2017-09-30 02:38:54</td>
-    <td><a href="https://www.steemit.com/cn/@helene/yahoj">做人要”知足常乐“？</a></td>
+    <td>286.04</td>
+    <td>243</td>
+    <td>deanliu</td>
+    <td>71.77</td>
+    <td>2017-10-01 09:21:45</td>
+    <td><a href="https://www.steemit.com/cn/@deanliu/steemit-weekly-for-cners-issue-06-06">Steemit Weekly for CNers - Issue 06 / 《社區"週"邊事》 - 第 06 期</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>124.37</td>
-    <td>89</td>
-    <td>rivalhw</td>
-    <td>70.94</td>
-    <td>2017-09-30 17:33:33</td>
-    <td><a href="https://www.steemit.com/cn/@rivalhw/3-1">如何更好地赢得(签单)客户？业务技巧 3+1</a></td>
+    <td>239.12</td>
+    <td>212</td>
+    <td>oflyhigh</td>
+    <td>73.01</td>
+    <td>2017-10-01 11:49:03</td>
+    <td><a href="https://www.steemit.com/cn/@oflyhigh/steem-full-api-list-of-public-steem-full-api-nodes">公共Steem Full API 节点列表 / List of Public Steem Full API Nodes</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>49.16</td>
-    <td>84</td>
-    <td>ace108</td>
-    <td>71.82</td>
-    <td>2017-09-30 16:10:57</td>
-    <td><a href="https://www.steemit.com/cn/@ace108/2016-the-archer-at-mid-autumn-gardens-by-the-bay-or-2016-by-ace108">??2016 The Archer at Mid-Autumn, Gardens by the Bay | 2016滨海湾公园中秋-后羿篇 (by @ace108)</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>5</td>
-    <td>15.45</td>
-    <td>48</td>
+    <td>28.28</td>
+    <td>59</td>
     <td>lemooljiang</td>
-    <td>70.22</td>
-    <td>2017-09-30 09:20:54</td>
-    <td><a href="https://www.steemit.com/cn/@lemooljiang/tvb-202">致@tvb --时代的歌之202</a></td>
+    <td>70.23</td>
+    <td>2017-10-01 09:43:00</td>
+    <td><a href="https://www.steemit.com/cn/@lemooljiang/4cce6d-9">国人的假期  #9 假</a></td>
   </tr>
   
 </table>
@@ -95,240 +83,240 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>177.12</td>
-    <td>184</td>
-    <td>htliao</td>
-    <td>67.50</td>
-    <td>2017-09-30 08:00:09</td>
-    <td><a href="https://www.steemit.com/cn/@htliao/hotfoodhk-15-and-am-pm">HoTFooDHK #15  阿來泰式地道風味 &amp; am.pm</a></td>
+    <td>213.32</td>
+    <td>165</td>
+    <td>tumutanzi</td>
+    <td>68.21</td>
+    <td>2017-10-01 08:58:12</td>
+    <td><a href="https://www.steemit.com/cn/@tumutanzi/we-had-the-happy-first-ever-uk-sheffield-steemit-meetup-last-night-sheffield-steemit">We enjoyed the happy first ever UK Sheffield Steemit meetup last night // 我们昨晚愉快地举行了首届英国Sheffield Steemit好友线下聚会</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>161.12</td>
-    <td>181</td>
-    <td>tumutanzi</td>
-    <td>68.16</td>
-    <td>2017-09-30 06:25:21</td>
-    <td><a href="https://www.steemit.com/cn/@tumutanzi/2gpqkj">写作、社交、点赞，误入歧途</a></td>
+    <td>211.01</td>
+    <td>143</td>
+    <td>rea</td>
+    <td>68.89</td>
+    <td>2017-10-01 21:12:57</td>
+    <td><a href="https://www.steemit.com/cn/@rea/the-enigmatic-charm-of-camden-town-part-1">The Enigmatic Charm of Camden Town (Part 1) /  神秘而富有魅力的卡姆登市集 之一</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>142.42</td>
-    <td>70</td>
-    <td>livinguktaiwan</td>
-    <td>60.32</td>
-    <td>2017-09-30 03:41:42</td>
-    <td><a href="https://www.steemit.com/cn/@livinguktaiwan/sharing-my-three-months-milestones-a-fun-prized-contest">??分享三個月里程碑?? + 有趣有獎遊戲????     ??Sharing my three months milestones?? + a fun prized contest????</a></td>
+    <td>187.63</td>
+    <td>141</td>
+    <td>linuslee0216</td>
+    <td>66.71</td>
+    <td>2017-10-01 15:35:45</td>
+    <td><a href="https://www.steemit.com/cn/@linuslee0216/or-9">人越大，就免不了要说假话 |谷哥点名#9</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>130.03</td>
-    <td>89</td>
-    <td>jademont</td>
-    <td>67.92</td>
-    <td>2017-09-30 14:27:18</td>
-    <td><a href="https://www.steemit.com/cn/@jademont/5dqrqz-chinese-crypto-community-weekly-report">Chinese Crypto community weekly report 国内虚拟币界见闻九月第四周</a></td>
+    <td>186.40</td>
+    <td>198</td>
+    <td>htliao</td>
+    <td>67.58</td>
+    <td>2017-10-01 07:28:18</td>
+    <td><a href="https://www.steemit.com/cn/@htliao/2vojs6">第一屆中文區模擬投資比賽正式結束</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>5</td>
-    <td>118.25</td>
-    <td>73</td>
-    <td>blackbunny</td>
-    <td>67.07</td>
-    <td>2017-09-30 09:14:15</td>
-    <td><a href="https://www.steemit.com/cn/@blackbunny/3hovfr">小酒窝七：黯然</a></td>
+    <td>178.97</td>
+    <td>78</td>
+    <td>someone</td>
+    <td>67.75</td>
+    <td>2017-10-01 14:31:18</td>
+    <td><a href="https://www.steemit.com/cn/@someone/---day-1-taiwan-kenting--penghu-trip-day-1-follow-us-to-eat-and-play-by-kanixlam">台灣墾丁 &amp; 澎湖之旅 DAY 1～跟著我們去吃喝玩樂吧～ Taiwan Kenting &amp; Penghu Trip Day 1~ Follow us to eat and play! by @kanixlam</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>6</td>
-    <td>113.58</td>
-    <td>85</td>
-    <td>jubi</td>
-    <td>68.10</td>
-    <td>2017-09-30 08:24:48</td>
-    <td><a href="https://www.steemit.com/cn/@jubi/cny">一起努力创作多元化的内容</a></td>
+    <td>138.80</td>
+    <td>122</td>
+    <td>aaronli</td>
+    <td>64.33</td>
+    <td>2017-10-01 13:24:12</td>
+    <td><a href="https://www.steemit.com/cn/@aaronli/hong-kong-snapshot-29-with-video-wing-lee-street-witnessing-the-sorrow-of-hk-29">Hong Kong Snapshot (29) (With Video) –  Wing Lee Street, witnessing the sorrow of HK 香港随拍(29) (附有视频) – 《岁月神偷》的永利街，见证香港的悲哀</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>7</td>
-    <td>109.60</td>
-    <td>92</td>
-    <td>stacee</td>
-    <td>67.19</td>
-    <td>2017-09-30 14:38:12</td>
-    <td><a href="https://www.steemit.com/cn/@stacee/better-than-any-restaurant-mom-s-cooking-part-8">Better Than Any Restaurant: Mom's Cooking Part.8 秀秀我家大厨的手艺，据说比餐馆做的都要好吃 第八集</a></td>
+    <td>136.65</td>
+    <td>118</td>
+    <td>nicolemoker</td>
+    <td>64.92</td>
+    <td>2017-10-01 08:40:12</td>
+    <td><a href="https://www.steemit.com/cn/@nicolemoker/steemitphotochallenge-entry-oriental-namjing-hangzhou-by-nicole">( SteemitPhotoChallenge Entry ) Oriental@Nanjing, Hangzhou by Nicole</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>8</td>
-    <td>95.88</td>
-    <td>92</td>
-    <td>nanosesame</td>
-    <td>62.23</td>
-    <td>2017-09-30 00:09:03</td>
-    <td><a href="https://www.steemit.com/cn/@nanosesame/draw-on-blockchain-elves-party-on-mid-autumn-festival">Draw on blockchain : Elves party on Mid-Autumn Festival 小精靈的中秋派對</a></td>
+    <td>116.03</td>
+    <td>93</td>
+    <td>stacee</td>
+    <td>67.23</td>
+    <td>2017-10-01 15:33:33</td>
+    <td><a href="https://www.steemit.com/cn/@stacee/reikb">说说我买过的那些性价比高的特价游轮船票和省钱攻略</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>9</td>
-    <td>92.77</td>
-    <td>95</td>
-    <td>linuslee0216</td>
-    <td>66.61</td>
-    <td>2017-09-30 06:44:30</td>
-    <td><a href="https://www.steemit.com/cn/@linuslee0216/4eadtw">没有带银包怎样辨？原来不知不觉也不需要钱包了。</a></td>
+    <td>114.46</td>
+    <td>119</td>
+    <td>blackbunny</td>
+    <td>67.11</td>
+    <td>2017-10-01 02:08:30</td>
+    <td><a href="https://www.steemit.com/cn/@blackbunny/37ygyb">小酒窝八：愿意</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>10</td>
-    <td>90.19</td>
-    <td>67</td>
-    <td>coldhair</td>
-    <td>64.51</td>
-    <td>2017-09-30 08:44:27</td>
-    <td><a href="https://www.steemit.com/cn/@coldhair/6jhm6y">不相信奇迹，不心存幻想，你就能少上当受骗！</a></td>
+    <td>98.67</td>
+    <td>95</td>
+    <td>guyverckw</td>
+    <td>65.88</td>
+    <td>2017-10-01 14:52:51</td>
+    <td><a href="https://www.steemit.com/cn/@guyverckw/bbq-on-national-day">美麗星期天 X 國慶日燒烤樂 | BeautifulSunday X BBQ On National Day</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>11</td>
-    <td>82.32</td>
-    <td>44</td>
-    <td>guyverckw</td>
-    <td>65.82</td>
-    <td>2017-09-30 20:06:00</td>
-    <td><a href="https://www.steemit.com/cn/@guyverckw/raspberry-pi-3-initial-setup">樹莓派 3 開盒及初建分享 | Raspberry Pi 3 Initial Setup</a></td>
+    <td>93.94</td>
+    <td>65</td>
+    <td>travelgirl</td>
+    <td>64.72</td>
+    <td>2017-10-01 08:34:36</td>
+    <td><a href="https://www.steemit.com/cn/@travelgirl/algorithmic-pareidolia-exhibition-gifs-from-exhibition">Algorithmic Pareidolia Exhibition - 空想性錯視展覽會 (GIFs from exhibition)</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>12</td>
-    <td>79.31</td>
-    <td>79</td>
-    <td>joythewanderer</td>
-    <td>67.36</td>
-    <td>2017-09-30 21:41:00</td>
-    <td><a href="https://www.steemit.com/cn/@joythewanderer/palau-gueell-a-low-key-but-impressive-masterpiece-by-gaudi">Palau Güell - a Low Key but Impressive masterpiece by Gaudí   桂尔宫殿：低调却华丽的高迪作品</a></td>
+    <td>88.46</td>
+    <td>137</td>
+    <td>justyy</td>
+    <td>68.09</td>
+    <td>2017-10-01 10:49:33</td>
+    <td><a href="https://www.steemit.com/cn/@justyy/steem-sql-steemsql-tutorial-how-to-get-random-posts-on-steemit">STEEM SQL 系列之 随机返回是怎么实现的？SteemSQL Tutorial: How to Get Random Posts on SteemIt?</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>13</td>
-    <td>77.49</td>
-    <td>54</td>
-    <td>wilkinshui</td>
-    <td>65.79</td>
-    <td>2017-09-30 06:56:21</td>
-    <td><a href="https://www.steemit.com/cn/@wilkinshui/n2ray">模擬投資比賽策略 (三)</a></td>
+    <td>88.26</td>
+    <td>49</td>
+    <td>magicmonk</td>
+    <td>63.44</td>
+    <td>2017-10-01 00:22:33</td>
+    <td><a href="https://www.steemit.com/cn/@magicmonk/mysteemitfriends-online-new-feature-time-period-and-name-filter-or-my-steemit-friends">Mysteemitfriends.online New feature: Time period &amp; Name filter | My Steemit Friends 網站新功能: 以不同的投票時間段及投票人名稱篩選結果</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>14</td>
-    <td>69.42</td>
-    <td>93</td>
-    <td>guyverckw</td>
-    <td>65.82</td>
-    <td>2017-09-30 00:39:09</td>
-    <td><a href="https://www.steemit.com/cn/@guyverckw/world-of-coca-cole-3">可口可樂世界 (三) | World of Coca Cole (3)</a></td>
+    <td>85.12</td>
+    <td>95</td>
+    <td>wilkinshui</td>
+    <td>65.85</td>
+    <td>2017-10-01 10:20:09</td>
+    <td><a href="https://www.steemit.com/cn/@wilkinshui/21tx8l">星期六還要上班 > , <</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>15</td>
-    <td>67.90</td>
-    <td>103</td>
-    <td>aaronli</td>
-    <td>64.22</td>
-    <td>2017-09-30 12:51:12</td>
-    <td><a href="https://www.steemit.com/cn/@aaronli/hong-kong-snapshot-28-with-video-night-view-of-garden-hill-composed-by-ignored-stories-28">Hong Kong Snapshot (28) (With Video) –  Night view of Garden Hill, composed by ignored stories 香港随拍(28) (附有视频) – 嘉顿山夜景， 璀灿夜景，背后是一个个被遗忘的故事</a></td>
+    <td>81.22</td>
+    <td>84</td>
+    <td>czechglobalhosts</td>
+    <td>65.18</td>
+    <td>2017-10-01 11:12:45</td>
+    <td><a href="https://www.steemit.com/cn/@czechglobalhosts/4yn3jk-narrow-and-romantic-streets-in-the-czech-republic-wish-you-were-here">Narrow and romantic streets in the Czech Republic. Wish you were here? - 狹窄又浪漫的捷克小巷——你希望你在這裏嗎？</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>16</td>
-    <td>67.68</td>
-    <td>113</td>
-    <td>marylaw</td>
-    <td>61.69</td>
-    <td>2017-09-30 02:56:21</td>
-    <td><a href="https://www.steemit.com/cn/@marylaw/bitcoin-2017930t10561688z">首次嘗試在日本大型店鋪用Bitcoin支付</a></td>
+    <td>81.15</td>
+    <td>85</td>
+    <td>joythewanderer</td>
+    <td>67.41</td>
+    <td>2017-10-01 21:56:09</td>
+    <td><a href="https://www.steemit.com/cn/@joythewanderer/milestone-67-steemit-reputation-1500-followers-thank-you-67-1500-followers">??MILESTONE: 67 STEEMIT REPUTATION! 1500+ Followers. Thank You!    里程碑纪念：67等级 + 1500 Followers！</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>17</td>
-    <td>67.09</td>
-    <td>30</td>
-    <td>shenchensucc</td>
-    <td>61.20</td>
-    <td>2017-09-30 22:26:45</td>
-    <td><a href="https://www.steemit.com/cn/@shenchensucc/the-born-of-my-second-son-luca">The born of my second son Luca 次子卢卡出生记</a></td>
+    <td>80.17</td>
+    <td>39</td>
+    <td>ygern</td>
+    <td>62.93</td>
+    <td>2017-10-01 09:06:21</td>
+    <td><a href="https://www.steemit.com/cn/@ygern/2pka7u">【週末家鄉味】速成美味的南洋咖哩</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>18</td>
-    <td>65.58</td>
-    <td>50</td>
-    <td>hannahwu</td>
-    <td>63.94</td>
-    <td>2017-09-30 15:20:51</td>
-    <td><a href="https://www.steemit.com/cn/@hannahwu/travel-with-me-beihai-eating-and-travel-guide-or-9">悠闲假期，感受海滨城市的浪漫 Travel with me: Beihai Eating and Travel Guide |谷歌点名#9</a></td>
+    <td>78.72</td>
+    <td>71</td>
+    <td>twinkledrop</td>
+    <td>66.23</td>
+    <td>2017-10-01 09:03:30</td>
+    <td><a href="https://www.steemit.com/cn/@twinkledrop/travel-with-rainie-in-lego-museum-of-legoland-windsor-part-1-part-1">Travel with Rainie in Lego museum of Legoland Windsor Part 1. 畅游温莎的乐高主题公园的乐高模型博物馆Part 1。</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>19</td>
-    <td>54.95</td>
-    <td>57</td>
-    <td>mrspointm</td>
-    <td>61.81</td>
-    <td>2017-09-30 02:25:33</td>
-    <td><a href="https://www.steemit.com/cn/@mrspointm/an-accident-changed-my-life">一场车祸改变了我的生活 An Accident Changed My Life</a></td>
+    <td>75.32</td>
+    <td>63</td>
+    <td>dapeng</td>
+    <td>64.10</td>
+    <td>2017-10-01 06:58:42</td>
+    <td><a href="https://www.steemit.com/cn/@dapeng/steem-cn-project-hope-2017-10-01">Steem 华语区新人“希望工程”第 5 期(共享黑名单)  2017-10-01</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>20</td>
-    <td>53.70</td>
-    <td>73</td>
-    <td>justyy</td>
-    <td>68.05</td>
-    <td>2017-09-30 22:31:27</td>
-    <td><a href="https://www.steemit.com/cn/@justyy/7hpntj">墙重新刷成白色，整个房子敞亮了 - 英国请人来家里刷墙的经历</a></td>
+    <td>71.18</td>
+    <td>47</td>
+    <td>btsabc</td>
+    <td>65.96</td>
+    <td>2017-10-01 15:08:57</td>
+    <td><a href="https://www.steemit.com/cn/@btsabc/cny">华尔街真的要将数千亿美元转移到区块链中吗？</a></td>
   </tr>
   
 </table>
@@ -349,240 +337,240 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>108.08</td>
-    <td>18</td>
-    <td>michaelleeld</td>
-    <td>59.76</td>
-    <td>2017-09-30 04:47:30</td>
-    <td><a href="https://www.steemit.com/cn/@michaelleeld/4unpqt">西藏行之羊湖</a></td>
+    <td>91.52</td>
+    <td>86</td>
+    <td>goodboyphilip</td>
+    <td>59.60</td>
+    <td>2017-10-01 13:01:42</td>
+    <td><a href="https://www.steemit.com/cn/@goodboyphilip/eng-japan-osaka-travel-guide-one-day-nmb48-fans-life-akb48-philip-goodboy-philip">(ENG/中文) Japan Osaka Travel Guide 大阪篇: 簡單粉絲生活 / One Day NMB48 Fans Life / AKB48 山本彩 市川美織 須藤凜々花 握手会 (好孩子 Philip Goodboy Philipガイド)</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>55.84</td>
-    <td>46</td>
-    <td>icedream</td>
-    <td>59.48</td>
-    <td>2017-09-30 11:24:30</td>
-    <td><a href="https://www.steemit.com/cn/@icedream/rain">闻雨</a></td>
+    <td>46.82</td>
+    <td>49</td>
+    <td>carobetc</td>
+    <td>53.61</td>
+    <td>2017-10-01 02:08:33</td>
+    <td><a href="https://www.steemit.com/cn/@carobetc/7qpnwd">第一屆中文區模擬投資比賽- 我的賽後報告~</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>42.13</td>
-    <td>33</td>
-    <td>towardsthesun</td>
-    <td>52.54</td>
-    <td>2017-09-30 01:44:42</td>
-    <td><a href="https://www.steemit.com/cn/@towardsthesun/2la6ec">亲爱的，我们该如何拥有幸福婚姻 （上）-- 认清自己想要的生活</a></td>
+    <td>45.75</td>
+    <td>27</td>
+    <td>karasui</td>
+    <td>56.54</td>
+    <td>2017-10-01 13:23:54</td>
+    <td><a href="https://www.steemit.com/cn/@karasui/chinese-national-day">Chinese National Day</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>39.28</td>
+    <td>30.94</td>
     <td>22</td>
-    <td>rednumber</td>
-    <td>51.11</td>
-    <td>2017-09-30 13:39:48</td>
-    <td><a href="https://www.steemit.com/cn/@rednumber/manila-zoo">我的生活之旅 - 在菲律宾的家庭旅行, 马尼拉动物园 (Manila Zoo)</a></td>
+    <td>jessicameng</td>
+    <td>58.74</td>
+    <td>2017-10-01 13:29:39</td>
+    <td><a href="https://www.steemit.com/cn/@jessicameng/family-gathering">十一国庆家庭聚会 Family Gathering</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>5</td>
-    <td>37.80</td>
-    <td>14</td>
-    <td>towardsthesun</td>
-    <td>52.54</td>
-    <td>2017-09-30 15:34:48</td>
-    <td><a href="https://www.steemit.com/cn/@towardsthesun/or-or-cn">地球人的中秋节 || CN区“月旦评”之中秋节</a></td>
+    <td>25.59</td>
+    <td>21</td>
+    <td>wangwenjing</td>
+    <td>52.13</td>
+    <td>2017-10-01 15:09:45</td>
+    <td><a href="https://www.steemit.com/cn/@wangwenjing/or-china-national-day">爱国无小事 | China National Day</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>6</td>
-    <td>32.03</td>
-    <td>25</td>
-    <td>shengui</td>
-    <td>55.52</td>
-    <td>2017-09-30 10:59:03</td>
-    <td><a href="https://www.steemit.com/cn/@shengui/happy-birthday-to-my-baby">Happy birthday to my baby！//  写在宝宝周岁</a></td>
+    <td>23.54</td>
+    <td>29</td>
+    <td>renzhichu</td>
+    <td>57.26</td>
+    <td>2017-10-01 10:28:36</td>
+    <td><a href="https://www.steemit.com/cn/@renzhichu/6ciwbc">爱国是件小事</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>7</td>
-    <td>29.47</td>
-    <td>30</td>
-    <td>karasui</td>
-    <td>56.30</td>
-    <td>2017-09-30 11:57:00</td>
-    <td><a href="https://www.steemit.com/cn/@karasui/x1tmx">我到家啦</a></td>
+    <td>22.37</td>
+    <td>60</td>
+    <td>xiaoshancun</td>
+    <td>56.01</td>
+    <td>2017-10-01 04:42:21</td>
+    <td><a href="https://www.steemit.com/cn/@xiaoshancun/3at4yn-or">羡慕双节放假的人|节日感怀</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>8</td>
-    <td>29.32</td>
-    <td>14</td>
-    <td>mxg</td>
-    <td>56.00</td>
-    <td>2017-09-30 10:00:33</td>
-    <td><a href="https://www.steemit.com/cn/@mxg/8yrd5">最是中秋忆团圆</a></td>
+    <td>22.08</td>
+    <td>13</td>
+    <td>hqy</td>
+    <td>56.11</td>
+    <td>2017-10-01 17:33:27</td>
+    <td><a href="https://www.steemit.com/cn/@hqy/4ljvpy">干一辈子笨重活的椿乃</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>9</td>
-    <td>28.67</td>
-    <td>22</td>
-    <td>berlin1997</td>
-    <td>56.34</td>
-    <td>2017-09-30 04:09:24</td>
-    <td><a href="https://www.steemit.com/cn/@berlin1997/7rdfsa">树欲静，风不止</a></td>
+    <td>19.76</td>
+    <td>16</td>
+    <td>liumei</td>
+    <td>52.28</td>
+    <td>2017-10-01 01:24:39</td>
+    <td><a href="https://www.steemit.com/cn/@liumei/6gpu9b">自制炸薯条 番茄酱</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>10</td>
-    <td>28.67</td>
-    <td>57</td>
-    <td>zsilence</td>
-    <td>58.99</td>
-    <td>2017-09-30 03:12:27</td>
-    <td><a href="https://www.steemit.com/cn/@zsilence/18-8">微时间管理术——18分钟改变生活 / 买书如山倒，读书如抽丝#8</a></td>
+    <td>16.30</td>
+    <td>17</td>
+    <td>kunpengding</td>
+    <td>52.62</td>
+    <td>2017-10-01 00:24:18</td>
+    <td><a href="https://www.steemit.com/cn/@kunpengding/42omgv">国庆节随想</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>11</td>
-    <td>27.23</td>
-    <td>66</td>
-    <td>goodboyphilip</td>
-    <td>59.36</td>
-    <td>2017-09-30 14:31:21</td>
-    <td><a href="https://www.steemit.com/cn/@goodboyphilip/eng-023-japan-osaka-gourmet-travel-guide-kozou-king-pork-italian-style-ramen-goodboy-philip">(ENG/中文) #023 Japan Osaka Gourmet Travel Guide: 爆食日本美食大阪篇 <福島KOZOU+ > :多变化无汁肉拉面 / King Pork Italian Style Ramen / 勁量豚骨まぜそば (好孩子 Goodboy Philip 食レポグルメガイド)</a></td>
+    <td>14.60</td>
+    <td>17</td>
+    <td>bigyellow</td>
+    <td>58.60</td>
+    <td>2017-10-01 09:13:54</td>
+    <td><a href="https://www.steemit.com/cn/@bigyellow/4gykjh">国庆就医记</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>12</td>
-    <td>23.18</td>
-    <td>23</td>
-    <td>acactus1013</td>
-    <td>53.56</td>
-    <td>2017-09-30 06:56:15</td>
-    <td><a href="https://www.steemit.com/cn/@acactus1013/watch-movies-with-my-students">Watch Movies with My Students/和学生一起看电影</a></td>
+    <td>13.66</td>
+    <td>18</td>
+    <td>drunkevil</td>
+    <td>55.86</td>
+    <td>2017-10-01 13:55:15</td>
+    <td><a href="https://www.steemit.com/cn/@drunkevil/who-am-i">旁观者，未必清</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>13</td>
-    <td>22.30</td>
-    <td>54</td>
-    <td>yellowbird</td>
-    <td>57.27</td>
-    <td>2017-09-30 03:27:24</td>
-    <td><a href="https://www.steemit.com/cn/@yellowbird/steem-steem-dpos">持有STEEM的我当了回股东/STEEM DPOS</a></td>
+    <td>12.58</td>
+    <td>25</td>
+    <td>melaleuca</td>
+    <td>52.38</td>
+    <td>2017-10-01 14:37:39</td>
+    <td><a href="https://www.steemit.com/cn/@melaleuca/time">假若时光倒流，恰似你的温柔 （上篇）|谷哥点名#9 假</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>14</td>
-    <td>19.80</td>
-    <td>16</td>
-    <td>cornelia</td>
-    <td>57.52</td>
-    <td>2017-09-30 07:27:30</td>
-    <td><a href="https://www.steemit.com/cn/@cornelia/and-or-pikachu-and-raichu">皮卡丘&amp;雷丘 |   Pikachu&amp;Raichu</a></td>
+    <td>10.72</td>
+    <td>29</td>
+    <td>icedream</td>
+    <td>59.52</td>
+    <td>2017-10-01 07:54:24</td>
+    <td><a href="https://www.steemit.com/cn/@icedream/rainy">雨后</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>15</td>
-    <td>19.69</td>
-    <td>19</td>
-    <td>victory622</td>
-    <td>56.64</td>
-    <td>2017-09-30 16:18:09</td>
-    <td><a href="https://www.steemit.com/cn/@victory622/typical-italian-young-people-friday-night-life">Typical Italian Young People Friday Night Life -- 最道地的意大利年轻人度过周五晚上的方式</a></td>
+    <td>9.60</td>
+    <td>21</td>
+    <td>kangnajiang</td>
+    <td>53.94</td>
+    <td>2017-10-01 07:33:09</td>
+    <td><a href="https://www.steemit.com/cn/@kangnajiang/or-9">真大学，"假"老师|谷哥点名#9 假</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>16</td>
-    <td>18.88</td>
-    <td>27</td>
-    <td>icedream</td>
-    <td>59.48</td>
-    <td>2017-09-30 04:40:21</td>
-    <td><a href="https://www.steemit.com/cn/@icedream/9-national-holiday">假期一二事——谷歌点名#9 假</a></td>
+    <td>9.45</td>
+    <td>14</td>
+    <td>victory622</td>
+    <td>56.71</td>
+    <td>2017-10-01 23:18:30</td>
+    <td><a href="https://www.steemit.com/cn/@victory622/travel-with-me-in-venice-or-or">Travel with me in Venice  -- |威尼斯的泪 像琉璃易碎|</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>17</td>
-    <td>18.06</td>
-    <td>23</td>
-    <td>renzhichu</td>
-    <td>57.15</td>
-    <td>2017-09-30 12:52:00</td>
-    <td><a href="https://www.steemit.com/cn/@renzhichu/5ljplr">有卡无钱的烦恼</a></td>
+    <td>9.25</td>
+    <td>12</td>
+    <td>berlin1997</td>
+    <td>56.39</td>
+    <td>2017-10-01 13:24:39</td>
+    <td><a href="https://www.steemit.com/cn/@berlin1997/6c3h4e">国庆，好爱你哦，赐我一条高速路吧</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>18</td>
-    <td>17.04</td>
-    <td>15</td>
-    <td>bigyellow</td>
-    <td>58.55</td>
-    <td>2017-09-30 08:19:39</td>
-    <td><a href="https://www.steemit.com/cn/@bigyellow/66gcvt-or">中秋与我|“月旦评”活动-中秋</a></td>
+    <td>8.93</td>
+    <td>14</td>
+    <td>kunpengding</td>
+    <td>52.62</td>
+    <td>2017-10-01 07:34:09</td>
+    <td><a href="https://www.steemit.com/cn/@kunpengding/5tci7g">你多久没有发“祝福短信”了？</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>19</td>
-    <td>15.60</td>
-    <td>55</td>
-    <td>thomaskikansha</td>
-    <td>58.86</td>
-    <td>2017-09-30 04:45:45</td>
-    <td><a href="https://www.steemit.com/cn/@thomaskikansha/meander">加國隨拍⑬：曲流 Meander</a></td>
+    <td>8.53</td>
+    <td>15</td>
+    <td>acactus1013</td>
+    <td>53.66</td>
+    <td>2017-10-01 15:02:30</td>
+    <td><a href="https://www.steemit.com/cn/@acactus1013/6by1ow">国庆第一天，陪母上大人逛公园！（内附一道有奖竞猜题）</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>20</td>
-    <td>14.41</td>
-    <td>34</td>
-    <td>aafeng</td>
-    <td>55.08</td>
-    <td>2017-09-30 22:20:12</td>
-    <td><a href="https://www.steemit.com/cn/@aafeng/some-dogs-do">国外经典儿童图书推荐之： Some dogs do (永远不要扼杀孩子们的想象力)</a></td>
+    <td>8.10</td>
+    <td>20</td>
+    <td>dancingapple</td>
+    <td>54.18</td>
+    <td>2017-10-01 14:34:09</td>
+    <td><a href="https://www.steemit.com/cn/@dancingapple/71co2c">青松如你</a></td>
   </tr>
   
 </table>
@@ -603,240 +591,240 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>11.56</td>
-    <td>17</td>
-    <td>sumhat</td>
-    <td>43.97</td>
-    <td>2017-09-30 14:15:18</td>
-    <td><a href="https://www.steemit.com/cn/@sumhat/steemit">在 Steemit 上要写点什么</a></td>
+    <td>41.45</td>
+    <td>28</td>
+    <td>leonhh</td>
+    <td>48.08</td>
+    <td>2017-10-01 17:58:06</td>
+    <td><a href="https://www.steemit.com/cn/@leonhh/how-would-mechanical-watch-fade-out">機械錶如何淡出市場？ How would Mechanical watch fade out?</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>8.96</td>
-    <td>7</td>
-    <td>sumhat</td>
-    <td>43.97</td>
-    <td>2017-09-30 18:41:51</td>
-    <td><a href="https://www.steemit.com/cn/@sumhat/2keczn">奢侈品机械表将在二十年内退出历史舞台</a></td>
+    <td>24.46</td>
+    <td>19</td>
+    <td>winniex</td>
+    <td>48.70</td>
+    <td>2017-10-01 05:26:48</td>
+    <td><a href="https://www.steemit.com/cn/@winniex/43iw1h">假期第一天，说说兴趣班</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>8.84</td>
-    <td>8</td>
-    <td>andrewzhu</td>
-    <td>46.86</td>
-    <td>2017-09-30 09:06:00</td>
-    <td><a href="https://www.steemit.com/cn/@andrewzhu/5kz8ey">关于幸福</a></td>
+    <td>20.93</td>
+    <td>19</td>
+    <td>wantfly</td>
+    <td>49.37</td>
+    <td>2017-10-01 06:36:21</td>
+    <td><a href="https://www.steemit.com/cn/@wantfly/90">90后-未来的中坚力量</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>8.42</td>
-    <td>11</td>
-    <td>daijia</td>
-    <td>48.34</td>
-    <td>2017-09-30 13:08:51</td>
-    <td><a href="https://www.steemit.com/cn/@daijia/or-9">可能过了一个假假期：当加班成为一种仪式，我的假期还剩下什么？|谷哥点名#9假</a></td>
+    <td>18.21</td>
+    <td>7</td>
+    <td>bryanlin</td>
+    <td>44.43</td>
+    <td>2017-10-01 19:47:51</td>
+    <td><a href="https://www.steemit.com/cn/@bryanlin/2jyjiz">三十六大-冯唐</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>5</td>
-    <td>8.29</td>
-    <td>9</td>
-    <td>winniex</td>
-    <td>47.42</td>
-    <td>2017-09-30 07:09:27</td>
-    <td><a href="https://www.steemit.com/cn/@winniex/4th7op">说一个淘气的孩子以及不以规矩，不成方圆</a></td>
+    <td>11.31</td>
+    <td>8</td>
+    <td>mlcrypto</td>
+    <td>41.87</td>
+    <td>2017-10-01 13:45:33</td>
+    <td><a href="https://www.steemit.com/cn/@mlcrypto/my-trading-stories-from-hk-stocks-to-crypto-1">我的交易經歷 - 從香港股票到加密貨幣(一)  My trading stories - from HK stocks to crypto(1)</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>6</td>
-    <td>8.17</td>
+    <td>9.18</td>
     <td>8</td>
-    <td>monkeyplayfire</td>
-    <td>44.15</td>
-    <td>2017-09-30 00:52:48</td>
-    <td><a href="https://www.steemit.com/cn/@monkeyplayfire/68gwts-steemit">谈谈Steemit的“月旦评”</a></td>
+    <td>shellycai</td>
+    <td>45.69</td>
+    <td>2017-10-01 14:45:21</td>
+    <td><a href="https://www.steemit.com/cn/@shellycai/or">家乡的月亮|“月旦评”-中秋</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>7</td>
-    <td>7.73</td>
-    <td>5</td>
-    <td>hymle</td>
-    <td>45.71</td>
-    <td>2017-09-30 14:04:06</td>
-    <td><a href="https://www.steemit.com/cn/@hymle/r4vcm">练字的工具</a></td>
+    <td>9.09</td>
+    <td>4</td>
+    <td>johnnyzhou</td>
+    <td>41.03</td>
+    <td>2017-10-01 14:39:12</td>
+    <td><a href="https://www.steemit.com/cn/@johnnyzhou/3wmsds">为什么是她当领导？</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>8</td>
-    <td>7.55</td>
-    <td>9</td>
-    <td>winniex</td>
-    <td>47.42</td>
-    <td>2017-09-30 01:43:42</td>
-    <td><a href="https://www.steemit.com/cn/@winniex/6kead9">秋游偶遇</a></td>
+    <td>8.86</td>
+    <td>16</td>
+    <td>monkeyplayfire</td>
+    <td>45.15</td>
+    <td>2017-10-01 03:38:36</td>
+    <td><a href="https://www.steemit.com/cn/@monkeyplayfire/62v4en">区块链中一个重要的链：侧链</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>9</td>
-    <td>6.50</td>
-    <td>3</td>
-    <td>hymle</td>
-    <td>45.71</td>
-    <td>2017-09-30 13:50:54</td>
-    <td><a href="https://www.steemit.com/cn/@hymle/2nlcul">执行算法还是被算法执行，你选择哪一个?</a></td>
+    <td>8.47</td>
+    <td>10</td>
+    <td>redtea</td>
+    <td>49.21</td>
+    <td>2017-10-01 13:20:03</td>
+    <td><a href="https://www.steemit.com/cn/@redtea/qlugv">中秋福利随想</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>10</td>
-    <td>5.48</td>
-    <td>5</td>
-    <td>yunxiaohui</td>
-    <td>47.94</td>
-    <td>2017-09-30 12:12:51</td>
-    <td><a href="https://www.steemit.com/cn/@yunxiaohui/2aoas">痛苦的暂态睡眠</a></td>
+    <td>8.44</td>
+    <td>10</td>
+    <td>daijia</td>
+    <td>48.86</td>
+    <td>2017-10-01 11:19:48</td>
+    <td><a href="https://www.steemit.com/cn/@daijia/p9nmy">第一次尝试使用中英文写作</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>11</td>
-    <td>5.23</td>
-    <td>3</td>
-    <td>shellycai</td>
-    <td>44.81</td>
-    <td>2017-09-30 15:13:30</td>
-    <td><a href="https://www.steemit.com/cn/@shellycai/steemit">Steemit与我的这些日子</a></td>
+    <td>7.26</td>
+    <td>9</td>
+    <td>hymle</td>
+    <td>46.29</td>
+    <td>2017-10-01 14:19:03</td>
+    <td><a href="https://www.steemit.com/cn/@hymle/6fgdba">练字的方法</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>12</td>
-    <td>4.42</td>
-    <td>5</td>
-    <td>daydayup</td>
-    <td>41.47</td>
-    <td>2017-09-30 07:30:30</td>
-    <td><a href="https://www.steemit.com/cn/@daydayup/iphone">我挑选iPhone的准则</a></td>
+    <td>7.24</td>
+    <td>10</td>
+    <td>mollymolly</td>
+    <td>45.46</td>
+    <td>2017-10-01 17:03:42</td>
+    <td><a href="https://www.steemit.com/cn/@mollymolly/2exfiw">十年弹指一挥间，能留下来的人都是真爱（一）</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>13</td>
-    <td>3.89</td>
-    <td>18</td>
-    <td>ping-ping</td>
-    <td>47.97</td>
-    <td>2017-09-30 11:22:45</td>
-    <td><a href="https://www.steemit.com/cn/@ping-ping/-2017930t182241986z">威尔金森魔杖的昆虫是独一无二的</a></td>
+    <td>7.22</td>
+    <td>7</td>
+    <td>moicc</td>
+    <td>48.35</td>
+    <td>2017-10-01 16:21:54</td>
+    <td><a href="https://www.steemit.com/cn/@moicc/qqlve">外婆</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>14</td>
-    <td>1.65</td>
-    <td>4</td>
-    <td>irisleung</td>
-    <td>41.21</td>
-    <td>2017-09-30 05:21:39</td>
-    <td><a href="https://www.steemit.com/cn/@irisleung/3zknnp">薑餅人（原創短篇小說：第十三節）</a></td>
+    <td>6.83</td>
+    <td>8</td>
+    <td>techlee</td>
+    <td>44.96</td>
+    <td>2017-10-01 13:35:39</td>
+    <td><a href="https://www.steemit.com/cn/@techlee/or-or-or">国庆|我在家||你在哪？</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>15</td>
-    <td>1.34</td>
-    <td>15</td>
-    <td>julianti</td>
-    <td>40.98</td>
-    <td>2017-09-30 11:18:54</td>
-    <td><a href="https://www.steemit.com/cn/@julianti/holiday-to-cheung-grand-canyon-2017930t181847818z">假期到長江大峽谷 / holiday to cheung grand canyon</a></td>
+    <td>6.11</td>
+    <td>7</td>
+    <td>bryanlin</td>
+    <td>44.43</td>
+    <td>2017-10-01 20:28:30</td>
+    <td><a href="https://www.steemit.com/cn/@bryanlin/2e2bqu">电视剧推荐系列之一《白夜追凶》</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>16</td>
-    <td>0.47</td>
-    <td>14</td>
-    <td>chen-chen</td>
-    <td>48.13</td>
-    <td>2017-09-30 19:18:57</td>
-    <td><a href="https://www.steemit.com/cn/@chen-chen/-2017101t21848303z">照片挑戰 / 王祥佑的故鄉</a></td>
+    <td>5.81</td>
+    <td>4</td>
+    <td>mlcrypto</td>
+    <td>41.87</td>
+    <td>2017-10-01 06:47:18</td>
+    <td><a href="https://www.steemit.com/cn/@mlcrypto/oct-week-1-bitcoin-analysis">[OCT WEEK 1] 比特幣分析 Bitcoin Analysis</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>17</td>
-    <td>0.39</td>
-    <td>15</td>
-    <td>lee26</td>
-    <td>40.94</td>
-    <td>2017-09-30 12:26:15</td>
-    <td><a href="https://www.steemit.com/cn/@lee26/bees-suck-the-flower-essence-2017930t19261258z">蜜蜂吸花精華 / bees suck the flower essence</a></td>
+    <td>4.28</td>
+    <td>12</td>
+    <td>daijia</td>
+    <td>48.86</td>
+    <td>2017-10-01 09:00:57</td>
+    <td><a href="https://www.steemit.com/cn/@daijia/say-goodbye-to-putty-and-xshell-using-cmder-as-an-ssh-shell-under-windows-with-ssh-key-support-putty-xshell-windows-cmder-ssh">Say goodbye to Putty and Xshell: Using Cmder as an SSH shell under Windows, with ssh-key support. 与Putty和Xshell说再见：Windows下使用Cmder作为SSH工具</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>18</td>
-    <td>0.36</td>
-    <td>13</td>
-    <td>pojan</td>
-    <td>47.35</td>
-    <td>2017-09-30 14:37:57</td>
-    <td><a href="https://www.steemit.com/cn/@pojan/first-editing-for-sweetsssj-photoshop-2017930t213752376z">First editing for @sweetsssj #??Photoshop</a></td>
+    <td>3.80</td>
+    <td>5</td>
+    <td>syt</td>
+    <td>41.30</td>
+    <td>2017-10-01 11:58:12</td>
+    <td><a href="https://www.steemit.com/cn/@syt/6p4gpp-visual-studio-code">Visual Studio Code中文翻译 - 起步篇</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>19</td>
-    <td>0.09</td>
-    <td>2</td>
-    <td>leocyber</td>
-    <td>48.68</td>
-    <td>2017-09-30 15:25:54</td>
-    <td><a href="https://www.steemit.com/cn/@leocyber/patriot">真假 patriot</a></td>
+    <td>2.78</td>
+    <td>10</td>
+    <td>winniex</td>
+    <td>48.70</td>
+    <td>2017-10-01 14:13:27</td>
+    <td><a href="https://www.steemit.com/cn/@winniex/5eirkh">不想落在角落里 [诗]</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>20</td>
-    <td>0.08</td>
-    <td>4</td>
-    <td>leocyber</td>
-    <td>48.68</td>
-    <td>2017-09-30 06:57:15</td>
-    <td><a href="https://www.steemit.com/cn/@leocyber/5z15nq">看不見</a></td>
+    <td>2.38</td>
+    <td>6</td>
+    <td>irisleung</td>
+    <td>41.80</td>
+    <td>2017-10-01 12:05:12</td>
+    <td><a href="https://www.steemit.com/cn/@irisleung/6rkldp">薑餅人（原創短篇小說：第十四節）</a></td>
   </tr>
   
 </table>
@@ -857,48 +845,84 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>2.75</td>
-    <td>12</td>
-    <td>holamaria</td>
-    <td>39.93</td>
-    <td>2017-09-30 00:37:18</td>
-    <td><a href="https://www.steemit.com/cn/@holamaria/3-drawing-by-hand-3-the-power-of-love-3-3"><3 DRAWING BY HAND <3 // THE POWER OF LOVE//<3   绘制手段   <3 //爱的力量</a></td>
+    <td>4.34</td>
+    <td>10</td>
+    <td>jianan</td>
+    <td>36.52</td>
+    <td>2017-10-01 14:45:51</td>
+    <td><a href="https://www.steemit.com/cn/@jianan/steemit">各位Steemit上的朋友好，很高兴来到这里</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>0.40</td>
-    <td>15</td>
-    <td>jingmi</td>
-    <td>39.86</td>
-    <td>2017-09-30 09:55:00</td>
-    <td><a href="https://www.steemit.com/cn/@jingmi/-2017930t165455141z">美麗的日落</a></td>
+    <td>3.21</td>
+    <td>14</td>
+    <td>zmm</td>
+    <td>38.18</td>
+    <td>2017-10-01 08:16:51</td>
+    <td><a href="https://www.steemit.com/cn/@zmm/2jndb3">痛</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>0.02</td>
-    <td>1</td>
-    <td>vanisis</td>
-    <td>37.65</td>
-    <td>2017-09-30 08:48:33</td>
-    <td><a href="https://www.steemit.com/cn/@vanisis/4xvmsq">好文分享丨我所认识的李笑来</a></td>
+    <td>3.14</td>
+    <td>8</td>
+    <td>cxj6174</td>
+    <td>39.48</td>
+    <td>2017-10-01 10:18:09</td>
+    <td><a href="https://www.steemit.com/cn/@cxj6174/steemit">我决定好了接下来要在 steemit 上写些什么了</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>0.01</td>
-    <td>3</td>
-    <td>ahmedkedd</td>
-    <td>35.78</td>
-    <td>2017-09-30 20:38:39</td>
-    <td><a href="https://www.steemit.com/cn/@ahmedkedd/exhibition-sunken-ship-ceramics-and-trade-across-the-sea-silk-road-opened-in-nanjing-east-china">"Exhibition sunken ship ceramics and trade across the sea silk road" opened in Nanjing East China.</a></td>
+    <td>0.42</td>
+    <td>14</td>
+    <td>sunlee7</td>
+    <td>39.26</td>
+    <td>2017-10-01 13:29:21</td>
+    <td><a href="https://www.steemit.com/cn/@sunlee7/unique-insect-macro-photo-2017101t202918914z">獨特的昆蟲/微距攝影 ( unique insect / macro photo )</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>5</td>
+    <td>0.17</td>
+    <td>36</td>
+    <td>vanisis</td>
+    <td>37.73</td>
+    <td>2017-10-01 04:31:51</td>
+    <td><a href="https://www.steemit.com/cn/@vanisis/5b4bwj">实现人身自由的最低门槛</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>6</td>
+    <td>0.09</td>
+    <td>34</td>
+    <td>cxj6174</td>
+    <td>39.48</td>
+    <td>2017-10-01 02:19:42</td>
+    <td><a href="https://www.steemit.com/cn/@cxj6174/2n2qwb">还原计算-《逻辑的引擎》</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>7</td>
+    <td>0.07</td>
+    <td>4</td>
+    <td>jingmi</td>
+    <td>39.88</td>
+    <td>2017-10-01 10:50:12</td>
+    <td><a href="https://www.steemit.com/cn/@jingmi/-2017101t17508267z">通往海洋的路</a></td>
   </tr>
   
 </table>
@@ -919,31 +943,19 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>0.37</td>
-    <td>7</td>
-    <td>zmm</td>
-    <td>27.27</td>
-    <td>2017-09-30 11:38:18</td>
-    <td><a href="https://www.steemit.com/cn/@zmm/or-9-ji">我的一次替考经历|谷哥点名#9假jiǎ</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>2</td>
-    <td>0.10</td>
-    <td>6</td>
-    <td>sunshinebloom</td>
-    <td>27.12</td>
-    <td>2017-09-30 08:20:48</td>
-    <td><a href="https://www.steemit.com/cn/@sunshinebloom/osmanthus-blossoms-give-off-a-rich-perfume">秋雨下的那一抹淡淡地桂花香/Osmanthus blossoms give off a rich perfume</a></td>
+    <td>0.18</td>
+    <td>53</td>
+    <td>steemit-bot</td>
+    <td>26.18</td>
+    <td>2017-10-01 02:01:48</td>
+    <td><a href="https://www.steemit.com/cn/@steemit-bot/the-forbidden-city-of-china">The Forbidden City of China     中国紫禁城</a></td>
   </tr>
   
 </table>
 
 ]]>
-</content></entry><entry><id>https://www.yuxifan.com/atom/atom_steemit_rep/life/2017-09-30</id><title>daily popular posts by rep in life on 2017-09-30</title><updated>2017-10-01T00:05:04.489087+00:00</updated><content type="html"><![CDATA[
-<h2>Top 20 posts in category: life group by rep on 2017-09-30</h2>
+</content></entry><entry><id>https://www.yuxifan.com/atom/atom_steemit_rep/life/2017-10-01</id><title>daily popular posts by rep in life on 2017-10-01</title><updated>2017-10-02T00:05:09.358618+00:00</updated><content type="html"><![CDATA[
+<h2>Top 20 posts in category: life group by rep on 2017-10-01</h2>
 
 <img src="https://www.yuxifan.com/images/steem-statistics.jpg"/><br/>
 
@@ -964,180 +976,180 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>80.63</td>
-    <td>294</td>
-    <td>sirwinchester</td>
-    <td>75.12</td>
-    <td>2017-09-30 01:36:48</td>
-    <td><a href="https://www.steemit.com/life/@sirwinchester/emoji-science-facts-statistics-and-what-your-emojis-say-about-you">Emoji Science ?? ?? ☝️ Facts, Statistics, And What Your Emojis Say About You!</a></td>
+    <td>127.41</td>
+    <td>67</td>
+    <td>michelle.gent</td>
+    <td>72.74</td>
+    <td>2017-10-01 11:49:57</td>
+    <td><a href="https://www.steemit.com/life/@michelle.gent/this-series-of-stories-will-be-titled-i-m-surprised-i-turned-out-as-well-as-i-did-given-my-childhood-52">This series of stories will be titled 'I'm surprised I turned out as well as I did, given my childhood ...' 52</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>76.79</td>
-    <td>129</td>
-    <td>exyle</td>
-    <td>70.59</td>
-    <td>2017-09-30 10:46:24</td>
-    <td><a href="https://www.steemit.com/life/@exyle/steemfat-progress-pictures-week-9-something-interesting-is-happening-to-my-belly">Steemfat: Progress pictures week 9 - Something interesting is happening to my belly.</a></td>
+    <td>73.06</td>
+    <td>188</td>
+    <td>meesterboom</td>
+    <td>72.28</td>
+    <td>2017-10-01 10:31:06</td>
+    <td><a href="https://www.steemit.com/life/@meesterboom/the-joy-of-steemit-cheers-papa-pepper">The Joy Of Steemit (Cheers Papa-Pepper!)</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>74.03</td>
-    <td>109</td>
-    <td>sauravrungta</td>
-    <td>73.82</td>
-    <td>2017-09-30 16:17:57</td>
-    <td><a href="https://www.steemit.com/life/@sauravrungta/what-you-say-vs-what-you-actually-want-to-say">What You Say vs What You Actually Want To Say</a></td>
+    <td>63.57</td>
+    <td>139</td>
+    <td>exyle</td>
+    <td>70.60</td>
+    <td>2017-10-01 09:15:12</td>
+    <td><a href="https://www.steemit.com/life/@exyle/smt-thoughts-way-more-positive-regarding-the-future-price-of-steem-but-unsure-about-where-the-blockchain-is-going">SMT thoughts. Way more positive regarding the future price of STEEM. But unsure about where the blockchain is going.</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>69.12</td>
-    <td>93</td>
-    <td>exyle</td>
-    <td>70.59</td>
-    <td>2017-09-30 21:35:57</td>
-    <td><a href="https://www.steemit.com/life/@exyle/upgraded-my-fightstick-practised-for-months-and-the-impossible-happened">Upgraded my FightStick, Practised Streetfighter for months and the impossible happened.</a></td>
+    <td>55.72</td>
+    <td>144</td>
+    <td>kaylinart</td>
+    <td>73.65</td>
+    <td>2017-10-01 23:15:24</td>
+    <td><a href="https://www.steemit.com/life/@kaylinart/working-on-the-cabin">Working On The Cabin!</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>5</td>
-    <td>51.92</td>
-    <td>155</td>
-    <td>kaylinart</td>
-    <td>73.64</td>
-    <td>2017-09-30 18:02:45</td>
-    <td><a href="https://www.steemit.com/life/@kaylinart/desert-camping-in-utah">Desert Camping! In Utah</a></td>
+    <td>54.84</td>
+    <td>55</td>
+    <td>dana-edwards</td>
+    <td>72.89</td>
+    <td>2017-10-01 19:48:24</td>
+    <td><a href="https://www.steemit.com/life/@dana-edwards/balancing-risk-vs-opportunity-in-business">Balancing risk vs opportunity in business</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>6</td>
-    <td>48.21</td>
-    <td>134</td>
-    <td>meesterboom</td>
-    <td>72.27</td>
-    <td>2017-09-30 18:32:33</td>
-    <td><a href="https://www.steemit.com/life/@meesterboom/king-of-hearts-and-dead-guy-beers">King of Hearts and Dead Guy Beers</a></td>
+    <td>44.00</td>
+    <td>87</td>
+    <td>exyle</td>
+    <td>70.60</td>
+    <td>2017-10-01 21:24:36</td>
+    <td><a href="https://www.steemit.com/life/@exyle/burgers-from-3-different-cuts-of-meat-with-black-garlic-mayo-farmer-cheddar-cheese-and-whiskey-onions-from-the-green-egg-sunday">Burgers made from 3 different cuts of meat with black garlic mayo, farmer cheddar cheese and caramelized onions. From the green egg. Sunday with friends.</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>7</td>
-    <td>44.50</td>
-    <td>60</td>
-    <td>dana-edwards</td>
-    <td>72.86</td>
-    <td>2017-09-30 17:51:18</td>
-    <td><a href="https://www.steemit.com/life/@dana-edwards/income-share-agreements-selling-shares-in-yourself-to-pay-for-college">Income share agreements: selling shares in yourself to pay for college?</a></td>
+    <td>35.36</td>
+    <td>71</td>
+    <td>rok-sivante</td>
+    <td>72.12</td>
+    <td>2017-10-01 20:18:06</td>
+    <td><a href="https://www.steemit.com/life/@rok-sivante/evolutionary-upgrades-the-power-of-perception-and-magic-of-wealth-dynamics-part-two">Evolutionary Upgrades, The Power Of Perception, And Magic Of Wealth Dynamics... (Part TWO)</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>8</td>
-    <td>39.99</td>
-    <td>61</td>
+    <td>25.28</td>
+    <td>51</td>
     <td>dana-edwards</td>
-    <td>72.86</td>
-    <td>2017-09-30 20:28:24</td>
-    <td><a href="https://www.steemit.com/life/@dana-edwards/legal-self-ownership-how-would-you-go-about-owning-yourself-in-the-eyes-of-the-law">Legal self ownership: how would you go about owning yourself (in the eyes of the law)?</a></td>
+    <td>72.89</td>
+    <td>2017-10-01 23:25:27</td>
+    <td><a href="https://www.steemit.com/life/@dana-edwards/i-m-going-to-work-until-the-day-i-die-is-working-until-the-day-you-die-the-new-reality-in-america">"I'm going to work until the day I die" - Is working until the day you die the new reality in America?</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>9</td>
-    <td>10.93</td>
-    <td>54</td>
-    <td>dragosroua</td>
-    <td>72.45</td>
-    <td>2017-09-30 12:53:00</td>
-    <td><a href="https://www.steemit.com/life/@dragosroua/runcoin-distribution-round-nine-beneficiaries">RUNCOIN Distribution Round Nine - Beneficiaries ????</a></td>
+    <td>24.96</td>
+    <td>124</td>
+    <td>kaylinart</td>
+    <td>73.65</td>
+    <td>2017-10-01 22:42:18</td>
+    <td><a href="https://www.steemit.com/life/@kaylinart/we-slept-in-a-horse-trailer-haha">We Slept In A Horse Trailer Haha!</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>10</td>
-    <td>10.61</td>
-    <td>36</td>
-    <td>marius19</td>
-    <td>72.88</td>
-    <td>2017-09-30 04:17:09</td>
-    <td><a href="https://www.steemit.com/life/@marius19/the-heart-chose">The heart chose</a></td>
+    <td>23.83</td>
+    <td>60</td>
+    <td>rok-sivante</td>
+    <td>72.12</td>
+    <td>2017-10-01 14:12:27</td>
+    <td><a href="https://www.steemit.com/life/@rok-sivante/evolutionary-upgrades-the-power-of-perception-and-magic-of-wealth-dynamics-part-one">Evolutionary Upgrades, The Power Of Perception, And Magic Of Wealth Dynamics... (Part ONE)</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>11</td>
-    <td>8.95</td>
-    <td>22</td>
+    <td>11.71</td>
+    <td>35</td>
     <td>marius19</td>
     <td>72.88</td>
-    <td>2017-09-30 17:39:06</td>
-    <td><a href="https://www.steemit.com/life/@marius19/colorchallenge-saturday-indigo-at-least-one-flower-to-give-you-as-a-sign-of-gratitude">Colorchallenge: Saturday Indigo -At least one flower to give you as a sign of gratitude.</a></td>
+    <td>2017-10-01 04:18:12</td>
+    <td><a href="https://www.steemit.com/life/@marius19/there-is-something-in-october">There is something in October</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>12</td>
-    <td>8.74</td>
-    <td>39</td>
-    <td>future24</td>
-    <td>70.69</td>
-    <td>2017-09-30 18:16:12</td>
-    <td><a href="https://www.steemit.com/life/@future24/and-10024-i-wish-you-a-great-and-relaxed-weekend-everyone-and-9996">✨ I wish you a great and relaxed weekend everyone!  ✌</a></td>
+    <td>9.96</td>
+    <td>24</td>
+    <td>marius19</td>
+    <td>72.88</td>
+    <td>2017-10-01 17:40:36</td>
+    <td><a href="https://www.steemit.com/life/@marius19/autumn-day">Autumn Day</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>13</td>
-    <td>4.62</td>
-    <td>32</td>
+    <td>9.50</td>
+    <td>38</td>
     <td>marius19</td>
     <td>72.88</td>
-    <td>2017-09-30 09:23:24</td>
-    <td><a href="https://www.steemit.com/life/@marius19/when-you-truly-love">When you truly love</a></td>
+    <td>2017-10-01 09:25:42</td>
+    <td><a href="https://www.steemit.com/life/@marius19/that-s-how-it-lives">That's how it lives.</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>14</td>
-    <td>4.38</td>
-    <td>26</td>
-    <td>marius19</td>
-    <td>72.88</td>
-    <td>2017-09-30 16:50:06</td>
-    <td><a href="https://www.steemit.com/life/@marius19/life-is-a-beautiful-dream">Life is a beautiful dream</a></td>
+    <td>5.84</td>
+    <td>54</td>
+    <td>dumar022</td>
+    <td>70.35</td>
+    <td>2017-10-01 11:13:15</td>
+    <td><a href="https://www.steemit.com/life/@dumar022/does-the-suit-make-the-man">Does the suit make the man?</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>15</td>
-    <td>3.85</td>
-    <td>44</td>
-    <td>dumar022</td>
-    <td>70.35</td>
-    <td>2017-09-30 14:40:27</td>
-    <td><a href="https://www.steemit.com/life/@dumar022/you-should-listen-to-your-parents-if-they-are-normal">You should listen to your parents if they are normal</a></td>
+    <td>3.22</td>
+    <td>18</td>
+    <td>marius19</td>
+    <td>72.88</td>
+    <td>2017-10-01 16:53:03</td>
+    <td><a href="https://www.steemit.com/life/@marius19/life-is-a-train-trip">Life is a train trip</a></td>
   </tr>
   
 </table>
@@ -1158,240 +1170,240 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>141.58</td>
-    <td>354</td>
-    <td>enazwahsdarb</td>
-    <td>65.63</td>
-    <td>2017-09-30 14:28:36</td>
-    <td><a href="https://www.steemit.com/life/@enazwahsdarb/ppt-post-promotion-thread-6-comment-your-links-my-contribution">⏺ PPT (Post Promotion Thread) #6: Comment your links! My contribution!</a></td>
+    <td>125.90</td>
+    <td>71</td>
+    <td>ruthofisrael</td>
+    <td>60.57</td>
+    <td>2017-10-01 18:33:45</td>
+    <td><a href="https://www.steemit.com/life/@ruthofisrael/changing-regret-to-resolve">Changing Regret to Resolve</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>134.47</td>
-    <td>144</td>
-    <td>patrice</td>
-    <td>62.91</td>
-    <td>2017-09-30 00:24:18</td>
-    <td><a href="https://www.steemit.com/life/@patrice/a-day-in-my-life-on-steemit">A Day in My Life on Steemit</a></td>
+    <td>117.04</td>
+    <td>314</td>
+    <td>enazwahsdarb</td>
+    <td>65.75</td>
+    <td>2017-10-01 02:36:42</td>
+    <td><a href="https://www.steemit.com/life/@enazwahsdarb/there-s-only-one-direction-all-the-way-up-part-1">⏺ There's only one direction.. All the way up!! Part 1</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>114.91</td>
-    <td>41</td>
-    <td>kyusho</td>
-    <td>68.26</td>
-    <td>2017-09-30 10:37:54</td>
-    <td><a href="https://www.steemit.com/life/@kyusho/black-belt-2017930t73736612z">Black Belt</a></td>
+    <td>94.29</td>
+    <td>82</td>
+    <td>soldier</td>
+    <td>68.05</td>
+    <td>2017-10-01 19:41:45</td>
+    <td><a href="https://www.steemit.com/life/@soldier/inventions-that-are-inspired-from-nature-or-part-i">Inventions That Are Inspired From Nature | Part I</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>96.78</td>
-    <td>98</td>
-    <td>soldier</td>
-    <td>68.02</td>
-    <td>2017-09-30 00:52:42</td>
-    <td><a href="https://www.steemit.com/life/@soldier/how-to-fall-asleep-better">How To Fall Asleep Better</a></td>
+    <td>84.85</td>
+    <td>55</td>
+    <td>jassennessaj</td>
+    <td>62.19</td>
+    <td>2017-10-01 17:21:30</td>
+    <td><a href="https://www.steemit.com/life/@jassennessaj/i-keep-this-motto-if-your-dreams-don-t-scare-you-they-aren-t-big-enough-and-i-m-thankful-i-kept-it">I keep this Motto : "If your DREAMS don't scare you, they aren't BIG enough" and I'm thankful I kept it.</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>5</td>
-    <td>76.96</td>
-    <td>95</td>
-    <td>soldier</td>
-    <td>68.02</td>
-    <td>2017-09-30 20:46:00</td>
-    <td><a href="https://www.steemit.com/life/@soldier/20-things-today-s-kids-will-never-understand">20 Things Today´s Kids Will Never Understand</a></td>
+    <td>77.45</td>
+    <td>229</td>
+    <td>enazwahsdarb</td>
+    <td>65.75</td>
+    <td>2017-10-01 14:06:36</td>
+    <td><a href="https://www.steemit.com/life/@enazwahsdarb/there-s-only-one-direction-all-the-way-up-part-2">⏺ There's only one direction.. All the way up!! Part 2</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>6</td>
-    <td>33.76</td>
-    <td>55</td>
-    <td>eric-boucher</td>
-    <td>67.83</td>
-    <td>2017-09-30 07:15:21</td>
-    <td><a href="https://www.steemit.com/life/@eric-boucher/all-in-the-name-of-love-part-2">All in the Name of Love! (Part 2)</a></td>
+    <td>48.51</td>
+    <td>109</td>
+    <td>fisteganos</td>
+    <td>65.94</td>
+    <td>2017-10-01 15:35:33</td>
+    <td><a href="https://www.steemit.com/life/@fisteganos/1-2-3-4-what-s-the-focus">1,2,3,4! What’s The Focus?</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>7</td>
-    <td>28.82</td>
-    <td>37</td>
-    <td>denmarkguy</td>
-    <td>68.30</td>
-    <td>2017-09-30 22:58:39</td>
-    <td><a href="https://www.steemit.com/life/@denmarkguy/in-praise-of-doing-your-best-and-why-cultivated-ignorance-annoys-me">In Praise of Doing Your Best... and Why Cultivated Ignorance Annoys Me!</a></td>
+    <td>45.83</td>
+    <td>49</td>
+    <td>marymg2014</td>
+    <td>60.77</td>
+    <td>2017-10-01 13:39:33</td>
+    <td><a href="https://www.steemit.com/life/@marymg2014/a-public-service-announcement-for-my-fellow-steemians">A public service announcement for my fellow Steemians</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>8</td>
-    <td>27.15</td>
-    <td>39</td>
-    <td>silviabeneforti</td>
-    <td>68.12</td>
-    <td>2017-09-30 21:44:09</td>
-    <td><a href="https://www.steemit.com/life/@silviabeneforti/when-dance-is-pure-emotion-malambo">When dance is pure emotion: malambo</a></td>
+    <td>39.27</td>
+    <td>68</td>
+    <td>battleaxe</td>
+    <td>62.82</td>
+    <td>2017-10-01 14:57:36</td>
+    <td><a href="https://www.steemit.com/life/@battleaxe/instantaneous-crush">Instantaneous Crush</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>9</td>
-    <td>16.69</td>
-    <td>72</td>
-    <td>theghost1980</td>
-    <td>61.59</td>
-    <td>2017-09-30 01:54:42</td>
-    <td><a href="https://www.steemit.com/life/@theghost1980/keep-it-up-steemians-never-ever-give-up-spanish-inside-by-theghost1980">Keep it up Steemians. Never ever give up! (>Spanish Inside<) -by TheGhost1980</a></td>
+    <td>36.78</td>
+    <td>31</td>
+    <td>jaynie</td>
+    <td>61.20</td>
+    <td>2017-10-01 20:16:06</td>
+    <td><a href="https://www.steemit.com/life/@jaynie/oh-about-that-gung-ho">Oh, About that GUNG HO!</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>10</td>
-    <td>14.04</td>
-    <td>71</td>
-    <td>richq11</td>
-    <td>69.18</td>
-    <td>2017-09-30 14:44:00</td>
-    <td><a href="https://www.steemit.com/life/@richq11/tales-from-the-crypt-xv-the-innovator">Tales From The Crypt XV: The  Innovator</a></td>
+    <td>29.85</td>
+    <td>28</td>
+    <td>rocky1</td>
+    <td>61.85</td>
+    <td>2017-10-01 14:57:27</td>
+    <td><a href="https://www.steemit.com/life/@rocky1/little-stars-who-do-not-shine-due-to-poverty">Little Stars who do not shine due to poverty</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>11</td>
-    <td>13.81</td>
-    <td>18</td>
-    <td>dreemit</td>
-    <td>69.35</td>
-    <td>2017-09-30 15:32:48</td>
-    <td><a href="https://www.steemit.com/life/@dreemit/zoe-s-photo-shoot-with-sam-and-dean-winchester-and-surprise-appearance-by-jim-beaver-bobby-woot-supernatural-convention-finale">Zoe's photo shoot with Sam and Dean Winchester, and surprise appearance by Jim Beaver (Bobby woot!) (Supernatural Convention Finale)</a></td>
+    <td>29.61</td>
+    <td>55</td>
+    <td>richq11</td>
+    <td>69.20</td>
+    <td>2017-10-01 15:02:03</td>
+    <td><a href="https://www.steemit.com/life/@richq11/tales-from-the-crypt-xvi-goths-the-island-and-king-daddy">Tales From The Crypt XVI: Goths, The Island And King Daddy</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>12</td>
-    <td>10.69</td>
-    <td>26</td>
-    <td>kristinaljfom</td>
-    <td>65.55</td>
-    <td>2017-09-30 16:32:39</td>
-    <td><a href="https://www.steemit.com/life/@kristinaljfom/can-blogging-be-a-business">Can Blogging Be a Business?</a></td>
+    <td>25.32</td>
+    <td>86</td>
+    <td>jeezzle</td>
+    <td>62.64</td>
+    <td>2017-10-01 06:34:03</td>
+    <td><a href="https://www.steemit.com/life/@jeezzle/having-roommates-is-an-unclean-experience">Having roommates is an unclean experience.</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>13</td>
-    <td>10.15</td>
-    <td>36</td>
-    <td>karenb54</td>
-    <td>69.17</td>
-    <td>2017-09-30 21:03:48</td>
-    <td><a href="https://www.steemit.com/life/@karenb54/memories-of-a-sweet-little-dog-i-used-to-have-memories-of-vicky">Memories of a sweet little dog I used to have, Memories of Vicky.</a></td>
+    <td>23.01</td>
+    <td>48</td>
+    <td>eveuncovered</td>
+    <td>64.78</td>
+    <td>2017-10-01 15:21:36</td>
+    <td><a href="https://www.steemit.com/life/@eveuncovered/little-life-update-from-the-road">Little life update from the road</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>14</td>
-    <td>9.46</td>
-    <td>19</td>
-    <td>kristinaljfom</td>
-    <td>65.55</td>
-    <td>2017-09-30 19:14:18</td>
-    <td><a href="https://www.steemit.com/life/@kristinaljfom/brainstorm-your-blog-to-success">Brainstorm Your Blog to Success</a></td>
+    <td>22.49</td>
+    <td>45</td>
+    <td>scooter77</td>
+    <td>60.80</td>
+    <td>2017-10-01 11:32:27</td>
+    <td><a href="https://www.steemit.com/life/@scooter77/towns-of-australia-4-byron-bay-new-south-wales">Towns of Australia - #4 - Byron Bay, New South Wales</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>15</td>
-    <td>8.90</td>
-    <td>43</td>
-    <td>abudar</td>
-    <td>65.54</td>
-    <td>2017-09-30 11:19:57</td>
-    <td><a href="https://www.steemit.com/life/@abudar/life-of-a-philanthropist-palah-2017930t181945627z">life Of A Philanthropist "palah"</a></td>
+    <td>19.83</td>
+    <td>100</td>
+    <td>patrice</td>
+    <td>62.98</td>
+    <td>2017-10-01 02:09:39</td>
+    <td><a href="https://www.steemit.com/life/@patrice/a-slow-day-on-the-attack-front">A Slow Day on the Attack Front</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>16</td>
-    <td>8.30</td>
-    <td>243</td>
-    <td>betamusic</td>
-    <td>68.49</td>
-    <td>2017-09-30 01:09:06</td>
-    <td><a href="https://www.steemit.com/life/@betamusic/emigrantes-de-venezuela-2-la-situacion-pais">Emigrantes de Venezuela #2 - La situación País</a></td>
+    <td>18.58</td>
+    <td>27</td>
+    <td>bigram13</td>
+    <td>64.23</td>
+    <td>2017-10-01 01:20:12</td>
+    <td><a href="https://www.steemit.com/life/@bigram13/love-hate-relationship-of-owning-a-truck">Love Hate relationship of owning a TRUCK.</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>17</td>
-    <td>8.03</td>
-    <td>15</td>
-    <td>kristinaljfom</td>
-    <td>65.55</td>
-    <td>2017-09-30 22:06:00</td>
-    <td><a href="https://www.steemit.com/life/@kristinaljfom/how-will-you-manage-social-media">How Will You Manage Social Media?</a></td>
+    <td>15.45</td>
+    <td>29</td>
+    <td>bluemist</td>
+    <td>60.33</td>
+    <td>2017-10-01 08:06:51</td>
+    <td><a href="https://www.steemit.com/life/@bluemist/a-woman-spreading-happiness-at-airport-while-waiting-for-her-flight">A woman spreading happiness at airport while waiting for her Flight</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>18</td>
-    <td>8.02</td>
-    <td>73</td>
-    <td>sokoloffa</td>
-    <td>68.81</td>
-    <td>2017-09-30 07:07:45</td>
-    <td><a href="https://www.steemit.com/life/@sokoloffa/learn-to-overcome-the-obstacles-that-have-arisen-on-your-path-vchitsya-sami-dolati-vinikli-na-vashomu-shlyakhu-pereshkodi">Learn to overcome the obstacles that have arisen on your path. Вчіться самі долати виниклі на вашому шляху перешкоди.</a></td>
+    <td>14.14</td>
+    <td>71</td>
+    <td>ikigai</td>
+    <td>66.40</td>
+    <td>2017-10-01 02:49:00</td>
+    <td><a href="https://www.steemit.com/life/@ikigai/do-you-want-to-be-a-famous-comedy-youtuber-2017930t194854104z">Do you want to be a famous comedy YouTuber?</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>19</td>
-    <td>7.87</td>
-    <td>26</td>
-    <td>snooway</td>
-    <td>65.48</td>
-    <td>2017-09-30 02:43:03</td>
-    <td><a href="https://www.steemit.com/life/@snooway/watching-the-stage-production-of-shaun-tan-s-the-arrival">Watching the stage production of Shaun Tan's The Arrival</a></td>
+    <td>13.18</td>
+    <td>85</td>
+    <td>dandesign86</td>
+    <td>60.27</td>
+    <td>2017-10-01 15:31:03</td>
+    <td><a href="https://www.steemit.com/life/@dandesign86/do-you-dare">Do you Dare ?</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>20</td>
-    <td>7.81</td>
-    <td>79</td>
-    <td>arbitrarykitten</td>
-    <td>62.27</td>
-    <td>2017-09-30 03:50:21</td>
-    <td><a href="https://www.steemit.com/life/@arbitrarykitten/inspiration-weekend-do-it-for-you">Inspiration Weekend ~  Do it for YOU!</a></td>
+    <td>12.17</td>
+    <td>36</td>
+    <td>abudar</td>
+    <td>65.54</td>
+    <td>2017-10-01 11:42:27</td>
+    <td><a href="https://www.steemit.com/life/@abudar/the-impact-of-the-causes-of-drought-decreases-the-economy-of-patani-society-2017101t184211209z">The impact of the causes of drought decreases the economy of farmers society</a></td>
   </tr>
   
 </table>
@@ -1412,240 +1424,240 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>90.27</td>
-    <td>42</td>
-    <td>aj33</td>
-    <td>50.04</td>
-    <td>2017-09-30 01:06:42</td>
-    <td><a href="https://www.steemit.com/life/@aj33/part-ii-new-definitions-for-living-trending-towards-shangri-la">Part II. New Definitions for Living – Trending towards Shangri-La</a></td>
+    <td>100.62</td>
+    <td>87</td>
+    <td>rihardszaimonts</td>
+    <td>52.24</td>
+    <td>2017-10-01 09:46:36</td>
+    <td><a href="https://www.steemit.com/life/@rihardszaimonts/how-to-face-your-fears-overcome-your-discomfort-part-3-3-battle-your-fear">How to face your fears = Overcome your discomfort! Part 3/3!! (Battle your fear)</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>66.10</td>
-    <td>119</td>
-    <td>abramjs</td>
-    <td>53.59</td>
-    <td>2017-09-30 09:38:15</td>
-    <td><a href="https://www.steemit.com/life/@abramjs/ravenna-la-darsena-e-lo-street-food">Ravenna, la Darsena, lo street-food e i mocassini [ITA]</a></td>
+    <td>24.66</td>
+    <td>101</td>
+    <td>miftahuddin</td>
+    <td>57.50</td>
+    <td>2017-10-01 07:59:54</td>
+    <td><a href="https://www.steemit.com/life/@miftahuddin/cruelty-in-everyday-life--kekejaman-dalam-kehidupan-sehari-hari-2017101t145939878z">Cruelty In Everyday Life _ Kekejaman Dalam Kehidupan Sehari-Hari</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>29.19</td>
-    <td>38</td>
-    <td>clio</td>
-    <td>57.35</td>
-    <td>2017-09-30 09:27:27</td>
-    <td><a href="https://www.steemit.com/life/@clio/an-adventure-in-burgundy-for-the-first-time-in-my-life-i-have-picked-and-eaten-wild-mushrooms">An 'adventure' in Burgundy; for the first time in my life, I have picked and eaten wild mushrooms.</a></td>
+    <td>21.03</td>
+    <td>77</td>
+    <td>xervantes</td>
+    <td>57.98</td>
+    <td>2017-10-01 13:46:54</td>
+    <td><a href="https://www.steemit.com/life/@xervantes/just-be-yourself">Just be Yourself...</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>23.04</td>
-    <td>34</td>
-    <td>uglysweater</td>
-    <td>58.98</td>
-    <td>2017-09-30 17:59:36</td>
-    <td><a href="https://www.steemit.com/life/@uglysweater/right-now">Right now.</a></td>
+    <td>15.03</td>
+    <td>71</td>
+    <td>captainpearson</td>
+    <td>50.37</td>
+    <td>2017-10-01 06:10:06</td>
+    <td><a href="https://www.steemit.com/life/@captainpearson/days-of-vibrations">Days of Vibrations</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>5</td>
-    <td>22.44</td>
-    <td>52</td>
-    <td>patricksanlin</td>
-    <td>55.75</td>
-    <td>2017-09-30 03:16:06</td>
-    <td><a href="https://www.steemit.com/life/@patricksanlin/the-dream-was-born">The Dream Was Born....</a></td>
+    <td>14.30</td>
+    <td>16</td>
+    <td>swolesome</td>
+    <td>56.03</td>
+    <td>2017-10-01 19:19:51</td>
+    <td><a href="https://www.steemit.com/life/@swolesome/mining-game-for-crypto-on-steemit-the-basics">Mining game for crypto on steemit; the basics</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>6</td>
-    <td>19.95</td>
-    <td>24</td>
-    <td>dontstopmenow</td>
-    <td>59.79</td>
-    <td>2017-09-30 19:23:54</td>
-    <td><a href="https://www.steemit.com/life/@dontstopmenow/life-aspirations-can-change-as-our-mind-changes-while-growing-up">Life aspirations can change as our mind changes while growing up.</a></td>
+    <td>14.09</td>
+    <td>41</td>
+    <td>khalilalfamahera</td>
+    <td>56.93</td>
+    <td>2017-10-01 06:08:48</td>
+    <td><a href="https://www.steemit.com/life/@khalilalfamahera/natural-enemy-predators-predator-in-hawa-2017101t13841516z">Natural Enemy Predators "Predator in Hawa"</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>7</td>
-    <td>18.78</td>
-    <td>22</td>
-    <td>rb24</td>
-    <td>52.17</td>
-    <td>2017-09-30 08:39:18</td>
-    <td><a href="https://www.steemit.com/life/@rb24/lets-play-some-golf">Lets play some golf!</a></td>
+    <td>14.07</td>
+    <td>16</td>
+    <td>gloglo</td>
+    <td>59.61</td>
+    <td>2017-10-01 06:22:33</td>
+    <td><a href="https://www.steemit.com/life/@gloglo/understanding-the-complexity-of-human-very-impossible">Understanding The Complexity Of  Human: Very Impossible.</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>8</td>
-    <td>17.73</td>
-    <td>86</td>
-    <td>alovelymess</td>
-    <td>57.22</td>
-    <td>2017-09-30 03:06:06</td>
-    <td><a href="https://www.steemit.com/life/@alovelymess/exploring-cda-idaho">Exploring CDA, Idaho!</a></td>
+    <td>14.00</td>
+    <td>12</td>
+    <td>emmamia</td>
+    <td>57.10</td>
+    <td>2017-10-01 19:58:21</td>
+    <td><a href="https://www.steemit.com/life/@emmamia/1-st-october-a-sunny-day-hope-it-ll-last">1'st October - a sunny day... Hope it'll last...</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>9</td>
-    <td>17.28</td>
-    <td>66</td>
-    <td>nayya24</td>
-    <td>57.35</td>
-    <td>2017-09-30 09:17:09</td>
-    <td><a href="https://www.steemit.com/life/@nayya24/nyoe-yang-na-2017930t161843319z">Nyoe Yang Na</a></td>
+    <td>13.36</td>
+    <td>17</td>
+    <td>karja</td>
+    <td>58.98</td>
+    <td>2017-10-01 06:22:30</td>
+    <td><a href="https://www.steemit.com/life/@karja/a-goatfarm-in-vestbygd">A goatfarm in Vestbygd</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>10</td>
-    <td>16.90</td>
-    <td>10</td>
-    <td>carterx7</td>
-    <td>58.23</td>
-    <td>2017-09-30 21:59:15</td>
-    <td><a href="https://www.steemit.com/life/@carterx7/steem-check-out-the-st-louis-cardinals">Steem check out the St. louis Cardinals</a></td>
+    <td>13.31</td>
+    <td>78</td>
+    <td>nidhisrecipes</td>
+    <td>52.88</td>
+    <td>2017-10-01 07:53:12</td>
+    <td><a href="https://www.steemit.com/life/@nidhisrecipes/positivity-lesson-2">Positivity Lesson #2</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>11</td>
-    <td>15.09</td>
-    <td>37</td>
-    <td>healthyrecipe</td>
-    <td>57.62</td>
-    <td>2017-09-30 20:23:03</td>
-    <td><a href="https://www.steemit.com/life/@healthyrecipe/really-cool-birds-with-funny-habits-in-our-yard">Really cool birds with funny habits in our yard.</a></td>
+    <td>13.24</td>
+    <td>77</td>
+    <td>lordmok</td>
+    <td>54.84</td>
+    <td>2017-10-01 14:43:03</td>
+    <td><a href="https://www.steemit.com/life/@lordmok/who-am-i-the-big-ever-floating-question">WHO AM I? THE BIG EVER FLOATING QUESTION</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>12</td>
-    <td>13.75</td>
-    <td>62</td>
-    <td>truconspiracy</td>
-    <td>53.31</td>
-    <td>2017-09-30 02:02:57</td>
-    <td><a href="https://www.steemit.com/life/@truconspiracy/horseback-riding-gymkhana-events-part-flag-race">Horseback Riding Gymkhana Events Part 3  Flag Race</a></td>
+    <td>12.64</td>
+    <td>34</td>
+    <td>alovelymess</td>
+    <td>57.29</td>
+    <td>2017-10-01 03:01:51</td>
+    <td><a href="https://www.steemit.com/life/@alovelymess/exploring-sandpoint-idaho-city-beach">Exploring Sandpoint, Idaho-City Beach!</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>13</td>
-    <td>13.46</td>
-    <td>25</td>
-    <td>fivefiveeleven</td>
-    <td>58.95</td>
-    <td>2017-09-30 05:49:21</td>
-    <td><a href="https://www.steemit.com/life/@fivefiveeleven/surreal-future">SURREAL FUTURE</a></td>
+    <td>12.26</td>
+    <td>41</td>
+    <td>supastix</td>
+    <td>55.51</td>
+    <td>2017-10-01 04:13:33</td>
+    <td><a href="https://www.steemit.com/life/@supastix/nogos-1-metallica-the-unforgiven-covers-holy">NoGos! #1 METALLICA - The Unforgiven Covers! Holy ??</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>14</td>
-    <td>13.27</td>
-    <td>11</td>
-    <td>carterx7</td>
-    <td>58.23</td>
-    <td>2017-09-30 19:36:15</td>
-    <td><a href="https://www.steemit.com/life/@carterx7/trip-to-the-bitcoin-atm">Trip to the bitcoin atm</a></td>
+    <td>11.85</td>
+    <td>42</td>
+    <td>ghulammujtaba</td>
+    <td>54.77</td>
+    <td>2017-10-01 17:52:27</td>
+    <td><a href="https://www.steemit.com/life/@ghulammujtaba/untold-stories-of-unsuccessful-persons-episode-18-sher-mohammad">Untold Stories of Unsuccessful Persons - Episode # 18 - Sher Mohammad</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>15</td>
-    <td>12.52</td>
-    <td>56</td>
-    <td>cryptomaker</td>
-    <td>53.93</td>
-    <td>2017-09-30 17:21:48</td>
-    <td><a href="https://www.steemit.com/life/@cryptomaker/8-habits-that-damage-your-kidneys">8 habits that damage your kidneys</a></td>
+    <td>11.49</td>
+    <td>22</td>
+    <td>karja</td>
+    <td>58.98</td>
+    <td>2017-10-01 07:30:48</td>
+    <td><a href="https://www.steemit.com/life/@karja/a-walk-in-yellow">A walk in yellow</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>16</td>
-    <td>12.27</td>
-    <td>15</td>
-    <td>carterx7</td>
-    <td>58.23</td>
-    <td>2017-09-30 18:00:36</td>
-    <td><a href="https://www.steemit.com/life/@carterx7/steemians-have-you-ever-read-about-baba-vanga">Steemians have you ever read about Baba Vanga</a></td>
+    <td>11.38</td>
+    <td>41</td>
+    <td>sashadaygame</td>
+    <td>58.71</td>
+    <td>2017-10-01 20:09:24</td>
+    <td><a href="https://www.steemit.com/life/@sashadaygame/are-you-struggling-to-be-happy-at-peace-connect-to-source">Are you struggling To be happy/at peace/Connect to Source?</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>17</td>
-    <td>12.20</td>
-    <td>11</td>
-    <td>dmcamera</td>
-    <td>51.71</td>
-    <td>2017-09-30 16:45:09</td>
-    <td><a href="https://www.steemit.com/life/@dmcamera/70-years-young-thanking-god-and-living-life-to-the-fullest">70 YEARS YOUNG – THANKING GOD AND LIVING LIFE TO THE FULLEST!</a></td>
+    <td>9.80</td>
+    <td>36</td>
+    <td>aymenz</td>
+    <td>56.37</td>
+    <td>2017-10-01 20:44:30</td>
+    <td><a href="https://www.steemit.com/life/@aymenz/login-page-of-steemit-with-html5-and-php-by-aymenz-become-web-developer">Login page of Steemit With HTML5 and PHP By Aymenz Become Web Developer</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>18</td>
-    <td>11.28</td>
-    <td>35</td>
-    <td>bitdollar</td>
-    <td>55.65</td>
-    <td>2017-09-30 23:00:48</td>
-    <td><a href="https://www.steemit.com/life/@bitdollar/bitdollar-daily-vlog-flipping-property-at-one-of-my-current-projects">Bitdollar Daily Vlog ??- Flipping Property: At one of my current projects...</a></td>
+    <td>9.73</td>
+    <td>32</td>
+    <td>nmotwani21</td>
+    <td>51.77</td>
+    <td>2017-10-01 16:36:54</td>
+    <td><a href="https://www.steemit.com/life/@nmotwani21/mother-never-retires">Mother never retires</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>19</td>
-    <td>11.24</td>
-    <td>30</td>
-    <td>anyagladys</td>
-    <td>56.54</td>
-    <td>2017-09-30 13:56:39</td>
-    <td><a href="https://www.steemit.com/life/@anyagladys/looking-foward-to-happy-days-ahead">Looking Foward To Happy Days Ahead</a></td>
+    <td>9.49</td>
+    <td>97</td>
+    <td>fajarsdq</td>
+    <td>56.90</td>
+    <td>2017-10-01 08:23:03</td>
+    <td><a href="https://www.steemit.com/life/@fajarsdq/hidup-ini-nyata-2017101t152257106z">HIDUP INI NYATA</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>20</td>
-    <td>11.24</td>
-    <td>34</td>
-    <td>felander</td>
-    <td>54.42</td>
-    <td>2017-09-30 22:24:48</td>
-    <td><a href="https://www.steemit.com/life/@felander/the-sweetness-in-life">the sweetness in life...</a></td>
+    <td>9.40</td>
+    <td>21</td>
+    <td>uglysweater</td>
+    <td>59.02</td>
+    <td>2017-10-01 19:48:18</td>
+    <td><a href="https://www.steemit.com/life/@uglysweater/one-thing-at-a-time">One thing at a time.</a></td>
   </tr>
   
 </table>
@@ -1666,240 +1678,240 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>14.44</td>
-    <td>13</td>
-    <td>rehanhashmat</td>
-    <td>46.69</td>
-    <td>2017-09-30 04:52:18</td>
-    <td><a href="https://www.steemit.com/life/@rehanhashmat/aqua-fresh-is-my-company-for-mineral-water">Aqua Fresh is my company for mineral water</a></td>
+    <td>108.43</td>
+    <td>29</td>
+    <td>shakirullah.udda</td>
+    <td>49.10</td>
+    <td>2017-10-01 17:30:36</td>
+    <td><a href="https://www.steemit.com/life/@shakirullah.udda/a">A</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>10.73</td>
-    <td>37</td>
-    <td>omra-sky</td>
-    <td>46.77</td>
-    <td>2017-09-30 18:46:30</td>
-    <td><a href="https://www.steemit.com/life/@omra-sky/daddy-long-legs">Daddy Long-Legs!</a></td>
+    <td>24.26</td>
+    <td>6</td>
+    <td>kimberleighfl</td>
+    <td>48.65</td>
+    <td>2017-10-01 20:44:51</td>
+    <td><a href="https://www.steemit.com/life/@kimberleighfl/abused-and-rising-above-bang">Abused &amp; Rising Above: Bang! ??</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>10.65</td>
-    <td>36</td>
-    <td>domcrypto</td>
-    <td>48.96</td>
-    <td>2017-09-30 16:48:27</td>
-    <td><a href="https://www.steemit.com/life/@domcrypto/rest-in-peace-hugh-hefner">Rest in peace Hugh Hefner</a></td>
+    <td>14.71</td>
+    <td>37</td>
+    <td>rehanhashmat</td>
+    <td>47.57</td>
+    <td>2017-10-01 06:14:57</td>
+    <td><a href="https://www.steemit.com/life/@rehanhashmat/sunday-the-most-awaited-day-of-week">Sunday the most awaited day of week</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>10.02</td>
-    <td>8</td>
-    <td>xerni</td>
-    <td>40.18</td>
-    <td>2017-09-30 10:35:36</td>
-    <td><a href="https://www.steemit.com/life/@xerni/sbor-yagod-na-prodazhu">Сбор ягод на продажу</a></td>
+    <td>12.14</td>
+    <td>78</td>
+    <td>kumbang</td>
+    <td>44.64</td>
+    <td>2017-10-01 05:50:15</td>
+    <td><a href="https://www.steemit.com/life/@kumbang/holidays-2017101t124933598z">Holidays</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>5</td>
-    <td>10.01</td>
-    <td>9</td>
-    <td>oleunench</td>
-    <td>40.18</td>
-    <td>2017-09-30 09:15:30</td>
-    <td><a href="https://www.steemit.com/life/@oleunench/pochemu-nakryvat-detskuyu-kolyasku-sverkhu-vredno-i-dazhe-opasno">Почему накрывать детскую коляску сверху вредно и даже опасно</a></td>
+    <td>12.10</td>
+    <td>97</td>
+    <td>hany66</td>
+    <td>43.80</td>
+    <td>2017-10-01 06:59:12</td>
+    <td><a href="https://www.steemit.com/life/@hany66/six-tips-for-good-health">six tips for good health ????</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>6</td>
-    <td>8.81</td>
-    <td>35</td>
-    <td>e-bass</td>
-    <td>45.54</td>
-    <td>2017-09-30 05:49:57</td>
-    <td><a href="https://www.steemit.com/life/@e-bass/i-don-t-want-to-get-married">I Don't Want To Get Married</a></td>
+    <td>11.82</td>
+    <td>46</td>
+    <td>zomer650</td>
+    <td>41.38</td>
+    <td>2017-10-01 07:05:09</td>
+    <td><a href="https://www.steemit.com/life/@zomer650/i-got-400-followers-in-21-day">i got +400 followers in 21 day ??????????</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>7</td>
-    <td>7.30</td>
-    <td>31</td>
-    <td>jphilipsagholor</td>
-    <td>49.08</td>
-    <td>2017-09-30 11:26:12</td>
-    <td><a href="https://www.steemit.com/life/@jphilipsagholor/i-am-happy-i-asked-please-learn-how-to-up-vote-correctly-and-profitably">I AM HAPPY I ASKED: PLEASE LEARN HOW TO UP VOTE CORRECTLY AND PROFITABLY</a></td>
+    <td>10.08</td>
+    <td>47</td>
+    <td>yogesssh</td>
+    <td>47.87</td>
+    <td>2017-10-01 12:26:54</td>
+    <td><a href="https://www.steemit.com/life/@yogesssh/comfort-zone-not-so-comforting-breaking-it-on-steemit">Comfort Zone not so Comforting! Breaking it on Steemit!</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>8</td>
-    <td>5.69</td>
-    <td>7</td>
-    <td>allthereisislove</td>
-    <td>44.32</td>
-    <td>2017-09-30 18:11:06</td>
-    <td><a href="https://www.steemit.com/life/@allthereisislove/3vr3fd-freedom">FREEDOM</a></td>
+    <td>9.99</td>
+    <td>33</td>
+    <td>cheerfulgiver</td>
+    <td>48.41</td>
+    <td>2017-10-01 15:09:21</td>
+    <td><a href="https://www.steemit.com/life/@cheerfulgiver/cheerfulgiver-october-1st-progress-report">@CheerfulGiver October 1st Progress Report</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>9</td>
-    <td>4.41</td>
-    <td>4</td>
-    <td>ergiegonzaga</td>
-    <td>46.68</td>
-    <td>2017-09-30 06:18:33</td>
-    <td><a href="https://www.steemit.com/life/@ergiegonzaga/which-is-which-a-comparison-between-the-past-and-the-present-things-beliefs-and-environment">WHICH IS WHICH ? :A COMPARISON BETWEEN THE PAST AND THE PRESENT THINGS, BELIEFS AND ENVIRONMENT.</a></td>
+    <td>9.76</td>
+    <td>41</td>
+    <td>socialanne</td>
+    <td>47.91</td>
+    <td>2017-10-01 14:10:21</td>
+    <td><a href="https://www.steemit.com/life/@socialanne/questions-that-i-asked-from-my-potential-mentor-in-a-meeting">QUESTIONS THAT I ASKED FROM MY POTENTIAL MENTOR IN A MEETING</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>10</td>
-    <td>4.25</td>
-    <td>63</td>
-    <td>cryptochindian</td>
-    <td>46.81</td>
-    <td>2017-09-30 10:14:00</td>
-    <td><a href="https://www.steemit.com/life/@cryptochindian/some-history-of-peer-to-peer-networks">Some History of Peer-to-Peer Networks</a></td>
+    <td>9.40</td>
+    <td>53</td>
+    <td>e-bass</td>
+    <td>46.67</td>
+    <td>2017-10-01 13:55:48</td>
+    <td><a href="https://www.steemit.com/life/@e-bass/look-for-the-rainbow-my-friend-2017101t145540503z">Look For The Rainbow My Friend.</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>11</td>
-    <td>3.30</td>
-    <td>8</td>
-    <td>bunni</td>
-    <td>46.15</td>
-    <td>2017-09-30 17:27:48</td>
-    <td><a href="https://www.steemit.com/life/@bunni/over-500-followers-who-knew-2017930t13274547z">Over 500 followers! Who knew?!</a></td>
+    <td>9.14</td>
+    <td>18</td>
+    <td>stiuly</td>
+    <td>42.89</td>
+    <td>2017-10-01 10:35:45</td>
+    <td><a href="https://www.steemit.com/life/@stiuly/chocolate-inquiries-2017101t173538930z">CHOCOLATE INQUIRIES</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>12</td>
-    <td>2.62</td>
-    <td>9</td>
-    <td>vicky-vick</td>
-    <td>42.83</td>
-    <td>2017-09-30 20:58:09</td>
-    <td><a href="https://www.steemit.com/life/@vicky-vick/ready-to-d-3">Ready to... :D <3</a></td>
+    <td>5.63</td>
+    <td>46</td>
+    <td>stuffy</td>
+    <td>49.08</td>
+    <td>2017-10-01 19:59:18</td>
+    <td><a href="https://www.steemit.com/life/@stuffy/imperfection-how-bad-is-it">Imperfection: how bad is it?</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>13</td>
-    <td>2.54</td>
-    <td>18</td>
-    <td>melissa-mccarthy</td>
-    <td>47.68</td>
-    <td>2017-09-30 15:13:06</td>
-    <td><a href="https://www.steemit.com/life/@melissa-mccarthy/shop-now-bell-sleeve-blouse">Shop now : BELL SLEEVE BLOUSE</a></td>
+    <td>4.67</td>
+    <td>8</td>
+    <td>nejc1107</td>
+    <td>49.84</td>
+    <td>2017-10-01 21:48:54</td>
+    <td><a href="https://www.steemit.com/life/@nejc1107/zoo-day-adventure">ZOO DAY ADVENTURE !</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>14</td>
-    <td>2.51</td>
-    <td>41</td>
-    <td>tabaya2017</td>
-    <td>49.14</td>
-    <td>2017-09-30 12:08:57</td>
-    <td><a href="https://www.steemit.com/life/@tabaya2017/michael-the-warring-angel-2017930t5850772z">Michael the Warring Angel</a></td>
+    <td>4.59</td>
+    <td>12</td>
+    <td>andywong31</td>
+    <td>45.40</td>
+    <td>2017-10-01 09:22:33</td>
+    <td><a href="https://www.steemit.com/life/@andywong31/just-wake-up-already-jeez">Just wake up already! Jeez!</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>15</td>
-    <td>2.50</td>
-    <td>113</td>
-    <td>michaelmorcos</td>
-    <td>49.07</td>
-    <td>2017-09-30 08:01:15</td>
-    <td><a href="https://www.steemit.com/life/@michaelmorcos/nsyhh-2017930t101139z">نصيحة</a></td>
+    <td>4.56</td>
+    <td>16</td>
+    <td>baby07</td>
+    <td>45.69</td>
+    <td>2017-10-01 08:29:00</td>
+    <td><a href="https://www.steemit.com/life/@baby07/happiness-is-a-choice-life-is-full-of-surprises-just-accept-great-kids-day-out-a-reflection">Happiness is a choice- life is full of surprises... just accept! "Great kids day out...a reflection"</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>16</td>
-    <td>2.10</td>
-    <td>20</td>
-    <td>adi.pisces</td>
-    <td>46.05</td>
-    <td>2017-09-30 09:00:45</td>
-    <td><a href="https://www.steemit.com/life/@adi.pisces/mesin-hitung-zaman-dulu-dan-sekarang-2017930t16027444z">Mesin hitung zaman dulu dan sekarang</a></td>
+    <td>4.40</td>
+    <td>23</td>
+    <td>wihnongkaltoa</td>
+    <td>44.20</td>
+    <td>2017-10-01 13:01:51</td>
+    <td><a href="https://www.steemit.com/life/@wihnongkaltoa/art-coffee-and-scenery-2017101t20051977z">Art coffee and scenery</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>17</td>
-    <td>1.71</td>
-    <td>42</td>
-    <td>jonesteemit</td>
-    <td>49.60</td>
-    <td>2017-09-30 18:50:18</td>
-    <td><a href="https://www.steemit.com/life/@jonesteemit/the-story-of-life-missing-the-love-one-part-6-or-mustread-or">THE STORY OF LIFE MISSING THE LOVE ONE PART 6 |MUSTREAD|</a></td>
+    <td>3.68</td>
+    <td>5</td>
+    <td>rogerman</td>
+    <td>45.86</td>
+    <td>2017-10-01 16:19:18</td>
+    <td><a href="https://www.steemit.com/life/@rogerman/dealing-with-failure-as-a-freelancer">Dealing with failure as a freelancer</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>18</td>
-    <td>1.64</td>
-    <td>6</td>
-    <td>yourfinesight</td>
-    <td>48.96</td>
-    <td>2017-09-30 07:57:03</td>
-    <td><a href="https://www.steemit.com/life/@yourfinesight/things-from-nature-that-will-inspire-you-to-become-successful">Things From Nature That Will Inspire You To Become Successful</a></td>
+    <td>3.03</td>
+    <td>59</td>
+    <td>keepcalmandread</td>
+    <td>44.29</td>
+    <td>2017-10-01 11:54:12</td>
+    <td><a href="https://www.steemit.com/life/@keepcalmandread/say-to-hi-my-california-worms-2017101t14548667z">Say to hi my california worms</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>19</td>
-    <td>1.59</td>
-    <td>38</td>
-    <td>jonesteemit</td>
-    <td>49.60</td>
-    <td>2017-09-30 14:11:27</td>
-    <td><a href="https://www.steemit.com/life/@jonesteemit/the-story-of-my-life-the-actually-truth-part-5-or-mustread-or">THE STORY OF MY LIFE THE ACTUALLY TRUTH PART 5 |MUSTREAD|</a></td>
+    <td>2.90</td>
+    <td>3</td>
+    <td>nikolatka</td>
+    <td>49.14</td>
+    <td>2017-10-01 17:28:51</td>
+    <td><a href="https://www.steemit.com/life/@nikolatka/weekly-music-favourites-with-nikolatka-2">WEEKLY MUSIC FAVOURITES with Nikolatka #2</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>20</td>
-    <td>1.06</td>
-    <td>6</td>
-    <td>steemit-fun</td>
-    <td>48.99</td>
-    <td>2017-09-30 16:10:48</td>
-    <td><a href="https://www.steemit.com/life/@steemit-fun/why-many-people-fail-to-become-successful-in-life-fears-of-becoming-successful">Why many people fail to become successful in life?. Fears of becoming successful.</a></td>
+    <td>2.62</td>
+    <td>12</td>
+    <td>ntony</td>
+    <td>42.42</td>
+    <td>2017-10-01 07:41:00</td>
+    <td><a href="https://www.steemit.com/life/@ntony/yays-my-first-grc-is-ready-after-4-days">Yays! My first GRC is ready, after 4 days.</a></td>
   </tr>
   
 </table>
@@ -1920,168 +1932,168 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>2.06</td>
-    <td>7</td>
-    <td>addiemae</td>
-    <td>38.08</td>
-    <td>2017-09-30 20:58:36</td>
-    <td><a href="https://www.steemit.com/life/@addiemae/drinkable-water-for-third-world-countries">Drinkable Water For Third World Countries</a></td>
+    <td>9.23</td>
+    <td>14</td>
+    <td>abujaga</td>
+    <td>39.63</td>
+    <td>2017-10-01 10:37:42</td>
+    <td><a href="https://www.steemit.com/life/@abujaga/the-happiness-2017101t173736170z">The Happiness.</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>0.98</td>
-    <td>13</td>
-    <td>indonesiasteem</td>
-    <td>33.64</td>
-    <td>2017-09-30 10:54:15</td>
-    <td><a href="https://www.steemit.com/life/@indonesiasteem/cara-mengolah-patarana-pliek-u-2017930t17542532z">Cara mengolah patarana ( pliek U )</a></td>
+    <td>6.17</td>
+    <td>11</td>
+    <td>irisz</td>
+    <td>37.90</td>
+    <td>2017-10-01 06:49:12</td>
+    <td><a href="https://www.steemit.com/life/@irisz/iris">Iris的美丽早餐</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>0.83</td>
-    <td>11</td>
-    <td>jeffery-awesome</td>
-    <td>33.98</td>
-    <td>2017-09-30 10:02:06</td>
-    <td><a href="https://www.steemit.com/life/@jeffery-awesome/stop-terrorism-killing-is-not-a-solution">STOP TERRORISM KILLING IS NOT A SOLUTION</a></td>
+    <td>0.81</td>
+    <td>8</td>
+    <td>sams</td>
+    <td>38.81</td>
+    <td>2017-10-01 20:01:15</td>
+    <td><a href="https://www.steemit.com/life/@sams/alibaba-jack-ma-s-hiring-tip">Alibaba Jack Ma’s hiring tip</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>0.54</td>
-    <td>82</td>
-    <td>salimch</td>
-    <td>37.96</td>
-    <td>2017-09-30 00:05:21</td>
-    <td><a href="https://www.steemit.com/life/@salimch/47-a-book-for-learning-hacker-and-information-security-is-ready-to-be-downloaded-with-one-click">47 A book for learning hacker and information security is ready to be downloaded with one click</a></td>
+    <td>0.58</td>
+    <td>71</td>
+    <td>tanvieer</td>
+    <td>34.68</td>
+    <td>2017-10-01 04:35:27</td>
+    <td><a href="https://www.steemit.com/life/@tanvieer/xiaomi-mi-mix-2-review">Xiaomi Mi Mix 2 Review</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>5</td>
-    <td>0.53</td>
-    <td>37</td>
-    <td>sarahs</td>
-    <td>36.29</td>
-    <td>2017-09-30 01:27:57</td>
-    <td><a href="https://www.steemit.com/life/@sarahs/i-want-to-talk-about-life">I want to talk about LIFE...</a></td>
+    <td>0.55</td>
+    <td>38</td>
+    <td>bijitadevsharma</td>
+    <td>36.90</td>
+    <td>2017-10-01 18:18:27</td>
+    <td><a href="https://www.steemit.com/life/@bijitadevsharma/trees-are-making-trees-nature-quote">Trees Are Making Trees Nature Quote</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>6</td>
-    <td>0.44</td>
-    <td>15</td>
-    <td>sammie5</td>
-    <td>33.35</td>
-    <td>2017-09-30 07:01:15</td>
-    <td><a href="https://www.steemit.com/life/@sammie5/freedom-pt2-how-to-be-free-from-self-prison-2017930t81986z">FREEDOM (PT2) HOW TO BE FREE FROM SELF PRISON</a></td>
+    <td>0.53</td>
+    <td>4</td>
+    <td>hodafadel</td>
+    <td>38.91</td>
+    <td>2017-10-01 10:54:48</td>
+    <td><a href="https://www.steemit.com/life/@hodafadel/the-new-human-being-my-future-memories-2027">THE NEW HUMAN BEING (My Future memories 2027)</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>7</td>
-    <td>0.43</td>
-    <td>35</td>
-    <td>alvarox</td>
-    <td>38.68</td>
-    <td>2017-09-30 12:02:48</td>
-    <td><a href="https://www.steemit.com/life/@alvarox/5-by-5-rule-2017930t1424411z">5 BY 5 RULE</a></td>
+    <td>0.50</td>
+    <td>44</td>
+    <td>cleaner-myanmar</td>
+    <td>39.09</td>
+    <td>2017-10-01 04:33:54</td>
+    <td><a href="https://www.steemit.com/life/@cleaner-myanmar/everytime-2017101t11350148z">EVERYTIME</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>8</td>
-    <td>0.41</td>
-    <td>7</td>
-    <td>webcoder</td>
-    <td>31.89</td>
-    <td>2017-09-30 21:19:36</td>
-    <td><a href="https://www.steemit.com/life/@webcoder/ueniversitedeki-ilginc-bir-sinav-anim">Üniversitedeki ilginç bir sınav anım</a></td>
+    <td>0.45</td>
+    <td>22</td>
+    <td>userbibek</td>
+    <td>33.34</td>
+    <td>2017-10-01 04:10:45</td>
+    <td><a href="https://www.steemit.com/life/@userbibek/the-leadershir-a-abstract-portfolio-2017101t95452763z">The Leadership - a abstract portfolio.</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>9</td>
-    <td>0.40</td>
-    <td>22</td>
-    <td>yunmin</td>
-    <td>34.39</td>
-    <td>2017-09-30 18:38:15</td>
-    <td><a href="https://www.steemit.com/life/@yunmin/do-not-forget-be-happy-happy-sunday-2017101t1382883z">Do Not Forget Be Happy, Happy Sunday</a></td>
+    <td>0.42</td>
+    <td>14</td>
+    <td>alvarox</td>
+    <td>38.90</td>
+    <td>2017-10-01 13:07:03</td>
+    <td><a href="https://www.steemit.com/life/@alvarox/don-t-underestimate-me-2017101t15620285z">Don't Underestimate Me</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>10</td>
-    <td>0.40</td>
-    <td>16</td>
-    <td>muhammadrizki96</td>
-    <td>34.68</td>
-    <td>2017-09-30 09:35:45</td>
-    <td><a href="https://www.steemit.com/life/@muhammadrizki96/village-development-for-progress-2017930t163524282z">Village development for progress</a></td>
+    <td>0.42</td>
+    <td>15</td>
+    <td>pipitaprilyani</td>
+    <td>37.85</td>
+    <td>2017-10-01 03:09:21</td>
+    <td><a href="https://www.steemit.com/life/@pipitaprilyani/seekers-of-natural-beauty-2017101t10910216z">seekers of natural beauty</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>11</td>
-    <td>0.39</td>
-    <td>18</td>
-    <td>ayuzuyuf</td>
-    <td>36.16</td>
-    <td>2017-09-30 19:49:24</td>
-    <td><a href="https://www.steemit.com/life/@ayuzuyuf/bungaku-2017101t24916574z">Bungaku</a></td>
+    <td>0.42</td>
+    <td>14</td>
+    <td>randiindra</td>
+    <td>32.89</td>
+    <td>2017-10-01 02:53:12</td>
+    <td><a href="https://www.steemit.com/life/@randiindra/puerto-rico-has-no-water-2017930t21538757z">Puerto Rico Has No Water</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>12</td>
-    <td>0.39</td>
-    <td>15</td>
-    <td>danialblv</td>
-    <td>37.39</td>
-    <td>2017-09-30 23:32:21</td>
-    <td><a href="https://www.steemit.com/life/@danialblv/good-night-in-many-languages-2017101t0328818z">Good night in many languages</a></td>
+    <td>0.42</td>
+    <td>20</td>
+    <td>syiputri</td>
+    <td>37.68</td>
+    <td>2017-10-01 09:52:45</td>
+    <td><a href="https://www.steemit.com/life/@syiputri/to-know-the-cat-according-to-the-word-of-rasulullah-sallawlahualahiwasallam-2017101t165232612z">to know the cat according to the word of rasulullah sallawlahualahiwasallam.</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>13</td>
-    <td>0.38</td>
-    <td>14</td>
-    <td>memsyi</td>
-    <td>39.77</td>
-    <td>2017-09-30 22:56:03</td>
-    <td><a href="https://www.steemit.com/life/@memsyi/the-happiness-2017101t55557798z">The Happiness.</a></td>
+    <td>0.42</td>
+    <td>8</td>
+    <td>katrinalewis</td>
+    <td>38.08</td>
+    <td>2017-10-01 07:55:54</td>
+    <td><a href="https://www.steemit.com/life/@katrinalewis/breeze-cafe-sea-glass-in-okinawa">Breeze Cafe Sea Glass in Okinawa</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>14</td>
-    <td>0.38</td>
-    <td>16</td>
-    <td>sujana</td>
-    <td>39.53</td>
-    <td>2017-09-30 17:46:36</td>
-    <td><a href="https://www.steemit.com/life/@sujana/to-introduce-a-waterfall-in-aceh-2017101t04631751z">to introduce a waterfall in Aceh</a></td>
+    <td>0.42</td>
+    <td>13</td>
+    <td>mz10</td>
+    <td>36.10</td>
+    <td>2017-10-01 10:12:03</td>
+    <td><a href="https://www.steemit.com/life/@mz10/life-goes-on-despite-the-obstacles-and-ravines-in-front-of-it-2017101t17121222z">Life goes on despite the obstacles and ravines in front of it</a></td>
   </tr>
   
   
@@ -2089,71 +2101,71 @@
   
     <td>15</td>
     <td>0.37</td>
-    <td>15</td>
-    <td>sayutimajid</td>
-    <td>32.96</td>
-    <td>2017-09-30 14:13:03</td>
-    <td><a href="https://www.steemit.com/life/@sayutimajid/cigarette-smell-of-marijuana-green-tobacco-made-in-aceh-2017930t211258482z">cigarette smell of marijuana (green tobacco made in aceh)</a></td>
+    <td>2</td>
+    <td>ordinarydaze</td>
+    <td>38.40</td>
+    <td>2017-10-01 03:55:15</td>
+    <td><a href="https://www.steemit.com/life/@ordinarydaze/weddings-and-wallets-the-story-of-how-i-met-my-new-ledger-nano-s">Weddings and Wallets; The story of how I met my new Ledger Nano S.</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>16</td>
-    <td>0.37</td>
-    <td>17</td>
-    <td>bangmol</td>
-    <td>37.04</td>
-    <td>2017-09-30 14:59:12</td>
-    <td><a href="https://www.steemit.com/life/@bangmol/the-story-of-the-seller-siomay-2017930t215859458z">The heartbreaking story of the seller "SIOMAY"</a></td>
+    <td>0.31</td>
+    <td>18</td>
+    <td>salimch</td>
+    <td>38.46</td>
+    <td>2017-10-01 14:00:48</td>
+    <td><a href="https://www.steemit.com/life/@salimch/get-gif-animations-and-share-them-via-steemit-facebook-twitter-or-timpler">Get GIF animations and share them via steemit,Facebook,Twitter or Timpler</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>17</td>
-    <td>0.36</td>
-    <td>13</td>
-    <td>stimfayer</td>
-    <td>31.54</td>
-    <td>2017-09-30 14:12:06</td>
-    <td><a href="https://www.steemit.com/life/@stimfayer/paper-flower-2017930t211158298z">PAPER FLOWER</a></td>
+    <td>0.22</td>
+    <td>8</td>
+    <td>ktbozdag</td>
+    <td>34.93</td>
+    <td>2017-10-01 10:31:45</td>
+    <td><a href="https://www.steemit.com/life/@ktbozdag/ilk-kardan-adamim-winter-is-coming">İlk Kardan Adamım (Winter Is Coming)</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>18</td>
-    <td>0.24</td>
-    <td>8</td>
-    <td>sams</td>
-    <td>37.92</td>
-    <td>2017-09-30 00:28:27</td>
-    <td><a href="https://www.steemit.com/life/@sams/publishing-steemit-blog-posts-automatically-to-facebook-and-twitter">Publishing Steemit Blog Posts Automatically to Facebook and Twitter</a></td>
+    <td>0.18</td>
+    <td>52</td>
+    <td>abdel-ali</td>
+    <td>35.94</td>
+    <td>2017-10-01 01:53:24</td>
+    <td><a href="https://www.steemit.com/life/@abdel-ali/money-is-essential-in-life-no-one-does-not-likes-money-love-money-is-a-natural-thing-in-the-human-instinct">Money is essential in life. No one does not likes money. Love money is a natural thing in the human instinct</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>19</td>
-    <td>0.24</td>
-    <td>8</td>
-    <td>sams</td>
-    <td>37.92</td>
-    <td>2017-09-30 08:27:27</td>
-    <td><a href="https://www.steemit.com/life/@sams/queensland-player-marcus-labuschagne-attempts-a-fake-fielding">Queensland player Marcus Labuschagne attempts a ‘fake fielding’</a></td>
+    <td>0.17</td>
+    <td>14</td>
+    <td>jonbabu</td>
+    <td>30.03</td>
+    <td>2017-10-01 07:52:00</td>
+    <td><a href="https://www.steemit.com/life/@jonbabu/look-into-my-eyes-they-will-tell-you-how-much-i-love-you">Look into my eyes, they will tell you how much I love you.</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>20</td>
-    <td>0.21</td>
-    <td>49</td>
-    <td>oscarstanley</td>
-    <td>37.22</td>
-    <td>2017-09-30 06:01:24</td>
-    <td><a href="https://www.steemit.com/life/@oscarstanley/10-celebrities-who-made-it-back-to-the-top">10 Celebrities Who Made It Back to the Top</a></td>
+    <td>0.16</td>
+    <td>9</td>
+    <td>ahmedprince</td>
+    <td>39.43</td>
+    <td>2017-10-01 18:29:48</td>
+    <td><a href="https://www.steemit.com/life/@ahmedprince/on-this-national-public-lands-day-how-about-we-not-overlook-when-bad-ass-lands-national-park-was-rebuked-for-tweeting">On this National Public Lands Day how about we not overlook when Bad(ass)lands National Park was rebuked for tweeting environmental change actualities</a></td>
   </tr>
   
 </table>
@@ -2174,72 +2186,180 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>0.38</td>
-    <td>13</td>
-    <td>jroh</td>
-    <td>27.38</td>
-    <td>2017-09-30 07:35:21</td>
-    <td><a href="https://www.steemit.com/life/@jroh/keep-trying-2017930t143514808z">Keep trying.</a></td>
+    <td>0.62</td>
+    <td>5</td>
+    <td>ilyas900</td>
+    <td>28.86</td>
+    <td>2017-10-01 09:52:24</td>
+    <td><a href="https://www.steemit.com/life/@ilyas900/dominican-republic-is-a-paradise-on-earth">Dominican Republic is a paradise on earth.</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>0.07</td>
+    <td>0.25</td>
     <td>4</td>
-    <td>andrejprochazka</td>
-    <td>26.11</td>
-    <td>2017-09-30 08:07:27</td>
-    <td><a href="https://www.steemit.com/life/@andrejprochazka/how-i-see-life-1-introduction">How do I see life? #1 - Introduction</a></td>
+    <td>heathervence</td>
+    <td>28.82</td>
+    <td>2017-10-01 21:02:00</td>
+    <td><a href="https://www.steemit.com/life/@heathervence/blessed-while-volunteering">Blessed While Volunteering</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>0.07</td>
-    <td>31</td>
-    <td>hrlm</td>
-    <td>25.47</td>
-    <td>2017-09-30 12:08:24</td>
-    <td><a href="https://www.steemit.com/life/@hrlm/my-fun-memories-when-i-was-in-kindergarten">My fun memories when I was in kindergarten</a></td>
+    <td>0.13</td>
+    <td>6</td>
+    <td>omerabdalla</td>
+    <td>29.76</td>
+    <td>2017-10-01 19:48:57</td>
+    <td><a href="https://www.steemit.com/life/@omerabdalla/world-governments-have-asked-access-for-more-than-230-000-iphones">World governments have asked Access for more than 230,000 iPhones</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>0.06</td>
-    <td>31</td>
-    <td>acgzz</td>
-    <td>27.70</td>
-    <td>2017-09-30 03:13:15</td>
-    <td><a href="https://www.steemit.com/life/@acgzz/so-proud-to-be-mexican-viva-mexico">So proud to be Mexican. Viva México!</a></td>
+    <td>0.13</td>
+    <td>5</td>
+    <td>mosimi</td>
+    <td>25.37</td>
+    <td>2017-10-01 10:48:18</td>
+    <td><a href="https://www.steemit.com/life/@mosimi/life-is-short-live-it">LIFE IS SHORT, LIVE IT</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>5</td>
-    <td>0.01</td>
-    <td>2</td>
-    <td>tyebrooks</td>
-    <td>29.71</td>
-    <td>2017-09-30 15:56:09</td>
-    <td><a href="https://www.steemit.com/life/@tyebrooks/chapter-29-fear-doubt-and-proper-preparation">Chapter 29: Fear, Doubt, and Proper Preparation</a></td>
+    <td>0.06</td>
+    <td>5</td>
+    <td>koreadandy</td>
+    <td>25.90</td>
+    <td>2017-10-01 14:21:00</td>
+    <td><a href="https://www.steemit.com/life/@koreadandy/2sa8b2">학교 기숙사인데 할 게 없어서 심심하네요 ㅠ</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>6</td>
-    <td>0.01</td>
+    <td>0.05</td>
     <td>5</td>
-    <td>tallblue</td>
-    <td>26.01</td>
-    <td>2017-09-30 21:11:45</td>
-    <td><a href="https://www.steemit.com/life/@tallblue/twenty-years-ago-this-woman-had-no-confidence-in-the-way-she-looked-tomorrow-the-journey-continues">Twenty years ago this woman had no confidence in the way she looked ... Tomorrow the journey continues ❤</a></td>
+    <td>lettertoelise</td>
+    <td>28.04</td>
+    <td>2017-10-01 19:47:09</td>
+    <td><a href="https://www.steemit.com/life/@lettertoelise/un-salto-de-libertad-a-jump-of-freedom">Un salto de libertad/A jump of freedom..</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>7</td>
+    <td>0.05</td>
+    <td>4</td>
+    <td>phemxonic</td>
+    <td>25.20</td>
+    <td>2017-10-01 21:06:18</td>
+    <td><a href="https://www.steemit.com/life/@phemxonic/hail-mother-nigeria">Hail mother Nigeria, it is Her independence</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>8</td>
+    <td>0.04</td>
+    <td>6</td>
+    <td>virtualmonde</td>
+    <td>27.76</td>
+    <td>2017-10-01 15:43:12</td>
+    <td><a href="https://www.steemit.com/life/@virtualmonde/happiness-is-very-close-to-you">Happiness is very close to you</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>9</td>
+    <td>0.04</td>
+    <td>6</td>
+    <td>tahaismail</td>
+    <td>27.28</td>
+    <td>2017-10-01 16:54:00</td>
+    <td><a href="https://www.steemit.com/life/@tahaismail/forget-the-mistake-remember-the-lesson">Forget the mistake remember the lesson</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>10</td>
+    <td>0.03</td>
+    <td>6</td>
+    <td>jist</td>
+    <td>27.64</td>
+    <td>2017-10-01 05:06:45</td>
+    <td><a href="https://www.steemit.com/life/@jist/good-morning-steemit-here-s-to-a-great-sunday">Good morning steemit. Here's to a great sunday.</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>11</td>
+    <td>0.02</td>
+    <td>6</td>
+    <td>breaktru</td>
+    <td>25.07</td>
+    <td>2017-10-01 09:29:27</td>
+    <td><a href="https://www.steemit.com/life/@breaktru/over-drunk">Over drunk</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>12</td>
+    <td>0.02</td>
+    <td>6</td>
+    <td>tahaismail</td>
+    <td>27.28</td>
+    <td>2017-10-01 08:02:42</td>
+    <td><a href="https://www.steemit.com/life/@tahaismail/no-matter-what-whether-or-people-you-have-always-bring-your-own-sunshine">No matter what whether or people you have always bring your own sunshine</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>13</td>
+    <td>0.01</td>
+    <td>4</td>
+    <td>myvlog</td>
+    <td>28.00</td>
+    <td>2017-10-01 16:52:57</td>
+    <td><a href="https://www.steemit.com/life/@myvlog/most-difficult-things-to-do-in-life">Most difficult things to do in life</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>14</td>
+    <td>0.01</td>
+    <td>4</td>
+    <td>myvlog</td>
+    <td>28.00</td>
+    <td>2017-10-01 16:23:42</td>
+    <td><a href="https://www.steemit.com/life/@myvlog/the-monotony-and-solitude-of-a-quiet-life-stimulates-the-creative-mind-albert-einstein">The monotony and solitude of a quiet life stimulates the creative mind." Albert Einstein</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>15</td>
+    <td>0.01</td>
+    <td>6</td>
+    <td>hrlm</td>
+    <td>27.37</td>
+    <td>2017-10-01 10:32:12</td>
+    <td><a href="https://www.steemit.com/life/@hrlm/my-first-experience-getting-flagged">My first experience getting flagged</a></td>
   </tr>
   
 </table>
