@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><id>https://www.yuxifan.com/atom/atom_steemit_rep_cn.xml</id><title>羽西Steemit每日文章分级导读</title><updated>2017-10-11T00:05:02.467382+00:00</updated><author><name>羽西</name><email>info@yuxifan.com</email></author><link href="https://www.yuxifan.com/atom/atom_steemit_rep_cn.xml" rel="self"/><generator>羽西</generator><entry><id>https://www.yuxifan.com/atom/atom_steemit_rep_cn/cn/2017-10-10</id><title>Steemit中文区每日文章分组推荐: 2017-10-10</title><updated>2017-10-11T00:05:03.324208+00:00</updated><content type="html"><![CDATA[
-<h2>Steemit中文区每日文章分组推荐: 2017-10-10</h2>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><id>https://www.yuxifan.com/atom/atom_steemit_rep_cn.xml</id><title>羽西Steemit每日文章分级导读</title><updated>2017-10-12T00:02:02.729877+00:00</updated><author><name>羽西</name><email>info@yuxifan.com</email></author><link href="https://www.yuxifan.com/atom/atom_steemit_rep_cn.xml" rel="self"/><generator>羽西</generator><entry><id>https://www.yuxifan.com/atom/atom_steemit_rep_cn/cn/2017-10-11</id><title>Steemit中文区每日文章分组推荐: 2017-10-11</title><updated>2017-10-12T00:02:06.646627+00:00</updated><content type="html"><![CDATA[
+<h2>Steemit中文区每日文章分组推荐: 2017-10-11</h2>
 
 <img src="https://www.yuxifan.com/images/steem-statistics.jpg"/><br/>
 
@@ -21,36 +21,48 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">1</td>
-    <td style="border: 1px solid black;">162.88</td>
-    <td style="border: 1px solid black;">242</td>
+    <td style="border: 1px solid black;">201.81</td>
+    <td style="border: 1px solid black;">284</td>
     <td style="border: 1px solid black;"><a href="https://www.steemit.com/@oflyhigh">oflyhigh</a></td>
-    <td style="border: 1px solid black;">73.19</td>
-    <td style="border: 1px solid black;">2017-10-10 13:13:12</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@oflyhigh/7vof2t">走的太快，误入歧途</a></td>
+    <td style="border: 1px solid black;">73.21</td>
+    <td style="border: 1px solid black;">2017-10-11 02:22:15</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@oflyhigh/steemdata-sbds">试用一下SteemData SBDS</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">2</td>
-    <td style="border: 1px solid black;">93.62</td>
-    <td style="border: 1px solid black;">146</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@deanliu">deanliu</a></td>
-    <td style="border: 1px solid black;">71.99</td>
-    <td style="border: 1px solid black;">2017-10-10 16:45:15</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@deanliu/2017-10-10">你，2017年10月10日。</a></td>
+    <td style="border: 1px solid black;">172.42</td>
+    <td style="border: 1px solid black;">183</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@rivalhw">rivalhw</a></td>
+    <td style="border: 1px solid black;">71.17</td>
+    <td style="border: 1px solid black;">2017-10-11 03:23:33</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@rivalhw/4vueu2-steemit">Steemit中文社区文学群“月旦评”九月最终获奖名单</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">3</td>
-    <td style="border: 1px solid black;">15.41</td>
-    <td style="border: 1px solid black;">45</td>
+    <td style="border: 1px solid black;">138.42</td>
+    <td style="border: 1px solid black;">142</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@rivalhw">rivalhw</a></td>
+    <td style="border: 1px solid black;">71.17</td>
+    <td style="border: 1px solid black;">2017-10-11 14:26:39</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@rivalhw/sbd">集思广益众人拾材火焰高之写在“月旦评”第一期结束后的总结(本篇所得SBD收入全部用于后期“月旦评”活动奖励优秀作者)</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td style="border: 1px solid black;">4</td>
+    <td style="border: 1px solid black;">19.33</td>
+    <td style="border: 1px solid black;">52</td>
     <td style="border: 1px solid black;"><a href="https://www.steemit.com/@lemooljiang">lemooljiang</a></td>
-    <td style="border: 1px solid black;">70.30</td>
-    <td style="border: 1px solid black;">2017-10-10 09:12:18</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@lemooljiang/205">这绝不是虚幻的玫瑰--时代的歌之205</a></td>
+    <td style="border: 1px solid black;">70.31</td>
+    <td style="border: 1px solid black;">2017-10-11 09:26:18</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@lemooljiang/206">今天的太阳不算热--时代的歌之206</a></td>
   </tr>
   
 </table>
@@ -71,360 +83,360 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">1</td>
-    <td style="border: 1px solid black;">103.37</td>
-    <td style="border: 1px solid black;">126</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@linuslee0216">linuslee0216</a></td>
-    <td style="border: 1px solid black;">67.12</td>
-    <td style="border: 1px solid black;">2017-10-10 15:55:12</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@linuslee0216/41yhs3">色字头上一把刀，为什么人总是不懂？</a></td>
+    <td style="border: 1px solid black;">330.94</td>
+    <td style="border: 1px solid black;">419</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@rea">rea</a></td>
+    <td style="border: 1px solid black;">69.05</td>
+    <td style="border: 1px solid black;">2017-10-11 12:52:45</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@rea/spreading-the-word-of-steemit-at-oxford-university-steemit">Spreading the Word of Steemit at Oxford University / 牛津大学的Steemit宣传活动</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">2</td>
-    <td style="border: 1px solid black;">102.82</td>
-    <td style="border: 1px solid black;">174</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@htliao">htliao</a></td>
-    <td style="border: 1px solid black;">68.16</td>
-    <td style="border: 1px solid black;">2017-10-10 04:27:42</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@htliao/5bfmov">認真讀書？不，我只對感興趣的事認真。 |谷哥點名#10</a></td>
+    <td style="border: 1px solid black;">116.99</td>
+    <td style="border: 1px solid black;">134</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@someone">someone</a></td>
+    <td style="border: 1px solid black;">68.06</td>
+    <td style="border: 1px solid black;">2017-10-11 08:04:30</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@someone/where-was-that-blockbuster-movie-jaws-filming-placeoriginal-photo--by-vandadream">Where was that blockbuster movie “Jaws” filming place?(Original Photo) 当年轰动一时的电影大白鲨拍摄地(附原图） by @vandadream</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">3</td>
-    <td style="border: 1px solid black;">90.28</td>
-    <td style="border: 1px solid black;">112</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@aaronli">aaronli</a></td>
-    <td style="border: 1px solid black;">64.86</td>
-    <td style="border: 1px solid black;">2017-10-10 02:10:00</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@aaronli/my-work-8-dance-video-bosco-charity-association-annual-charity-ball-2017">My Work (8)(dance video) – Another dance performance in Bosco Charity Association Annual Charity Ball 2017 舞蹈演出！鮑思高慈善協會週年晚宴</a></td>
+    <td style="border: 1px solid black;">114.18</td>
+    <td style="border: 1px solid black;">176</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@tumutanzi">tumutanzi</a></td>
+    <td style="border: 1px solid black;">68.60</td>
+    <td style="border: 1px solid black;">2017-10-11 06:34:45</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@tumutanzi/why-choose-100-power-up-to-optimize-payout-of-steemit-post-steemit-100-power-up">我为什么选择Steemit文章收入100% Power Up来实现收入最大化？</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">4</td>
-    <td style="border: 1px solid black;">85.03</td>
-    <td style="border: 1px solid black;">94</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@blackbunny">blackbunny</a></td>
-    <td style="border: 1px solid black;">67.31</td>
-    <td style="border: 1px solid black;">2017-10-10 05:10:24</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@blackbunny/5pqjun">小酒窝十三：求婚</a></td>
+    <td style="border: 1px solid black;">108.55</td>
+    <td style="border: 1px solid black;">78</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@jubi">jubi</a></td>
+    <td style="border: 1px solid black;">68.49</td>
+    <td style="border: 1px solid black;">2017-10-11 05:08:27</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@jubi/and-11">第十期“谷哥点名”活动结束 &amp; 第十一期开始 #11 角色</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">5</td>
-    <td style="border: 1px solid black;">83.73</td>
-    <td style="border: 1px solid black;">111</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@joythewanderer">joythewanderer</a></td>
-    <td style="border: 1px solid black;">67.76</td>
-    <td style="border: 1px solid black;">2017-10-10 21:11:06</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@joythewanderer/travel-tip-how-i-pack-everything-in-my-16l-backpack">Travel Tip - How I pack everything in my 16L backpack     短途旅行打包攻略</a></td>
+    <td style="border: 1px solid black;">83.52</td>
+    <td style="border: 1px solid black;">72</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@bxt">bxt</a></td>
+    <td style="border: 1px solid black;">66.41</td>
+    <td style="border: 1px solid black;">2017-10-11 02:47:33</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@bxt/spicy-and-delicious-grandma-mao-chongqing-small-noodles">Spicy and delicious Grandma Mao Chongqing small noodles!  麻辣鲜香之猫婆重庆小面！</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">6</td>
-    <td style="border: 1px solid black;">71.03</td>
-    <td style="border: 1px solid black;">80</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@stacee">stacee</a></td>
-    <td style="border: 1px solid black;">67.49</td>
-    <td style="border: 1px solid black;">2017-10-10 02:25:36</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@stacee/weizhou-island-travel-blog-part-2-b-and-b-inns-on-the-island">涠洲岛游记二： 开客栈是一种怎样的体验？ Weizhou Island Travel Blog Part 2: B&amp;B Inns on the Island</a></td>
+    <td style="border: 1px solid black;">83.14</td>
+    <td style="border: 1px solid black;">102</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@blackbunny">blackbunny</a></td>
+    <td style="border: 1px solid black;">67.35</td>
+    <td style="border: 1px solid black;">2017-10-11 12:26:33</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@blackbunny/6c9t27">小酒窝十四：飞蛾</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">7</td>
-    <td style="border: 1px solid black;">69.13</td>
-    <td style="border: 1px solid black;">75</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@mrspointm">mrspointm</a></td>
-    <td style="border: 1px solid black;">62.52</td>
-    <td style="border: 1px solid black;">2017-10-10 01:38:00</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@mrspointm/anime-character-drawing-challenge-2-the-little-mermaid-2-steemit">Anime Character Drawing Challenge # 2 : The Little Mermaid /动漫人物绘画比赛 #2 : Steemit的小美人鱼</a></td>
+    <td style="border: 1px solid black;">74.53</td>
+    <td style="border: 1px solid black;">106</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@aaronli">aaronli</a></td>
+    <td style="border: 1px solid black;">64.93</td>
+    <td style="border: 1px solid black;">2017-10-11 02:06:42</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@aaronli/10">我对你是认真的｜谷哥点名#10</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">8</td>
-    <td style="border: 1px solid black;">58.96</td>
-    <td style="border: 1px solid black;">68</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@htliao">htliao</a></td>
-    <td style="border: 1px solid black;">68.16</td>
-    <td style="border: 1px solid black;">2017-10-10 23:29:18</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@htliao/3d81jg">暴風雨即將來襲？黃金價格的啟示和我最近的投資決定</a></td>
+    <td style="border: 1px solid black;">67.45</td>
+    <td style="border: 1px solid black;">91</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@goodboyphilip">goodboyphilip</a></td>
+    <td style="border: 1px solid black;">60.60</td>
+    <td style="border: 1px solid black;">2017-10-11 13:26:42</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@goodboyphilip/eng-japan-tokyo-gourmet-travel-guide-031-kawaii-monster-cafe-funny-wonderland-goodboy-philip">(ENG/中文) Japan Tokyo Gourmet Travel Guide #031 爆食日本美食東京篇<KAWAII MONSTER CAFE>：梦幻餐厅连颜料也可以吃下/Funny Wonderland/原宿夢の国レストラン (好孩子Goodboy Philip食レポグルメガイド)</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">9</td>
-    <td style="border: 1px solid black;">54.43</td>
-    <td style="border: 1px solid black;">93</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@guyverckw">guyverckw</a></td>
-    <td style="border: 1px solid black;">66.39</td>
-    <td style="border: 1px solid black;">2017-10-10 22:02:30</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@guyverckw/how-to-become-a-bad-boss-1">How to become a bad boss (1) | 如何當個壞老闆(一) - 辦公室隨筆 (五) | Office Blog (5)</a></td>
+    <td style="border: 1px solid black;">63.37</td>
+    <td style="border: 1px solid black;">90</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@victorier">victorier</a></td>
+    <td style="border: 1px solid black;">63.78</td>
+    <td style="border: 1px solid black;">2017-10-11 01:34:45</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@victorier/basic-it-security-8-or-8">Basic IT Security #8|淺談資訊保安 #8</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">10</td>
-    <td style="border: 1px solid black;">51.24</td>
-    <td style="border: 1px solid black;">60</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@justyy">justyy</a></td>
-    <td style="border: 1px solid black;">68.36</td>
-    <td style="border: 1px solid black;">2017-10-10 19:33:21</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@justyy/happyukgo-55-state-pension">@happyukgo  到我55岁的时候，我退休金都给你支配！(在英国只靠国家的养老金 State Pension 是不够的)</a></td>
+    <td style="border: 1px solid black;">56.95</td>
+    <td style="border: 1px solid black;">54</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@mrspointm">mrspointm</a></td>
+    <td style="border: 1px solid black;">62.60</td>
+    <td style="border: 1px solid black;">2017-10-11 03:14:45</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@mrspointm/have-you-ever-voted-in-your-friends-circle-on-wechat">你有参与过朋友圈投票吗？ Have you ever voted in your friends circle on WeChat?</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">11</td>
-    <td style="border: 1px solid black;">44.41</td>
-    <td style="border: 1px solid black;">59</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@jubi">jubi</a></td>
-    <td style="border: 1px solid black;">68.46</td>
-    <td style="border: 1px solid black;">2017-10-10 06:24:51</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@jubi/4tkddx">多图上传如何提高效率?并不难!</a></td>
+    <td style="border: 1px solid black;">55.32</td>
+    <td style="border: 1px solid black;">71</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@hannahwu">hannahwu</a></td>
+    <td style="border: 1px solid black;">64.40</td>
+    <td style="border: 1px solid black;">2017-10-11 05:55:15</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@hannahwu/travel-with-me-the-ninth-cave-heaven-in-the-world">西山金庭最美林屋洞“天下第九洞天” Travel with Me: The Ninth Cave Heaven in the World</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">12</td>
-    <td style="border: 1px solid black;">37.50</td>
-    <td style="border: 1px solid black;">57</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@coldhair">coldhair</a></td>
-    <td style="border: 1px solid black;">64.90</td>
-    <td style="border: 1px solid black;">2017-10-10 02:11:30</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@coldhair/694zxa-steemit">你写一篇Steemit文章需要花费多少时间？</a></td>
+    <td style="border: 1px solid black;">51.64</td>
+    <td style="border: 1px solid black;">38</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@icedream">icedream</a></td>
+    <td style="border: 1px solid black;">60.72</td>
+    <td style="border: 1px solid black;">2017-10-11 05:35:06</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@icedream/follow-me-2">迟来的秋游——Follow Me #2</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">13</td>
-    <td style="border: 1px solid black;">35.63</td>
-    <td style="border: 1px solid black;">75</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@victorier">victorier</a></td>
-    <td style="border: 1px solid black;">63.71</td>
-    <td style="border: 1px solid black;">2017-10-10 01:12:51</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@victorier/or-10">認真你就輸了|谷哥點名#10 認真</a></td>
+    <td style="border: 1px solid black;">50.64</td>
+    <td style="border: 1px solid black;">59</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@nanosesame">nanosesame</a></td>
+    <td style="border: 1px solid black;">62.62</td>
+    <td style="border: 1px solid black;">2017-10-11 04:06:09</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@nanosesame/draw-on-blockchain-x-google-seo-frogs-ensemble-or-10">Draw on blockchain x Google SEO : Frogs' Ensemble 小青蛙的合奏 | #10 認真</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">14</td>
-    <td style="border: 1px solid black;">33.44</td>
-    <td style="border: 1px solid black;">25</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@ygern">ygern</a></td>
-    <td style="border: 1px solid black;">63.28</td>
-    <td style="border: 1px solid black;">2017-10-10 12:31:12</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@ygern/long-shan-temple">龍山寺 Long Shan Temple</a></td>
+    <td style="border: 1px solid black;">49.95</td>
+    <td style="border: 1px solid black;">56</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@tvb">tvb</a></td>
+    <td style="border: 1px solid black;">62.07</td>
+    <td style="border: 1px solid black;">2017-10-11 13:15:30</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@tvb/45qr3w">一个真实的故事</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">15</td>
-    <td style="border: 1px solid black;">32.51</td>
-    <td style="border: 1px solid black;">65</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@marylaw">marylaw</a></td>
-    <td style="border: 1px solid black;">62.10</td>
-    <td style="border: 1px solid black;">2017-10-10 05:12:27</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@marylaw/2zkyrk">世界那麼大，我想去看看雲南（麗江－王龍雪山）</a></td>
+    <td style="border: 1px solid black;">49.32</td>
+    <td style="border: 1px solid black;">102</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@wilkinshui">wilkinshui</a></td>
+    <td style="border: 1px solid black;">66.23</td>
+    <td style="border: 1px solid black;">2017-10-11 11:39:39</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@wilkinshui/texas-roadhouse">德州鮮切牛排 (台北松高店) - Texas Roadhouse</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">16</td>
-    <td style="border: 1px solid black;">32.13</td>
-    <td style="border: 1px solid black;">88</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@wilkinshui">wilkinshui</a></td>
-    <td style="border: 1px solid black;">66.20</td>
-    <td style="border: 1px solid black;">2017-10-10 11:52:15</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@wilkinshui/anpanman-official-shop-taipei">台北麵包超人館 - Anpanman Official Shop Taipei</a></td>
+    <td style="border: 1px solid black;">48.23</td>
+    <td style="border: 1px solid black;">49</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@mrpointp">mrpointp</a></td>
+    <td style="border: 1px solid black;">62.04</td>
+    <td style="border: 1px solid black;">2017-10-11 01:01:12</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@mrpointp/look-out-at-the-sea-yearning-for-a-better-life-or">遥望大海，向往美好生活 Look out at the sea, yearning for a better life  | “三个一”活动</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">17</td>
-    <td style="border: 1px solid black;">28.31</td>
-    <td style="border: 1px solid black;">28</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@incrediblesnow">incrediblesnow</a></td>
-    <td style="border: 1px solid black;">62.63</td>
-    <td style="border: 1px solid black;">2017-10-10 13:49:54</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@incrediblesnow/busy-org">带你们去看看新版Busy.org！</a></td>
+    <td style="border: 1px solid black;">48.09</td>
+    <td style="border: 1px solid black;">91</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@coldhair">coldhair</a></td>
+    <td style="border: 1px solid black;">64.95</td>
+    <td style="border: 1px solid black;">2017-10-11 13:45:21</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@coldhair/steemit-facebook-twitter">Steemit还是个小婴儿，距离Facebook、Twitter还太远、太远……</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">18</td>
-    <td style="border: 1px solid black;">25.72</td>
-    <td style="border: 1px solid black;">41</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@czechglobalhosts">czechglobalhosts</a></td>
-    <td style="border: 1px solid black;">65.95</td>
-    <td style="border: 1px solid black;">2017-10-10 16:22:54</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@czechglobalhosts/church-of-saint-nicholas-in-prague-czech-republic">Church of Saint Nicholas in Prague, Czech Republic/布拉格的聖尼古拉教堂，捷克共和國</a></td>
+    <td style="border: 1px solid black;">47.27</td>
+    <td style="border: 1px solid black;">118</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@linuslee0216">linuslee0216</a></td>
+    <td style="border: 1px solid black;">67.16</td>
+    <td style="border: 1px solid black;">2017-10-11 14:52:33</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@linuslee0216/ii">色字头上一把刀，为什么人总是不懂？ II</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">19</td>
-    <td style="border: 1px solid black;">25.59</td>
-    <td style="border: 1px solid black;">33</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@tvb">tvb</a></td>
-    <td style="border: 1px solid black;">61.96</td>
-    <td style="border: 1px solid black;">2017-10-10 14:15:24</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@tvb/7smvne">故事接龙比赛『一男，二女，三門票 - 第四回』-- 第三組</a></td>
+    <td style="border: 1px solid black;">47.23</td>
+    <td style="border: 1px solid black;">68</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@czechglobalhosts">czechglobalhosts</a></td>
+    <td style="border: 1px solid black;">66.07</td>
+    <td style="border: 1px solid black;">2017-10-11 11:15:42</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@czechglobalhosts/pilsen-home-of-the-pilsner-urquell-brewery">Pilsen - home of the Pilsner Urquell brewery! 比爾森—歐克酒廠之家！</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">20</td>
-    <td style="border: 1px solid black;">24.93</td>
-    <td style="border: 1px solid black;">61</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@goodboyphilip">goodboyphilip</a></td>
-    <td style="border: 1px solid black;">60.43</td>
-    <td style="border: 1px solid black;">2017-10-10 00:01:39</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@goodboyphilip/eng-japan-nagoya-gourmet-travel-guide-030-nagoya-cuisine-combo-goodboy-philip">(ENG/中文) Japan Nagoya Gourmet Travel Guide #030爆食日本美食名古屋篇<キッチンなごや>：一次过吃名古屋名物美食组合/Nagoya Cuisine Combo/名物のグルメを一皿で(好孩子Goodboy Philip食レポグルメガイド)</a></td>
+    <td style="border: 1px solid black;">45.95</td>
+    <td style="border: 1px solid black;">46</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@btsabc">btsabc</a></td>
+    <td style="border: 1px solid black;">66.20</td>
+    <td style="border: 1px solid black;">2017-10-11 15:57:24</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@btsabc/6c3zaz-ico">中东大国阿布扎比开始了他们的ICO监管之路</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">21</td>
-    <td style="border: 1px solid black;">24.21</td>
-    <td style="border: 1px solid black;">68</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@shenchensucc">shenchensucc</a></td>
-    <td style="border: 1px solid black;">61.58</td>
-    <td style="border: 1px solid black;">2017-10-10 12:46:48</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@shenchensucc/or-10">我想去火星我是认真的|谷哥点名#10</a></td>
+    <td style="border: 1px solid black;">44.89</td>
+    <td style="border: 1px solid black;">43</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@susanli3769">susanli3769</a></td>
+    <td style="border: 1px solid black;">61.64</td>
+    <td style="border: 1px solid black;">2017-10-11 00:25:09</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@susanli3769/10">生命只有一次，怎敢不认真? 谷歌点名#10</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">22</td>
-    <td style="border: 1px solid black;">24.17</td>
-    <td style="border: 1px solid black;">52</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@twinkledrop">twinkledrop</a></td>
-    <td style="border: 1px solid black;">66.78</td>
-    <td style="border: 1px solid black;">2017-10-10 11:29:03</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@twinkledrop/travel-with-rainie-the-sherlock-holmes-museum-on-baker-street-london-part-2-part-2">Travel with Rainie ---The Sherlock Holmes Museum on Baker Street London Part 2. 畅游伦敦贝克街的福尔摩斯博物馆Part 2。</a></td>
+    <td style="border: 1px solid black;">41.48</td>
+    <td style="border: 1px solid black;">42</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@sunnyjolly">sunnyjolly</a></td>
+    <td style="border: 1px solid black;">61.68</td>
+    <td style="border: 1px solid black;">2017-10-11 07:15:33</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@sunnyjolly/mid-autumn-festival-lamp">今年中秋月正圆  Mid-Autumn Festival lamp</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">23</td>
-    <td style="border: 1px solid black;">21.29</td>
-    <td style="border: 1px solid black;">84</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@guyverckw">guyverckw</a></td>
-    <td style="border: 1px solid black;">66.39</td>
-    <td style="border: 1px solid black;">2017-10-10 10:38:09</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@guyverckw/entry-3-yellow-leaves-at-osaka-expo-commenoration-park">?? Steemitphotochallenge ?? - Entry 3 Yellow leaves at Osaka Expo Commenoration Park| 作品3 - 大阪万博紀念公園的黃葉 (by @guyverckw)</a></td>
+    <td style="border: 1px solid black;">41.14</td>
+    <td style="border: 1px solid black;">59</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@twinkledrop">twinkledrop</a></td>
+    <td style="border: 1px solid black;">66.84</td>
+    <td style="border: 1px solid black;">2017-10-11 11:47:03</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@twinkledrop/foodie-movie-review-9-the-tag-along2-rainie-9-2">Foodie Movie Review #9---《The Tag-Along2》Rainie的吃货影评 #9 ---《红衣小女孩2》</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">24</td>
-    <td style="border: 1px solid black;">19.21</td>
-    <td style="border: 1px solid black;">27</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@mrpointp">mrpointp</a></td>
-    <td style="border: 1px solid black;">61.96</td>
-    <td style="border: 1px solid black;">2017-10-10 00:44:33</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@mrpointp/there-is-always-someone-keeping-working-out-part-37-original">There is always someone keeping working out (part 37)(Original) /总有一个比你忙，比你穷，比你老的人在健身（三十七）</a></td>
+    <td style="border: 1px solid black;">39.24</td>
+    <td style="border: 1px solid black;">65</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@biuiam">biuiam</a></td>
+    <td style="border: 1px solid black;">61.98</td>
+    <td style="border: 1px solid black;">2017-10-11 00:00:24</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@biuiam/false-information-alert">小心不實資訊/False information Alert</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">25</td>
-    <td style="border: 1px solid black;">18.88</td>
-    <td style="border: 1px solid black;">24</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@goodboyphilip">goodboyphilip</a></td>
-    <td style="border: 1px solid black;">60.43</td>
-    <td style="border: 1px solid black;">2017-10-10 11:45:36</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@goodboyphilip/akb48-nmb48-serious-fans-life-goodboy-philip-or-10">真面目すぎるアイドルヲタ活AKB48 NMB48 / 對日本偶像追星活動，我是抱着一百二十分認真的態度 / Serious Fans Life (好孩子Goodboy Philip) | 谷哥点名#10</a></td>
+    <td style="border: 1px solid black;">35.95</td>
+    <td style="border: 1px solid black;">35</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@shenchensucc">shenchensucc</a></td>
+    <td style="border: 1px solid black;">61.66</td>
+    <td style="border: 1px solid black;">2017-10-11 03:35:09</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@shenchensucc/1-ph-d-working-in-canada-1">加拿大博士工作记#1 缘起 Ph.D. working in Canada #1</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">26</td>
-    <td style="border: 1px solid black;">15.84</td>
-    <td style="border: 1px solid black;">56</td>
+    <td style="border: 1px solid black;">20.86</td>
+    <td style="border: 1px solid black;">61</td>
     <td style="border: 1px solid black;"><a href="https://www.steemit.com/@travelgirl">travelgirl</a></td>
-    <td style="border: 1px solid black;">65.20</td>
-    <td style="border: 1px solid black;">2017-10-10 06:26:36</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@travelgirl/traveling-the-world-65-europe-series-edinburgh-castle-edinburgh-scotland">Traveling the World #65 (Europe Series) Edinburgh Castle @ Edinburgh, Scotland -  愛丁堡城堡 @ 愛丁堡，蘇格蘭</a></td>
+    <td style="border: 1px solid black;">65.23</td>
+    <td style="border: 1px solid black;">2017-10-11 05:47:27</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@travelgirl/how-to-travel-by-not-spending-too-much-1">How To Travel By Not Spending Too Much - 怎樣可以很便宜去旅遊 (累積飛行里數篇 1）</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">27</td>
-    <td style="border: 1px solid black;">13.37</td>
-    <td style="border: 1px solid black;">21</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@icedream">icedream</a></td>
-    <td style="border: 1px solid black;">60.59</td>
-    <td style="border: 1px solid black;">2017-10-10 14:28:00</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@icedream/2x7mt3">屡战屡败，屡败屡战</a></td>
+    <td style="border: 1px solid black;">19.08</td>
+    <td style="border: 1px solid black;">29</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@bxt">bxt</a></td>
+    <td style="border: 1px solid black;">66.41</td>
+    <td style="border: 1px solid black;">2017-10-11 13:00:57</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@bxt/it-s-a-cool-autumn-day-guess-what-the-fruit-it-is">It's a cool autumn day ! Guess what the fruit it is?天凉好个秋！猜猜都是什么果儿</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">28</td>
-    <td style="border: 1px solid black;">13.13</td>
-    <td style="border: 1px solid black;">22</td>
+    <td style="border: 1px solid black;">14.78</td>
+    <td style="border: 1px solid black;">28</td>
     <td style="border: 1px solid black;"><a href="https://www.steemit.com/@bring">bring</a></td>
-    <td style="border: 1px solid black;">61.71</td>
-    <td style="border: 1px solid black;">2017-10-10 04:16:12</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@bring/my-three-hobbies">我的三大爱好 My Three Hobbies</a></td>
+    <td style="border: 1px solid black;">61.77</td>
+    <td style="border: 1px solid black;">2017-10-11 00:10:30</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@bring/5px4ye">给“月旦评”的一点建议</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">29</td>
-    <td style="border: 1px solid black;">12.88</td>
-    <td style="border: 1px solid black;">64</td>
+    <td style="border: 1px solid black;">14.28</td>
+    <td style="border: 1px solid black;">41</td>
     <td style="border: 1px solid black;"><a href="https://www.steemit.com/@justyy">justyy</a></td>
-    <td style="border: 1px solid black;">68.36</td>
-    <td style="border: 1px solid black;">2017-10-10 11:00:27</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@justyy/daily-cn-updates-cn2017-10-10">Daily #CN Updates CN社区每日榜单【潜在收益排行榜】【优秀被错过的文章】【低保计划参与者】【优质内容点赞记录】(2017-10-10)</a></td>
+    <td style="border: 1px solid black;">68.38</td>
+    <td style="border: 1px solid black;">2017-10-11 15:37:27</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@justyy/using-at-keyboard-on-modern-pc-using-at-ps2-usb-connector">用上小霸王键盘 （换换键盘，换换心情  ） Using AT keyboard on modern PC using AT-PS2-USB connector</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">30</td>
-    <td style="border: 1px solid black;">11.92</td>
+    <td style="border: 1px solid black;">14.17</td>
     <td style="border: 1px solid black;">20</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@bestmz">bestmz</a></td>
-    <td style="border: 1px solid black;">64.03</td>
-    <td style="border: 1px solid black;">2017-10-10 05:58:21</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@bestmz/30">30年，一个地方商业帝国的今昔</a></td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@ygern">ygern</a></td>
+    <td style="border: 1px solid black;">63.30</td>
+    <td style="border: 1px solid black;">2017-10-11 10:55:15</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@ygern/minions">「你住哪？」「就在Minions那裡。」</a></td>
   </tr>
   
 </table>
@@ -445,360 +457,360 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">1</td>
-    <td style="border: 1px solid black;">40.94</td>
-    <td style="border: 1px solid black;">22</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@victory622">victory622</a></td>
-    <td style="border: 1px solid black;">57.95</td>
-    <td style="border: 1px solid black;">2017-10-10 23:28:24</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@victory622/there-was-a-bug-in-steepshot-app-but-now-it-was-fixed-steepshot-bug">There was a bug in steepshot app, but now it was fixed! -- 我使用steepshot的时候遇到了bug，但是现在解决了!</a></td>
+    <td style="border: 1px solid black;">73.76</td>
+    <td style="border: 1px solid black;">9</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@dewina">dewina</a></td>
+    <td style="border: 1px solid black;">56.22</td>
+    <td style="border: 1px solid black;">2017-10-11 04:16:54</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@dewina/guilin-yangshuo-is-very-beautiful-i-love-china">Guilin - Yangshuo is Very Beautiful!!! I Love China !!﻿ - 桂林 - 阳朔很美！ 我爱中国！</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">2</td>
-    <td style="border: 1px solid black;">39.93</td>
-    <td style="border: 1px solid black;">19</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@wangwenjing">wangwenjing</a></td>
-    <td style="border: 1px solid black;">55.00</td>
-    <td style="border: 1px solid black;">2017-10-10 23:36:00</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@wangwenjing/steemit">我的Steemit卡通英雄</a></td>
+    <td style="border: 1px solid black;">57.44</td>
+    <td style="border: 1px solid black;">42</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@metten">metten</a></td>
+    <td style="border: 1px solid black;">56.58</td>
+    <td style="border: 1px solid black;">2017-10-11 03:13:36</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@metten/anime-character-drawing-challenge-2-the-little-mermaid-2-metten">Anime Character Drawing Challenge # 2 : The Little Mermaid /动漫人物绘画比赛 #2 : metten的倾心少女</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">3</td>
-    <td style="border: 1px solid black;">35.47</td>
-    <td style="border: 1px solid black;">40</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@drunkevil">drunkevil</a></td>
-    <td style="border: 1px solid black;">57.25</td>
-    <td style="border: 1px solid black;">2017-10-10 14:11:03</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@drunkevil/introduceyourself-drunkevil">是时候来一篇正式的自我介绍了 || introduceyourself</a></td>
+    <td style="border: 1px solid black;">53.78</td>
+    <td style="border: 1px solid black;">45</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@veronicazhu">veronicazhu</a></td>
+    <td style="border: 1px solid black;">56.30</td>
+    <td style="border: 1px solid black;">2017-10-11 05:38:42</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@veronicazhu/anime-character-drawing-challenge-2-chopper-steemian">Anime Character Drawing Challenge # 2 - ??Chopper Steemian ??</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">4</td>
-    <td style="border: 1px solid black;">28.14</td>
-    <td style="border: 1px solid black;">25</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@vandadream">vandadream</a></td>
-    <td style="border: 1px solid black;">52.22</td>
-    <td style="border: 1px solid black;">2017-10-10 00:32:51</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@vandadream/10">谷歌点名#10---认真与否</a></td>
+    <td style="border: 1px solid black;">49.64</td>
+    <td style="border: 1px solid black;">61</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@nuagnorab">nuagnorab</a></td>
+    <td style="border: 1px solid black;">55.58</td>
+    <td style="border: 1px solid black;">2017-10-11 11:27:51</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@nuagnorab/5uespj">中文區去中心化故事接龍比賽 - 『一男，二女，三門票』 - 第一組，第四回 「這就尷尬了！？」</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">5</td>
-    <td style="border: 1px solid black;">22.66</td>
-    <td style="border: 1px solid black;">12</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@dancingapple">dancingapple</a></td>
-    <td style="border: 1px solid black;">55.15</td>
-    <td style="border: 1px solid black;">2017-10-10 16:10:24</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@dancingapple/3r6yzo">apple杂货铺</a></td>
+    <td style="border: 1px solid black;">49.14</td>
+    <td style="border: 1px solid black;">41</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@jessicameng">jessicameng</a></td>
+    <td style="border: 1px solid black;">59.53</td>
+    <td style="border: 1px solid black;">2017-10-11 05:02:12</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@jessicameng/nqksk">鬼知道我经历了什么之药推</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">6</td>
-    <td style="border: 1px solid black;">20.63</td>
-    <td style="border: 1px solid black;">21</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@yellowbird">yellowbird</a></td>
-    <td style="border: 1px solid black;">57.97</td>
-    <td style="border: 1px solid black;">2017-10-10 13:21:09</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@yellowbird/or-10">认真的男生最帅 | 谷哥点名#10</a></td>
+    <td style="border: 1px solid black;">38.58</td>
+    <td style="border: 1px solid black;">42</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@karasui">karasui</a></td>
+    <td style="border: 1px solid black;">57.67</td>
+    <td style="border: 1px solid black;">2017-10-11 05:49:54</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@karasui/247uav">她的进步， 我的原地踏步</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">7</td>
-    <td style="border: 1px solid black;">20.61</td>
-    <td style="border: 1px solid black;">22</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@acactus1013">acactus1013</a></td>
-    <td style="border: 1px solid black;">55.62</td>
-    <td style="border: 1px solid black;">2017-10-10 07:02:39</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@acactus1013/25">回望我的25岁|“三个一”活动</a></td>
+    <td style="border: 1px solid black;">36.07</td>
+    <td style="border: 1px solid black;">25</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@shengui">shengui</a></td>
+    <td style="border: 1px solid black;">57.13</td>
+    <td style="border: 1px solid black;">2017-10-11 14:14:27</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@shengui/12-plant-classification-archives-12">那些年我们吃过的洋槐花——植物分类档案12 ：蝶形花科// Plant classification archives 12</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">8</td>
-    <td style="border: 1px solid black;">20.16</td>
-    <td style="border: 1px solid black;">19</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@bigyellow">bigyellow</a></td>
-    <td style="border: 1px solid black;">59.03</td>
-    <td style="border: 1px solid black;">2017-10-10 13:21:21</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@bigyellow/74ojvu">“小孩打架”</a></td>
+    <td style="border: 1px solid black;">33.32</td>
+    <td style="border: 1px solid black;">37</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@a-alice">a-alice</a></td>
+    <td style="border: 1px solid black;">56.75</td>
+    <td style="border: 1px solid black;">2017-10-11 09:45:18</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@a-alice/review-novels-23-just-one-slight-smile-is-very-alluring">REVIEW NOVELS #23 Just One Slight Smile is Very Alluring: 微微一笑很傾城</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">9</td>
-    <td style="border: 1px solid black;">18.18</td>
-    <td style="border: 1px solid black;">19</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@mreko">mreko</a></td>
-    <td style="border: 1px solid black;">53.77</td>
-    <td style="border: 1px solid black;">2017-10-10 01:19:48</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@mreko/ripple-1-cny-10-ripple">【希多说币】据说Ripple可以涨到1美元？10分钟看懂Ripple</a></td>
+    <td style="border: 1px solid black;">18.82</td>
+    <td style="border: 1px solid black;">17</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@ffcrossculture">ffcrossculture</a></td>
+    <td style="border: 1px solid black;">50.49</td>
+    <td style="border: 1px solid black;">2017-10-11 01:09:39</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@ffcrossculture/swisp">海豚</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">10</td>
-    <td style="border: 1px solid black;">17.17</td>
-    <td style="border: 1px solid black;">23</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@hqy">hqy</a></td>
-    <td style="border: 1px solid black;">57.01</td>
-    <td style="border: 1px solid black;">2017-10-10 08:34:18</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@hqy/7uzwqz">母亲传略：没有碑刻的碑文</a></td>
+    <td style="border: 1px solid black;">14.79</td>
+    <td style="border: 1px solid black;">19</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@renzhichu">renzhichu</a></td>
+    <td style="border: 1px solid black;">57.74</td>
+    <td style="border: 1px solid black;">2017-10-11 05:32:00</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@renzhichu/6zftmo">尴尬的婚闹，你经历过么？</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">11</td>
-    <td style="border: 1px solid black;">15.50</td>
-    <td style="border: 1px solid black;">48</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@a-alice">a-alice</a></td>
-    <td style="border: 1px solid black;">56.54</td>
-    <td style="border: 1px solid black;">2017-10-10 14:16:15</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@a-alice/blog-14-how-to-make-kimbap-fried-kimbap-20171010t21165483z">BLOG #14 : HOW TO MAKE KIMBAP FRIED ?? ( 如何做一个油炸的kimbap) ??</a></td>
+    <td style="border: 1px solid black;">12.38</td>
+    <td style="border: 1px solid black;">36</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@berlin1997">berlin1997</a></td>
+    <td style="border: 1px solid black;">57.09</td>
+    <td style="border: 1px solid black;">2017-10-11 08:21:45</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@berlin1997/10">一个石头的角色一生｜谷哥点名#11角色</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">12</td>
-    <td style="border: 1px solid black;">11.92</td>
-    <td style="border: 1px solid black;">33</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@sweetcoin">sweetcoin</a></td>
-    <td style="border: 1px solid black;">52.70</td>
-    <td style="border: 1px solid black;">2017-10-10 03:12:39</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@sweetcoin/5uvtzk">课金!氪金! 手遊让人甘愿掏钱的魅力</a></td>
+    <td style="border: 1px solid black;">12.05</td>
+    <td style="border: 1px solid black;">17</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@kona">kona</a></td>
+    <td style="border: 1px solid black;">55.78</td>
+    <td style="border: 1px solid black;">2017-10-11 14:16:03</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@kona/anime-character-drawing-challenge-2-design-my-own-steemit-manga-hero-2-steemit">Anime Character Drawing Challenge # 2 Design my own Steemit manga hero︳動漫人物繪畫比賽 #2 設計我的Steemit漫畫英雄</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">13</td>
-    <td style="border: 1px solid black;">11.26</td>
-    <td style="border: 1px solid black;">16</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@berlin1997">berlin1997</a></td>
-    <td style="border: 1px solid black;">57.00</td>
-    <td style="border: 1px solid black;">2017-10-10 01:59:30</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@berlin1997/7mgd7b">好好挑选床垫子，才是美梦的开始（非安利广告）</a></td>
+    <td style="border: 1px solid black;">11.48</td>
+    <td style="border: 1px solid black;">21</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@dancingapple">dancingapple</a></td>
+    <td style="border: 1px solid black;">55.29</td>
+    <td style="border: 1px solid black;">2017-10-11 10:13:18</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@dancingapple/2">动漫人物绘画比赛#2:木兰</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">14</td>
-    <td style="border: 1px solid black;">10.74</td>
-    <td style="border: 1px solid black;">17</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@kona">kona</a></td>
-    <td style="border: 1px solid black;">55.59</td>
-    <td style="border: 1px solid black;">2017-10-10 16:12:24</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@kona/2i3hg5">生活鎖事(二)—貓店長︳生活锁事(二)—猫店长</a></td>
+    <td style="border: 1px solid black;">10.98</td>
+    <td style="border: 1px solid black;">27</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@liangfengyouren">liangfengyouren</a></td>
+    <td style="border: 1px solid black;">56.85</td>
+    <td style="border: 1px solid black;">2017-10-11 07:26:27</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@liangfengyouren/2p1pux">如何让小朋友爱上写作</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">15</td>
-    <td style="border: 1px solid black;">10.53</td>
-    <td style="border: 1px solid black;">19</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@aafeng">aafeng</a></td>
-    <td style="border: 1px solid black;">56.74</td>
-    <td style="border: 1px solid black;">2017-10-10 10:00:54</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@aafeng/qs3zk-10">为生命而奔跑 - 约克郡10英里马拉松</a></td>
+    <td style="border: 1px solid black;">10.80</td>
+    <td style="border: 1px solid black;">23</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@drunkevil">drunkevil</a></td>
+    <td style="border: 1px solid black;">57.34</td>
+    <td style="border: 1px solid black;">2017-10-11 12:06:21</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@drunkevil/protection-of-privacy">人肉和挖坟：互联网时代挖掘个人隐私的两把利器</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">16</td>
-    <td style="border: 1px solid black;">9.96</td>
-    <td style="border: 1px solid black;">36</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@fr3eze">fr3eze</a></td>
-    <td style="border: 1px solid black;">55.53</td>
-    <td style="border: 1px solid black;">2017-10-10 04:37:42</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@fr3eze/ranking-the-languages-that-i-know-base-on-everyday-usage">盘点多语言的好处 Ranking the languages that I know base on everyday usage</a></td>
+    <td style="border: 1px solid black;">8.68</td>
+    <td style="border: 1px solid black;">20</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@yellowbird">yellowbird</a></td>
+    <td style="border: 1px solid black;">58.03</td>
+    <td style="border: 1px solid black;">2017-10-11 10:25:15</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@yellowbird/2thg9j">爱是一把枪 │诗歌</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">17</td>
-    <td style="border: 1px solid black;">9.54</td>
-    <td style="border: 1px solid black;">15</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@winniex">winniex</a></td>
-    <td style="border: 1px solid black;">52.43</td>
-    <td style="border: 1px solid black;">2017-10-10 00:38:57</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@winniex/or">你知道这是哪里吗？| "我所居我所爱" 征文比赛</a></td>
+    <td style="border: 1px solid black;">8.66</td>
+    <td style="border: 1px solid black;">13</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@cornelia">cornelia</a></td>
+    <td style="border: 1px solid black;">58.08</td>
+    <td style="border: 1px solid black;">2017-10-11 13:46:24</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@cornelia/gekko-moria">月光·莫利亚-Gekko Moria</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">18</td>
-    <td style="border: 1px solid black;">9.18</td>
-    <td style="border: 1px solid black;">21</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@liangfengyouren">liangfengyouren</a></td>
-    <td style="border: 1px solid black;">56.75</td>
-    <td style="border: 1px solid black;">2017-10-10 02:14:30</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@liangfengyouren/4mfkc">现在买一个比特币留着结婚的时候给女方做聘礼，靠谱吗？</a></td>
+    <td style="border: 1px solid black;">8.54</td>
+    <td style="border: 1px solid black;">13</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@luojia">luojia</a></td>
+    <td style="border: 1px solid black;">57.06</td>
+    <td style="border: 1px solid black;">2017-10-11 10:46:24</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@luojia/3k4rwu">黑夜里的骑手</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">19</td>
-    <td style="border: 1px solid black;">9.10</td>
-    <td style="border: 1px solid black;">13</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@wantfly">wantfly</a></td>
-    <td style="border: 1px solid black;">51.82</td>
-    <td style="border: 1px solid black;">2017-10-10 11:36:51</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@wantfly/65ndmo">趋势的力量— 假如没有中本聪</a></td>
+    <td style="border: 1px solid black;">8.36</td>
+    <td style="border: 1px solid black;">12</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@winniex">winniex</a></td>
+    <td style="border: 1px solid black;">52.78</td>
+    <td style="border: 1px solid black;">2017-10-11 02:46:27</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@winniex/x-or-10">X星球趣事：认和真[小说]| 谷哥点名#10 认真</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">20</td>
-    <td style="border: 1px solid black;">8.49</td>
-    <td style="border: 1px solid black;">39</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@xiaoshancun">xiaoshancun</a></td>
-    <td style="border: 1px solid black;">57.06</td>
-    <td style="border: 1px solid black;">2017-10-10 07:19:15</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@xiaoshancun/3jcumk">生活里的加加减减</a></td>
+    <td style="border: 1px solid black;">8.20</td>
+    <td style="border: 1px solid black;">12</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@daijia">daijia</a></td>
+    <td style="border: 1px solid black;">52.15</td>
+    <td style="border: 1px solid black;">2017-10-11 11:55:06</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@daijia/3">育儿心得：我为什么让孩子3岁就开始学习英语？</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">21</td>
-    <td style="border: 1px solid black;">8.38</td>
-    <td style="border: 1px solid black;">16</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@shengui">shengui</a></td>
-    <td style="border: 1px solid black;">56.86</td>
-    <td style="border: 1px solid black;">2017-10-10 11:29:21</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@shengui/4aenhs">学生会从学校暴力管理中学到什么</a></td>
+    <td style="border: 1px solid black;">8.06</td>
+    <td style="border: 1px solid black;">12</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@mangoanddaddy">mangoanddaddy</a></td>
+    <td style="border: 1px solid black;">53.88</td>
+    <td style="border: 1px solid black;">2017-10-11 02:28:45</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@mangoanddaddy/5gayfu">这个时代还需要艰苦教育吗？</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">22</td>
-    <td style="border: 1px solid black;">7.71</td>
-    <td style="border: 1px solid black;">16</td>
+    <td style="border: 1px solid black;">8.06</td>
+    <td style="border: 1px solid black;">22</td>
     <td style="border: 1px solid black;"><a href="https://www.steemit.com/@monkeyplayfire">monkeyplayfire</a></td>
-    <td style="border: 1px solid black;">50.87</td>
-    <td style="border: 1px solid black;">2017-10-10 06:29:39</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@monkeyplayfire/67f1as-steemit">steemit投放广告的模式畅想</a></td>
+    <td style="border: 1px solid black;">51.60</td>
+    <td style="border: 1px solid black;">2017-10-11 13:41:18</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@monkeyplayfire/steemit-mute">Steemit一个不太敢用的MUTE功能</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">23</td>
-    <td style="border: 1px solid black;">7.64</td>
-    <td style="border: 1px solid black;">12</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@karasui">karasui</a></td>
-    <td style="border: 1px solid black;">57.48</td>
-    <td style="border: 1px solid black;">2017-10-10 04:58:51</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@karasui/autumn-travel-with-colleagues">传说中的九天银瀑-Autumn travel with colleagues</a></td>
+    <td style="border: 1px solid black;">7.75</td>
+    <td style="border: 1px solid black;">9</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@xierdear">xierdear</a></td>
+    <td style="border: 1px solid black;">53.99</td>
+    <td style="border: 1px solid black;">2017-10-11 11:23:48</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@xierdear/-20171011t192346732z">英语入门易，精通难，怎么破？</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">24</td>
-    <td style="border: 1px solid black;">7.43</td>
-    <td style="border: 1px solid black;">8</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@melaleuca">melaleuca</a></td>
-    <td style="border: 1px solid black;">53.40</td>
-    <td style="border: 1px solid black;">2017-10-10 13:04:42</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@melaleuca/4y1bzq">专栏：日三省.日志（一）</a></td>
+    <td style="border: 1px solid black;">7.54</td>
+    <td style="border: 1px solid black;">14</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@shengui">shengui</a></td>
+    <td style="border: 1px solid black;">57.13</td>
+    <td style="border: 1px solid black;">2017-10-11 12:34:45</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@shengui/55suag">秋日随想</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">25</td>
-    <td style="border: 1px solid black;">7.27</td>
-    <td style="border: 1px solid black;">8</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@bigbigfish">bigbigfish</a></td>
-    <td style="border: 1px solid black;">50.28</td>
-    <td style="border: 1px solid black;">2017-10-10 15:27:45</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@bigbigfish/or-10">认真源于热爱——向默默为社区服务的人们致敬！|谷哥点名#10</a></td>
+    <td style="border: 1px solid black;">7.45</td>
+    <td style="border: 1px solid black;">15</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@acactus1013">acactus1013</a></td>
+    <td style="border: 1px solid black;">55.71</td>
+    <td style="border: 1px solid black;">2017-10-11 12:21:33</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@acactus1013/my-experience-of-love-affair">My Experience of Love Affair/我的“艳遇”经历</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">26</td>
-    <td style="border: 1px solid black;">7.24</td>
-    <td style="border: 1px solid black;">14</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@cornelia">cornelia</a></td>
-    <td style="border: 1px solid black;">58.02</td>
-    <td style="border: 1px solid black;">2017-10-10 11:57:54</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@cornelia/uzumaki-naruto">漩涡鸣人-Uzumaki Naruto</a></td>
+    <td style="border: 1px solid black;">7.04</td>
+    <td style="border: 1px solid black;">13</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@kunpengding">kunpengding</a></td>
+    <td style="border: 1px solid black;">54.41</td>
+    <td style="border: 1px solid black;">2017-10-11 13:12:48</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@kunpengding/275pu5">我的文章为什么写的那么短呢？</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">27</td>
-    <td style="border: 1px solid black;">6.98</td>
-    <td style="border: 1px solid black;">6</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@lancy">lancy</a></td>
-    <td style="border: 1px solid black;">50.78</td>
-    <td style="border: 1px solid black;">2017-10-10 14:10:30</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@lancy/5gdit">归乡见闻之老祠堂的新香火</a></td>
+    <td style="border: 1px solid black;">6.87</td>
+    <td style="border: 1px solid black;">9</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@syh7758520">syh7758520</a></td>
+    <td style="border: 1px solid black;">52.88</td>
+    <td style="border: 1px solid black;">2017-10-11 14:38:15</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@syh7758520/k5x6i">你喜欢开远光么?</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">28</td>
-    <td style="border: 1px solid black;">6.86</td>
-    <td style="border: 1px solid black;">9</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@kunpengding">kunpengding</a></td>
-    <td style="border: 1px solid black;">54.22</td>
-    <td style="border: 1px solid black;">2017-10-10 13:22:18</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@kunpengding/3rrbau">你有“记账”的习惯吗？</a></td>
+    <td style="border: 1px solid black;">6.13</td>
+    <td style="border: 1px solid black;">24</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@xiaoshancun">xiaoshancun</a></td>
+    <td style="border: 1px solid black;">57.15</td>
+    <td style="border: 1px solid black;">2017-10-11 06:42:48</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@xiaoshancun/vz6qd">五颜六色的诗歌</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">29</td>
-    <td style="border: 1px solid black;">6.51</td>
-    <td style="border: 1px solid black;">14</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@xuran">xuran</a></td>
-    <td style="border: 1px solid black;">52.81</td>
-    <td style="border: 1px solid black;">2017-10-10 10:03:57</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@xuran/civic">简单方法：识别一个区块链的项目是否靠谱？（实例CIVIC）</a></td>
+    <td style="border: 1px solid black;">5.74</td>
+    <td style="border: 1px solid black;">4</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@lancy">lancy</a></td>
+    <td style="border: 1px solid black;">51.03</td>
+    <td style="border: 1px solid black;">2017-10-11 15:23:45</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@lancy/6plqns">归乡见闻之多收了三五斗、撞死了五六人（胆小勿进）</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">30</td>
-    <td style="border: 1px solid black;">6.46</td>
-    <td style="border: 1px solid black;">6</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@shaiya">shaiya</a></td>
-    <td style="border: 1px solid black;">52.93</td>
-    <td style="border: 1px solid black;">2017-10-10 14:43:33</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@shaiya/4mtdqb">草堂记</a></td>
+    <td style="border: 1px solid black;">5.53</td>
+    <td style="border: 1px solid black;">7</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@bigyellow">bigyellow</a></td>
+    <td style="border: 1px solid black;">59.06</td>
+    <td style="border: 1px solid black;">2017-10-11 15:06:33</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@bigyellow/hnozo">“活在当下，秋意渐浓”</a></td>
   </tr>
   
 </table>
@@ -819,252 +831,360 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">1</td>
-    <td style="border: 1px solid black;">9.17</td>
-    <td style="border: 1px solid black;">13</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@bryanlin">bryanlin</a></td>
-    <td style="border: 1px solid black;">47.02</td>
-    <td style="border: 1px solid black;">2017-10-10 09:19:51</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@bryanlin/5jhej5">失控-凯文·凯利</a></td>
+    <td style="border: 1px solid black;">9.53</td>
+    <td style="border: 1px solid black;">5</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@keepup">keepup</a></td>
+    <td style="border: 1px solid black;">44.33</td>
+    <td style="border: 1px solid black;">2017-10-11 15:45:27</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@keepup/ktga8">用检视阅读的四个阶段读《复盘》</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">2</td>
-    <td style="border: 1px solid black;">7.94</td>
-    <td style="border: 1px solid black;">11</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@yuner">yuner</a></td>
-    <td style="border: 1px solid black;">46.20</td>
-    <td style="border: 1px solid black;">2017-10-10 10:53:33</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@yuner/6hwmwl">知青 -- 带年轻人们看看那些年那些事</a></td>
+    <td style="border: 1px solid black;">8.43</td>
+    <td style="border: 1px solid black;">12</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@lubai">lubai</a></td>
+    <td style="border: 1px solid black;">43.44</td>
+    <td style="border: 1px solid black;">2017-10-11 10:44:00</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@lubai/hello-or-this-is-my-introduction">hello！自我介绍|this is my introduction</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">3</td>
-    <td style="border: 1px solid black;">7.45</td>
-    <td style="border: 1px solid black;">16</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@lixing">lixing</a></td>
-    <td style="border: 1px solid black;">47.91</td>
-    <td style="border: 1px solid black;">2017-10-10 10:37:09</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@lixing/3qm4fs">给贝拉大小姐的原创睡前小故事</a></td>
+    <td style="border: 1px solid black;">8.20</td>
+    <td style="border: 1px solid black;">13</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@techlee">techlee</a></td>
+    <td style="border: 1px solid black;">47.74</td>
+    <td style="border: 1px solid black;">2017-10-11 11:26:18</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@techlee/3ratu3">走过中考，跨越高考</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">4</td>
-    <td style="border: 1px solid black;">7.02</td>
+    <td style="border: 1px solid black;">7.97</td>
     <td style="border: 1px solid black;">7</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@sen821">sen821</a></td>
-    <td style="border: 1px solid black;">48.99</td>
-    <td style="border: 1px solid black;">2017-10-10 13:36:57</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@sen821/6ernza">你受益最多的改变是什么 I   what are the most up to you to change？</a></td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@yuner">yuner</a></td>
+    <td style="border: 1px solid black;">47.12</td>
+    <td style="border: 1px solid black;">2017-10-11 12:17:06</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@yuner/3egbz4">狗留婶婶</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">5</td>
-    <td style="border: 1px solid black;">6.59</td>
-    <td style="border: 1px solid black;">12</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@daydayup">daydayup</a></td>
-    <td style="border: 1px solid black;">48.33</td>
-    <td style="border: 1px solid black;">2017-10-10 05:02:00</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@daydayup/2ssjzy">想谈谈我对保险的看法</a></td>
+    <td style="border: 1px solid black;">7.84</td>
+    <td style="border: 1px solid black;">5</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@wjr">wjr</a></td>
+    <td style="border: 1px solid black;">47.67</td>
+    <td style="border: 1px solid black;">2017-10-11 14:55:18</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@wjr/4ixjya">我很难理解的人</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">6</td>
-    <td style="border: 1px solid black;">6.57</td>
-    <td style="border: 1px solid black;">7</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@wooleeweb">wooleeweb</a></td>
-    <td style="border: 1px solid black;">45.17</td>
-    <td style="border: 1px solid black;">2017-10-10 05:11:36</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@wooleeweb/whether-you-will-become-the-zhao-tienan-inmr-donkey">如果有一天你成了《驴得水》中的周铁男/Whether you will become the Zhou Tienan in<<Mr. Donkey>></a></td>
+    <td style="border: 1px solid black;">7.19</td>
+    <td style="border: 1px solid black;">9</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@breathewind">breathewind</a></td>
+    <td style="border: 1px solid black;">42.64</td>
+    <td style="border: 1px solid black;">2017-10-11 02:39:15</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@breathewind/80-90-00">随笔 - 80后？90后？00后？标签与思维怠惰</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">7</td>
-    <td style="border: 1px solid black;">4.94</td>
-    <td style="border: 1px solid black;">8</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@wjr">wjr</a></td>
-    <td style="border: 1px solid black;">47.02</td>
-    <td style="border: 1px solid black;">2017-10-10 11:34:33</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@wjr/5fcmmb">吃完饭洗过澡继续看别人的故事</a></td>
+    <td style="border: 1px solid black;">7.00</td>
+    <td style="border: 1px solid black;">13</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@wooleeweb">wooleeweb</a></td>
+    <td style="border: 1px solid black;">46.23</td>
+    <td style="border: 1px solid black;">2017-10-11 09:11:09</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@wooleeweb/record-life-you-should-have-real-life">记录生活，首先要有生活！／Record life,you should have real life.</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">8</td>
-    <td style="border: 1px solid black;">4.74</td>
-    <td style="border: 1px solid black;">6</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@jingmi">jingmi</a></td>
-    <td style="border: 1px solid black;">43.65</td>
-    <td style="border: 1px solid black;">2017-10-10 09:03:42</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@jingmi/-20171010t16338221z">和朋友一起吃飯</a></td>
+    <td style="border: 1px solid black;">6.20</td>
+    <td style="border: 1px solid black;">12</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@whiteman">whiteman</a></td>
+    <td style="border: 1px solid black;">47.80</td>
+    <td style="border: 1px solid black;">2017-10-11 07:00:09</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@whiteman/2d6rvj">彻底尿完再拉裤子</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">9</td>
-    <td style="border: 1px solid black;">4.29</td>
-    <td style="border: 1px solid black;">4</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@yaru">yaru</a></td>
-    <td style="border: 1px solid black;">42.21</td>
-    <td style="border: 1px solid black;">2017-10-10 15:02:48</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@yaru/9vtsh">暖色调、缩小室内空间会使人有更温暖感觉</a></td>
+    <td style="border: 1px solid black;">6.16</td>
+    <td style="border: 1px solid black;">14</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@scarcity">scarcity</a></td>
+    <td style="border: 1px solid black;">47.28</td>
+    <td style="border: 1px solid black;">2017-10-11 10:19:18</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@scarcity/tokyo-sketches-3-tried-some-food-and-stuff">Tokyo sketches (3) – Tried some food and stuff　東京隨筆(三) – 在東京的飲食點滴</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">10</td>
-    <td style="border: 1px solid black;">1.91</td>
-    <td style="border: 1px solid black;">6</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@klausv587">klausv587</a></td>
-    <td style="border: 1px solid black;">49.09</td>
-    <td style="border: 1px solid black;">2017-10-10 18:17:33</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@klausv587/smts">眼前一亮的SMTs白皮书</a></td>
+    <td style="border: 1px solid black;">6.05</td>
+    <td style="border: 1px solid black;">12</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@mcui">mcui</a></td>
+    <td style="border: 1px solid black;">45.70</td>
+    <td style="border: 1px solid black;">2017-10-11 13:18:06</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@mcui/5jpznc">《北京折叠》读后感</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">11</td>
-    <td style="border: 1px solid black;">0.46</td>
-    <td style="border: 1px solid black;">21</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@ping-ping">ping-ping</a></td>
-    <td style="border: 1px solid black;">48.06</td>
-    <td style="border: 1px solid black;">2017-10-10 03:47:24</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@ping-ping/-20171010t104715953z">一只独特的小蜘蛛</a></td>
+    <td style="border: 1px solid black;">5.98</td>
+    <td style="border: 1px solid black;">7</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@lindalex">lindalex</a></td>
+    <td style="border: 1px solid black;">41.40</td>
+    <td style="border: 1px solid black;">2017-10-11 11:39:39</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@lindalex/3mi3op">把娃哄睡难，把睡着的娃放床上更难</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">12</td>
-    <td style="border: 1px solid black;">0.17</td>
-    <td style="border: 1px solid black;">11</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@liuboya">liuboya</a></td>
-    <td style="border: 1px solid black;">40.11</td>
-    <td style="border: 1px solid black;">2017-10-10 01:39:51</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@liuboya/4isnjx-my-cool-hometown">不要问我从哪里来，我的家乡在远方。My cool hometown。</a></td>
+    <td style="border: 1px solid black;">4.73</td>
+    <td style="border: 1px solid black;">5</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@ivysrono">ivysrono</a></td>
+    <td style="border: 1px solid black;">47.23</td>
+    <td style="border: 1px solid black;">2017-10-11 14:45:15</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@ivysrono/firefox-3-https-everywhere">Firefox守望者报告[3]HTTPS-Everywhere</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">13</td>
-    <td style="border: 1px solid black;">0.08</td>
+    <td style="border: 1px solid black;">4.73</td>
     <td style="border: 1px solid black;">5</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@nahaha">nahaha</a></td>
-    <td style="border: 1px solid black;">41.81</td>
-    <td style="border: 1px solid black;">2017-10-10 04:46:15</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@nahaha/miscellaneous-photo-facts-speak-louder-than-words">Miscellaneous Photo: 事實勝於雄辯 Facts Speak Louder than Words</a></td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@lixing">lixing</a></td>
+    <td style="border: 1px solid black;">48.49</td>
+    <td style="border: 1px solid black;">2017-10-11 14:53:21</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@lixing/monomad14-clouds">MONOMAD14周主题-云[clouds] 顺便介绍谷歌相册</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">14</td>
-    <td style="border: 1px solid black;">0.07</td>
-    <td style="border: 1px solid black;">4</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@leocyber">leocyber</a></td>
-    <td style="border: 1px solid black;">49.17</td>
-    <td style="border: 1px solid black;">2017-10-10 05:10:30</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@leocyber/6ciywz">保險股</a></td>
+    <td style="border: 1px solid black;">4.00</td>
+    <td style="border: 1px solid black;">10</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@lixing">lixing</a></td>
+    <td style="border: 1px solid black;">48.49</td>
+    <td style="border: 1px solid black;">2017-10-11 13:52:33</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@lixing/v99d2">体验小篆字体的美感</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">15</td>
-    <td style="border: 1px solid black;">0.06</td>
-    <td style="border: 1px solid black;">2</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@ddangerwu">ddangerwu</a></td>
-    <td style="border: 1px solid black;">44.14</td>
-    <td style="border: 1px solid black;">2017-10-10 01:05:45</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@ddangerwu/s1e1"><视频> 我在他乡迷路了 怎么办啊？《趣味实际口语对话》S1E1</a></td>
+    <td style="border: 1px solid black;">3.61</td>
+    <td style="border: 1px solid black;">9</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@hwm">hwm</a></td>
+    <td style="border: 1px solid black;">44.41</td>
+    <td style="border: 1px solid black;">2017-10-11 11:55:27</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@hwm/study-abroad-for-a-year-in-japan">一年的日本留學 我來了!  Study abroad for a year in Japan!</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">16</td>
-    <td style="border: 1px solid black;">0.06</td>
-    <td style="border: 1px solid black;">2</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@anding">anding</a></td>
-    <td style="border: 1px solid black;">41.45</td>
-    <td style="border: 1px solid black;">2017-10-10 07:08:57</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@anding/jnfis-this-is-shanghai">This is Shanghai 在上海</a></td>
+    <td style="border: 1px solid black;">3.14</td>
+    <td style="border: 1px solid black;">5</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@jingmi">jingmi</a></td>
+    <td style="border: 1px solid black;">44.31</td>
+    <td style="border: 1px solid black;">2017-10-11 08:57:21</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@jingmi/-20171011t155717387z">享受美麗的日落</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">17</td>
-    <td style="border: 1px solid black;">0.03</td>
-    <td style="border: 1px solid black;">6</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@kamranbhatti">kamranbhatti</a></td>
-    <td style="border: 1px solid black;">49.82</td>
-    <td style="border: 1px solid black;">2017-10-10 10:06:27</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@kamranbhatti/who-is-chinese">Who is chinese?</a></td>
+    <td style="border: 1px solid black;">2.68</td>
+    <td style="border: 1px solid black;">10</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@bryanlin">bryanlin</a></td>
+    <td style="border: 1px solid black;">47.25</td>
+    <td style="border: 1px solid black;">2017-10-11 20:45:18</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@bryanlin/or-11">大山的角色 |谷哥点名#11角色</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">18</td>
-    <td style="border: 1px solid black;">0.02</td>
-    <td style="border: 1px solid black;">5</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@pptx">pptx</a></td>
-    <td style="border: 1px solid black;">42.29</td>
-    <td style="border: 1px solid black;">2017-10-10 05:10:27</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@pptx/4atuzd">每日习联</a></td>
+    <td style="border: 1px solid black;">2.09</td>
+    <td style="border: 1px solid black;">8</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@sunlee7">sunlee7</a></td>
+    <td style="border: 1px solid black;">40.95</td>
+    <td style="border: 1px solid black;">2017-10-11 14:05:36</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@sunlee7/-20171011t21531718z">蜜蜂美</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">19</td>
-    <td style="border: 1px solid black;">0.02</td>
-    <td style="border: 1px solid black;">3</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@dreamcatchers">dreamcatchers</a></td>
-    <td style="border: 1px solid black;">40.23</td>
-    <td style="border: 1px solid black;">2017-10-10 19:29:00</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@dreamcatchers/steemit-photo-challenge-3-miranda-castle">Steemit Photo Challenge #3 ?? Miranda Castle</a></td>
+    <td style="border: 1px solid black;">2.08</td>
+    <td style="border: 1px solid black;">4</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@anding">anding</a></td>
+    <td style="border: 1px solid black;">42.16</td>
+    <td style="border: 1px solid black;">2017-10-11 07:21:27</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@anding/2epvt7">一个故事设定</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">20</td>
-    <td style="border: 1px solid black;">0.02</td>
-    <td style="border: 1px solid black;">6</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@nancie">nancie</a></td>
-    <td style="border: 1px solid black;">43.99</td>
-    <td style="border: 1px solid black;">2017-10-10 10:01:33</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@nancie/52qnhn">瑞士大学接受比特币支付学费 加入比特币浪潮</a></td>
+    <td style="border: 1px solid black;">2.08</td>
+    <td style="border: 1px solid black;">3</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@liuboya">liuboya</a></td>
+    <td style="border: 1px solid black;">42.17</td>
+    <td style="border: 1px solid black;">2017-10-11 05:09:00</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@liuboya/4ayiwr">永远不要小看你身边穿紧身袜裤的女人。</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">21</td>
-    <td style="border: 1px solid black;">0.01</td>
+    <td style="border: 1px solid black;">0.74</td>
+    <td style="border: 1px solid black;">7</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@chen-chen">chen-chen</a></td>
+    <td style="border: 1px solid black;">48.25</td>
+    <td style="border: 1px solid black;">2017-10-11 14:21:39</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@chen-chen/-20171011t212130828z">父親和母親的照片</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td style="border: 1px solid black;">22</td>
+    <td style="border: 1px solid black;">0.57</td>
     <td style="border: 1px solid black;">4</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@ahmadtahir">ahmadtahir</a></td>
-    <td style="border: 1px solid black;">48.34</td>
-    <td style="border: 1px solid black;">2017-10-10 18:02:21</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@ahmadtahir/the-stage-of-group-play-goes-free-for-ghost-recon-wildlands">The stage of group play goes free for Ghost Recon Wildlands</a></td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@liuboya">liuboya</a></td>
+    <td style="border: 1px solid black;">42.17</td>
+    <td style="border: 1px solid black;">2017-10-11 06:13:12</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@liuboya/4fxera">从无望到希望又到绝望：这一世，你到底是我的谁？who the hell are you？</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td style="border: 1px solid black;">23</td>
+    <td style="border: 1px solid black;">0.31</td>
+    <td style="border: 1px solid black;">4</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@liuboya">liuboya</a></td>
+    <td style="border: 1px solid black;">42.17</td>
+    <td style="border: 1px solid black;">2017-10-11 11:30:09</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@liuboya/45sgfw">夏有乔木雅望天堂</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td style="border: 1px solid black;">24</td>
+    <td style="border: 1px solid black;">0.29</td>
+    <td style="border: 1px solid black;">18</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@julianti">julianti</a></td>
+    <td style="border: 1px solid black;">41.86</td>
+    <td style="border: 1px solid black;">2017-10-11 10:02:12</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@julianti/playing-bamboo-boats-at-autumn-camp-20171011t1727558z">在秋天營地玩竹船 / playing bamboo boats at autumn camp</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td style="border: 1px solid black;">25</td>
+    <td style="border: 1px solid black;">0.29</td>
+    <td style="border: 1px solid black;">16</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@lee26">lee26</a></td>
+    <td style="border: 1px solid black;">41.34</td>
+    <td style="border: 1px solid black;">2017-10-11 16:23:42</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@lee26/4-20171011t232337236z">花的美麗 # 4</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td style="border: 1px solid black;">26</td>
+    <td style="border: 1px solid black;">0.12</td>
+    <td style="border: 1px solid black;">5</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@coconut-home">coconut-home</a></td>
+    <td style="border: 1px solid black;">47.42</td>
+    <td style="border: 1px solid black;">2017-10-11 13:38:45</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@coconut-home/37">《零秒思考》的实践（37）</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td style="border: 1px solid black;">27</td>
+    <td style="border: 1px solid black;">0.11</td>
+    <td style="border: 1px solid black;">5</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@liuboya">liuboya</a></td>
+    <td style="border: 1px solid black;">42.17</td>
+    <td style="border: 1px solid black;">2017-10-11 04:24:27</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@liuboya/or-10">你是否像我一样：总想认真的活着，却总是就这样度过|谷哥点名#10</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td style="border: 1px solid black;">28</td>
+    <td style="border: 1px solid black;">0.10</td>
+    <td style="border: 1px solid black;">8</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@dashingtraveller">dashingtraveller</a></td>
+    <td style="border: 1px solid black;">47.23</td>
+    <td style="border: 1px solid black;">2017-10-11 01:02:03</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@dashingtraveller/catching-a-bit-of-miyazaki-in-taipei-donguri-republic-donguri-republic">????  ????  Catching a bit of Miyazaki in Taipei -Donguri Republic 在台北發現一点宫崎骏</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td style="border: 1px solid black;">29</td>
+    <td style="border: 1px solid black;">0.07</td>
+    <td style="border: 1px solid black;">5</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@aek081969">aek081969</a></td>
+    <td style="border: 1px solid black;">41.52</td>
+    <td style="border: 1px solid black;">2017-10-11 10:46:51</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@aek081969/a-strange-phenomenon-in-china-s-qiantang-river">A strange phenomenon in China's Qiantang River.中国钱塘江奇怪的现象</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td style="border: 1px solid black;">30</td>
+    <td style="border: 1px solid black;">0.04</td>
+    <td style="border: 1px solid black;">7</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@steemit-bot">steemit-bot</a></td>
+    <td style="border: 1px solid black;">45.33</td>
+    <td style="border: 1px solid black;">2017-10-11 01:58:27</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@steemit-bot/china-green-village">中国的绿色村庄   China Green Village</a></td>
   </tr>
   
 </table>
@@ -1085,36 +1205,84 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">1</td>
-    <td style="border: 1px solid black;">4.58</td>
-    <td style="border: 1px solid black;">8</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@breathewind">breathewind</a></td>
-    <td style="border: 1px solid black;">39.80</td>
-    <td style="border: 1px solid black;">2017-10-10 01:37:33</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@breathewind/2rjbog">随笔 - 从手机，到新事物，到认知升级</a></td>
+    <td style="border: 1px solid black;">3.89</td>
+    <td style="border: 1px solid black;">3</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@catscarlet">catscarlet</a></td>
+    <td style="border: 1px solid black;">37.57</td>
+    <td style="border: 1px solid black;">2017-10-11 04:46:09</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@catscarlet/3ds">自己修理了3DS的摇杆失灵问题</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td style="border: 1px solid black;">2</td>
-    <td style="border: 1px solid black;">0.03</td>
+    <td style="border: 1px solid black;">2.15</td>
     <td style="border: 1px solid black;">5</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@seeyoo">seeyoo</a></td>
-    <td style="border: 1px solid black;">37.22</td>
-    <td style="border: 1px solid black;">2017-10-10 13:36:15</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@seeyoo/bitbucket-sourcetree">Bitbucket 和 Sourcetree 连接</a></td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@zhouyagen">zhouyagen</a></td>
+    <td style="border: 1px solid black;">38.26</td>
+    <td style="border: 1px solid black;">2017-10-11 11:29:57</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@zhouyagen/5my95d">区块链：拿回属于我的数据</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">3</td>
-    <td style="border: 1px solid black;">0.03</td>
+    <td style="border: 1px solid black;">2.09</td>
+    <td style="border: 1px solid black;">3</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@greenmonkey">greenmonkey</a></td>
+    <td style="border: 1px solid black;">35.35</td>
+    <td style="border: 1px solid black;">2017-10-11 18:13:09</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@greenmonkey/greenmonkey-japan-gourmet-01-fast-tasty-less-than-600-yen-tokyo-udon-standing-shops-600">(GreenMonkey 陸文琪) Japan Gourmet 日本美食 #01 Fast! Tasty! Less than 600 Yen!Tokyo udon standing shops!! 快！美味！便宜到600日圓有找！滿足你三個願望的東京立食烏龍麵店！！！</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td style="border: 1px solid black;">4</td>
+    <td style="border: 1px solid black;">2.08</td>
+    <td style="border: 1px solid black;">3</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@heyeshuang">heyeshuang</a></td>
+    <td style="border: 1px solid black;">35.17</td>
+    <td style="border: 1px solid black;">2017-10-11 15:33:42</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@heyeshuang/steem-a-closer-look-to-steem">对Steem的一些细节考察 / A closer look to Steem</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
     <td style="border: 1px solid black;">5</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@turkyjulio">turkyjulio</a></td>
-    <td style="border: 1px solid black;">38.80</td>
-    <td style="border: 1px solid black;">2017-10-10 15:50:09</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@turkyjulio/peunayong-a-little-china-town">Peunayong - A little China Town</a></td>
+    <td style="border: 1px solid black;">2.08</td>
+    <td style="border: 1px solid black;">2</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@lvvl">lvvl</a></td>
+    <td style="border: 1px solid black;">35.11</td>
+    <td style="border: 1px solid black;">2017-10-11 15:50:03</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@lvvl/robertrosenthal-effect">很多人的命运，死死握在最珍视之人的嘴里-----罗森塔尔效应 RobertRosenthal Effect</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td style="border: 1px solid black;">6</td>
+    <td style="border: 1px solid black;">2.08</td>
+    <td style="border: 1px solid black;">2</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@inesxu">inesxu</a></td>
+    <td style="border: 1px solid black;">35.52</td>
+    <td style="border: 1px solid black;">2017-10-11 05:22:57</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@inesxu/4n27i">想来也蛮搞笑的</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td style="border: 1px solid black;">7</td>
+    <td style="border: 1px solid black;">2.08</td>
+    <td style="border: 1px solid black;">1</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@pp1166">pp1166</a></td>
+    <td style="border: 1px solid black;">35.23</td>
+    <td style="border: 1px solid black;">2017-10-11 16:22:15</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@pp1166/3c5cjy">小米旗舰店</a></td>
   </tr>
   
 </table>
@@ -1135,12 +1303,12 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td style="border: 1px solid black;">1</td>
-    <td style="border: 1px solid black;">0.27</td>
-    <td style="border: 1px solid black;">6</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@marilis">marilis</a></td>
-    <td style="border: 1px solid black;">27.29</td>
-    <td style="border: 1px solid black;">2017-10-10 16:44:15</td>
-    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@marilis/23sczk">介绍//我的第一个出版物</a></td>
+    <td style="border: 1px solid black;">0.02</td>
+    <td style="border: 1px solid black;">1</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/@mahmoudgima">mahmoudgima</a></td>
+    <td style="border: 1px solid black;">27.97</td>
+    <td style="border: 1px solid black;">2017-10-11 06:50:39</td>
+    <td style="border: 1px solid black;"><a href="https://www.steemit.com/cn/@mahmoudgima/the-beauty-of-china">The beauty of china</a></td>
   </tr>
   
 </table>
