@@ -202,6 +202,49 @@
   </entry>
   
   <entry>
+    <title>Ruby Steem tutorial 1 - Setup Ruby development environment for Steem blockchain on Ubuntu 16</title>
+    <link href="https://www.yuxifan.com/2017/07/25/ruby-steem-1/"/>
+    <id>https://www.yuxifan.com/2017/07/25/ruby-steem-1/</id>
+    <published>2017-07-25T04:51:12.000Z</published>
+    <updated>2017-11-14T22:16:49.858Z</updated>
+    
+    <content type="html"><![CDATA[<p>Written by @inertia, Radiator is a Ruby API library for interacting with Steem blockchain network. I will write a series of tutorials to introduce how to use it. Let’s start with the environment setup now.</p>
+<p><img src="/images/ruby/ruby.png" alt=""></p>
+<h2 id="Install-development-libraries"><a href="#Install-development-libraries" class="headerlink" title="Install development libraries"></a>Install development libraries</h2><p>First, we need to install essential libraries:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get -y update</div><div class="line">sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline6-dev libyaml-dev</div></pre></td></tr></table></figure>
+<h2 id="Install-rbenv"><a href="#Install-rbenv" class="headerlink" title="Install rbenv"></a>Install rbenv</h2><p>If you haven’t heard rbenv yet, I would highly recommend it. It makes your life much easier while managing different versions of Ruby and gems. Here are how to install rbenv:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~</div><div class="line">git <span class="built_in">clone</span> git://github.com/sstephenson/rbenv.git .rbenv</div><div class="line"><span class="built_in">echo</span> <span class="string">'export PATH="$HOME/.rbenv/bin:$PATH"'</span> &gt;&gt; ~/.bash_profile</div><div class="line"><span class="built_in">echo</span> <span class="string">'eval "$(rbenv init -)"'</span> &gt;&gt; ~/.bash_profile</div><div class="line">git <span class="built_in">clone</span> git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build</div><div class="line"><span class="built_in">echo</span> <span class="string">'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"'</span> &gt;&gt; ~/.bash_profile</div><div class="line"><span class="built_in">source</span> ~/.bash_profile</div></pre></td></tr></table></figure>
+<h2 id="Install-ruby"><a href="#Install-ruby" class="headerlink" title="Install ruby"></a>Install ruby</h2><p>Now we are ready to install Ruby, let’s use the latest version, e.g. version 2.4.2:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rbenv install -v 2.4.2</div><div class="line">rbenv global 2.4.2</div></pre></td></tr></table></figure>
+<p>Now we can run this command to test if Ruby is installed correctly:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ruby -v</div></pre></td></tr></table></figure>
+<h2 id="Install-radiator"><a href="#Install-radiator" class="headerlink" title="Install radiator"></a>Install radiator</h2><p>We are ready to install radiator now, just type command as follows:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gem install radiator </div><div class="line">rbenv <span class="built_in">rehash</span></div></pre></td></tr></table></figure>
+<h2 id="Test-if-it-works"><a href="#Test-if-it-works" class="headerlink" title="Test if it works"></a>Test if it works</h2><p>Now let’s write a script to monitor all transfers in Steem blockchain:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'radiator'</span></div><div class="line"></div><div class="line">stream = Radiator::Stream.new</div><div class="line"></div><div class="line">stream.operations(<span class="symbol">:transfer</span>) <span class="keyword">do</span> <span class="params">|op|</span></div><div class="line">  puts <span class="string">"<span class="subst">#&#123;op.amount&#125;</span>: <span class="subst">#&#123;op.from&#125;</span> -&gt; <span class="subst">#&#123;op.to&#125;</span>"</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<p>The output looks like:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">0.100 STEEM: leyargoz -&gt; steemdice1</div><div class="line">1.400 STEEM: steemdice1 -&gt; jameslano</div><div class="line">0.045 SBD: boomerang -&gt; connecteconomy</div><div class="line">0.196 STEEM: steemdice1 -&gt; leyargoz</div><div class="line">0.001 SBD: boomerang -&gt; crypto-btc</div><div class="line">0.131 SBD: boomerang -&gt; danielsaori</div><div class="line">3.065 SBD: tezmel -&gt; buildawhale</div><div class="line">0.001 SBD: biddle -&gt; null</div><div class="line">0.179 SBD: boomerang -&gt; dhouse</div><div class="line">0.100 SBD: fury123 -&gt; nettybot</div></pre></td></tr></table></figure>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>We have setup Ruby development environments for Steem blockchains. In the following tutorials, we will see how to write interesting programs to interact with Steem blockchain.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Written by @inertia, Radiator is a Ruby API library for interacting with Steem blockchain network. I will write a series of tutorials to 
+    
+    </summary>
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
+    
+    
+      <category term="Ubuntu" scheme="https://www.yuxifan.com/tags/Ubuntu/"/>
+    
+      <category term="Ruby" scheme="https://www.yuxifan.com/tags/Ruby/"/>
+    
+      <category term="Steem" scheme="https://www.yuxifan.com/tags/Steem/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Multi-select facting in Java</title>
     <link href="https://www.yuxifan.com/2017/07/21/multi-select-faceting/"/>
     <id>https://www.yuxifan.com/2017/07/21/multi-select-faceting/</id>
@@ -828,48 +871,6 @@
       <category term="gem" scheme="https://www.yuxifan.com/tags/gem/"/>
     
       <category term="ssl" scheme="https://www.yuxifan.com/tags/ssl/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Create a shared folder between VirtualBox host and guest</title>
-    <link href="https://www.yuxifan.com/2017/01/11/create-shared-folder-in-virtualbox-vm/"/>
-    <id>https://www.yuxifan.com/2017/01/11/create-shared-folder-in-virtualbox-vm/</id>
-    <published>2017-01-11T09:51:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/linux/shared-folder.jpg" alt="shared folder in VM"></p>
-<p>(1) Configure a shared folder in VM settings</p>
-<p>(2) Start VM box</p>
-<p>(3) Click “Devices -&gt; Insert Guest Additions CD Image”</p>
-<p>(4) Log in to the VM</p>
-<p>(5) Mount CD-ROM:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo mount /dev/cdrom /media/cdrom</div><div class="line"><span class="built_in">cd</span> /media/cdrom</div></pre></td></tr></table></figure>
-<p>(6) Install dependencies:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -y dkms build-essential linux-headers-generic linux-headers-$(uname -r)</div></pre></td></tr></table></figure>
-<p>(7)<br>Install Guest Additions</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo su -</div><div class="line">./VBoxLinuxAdditions.run</div></pre></td></tr></table></figure>
-<p>(8)<br>Check that kernel extensions are up and running:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo modprobe vboxsf</div></pre></td></tr></table></figure>
-<p>If cannot find vboxsf, run following commands:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">/opt/VBoxGuestAdditions-4.3.30/init/vboxadd setup</div><div class="line">sudo apt-get install virtualbox-guest-utils</div><div class="line">sudo apt-get install virtualbox-guest-dkms</div></pre></td></tr></table></figure>
-<p>(9) When get vboxsf working,</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo mkdir /mnt/rubysrc</div><div class="line">mount -t vboxsf rubysrc /mnt/rubysrc</div></pre></td></tr></table></figure>
-<p>(10) To do auto mount, edit /etc/fstab and add:<br>SharedFolder   /mnt/share  vboxsf defaults 0 0</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/linux/shared-folder.jpg&quot; alt=&quot;shared folder in VM&quot;&gt;&lt;/p&gt;
-&lt;p&gt;(1) Configure a shared folder in VM settings&lt;/p&gt;
-&lt;p&gt;(2) Star
-    
-    </summary>
-    
-      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
-    
-    
-      <category term="virtualbox" scheme="https://www.yuxifan.com/tags/virtualbox/"/>
     
   </entry>
   

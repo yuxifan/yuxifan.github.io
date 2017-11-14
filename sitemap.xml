@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2017/07/25/ruby-steem-1/</loc>
+    
+    <lastmod>2017-11-14T22:16:49.858Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2017/09/27/how-to-use-imagemagick-in-ruby/</loc>
     
     <lastmod>2017-09-27T09:17:25.662Z</lastmod>
@@ -138,13 +145,6 @@
     <loc>https://www.yuxifan.com/2017/06/28/graphicsmagick/</loc>
     
     <lastmod>2017-06-28T10:22:44.373Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/09/06/2016-09-06-how-to-implement-hierarchical-faces/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
   </url>
   
@@ -451,6 +451,13 @@
   
   <url>
     <loc>https://www.yuxifan.com/2016/09/02/2016-09-02-how-to-close-an-iframe-within-iframe-itself/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/09/06/2016-09-06-how-to-implement-hierarchical-faces/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
