@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2017/07/26/ruby-steem-2/</loc>
+    
+    <lastmod>2017-11-14T22:37:02.698Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2017/07/25/ruby-steem-1/</loc>
     
     <lastmod>2017-11-14T22:16:49.858Z</lastmod>
@@ -149,13 +156,6 @@
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2017/02/23/config-tomcat-session-timeout/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.yuxifan.com/2017/01/11/create-shared-folder-in-virtualbox-vm/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
@@ -240,14 +240,14 @@
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2016/01/07/2016-01-07-dropbox-folder-icon-overlay-problem-and-solution/</loc>
+    <loc>https://www.yuxifan.com/2016/11/15/implement-a-distributed-redis-message-processing-system-in-rails/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2016/09/10/implement-a-slider-in-hexo/</loc>
+    <loc>https://www.yuxifan.com/2016/01/07/2016-01-07-dropbox-folder-icon-overlay-problem-and-solution/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
@@ -394,7 +394,7 @@
   </url>
   
   <url>
-    <loc>https://www.yuxifan.com/2016/11/15/implement-a-distributed-redis-message-processing-system-in-rails/</loc>
+    <loc>https://www.yuxifan.com/2016/09/10/implement-a-slider-in-hexo/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
@@ -458,6 +458,13 @@
   
   <url>
     <loc>https://www.yuxifan.com/2016/09/06/2016-09-06-how-to-implement-hierarchical-faces/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2017/02/23/config-tomcat-session-timeout/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     

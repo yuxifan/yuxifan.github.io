@@ -3,23 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Ruby Steem tutorial 1 - Setup Ruby development environment for Steem blockchain on Ubuntu 16 | Yuxi Fan</title>
+    <title>Ruby Steem tutorial 2 - Get Steem account information | Yuxi Fan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="Ubuntu,Ruby,Steem">
     
-    <meta name="description" content="Written by @inertia, Radiator is a Ruby API library for interacting with Steem blockchain network. I will write a series of tutorials to introduce how to use it. Let’s start with the environment setup">
+    <meta name="description" content="In this tutorial, we will focus on how to get Steem account information via radiator. By using this gem, we can easily get Steem users’ profile, balances, followers etc. If you haven’t setup your deve">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ruby Steem tutorial 1 - Setup Ruby development environment for Steem blockchain on Ubuntu 16">
-<meta property="og:url" content="https://www.yuxifan.com/2017/07/25/ruby-steem-1/index.html">
+<meta property="og:title" content="Ruby Steem tutorial 2 - Get Steem account information">
+<meta property="og:url" content="https://www.yuxifan.com/2017/07/26/ruby-steem-2/index.html">
 <meta property="og:site_name" content="Yuxi Fan">
-<meta property="og:description" content="Written by @inertia, Radiator is a Ruby API library for interacting with Steem blockchain network. I will write a series of tutorials to introduce how to use it. Let’s start with the environment setup">
-<meta property="og:image" content="https://www.yuxifan.com/images/ruby/ruby.png">
-<meta property="og:updated_time" content="2017-11-14T22:16:49.858Z">
+<meta property="og:description" content="In this tutorial, we will focus on how to get Steem account information via radiator. By using this gem, we can easily get Steem users’ profile, balances, followers etc. If you haven’t setup your deve">
+<meta property="og:image" content="https://www.yuxifan.com/images/ruby/account.png">
+<meta property="og:updated_time" content="2017-11-14T22:37:02.698Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ruby Steem tutorial 1 - Setup Ruby development environment for Steem blockchain on Ubuntu 16">
-<meta name="twitter:description" content="Written by @inertia, Radiator is a Ruby API library for interacting with Steem blockchain network. I will write a series of tutorials to introduce how to use it. Let’s start with the environment setup">
-<meta name="twitter:image" content="https://www.yuxifan.com/images/ruby/ruby.png">
+<meta name="twitter:title" content="Ruby Steem tutorial 2 - Get Steem account information">
+<meta name="twitter:description" content="In this tutorial, we will focus on how to get Steem account information via radiator. By using this gem, we can easily get Steem users’ profile, balances, followers etc. If you haven’t setup your deve">
+<meta name="twitter:image" content="https://www.yuxifan.com/images/ruby/account.png">
     
 
     
@@ -152,14 +152,14 @@ ga('send', 'pageview');
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-ruby-steem-1" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+                            <article id="post-ruby-steem-2" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Ruby Steem tutorial 1 - Setup Ruby development environment for Steem blockchain on Ubuntu 16
+        Ruby Steem tutorial 2 - Get Steem account information
         </h1>
     
 
@@ -167,8 +167,8 @@ ga('send', 'pageview');
         
         
             <div class="article-subtitle">
-                <a href="/2017/07/25/ruby-steem-1/" class="article-date">
-    <time datetime="2017-07-25T04:51:12.000Z" itemprop="datePublished">2017-07-25</time>
+                <a href="/2017/07/26/ruby-steem-2/" class="article-date">
+    <time datetime="2017-07-26T04:51:12.000Z" itemprop="datePublished">2017-07-26</time>
 </a>
                 
     <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ruby/">Ruby</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Steem/">Steem</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/">Ubuntu</a></li></ul>
@@ -180,23 +180,23 @@ ga('send', 'pageview');
 
             
 
-            <p>Written by @inertia, Radiator is a Ruby API library for interacting with Steem blockchain network. I will write a series of tutorials to introduce how to use it. Let’s start with the environment setup now.</p>
-<p><img src="/images/ruby/ruby.png" alt=""></p>
-<h2 id="Install-development-libraries"><a href="#Install-development-libraries" class="headerlink" title="Install development libraries"></a>Install development libraries</h2><p>First, we need to install essential libraries:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get -y update</div><div class="line">sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline6-dev libyaml-dev</div></pre></td></tr></table></figure>
-<h2 id="Install-rbenv"><a href="#Install-rbenv" class="headerlink" title="Install rbenv"></a>Install rbenv</h2><p>If you haven’t heard rbenv yet, I would highly recommend it. It makes your life much easier while managing different versions of Ruby and gems. Here are how to install rbenv:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~</div><div class="line">git <span class="built_in">clone</span> git://github.com/sstephenson/rbenv.git .rbenv</div><div class="line"><span class="built_in">echo</span> <span class="string">'export PATH="$HOME/.rbenv/bin:$PATH"'</span> &gt;&gt; ~/.bash_profile</div><div class="line"><span class="built_in">echo</span> <span class="string">'eval "$(rbenv init -)"'</span> &gt;&gt; ~/.bash_profile</div><div class="line">git <span class="built_in">clone</span> git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build</div><div class="line"><span class="built_in">echo</span> <span class="string">'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"'</span> &gt;&gt; ~/.bash_profile</div><div class="line"><span class="built_in">source</span> ~/.bash_profile</div></pre></td></tr></table></figure>
-<h2 id="Install-ruby"><a href="#Install-ruby" class="headerlink" title="Install ruby"></a>Install ruby</h2><p>Now we are ready to install Ruby, let’s use the latest version, e.g. version 2.4.2:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rbenv install -v 2.4.2</div><div class="line">rbenv global 2.4.2</div></pre></td></tr></table></figure>
-<p>Now we can run this command to test if Ruby is installed correctly:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ruby -v</div></pre></td></tr></table></figure>
-<h2 id="Install-radiator"><a href="#Install-radiator" class="headerlink" title="Install radiator"></a>Install radiator</h2><p>We are ready to install radiator now, just type command as follows:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gem install radiator </div><div class="line">rbenv <span class="built_in">rehash</span></div></pre></td></tr></table></figure>
-<h2 id="Test-if-it-works"><a href="#Test-if-it-works" class="headerlink" title="Test if it works"></a>Test if it works</h2><p>Now let’s write a script to monitor all transfers in Steem blockchain:</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'radiator'</span></div><div class="line"></div><div class="line">stream = Radiator::Stream.new</div><div class="line"></div><div class="line">stream.operations(<span class="symbol">:transfer</span>) <span class="keyword">do</span> <span class="params">|op|</span></div><div class="line">  puts <span class="string">"<span class="subst">#&#123;op.amount&#125;</span>: <span class="subst">#&#123;op.from&#125;</span> -&gt; <span class="subst">#&#123;op.to&#125;</span>"</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
-<p>The output looks like:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">0.100 STEEM: leyargoz -&gt; steemdice1</div><div class="line">1.400 STEEM: steemdice1 -&gt; jameslano</div><div class="line">0.045 SBD: boomerang -&gt; connecteconomy</div><div class="line">0.196 STEEM: steemdice1 -&gt; leyargoz</div><div class="line">0.001 SBD: boomerang -&gt; crypto-btc</div><div class="line">0.131 SBD: boomerang -&gt; danielsaori</div><div class="line">3.065 SBD: tezmel -&gt; buildawhale</div><div class="line">0.001 SBD: biddle -&gt; null</div><div class="line">0.179 SBD: boomerang -&gt; dhouse</div><div class="line">0.100 SBD: fury123 -&gt; nettybot</div></pre></td></tr></table></figure>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>We have setup Ruby development environments for Steem blockchains. In the following tutorials, we will see how to write interesting programs to interact with Steem blockchain.</p>
+            <p>In this tutorial, we will focus on how to get Steem account information via <a href="https://github.com/inertia186/radiator" rel="external nofollow noopener noreferrer" target="_blank">radiator</a>. By using this gem, we can easily get Steem users’ profile, balances, followers etc. If you haven’t setup your development environments, please check my <a href="2017/07/25/ruby-steem-1/">first tutorial</a>. </p>
+<p><img src="/images/ruby/account.png" alt=""></p>
+<h2 id="Get-basic-account-information"><a href="#Get-basic-account-information" class="headerlink" title="Get basic account information"></a>Get basic account information</h2><p>First, we need to use Api class defined in radiator:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'radiator'</span></div><div class="line"></div><div class="line">user = ’yuxi’</div><div class="line">api  = Radiator::Api.new</div><div class="line">account = api.find_account(user)</div><div class="line">puts account.name</div><div class="line">puts <span class="string">"Voting power: %.2f"</span> % (account.voting_power/<span class="number">100</span>.to_f)</div></pre></td></tr></table></figure>
+<p>User’s reputation needs a bit calculation:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">puts <span class="string">"Reputation:   %.2f"</span> % (Math::log1<span class="number">0</span>(account.reputation.to_f)*<span class="number">9</span>-<span class="number">56</span>)</div></pre></td></tr></table></figure>
+<p>Radiator supports alternative nodes in case of the official node becoming unresponsive. Just define a list of alternatives and pass it to Api class as follows:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">options = &#123;</div><div class="line">  <span class="symbol">ur:</span> <span class="string">'https://api.steemit.com'</span>,</div><div class="line">  <span class="symbol">failover_urls:</span> [</div><div class="line">    <span class="string">'https://api.steemitstage.com'</span></div><div class="line">  ]</div><div class="line">&#125;</div><div class="line"></div><div class="line">api = Radiator::Api.new(options)</div></pre></td></tr></table></figure>
+<h2 id="Parse-json-metadata"><a href="#Parse-json-metadata" class="headerlink" title="Parse json metadata"></a>Parse json metadata</h2><p>In Steem blockchain, user’s profile is stored in json_metadata. To parse json string, we need to install json gem:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem install json</div></pre></td></tr></table></figure>
+<p>Now we can parse json_metadata</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'radiator'</span></div><div class="line"><span class="keyword">require</span> <span class="string">'json'</span></div><div class="line"></div><div class="line">api = Radiator::Api.new</div><div class="line"></div><div class="line">j=JSON.parse(account.json_metadata)</div><div class="line">puts j[<span class="string">"profile"</span>][<span class="string">"about"</span>]</div><div class="line">puts j[<span class="string">"profile"</span>][<span class="string">"profile_image"</span>]</div><div class="line">puts j[<span class="string">"profile"</span>][<span class="string">"website"</span>]</div></pre></td></tr></table></figure>
+<h2 id="Read-account-balances"><a href="#Read-account-balances" class="headerlink" title="Read account balances"></a>Read account balances</h2><p>With the same account object we have just obtained, STEEM / SBD balances can be accessed: </p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">puts <span class="string">"SBD: %.2f"</span>   % (account.sbd_balance.to_f)</div><div class="line">puts <span class="string">"STEEM: %.2f"</span> % (account.balance.to_f)</div></pre></td></tr></table></figure>
+<h2 id="Get-follower-following-information"><a href="#Get-follower-following-information" class="headerlink" title="Get follower / following information"></a>Get follower / following information</h2><p>To access user’s follower / following information, we need to use FollowApi class, which makes call to steem API.</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">followapi = Radiator::FollowApi.new</div><div class="line"></div><div class="line">response  = followapi.get_followers(user, <span class="number">0</span>, <span class="string">'blog'</span>, <span class="number">10</span>)</div><div class="line">followers = response.result.map(&amp;<span class="symbol">:follower</span>)</div><div class="line">puts <span class="string">'followers'</span></div><div class="line">puts followers</div><div class="line"></div><div class="line">response  = followapi.get_following(user, <span class="number">0</span>, <span class="string">'blog'</span>, <span class="number">10</span>)</div><div class="line">following = response.result.map(&amp;<span class="symbol">:following</span>)</div><div class="line">puts <span class="string">"\nfollowing"</span></div><div class="line">puts following</div></pre></td></tr></table></figure>
+<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>In this tutorial, we use radiator to get Steem user information, including user’s profile, balances, followers/following. There are much more the radiator API can offer, I would leave it to you to explore. </p>
 
 
             
@@ -216,7 +216,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://www.yuxifan.com/2017/07/25/ruby-steem-1/" data-id="cja06h80u0000buxu3x96s6qt" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://www.yuxifan.com/2017/07/26/ruby-steem-2/" data-id="cja0772v80000p4xu5qfas69u" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -495,7 +495,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'yuxifan';
     
     
-    var disqus_url = 'https://www.yuxifan.com/2017/07/25/ruby-steem-1/';
+    var disqus_url = 'https://www.yuxifan.com/2017/07/26/ruby-steem-2/';
     
     (function() {
     var dsq = document.createElement('script');
