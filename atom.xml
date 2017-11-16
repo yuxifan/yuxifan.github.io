@@ -202,6 +202,45 @@
   </entry>
   
   <entry>
+    <title>Ruby Steem tutorial 3 - Get Steem posts information</title>
+    <link href="https://www.yuxifan.com/2017/07/27/ruby-steem-3/"/>
+    <id>https://www.yuxifan.com/2017/07/27/ruby-steem-3/</id>
+    <published>2017-07-27T04:51:12.000Z</published>
+    <updated>2017-11-16T09:25:14.025Z</updated>
+    
+    <content type="html"><![CDATA[<p>In the previous tutorial, we discussed how to get Steem account information via radiator, today we will learn how to get Steem post information, e.g. author, votes, pending payouts, also we will see how to vote a post in Ruby program. If you haven’t setup your development environments, please check my <a href="2017/07/25/ruby-steem-1/">first tutorial</a>.</p>
+<p><img src="/images/ruby/post.jpg" alt=""></p>
+<p>Image credit to: pixabay.com</p>
+<h2 id="Read-user’s-most-recent-posts"><a href="#Read-user’s-most-recent-posts" class="headerlink" title="Read user’s most recent posts"></a>Read user’s most recent posts</h2><p>FollowApi class can be used to access posts from a particular user, or from user’s feed. The following code will read a user’s latest three posts.</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'radiator'</span></div><div class="line"></div><div class="line">user = <span class="string">'yuxid'</span></div><div class="line"></div><div class="line">followapi = Radiator::FollowApi.new</div><div class="line"></div><div class="line"><span class="comment"># get latest posts from a particular user</span></div><div class="line">posts = followapi.get_blog_entries(user, -<span class="number">1</span>, <span class="number">3</span>)</div><div class="line"><span class="keyword">for</span> post <span class="keyword">in</span> posts.result</div><div class="line">  puts post.permlink</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="Get-latest-posts-from-user’s-feed"><a href="#Get-latest-posts-from-user’s-feed" class="headerlink" title="Get latest posts from user’s feed"></a>Get latest posts from user’s feed</h2><p>FollowApi can be used to get posts from user’s feed as well.</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">feeds = followapi.get_feed_entries(user, -<span class="number">1</span>, <span class="number">3</span>)</div><div class="line"><span class="keyword">for</span> feed <span class="keyword">in</span> feeds.result</div><div class="line">  puts <span class="string">'@'</span> + feed.author + <span class="string">'/'</span> + feed.permlink</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="Get-posts-by-payout"><a href="#Get-posts-by-payout" class="headerlink" title="Get posts by payout"></a>Get posts by payout</h2><p>We may be interested in the top posts in a particular category. For example, get top 5 posts by payout in utopian-io category:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">dbapi = Radiator::DatabaseApi.new</div><div class="line">posts = dbapi.get_post_discussions_by_payout(&#123;<span class="string">"tag"</span><span class="symbol">:<span class="string">"utopian-io"</span></span>,<span class="string">"limit"</span><span class="symbol">:</span><span class="number">5</span>&#125;)</div><div class="line"><span class="keyword">for</span> post <span class="keyword">in</span> posts.result</div><div class="line">  puts <span class="string">'--------------'</span></div><div class="line">  puts post.author</div><div class="line">  puts post.title</div><div class="line">  puts post.created</div><div class="line">  puts post.pending_payout_value</div><div class="line">  puts post.url</div><div class="line">  puts post.net_votes</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="Get-comments-by-payout"><a href="#Get-comments-by-payout" class="headerlink" title="Get comments by payout"></a>Get comments by payout</h2><p>Comments work in the similar way to posts. To get comments by payout in utopian-io category:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">comments = dbapi.get_comment_discussions_by_payout(&#123;<span class="string">"tag"</span><span class="symbol">:<span class="string">"utopian-io"</span></span>,<span class="string">"limit"</span><span class="symbol">:</span><span class="number">5</span>&#125;)</div><div class="line"><span class="keyword">for</span> comment <span class="keyword">in</span> comments.result</div><div class="line">  puts <span class="string">'--------------'</span></div><div class="line">  puts comment.author</div><div class="line">  puts comment.created</div><div class="line">  puts comment.pending_payout_value</div><div class="line">  puts comment.url</div><div class="line">  puts comment.net_votes</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="vote"><a href="#vote" class="headerlink" title="vote"></a>vote</h2><p>To cast a vote to a post, we need to get the private posting key. Replace PRIVATE_POSTING_KEY by your private posting key in the following code:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'radiator'</span></div><div class="line"></div><div class="line">tx = Radiator::Transaction.new(<span class="symbol">wif:</span> <span class="string">'PRIVATE_POSTING_KEY'</span>)</div><div class="line">vote = &#123;</div><div class="line">  <span class="symbol">type:</span>   <span class="symbol">:vote</span>,</div><div class="line">  <span class="symbol">voter:</span>  <span class="string">'yuxid'</span>,</div><div class="line">  <span class="symbol">author:</span> <span class="string">'elear'</span>,</div><div class="line">  <span class="symbol">permlink:</span> <span class="string">'utopian-the-landing-page-is-finally-out-have-a-look'</span>,</div><div class="line">  <span class="symbol">weight:</span> <span class="number">10000</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">tx.operations &lt;&lt; vote</div><div class="line">tx.process(<span class="literal">true</span>)</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In the previous tutorial, we discussed how to get Steem account information via radiator, today we will learn how to get Steem post infor
+    
+    </summary>
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
+    
+    
+      <category term="Ubuntu" scheme="https://www.yuxifan.com/tags/Ubuntu/"/>
+    
+      <category term="Ruby" scheme="https://www.yuxifan.com/tags/Ruby/"/>
+    
+      <category term="Steem" scheme="https://www.yuxifan.com/tags/Steem/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Ruby Steem tutorial 2 - Get Steem account information</title>
     <link href="https://www.yuxifan.com/2017/07/26/ruby-steem-2/"/>
     <id>https://www.yuxifan.com/2017/07/26/ruby-steem-2/</id>
@@ -846,38 +885,6 @@
       <category term="java" scheme="https://www.yuxifan.com/tags/java/"/>
     
       <category term="Tomcat" scheme="https://www.yuxifan.com/tags/Tomcat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Parse Excel spreadsheet in Ruby</title>
-    <link href="https://www.yuxifan.com/2017/01/29/parse-excel-spreadsheet-in-ruby/"/>
-    <id>https://www.yuxifan.com/2017/01/29/parse-excel-spreadsheet-in-ruby/</id>
-    <published>2017-01-29T02:10:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/ruby/excel.png" alt="parse excel spreadsheet in Ruby"></p>
-<p>First, install this gem: <a href="https://github.com/roo-rb/roo" rel="external nofollow noopener noreferrer" target="_blank">Roo</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem install roo</div></pre></td></tr></table></figure>
-<p>Then, use classes/methods provided in Roo to access Excel data, e.g. there is my example to iterate Excel spreadsheet data.</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># gem install roo</span></div><div class="line"></div><div class="line"><span class="keyword">require</span> <span class="string">'roo'</span></div><div class="line"></div><div class="line">xsl = Roo::Spreadsheet.open(<span class="string">'./test1.xlsx'</span>)</div><div class="line"></div><div class="line">xsl.sheets.each <span class="keyword">do</span> <span class="params">|sheet_name|</span></div><div class="line">  puts <span class="string">''</span></div><div class="line">  puts sheet_name</div><div class="line">  puts <span class="string">'--------------'</span></div><div class="line">  sheet = xsl.sheet(sheet_name)</div><div class="line"></div><div class="line">  <span class="keyword">if</span> !sheet.<span class="literal">nil</span>?</div><div class="line">    last_row    = sheet.last_row</div><div class="line">    last_column = sheet.last_column</div><div class="line"></div><div class="line">    <span class="keyword">if</span> !last_row.<span class="literal">nil</span>? <span class="keyword">and</span> !last_column.<span class="literal">nil</span>?</div><div class="line">      <span class="keyword">for</span> row <span class="keyword">in</span> <span class="number">1</span>..last_row</div><div class="line">        <span class="keyword">for</span> col <span class="keyword">in</span> <span class="number">1</span>..last_column</div><div class="line">          v = sheet.cell(row, col)</div><div class="line"></div><div class="line">          <span class="keyword">if</span> v.<span class="literal">nil</span>?</div><div class="line">            puts <span class="string">"NIL"</span></div><div class="line">          <span class="keyword">else</span></div><div class="line">            puts <span class="string">"["</span>+row.to_s+<span class="string">","</span>+col.to_s+<span class="string">"]: "</span> + sheet.cell(row, col)</div><div class="line">          <span class="keyword">end</span></div><div class="line">        <span class="keyword">end</span></div><div class="line">      <span class="keyword">end</span></div><div class="line">    <span class="keyword">else</span></div><div class="line">      puts <span class="string">'Seems no data in sheet: '</span> + sheet_name</div><div class="line">    <span class="keyword">end</span></div><div class="line">  <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/ruby/excel.png&quot; alt=&quot;parse excel spreadsheet in Ruby&quot;&gt;&lt;/p&gt;
-&lt;p&gt;First, install this gem: &lt;a href=&quot;https://github.com/roo-
-    
-    </summary>
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
-    
-    
-      <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
-    
-      <category term="excel" scheme="https://www.yuxifan.com/tags/excel/"/>
-    
-      <category term="spreadsheet" scheme="https://www.yuxifan.com/tags/spreadsheet/"/>
     
   </entry>
   

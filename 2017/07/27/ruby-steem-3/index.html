@@ -3,18 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Tag: html | Yuxi Fan</title>
+    <title>Ruby Steem tutorial 3 - Get Steem posts information | Yuxi Fan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="Yuxi&apos;s development blog, Java, Ruby, Rails, Web, Linux, Puppet, Git">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yuxi Fan">
-<meta property="og:url" content="https://www.yuxifan.com/tags/html/index.html">
+        <meta name="keywords" content="Ubuntu,Ruby,Steem">
+    
+    <meta name="description" content="In the previous tutorial, we discussed how to get Steem account information via radiator, today we will learn how to get Steem post information, e.g. author, votes, pending payouts, also we will see h">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ruby Steem tutorial 3 - Get Steem posts information">
+<meta property="og:url" content="https://www.yuxifan.com/2017/07/27/ruby-steem-3/index.html">
 <meta property="og:site_name" content="Yuxi Fan">
-<meta property="og:description" content="Yuxi&apos;s development blog, Java, Ruby, Rails, Web, Linux, Puppet, Git">
+<meta property="og:description" content="In the previous tutorial, we discussed how to get Steem account information via radiator, today we will learn how to get Steem post information, e.g. author, votes, pending payouts, also we will see h">
+<meta property="og:image" content="https://www.yuxifan.com/images/ruby/post.jpg">
+<meta property="og:updated_time" content="2017-11-16T09:25:14.025Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yuxi Fan">
-<meta name="twitter:description" content="Yuxi&apos;s development blog, Java, Ruby, Rails, Web, Linux, Puppet, Git">
+<meta name="twitter:title" content="Ruby Steem tutorial 3 - Get Steem posts information">
+<meta name="twitter:description" content="In the previous tutorial, we discussed how to get Steem account information via radiator, today we will learn how to get Steem post information, e.g. author, votes, pending payouts, also we will see h">
+<meta name="twitter:image" content="https://www.yuxifan.com/images/ruby/post.jpg">
     
 
     
@@ -140,79 +145,146 @@ ga('send', 'pageview');
   
     <h1 class="header">
     
-    <i class="icon fa fa-tag"></i>Tag: <em>html</em>
+    <a class="page-title-link" href="/categories/ruby/">ruby</a>
     </h1>
   
 
 </div>
 
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-ruby-steem-3" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2015" class="archive-year"><i class="icon fa fa-calendar-o"></i>2015</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2015/09/21/2015-09-21-batch-minify-html-in-linux-terminal/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/linux/code-minified.jpg)" alt="How to batch minify HTML pages in linux command line" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="https://www.yuxifan.com/2015/09/21/2015-09-21-batch-minify-html-in-linux-terminal/">0</span>
-    
-</span>
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <p class="category">
-            <a class="article-category-link" href="/categories/linux/">linux</a>
-            </p>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2015/09/21/2015-09-21-batch-minify-html-in-linux-terminal/">How to batch minify HTML pages in linux command line</a>
+        Ruby Steem tutorial 3 - Get Steem posts information
         </h1>
     
 
-        <p class="article-excerpt">
+            </header>
+        
+        
+            <div class="article-subtitle">
+                <a href="/2017/07/27/ruby-steem-3/" class="article-date">
+    <time datetime="2017-07-27T04:51:12.000Z" itemprop="datePublished">2017-07-27</time>
+</a>
+                
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ruby/">Ruby</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Steem/">Steem</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/">Ubuntu</a></li></ul>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+
             
-First, install a nodejs module:
-1npm install html-minifier-cli -g
-Second, write a script like this:
-123456cd publicfor f in $(find . -name '*.html'); do  echo "Minifying $f ..."  htmlmin -o $f.min $f
-        </p>
+
+            <p>In the previous tutorial, we discussed how to get Steem account information via radiator, today we will learn how to get Steem post information, e.g. author, votes, pending payouts, also we will see how to vote a post in Ruby program. If you haven’t setup your development environments, please check my <a href="2017/07/25/ruby-steem-1/">first tutorial</a>.</p>
+<p><img src="/images/ruby/post.jpg" alt=""></p>
+<p>Image credit to: pixabay.com</p>
+<h2 id="Read-user’s-most-recent-posts"><a href="#Read-user’s-most-recent-posts" class="headerlink" title="Read user’s most recent posts"></a>Read user’s most recent posts</h2><p>FollowApi class can be used to access posts from a particular user, or from user’s feed. The following code will read a user’s latest three posts.</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'radiator'</span></div><div class="line"></div><div class="line">user = <span class="string">'yuxid'</span></div><div class="line"></div><div class="line">followapi = Radiator::FollowApi.new</div><div class="line"></div><div class="line"><span class="comment"># get latest posts from a particular user</span></div><div class="line">posts = followapi.get_blog_entries(user, -<span class="number">1</span>, <span class="number">3</span>)</div><div class="line"><span class="keyword">for</span> post <span class="keyword">in</span> posts.result</div><div class="line">  puts post.permlink</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="Get-latest-posts-from-user’s-feed"><a href="#Get-latest-posts-from-user’s-feed" class="headerlink" title="Get latest posts from user’s feed"></a>Get latest posts from user’s feed</h2><p>FollowApi can be used to get posts from user’s feed as well.</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">feeds = followapi.get_feed_entries(user, -<span class="number">1</span>, <span class="number">3</span>)</div><div class="line"><span class="keyword">for</span> feed <span class="keyword">in</span> feeds.result</div><div class="line">  puts <span class="string">'@'</span> + feed.author + <span class="string">'/'</span> + feed.permlink</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="Get-posts-by-payout"><a href="#Get-posts-by-payout" class="headerlink" title="Get posts by payout"></a>Get posts by payout</h2><p>We may be interested in the top posts in a particular category. For example, get top 5 posts by payout in utopian-io category:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">dbapi = Radiator::DatabaseApi.new</div><div class="line">posts = dbapi.get_post_discussions_by_payout(&#123;<span class="string">"tag"</span><span class="symbol">:<span class="string">"utopian-io"</span></span>,<span class="string">"limit"</span><span class="symbol">:</span><span class="number">5</span>&#125;)</div><div class="line"><span class="keyword">for</span> post <span class="keyword">in</span> posts.result</div><div class="line">  puts <span class="string">'--------------'</span></div><div class="line">  puts post.author</div><div class="line">  puts post.title</div><div class="line">  puts post.created</div><div class="line">  puts post.pending_payout_value</div><div class="line">  puts post.url</div><div class="line">  puts post.net_votes</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="Get-comments-by-payout"><a href="#Get-comments-by-payout" class="headerlink" title="Get comments by payout"></a>Get comments by payout</h2><p>Comments work in the similar way to posts. To get comments by payout in utopian-io category:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">comments = dbapi.get_comment_discussions_by_payout(&#123;<span class="string">"tag"</span><span class="symbol">:<span class="string">"utopian-io"</span></span>,<span class="string">"limit"</span><span class="symbol">:</span><span class="number">5</span>&#125;)</div><div class="line"><span class="keyword">for</span> comment <span class="keyword">in</span> comments.result</div><div class="line">  puts <span class="string">'--------------'</span></div><div class="line">  puts comment.author</div><div class="line">  puts comment.created</div><div class="line">  puts comment.pending_payout_value</div><div class="line">  puts comment.url</div><div class="line">  puts comment.net_votes</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="vote"><a href="#vote" class="headerlink" title="vote"></a>vote</h2><p>To cast a vote to a post, we need to get the private posting key. Replace PRIVATE_POSTING_KEY by your private posting key in the following code:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'radiator'</span></div><div class="line"></div><div class="line">tx = Radiator::Transaction.new(<span class="symbol">wif:</span> <span class="string">'PRIVATE_POSTING_KEY'</span>)</div><div class="line">vote = &#123;</div><div class="line">  <span class="symbol">type:</span>   <span class="symbol">:vote</span>,</div><div class="line">  <span class="symbol">voter:</span>  <span class="string">'yuxid'</span>,</div><div class="line">  <span class="symbol">author:</span> <span class="string">'elear'</span>,</div><div class="line">  <span class="symbol">permlink:</span> <span class="string">'utopian-the-landing-page-is-finally-out-have-a-look'</span>,</div><div class="line">  <span class="symbol">weight:</span> <span class="number">10000</span></div><div class="line">&#125;</div><div class="line"></div><div class="line">tx.operations &lt;&lt; vote</div><div class="line">tx.process(<span class="literal">true</span>)</div></pre></td></tr></table></figure>
+
+
+            
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+              <!-- autosize -->
+              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9869806761757481" data-ad-slot="8827673952" data-ad-format="auto"></ins>
+
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://www.yuxifan.com/2017/07/27/ruby-steem-3/" data-id="cja29spww0000yuxu06yg50ue" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
     </div>
 </article>
 
+    <section id="comments">
     
-        </div>
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
     
-
-
-    </div></section>
-
+    </section>
 
 
                         </div>
@@ -419,11 +491,13 @@ Second, write a script like this:
     var disqus_shortname = 'yuxifan';
     
     
+    var disqus_url = 'https://www.yuxifan.com/2017/07/27/ruby-steem-3/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
