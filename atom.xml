@@ -160,6 +160,50 @@
   </entry>
   
   <entry>
+    <title>Ruby Steem tutorial 4 - Claim rewards automatically</title>
+    <link href="https://www.yuxifan.com/2017/07/28/ruby-steem-4/"/>
+    <id>https://www.yuxifan.com/2017/07/28/ruby-steem-4/</id>
+    <published>2017-07-28T04:51:12.000Z</published>
+    <updated>2017-11-17T21:56:40.710Z</updated>
+    
+    <content type="html"><![CDATA[<p>In the previous tutorial, we discussed how to get Steem account and post information via radiator, today we will learn how to claim rewards automatically by writing a Ruby program. </p>
+<h2 id="The-problem"><a href="#The-problem" class="headerlink" title="The problem"></a>The problem</h2><p>Everytime when the rewards arrive, user need to login and click the “Redeem Rewards (Transfer To Balance)” button to claim. Repeating doing this is very tedious. In this tutorial, we will find a solution to do this job automatically for us.</p>
+<p><img src="/images/ruby/steem-rewards.png" alt=""></p>
+<h2 id="Write-Ruby-code-to-do-the-job"><a href="#Write-Ruby-code-to-do-the-job" class="headerlink" title="Write Ruby code to do the job"></a>Write Ruby code to do the job</h2><p>In the following code, your private posting key will be needed. </p>
+<p>First we need to use Radiator Api to find if there are any rewards available to claim. If yes, Transaction Api can be used to claim the rewards.</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">require</span> <span class="string">'radiator'</span></div><div class="line"></div><div class="line">user = <span class="string">'yuxi'</span></div><div class="line">pkey = <span class="string">'YOUR_PRIVATE_POSTING_KEY'</span></div><div class="line"></div><div class="line">api = Radiator::Api.new()</div><div class="line">account = api.find_account(user)</div><div class="line">reward_sbd     = account.reward_sbd_balance</div><div class="line">reward_steem   = account.reward_steem_balance</div><div class="line">reward_vesting = account.reward_vesting_balance</div><div class="line"></div><div class="line"><span class="keyword">if</span> reward_sbd!=<span class="string">'0.000 SBD'</span> <span class="keyword">or</span> reward_steem!=<span class="string">'0.000 STEEM'</span> <span class="keyword">or</span> reward_vesting!=<span class="string">'0.000 VESTS'</span></div><div class="line">  tx = Radiator::Transaction.new(<span class="symbol">wif:</span> pkey)</div><div class="line">  claim = &#123;</div><div class="line">    <span class="symbol">type:</span>     <span class="symbol">:claim_reward_balance</span>,</div><div class="line">    <span class="symbol">account:</span>  user</div><div class="line">  &#125;</div><div class="line">  claim[<span class="symbol">:reward_steem</span>] = reward_steem</div><div class="line">  claim[<span class="symbol">:reward_sbd</span>]   = reward_sbd</div><div class="line">  claim[<span class="symbol">:reward_vests</span>] = reward_vesting</div><div class="line">  tx.operations &lt;&lt; claim</div><div class="line">  tx.process(<span class="literal">true</span>)</div><div class="line">  print <span class="string">'Claimed: '</span></div><div class="line">  print reward_steem + <span class="string">' '</span> <span class="keyword">if</span> reward_steem != <span class="string">'0.000 STEEM'</span></div><div class="line">  print reward_sbd + <span class="string">' '</span>   <span class="keyword">if</span> reward_sbd != <span class="string">'0.000 SBD'</span></div><div class="line">  print reward_vesting     <span class="keyword">if</span> reward_vesting !=<span class="string">'0.000 VESTS'</span></div><div class="line">  puts</div><div class="line"><span class="keyword">else</span></div><div class="line">  puts <span class="string">'Nothing to claim.'</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<p>Now we can test the above Ruby script by running:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ruby auto_claim.rb</div></pre></td></tr></table></figure>
+<p>The output looks like:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Nothing to claim.</div></pre></td></tr></table></figure>
+<p>If there are any rewards being claimed, the output looks like:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Claimed: 47.236998 VESTS</div></pre></td></tr></table></figure></p>
+<h2 id="Setup-a-cron-job"><a href="#Setup-a-cron-job" class="headerlink" title="Setup a cron job"></a>Setup a cron job</h2><p>To make the scripts automatically run, we can config a cron job, e.g. in Ubuntu OS, just type:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nano /home/yuxi/claim.sh</div></pre></td></tr></table></figure>
+<p>Enter the following content:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#!/bin/bash</span></div><div class="line"></div><div class="line">ruby /home/yuxi/auto_claim.rb</div></pre></td></tr></table></figure>
+<p>Then add the bash script into the cron job list by typing:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">crontab -e</div><div class="line">``` </div><div class="line"></div><div class="line">Add the following link <span class="keyword">in</span> the editor:</div><div class="line"></div><div class="line">```bash</div><div class="line">00 * * * * /home/yuxi/claim.sh &gt;&gt; /home/yuxi/logs/claims.log 2&gt;&amp;1</div></pre></td></tr></table></figure>
+<p>Then your script will run every hour automatically to claim all rewards for you. </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;In the previous tutorial, we discussed how to get Steem account and post information via radiator, today we will learn how to claim rewar
+    
+    </summary>
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
+    
+    
+      <category term="Ubuntu" scheme="https://www.yuxifan.com/tags/Ubuntu/"/>
+    
+      <category term="Ruby" scheme="https://www.yuxifan.com/tags/Ruby/"/>
+    
+      <category term="Steem" scheme="https://www.yuxifan.com/tags/Steem/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Setup python development environment for Steem on Ubuntu 16</title>
     <link href="https://www.yuxifan.com/2017/07/28/setup-python-steem-development-environment/"/>
     <id>https://www.yuxifan.com/2017/07/28/setup-python-steem-development-environment/</id>
@@ -857,34 +901,6 @@
       <category term="Wordpress" scheme="https://www.yuxifan.com/tags/Wordpress/"/>
     
       <category term="LEMP" scheme="https://www.yuxifan.com/tags/LEMP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Config Tomcat session timeout</title>
-    <link href="https://www.yuxifan.com/2017/02/23/config-tomcat-session-timeout/"/>
-    <id>https://www.yuxifan.com/2017/02/23/config-tomcat-session-timeout/</id>
-    <published>2017-02-23T09:51:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/java/tomcat.png" alt="Where to config Tomcat session timeout"></p>
-<p>There are three places to config Tomcat web application session timeout:</p>
-<p>$tomcat_home/conf/web.xml<br>$your_webapp/WEB-INF/web.xml<br>manual invocation of HttpSession.setMaxInactiveInterval(int)</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/java/tomcat.png&quot; alt=&quot;Where to config Tomcat session timeout&quot;&gt;&lt;/p&gt;
-&lt;p&gt;There are three places to config Tomcat web appli
-    
-    </summary>
-    
-      <category term="java" scheme="https://www.yuxifan.com/categories/java/"/>
-    
-    
-      <category term="java" scheme="https://www.yuxifan.com/tags/java/"/>
-    
-      <category term="Tomcat" scheme="https://www.yuxifan.com/tags/Tomcat/"/>
     
   </entry>
   
