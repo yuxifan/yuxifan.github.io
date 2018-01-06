@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><id>https://www.yuxifan.com/atom/atom_steemit.xml</id><title>Yuxi Steemit ATOM feed</title><updated>2018-01-05T03:02:02.351161+00:00</updated><author><name>Yuxi</name><email>info@yuxifan.com</email></author><link href="https://www.yuxifan.com/atom/atom_steemit.xml" rel="self"/><generator>yuxi</generator><entry><id>https://www.yuxifan.com/atom/atom_steemit/cn/2018-01-04</id><title>daily popular posts in cn on 2018-01-04</title><updated>2018-01-05T03:02:03.121430+00:00</updated><content type="html"><![CDATA[
-<h2>Top 30 posts in category: cn on 2018-01-04</h2>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><id>https://www.yuxifan.com/atom/atom_steemit.xml</id><title>Yuxi Steemit ATOM feed</title><updated>2018-01-06T03:02:02.329632+00:00</updated><author><name>Yuxi</name><email>info@yuxifan.com</email></author><link href="https://www.yuxifan.com/atom/atom_steemit.xml" rel="self"/><generator>yuxi</generator><entry><id>https://www.yuxifan.com/atom/atom_steemit/cn/2018-01-05</id><title>daily popular posts in cn on 2018-01-05</title><updated>2018-01-06T03:02:02.482461+00:00</updated><content type="html"><![CDATA[
+<h2>Top 30 posts in category: cn on 2018-01-05</h2>
 
 <img src="https://www.yuxifan.com/images/steem-statistics.jpg"/><br/>
 
@@ -19,1119 +19,365 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>196.12</td>
-    <td>90</td>
-    <td><a href="https://www.steemit.com/@blackbunny">blackbunny</a></td>
-    <td>68.94</td>
-    <td>2018-01-04 02:03:33</td>
-    <td><a href="https://www.steemit.com/cn/@blackbunny/4aev3c">偷吃儿子小食品</a></td>
+    <td>327.94</td>
+    <td>187</td>
+    <td><a href="https://www.steemit.com/@rea">rea</a></td>
+    <td>70.07</td>
+    <td>2018-01-05 08:04:48</td>
+    <td><a href="https://www.steemit.com/cn/@rea/a-memorable-evening-with-some-exceptional-steemit-friends-steemian">A Memorable Evening with some Exceptional Steemit Friends / 难忘的Steemian聚会</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>167.35</td>
-    <td>109</td>
-    <td><a href="https://www.steemit.com/@rivalhw">rivalhw</a></td>
-    <td>71.97</td>
-    <td>2018-01-04 10:55:36</td>
-    <td><a href="https://www.steemit.com/cn/@rivalhw/3vknsw">你凭什么给人推荐书 下</a></td>
+    <td>272.64</td>
+    <td>204</td>
+    <td><a href="https://www.steemit.com/@oflyhigh">oflyhigh</a></td>
+    <td>74.14</td>
+    <td>2018-01-05 01:48:36</td>
+    <td><a href="https://www.steemit.com/cn/@oflyhigh/6bzkcs">惊喜，新股申购中了个签??</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>159.87</td>
-    <td>105</td>
-    <td><a href="https://www.steemit.com/@rivalhw">rivalhw</a></td>
-    <td>71.97</td>
-    <td>2018-01-04 09:55:24</td>
-    <td><a href="https://www.steemit.com/cn/@rivalhw/4dypd6">你凭什么给人推荐书 上</a></td>
+    <td>205.72</td>
+    <td>152</td>
+    <td><a href="https://www.steemit.com/@deanliu">deanliu</a></td>
+    <td>72.93</td>
+    <td>2018-01-05 08:31:15</td>
+    <td><a href="https://www.steemit.com/cn/@deanliu/steem-relativity-of-life">[ Steem十講之第六講 ] 人生相對論  Relativity of Life</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>143.04</td>
-    <td>10</td>
-    <td><a href="https://www.steemit.com/@allanlong">allanlong</a></td>
-    <td>52.59</td>
-    <td>2018-01-04 08:49:36</td>
-    <td><a href="https://www.steemit.com/cn/@allanlong/6kqkue">海底世界一一瓦鲁阿图游记(四)</a></td>
+    <td>189.24</td>
+    <td>54</td>
+    <td><a href="https://www.steemit.com/@xiaohui">xiaohui</a></td>
+    <td>67.05</td>
+    <td>2018-01-05 04:03:42</td>
+    <td><a href="https://www.steemit.com/cn/@xiaohui/n">人生逆天技能：如何扭曲主观时空，一辈子活成 N 辈子？</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>5</td>
-    <td>56.47</td>
-    <td>38</td>
-    <td><a href="https://www.steemit.com/@victory622">victory622</a></td>
-    <td>62.13</td>
-    <td>2018-01-04 06:08:09</td>
-    <td><a href="https://www.steemit.com/cn/@victory622/travel-with-me-in-civita-di-bagnoregio-italy-castle-in-the-sky">跟我去看真实的“天空之城”  - Travel with me in Civita di Bagnoregio, Italy -- 这里是宫崎骏的灵感来源 ~~~【Castle in the Sky】</a></td>
+    <td>183.47</td>
+    <td>92</td>
+    <td><a href="https://www.steemit.com/@blackbunny">blackbunny</a></td>
+    <td>68.95</td>
+    <td>2018-01-05 06:58:06</td>
+    <td><a href="https://www.steemit.com/cn/@blackbunny/7fund8">阿姨给我糖果了</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>6</td>
-    <td>53.18</td>
-    <td>28</td>
-    <td><a href="https://www.steemit.com/@ygern">ygern</a></td>
-    <td>64.01</td>
-    <td>2018-01-04 14:04:21</td>
-    <td><a href="https://www.steemit.com/cn/@ygern/books-the-age-of-cryptocurrency">［Books］《虛擬貨幣革命》（The Age of Cryptocurrency），讀比特幣的誕生故事</a></td>
+    <td>144.67</td>
+    <td>25</td>
+    <td><a href="https://www.steemit.com/@timool">timool</a></td>
+    <td>59.28</td>
+    <td>2018-01-05 14:59:09</td>
+    <td><a href="https://www.steemit.com/cn/@timool/4p12yz">数字货币的造富神话！</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>7</td>
-    <td>48.75</td>
-    <td>18</td>
-    <td><a href="https://www.steemit.com/@sanzuwu">sanzuwu</a></td>
-    <td>43.02</td>
-    <td>2018-01-04 08:24:21</td>
-    <td><a href="https://www.steemit.com/cn/@sanzuwu/or-or">刘邦怎么给吕后设埋伏的之一|月旦评|</a></td>
+    <td>129.37</td>
+    <td>104</td>
+    <td><a href="https://www.steemit.com/@rivalhw">rivalhw</a></td>
+    <td>71.97</td>
+    <td>2018-01-05 13:06:39</td>
+    <td><a href="https://www.steemit.com/cn/@rivalhw/4yrzta">做最好的自己</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>8</td>
-    <td>47.26</td>
-    <td>90</td>
-    <td><a href="https://www.steemit.com/@arcange">arcange</a></td>
-    <td>69.15</td>
-    <td>2018-01-04 14:04:45</td>
-    <td><a href="https://www.steemit.com/cn/@arcange/steemit-statistics-20180103-cn">Steemit 统计数据 – 2018.01.03</a></td>
+    <td>80.46</td>
+    <td>107</td>
+    <td><a href="https://www.steemit.com/@htliao">htliao</a></td>
+    <td>69.80</td>
+    <td>2018-01-05 02:24:09</td>
+    <td><a href="https://www.steemit.com/cn/@htliao/zcash">ZCash會是今年最穩妥的加密貨幣投資之一嗎？</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>9</td>
-    <td>45.54</td>
-    <td>22</td>
-    <td><a href="https://www.steemit.com/@lawrenceho84">lawrenceho84</a></td>
-    <td>65.32</td>
-    <td>2018-01-04 02:28:03</td>
-    <td><a href="https://www.steemit.com/cn/@lawrenceho84/good-morning-steem-to-the-moon-and-beyond">Good Morning!!! Steem To The Moon And Beyond!!</a></td>
+    <td>54.42</td>
+    <td>36</td>
+    <td><a href="https://www.steemit.com/@twinkledrop">twinkledrop</a></td>
+    <td>68.46</td>
+    <td>2018-01-05 12:01:48</td>
+    <td><a href="https://www.steemit.com/cn/@twinkledrop/foodie-s-diary-65-japanese-designer-feel-restaurant-65">Foodie's diary #65---Japanese Designer feel restaurant 吃货日记#65---精选祥云日料</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>10</td>
-    <td>45.26</td>
-    <td>40</td>
-    <td><a href="https://www.steemit.com/@susanli3769">susanli3769</a></td>
-    <td>65.01</td>
-    <td>2018-01-04 02:07:57</td>
-    <td><a href="https://www.steemit.com/cn/@susanli3769/4gdkvn-or">据说明天会下暴雪， 把每次生活小插曲当作夫妻感情的肥料 | 月旦评</a></td>
+    <td>50.02</td>
+    <td>29</td>
+    <td><a href="https://www.steemit.com/@xiaohui">xiaohui</a></td>
+    <td>67.05</td>
+    <td>2018-01-05 04:48:39</td>
+    <td><a href="https://www.steemit.com/cn/@xiaohui/77wkma">离开新浪微博</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>11</td>
-    <td>44.22</td>
-    <td>19</td>
+    <td>44.83</td>
+    <td>14</td>
     <td><a href="https://www.steemit.com/@lawrenceho84">lawrenceho84</a></td>
-    <td>65.32</td>
-    <td>2018-01-04 03:24:57</td>
-    <td><a href="https://www.steemit.com/cn/@lawrenceho84/good-advice-for-life">Good Advice For Life</a></td>
+    <td>65.37</td>
+    <td>2018-01-05 00:36:36</td>
+    <td><a href="https://www.steemit.com/cn/@lawrenceho84/good-morning-tgif">Good Morning!! TGIF !!!</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>12</td>
-    <td>41.06</td>
-    <td>15</td>
-    <td><a href="https://www.steemit.com/@bangsadies">bangsadies</a></td>
-    <td>41.06</td>
-    <td>2018-01-04 14:05:00</td>
-    <td><a href="https://www.steemit.com/cn/@bangsadies/kerasnya-hidup-fd4f8fa0ac969">Kerasnya hidup</a></td>
+    <td>44.75</td>
+    <td>11</td>
+    <td><a href="https://www.steemit.com/@lawrenceho84">lawrenceho84</a></td>
+    <td>65.37</td>
+    <td>2018-01-05 23:08:45</td>
+    <td><a href="https://www.steemit.com/cn/@lawrenceho84/good-morning-btc-turn-for-ath">Good Morning!!! BTC Turn For ATH</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>13</td>
-    <td>39.50</td>
-    <td>18</td>
-    <td><a href="https://www.steemit.com/@bring">bring</a></td>
-    <td>62.88</td>
-    <td>2018-01-04 14:03:27</td>
-    <td><a href="https://www.steemit.com/cn/@bring/2mds7d">中西文化差异（三） 汉语的“人称”与英语的“物称”</a></td>
+    <td>44.61</td>
+    <td>115</td>
+    <td><a href="https://www.steemit.com/@linuslee0216">linuslee0216</a></td>
+    <td>67.80</td>
+    <td>2018-01-05 08:15:36</td>
+    <td><a href="https://www.steemit.com/cn/@linuslee0216/n6dwq">小孩子的黑暗偶像</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>14</td>
-    <td>38.18</td>
-    <td>27</td>
-    <td><a href="https://www.steemit.com/@amylee">amylee</a></td>
-    <td>65.64</td>
-    <td>2018-01-04 08:32:30</td>
-    <td><a href="https://www.steemit.com/cn/@amylee/1-the-beauty-of-populus-euphratica-forest-1">胡杨林的风采 #1 The beauty of Populus euphratica forest #1</a></td>
+    <td>36.83</td>
+    <td>92</td>
+    <td><a href="https://www.steemit.com/@pakyeechan">pakyeechan</a></td>
+    <td>63.49</td>
+    <td>2018-01-05 07:53:39</td>
+    <td><a href="https://www.steemit.com/cn/@pakyeechan/5dioqq">一步一步向前走 !</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>15</td>
-    <td>38.12</td>
-    <td>68</td>
-    <td><a href="https://www.steemit.com/@stacee">stacee</a></td>
-    <td>68.04</td>
-    <td>2018-01-04 09:37:45</td>
-    <td><a href="https://www.steemit.com/cn/@stacee/usd400-all-inclusive-vacation-to-malaysia-and-singapore-2700">$400  ALL-INCLUSIVE Vacation to Malaysia and Singapore 只要2700人民币全包的新马旅行团，性价比超高！</a></td>
+    <td>35.80</td>
+    <td>25</td>
+    <td><a href="https://www.steemit.com/@sylvia1997">sylvia1997</a></td>
+    <td>61.91</td>
+    <td>2018-01-05 09:58:36</td>
+    <td><a href="https://www.steemit.com/cn/@sylvia1997/3agqpz">青春从来和后悔无关</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>16</td>
-    <td>36.56</td>
-    <td>34</td>
-    <td><a href="https://www.steemit.com/@sylvia1997">sylvia1997</a></td>
-    <td>61.89</td>
-    <td>2018-01-04 04:25:12</td>
-    <td><a href="https://www.steemit.com/cn/@sylvia1997/vs">充满正义感的女服务员vs挑剔大叔</a></td>
+    <td>34.91</td>
+    <td>54</td>
+    <td><a href="https://www.steemit.com/@lemooljiang">lemooljiang</a></td>
+    <td>70.62</td>
+    <td>2018-01-05 10:22:09</td>
+    <td><a href="https://www.steemit.com/cn/@lemooljiang/yoyow-1">YOYOW见证人炼成记-准备篇 / 挖矿大业 #1</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>17</td>
-    <td>35.13</td>
-    <td>125</td>
-    <td><a href="https://www.steemit.com/@aaronli">aaronli</a></td>
-    <td>66.34</td>
-    <td>2018-01-04 13:32:06</td>
-    <td><a href="https://www.steemit.com/cn/@aaronli/show-off-your-18-year-old-photos-challenge-no-i-won-t-only-19-year-old-photos-18-19">Show off your 18-year-old photos challenge…no…I won’t…only 19-year-old photos...我不會曬18歲的照片的！那，曬19歲吧….</a></td>
+    <td>34.20</td>
+    <td>64</td>
+    <td><a href="https://www.steemit.com/@justyy">justyy</a></td>
+    <td>69.48</td>
+    <td>2018-01-05 23:18:33</td>
+    <td><a href="https://www.steemit.com/cn/@justyy/yy-8">(Join YY Bank Now) YY 银行明天加息到 年利率 8%，点赞比重增加 - 还有推荐 cnbuddy 中文小伙伴</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>18</td>
-    <td>31.31</td>
-    <td>114</td>
-    <td><a href="https://www.steemit.com/@linuslee0216">linuslee0216</a></td>
-    <td>67.79</td>
-    <td>2018-01-04 13:06:42</td>
-    <td><a href="https://www.steemit.com/cn/@linuslee0216/3yjxeb">父母輩去旅行的煩惱</a></td>
+    <td>32.61</td>
+    <td>108</td>
+    <td><a href="https://www.steemit.com/@tumutanzi">tumutanzi</a></td>
+    <td>69.43</td>
+    <td>2018-01-05 00:46:09</td>
+    <td><a href="https://www.steemit.com/cn/@tumutanzi/76qwtu">生命太短暂，我没时间讨厌你</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>19</td>
-    <td>27.64</td>
-    <td>92</td>
-    <td><a href="https://www.steemit.com/@wilkinshui">wilkinshui</a></td>
-    <td>66.61</td>
-    <td>2018-01-04 22:47:09</td>
-    <td><a href="https://www.steemit.com/cn/@wilkinshui/son-on-steemit-t-shirt">son on steemit t-shirt :) </a></td>
+    <td>32.09</td>
+    <td>12</td>
+    <td><a href="https://www.steemit.com/@momok">momok</a></td>
+    <td>39.24</td>
+    <td>2018-01-05 19:04:45</td>
+    <td><a href="https://www.steemit.com/cn/@momok/hello-steemit-steemit">Hello, Steemit. // 你好，Steemit。</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>20</td>
-    <td>25.18</td>
-    <td>51</td>
-    <td><a href="https://www.steemit.com/@hannahwu">hannahwu</a></td>
-    <td>65.26</td>
-    <td>2018-01-04 02:51:03</td>
-    <td><a href="https://www.steemit.com/cn/@hannahwu/64uuun">人生已经如此艰难 有些事情就不要拆穿</a></td>
+    <td>30.74</td>
+    <td>46</td>
+    <td><a href="https://www.steemit.com/@victory622">victory622</a></td>
+    <td>62.17</td>
+    <td>2018-01-05 00:07:12</td>
+    <td><a href="https://www.steemit.com/cn/@victory622/milestone-2-first-post-achieves-100usd-100usd-post-128">Milestone #2 -- [First post achieves 100$ ] - 第一篇收益超过100$的Post在第128天</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>21</td>
-    <td>23.60</td>
-    <td>51</td>
-    <td><a href="https://www.steemit.com/@lemooljiang">lemooljiang</a></td>
-    <td>70.61</td>
-    <td>2018-01-04 11:16:21</td>
-    <td><a href="https://www.steemit.com/cn/@lemooljiang/228">小故事--时代的歌之228</a></td>
+    <td>29.67</td>
+    <td>34</td>
+    <td><a href="https://www.steemit.com/@dapeng">dapeng</a></td>
+    <td>65.85</td>
+    <td>2018-01-05 11:58:24</td>
+    <td><a href="https://www.steemit.com/cn/@dapeng/steemr-or-update-of-steemr-useful-posts-for-new-steemians-in-chinese">steemr 更新：新人实用帖合集 | update of steemr: useful posts for new steemians (in Chinese)</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>22</td>
-    <td>23.29</td>
-    <td>31</td>
-    <td><a href="https://www.steemit.com/@susanli3769">susanli3769</a></td>
-    <td>65.01</td>
-    <td>2018-01-04 21:36:15</td>
-    <td><a href="https://www.steemit.com/cn/@susanli3769/6phbve">暴雪真的来了，一点都不好玩 </a></td>
+    <td>29.25</td>
+    <td>52</td>
+    <td><a href="https://www.steemit.com/@hannahwu">hannahwu</a></td>
+    <td>65.27</td>
+    <td>2018-01-05 06:09:27</td>
+    <td><a href="https://www.steemit.com/cn/@hannahwu/6xkn6z">夜访吸血鬼</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>23</td>
-    <td>22.91</td>
-    <td>88</td>
-    <td><a href="https://www.steemit.com/@pakyeechan">pakyeechan</a></td>
-    <td>63.48</td>
-    <td>2018-01-04 08:33:48</td>
-    <td><a href="https://www.steemit.com/cn/@pakyeechan/or-or-knives-out">毒毒的遊戲推介  |  荒野行動   |   Knives Out</a></td>
+    <td>27.68</td>
+    <td>65</td>
+    <td><a href="https://www.steemit.com/@arcange">arcange</a></td>
+    <td>69.16</td>
+    <td>2018-01-05 14:01:54</td>
+    <td><a href="https://www.steemit.com/cn/@arcange/steemit-statistics-20180104-cn">Steemit 统计数据 – 2018.01.04</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>24</td>
-    <td>21.44</td>
-    <td>82</td>
-    <td><a href="https://www.steemit.com/@jeffreytong">jeffreytong</a></td>
-    <td>58.91</td>
-    <td>2018-01-04 14:29:39</td>
-    <td><a href="https://www.steemit.com/cn/@jeffreytong/201-my-planting-diary-day-201">我的種植日記-201日 my planting diary- day 201</a></td>
+    <td>27.25</td>
+    <td>30</td>
+    <td><a href="https://www.steemit.com/@amylee">amylee</a></td>
+    <td>65.70</td>
+    <td>2018-01-05 08:03:27</td>
+    <td><a href="https://www.steemit.com/cn/@amylee/2-the-beauty-of-populus-euphratica-forest-2">胡杨林的风采 #2 The beauty of Populus euphratica forest #2</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>25</td>
-    <td>20.92</td>
-    <td>79</td>
+    <td>26.47</td>
+    <td>80</td>
     <td><a href="https://www.steemit.com/@kenchung">kenchung</a></td>
-    <td>63.23</td>
-    <td>2018-01-04 11:26:24</td>
-    <td><a href="https://www.steemit.com/cn/@kenchung/jozvl">諾丁漢大學的湖邊公園</a></td>
+    <td>63.24</td>
+    <td>2018-01-05 14:46:27</td>
+    <td><a href="https://www.steemit.com/cn/@kenchung/2">諾丁漢大學的湖邊公園 (2)</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>26</td>
-    <td>20.30</td>
-    <td>82</td>
-    <td><a href="https://www.steemit.com/@marylaw">marylaw</a></td>
-    <td>62.79</td>
-    <td>2018-01-04 01:10:18</td>
-    <td><a href="https://www.steemit.com/cn/@marylaw/20180104t011004380z-post">生活不止眼前的苟且，還有詩意和遠方</a></td>
+    <td>25.33</td>
+    <td>33</td>
+    <td><a href="https://www.steemit.com/@bring">bring</a></td>
+    <td>62.89</td>
+    <td>2018-01-05 01:54:18</td>
+    <td><a href="https://www.steemit.com/cn/@bring/my-experience-of-teaching-myself-japanese">我的日语自学之路 ︱月旦评   My Experience of Teaching Myself Japanese</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>27</td>
-    <td>20.00</td>
-    <td>75</td>
+    <td>24.61</td>
+    <td>79</td>
     <td><a href="https://www.steemit.com/@goodboyphilip">goodboyphilip</a></td>
     <td>62.56</td>
-    <td>2018-01-04 04:56:18</td>
-    <td><a href="https://www.steemit.com/cn/@goodboyphilip/eng-arrived-narita-airport-and-let-s-shop-around"><ENG/中文>Arrived Narita Airport and let's shop around! / 早到機場來逛逛成田空港</a></td>
+    <td>2018-01-05 05:18:45</td>
+    <td><a href="https://www.steemit.com/cn/@goodboyphilip/eng-let-s-eat-in-narita-airport"><ENG/中文>Let's eat in Narita Airport! / 成田空港有什麼東西吃？</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>28</td>
-    <td>19.89</td>
-    <td>35</td>
-    <td><a href="https://www.steemit.com/@twinkledrop">twinkledrop</a></td>
-    <td>68.43</td>
-    <td>2018-01-04 13:12:42</td>
-    <td><a href="https://www.steemit.com/cn/@twinkledrop/foodie-s-diary-64-green-tee-restaurant-64">Foodie's diary #64---Green Tee Restaurant 。吃货日记#64---性价比高的绿茶餐厅。</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>29</td>
-    <td>19.04</td>
-    <td>43</td>
-    <td><a href="https://www.steemit.com/@winniex">winniex</a></td>
-    <td>59.61</td>
-    <td>2018-01-04 09:07:21</td>
-    <td><a href="https://www.steemit.com/cn/@winniex/300-florian">威尼斯圣马可广场拥有300年历史的FLORIAN咖啡馆 Caffè Florian</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>30</td>
-    <td>17.04</td>
-    <td>18</td>
-    <td><a href="https://www.steemit.com/@chaofanjun">chaofanjun</a></td>
-    <td>56.20</td>
-    <td>2018-01-04 15:49:03</td>
-    <td><a href="https://www.steemit.com/cn/@chaofanjun/78w8mq">让天下有“免费午餐” //Free Lunch For Children in China</a></td>
-  </tr>
-  
-</table>
-]]></content></entry><entry><id>https://www.yuxifan.com/atom/atom_steemit/life/2018-01-04</id><title>daily popular posts in life on 2018-01-04</title><updated>2018-01-05T03:02:03.894106+00:00</updated><content type="html"><![CDATA[
-<h2>Top 30 posts in category: life on 2018-01-04</h2>
-
-<img src="https://www.yuxifan.com/images/steem-statistics.jpg"/><br/>
-
-<table class="responstable" border="1" style="margin: 1em 0;border-radius: 10px;border-collapse: collapse;border: 1px solid #167F92;">
-  <tr style="background-color: #167F92;">
-    <td>Ranking</td>
-    <td>Payouts</td>
-    <td>Votes</td>
-    <td>Author</td>
-    <td>Rep</td>
-    <td>Date</td>
-    <td>Title/URL</td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>1</td>
-    <td>485.74</td>
-    <td>270</td>
-    <td><a href="https://www.steemit.com/@thisisbenbrick">thisisbenbrick</a></td>
-    <td>68.42</td>
-    <td>2018-01-04 12:56:45</td>
-    <td><a href="https://www.steemit.com/life/@thisisbenbrick/why-my-next-ep-will-be-on-steem-before-spotify">Why My Next EP Will Be On Steem before Spotify</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>2</td>
-    <td>313.24</td>
-    <td>212</td>
-    <td><a href="https://www.steemit.com/@exyle">exyle</a></td>
-    <td>72.95</td>
-    <td>2018-01-04 23:13:24</td>
-    <td><a href="https://www.steemit.com/life/@exyle/traveling-to-london-by-train-from-rotterdam-visiting-ezzy-and-rea-and-a-meeting-with-nanzo-scoop">Traveling to London by train from Rotterdam. Visiting @ezzy and @rea and a meeting with @nanzo-scoop.</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>3</td>
-    <td>295.40</td>
-    <td>152</td>
-    <td><a href="https://www.steemit.com/@eveuncovered">eveuncovered</a></td>
-    <td>67.70</td>
-    <td>2018-01-04 16:59:12</td>
-    <td><a href="https://www.steemit.com/life/@eveuncovered/major-throwback-to-the-start-of-my-modeling-career">Major Throwback to the Start of my Modeling Career</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>4</td>
-    <td>293.00</td>
-    <td>344</td>
-    <td><a href="https://www.steemit.com/@cheaky">cheaky</a></td>
-    <td>57.65</td>
-    <td>2018-01-04 14:36:48</td>
-    <td><a href="https://www.steemit.com/life/@cheaky/why-we-learn-the-most-when-we-re-in-pain">Why We Learn The Most When We're In Pain</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>5</td>
-    <td>273.15</td>
-    <td>76</td>
-    <td><a href="https://www.steemit.com/@flamingirl">flamingirl</a></td>
-    <td>66.01</td>
-    <td>2018-01-04 10:42:39</td>
-    <td><a href="https://www.steemit.com/life/@flamingirl/2018-jour-3-mes-reves-sont-ils-en-train-de-devenir-realite">2018 Jour 4. Mes rêves sont-ils en train de devenir réalité?</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>6</td>
-    <td>261.01</td>
-    <td>51</td>
-    <td><a href="https://www.steemit.com/@gracesunflower">gracesunflower</a></td>
-    <td>59.93</td>
-    <td>2018-01-04 04:33:45</td>
-    <td><a href="https://www.steemit.com/life/@gracesunflower/las-voces-de-los-angeles-1">Las voces de los ángeles 1</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>7</td>
-    <td>258.63</td>
-    <td>115</td>
-    <td><a href="https://www.steemit.com/@michaelmorcos">michaelmorcos</a></td>
-    <td>60.08</td>
-    <td>2018-01-04 10:16:42</td>
-    <td><a href="https://www.steemit.com/life/@michaelmorcos/13-things-do-successful-entrepreneurs-every-day">13 Things do successful entrepreneurs every day</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>8</td>
-    <td>251.86</td>
-    <td>45</td>
-    <td><a href="https://www.steemit.com/@gracesunflower">gracesunflower</a></td>
-    <td>59.93</td>
-    <td>2018-01-04 17:24:48</td>
-    <td><a href="https://www.steemit.com/life/@gracesunflower/las-voces-de-los-angeles-2">Las voces de los ángeles 2</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>9</td>
-    <td>239.90</td>
-    <td>39</td>
-    <td><a href="https://www.steemit.com/@k-a-s-i-a">k-a-s-i-a</a></td>
-    <td>56.37</td>
-    <td>2018-01-04 23:21:06</td>
-    <td><a href="https://www.steemit.com/life/@k-a-s-i-a/level-easy-or-adrenaline-canyoning-a-great-idea-for-your-free-time-part-2">Level easy or adrenaline? Canyoning – a great idea for your free time! (part 2)</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>10</td>
-    <td>235.53</td>
-    <td>58</td>
-    <td><a href="https://www.steemit.com/@dragonslayer101">dragonslayer101</a></td>
-    <td>59.73</td>
-    <td>2018-01-04 19:14:27</td>
-    <td><a href="https://www.steemit.com/life/@dragonslayer101/76ty5h-inspiration-for-the-week">Inspiration for the week</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>11</td>
-    <td>222.94</td>
-    <td>195</td>
-    <td><a href="https://www.steemit.com/@fisteganos">fisteganos</a></td>
-    <td>66.74</td>
-    <td>2018-01-04 02:07:24</td>
-    <td><a href="https://www.steemit.com/life/@fisteganos/how-it-feels-having-big-dreams-in-a-world-where-all-you-see-are-limitations">How It Feels Having Big Dreams In A World Where All You See Are Limitations.</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>12</td>
-    <td>217.77</td>
-    <td>88</td>
-    <td><a href="https://www.steemit.com/@calaber24p">calaber24p</a></td>
-    <td>73.95</td>
-    <td>2018-01-04 15:19:27</td>
-    <td><a href="https://www.steemit.com/life/@calaber24p/buy-your-own-missile-silo-home">Buy Your Own Missile Silo Home</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>13</td>
-    <td>202.10</td>
-    <td>92</td>
-    <td><a href="https://www.steemit.com/@theowlhours">theowlhours</a></td>
-    <td>61.53</td>
-    <td>2018-01-04 00:33:45</td>
-    <td><a href="https://www.steemit.com/life/@theowlhours/rambling-about-resolutions">Rambling About Resolutions</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>14</td>
-    <td>195.49</td>
-    <td>239</td>
-    <td><a href="https://www.steemit.com/@hilarski">hilarski</a></td>
-    <td>73.74</td>
-    <td>2018-01-04 00:38:33</td>
-    <td><a href="https://www.steemit.com/life/@hilarski/our-son-was-born-today-on-the-birthday-of-bitcoin-how-fitting">Our Son Was Born Today on The Birthday of Bitcoin, How Fitting!</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>15</td>
-    <td>175.69</td>
-    <td>147</td>
-    <td><a href="https://www.steemit.com/@meesterboom">meesterboom</a></td>
-    <td>72.92</td>
-    <td>2018-01-04 16:28:15</td>
-    <td><a href="https://www.steemit.com/life/@meesterboom/thursdays-with-uncle-boom-22">Thursdays With Uncle Boom #22</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>16</td>
-    <td>164.82</td>
-    <td>52</td>
-    <td><a href="https://www.steemit.com/@vm2904">vm2904</a></td>
-    <td>63.93</td>
-    <td>2018-01-04 08:40:00</td>
-    <td><a href="https://www.steemit.com/life/@vm2904/how-to-lie-and-why-original-wildlife-photographs-and-thoughts">??How to lie and why... (Original wildlife photographs and thoughts)</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>17</td>
-    <td>142.20</td>
-    <td>37</td>
-    <td><a href="https://www.steemit.com/@marymg2014">marymg2014</a></td>
-    <td>61.82</td>
-    <td>2018-01-04 22:03:48</td>
-    <td><a href="https://www.steemit.com/life/@marymg2014/are-manipulated-weather-events-meant-to-control-our-mood">Are Manipulated Weather Events Meant to Control Our Mood?</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>18</td>
-    <td>141.77</td>
-    <td>50</td>
-    <td><a href="https://www.steemit.com/@therusticvegan">therusticvegan</a></td>
-    <td>48.92</td>
-    <td>2018-01-04 11:59:54</td>
-    <td><a href="https://www.steemit.com/life/@therusticvegan/my-how-to-go-vegan-guide-for-dummies">My How To Go Vegan Guide For Dummies</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>19</td>
-    <td>131.30</td>
-    <td>221</td>
-    <td><a href="https://www.steemit.com/@abramjs">abramjs</a></td>
-    <td>57.67</td>
-    <td>2018-01-04 01:52:42</td>
-    <td><a href="https://www.steemit.com/life/@abramjs/riciclo-e-riuso">Riciclo e Riuso</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>20</td>
-    <td>121.62</td>
-    <td>38</td>
-    <td><a href="https://www.steemit.com/@joeparys">joeparys</a></td>
-    <td>62.13</td>
-    <td>2018-01-04 20:03:00</td>
-    <td><a href="https://www.steemit.com/life/@joeparys/hyperlapse-giveaway-winner-wins-5-steem-more-steem-giveaways-inside">Hyperlapse Giveaway Winner Wins 5 STEEM! More STEEM Giveaways Inside!</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>21</td>
-    <td>121.41</td>
-    <td>49</td>
-    <td><a href="https://www.steemit.com/@icedrum">icedrum</a></td>
-    <td>64.38</td>
-    <td>2018-01-04 16:23:09</td>
-    <td><a href="https://www.steemit.com/life/@icedrum/space-news-space-weather-sea-floor-sinking-or-s0-news-jan-4-2018">SPACE NEWS - Space Weather, Sea Floor Sinking? | S0 News Jan.4.2018</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>22</td>
-    <td>107.40</td>
-    <td>57</td>
-    <td><a href="https://www.steemit.com/@icedrum">icedrum</a></td>
-    <td>64.38</td>
-    <td>2018-01-04 19:01:21</td>
-    <td><a href="https://www.steemit.com/life/@icedrum/space-news-observers-resources-or-what-s-here-for-you">SPACE NEWS - Observers' Resources | What's Here For You</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>23</td>
-    <td>89.90</td>
-    <td>71</td>
-    <td><a href="https://www.steemit.com/@tosuccess">tosuccess</a></td>
-    <td>59.15</td>
-    <td>2018-01-04 22:11:09</td>
-    <td><a href="https://www.steemit.com/life/@tosuccess/how-to-be-strong-focus">How to be strong focus</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>24</td>
-    <td>87.51</td>
-    <td>70</td>
-    <td><a href="https://www.steemit.com/@zoomtruth">zoomtruth</a></td>
-    <td>47.30</td>
-    <td>2018-01-04 00:04:12</td>
-    <td><a href="https://www.steemit.com/life/@zoomtruth/new-tired-of-repeating-the-same-mistakes-mind-control-101">NEW! Tired of repeating the Same Mistakes?   Mind Control 101</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>25</td>
-    <td>79.54</td>
-    <td>25</td>
-    <td><a href="https://www.steemit.com/@patricksanlin">patricksanlin</a></td>
-    <td>59.98</td>
-    <td>2018-01-04 04:39:33</td>
-    <td><a href="https://www.steemit.com/life/@patricksanlin/my-trip-to-myanmar-shan-high-land-road">My Trip To Myanmar Shan High Land Road</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>26</td>
-    <td>79.42</td>
-    <td>244</td>
-    <td><a href="https://www.steemit.com/@spinner">spinner</a></td>
-    <td>60.87</td>
-    <td>2018-01-04 11:13:12</td>
-    <td><a href="https://www.steemit.com/life/@spinner/winter-spinning-in-tyumen-and-this-is-possible-part-2">Winter spinning in Tyumen? And this is possible... Part 2</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>27</td>
-    <td>77.88</td>
-    <td>117</td>
-    <td><a href="https://www.steemit.com/@jwolf">jwolf</a></td>
-    <td>67.09</td>
-    <td>2018-01-04 18:58:18</td>
-    <td><a href="https://www.steemit.com/life/@jwolf/how-to-overcome-fear-in-life">How to overcome fear in life</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>28</td>
-    <td>75.59</td>
-    <td>32</td>
-    <td><a href="https://www.steemit.com/@cjsdns">cjsdns</a></td>
-    <td>65.76</td>
-    <td>2018-01-04 06:59:36</td>
-    <td><a href="https://www.steemit.com/life/@cjsdns/----2018-01-04-06-59-35">내 인생을 바꾼 시비</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>29</td>
-    <td>74.40</td>
-    <td>23</td>
-    <td><a href="https://www.steemit.com/@oceanchild">oceanchild</a></td>
-    <td>53.28</td>
-    <td>2018-01-04 02:21:33</td>
-    <td><a href="https://www.steemit.com/life/@oceanchild/riding-into-2018--2018-01-04-02-21-30">Riding into 2018!!! ????❤❤</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>30</td>
-    <td>74.40</td>
-    <td>64</td>
-    <td><a href="https://www.steemit.com/@chitty">chitty</a></td>
-    <td>68.86</td>
-    <td>2018-01-04 20:43:33</td>
-    <td><a href="https://www.steemit.com/life/@chitty/resist-the-temptation-to-shit-post">Resist the temptation to shit-post</a></td>
-  </tr>
-  
-</table>
-]]></content></entry><entry><id>https://www.yuxifan.com/atom/atom_steemit/photography/2018-01-04</id><title>daily popular posts in photography on 2018-01-04</title><updated>2018-01-05T03:02:05.229660+00:00</updated><content type="html"><![CDATA[
-<h2>Top 30 posts in category: photography on 2018-01-04</h2>
-
-<img src="https://www.yuxifan.com/images/steem-statistics.jpg"/><br/>
-
-<table class="responstable" border="1" style="margin: 1em 0;border-radius: 10px;border-collapse: collapse;border: 1px solid #167F92;">
-  <tr style="background-color: #167F92;">
-    <td>Ranking</td>
-    <td>Payouts</td>
-    <td>Votes</td>
-    <td>Author</td>
-    <td>Rep</td>
-    <td>Date</td>
-    <td>Title/URL</td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>1</td>
-    <td>579.19</td>
-    <td>399</td>
-    <td><a href="https://www.steemit.com/@timsaid">timsaid</a></td>
-    <td>72.99</td>
-    <td>2018-01-04 21:56:27</td>
-    <td><a href="https://www.steemit.com/photography/@timsaid/timtravels-german-christmas-markets-part-1">TimTravels - German Christmas Markets Part 1</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>2</td>
-    <td>350.82</td>
-    <td>305</td>
-    <td><a href="https://www.steemit.com/@gringalicious">gringalicious</a></td>
-    <td>74.27</td>
-    <td>2018-01-04 17:07:06</td>
-    <td><a href="https://www.steemit.com/photography/@gringalicious/raspberry-lemon-cream-shortbread-cookie-trifles-food-photo-shoot">Raspberry Lemon Cream Shortbread Cookie Trifles - FOOD PHOTO SHOOT</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>3</td>
-    <td>215.49</td>
-    <td>271</td>
-    <td><a href="https://www.steemit.com/@gringalicious">gringalicious</a></td>
-    <td>74.27</td>
-    <td>2018-01-04 05:52:06</td>
-    <td><a href="https://www.steemit.com/photography/@gringalicious/sourdough-caprese-blat-sandwiches-food-photo-shoot">Sourdough Caprese BLAT Sandwiches - FOOD PHOTO SHOOT</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>4</td>
-    <td>182.87</td>
-    <td>53</td>
-    <td><a href="https://www.steemit.com/@wolmarans">wolmarans</a></td>
-    <td>58.34</td>
-    <td>2018-01-04 12:20:18</td>
-    <td><a href="https://www.steemit.com/photography/@wolmarans/apologetic-picture">Apologetic picture!</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>5</td>
-    <td>161.22</td>
-    <td>78</td>
-    <td><a href="https://www.steemit.com/@nspart">nspart</a></td>
-    <td>70.23</td>
-    <td>2018-01-04 16:57:24</td>
-    <td><a href="https://www.steemit.com/photography/@nspart/nspart-a-new-fashion-shot-with-the-beautiful-nikola-weiterova-ifbb-bikini-fitness-competitor-color-and-2-black-and-white">NSPART - A NEW Fashion Shot with the Beautiful Nikola Weiterova IFBB Bikini Fitness Competitor - (Color &amp; 2 Black &amp; White Versions) - Another Steemit First Post!</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>6</td>
-    <td>117.10</td>
-    <td>38</td>
-    <td><a href="https://www.steemit.com/@steempowerpics">steempowerpics</a></td>
-    <td>65.61</td>
-    <td>2018-01-04 19:04:51</td>
-    <td><a href="https://www.steemit.com/photography/@steempowerpics/the-rich-and-deadly-history-of-park-city-utah">?? The RICH and Deadly History of Park City, Utah</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>7</td>
-    <td>114.74</td>
-    <td>69</td>
-    <td><a href="https://www.steemit.com/@adonisabril">adonisabril</a></td>
-    <td>61.86</td>
-    <td>2018-01-04 12:53:42</td>
-    <td><a href="https://www.steemit.com/photography/@adonisabril/baker-beach-at-sunset">Baker Beach at Sunset</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>8</td>
-    <td>111.92</td>
-    <td>27</td>
-    <td><a href="https://www.steemit.com/@cuttie1979">cuttie1979</a></td>
-    <td>68.83</td>
-    <td>2018-01-04 18:36:24</td>
-    <td><a href="https://www.steemit.com/photography/@cuttie1979/speedy-the-race-truck-service">Speedy the race truck service</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>9</td>
-    <td>110.40</td>
-    <td>84</td>
-    <td><a href="https://www.steemit.com/@maticpecovnik">maticpecovnik</a></td>
-    <td>54.40</td>
-    <td>2018-01-04 17:32:21</td>
-    <td><a href="https://www.steemit.com/photography/@maticpecovnik/a-beginners-journey-in-photography-part-4-all-you-have-ever-wanted-to-know-about-lenses">A Beginners Journey in Photography - Part 4: All you have ever wanted to know about lenses</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>10</td>
-    <td>98.34</td>
-    <td>107</td>
-    <td><a href="https://www.steemit.com/@lichtblick">lichtblick</a></td>
-    <td>70.06</td>
-    <td>2018-01-04 11:16:03</td>
-    <td><a href="https://www.steemit.com/photography/@lichtblick/the-farmers-shop-or-automatic-shopping-in-south-germany-by-lichtblick">?? The Farmers Shop??‍?? Or Automatic Shopping In South Germany by @lichtblick ??</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>11</td>
-    <td>83.36</td>
-    <td>10</td>
-    <td><a href="https://www.steemit.com/@jonbit">jonbit</a></td>
-    <td>62.58</td>
-    <td>2018-01-04 09:46:48</td>
-    <td><a href="https://www.steemit.com/photography/@jonbit/cold-swim-under-the-ocean-104">Cold Swim - Under The Ocean #104</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>12</td>
-    <td>82.51</td>
-    <td>68</td>
-    <td><a href="https://www.steemit.com/@everlove">everlove</a></td>
-    <td>68.58</td>
-    <td>2018-01-04 22:49:48</td>
-    <td><a href="https://www.steemit.com/photography/@everlove/colorful-photography-challenge-rainbow-of-love">Colorful Photography Challenge - "Rainbow of Love"</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>13</td>
-    <td>80.35</td>
-    <td>32</td>
-    <td><a href="https://www.steemit.com/@cuttie1979">cuttie1979</a></td>
-    <td>68.83</td>
-    <td>2018-01-04 05:56:03</td>
-    <td><a href="https://www.steemit.com/photography/@cuttie1979/wine-tasting-at-home-part-2">Wine tasting at Home part 2</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>14</td>
-    <td>78.98</td>
-    <td>94</td>
-    <td><a href="https://www.steemit.com/@kommienezuspadt">kommienezuspadt</a></td>
-    <td>69.62</td>
-    <td>2018-01-04 05:54:06</td>
-    <td><a href="https://www.steemit.com/photography/@kommienezuspadt/old-hollywood-glamour-w-a-shy-steam-punk-starlet">Old Hollywood glamour w/ a shy steam punk starlet!</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>15</td>
-    <td>66.48</td>
-    <td>59</td>
-    <td><a href="https://www.steemit.com/@kommienezuspadt">kommienezuspadt</a></td>
-    <td>69.62</td>
-    <td>2018-01-04 23:19:09</td>
-    <td><a href="https://www.steemit.com/photography/@kommienezuspadt/stay-at-home-boudoir-photography-for-the-annual-noir-event">"Stay at home" boudoir photography for the annual NOIR event!</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>16</td>
-    <td>63.58</td>
-    <td>47</td>
-    <td><a href="https://www.steemit.com/@juvyjabian">juvyjabian</a></td>
-    <td>70.79</td>
-    <td>2018-01-04 00:57:57</td>
-    <td><a href="https://www.steemit.com/photography/@juvyjabian/just-practicing-photography-2018-01-04-00-58-04">Just practicing photography</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>17</td>
-    <td>63.27</td>
-    <td>98</td>
-    <td><a href="https://www.steemit.com/@inertia">inertia</a></td>
-    <td>70.68</td>
-    <td>2018-01-04 22:34:54</td>
-    <td><a href="https://www.steemit.com/photography/@inertia/i-love-lamp-201814t143452883z">I love lamp.</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>18</td>
-    <td>60.48</td>
-    <td>12</td>
-    <td><a href="https://www.steemit.com/@crypt0-cats">crypt0-cats</a></td>
-    <td>54.94</td>
-    <td>2018-01-04 19:28:33</td>
-    <td><a href="https://www.steemit.com/photography/@crypt0-cats/remembering-summer-days">Remembering Summer Days</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>19</td>
-    <td>55.29</td>
+    <td>23.68</td>
     <td>87</td>
-    <td><a href="https://www.steemit.com/@manthostsakirid">manthostsakirid</a></td>
-    <td>63.79</td>
-    <td>2018-01-04 06:46:00</td>
-    <td><a href="https://www.steemit.com/photography/@manthostsakirid/wedding-in-venice">Wedding in Venice</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>20</td>
-    <td>51.56</td>
-    <td>23</td>
-    <td><a href="https://www.steemit.com/@kris10">kris10</a></td>
-    <td>64.92</td>
-    <td>2018-01-04 17:10:51</td>
-    <td><a href="https://www.steemit.com/photography/@kris10/in-florida">In Florida??!</a></td>
+    <td><a href="https://www.steemit.com/@marylaw">marylaw</a></td>
+    <td>62.79</td>
+    <td>2018-01-05 01:35:27</td>
+    <td><a href="https://www.steemit.com/cn/@marylaw/20180105t013456155z-post">公安也玩航拍了。</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
-    <td>21</td>
-    <td>51.49</td>
+    <td>29</td>
+    <td>23.52</td>
     <td>59</td>
-    <td><a href="https://www.steemit.com/@catwomanteresa">catwomanteresa</a></td>
-    <td>64.85</td>
-    <td>2018-01-04 06:44:36</td>
-    <td><a href="https://www.steemit.com/photography/@catwomanteresa/sky-lantern-in-bangkok">Sky Lantern in Bangkok? 曼谷也可以放天燈？</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>22</td>
-    <td>51.25</td>
-    <td>42</td>
-    <td><a href="https://www.steemit.com/@thetimminator">thetimminator</a></td>
-    <td>55.91</td>
-    <td>2018-01-04 09:34:54</td>
-    <td><a href="https://www.steemit.com/photography/@thetimminator/winter-sport-vacation-obertraun-austria">Winter(sport) vacation - Obertraun, Austria</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>23</td>
-    <td>51.15</td>
-    <td>14</td>
-    <td><a href="https://www.steemit.com/@magmadrome26">magmadrome26</a></td>
-    <td>53.58</td>
-    <td>2018-01-04 00:07:00</td>
-    <td><a href="https://www.steemit.com/photography/@magmadrome26/untitled-poem">Untitled Poem</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>24</td>
-    <td>50.88</td>
-    <td>46</td>
-    <td><a href="https://www.steemit.com/@cryptogee">cryptogee</a></td>
-    <td>72.59</td>
-    <td>2018-01-04 12:01:06</td>
-    <td><a href="https://www.steemit.com/photography/@cryptogee/advanced-magic-wand-techniques-pixlr-video-tutorial">Advanced Magic Wand Techniques - Pixlr Video Tutorial</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>25</td>
-    <td>46.07</td>
-    <td>16</td>
-    <td><a href="https://www.steemit.com/@vmoore709">vmoore709</a></td>
-    <td>59.05</td>
-    <td>2018-01-04 13:46:30</td>
-    <td><a href="https://www.steemit.com/photography/@vmoore709/tiny-town-2">Tiny Town - #2</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>26</td>
-    <td>44.29</td>
-    <td>24</td>
-    <td><a href="https://www.steemit.com/@revelim">revelim</a></td>
-    <td>59.99</td>
-    <td>2018-01-04 10:09:57</td>
-    <td><a href="https://www.steemit.com/photography/@revelim/mosteiro-la-real-cartuja-valldemossa-maiorca-pt">Mosteiro La Real Cartuja … Valldemossa, Maiorca # PT</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>27</td>
-    <td>43.89</td>
-    <td>172</td>
-    <td><a href="https://www.steemit.com/@wasimk87">wasimk87</a></td>
-    <td>52.40</td>
-    <td>2018-01-04 12:23:33</td>
-    <td><a href="https://www.steemit.com/photography/@wasimk87/this-is-the-famous-hangang-river-in-korea-looking-so-beautiful-from-seoul-sky">This is the famous hangang river in korea looking so beautiful  from Seoul Sky.</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>28</td>
-    <td>41.99</td>
-    <td>24</td>
-    <td><a href="https://www.steemit.com/@cyclamen">cyclamen</a></td>
-    <td>60.46</td>
-    <td>2018-01-04 17:42:30</td>
-    <td><a href="https://www.steemit.com/photography/@cyclamen/inspiration">Inspiration</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>29</td>
-    <td>41.96</td>
-    <td>37</td>
-    <td><a href="https://www.steemit.com/@kerkyra">kerkyra</a></td>
-    <td>57.68</td>
-    <td>2018-01-04 10:34:57</td>
-    <td><a href="https://www.steemit.com/photography/@kerkyra/the-temple-of-hera-at-sunset-2018-01-04-10-34-56">The Temple of Hera at sunset! </a></td>
+    <td><a href="https://www.steemit.com/@stacee">stacee</a></td>
+    <td>68.05</td>
+    <td>2018-01-05 04:01:54</td>
+    <td><a href="https://www.steemit.com/cn/@stacee/stacee-s-choice-on-dental-hygiene">Stacee's Choice on Dental Hygiene 做个完美吃货：牙齿护理心得分享</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>30</td>
-    <td>41.12</td>
-    <td>49</td>
-    <td><a href="https://www.steemit.com/@nspart">nspart</a></td>
-    <td>70.23</td>
-    <td>2018-01-04 04:08:48</td>
-    <td><a href="https://www.steemit.com/photography/@nspart/tell-me-which-of-these-models-you-want-to-see-more-of-part-2-nsfw-art-nude-and-erotic-lots-of-images">Tell Me Which of These Models You Want To See More of? (Part 2 - NSFW  - Art Nude &amp; Erotic - Lots of Images)</a></td>
+    <td>23.08</td>
+    <td>82</td>
+    <td><a href="https://www.steemit.com/@chl">chl</a></td>
+    <td>58.70</td>
+    <td>2018-01-05 03:21:15</td>
+    <td><a href="https://www.steemit.com/cn/@chl/20180105t032048021z-post">Gillardeau Speciale No.0</a></td>
   </tr>
   
 </table>
-]]></content></entry><entry><id>https://www.yuxifan.com/atom/atom_steemit/steemit/2018-01-04</id><title>daily popular posts in steemit on 2018-01-04</title><updated>2018-01-05T03:02:05.517500+00:00</updated><content type="html"><![CDATA[
-<h2>Top 30 posts in category: steemit on 2018-01-04</h2>
+]]></content></entry><entry><id>https://www.yuxifan.com/atom/atom_steemit/life/2018-01-05</id><title>daily popular posts in life on 2018-01-05</title><updated>2018-01-06T03:02:03.319259+00:00</updated><content type="html"><![CDATA[
+<h2>Top 30 posts in category: life on 2018-01-05</h2>
 
 <img src="https://www.yuxifan.com/images/steem-statistics.jpg"/><br/>
 
@@ -1150,742 +396,1119 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>789.22</td>
-    <td>549</td>
-    <td><a href="https://www.steemit.com/@broncnutz">broncnutz</a></td>
-    <td>65.05</td>
-    <td>2018-01-04 00:05:45</td>
-    <td><a href="https://www.steemit.com/steemit/@broncnutz/strategies-using-steemit-com-sbd-down-steem-way-up-smart-media-tokens">Strategies using Steemit.com SBD down STEEM way up. **SMART MEDIA TOKENS**</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>2</td>
-    <td>269.69</td>
-    <td>60</td>
-    <td><a href="https://www.steemit.com/@flamingirl">flamingirl</a></td>
-    <td>66.01</td>
-    <td>2018-01-04 16:58:33</td>
-    <td><a href="https://www.steemit.com/steemit/@flamingirl/meeting-steemit-in-barcelona-last-information-busy-and-crazy-life-d-community-and-steemit-solidarity">Meeting Steemit 2 in Barcelona Last Information! Busy and Crazy life! =D / Community and Steemit Solidarity</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>3</td>
-    <td>259.09</td>
-    <td>62</td>
-    <td><a href="https://www.steemit.com/@flamingirl">flamingirl</a></td>
-    <td>66.01</td>
-    <td>2018-01-04 17:29:21</td>
-    <td><a href="https://www.steemit.com/steemit/@flamingirl/meeting-steemit-2-in-barcelona-last-information-busy-and-crazy-life-d-community-and-steemit-solidarity-french-version">Meeting Steemit 2 in Barcelona Last Information! Busy and Crazy life! =D / Community and Steemit Solidarity [French version]</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>4</td>
-    <td>258.90</td>
-    <td>69</td>
-    <td><a href="https://www.steemit.com/@flamingirl">flamingirl</a></td>
-    <td>66.01</td>
-    <td>2018-01-04 20:54:36</td>
-    <td><a href="https://www.steemit.com/steemit/@flamingirl/meeting-steemit-2-in-barcelona-last-information-busy-and-crazy-life-d-community-and-steemit-solidarity">Meeting Steemit 2 in Barcelona Last Information! Busy and Crazy life! =D / Community and Steemit Solidarity [Spanish version]</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>5</td>
-    <td>165.16</td>
-    <td>151</td>
-    <td><a href="https://www.steemit.com/@levycore">levycore</a></td>
-    <td>69.42</td>
-    <td>2018-01-04 16:27:30</td>
-    <td><a href="https://www.steemit.com/steemit/@levycore/steemit-on-air-promotion">Steemit on Air Promotion</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>6</td>
-    <td>137.60</td>
-    <td>79</td>
-    <td><a href="https://www.steemit.com/@c0ff33a">c0ff33a</a></td>
-    <td>60.72</td>
-    <td>2018-01-04 00:18:09</td>
-    <td><a href="https://www.steemit.com/steemit/@c0ff33a/steemit-2018-where-am-i-going-and-what-on-earth-am-i-doing">Steemit 2018 - Where am I going? And what on earth am I doing?</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>7</td>
-    <td>136.62</td>
-    <td>104</td>
-    <td><a href="https://www.steemit.com/@scarlet7">scarlet7</a></td>
-    <td>51.78</td>
-    <td>2018-01-04 18:56:12</td>
-    <td><a href="https://www.steemit.com/steemit/@scarlet7/daily-berniesanders-and-randowhale-abuse-report-1-4-18">Daily BernieSanders and Randowhale Abuse Report 1/4/18</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>8</td>
-    <td>128.81</td>
-    <td>135</td>
-    <td><a href="https://www.steemit.com/@brandonfrye">brandonfrye</a></td>
-    <td>54.63</td>
-    <td>2018-01-04 18:57:12</td>
-    <td><a href="https://www.steemit.com/steemit/@brandonfrye/win-steemit-dollars-sbd-with-your-comments">Win Steemit Dollars (SBD) with Your Comments!</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>9</td>
-    <td>113.02</td>
-    <td>96</td>
-    <td><a href="https://www.steemit.com/@steembusiness">steembusiness</a></td>
-    <td>66.04</td>
-    <td>2018-01-04 11:23:57</td>
-    <td><a href="https://www.steemit.com/steemit/@steembusiness/reputation-of-66-it-s-time-to-celebrate-big-upvote-to-be-won">Reputation Of 66! - It´s Time To Celebrate - Big Upvote To Be Won!</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>10</td>
-    <td>107.58</td>
-    <td>51</td>
-    <td><a href="https://www.steemit.com/@me-tarzan">me-tarzan</a></td>
-    <td>73.93</td>
-    <td>2018-01-04 13:10:39</td>
-    <td><a href="https://www.steemit.com/steemit/@me-tarzan/3xpulq-exit-trade-exit-long-position-steem-trading-system-5">EXIT TRADE  /  EXIT LONG   POSITION     /    STEEM TRADING SYSTEM  # 5</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>11</td>
-    <td>104.47</td>
-    <td>30</td>
-    <td><a href="https://www.steemit.com/@bambam808">bambam808</a></td>
-    <td>66.60</td>
-    <td>2018-01-04 17:20:42</td>
-    <td><a href="https://www.steemit.com/steemit/@bambam808/we-need-gamers-like-you-open-recruitment-season-come-join-the-gsg-team-get-set-game">We need gamers like YOU! OPEN RECRUITMENT SEASON!Come join the GSG TEAM! ??Get.Set.GAME ??</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>12</td>
-    <td>104.07</td>
-    <td>27</td>
-    <td><a href="https://www.steemit.com/@bambam808">bambam808</a></td>
-    <td>66.60</td>
-    <td>2018-01-04 21:19:45</td>
-    <td><a href="https://www.steemit.com/steemit/@bambam808/come-join-the-team-we-need-gamers-like-you-open-recruitment-season-come-join-the-gsg-team-get-set-game">Come join the team!  We need gamers like YOU! OPEN RECRUITMENT SEASON!Come join the GSG TEAM! ??Get.Set.GAME ??</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>13</td>
-    <td>104.04</td>
-    <td>28</td>
-    <td><a href="https://www.steemit.com/@bambam808">bambam808</a></td>
-    <td>66.60</td>
-    <td>2018-01-04 18:14:18</td>
-    <td><a href="https://www.steemit.com/steemit/@bambam808/official-updates-talent-talk-community-podcast-001-revamp-news-stats-on-the-steemits-got-talent-current-week-guests-and-more">OFFICIAL UPDATES! ??TALENT TALK COMMUNITY PODCAST! #001 revamp NEWS!?? Stats on the STEEMITS GOT TALENT current week, Guests and MORE! Come enjoy! Whaleshares giveaways! DETAILS INSIDE!</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>14</td>
-    <td>99.36</td>
-    <td>140</td>
-    <td><a href="https://www.steemit.com/@penguinpablo">penguinpablo</a></td>
-    <td>71.94</td>
-    <td>2018-01-04 08:39:39</td>
-    <td><a href="https://www.steemit.com/steemit/@penguinpablo/steem-stats-report-january-04-2018-welcome-8-638-new-steem-users">Steem Stats Report - January 04, 2018 - Welcome 8,638 new Steem users!</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>15</td>
-    <td>96.75</td>
-    <td>77</td>
-    <td><a href="https://www.steemit.com/@davidpakman">davidpakman</a></td>
-    <td>67.85</td>
-    <td>2018-01-04 22:52:18</td>
-    <td><a href="https://www.steemit.com/steemit/@davidpakman/steemit-2018-power-up-project-streak-extended-to-4">Steemit 2018 Power Up Project: Streak Extended  to 4!</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>16</td>
-    <td>92.84</td>
-    <td>30</td>
-    <td><a href="https://www.steemit.com/@steempowerpics">steempowerpics</a></td>
-    <td>65.61</td>
-    <td>2018-01-04 22:28:18</td>
-    <td><a href="https://www.steemit.com/steemit/@steempowerpics/tonight-s-promote-your-post-live-will-be-epic-january-4-2018-7pm-est-beyondbit-votes-tonight">?? TONIGHT's Promote Your Post Live Will Be EPIC! (January 4, 2018 @ 7PM EST) [ BeyondBit Votes TONIGHT! ]</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>17</td>
-    <td>92.63</td>
-    <td>35</td>
-    <td><a href="https://www.steemit.com/@lpfaust">lpfaust</a></td>
-    <td>66.33</td>
-    <td>2018-01-04 05:00:33</td>
-    <td><a href="https://www.steemit.com/steemit/@lpfaust/us-tax-considerations-cryptocurrency-tax-workshop-for-novices-courtesy-of-the-rocky-mountain-steemit-accelerator">US Tax Considerations – Cryptocurrency Tax Workshop for Novices (Courtesy of the Rocky Mountain Steemit Accelerator)</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>18</td>
-    <td>74.21</td>
-    <td>48</td>
-    <td><a href="https://www.steemit.com/@freedomexists">freedomexists</a></td>
-    <td>61.10</td>
-    <td>2018-01-04 19:55:51</td>
-    <td><a href="https://www.steemit.com/steemit/@freedomexists/the-thursday-promote-your-post-live-show-with-freedomexists-7-9pm-est-and-12-2am-utc">The Thursday Promote Your Post Live Show with @FreedomExists - 7-9PM EST and 12-2AM UTC</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>19</td>
-    <td>61.00</td>
-    <td>64</td>
-    <td><a href="https://www.steemit.com/@cryptopie">cryptopie</a></td>
-    <td>68.92</td>
-    <td>2018-01-04 16:50:54</td>
-    <td><a href="https://www.steemit.com/steemit/@cryptopie/dear-diary-i-have-sneezed-and-it-injured-my-rib-cage">Dear Diary: I Have Sneezed And It Injured My Rib Cage</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>20</td>
-    <td>58.67</td>
-    <td>36</td>
-    <td><a href="https://www.steemit.com/@me-tarzan">me-tarzan</a></td>
-    <td>73.93</td>
-    <td>2018-01-04 20:41:00</td>
-    <td><a href="https://www.steemit.com/steemit/@me-tarzan/bitcoin-bid-to-buy-steem-numbers-have-hit-resistance-at-the-259-area">Bitcoin bid to buy Steem Numbers have hit resistance at the 259 area</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>21</td>
-    <td>56.81</td>
-    <td>91</td>
-    <td><a href="https://www.steemit.com/@michelle.gent">michelle.gent</a></td>
-    <td>74.41</td>
-    <td>2018-01-04 18:47:09</td>
-    <td><a href="https://www.steemit.com/steemit/@michelle.gent/michelle-gent-joins-planet-auto-s-automotive-media-team">Michelle Gent joins Planet Auto's Automotive Media Team</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>22</td>
-    <td>53.67</td>
-    <td>70</td>
-    <td><a href="https://www.steemit.com/@teneiced">teneiced</a></td>
-    <td>55.56</td>
-    <td>2018-01-04 13:21:57</td>
-    <td><a href="https://www.steemit.com/steemit/@teneiced/on-being-grateful-201814t82156117z">On being grateful</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>23</td>
-    <td>52.10</td>
-    <td>45</td>
-    <td><a href="https://www.steemit.com/@decuration">decuration</a></td>
-    <td>47.46</td>
-    <td>2018-01-04 16:34:48</td>
-    <td><a href="https://www.steemit.com/steemit/@decuration/steemit-nicht-benutzbar-mangels-bandbreite">Steemit nicht benutzbar mangels Bandbreite?</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>24</td>
-    <td>51.99</td>
-    <td>48</td>
-    <td><a href="https://www.steemit.com/@me-tarzan">me-tarzan</a></td>
-    <td>73.93</td>
-    <td>2018-01-04 03:27:03</td>
-    <td><a href="https://www.steemit.com/steemit/@me-tarzan/6ayc4p-tuesday-s-power-down-is-below-tuesday-s-average-line-daily-steem-power-down">TUESDAY'S power down is  BELOW TUESDAY'S AVERAGE LINE < DAILY STEEM POWER DOWN <><></a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>25</td>
-    <td>49.89</td>
-    <td>24</td>
-    <td><a href="https://www.steemit.com/@dudutaulois">dudutaulois</a></td>
-    <td>58.77</td>
-    <td>2018-01-04 15:57:03</td>
-    <td><a href="https://www.steemit.com/steemit/@dudutaulois/moneytalks-002-coisas-que-eu-escuto-ao-falar-de-blockchain">[#moneytalks - 002] Coisas Que Eu Escuto Ao Falar De Blockchain</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>26</td>
-    <td>48.74</td>
-    <td>9</td>
-    <td><a href="https://www.steemit.com/@fapfap">fapfap</a></td>
-    <td>54.97</td>
-    <td>2018-01-04 02:10:12</td>
-    <td><a href="https://www.steemit.com/steemit/@fapfap/is-there-censorship-what-about-steemit">Is there censorship? What about Steemit?</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>27</td>
-    <td>47.60</td>
-    <td>58</td>
-    <td><a href="https://www.steemit.com/@alexbeyman">alexbeyman</a></td>
-    <td>73.88</td>
-    <td>2018-01-04 03:10:24</td>
-    <td><a href="https://www.steemit.com/steemit/@alexbeyman/replicants-walk-among-us-the-appallingly-lazy-tactics-of-comment-spammers">Replicants Walk Among Us: The Appallingly Lazy Tactics of Comment Spammers</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>28</td>
-    <td>47.48</td>
-    <td>17</td>
-    <td><a href="https://www.steemit.com/@cryptokeepr">cryptokeepr</a></td>
-    <td>59.45</td>
-    <td>2018-01-04 01:26:42</td>
-    <td><a href="https://www.steemit.com/steemit/@cryptokeepr/my-steemvoter-error-and-how-to-avoid-it-easily">My Steemvoter Error and how to avoid it easily</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>29</td>
-    <td>47.14</td>
-    <td>44</td>
-    <td><a href="https://www.steemit.com/@kubbyelizabeth">kubbyelizabeth</a></td>
-    <td>61.48</td>
-    <td>2018-01-04 10:21:06</td>
-    <td><a href="https://www.steemit.com/steemit/@kubbyelizabeth/minnowuniversity-formatting-201813t233611775z">MinnowUniversity: Formatting</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>30</td>
-    <td>46.25</td>
-    <td>12</td>
-    <td><a href="https://www.steemit.com/@wajahatsardar">wajahatsardar</a></td>
-    <td>56.61</td>
-    <td>2018-01-04 14:06:09</td>
-    <td><a href="https://www.steemit.com/steemit/@wajahatsardar/steemit-meme">Steemit meme</a></td>
-  </tr>
-  
-</table>
-]]></content></entry><entry><id>https://www.yuxifan.com/atom/atom_steemit/steem/2018-01-04</id><title>daily popular posts in steem on 2018-01-04</title><updated>2018-01-05T03:02:05.699400+00:00</updated><content type="html"><![CDATA[
-<h2>Top 30 posts in category: steem on 2018-01-04</h2>
-
-<img src="https://www.yuxifan.com/images/steem-statistics.jpg"/><br/>
-
-<table class="responstable" border="1" style="margin: 1em 0;border-radius: 10px;border-collapse: collapse;border: 1px solid #167F92;">
-  <tr style="background-color: #167F92;">
-    <td>Ranking</td>
-    <td>Payouts</td>
-    <td>Votes</td>
-    <td>Author</td>
-    <td>Rep</td>
-    <td>Date</td>
-    <td>Title/URL</td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>1</td>
-    <td>343.00</td>
-    <td>400</td>
-    <td><a href="https://www.steemit.com/@cryptoctopus">cryptoctopus</a></td>
-    <td>73.21</td>
-    <td>2018-01-04 15:24:24</td>
-    <td><a href="https://www.steemit.com/steem/@cryptoctopus/what-i-intend-to-do-with-my-steem-in-2018">What I Intend To Do With My Steem in 2018</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>2</td>
-    <td>312.55</td>
-    <td>223</td>
-    <td><a href="https://www.steemit.com/@sndbox">sndbox</a></td>
-    <td>71.29</td>
-    <td>2018-01-04 19:17:57</td>
-    <td><a href="https://www.steemit.com/steem/@sndbox/steem-stats-infographic-contest-announcement-big-upvote-prizes">Steem Stats - Infographic Contest Announcement! [Big Upvote Prizes]</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>3</td>
-    <td>221.86</td>
-    <td>144</td>
-    <td><a href="https://www.steemit.com/@cryptopassion">cryptopassion</a></td>
-    <td>71.74</td>
-    <td>2018-01-04 18:37:48</td>
-    <td><a href="https://www.steemit.com/steem/@cryptopassion/steem-new-consolidation-in-progress-we-are-following-closely-the-mma50">STEEM - New consolidation in progress - We are following closely the MMA50</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>4</td>
-    <td>207.23</td>
-    <td>61</td>
-    <td><a href="https://www.steemit.com/@bigram13">bigram13</a></td>
-    <td>67.61</td>
-    <td>2018-01-04 04:53:39</td>
-    <td><a href="https://www.steemit.com/steem/@bigram13/do-we-get-coins-air-dropped">Do we get Coins AIR DROPPED?</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>5</td>
-    <td>138.46</td>
+    <td>266.13</td>
     <td>301</td>
     <td><a href="https://www.steemit.com/@aggroed">aggroed</a></td>
-    <td>72.83</td>
-    <td>2018-01-04 19:24:00</td>
-    <td><a href="https://www.steemit.com/steem/@aggroed/steem-has-a-ton-of-new-people-here-s-some-thoughts-to-get-you-started">Steem has a ton of new people.  Here's some thoughts to get you started!</a></td>
+    <td>72.84</td>
+    <td>2018-01-05 01:10:00</td>
+    <td><a href="https://www.steemit.com/life/@aggroed/throwback-thursday-how-i-made-7-cents-in-5-posts-and-you-can-too-and-steemit-millionaire">Throwback Thursday: "How I made 7 cents in 5 posts and you can too!" and Steemit Millionaire</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>2</td>
+    <td>249.65</td>
+    <td>107</td>
+    <td><a href="https://www.steemit.com/@sauravrungta">sauravrungta</a></td>
+    <td>74.21</td>
+    <td>2018-01-05 19:14:57</td>
+    <td><a href="https://www.steemit.com/life/@sauravrungta/modern-day-problems-we-can-all-relate-to">Modern Day “Problems” We Can All Relate To</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>3</td>
+    <td>244.14</td>
+    <td>54</td>
+    <td><a href="https://www.steemit.com/@gracesunflower">gracesunflower</a></td>
+    <td>60.23</td>
+    <td>2018-01-05 05:11:57</td>
+    <td><a href="https://www.steemit.com/life/@gracesunflower/works-of-our-mind-that-we-ignore">Works of our mind that we ignore</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>4</td>
+    <td>216.50</td>
+    <td>245</td>
+    <td><a href="https://www.steemit.com/@joseph">joseph</a></td>
+    <td>73.57</td>
+    <td>2018-01-05 18:24:12</td>
+    <td><a href="https://www.steemit.com/life/@joseph/man-impersonating-cop-busted-when-trying-to-pull-over-real-cop">Man Impersonating Cop Busted When Trying To Pull Over Real Cop</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>5</td>
+    <td>196.56</td>
+    <td>121</td>
+    <td><a href="https://www.steemit.com/@quinneaker">quinneaker</a></td>
+    <td>69.70</td>
+    <td>2018-01-05 14:01:33</td>
+    <td><a href="https://www.steemit.com/life/@quinneaker/almost-all-the-world-s-problems-start-with-parenting-thus-the-solutions-to-the-world-s-problems-lie-in-new-paradigm-parenting">~*~Almost all the world’s problems start with parenting, thus the solutions to the world’s problems lie in New Paradigm parenting~*~</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>6</td>
-    <td>123.52</td>
-    <td>113</td>
-    <td><a href="https://www.steemit.com/@czechglobalhosts">czechglobalhosts</a></td>
-    <td>70.36</td>
-    <td>2018-01-04 14:48:09</td>
-    <td><a href="https://www.steemit.com/steem/@czechglobalhosts/price-of-steem-100-and-5-to-10-million-users-by-the-end-of-2018">Price of Steem 100+ and 5 to 10 million users by the end of 2018!</a></td>
+    <td>164.94</td>
+    <td>15</td>
+    <td><a href="https://www.steemit.com/@kusadasi">kusadasi</a></td>
+    <td>66.28</td>
+    <td>2018-01-05 17:04:24</td>
+    <td><a href="https://www.steemit.com/life/@kusadasi/litecoin-kurucusu-charlie-lee-den-aciklama">LiteCoin Kurucusu Charlie Lee'den Açıklama</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>7</td>
-    <td>110.18</td>
-    <td>110</td>
-    <td><a href="https://www.steemit.com/@quinneaker">quinneaker</a></td>
-    <td>69.67</td>
-    <td>2018-01-04 03:11:39</td>
-    <td><a href="https://www.steemit.com/steem/@quinneaker/its-a-new-year-and-time-for-more-celebration-usdteem-is-more-valuable-than-ever-and-i-reach-3333-followers-to-steemfinity-and">Its A New Year &amp; Time For MORE Celebration!  $teem Is More Valuable Than Ever &amp; I Reach 3333 Followers! To SteemFinity &amp; Beyond!</a></td>
+    <td>158.31</td>
+    <td>98</td>
+    <td><a href="https://www.steemit.com/@ace108">ace108</a></td>
+    <td>72.39</td>
+    <td>2018-01-05 02:46:27</td>
+    <td><a href="https://www.steemit.com/life/@ace108/playing-the-lottery-from-usd5m-to-usd9m-with-odds-50-50-or-500-900-cny-50-50-by-ace108">????Playing the lottery from $5M to $9M with odds 50-50??? | 玩博彩从500万到900万元几率50-50？ (by @ace108)</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>8</td>
-    <td>78.29</td>
-    <td>49</td>
-    <td><a href="https://www.steemit.com/@steempunknet">steempunknet</a></td>
-    <td>53.95</td>
-    <td>2018-01-04 00:35:54</td>
-    <td><a href="https://www.steemit.com/steem/@steempunknet/steempunk-net-update-no-11-player-rewarsds-working-mmorpg-on-steem-english-german">STEEMPUNK-NET-- Update No 11 -- Player Rewarsds working ! -- MMORPG on STEEM -- (English/German)</a></td>
+    <td>129.03</td>
+    <td>133</td>
+    <td><a href="https://www.steemit.com/@meesterboom">meesterboom</a></td>
+    <td>72.92</td>
+    <td>2018-01-05 20:15:00</td>
+    <td><a href="https://www.steemit.com/life/@meesterboom/spewnami">Spewnami!!</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>9</td>
-    <td>77.32</td>
-    <td>110</td>
-    <td><a href="https://www.steemit.com/@smartsteem">smartsteem</a></td>
-    <td>57.80</td>
-    <td>2018-01-04 09:18:09</td>
-    <td><a href="https://www.steemit.com/steem/@smartsteem/automatic-upvotes-temporary-disabled-for-smartmarket">Automatic-Upvotes temporary disabled for @smartmarket</a></td>
+    <td>125.89</td>
+    <td>152</td>
+    <td><a href="https://www.steemit.com/@jwolf">jwolf</a></td>
+    <td>67.12</td>
+    <td>2018-01-05 12:29:06</td>
+    <td><a href="https://www.steemit.com/life/@jwolf/how-to-achieve-your-goals-in-2018">How to achieve your goals in 2018</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>10</td>
-    <td>74.60</td>
+    <td>125.14</td>
     <td>69</td>
-    <td><a href="https://www.steemit.com/@knircky">knircky</a></td>
-    <td>65.56</td>
-    <td>2018-01-04 06:23:06</td>
-    <td><a href="https://www.steemit.com/steem/@knircky/steem-is-the-most-active-blockchain">Steem is the most active blockchain</a></td>
+    <td><a href="https://www.steemit.com/@bleujay">bleujay</a></td>
+    <td>67.24</td>
+    <td>2018-01-05 21:05:39</td>
+    <td><a href="https://www.steemit.com/life/@bleujay/3jzmz5-principle-of-the-day">Principle of the Day</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>11</td>
-    <td>68.42</td>
-    <td>32</td>
-    <td><a href="https://www.steemit.com/@steem-munich">steem-munich</a></td>
-    <td>56.17</td>
-    <td>2018-01-04 13:33:21</td>
-    <td><a href="https://www.steemit.com/steem/@steem-munich/steem-munich-stammtisch-mittwoch-10-januar-18-uhr-im-cafe-westend">STEEM Munich Stammtisch - Mittwoch, 10. Januar, 18 Uhr im Cafe Westend</a></td>
+    <td>123.31</td>
+    <td>103</td>
+    <td><a href="https://www.steemit.com/@thisisbenbrick">thisisbenbrick</a></td>
+    <td>68.45</td>
+    <td>2018-01-05 13:32:15</td>
+    <td><a href="https://www.steemit.com/life/@thisisbenbrick/reopened-mailing-list-sign-up-to-steemsongs-com-beta-now">REOPENED Mailing List! Sign Up To Steemsongs.com Beta Now!</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>12</td>
-    <td>66.43</td>
-    <td>100</td>
-    <td><a href="https://www.steemit.com/@cryptohustlin">cryptohustlin</a></td>
-    <td>63.11</td>
-    <td>2018-01-04 05:51:12</td>
-    <td><a href="https://www.steemit.com/steem/@cryptohustlin/steemit-advertising-campaign-part-95">Steemit Advertising Campaign [part 95]</a></td>
+    <td>119.71</td>
+    <td>70</td>
+    <td><a href="https://www.steemit.com/@damarth">damarth</a></td>
+    <td>63.38</td>
+    <td>2018-01-05 09:19:39</td>
+    <td><a href="https://www.steemit.com/life/@damarth/share-your-thoughts-life-experiment-legacy">Share your thoughts! Life experiment legacy</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>13</td>
-    <td>66.33</td>
-    <td>64</td>
-    <td><a href="https://www.steemit.com/@raci">raci</a></td>
-    <td>56.37</td>
-    <td>2018-01-04 10:31:51</td>
-    <td><a href="https://www.steemit.com/steem/@raci/exploring-blockchain-enabled-creative-social-networks-participate-in-the-first-research-project-on-steem">Exploring Blockchain-enabled Creative Social Networks - Participate in the First Research Project on STEEM!</a></td>
+    <td>105.43</td>
+    <td>50</td>
+    <td><a href="https://www.steemit.com/@lellabird60">lellabird60</a></td>
+    <td>58.21</td>
+    <td>2018-01-05 13:07:12</td>
+    <td><a href="https://www.steemit.com/life/@lellabird60/husbands-beware">Husbands Beware!!....</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>14</td>
-    <td>65.50</td>
-    <td>41</td>
-    <td><a href="https://www.steemit.com/@progressivechef">progressivechef</a></td>
-    <td>65.23</td>
-    <td>2018-01-04 18:53:03</td>
-    <td><a href="https://www.steemit.com/steem/@progressivechef/with-one-steem-at-actual-price-you-can-buy-2-of-this-panini-in-my-bistro">With ONE STEEM at actual price...You can buy 2 of this panini in my bistro!!!</a></td>
+    <td>105.07</td>
+    <td>70</td>
+    <td><a href="https://www.steemit.com/@nonameslefttouse">nonameslefttouse</a></td>
+    <td>70.82</td>
+    <td>2018-01-05 03:53:42</td>
+    <td><a href="https://www.steemit.com/life/@nonameslefttouse/the-things-i-don-t-know-about-me">The Things I Don't Know About Me</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>15</td>
-    <td>65.16</td>
-    <td>36</td>
-    <td><a href="https://www.steemit.com/@khaleelkazi">khaleelkazi</a></td>
-    <td>60.92</td>
-    <td>2018-01-04 21:22:33</td>
-    <td><a href="https://www.steemit.com/steem/@khaleelkazi/i-m-starting-a-curation-service-upvoting-at-usd62-submit-your-posts-for-a-chance-to-be-featured">I'm Starting a Curation Service! Upvoting at ~$62 - Submit Your Posts for a Chance to Be Featured!</a></td>
+    <td>102.02</td>
+    <td>361</td>
+    <td><a href="https://www.steemit.com/@papa-pepper">papa-pepper</a></td>
+    <td>77.31</td>
+    <td>2018-01-05 17:49:57</td>
+    <td><a href="https://www.steemit.com/life/@papa-pepper/cooking-in-bulk-and-running-a-crew">COOKING IN BULK &amp; RUNNING A CREW</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>16</td>
-    <td>64.99</td>
-    <td>40</td>
-    <td><a href="https://www.steemit.com/@randowhale">randowhale</a></td>
-    <td>66.56</td>
-    <td>2018-01-04 19:00:36</td>
-    <td><a href="https://www.steemit.com/steem/@randowhale/randowhale-has-best-day-in-2-weeks-thank-you-to-our-supporters">@randowhale has best day in 2 weeks!  thank you to our supporters and master haejin for the promotion!</a></td>
+    <td>101.40</td>
+    <td>18</td>
+    <td><a href="https://www.steemit.com/@bkdbkd">bkdbkd</a></td>
+    <td>59.89</td>
+    <td>2018-01-05 16:53:51</td>
+    <td><a href="https://www.steemit.com/life/@bkdbkd/support-is-the-best-thing-you-can-offer">Support is the best thing you can offer</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>17</td>
-    <td>64.98</td>
-    <td>58</td>
-    <td><a href="https://www.steemit.com/@jedigeiss">jedigeiss</a></td>
-    <td>63.15</td>
-    <td>2018-01-04 01:25:09</td>
-    <td><a href="https://www.steemit.com/steem/@jedigeiss/jedigeiss-dolphinized-projects-and-ideas-you-could-help-me-with-english-german">jedigeiss dolphinized -- projects and ideas you could help (me) with! (English/German)</a></td>
+    <td>95.65</td>
+    <td>45</td>
+    <td><a href="https://www.steemit.com/@jaynie">jaynie</a></td>
+    <td>66.23</td>
+    <td>2018-01-05 18:53:06</td>
+    <td><a href="https://www.steemit.com/life/@jaynie/so-you-are-perfect-then">So YOU are PERFECT then?!</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>18</td>
-    <td>60.59</td>
-    <td>72</td>
-    <td><a href="https://www.steemit.com/@nextgen622">nextgen622</a></td>
-    <td>66.26</td>
-    <td>2018-01-04 04:50:42</td>
-    <td><a href="https://www.steemit.com/steem/@nextgen622/psa-bittrex-steem-and-sbd-wallets-are-currently-under-maintenance">PSA: Bittrex Steem and SBD wallets are currently under maintenance</a></td>
+    <td>93.03</td>
+    <td>114</td>
+    <td><a href="https://www.steemit.com/@susanlo">susanlo</a></td>
+    <td>63.58</td>
+    <td>2018-01-05 06:16:33</td>
+    <td><a href="https://www.steemit.com/life/@susanlo/so-these-are-the-things-i-want-to-do-in-2018-2018">So These are the Things I Want to Do in 2018! ?? 這些就是我在2018年想做的事情！</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>19</td>
+    <td>92.81</td>
+    <td>19</td>
+    <td><a href="https://www.steemit.com/@steemseph">steemseph</a></td>
+    <td>58.72</td>
+    <td>2018-01-05 15:03:39</td>
+    <td><a href="https://www.steemit.com/life/@steemseph/happy-new-year-i-made-a-gif-for-me-and-my-friends-in-steelparade">Happy New Year! I made a gif for me and my friends in #steelparade</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>20</td>
+    <td>92.62</td>
+    <td>57</td>
+    <td><a href="https://www.steemit.com/@icedrum">icedrum</a></td>
+    <td>64.41</td>
+    <td>2018-01-05 19:28:15</td>
+    <td><a href="https://www.steemit.com/life/@icedrum/space-news-volcano-space-weather-cosmic-facts-change-or-s0-news-jan-5-2018">SPACE NEWS - Volcano, Space Weather, Cosmic Facts Change | S0 News Jan.5.2018</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>21</td>
+    <td>89.11</td>
+    <td>74</td>
+    <td><a href="https://www.steemit.com/@drwom">drwom</a></td>
+    <td>66.65</td>
+    <td>2018-01-05 09:55:21</td>
+    <td><a href="https://www.steemit.com/life/@drwom/best-family-holiday-movies-and-tv-show">Best family holiday movies (and TV show)</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>22</td>
+    <td>87.32</td>
+    <td>72</td>
+    <td><a href="https://www.steemit.com/@icedrum">icedrum</a></td>
+    <td>64.41</td>
+    <td>2018-01-05 01:23:06</td>
+    <td><a href="https://www.steemit.com/life/@icedrum/new-graham-hancock-update-2018-suppressed-ancient-civilizations">New Graham Hancock Update 2018 Suppressed Ancient Civilizations</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>23</td>
+    <td>77.32</td>
+    <td>17</td>
+    <td><a href="https://www.steemit.com/@robertgenito">robertgenito</a></td>
+    <td>58.71</td>
+    <td>2018-01-05 03:24:03</td>
+    <td><a href="https://www.steemit.com/life/@robertgenito/powerful-language-hacks-that-will-accomplish-your-mission">Powerful Language Hacks that will ACCOMPLISH YOUR MISSION!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>24</td>
+    <td>76.63</td>
+    <td>181</td>
+    <td><a href="https://www.steemit.com/@kaylinart">kaylinart</a></td>
+    <td>74.05</td>
+    <td>2018-01-05 02:08:15</td>
+    <td><a href="https://www.steemit.com/life/@kaylinart/steemit-is-freedom">Steemit Is Freedom!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>25</td>
+    <td>73.30</td>
+    <td>34</td>
+    <td><a href="https://www.steemit.com/@sean-king">sean-king</a></td>
+    <td>68.87</td>
+    <td>2018-01-05 12:30:06</td>
+    <td><a href="https://www.steemit.com/life/@sean-king/the-magic-of-maxims">The Magic of Maxims</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>26</td>
+    <td>65.59</td>
+    <td>30</td>
+    <td><a href="https://www.steemit.com/@fedrarosi">fedrarosi</a></td>
+    <td>61.97</td>
+    <td>2018-01-05 19:34:15</td>
+    <td><a href="https://www.steemit.com/life/@fedrarosi/sunset-or-sunrise">Sunset or sunrise ?</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>27</td>
+    <td>64.47</td>
+    <td>8</td>
+    <td><a href="https://www.steemit.com/@modemser1">modemser1</a></td>
+    <td>45.98</td>
+    <td>2018-01-05 16:00:48</td>
+    <td><a href="https://www.steemit.com/life/@modemser1/eficient-ways-to-heat-your-house">Eficient ways to heat your house</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>28</td>
+    <td>63.85</td>
+    <td>53</td>
+    <td><a href="https://www.steemit.com/@soldier">soldier</a></td>
+    <td>68.85</td>
+    <td>2018-01-05 21:31:00</td>
+    <td><a href="https://www.steemit.com/life/@soldier/how-to-reconnect-with-your-soul-or-powerful">How To Reconnect With Your Soul | POWERFUL</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>29</td>
+    <td>59.27</td>
+    <td>8</td>
+    <td><a href="https://www.steemit.com/@awakeningartist">awakeningartist</a></td>
+    <td>64.42</td>
+    <td>2018-01-05 18:27:51</td>
+    <td><a href="https://www.steemit.com/life/@awakeningartist/2cnolt-there-is-something-to-learn-form-your-history">There is something to learn form your History.</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>30</td>
+    <td>58.29</td>
+    <td>83</td>
+    <td><a href="https://www.steemit.com/@kitty24">kitty24</a></td>
+    <td>46.49</td>
+    <td>2018-01-05 06:19:42</td>
+    <td><a href="https://www.steemit.com/life/@kitty24/weapons-of-mass-destruction">Weapons of Mass Destruction</a></td>
+  </tr>
+  
+</table>
+]]></content></entry><entry><id>https://www.yuxifan.com/atom/atom_steemit/photography/2018-01-05</id><title>daily popular posts in photography on 2018-01-05</title><updated>2018-01-06T03:02:04.533700+00:00</updated><content type="html"><![CDATA[
+<h2>Top 30 posts in category: photography on 2018-01-05</h2>
+
+<img src="https://www.yuxifan.com/images/steem-statistics.jpg"/><br/>
+
+<table class="responstable" border="1" style="margin: 1em 0;border-radius: 10px;border-collapse: collapse;border: 1px solid #167F92;">
+  <tr style="background-color: #167F92;">
+    <td>Ranking</td>
+    <td>Payouts</td>
+    <td>Votes</td>
+    <td>Author</td>
+    <td>Rep</td>
+    <td>Date</td>
+    <td>Title/URL</td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>1</td>
+    <td>672.92</td>
+    <td>440</td>
+    <td><a href="https://www.steemit.com/@bigpanda">bigpanda</a></td>
+    <td>65.76</td>
+    <td>2018-01-05 16:33:15</td>
+    <td><a href="https://www.steemit.com/photography/@bigpanda/meet-my-friend-denissemata">Meet My Friend @denissemata</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>2</td>
+    <td>261.14</td>
+    <td>267</td>
+    <td><a href="https://www.steemit.com/@gringalicious">gringalicious</a></td>
+    <td>74.27</td>
+    <td>2018-01-05 06:06:12</td>
+    <td><a href="https://www.steemit.com/photography/@gringalicious/rosewater-cream-pistachio-crepe-cake-food-photo-shoot">Rosewater Cream Pistachio Crepe Cake - FOOD PHOTO SHOOT</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>3</td>
+    <td>221.67</td>
+    <td>185</td>
+    <td><a href="https://www.steemit.com/@gringalicious">gringalicious</a></td>
+    <td>74.27</td>
+    <td>2018-01-05 19:10:15</td>
+    <td><a href="https://www.steemit.com/photography/@gringalicious/tuxedo-cheesecake-bars-food-photo-shoot">Tuxedo Cheesecake Bars - FOOD PHOTO SHOOT</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>4</td>
+    <td>221.37</td>
+    <td>108</td>
+    <td><a href="https://www.steemit.com/@scottdphoto">scottdphoto</a></td>
+    <td>67.29</td>
+    <td>2018-01-05 17:41:45</td>
+    <td><a href="https://www.steemit.com/photography/@scottdphoto/otters-in-a-golden-light">Otters in a Golden Light</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>5</td>
+    <td>175.42</td>
+    <td>54</td>
+    <td><a href="https://www.steemit.com/@madiba">madiba</a></td>
+    <td>65.49</td>
+    <td>2018-01-05 08:47:42</td>
+    <td><a href="https://www.steemit.com/photography/@madiba/macro-shots-of-wild-sundews-a-carnivorous-plant">Macro Shots of Wild Sundews, a Carnivorous Plant.</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>6</td>
+    <td>149.67</td>
+    <td>125</td>
+    <td><a href="https://www.steemit.com/@eveuncovered">eveuncovered</a></td>
+    <td>67.73</td>
+    <td>2018-01-05 20:19:15</td>
+    <td><a href="https://www.steemit.com/photography/@eveuncovered/ain-t-no-sunshine">Ain't No Sunshine</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>7</td>
+    <td>143.93</td>
+    <td>78</td>
+    <td><a href="https://www.steemit.com/@terrycraft">terrycraft</a></td>
+    <td>72.12</td>
+    <td>2018-01-05 11:27:24</td>
+    <td><a href="https://www.steemit.com/photography/@terrycraft/nature-snow-and-positive">Nature, Snow and Positive.</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>8</td>
+    <td>135.75</td>
+    <td>53</td>
+    <td><a href="https://www.steemit.com/@jazminmillion">jazminmillion</a></td>
+    <td>59.76</td>
+    <td>2018-01-05 04:51:06</td>
+    <td><a href="https://www.steemit.com/photography/@jazminmillion/30-stunning-images-from-across-the-web">30 Stunning Images From Across The Web.</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>9</td>
+    <td>130.27</td>
+    <td>195</td>
+    <td><a href="https://www.steemit.com/@vm2904">vm2904</a></td>
+    <td>63.96</td>
+    <td>2018-01-05 08:26:27</td>
+    <td><a href="https://www.steemit.com/photography/@vm2904/lizard-speak-maintain-a-low-profile-shed-old-ways-and-be-dashing-original-wildlife-photographs-and-thoughts">??Lizard speak: Maintain a low profile, shed old ways and be dashing! (Original wildlife photographs and thoughts)</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>10</td>
+    <td>130.19</td>
+    <td>32</td>
+    <td><a href="https://www.steemit.com/@wolfje">wolfje</a></td>
+    <td>62.18</td>
+    <td>2018-01-05 20:43:39</td>
+    <td><a href="https://www.steemit.com/photography/@wolfje/5hc5bc-picture-of-the-day">Picture of the Day ... Mountain-Eagle</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>11</td>
+    <td>115.81</td>
+    <td>68</td>
+    <td><a href="https://www.steemit.com/@shaunf">shaunf</a></td>
+    <td>58.37</td>
+    <td>2018-01-05 02:47:27</td>
+    <td><a href="https://www.steemit.com/photography/@shaunf/hanging-out-with-dr-phil">Hanging Out With Dr. Phil</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>12</td>
+    <td>110.34</td>
+    <td>134</td>
+    <td><a href="https://www.steemit.com/@countrygirl">countrygirl</a></td>
+    <td>65.21</td>
+    <td>2018-01-05 00:29:42</td>
+    <td><a href="https://www.steemit.com/photography/@countrygirl/keep-a-little-summer-in-your-heart-when-the-temperature-is-below-zero">keep a little summer in your heart when the temperature is below zero</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>13</td>
+    <td>106.91</td>
+    <td>34</td>
+    <td><a href="https://www.steemit.com/@markvance">markvance</a></td>
+    <td>62.43</td>
+    <td>2018-01-05 12:52:27</td>
+    <td><a href="https://www.steemit.com/photography/@markvance/imaginative-photography-40-jackson-pollock">Imaginative Photography #40 Jackson Pollock?</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>14</td>
+    <td>104.09</td>
+    <td>48</td>
+    <td><a href="https://www.steemit.com/@cuttie1979">cuttie1979</a></td>
+    <td>68.86</td>
+    <td>2018-01-05 15:59:54</td>
+    <td><a href="https://www.steemit.com/photography/@cuttie1979/greyhound-macro-photos">Greyhound macro photos</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>15</td>
+    <td>102.97</td>
+    <td>103</td>
+    <td><a href="https://www.steemit.com/@wartrapa">wartrapa</a></td>
+    <td>68.12</td>
+    <td>2018-01-05 17:32:18</td>
+    <td><a href="https://www.steemit.com/photography/@wartrapa/noche-de-reyes">Noche de Reyes</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>16</td>
+    <td>102.75</td>
+    <td>53</td>
+    <td><a href="https://www.steemit.com/@oldtimer">oldtimer</a></td>
+    <td>67.55</td>
+    <td>2018-01-05 23:35:06</td>
+    <td><a href="https://www.steemit.com/photography/@oldtimer/wayne-gretzky-bridge-in-edmonton">Wayne Gretzky Bridge In Edmonton</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>17</td>
+    <td>99.69</td>
+    <td>101</td>
+    <td><a href="https://www.steemit.com/@kommienezuspadt">kommienezuspadt</a></td>
+    <td>69.63</td>
+    <td>2018-01-05 06:25:36</td>
+    <td><a href="https://www.steemit.com/photography/@kommienezuspadt/photography-of-a-vancouver-girl-s-first-time-in-new-york-city-years-in-the-making">Photography of a Vancouver girl's first time in New York City; years in the making!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>18</td>
+    <td>84.94</td>
+    <td>64</td>
+    <td><a href="https://www.steemit.com/@eric-boucher">eric-boucher</a></td>
+    <td>68.40</td>
+    <td>2018-01-05 09:46:42</td>
+    <td><a href="https://www.steemit.com/photography/@eric-boucher/a-photographic-journey-through-2017-original-photos-and-text-by-eric-boucher-part-1-2">A Photographic Journey Through 2017  (Original photos and text by @eric-boucher. Part 1/2)</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>19</td>
+    <td>78.87</td>
+    <td>7</td>
+    <td><a href="https://www.steemit.com/@jonbit">jonbit</a></td>
+    <td>62.64</td>
+    <td>2018-01-05 03:29:51</td>
+    <td><a href="https://www.steemit.com/photography/@jonbit/redwood-trails-walking-with-giants-105">Redwood Trails - Walking With Giants #105</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>20</td>
+    <td>78.67</td>
+    <td>22</td>
+    <td><a href="https://www.steemit.com/@cuttie1979">cuttie1979</a></td>
+    <td>68.86</td>
+    <td>2018-01-05 07:36:42</td>
+    <td><a href="https://www.steemit.com/photography/@cuttie1979/underwater-photos-in-mauritius">Underwater photos in Mauritius</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>21</td>
+    <td>71.76</td>
+    <td>14</td>
+    <td><a href="https://www.steemit.com/@alokrm">alokrm</a></td>
+    <td>47.80</td>
+    <td>2018-01-05 02:59:54</td>
+    <td><a href="https://www.steemit.com/photography/@alokrm/spooky-drive-through-the-haunted-forest-of-tamhini-ghat">Spooky Drive through the haunted forest of Tamhini Ghat</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>22</td>
+    <td>64.41</td>
+    <td>27</td>
+    <td><a href="https://www.steemit.com/@kerkyra">kerkyra</a></td>
+    <td>57.81</td>
+    <td>2018-01-05 17:55:33</td>
+    <td><a href="https://www.steemit.com/photography/@kerkyra/strasbourg-france--2018-01-05-17-55-25">Strasbourg, France. </a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>23</td>
+    <td>59.71</td>
+    <td>21</td>
+    <td><a href="https://www.steemit.com/@travel-cuisine">travel-cuisine</a></td>
+    <td>64.76</td>
+    <td>2018-01-05 20:13:00</td>
+    <td><a href="https://www.steemit.com/photography/@travel-cuisine/2-flowers-nature-s-finest-creations-original-photography">#2 Flowers - Nature's Finest Creations (Original Photography)</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>24</td>
+    <td>57.40</td>
+    <td>12</td>
+    <td><a href="https://www.steemit.com/@shubaca430">shubaca430</a></td>
+    <td>51.28</td>
+    <td>2018-01-05 00:41:18</td>
+    <td><a href="https://www.steemit.com/photography/@shubaca430/7gu6bl">פרסומת לסיגריות שהפכה ליצירת אמנות בשווי מיליונים</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>25</td>
+    <td>53.40</td>
+    <td>45</td>
+    <td><a href="https://www.steemit.com/@yumyumseth">yumyumseth</a></td>
+    <td>55.85</td>
+    <td>2018-01-05 15:13:30</td>
+    <td><a href="https://www.steemit.com/photography/@yumyumseth/rocky-road">Rocky Road</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>26</td>
+    <td>48.72</td>
+    <td>14</td>
+    <td><a href="https://www.steemit.com/@mr-phoenix">mr-phoenix</a></td>
+    <td>44.79</td>
+    <td>2018-01-05 11:34:39</td>
+    <td><a href="https://www.steemit.com/photography/@mr-phoenix/plitra---mani--greece-2018-01-05-11-34-40">Plitra - Mani -Greece</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>27</td>
+    <td>48.27</td>
+    <td>8</td>
+    <td><a href="https://www.steemit.com/@bwells">bwells</a></td>
+    <td>56.62</td>
+    <td>2018-01-05 22:22:27</td>
+    <td><a href="https://www.steemit.com/photography/@bwells/fishing-in-any-condition">Fishing in any condition!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>28</td>
+    <td>46.96</td>
+    <td>19</td>
+    <td><a href="https://www.steemit.com/@vmoore709">vmoore709</a></td>
+    <td>59.09</td>
+    <td>2018-01-05 13:39:24</td>
+    <td><a href="https://www.steemit.com/photography/@vmoore709/tis-the-season-14-frosted">‘Tis the Season - #14 - Frosted</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>29</td>
+    <td>46.74</td>
+    <td>91</td>
+    <td><a href="https://www.steemit.com/@revelim">revelim</a></td>
+    <td>60.02</td>
+    <td>2018-01-05 19:27:09</td>
+    <td><a href="https://www.steemit.com/photography/@revelim/serra-do-acor-aldeia-de-piodao-pt">Serra do Açor … Aldeia de Piódão # PT</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>30</td>
+    <td>45.79</td>
+    <td>18</td>
+    <td><a href="https://www.steemit.com/@artedellavita">artedellavita</a></td>
+    <td>57.62</td>
+    <td>2018-01-05 01:00:12</td>
+    <td><a href="https://www.steemit.com/photography/@artedellavita/maybe-a-poem">Maybe~ A Poem</a></td>
+  </tr>
+  
+</table>
+]]></content></entry><entry><id>https://www.yuxifan.com/atom/atom_steemit/steemit/2018-01-05</id><title>daily popular posts in steemit on 2018-01-05</title><updated>2018-01-06T03:02:05.103598+00:00</updated><content type="html"><![CDATA[
+<h2>Top 30 posts in category: steemit on 2018-01-05</h2>
+
+<img src="https://www.yuxifan.com/images/steem-statistics.jpg"/><br/>
+
+<table class="responstable" border="1" style="margin: 1em 0;border-radius: 10px;border-collapse: collapse;border: 1px solid #167F92;">
+  <tr style="background-color: #167F92;">
+    <td>Ranking</td>
+    <td>Payouts</td>
+    <td>Votes</td>
+    <td>Author</td>
+    <td>Rep</td>
+    <td>Date</td>
+    <td>Title/URL</td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>1</td>
+    <td>529.22</td>
+    <td>242</td>
+    <td><a href="https://www.steemit.com/@contentjunkie">contentjunkie</a></td>
+    <td>70.60</td>
+    <td>2018-01-05 03:39:36</td>
+    <td><a href="https://www.steemit.com/steemit/@contentjunkie/vote-buyers-beware-dark-overlord-grumpycat-has-begun-his-reign-of-terror">Vote Buyers Beware! Dark Overlord @Grumpycat has Begun his Reign of Terror ??</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>2</td>
+    <td>399.43</td>
+    <td>391</td>
+    <td><a href="https://www.steemit.com/@surpassinggoogle">surpassinggoogle</a></td>
+    <td>69.43</td>
+    <td>2018-01-05 01:38:00</td>
+    <td><a href="https://www.steemit.com/steemit/@surpassinggoogle/steem-s-mainstreamity-is-just-beginning-if-you-just-joined-steemit-now-you-are-so-not-late-the-masses-are-coming-not-winter-not">Steem's Mainstreamity Is Just Beginning. If You Just Joined Steemit Now, You Are So Not Late! The Masses Are Coming; Not Winter, Not Whitewalkers!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>3</td>
+    <td>278.33</td>
+    <td>155</td>
+    <td><a href="https://www.steemit.com/@kafkanarchy84">kafkanarchy84</a></td>
+    <td>73.93</td>
+    <td>2018-01-05 14:54:54</td>
+    <td><a href="https://www.steemit.com/steemit/@kafkanarchy84/4000-followers-100-sbd-giveaway">4000 Followers! 100 SBD giveaway.</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>4</td>
+    <td>246.56</td>
+    <td>76</td>
+    <td><a href="https://www.steemit.com/@sanat">sanat</a></td>
+    <td>51.98</td>
+    <td>2018-01-05 09:10:45</td>
+    <td><a href="https://www.steemit.com/steemit/@sanat/facebook-might-have-its-own-cryptocurrency-soon-e9eb6ba70887e">Facebook might have its own cryptocurrency soon</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>5</td>
+    <td>178.46</td>
+    <td>126</td>
+    <td><a href="https://www.steemit.com/@alexpmorris">alexpmorris</a></td>
+    <td>64.90</td>
+    <td>2018-01-05 00:30:45</td>
+    <td><a href="https://www.steemit.com/steemit/@alexpmorris/howto-get-attention-on-steemit-without-pissing-people-off">HOWTO Get Attention on STEEMIT without PISSING PEOPLE OFF! ??</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>6</td>
+    <td>166.70</td>
+    <td>265</td>
+    <td><a href="https://www.steemit.com/@scarlet7">scarlet7</a></td>
+    <td>52.52</td>
+    <td>2018-01-05 02:18:15</td>
+    <td><a href="https://www.steemit.com/steemit/@scarlet7/an-agreement-has-been-reached">An Agreement Has Been Reached!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>7</td>
+    <td>150.55</td>
+    <td>112</td>
+    <td><a href="https://www.steemit.com/@abh12345">abh12345</a></td>
+    <td>66.71</td>
+    <td>2018-01-05 16:43:30</td>
+    <td><a href="https://www.steemit.com/steemit/@abh12345/anomadsoul-bloctrades-my2017-how-did-they-do-30-day-check-up">@anomadsoul  + @blocktrades + #my2017 - How did they do? 30 day check-up!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>8</td>
+    <td>125.19</td>
+    <td>133</td>
+    <td><a href="https://www.steemit.com/@penguinpablo">penguinpablo</a></td>
+    <td>71.94</td>
+    <td>2018-01-05 12:55:09</td>
+    <td><a href="https://www.steemit.com/steemit/@penguinpablo/daily-steem-stats-report-friday-january-05-2018">Daily Steem Stats Report - Friday, January 05, 2018</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>9</td>
+    <td>125.07</td>
+    <td>134</td>
+    <td><a href="https://www.steemit.com/@deanliu">deanliu</a></td>
+    <td>72.93</td>
+    <td>2018-01-05 04:24:45</td>
+    <td><a href="https://www.steemit.com/steemit/@deanliu/pay-to-enroll-in-a-steemit-blogging-courses-surprise-surprise">Pay to enroll in a Steemit blogging courses!? surprise surprise ...</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>10</td>
+    <td>111.65</td>
+    <td>35</td>
+    <td><a href="https://www.steemit.com/@brandonfrye">brandonfrye</a></td>
+    <td>54.89</td>
+    <td>2018-01-05 21:54:36</td>
+    <td><a href="https://www.steemit.com/steemit/@brandonfrye/15-ways-to-reach-your-steemit-goals-in-2018">15 Ways to Reach Your Steemit Goals in 2018</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>11</td>
+    <td>109.61</td>
+    <td>43</td>
+    <td><a href="https://www.steemit.com/@bambam808">bambam808</a></td>
+    <td>66.63</td>
+    <td>2018-01-05 18:21:39</td>
+    <td><a href="https://www.steemit.com/steemit/@bambam808/only-4-hours-away-talent-talk-community-podcast-001-revamp-news-stats-on-the-steemits-got-talent-current-week-guests-and-more">ONLY ~4 HOURS AWAY!!! ??TALENT TALK COMMUNITY PODCAST! #001 revamp NEWS!?? Stats on the STEEMITS GOT TALENT current week, Guests and MORE! Come enjoy! Whaleshares giveaways! DETAILS INSIDE!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>12</td>
+    <td>105.35</td>
+    <td>43</td>
+    <td><a href="https://www.steemit.com/@me-tarzan">me-tarzan</a></td>
+    <td>73.94</td>
+    <td>2018-01-05 12:51:36</td>
+    <td><a href="https://www.steemit.com/steemit/@me-tarzan/6dkxxw-no-trade-today-stay-in-cash-steem-trading-system-5">No Trade Today Stay In Cash      /    STEEM TRADING SYSTEM  # 5</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>13</td>
+    <td>97.95</td>
+    <td>36</td>
+    <td><a href="https://www.steemit.com/@me-tarzan">me-tarzan</a></td>
+    <td>73.94</td>
+    <td>2018-01-05 21:22:48</td>
+    <td><a href="https://www.steemit.com/steemit/@me-tarzan/dollar-volume-of-steem-traded-is-above-the-average-dollar-volume-of-steem-traded-line-january-5-2018">DOLLAR VOLUME OF STEEM TRADED IS  ABOVE  THE AVERAGE DOLLAR VOLUME OF STEEM TRADED LINE  JANUARY  5 , 2018</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>14</td>
+    <td>92.97</td>
+    <td>37</td>
+    <td><a href="https://www.steemit.com/@me-tarzan">me-tarzan</a></td>
+    <td>73.94</td>
+    <td>2018-01-05 03:06:45</td>
+    <td><a href="https://www.steemit.com/steemit/@me-tarzan/5x1zvg-wednesday-s-power-down-is-below-wednesday-s-average-line-daily-steem-power-down">WEDNESDAY'S  POWER DOWN IS  BELOW  WEDNESDAY'S AVERAGE LINE >  DAILY STEEM POWER DOWN  <><></a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>15</td>
+    <td>91.49</td>
+    <td>17</td>
+    <td><a href="https://www.steemit.com/@steempowerpics">steempowerpics</a></td>
+    <td>65.64</td>
+    <td>2018-01-05 22:03:00</td>
+    <td><a href="https://www.steemit.com/steemit/@steempowerpics/you-can-t-keep-a-good-community-down">?? You CAN'T keep a good community down!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>16</td>
+    <td>82.74</td>
+    <td>58</td>
+    <td><a href="https://www.steemit.com/@creatr">creatr</a></td>
+    <td>69.77</td>
+    <td>2018-01-05 20:21:54</td>
+    <td><a href="https://www.steemit.com/steemit/@creatr/disturbing-discovery-of-the-day-unexpected-steemit-u-i-changes">Disturbing Discovery of the Day - Unexpected Steemit U/I Changes</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>17</td>
+    <td>79.69</td>
+    <td>69</td>
+    <td><a href="https://www.steemit.com/@skapaneas">skapaneas</a></td>
+    <td>69.59</td>
+    <td>2018-01-05 07:51:54</td>
+    <td><a href="https://www.steemit.com/steemit/@skapaneas/explaining-my-curating-tactics-for-anyone-that-is-part-of-the-greek-trail-or-not">Explaining my Curating tactics for anyone that is part of the Greek-trail or not.</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>18</td>
+    <td>76.78</td>
+    <td>64</td>
+    <td><a href="https://www.steemit.com/@cloh76">cloh76</a></td>
+    <td>64.28</td>
+    <td>2018-01-05 03:30:18</td>
+    <td><a href="https://www.steemit.com/steemit/@cloh76/these-are-the-cryptocurrencies-i-hodl-and-continue-to-watch-and-why">These are the cryptocurrencies I HODL and continue to watch and why</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>19</td>
+    <td>73.76</td>
+    <td>78</td>
+    <td><a href="https://www.steemit.com/@cryptopie">cryptopie</a></td>
+    <td>68.94</td>
+    <td>2018-01-05 03:47:36</td>
+    <td><a href="https://www.steemit.com/steemit/@cryptopie/dear-diary-my-funny-situation-that-is-not-worth-laughing-about">Dear Diary: My Funny  Situation That Is Not Worth Laughing About</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>20</td>
+    <td>70.62</td>
+    <td>168</td>
+    <td><a href="https://www.steemit.com/@kyriacos">kyriacos</a></td>
+    <td>71.12</td>
+    <td>2018-01-05 19:59:39</td>
+    <td><a href="https://www.steemit.com/steemit/@kyriacos/believe-it-or-not-steemit-is-not-about-the-rewards">Believe It Or Not, Steemit Is Not About The Rewards</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>21</td>
+    <td>70.19</td>
+    <td>53</td>
+    <td><a href="https://www.steemit.com/@isohero">isohero</a></td>
+    <td>53.47</td>
+    <td>2018-01-05 11:11:39</td>
+    <td><a href="https://www.steemit.com/steemit/@isohero/steemit-in-the-top-1600-most-visited-websites-in-the-world-and-601-most-visited-in-america">Steemit in the top 1600 Most Visited Websites in the World and #601 Most Visited in America!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>22</td>
+    <td>68.50</td>
+    <td>36</td>
+    <td><a href="https://www.steemit.com/@me-tarzan">me-tarzan</a></td>
+    <td>73.94</td>
+    <td>2018-01-05 23:25:00</td>
+    <td><a href="https://www.steemit.com/steemit/@me-tarzan/chart-of-active-daily-users-since-july-27-2016-58-216">Chart of Active Daily Users since July 27, 2016  ((( 58,216 )))</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>23</td>
+    <td>65.99</td>
+    <td>86</td>
+    <td><a href="https://www.steemit.com/@cryptopie">cryptopie</a></td>
+    <td>68.94</td>
+    <td>2018-01-05 05:45:12</td>
+    <td><a href="https://www.steemit.com/steemit/@cryptopie/dear-diary-intangible-things-today-that-i-am-thankful-and-grateful-for-and-celebrating-with">Dear  Diary: Intangible Things Today That I Am Thankful And Grateful For And Celebrating With</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>24</td>
+    <td>62.66</td>
+    <td>83</td>
+    <td><a href="https://www.steemit.com/@dutch">dutch</a></td>
+    <td>61.44</td>
+    <td>2018-01-05 07:25:15</td>
+    <td><a href="https://www.steemit.com/steemit/@dutch/how-steemit-payouts-work-a-beginners-guide">How Steemit Payouts Work - A Beginners Guide</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>25</td>
+    <td>60.66</td>
+    <td>85</td>
+    <td><a href="https://www.steemit.com/@abduhawab">abduhawab</a></td>
+    <td>62.41</td>
+    <td>2018-01-05 11:03:00</td>
+    <td><a href="https://www.steemit.com/steemit/@abduhawab/steemit-is-creative-platform">Steemit is Creative Platform</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>26</td>
     <td>58.22</td>
     <td>69</td>
-    <td><a href="https://www.steemit.com/@taskmaster4450">taskmaster4450</a></td>
-    <td>64.19</td>
-    <td>2018-01-04 11:41:21</td>
-    <td><a href="https://www.steemit.com/steem/@taskmaster4450/sharing-is-caring-competition-is-from-the-banksters-steem-is-cooperation">Sharing Is Caring: Competition Is From The Banksters: STEEM Is Cooperation</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>20</td>
-    <td>57.54</td>
-    <td>67</td>
-    <td><a href="https://www.steemit.com/@taskmaster4450">taskmaster4450</a></td>
-    <td>64.19</td>
-    <td>2018-01-04 23:32:15</td>
-    <td><a href="https://www.steemit.com/steem/@taskmaster4450/could-steem-really-be-a-usd1-000-token-f-k-yeah-and-i-ll-show-you-how">Could STEEM Really Be A $1,000 Token?  F**k Yeah And I'll Show You How!!!!</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>21</td>
-    <td>52.82</td>
-    <td>26</td>
-    <td><a href="https://www.steemit.com/@glennolua">glennolua</a></td>
-    <td>60.63</td>
-    <td>2018-01-04 03:14:27</td>
-    <td><a href="https://www.steemit.com/steem/@glennolua/steem-to-a-new-all-time-high-potential-future-target-prices">Steem to a new all time high, potential future target prices</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>22</td>
-    <td>48.58</td>
-    <td>47</td>
-    <td><a href="https://www.steemit.com/@roxane">roxane</a></td>
-    <td>67.80</td>
-    <td>2018-01-04 10:39:12</td>
-    <td><a href="https://www.steemit.com/steem/@roxane/what-s-the-story-about-your-username-on-steem">What's the story about your username on Steem?</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>23</td>
-    <td>40.79</td>
-    <td>13</td>
-    <td><a href="https://www.steemit.com/@rick243">rick243</a></td>
-    <td>50.33</td>
-    <td>2018-01-04 11:41:42</td>
-    <td><a href="https://www.steemit.com/steem/@rick243/steem-growing">Steem growing</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>24</td>
-    <td>39.37</td>
-    <td>69</td>
-    <td><a href="https://www.steemit.com/@emrebeyler">emrebeyler</a></td>
-    <td>62.31</td>
-    <td>2018-01-04 06:53:15</td>
-    <td><a href="https://www.steemit.com/steem/@emrebeyler/less-sp-payouts-bad-times-to-power-up-by-authoring">Less SP payouts - bad times to gain SP by authoring</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>25</td>
-    <td>38.42</td>
-    <td>107</td>
-    <td><a href="https://www.steemit.com/@maryfavour">maryfavour</a></td>
-    <td>63.11</td>
-    <td>2018-01-04 00:13:39</td>
-    <td><a href="https://www.steemit.com/steem/@maryfavour/is-delayed-gratification-paying-off-with-steem-at-usd8">Is Delayed Gratification Paying Off With Steem At $8?</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>26</td>
-    <td>38.29</td>
-    <td>78</td>
-    <td><a href="https://www.steemit.com/@abh12345">abh12345</a></td>
-    <td>66.69</td>
-    <td>2018-01-04 19:43:33</td>
-    <td><a href="https://www.steemit.com/steem/@abh12345/stewardsofgondor-is-it-time-to-pay-it-forward-weekly-stats-update">#stewardsofgondor - Is it time to pay it forward? + Weekly stats update</a></td>
+    <td><a href="https://www.steemit.com/@cryptopie">cryptopie</a></td>
+    <td>68.94</td>
+    <td>2018-01-05 17:31:00</td>
+    <td><a href="https://www.steemit.com/steemit/@cryptopie/dear-diary-i-am-always-having-the-feeling-of-guilt-of-taking-my-medicine-and-eating">Dear Diary: I Am Always Having The Feeling Of Guilt Of Taking My Medicine And Eating</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>27</td>
-    <td>33.74</td>
-    <td>23</td>
-    <td><a href="https://www.steemit.com/@goldmatters">goldmatters</a></td>
-    <td>66.15</td>
-    <td>2018-01-04 01:36:48</td>
-    <td><a href="https://www.steemit.com/steem/@goldmatters/first-entries-into-100-steem-giveaway-received-where-s-yours">First entries into 100 STEEM giveaway received! Where’s yours?</a></td>
+    <td>56.66</td>
+    <td>79</td>
+    <td><a href="https://www.steemit.com/@richardcrill">richardcrill</a></td>
+    <td>67.25</td>
+    <td>2018-01-05 21:33:30</td>
+    <td><a href="https://www.steemit.com/steemit/@richardcrill/join-the-steemit-thunderclap-let-s-make-steemit-trend-on-twitter-in-4-days">Join the Steemit Thunderclap! Let's Make Steemit Trend on Twitter in 4 Days!</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>28</td>
-    <td>33.67</td>
-    <td>154</td>
-    <td><a href="https://www.steemit.com/@boxmining">boxmining</a></td>
-    <td>70.71</td>
-    <td>2018-01-04 01:31:15</td>
-    <td><a href="https://www.steemit.com/steem/@boxmining/how-should-we-solve-this">How can we solve Steem / SBD confusion?</a></td>
+    <td>53.36</td>
+    <td>21</td>
+    <td><a href="https://www.steemit.com/@sneaky-ninja">sneaky-ninja</a></td>
+    <td>57.87</td>
+    <td>2018-01-05 20:35:06</td>
+    <td><a href="https://www.steemit.com/steemit/@sneaky-ninja/sneaky-ninja-reminder-of-how-he-works-vote-worth-usd160-now">Sneaky Ninja Reminder of How he Works - (Vote worth $160 now!!)</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>29</td>
-    <td>33.62</td>
-    <td>32</td>
-    <td><a href="https://www.steemit.com/@brian-rhodes">brian-rhodes</a></td>
-    <td>63.93</td>
-    <td>2018-01-04 14:15:27</td>
-    <td><a href="https://www.steemit.com/steem/@brian-rhodes/toottc-a-film-by-michael-treder-a-filmmaker-with-the-order-of-things-to-come-artistic-team">(TOOTTC) A Film by Michael Treder - a Filmmaker with 'The Order of Things to Come' Artistic Team</a></td>
+    <td>52.55</td>
+    <td>97</td>
+    <td><a href="https://www.steemit.com/@dragosroua">dragosroua</a></td>
+    <td>73.08</td>
+    <td>2018-01-05 05:49:39</td>
+    <td><a href="https://www.steemit.com/steemit/@dragosroua/inconsistencies-between-steemit-rewards-display-actual-rewards-received-and-steem-supply-projected-rewards">Inconsistencies Between Steemit Rewards Display, Actual Rewards Received And Steem.Supply Projected Rewards</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>30</td>
-    <td>30.96</td>
-    <td>15</td>
-    <td><a href="https://www.steemit.com/@jamesdenny">jamesdenny</a></td>
-    <td>47.47</td>
-    <td>2018-01-04 03:17:21</td>
-    <td><a href="https://www.steemit.com/steem/@jamesdenny/steem-at-8-dollars-why-i-am-not-surprised">Steem at 8 Dollars?! Why I am not Surprised</a></td>
+    <td>52.46</td>
+    <td>42</td>
+    <td><a href="https://www.steemit.com/@avilsd">avilsd</a></td>
+    <td>62.99</td>
+    <td>2018-01-05 03:57:21</td>
+    <td><a href="https://www.steemit.com/steemit/@avilsd/steemit-beta-problems-what-i-ve-noticed-small-things">Steemit Beta Problems: What I've Noticed (Small Things)</a></td>
   </tr>
   
 </table>
-]]></content></entry><entry><id>https://www.yuxifan.com/atom/atom_steemit/story/2018-01-04</id><title>daily popular posts in story on 2018-01-04</title><updated>2018-01-05T03:02:05.925822+00:00</updated><content type="html"><![CDATA[
-<h2>Top 30 posts in category: story on 2018-01-04</h2>
+]]></content></entry><entry><id>https://www.yuxifan.com/atom/atom_steemit/steem/2018-01-05</id><title>daily popular posts in steem on 2018-01-05</title><updated>2018-01-06T03:02:05.372951+00:00</updated><content type="html"><![CDATA[
+<h2>Top 30 posts in category: steem on 2018-01-05</h2>
 
 <img src="https://www.yuxifan.com/images/steem-statistics.jpg"/><br/>
 
@@ -1904,365 +1527,742 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>115.96</td>
-    <td>61</td>
-    <td><a href="https://www.steemit.com/@ezzy">ezzy</a></td>
-    <td>68.82</td>
-    <td>2018-01-04 23:56:24</td>
-    <td><a href="https://www.steemit.com/story/@ezzy/my-personal-thoughts-on-kong-skull-island">My Personal Thoughts on "Kong: Skull Island"</a></td>
+    <td>579.06</td>
+    <td>201</td>
+    <td><a href="https://www.steemit.com/@highimpactflix">highimpactflix</a></td>
+    <td>67.72</td>
+    <td>2018-01-05 05:18:33</td>
+    <td><a href="https://www.steemit.com/steem/@highimpactflix/the-real-predators-you-just-can-t-escape-when-they-decide-to-hunt-you-down">The REAL Predators You Just Can't Escape When They Decide to Hunt You Down!</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>113.35</td>
-    <td>72</td>
-    <td><a href="https://www.steemit.com/@heart-to-heart">heart-to-heart</a></td>
-    <td>64.81</td>
-    <td>2018-01-04 22:54:09</td>
-    <td><a href="https://www.steemit.com/story/@heart-to-heart/confessional-how-do-i-come-back-into-your-life-after-all-this-time-like-i-never-left">Confessional: How Do I Come Back Into Your Life After All This Time Like I Never Left?</a></td>
+    <td>381.37</td>
+    <td>160</td>
+    <td><a href="https://www.steemit.com/@flauwy">flauwy</a></td>
+    <td>68.09</td>
+    <td>2018-01-05 12:57:51</td>
+    <td><a href="https://www.steemit.com/steem/@flauwy/last-year-i-was-living-in-poverty-now-i-am-a-steem-dolphin">Last Year I Was Living In Poverty - Now I Am A Steem Dolphin!</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>101.36</td>
-    <td>27</td>
-    <td><a href="https://www.steemit.com/@cubed3">cubed3</a></td>
-    <td>57.59</td>
-    <td>2018-01-04 22:04:09</td>
-    <td><a href="https://www.steemit.com/story/@cubed3/lego-star-wars-story-part-38-boba-fett-s-escape">LEGO Star Wars Story, Part 38: "Boba Fett's Escape"</a></td>
+    <td>289.72</td>
+    <td>164</td>
+    <td><a href="https://www.steemit.com/@dragosroua">dragosroua</a></td>
+    <td>73.08</td>
+    <td>2018-01-05 14:25:51</td>
+    <td><a href="https://www.steemit.com/steem/@dragosroua/steem-supply-update-rewards-algorithm-rewrite-major-cleanup-version-bump">Steem.Supply Update: Rewards Algorithm Rewrite, Major Cleanup, Version Bump</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>49.41</td>
-    <td>65</td>
-    <td><a href="https://www.steemit.com/@sumayyahsaidso">sumayyahsaidso</a></td>
-    <td>58.21</td>
-    <td>2018-01-04 18:21:42</td>
-    <td><a href="https://www.steemit.com/story/@sumayyahsaidso/349">349</a></td>
+    <td>242.49</td>
+    <td>187</td>
+    <td><a href="https://www.steemit.com/@cryptopassion">cryptopassion</a></td>
+    <td>71.75</td>
+    <td>2018-01-05 08:22:51</td>
+    <td><a href="https://www.steemit.com/steem/@cryptopassion/steem-mma50-broken">STEEM - MMA50 Broken</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>5</td>
-    <td>47.56</td>
-    <td>258</td>
-    <td><a href="https://www.steemit.com/@reddust">reddust</a></td>
-    <td>69.70</td>
-    <td>2018-01-04 22:27:57</td>
-    <td><a href="https://www.steemit.com/story/@reddust/2hzux5-escaping-the-time-matrix">Escaping The Time Matrix</a></td>
+    <td>214.28</td>
+    <td>50</td>
+    <td><a href="https://www.steemit.com/@brian-rhodes">brian-rhodes</a></td>
+    <td>63.94</td>
+    <td>2018-01-05 00:39:12</td>
+    <td><a href="https://www.steemit.com/steem/@brian-rhodes/toottc-we-ve-added-more-crew-to-the-order-of-things-to-come-check-out-the-blood-and-gore">(TOOTTC) We've Added More Crew to 'The Order of Things to Come' - Check Out the Blood and Gore!</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>6</td>
-    <td>34.32</td>
-    <td>40</td>
-    <td><a href="https://www.steemit.com/@hardfork-series">hardfork-series</a></td>
-    <td>64.65</td>
-    <td>2018-01-04 20:15:18</td>
-    <td><a href="https://www.steemit.com/story/@hardfork-series/hardfork-fundraising-update-an-epic-photo-finish-post-1-of-2">HardFork Fundraising Update: An Epic Photo-Finish (Post 1 of 2)</a></td>
+    <td>163.19</td>
+    <td>325</td>
+    <td><a href="https://www.steemit.com/@followbtcnews">followbtcnews</a></td>
+    <td>64.43</td>
+    <td>2018-01-05 21:21:57</td>
+    <td><a href="https://www.steemit.com/steem/@followbtcnews/is-blockchain-truly-decentralized">Is Blockchain Truly Decentralized?</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>7</td>
-    <td>18.38</td>
+    <td>140.52</td>
+    <td>66</td>
+    <td><a href="https://www.steemit.com/@ew-and-patterns">ew-and-patterns</a></td>
+    <td>65.15</td>
+    <td>2018-01-05 11:52:21</td>
+    <td><a href="https://www.steemit.com/steem/@ew-and-patterns/steem-update-05-01-17">STEEM update 05.01.18</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>8</td>
+    <td>128.98</td>
+    <td>41</td>
+    <td><a href="https://www.steemit.com/@mobbs">mobbs</a></td>
+    <td>64.11</td>
+    <td>2018-01-05 08:57:33</td>
+    <td><a href="https://www.steemit.com/steem/@mobbs/i-bought-a-usd2-000-steem-laptop-for-free">I bought a $2,000 STEEM-POWERED laptop... for free?</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>9</td>
+    <td>124.99</td>
+    <td>51</td>
+    <td><a href="https://www.steemit.com/@bayuya">bayuya</a></td>
+    <td>58.63</td>
+    <td>2018-01-05 14:27:15</td>
+    <td><a href="https://www.steemit.com/steem/@bayuya/flag-war-steem-price-and-delegation-boom-how-is-all-related-read-the-post-my-subjective-opinion-with-objective-arguments">Flag War, Steem Price and Delegation boom, how is all related? Read the post, my subjective opinion with objective arguments.</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>10</td>
+    <td>94.27</td>
+    <td>106</td>
+    <td><a href="https://www.steemit.com/@taskmaster4450">taskmaster4450</a></td>
+    <td>64.23</td>
+    <td>2018-01-05 12:50:48</td>
+    <td><a href="https://www.steemit.com/steem/@taskmaster4450/steem-about-to-have-a-massive-influx-of-users-1m-users-will-happen-very-quickly">STEEM: About To Have A Massive Influx Of Users: 1M Users Will Happen Very Quickly</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>11</td>
+    <td>78.78</td>
+    <td>109</td>
+    <td><a href="https://www.steemit.com/@smartsteem">smartsteem</a></td>
+    <td>57.88</td>
+    <td>2018-01-05 07:21:06</td>
+    <td><a href="https://www.steemit.com/steem/@smartsteem/is-your-bought-vote-from-smartmarket-missing-read-this">Is your  bought Vote from @smartmarket missing? Read this!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>12</td>
+    <td>76.21</td>
+    <td>86</td>
+    <td><a href="https://www.steemit.com/@taskmaster4450">taskmaster4450</a></td>
+    <td>64.23</td>
+    <td>2018-01-05 15:27:39</td>
+    <td><a href="https://www.steemit.com/steem/@taskmaster4450/steem-token-unit-stu-when-a-usd-is-not-a-usd-plus-the-damn-is-breaking-in-active-users">STEEM Token Unit (STU): When A $ Is Not A $: Plus The Damn Is Breaking On Active Users!!!!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>13</td>
+    <td>66.81</td>
+    <td>169</td>
+    <td><a href="https://www.steemit.com/@penguinpablo">penguinpablo</a></td>
+    <td>71.94</td>
+    <td>2018-01-05 08:41:18</td>
+    <td><a href="https://www.steemit.com/steem/@penguinpablo/is-mark-zuckerberg-going-to-launch-a-smart-media-token-for-facebook">Is Mark Zuckerberg going to launch a Smart Media Token for Facebook?</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>14</td>
+    <td>66.22</td>
+    <td>48</td>
+    <td><a href="https://www.steemit.com/@khaleelkazi">khaleelkazi</a></td>
+    <td>61.07</td>
+    <td>2018-01-05 08:04:51</td>
+    <td><a href="https://www.steemit.com/steem/@khaleelkazi/steem-to-the-moon-my-top-crypto-picks-for-2018">STEEM to the MOON! - My Top Crypto Picks for 2018!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>15</td>
+    <td>63.82</td>
+    <td>31</td>
+    <td><a href="https://www.steemit.com/@ashe-oro">ashe-oro</a></td>
+    <td>61.90</td>
+    <td>2018-01-05 07:57:24</td>
+    <td><a href="https://www.steemit.com/steem/@ashe-oro/let-s-work-together-and-get-steem-on-binance">Let's work together and get Steem on Binance!!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>16</td>
+    <td>60.95</td>
+    <td>25</td>
+    <td><a href="https://www.steemit.com/@ashe-oro">ashe-oro</a></td>
+    <td>61.90</td>
+    <td>2018-01-05 13:53:09</td>
+    <td><a href="https://www.steemit.com/steem/@ashe-oro/requiring-approval-for-a-new-steem-account">Requiring approval for a new Steem account...?</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>17</td>
+    <td>55.02</td>
+    <td>72</td>
+    <td><a href="https://www.steemit.com/@reko">reko</a></td>
+    <td>64.14</td>
+    <td>2018-01-05 19:20:21</td>
+    <td><a href="https://www.steemit.com/steem/@reko/state-of-steem-11-or-blockchain-activity-no-1-or-steem-usd6-22-sbd-usd8-12-or-alexa-ranking-1-548-total-accounts-534-096-active">State of Steem #11 | Blockchain Activity [No.1] | Steem [$6.22] / SBD [$8.12] | Alexa Ranking [ 1,548] Total Accounts [534,096] Active Users [58,216]</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>18</td>
+    <td>44.09</td>
+    <td>38</td>
+    <td><a href="https://www.steemit.com/@googlee">googlee</a></td>
+    <td>58.33</td>
+    <td>2018-01-05 17:15:18</td>
+    <td><a href="https://www.steemit.com/steem/@googlee/why-we-should-put-good-content">Why we should put good content?</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>19</td>
+    <td>41.31</td>
+    <td>28</td>
+    <td><a href="https://www.steemit.com/@daudimitch">daudimitch</a></td>
+    <td>62.31</td>
+    <td>2018-01-05 17:34:42</td>
+    <td><a href="https://www.steemit.com/steem/@daudimitch/steem-facebook-and-mark-zuckerberg-why-steem-could-be-on-his-radar">Steem, Facebook and Mark Zuckerberg....Why Steem could be on his radar?</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>20</td>
+    <td>37.83</td>
+    <td>64</td>
+    <td><a href="https://www.steemit.com/@steepshot">steepshot</a></td>
+    <td>63.93</td>
+    <td>2018-01-05 12:41:15</td>
+    <td><a href="https://www.steemit.com/steem/@steepshot/steepshot-releases-a-telegram-bot">Steepshot releases a Telegram bot!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>21</td>
+    <td>35.52</td>
+    <td>19</td>
+    <td><a href="https://www.steemit.com/@jeffbernst">jeffbernst</a></td>
+    <td>46.45</td>
+    <td>2018-01-05 13:33:33</td>
+    <td><a href="https://www.steemit.com/steem/@jeffbernst/what-could-steem-and-smart-media-tokens-do-for-education">What Could Steem and Smart Media Tokens Do For Education?</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>22</td>
+    <td>33.29</td>
+    <td>47</td>
+    <td><a href="https://www.steemit.com/@gohba.handcrafts">gohba.handcrafts</a></td>
+    <td>62.23</td>
+    <td>2018-01-05 20:34:30</td>
+    <td><a href="https://www.steemit.com/steem/@gohba.handcrafts/why-i-think-sbd-will-not-peg-back-to-usd">Why I think SBD will not peg back to USD</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>23</td>
+    <td>28.46</td>
+    <td>8</td>
+    <td><a href="https://www.steemit.com/@jgullinese">jgullinese</a></td>
+    <td>55.70</td>
+    <td>2018-01-05 14:54:27</td>
+    <td><a href="https://www.steemit.com/steem/@jgullinese/steem-dollars-not-showing-up-on-blocktrades">Steem Dollars not showing up on Blocktrades</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>24</td>
+    <td>27.65</td>
+    <td>85</td>
+    <td><a href="https://www.steemit.com/@dragosroua">dragosroua</a></td>
+    <td>73.08</td>
+    <td>2018-01-05 06:27:24</td>
+    <td><a href="https://www.steemit.com/steem/@dragosroua/market-snapshots-day-five">Market Snapshots - Day Five</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>25</td>
+    <td>25.72</td>
+    <td>54</td>
+    <td><a href="https://www.steemit.com/@flauwy">flauwy</a></td>
+    <td>68.09</td>
+    <td>2018-01-05 15:56:39</td>
+    <td><a href="https://www.steemit.com/steem/@flauwy/visa-europe-is-closing-all-bitcoin-debit-cards-issued-by-wavecrest-holdings-ltd">VISA Europe Is Closing All BitCoin Debit Cards Issued By WaveCrest Holdings Ltd</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>26</td>
+    <td>24.94</td>
+    <td>26</td>
+    <td><a href="https://www.steemit.com/@googlee">googlee</a></td>
+    <td>58.33</td>
+    <td>2018-01-05 14:48:27</td>
+    <td><a href="https://www.steemit.com/steem/@googlee/steem-and-sbd-are-in-correction-mode">STEEM AND SBD are in correction mode.</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
     <td>27</td>
+    <td>24.03</td>
+    <td>21</td>
+    <td><a href="https://www.steemit.com/@goldkey">goldkey</a></td>
+    <td>62.69</td>
+    <td>2018-01-05 06:19:03</td>
+    <td><a href="https://www.steemit.com/steem/@goldkey/steem-price-pullback-enjoy-the-ride-and-hodl-seen-on-bittrex">STEEM PRICE PULLBACK - ENJOY THE RIDE AND HODL - SEEN ON BITTREX</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>28</td>
+    <td>21.56</td>
+    <td>3</td>
+    <td><a href="https://www.steemit.com/@tombort">tombort</a></td>
+    <td>46.64</td>
+    <td>2018-01-05 07:45:21</td>
+    <td><a href="https://www.steemit.com/steem/@tombort/steem-analysis-steem-reach-pick-now-consolidate-5">Steem Analysis. Steem Reach Pick Now Consolidate (#5)</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>29</td>
+    <td>19.30</td>
+    <td>50</td>
+    <td><a href="https://www.steemit.com/@barrydutton">barrydutton</a></td>
+    <td>74.17</td>
+    <td>2018-01-05 01:21:15</td>
+    <td><a href="https://www.steemit.com/steem/@barrydutton/just-powered-up-some-more-steem-what-a-week-for-steemit-and-usdsteem">Just POWERED UP Some More STEEM - What a Week for STEEMIT and $STEEM.</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>30</td>
+    <td>18.39</td>
+    <td>10</td>
+    <td><a href="https://www.steemit.com/@doctorjohn">doctorjohn</a></td>
+    <td>59.94</td>
+    <td>2018-01-05 11:37:27</td>
+    <td><a href="https://www.steemit.com/steem/@doctorjohn/when-a-link-breaks">When a Link Breaks</a></td>
+  </tr>
+  
+</table>
+]]></content></entry><entry><id>https://www.yuxifan.com/atom/atom_steemit/story/2018-01-05</id><title>daily popular posts in story on 2018-01-05</title><updated>2018-01-06T03:02:05.461152+00:00</updated><content type="html"><![CDATA[
+<h2>Top 30 posts in category: story on 2018-01-05</h2>
+
+<img src="https://www.yuxifan.com/images/steem-statistics.jpg"/><br/>
+
+<table class="responstable" border="1" style="margin: 1em 0;border-radius: 10px;border-collapse: collapse;border: 1px solid #167F92;">
+  <tr style="background-color: #167F92;">
+    <td>Ranking</td>
+    <td>Payouts</td>
+    <td>Votes</td>
+    <td>Author</td>
+    <td>Rep</td>
+    <td>Date</td>
+    <td>Title/URL</td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>1</td>
+    <td>768.53</td>
+    <td>321</td>
+    <td><a href="https://www.steemit.com/@adsactly">adsactly</a></td>
+    <td>71.99</td>
+    <td>2018-01-05 22:19:18</td>
+    <td><a href="https://www.steemit.com/story/@adsactly/adsactly-short-stories-the-bride-of-frankenstein">ADSactly Short Stories - The Bride of Frankenstein</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>2</td>
+    <td>251.99</td>
+    <td>99</td>
+    <td><a href="https://www.steemit.com/@alaynaclair">alaynaclair</a></td>
+    <td>47.50</td>
+    <td>2018-01-05 03:01:39</td>
+    <td><a href="https://www.steemit.com/story/@alaynaclair/itchy-left-and-scratchy-the-cats-who-saved-my-life-trigger-warning-domestic-violence-and-suicide-warning-some-strong-language">Itchy (left) and Scratchy. The cats who saved my life. (TRIGGER WARNING: DOMESTIC VIOLENCE AND SUICIDE) (WARNING: some strong language)</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>3</td>
+    <td>115.54</td>
+    <td>25</td>
+    <td><a href="https://www.steemit.com/@vimukthi">vimukthi</a></td>
+    <td>60.16</td>
+    <td>2018-01-05 12:09:15</td>
+    <td><a href="https://www.steemit.com/story/@vimukthi/300-word-short-story-1-a-story-about-a-criminal-family-and-a-young-man-who-lost-everything">300 Word Short Story #+1 A story about a criminal family and a young man who lost everything.</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>4</td>
+    <td>96.45</td>
+    <td>22</td>
+    <td><a href="https://www.steemit.com/@cubed3">cubed3</a></td>
+    <td>57.70</td>
+    <td>2018-01-05 21:54:03</td>
+    <td><a href="https://www.steemit.com/story/@cubed3/lego-star-wars-story-part-39-evacuation">LEGO Star Wars Story, Part 39: "Evacuation"</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>5</td>
+    <td>84.15</td>
+    <td>31</td>
+    <td><a href="https://www.steemit.com/@dreemit">dreemit</a></td>
+    <td>70.02</td>
+    <td>2018-01-05 18:19:54</td>
+    <td><a href="https://www.steemit.com/story/@dreemit/unproven-chapter-eight-surrealistic">UNPROVEN Chapter Eight "Surrealistic"</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>6</td>
+    <td>78.67</td>
+    <td>46</td>
+    <td><a href="https://www.steemit.com/@hardfork-series">hardfork-series</a></td>
+    <td>64.67</td>
+    <td>2018-01-05 20:59:03</td>
+    <td><a href="https://www.steemit.com/story/@hardfork-series/hardfork-fundraising-update-epic-photo-finish-post-2-of-2">HardFork Fundraising Update: Epic Photo-Finish (Post 2 of 2)</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>7</td>
+    <td>59.65</td>
+    <td>16</td>
+    <td><a href="https://www.steemit.com/@freedomexists">freedomexists</a></td>
+    <td>61.13</td>
+    <td>2018-01-05 18:25:33</td>
+    <td><a href="https://www.steemit.com/story/@freedomexists/was-she-still-there-steemit-story-chain-16-where-you-write-the-story-and-100-whaleshares-for-the-winner-update">'Was She There?' - Steemit Story Chain #16 Where You Write the Story and 100 Whaleshares for the Winner Update</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>8</td>
+    <td>57.09</td>
+    <td>21</td>
+    <td><a href="https://www.steemit.com/@snowmachine">snowmachine</a></td>
+    <td>63.12</td>
+    <td>2018-01-05 07:03:06</td>
+    <td><a href="https://www.steemit.com/story/@snowmachine/industrial-noir-in-the-red-earth">Industrial Noir in the Red Earth: My Trip to Oklahoma</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>9</td>
+    <td>33.70</td>
+    <td>16</td>
+    <td><a href="https://www.steemit.com/@hanen">hanen</a></td>
+    <td>57.81</td>
+    <td>2018-01-05 13:25:45</td>
+    <td><a href="https://www.steemit.com/story/@hanen/i-had-a-great-day-enjoying-delicious-food-welcome-to-the-african-continent">I had a great day enjoying delicious food :) Welcome to the African continent!</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>10</td>
+    <td>28.50</td>
+    <td>3</td>
+    <td><a href="https://www.steemit.com/@travelmate">travelmate</a></td>
+    <td>48.62</td>
+    <td>2018-01-05 02:10:27</td>
+    <td><a href="https://www.steemit.com/story/@travelmate/what-can-be-done">What can be done</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>11</td>
+    <td>28.48</td>
+    <td>3</td>
+    <td><a href="https://www.steemit.com/@erykwillhere">erykwillhere</a></td>
+    <td>50.62</td>
+    <td>2018-01-05 02:12:54</td>
+    <td><a href="https://www.steemit.com/story/@erykwillhere/the-media-no-longer-exists">The media no longer exists</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>12</td>
+    <td>22.23</td>
+    <td>6</td>
+    <td><a href="https://www.steemit.com/@carolynstahl">carolynstahl</a></td>
+    <td>55.86</td>
+    <td>2018-01-05 18:09:33</td>
+    <td><a href="https://www.steemit.com/story/@carolynstahl/do-your-thoughts-create-your-reality">Do Your Thoughts Create Your Reality?</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>13</td>
+    <td>18.50</td>
+    <td>5</td>
+    <td><a href="https://www.steemit.com/@lightvision">lightvision</a></td>
+    <td>53.25</td>
+    <td>2018-01-05 20:14:30</td>
+    <td><a href="https://www.steemit.com/story/@lightvision/two-sided-chapter-viii-a">Two-Sided: Chapter VIII (a)</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>14</td>
+    <td>18.45</td>
+    <td>15</td>
+    <td><a href="https://www.steemit.com/@arshi">arshi</a></td>
+    <td>52.65</td>
+    <td>2018-01-05 06:47:33</td>
+    <td><a href="https://www.steemit.com/story/@arshi/step-by-step">Step by Step</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>15</td>
+    <td>18.15</td>
+    <td>25</td>
     <td><a href="https://www.steemit.com/@artist1989">artist1989</a></td>
     <td>63.71</td>
-    <td>2018-01-04 02:18:33</td>
-    <td><a href="https://www.steemit.com/story/@artist1989/supernatural-story-inbetween-book-1-recap-chapters-1-17">Supernatural Story - InBetween - Book 1 Recap - Chapters 1 - 17</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>8</td>
-    <td>17.72</td>
-    <td>21</td>
-    <td><a href="https://www.steemit.com/@steemfuzzy">steemfuzzy</a></td>
-    <td>47.45</td>
-    <td>2018-01-04 04:49:06</td>
-    <td><a href="https://www.steemit.com/story/@steemfuzzy/daily-story-selection-1-3-2018-wednesday">Daily Story Selection - 1/3/2018 (Wednesday)</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>9</td>
-    <td>16.18</td>
-    <td>21</td>
-    <td><a href="https://www.steemit.com/@lightvision">lightvision</a></td>
-    <td>53.19</td>
-    <td>2018-01-04 06:30:18</td>
-    <td><a href="https://www.steemit.com/story/@lightvision/two-sided-chapter-vii-b">Two-Sided: Chapter VII (b)</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>10</td>
-    <td>14.65</td>
-    <td>26</td>
-    <td><a href="https://www.steemit.com/@macksby">macksby</a></td>
-    <td>73.43</td>
-    <td>2018-01-04 19:59:09</td>
-    <td><a href="https://www.steemit.com/story/@macksby/this-is-not-a-test-aka-the-shelter-part-1-original-fiction">THIS IS NOT A TEST… aka -- THE SHELTER Part 1 (original fiction)</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>11</td>
-    <td>14.48</td>
-    <td>31</td>
-    <td><a href="https://www.steemit.com/@oluwatobiloba">oluwatobiloba</a></td>
-    <td>60.97</td>
-    <td>2018-01-04 07:06:51</td>
-    <td><a href="https://www.steemit.com/story/@oluwatobiloba/another-owambe-party-story">Another Owambe (Party) Story</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>12</td>
-    <td>13.99</td>
-    <td>18</td>
-    <td><a href="https://www.steemit.com/@lightvision">lightvision</a></td>
-    <td>53.19</td>
-    <td>2018-01-04 03:49:36</td>
-    <td><a href="https://www.steemit.com/story/@lightvision/two-sided-chapter-vii-a">Two-Sided: Chapter VII (a)</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>13</td>
-    <td>12.98</td>
-    <td>23</td>
-    <td><a href="https://www.steemit.com/@jonabeth">jonabeth</a></td>
-    <td>50.97</td>
-    <td>2018-01-04 06:10:33</td>
-    <td><a href="https://www.steemit.com/story/@jonabeth/mini-handheld-sewing-machine">Mini Handheld Sewing Machine</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>14</td>
-    <td>12.66</td>
-    <td>23</td>
-    <td><a href="https://www.steemit.com/@nelkeljdm">nelkeljdm</a></td>
-    <td>55.25</td>
-    <td>2018-01-04 17:46:33</td>
-    <td><a href="https://www.steemit.com/story/@nelkeljdm/my-five-japanese-beauties">My Five Japanese Beauties...</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>15</td>
-    <td>9.96</td>
-    <td>25</td>
-    <td><a href="https://www.steemit.com/@sweetpea">sweetpea</a></td>
-    <td>62.70</td>
-    <td>2018-01-04 19:18:15</td>
-    <td><a href="https://www.steemit.com/story/@sweetpea/i-work-hard-so-that-my-cat-can-have-a-living">I work hard so that my cat can have a living.</a></td>
+    <td>2018-01-05 04:05:24</td>
+    <td><a href="https://www.steemit.com/story/@artist1989/inbetween-2-premiere-supernatural-story-series-chapter-1">InBetween 2 Premiere - Supernatural Story Series - Chapter 1</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>16</td>
-    <td>9.87</td>
-    <td>24</td>
-    <td><a href="https://www.steemit.com/@steaks-info">steaks-info</a></td>
-    <td>50.32</td>
-    <td>2018-01-04 05:55:24</td>
-    <td><a href="https://www.steemit.com/story/@steaks-info/biba-the-outstanding-lady-story-8">Biba The Outstanding Lady; Story 8</a></td>
+    <td>17.34</td>
+    <td>7</td>
+    <td><a href="https://www.steemit.com/@yuxid">yuxid</a></td>
+    <td>60.91</td>
+    <td>2018-01-05 21:04:06</td>
+    <td><a href="https://www.steemit.com/story/@yuxid/top-30-stories-by-payout-on-2018-01-04">Top 30 stories by payout on 2018-01-04</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>17</td>
-    <td>6.75</td>
-    <td>11</td>
-    <td><a href="https://www.steemit.com/@one-person">one-person</a></td>
-    <td>44.77</td>
-    <td>2018-01-04 12:41:21</td>
-    <td><a href="https://www.steemit.com/story/@one-person/live-free-a-short-story">Live Free... A short story</a></td>
+    <td>14.83</td>
+    <td>72</td>
+    <td><a href="https://www.steemit.com/@steemfuzzy">steemfuzzy</a></td>
+    <td>49.39</td>
+    <td>2018-01-05 03:51:45</td>
+    <td><a href="https://www.steemit.com/story/@steemfuzzy/daily-story-selection-1-4-2018-thursday">Daily Story Selection - 1/4/2018 (Thursday)</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>18</td>
-    <td>6.40</td>
-    <td>11</td>
-    <td><a href="https://www.steemit.com/@richristow">richristow</a></td>
-    <td>67.98</td>
-    <td>2018-01-04 12:56:33</td>
-    <td><a href="https://www.steemit.com/story/@richristow/budget-apartment-hunting-in-china">Budget Apartment Hunting in China</a></td>
+    <td>12.65</td>
+    <td>20</td>
+    <td><a href="https://www.steemit.com/@worldclassplayer">worldclassplayer</a></td>
+    <td>61.76</td>
+    <td>2018-01-05 03:19:36</td>
+    <td><a href="https://www.steemit.com/story/@worldclassplayer/mercy-is-grace-the-secret-to-everything-i-ever-wanted">"Mercy is Grace", The Secret to Everything I Ever Wanted!</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>19</td>
-    <td>5.03</td>
-    <td>8</td>
-    <td><a href="https://www.steemit.com/@igider">igider</a></td>
-    <td>52.34</td>
-    <td>2018-01-04 17:23:51</td>
-    <td><a href="https://www.steemit.com/story/@igider/a-legend-s-story-no-wonder-michael-jordan-is-the-greatest">A LEGEND’S STORY! No wonder MICHAEL JORDAN IS THE GREATEST!</a></td>
+    <td>12.35</td>
+    <td>7</td>
+    <td><a href="https://www.steemit.com/@jonabeth">jonabeth</a></td>
+    <td>51.04</td>
+    <td>2018-01-05 09:41:51</td>
+    <td><a href="https://www.steemit.com/story/@jonabeth/playing-while-learning">Playing While Learning</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>20</td>
-    <td>4.84</td>
-    <td>18</td>
-    <td><a href="https://www.steemit.com/@nazmul82">nazmul82</a></td>
-    <td>41.32</td>
-    <td>2018-01-04 14:54:18</td>
-    <td><a href="https://www.steemit.com/story/@nazmul82/astroport-sariska-or-new-attraction-of-star-loved-tourists">Astroport sariska|New attraction of star-loved tourists</a></td>
+    <td>10.89</td>
+    <td>24</td>
+    <td><a href="https://www.steemit.com/@sunnylife">sunnylife</a></td>
+    <td>60.52</td>
+    <td>2018-01-05 00:45:21</td>
+    <td><a href="https://www.steemit.com/story/@sunnylife/the-bling-bling-and-the-40-years-old-painting">The "Bling Bling" And The 40 Years Old Painting</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>21</td>
-    <td>4.66</td>
-    <td>23</td>
-    <td><a href="https://www.steemit.com/@rooneey">rooneey</a></td>
-    <td>52.44</td>
-    <td>2018-01-04 15:20:45</td>
-    <td><a href="https://www.steemit.com/story/@rooneey/bilingual-an-honest-unemployed-man-a-story-of-honesty-or-or-seorang-pengangguran-yang-jujur-cerita-kejujuran-e35c27773c846">(Bilingual) An Honest Unemployed Man - A Story of Honesty || Seorang Pengangguran Yang Jujur - Cerita Kejujuran</a></td>
+    <td>10.74</td>
+    <td>5</td>
+    <td><a href="https://www.steemit.com/@cynbedthia">cynbedthia</a></td>
+    <td>54.11</td>
+    <td>2018-01-05 18:39:36</td>
+    <td><a href="https://www.steemit.com/story/@cynbedthia/the-day-i-almost-died-and-inspired-art-death-photography">The day I almost died and inspired Art/Death Photography</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>22</td>
-    <td>4.54</td>
-    <td>19</td>
-    <td><a href="https://www.steemit.com/@brainz">brainz</a></td>
-    <td>52.00</td>
-    <td>2018-01-04 10:38:48</td>
-    <td><a href="https://www.steemit.com/story/@brainz/once-upon-a-time-the-rising-of-a-phoenix-episode-33-written-by-brainz">Once Upon A Time "The Rising of a Phoenix” Episode 33 (Written By Brainz)</a></td>
+    <td>7.66</td>
+    <td>17</td>
+    <td><a href="https://www.steemit.com/@protomar">protomar</a></td>
+    <td>37.75</td>
+    <td>2018-01-05 12:54:33</td>
+    <td><a href="https://www.steemit.com/story/@protomar/story-of-the-day-fate">Story of the day [Fate]</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>23</td>
-    <td>4.49</td>
-    <td>2</td>
-    <td><a href="https://www.steemit.com/@ryanrizz">ryanrizz</a></td>
-    <td>53.51</td>
-    <td>2018-01-04 07:49:33</td>
-    <td><a href="https://www.steemit.com/story/@ryanrizz/a-quick-thought">A Quick Thought.</a></td>
+    <td>5.81</td>
+    <td>1</td>
+    <td><a href="https://www.steemit.com/@owo-paki">owo-paki</a></td>
+    <td>45.32</td>
+    <td>2018-01-05 11:36:36</td>
+    <td><a href="https://www.steemit.com/story/@owo-paki/chief-udeze-the-mad-woman-s-choice-story-8">Chief Udeze The Mad Woman's Choice - STORY 8</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>24</td>
-    <td>4.07</td>
-    <td>5</td>
-    <td><a href="https://www.steemit.com/@rotimi">rotimi</a></td>
-    <td>56.70</td>
-    <td>2018-01-04 01:09:18</td>
-    <td><a href="https://www.steemit.com/story/@rotimi/the-unknown-story-the-jealous-step-mother">The Unknown Story: The Jealous Step Mother</a></td>
+    <td>5.23</td>
+    <td>21</td>
+    <td><a href="https://www.steemit.com/@darkflame">darkflame</a></td>
+    <td>65.29</td>
+    <td>2018-01-05 03:02:18</td>
+    <td><a href="https://www.steemit.com/story/@darkflame/fiction-flow-001">fiction flow 001</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>25</td>
-    <td>3.97</td>
-    <td>6</td>
-    <td><a href="https://www.steemit.com/@owo-paki">owo-paki</a></td>
-    <td>45.17</td>
-    <td>2018-01-04 02:22:09</td>
-    <td><a href="https://www.steemit.com/story/@owo-paki/chief-udeze-the-mad-woman-s-choice-story-7">Chief Udeze The Mad Woman's Choice - STORY 7</a></td>
+    <td>3.84</td>
+    <td>28</td>
+    <td><a href="https://www.steemit.com/@rooneey">rooneey</a></td>
+    <td>52.48</td>
+    <td>2018-01-05 09:22:51</td>
+    <td><a href="https://www.steemit.com/story/@rooneey/bilingual-a-rebellious-girl-seorang-gadis-durhaka-f0672aa8c262a">(Bilingual) A Rebellious Girl - Seorang Gadis Durhaka</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>26</td>
-    <td>3.72</td>
-    <td>149</td>
-    <td><a href="https://www.steemit.com/@alexpkm">alexpkm</a></td>
-    <td>33.65</td>
-    <td>2018-01-04 04:10:42</td>
-    <td><a href="https://www.steemit.com/story/@alexpkm/inilah-pemimpin-yang-sebenarnya">Inilah pemimpin yang sebenarnya!</a></td>
+    <td>3.03</td>
+    <td>9</td>
+    <td><a href="https://www.steemit.com/@irastra">irastra</a></td>
+    <td>52.18</td>
+    <td>2018-01-05 18:35:09</td>
+    <td><a href="https://www.steemit.com/story/@irastra/and-the-sun-has-set-behind-the-multinational">And the Sun Has Set Behind the Multinational</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>27</td>
-    <td>3.50</td>
-    <td>15</td>
-    <td><a href="https://www.steemit.com/@simonjay">simonjay</a></td>
-    <td>65.12</td>
-    <td>2018-01-04 12:34:33</td>
-    <td><a href="https://www.steemit.com/story/@simonjay/old-folks-house-party-4-1-2018">Old Folks House Party!? 4/1/2018</a></td>
+    <td>2.91</td>
+    <td>9</td>
+    <td><a href="https://www.steemit.com/@snowmachine">snowmachine</a></td>
+    <td>63.12</td>
+    <td>2018-01-05 23:37:06</td>
+    <td><a href="https://www.steemit.com/story/@snowmachine/the-halcyon-spaceship-psycho-surreal-memoirs">The Halcyon Spaceship [Psycho-Surreal Memoirs]</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>28</td>
-    <td>3.49</td>
-    <td>11</td>
-    <td><a href="https://www.steemit.com/@mazidoank">mazidoank</a></td>
-    <td>49.57</td>
-    <td>2018-01-04 12:08:18</td>
-    <td><a href="https://www.steemit.com/story/@mazidoank/a-cup-of-coffe-to-work-with-spirit-secangkir-kopi-untuk-semangat-bekerja-201814t19810721z">A cup of coffe to work with spirit(Secangkir Kopi untuk semangat Bekerja)</a></td>
+    <td>2.76</td>
+    <td>8</td>
+    <td><a href="https://www.steemit.com/@nilpan">nilpan</a></td>
+    <td>51.93</td>
+    <td>2018-01-05 16:10:15</td>
+    <td><a href="https://www.steemit.com/story/@nilpan/kak-ya-chut-ne-stal-falshivomonetchikom">Как я чуть не стал фальшивомонетчиком</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>29</td>
-    <td>3.33</td>
-    <td>88</td>
-    <td><a href="https://www.steemit.com/@hilmi">hilmi</a></td>
-    <td>52.21</td>
-    <td>2018-01-04 08:58:00</td>
-    <td><a href="https://www.steemit.com/story/@hilmi/my-name-is-apadoi-d3e0fbef98171">My name is Apadoi</a></td>
+    <td>2.13</td>
+    <td>28</td>
+    <td><a href="https://www.steemit.com/@sajidulislam">sajidulislam</a></td>
+    <td>47.02</td>
+    <td>2018-01-05 09:36:48</td>
+    <td><a href="https://www.steemit.com/story/@sajidulislam/battle-of-stalingrad-the-greatest-mistake-of-adolf-hitler">battle of Stalingrad: The Greatest Mistake of Adolf Hitler</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>30</td>
-    <td>2.47</td>
-    <td>7</td>
-    <td><a href="https://www.steemit.com/@supreme.yuma">supreme.yuma</a></td>
-    <td>43.43</td>
-    <td>2018-01-04 10:45:30</td>
-    <td><a href="https://www.steemit.com/story/@supreme.yuma/men-don-t-fail-they-give-up-trying">MEN DON'T FAIL! THEY GIVE UP TRYING!</a></td>
+    <td>2.00</td>
+    <td>11</td>
+    <td><a href="https://www.steemit.com/@davidad">davidad</a></td>
+    <td>59.10</td>
+    <td>2018-01-05 07:50:48</td>
+    <td><a href="https://www.steemit.com/story/@davidad/dear-steemians-good-morning">Dear Steemians Good Morning</a></td>
   </tr>
   
 </table>
-]]></content></entry><entry><id>https://www.yuxifan.com/atom/atom_steemit/poetry/2018-01-04</id><title>daily popular posts in poetry on 2018-01-04</title><updated>2018-01-05T03:02:06.173421+00:00</updated><content type="html"><![CDATA[
-<h2>Top 30 posts in category: poetry on 2018-01-04</h2>
+]]></content></entry><entry><id>https://www.yuxifan.com/atom/atom_steemit/poetry/2018-01-05</id><title>daily popular posts in poetry on 2018-01-05</title><updated>2018-01-06T03:02:05.577302+00:00</updated><content type="html"><![CDATA[
+<h2>Top 30 posts in category: poetry on 2018-01-05</h2>
 
 <img src="https://www.yuxifan.com/images/steem-statistics.jpg"/><br/>
 
@@ -2281,360 +2281,360 @@
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>1</td>
-    <td>196.52</td>
-    <td>220</td>
-    <td><a href="https://www.steemit.com/@joseph">joseph</a></td>
-    <td>73.55</td>
-    <td>2018-01-04 17:16:18</td>
-    <td><a href="https://www.steemit.com/poetry/@joseph/poetic-justice">Poetic Justice</a></td>
+    <td>190.52</td>
+    <td>64</td>
+    <td><a href="https://www.steemit.com/@xxsenpaixsamaxx">xxsenpaixsamaxx</a></td>
+    <td>69.01</td>
+    <td>2018-01-05 23:02:30</td>
+    <td><a href="https://www.steemit.com/poetry/@xxsenpaixsamaxx/poem-people-aren-t-worth-it">Poem / people aren't worth it</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>2</td>
-    <td>187.88</td>
-    <td>57</td>
-    <td><a href="https://www.steemit.com/@xxsenpaixsamaxx">xxsenpaixsamaxx</a></td>
-    <td>68.99</td>
-    <td>2018-01-04 21:41:12</td>
-    <td><a href="https://www.steemit.com/poetry/@xxsenpaixsamaxx/poem-i-miss-you">Poem / I miss you...</a></td>
+    <td>189.32</td>
+    <td>219</td>
+    <td><a href="https://www.steemit.com/@joseph">joseph</a></td>
+    <td>73.57</td>
+    <td>2018-01-05 20:56:33</td>
+    <td><a href="https://www.steemit.com/poetry/@joseph/poem-about-addiction">Poem About Addiction</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>3</td>
-    <td>93.88</td>
-    <td>74</td>
-    <td><a href="https://www.steemit.com/@johnjgeddes">johnjgeddes</a></td>
-    <td>72.12</td>
-    <td>2018-01-04 01:24:15</td>
-    <td><a href="https://www.steemit.com/poetry/@johnjgeddes/my-private-star">My Private Star</a></td>
+    <td>99.72</td>
+    <td>42</td>
+    <td><a href="https://www.steemit.com/@dobartim">dobartim</a></td>
+    <td>61.50</td>
+    <td>2018-01-05 20:37:36</td>
+    <td><a href="https://www.steemit.com/poetry/@dobartim/above-love">Above Love</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>4</td>
-    <td>78.96</td>
-    <td>103</td>
-    <td><a href="https://www.steemit.com/@dresden">dresden</a></td>
-    <td>67.61</td>
-    <td>2018-01-04 18:48:06</td>
-    <td><a href="https://www.steemit.com/poetry/@dresden/destello-en-la-oscuridad-poema-escrito-en-junio-de-2016">-_Destello En La Oscuridad - Poema Escrito En Junio De 2016_-</a></td>
+    <td>77.70</td>
+    <td>51</td>
+    <td><a href="https://www.steemit.com/@johnjgeddes">johnjgeddes</a></td>
+    <td>72.13</td>
+    <td>2018-01-05 02:05:15</td>
+    <td><a href="https://www.steemit.com/poetry/@johnjgeddes/just-a-man">Just a Man</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>5</td>
-    <td>66.13</td>
-    <td>75</td>
-    <td><a href="https://www.steemit.com/@poetry-vibes">poetry-vibes</a></td>
-    <td>63.50</td>
-    <td>2018-01-04 03:53:39</td>
-    <td><a href="https://www.steemit.com/poetry/@poetry-vibes/the-reason-i-love-you">The reason I love You</a></td>
+    <td>61.90</td>
+    <td>94</td>
+    <td><a href="https://www.steemit.com/@englishtchrivy">englishtchrivy</a></td>
+    <td>71.38</td>
+    <td>2018-01-05 13:42:48</td>
+    <td><a href="https://www.steemit.com/poetry/@englishtchrivy/you-think-you-know-me-but-really-do-you">You Think You Know Me But Really ...  Do You ?</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>6</td>
-    <td>65.99</td>
-    <td>79</td>
-    <td><a href="https://www.steemit.com/@poetic-power">poetic-power</a></td>
-    <td>62.66</td>
-    <td>2018-01-04 02:43:21</td>
-    <td><a href="https://www.steemit.com/poetry/@poetic-power/fragile-heart">Fragile Heart</a></td>
+    <td>59.36</td>
+    <td>30</td>
+    <td><a href="https://www.steemit.com/@verbal-d">verbal-d</a></td>
+    <td>70.27</td>
+    <td>2018-01-05 14:31:36</td>
+    <td><a href="https://www.steemit.com/poetry/@verbal-d/pearlescent-poems-184-multifaceted-part-1-original-poem">Pearlescent Poems # 184:  Multifaceted Part 1 (Original Poem)</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>7</td>
-    <td>59.88</td>
-    <td>18</td>
-    <td><a href="https://www.steemit.com/@aldentan">aldentan</a></td>
-    <td>65.82</td>
-    <td>2018-01-04 14:05:00</td>
-    <td><a href="https://www.steemit.com/poetry/@aldentan/ponder">Ponder</a></td>
+    <td>56.73</td>
+    <td>81</td>
+    <td><a href="https://www.steemit.com/@rensoul17">rensoul17</a></td>
+    <td>57.56</td>
+    <td>2018-01-05 02:16:12</td>
+    <td><a href="https://www.steemit.com/poetry/@rensoul17/where-will-we-go">Where Will We Go?</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>8</td>
-    <td>49.60</td>
-    <td>36</td>
-    <td><a href="https://www.steemit.com/@artedellavita">artedellavita</a></td>
-    <td>57.47</td>
-    <td>2018-01-04 00:58:30</td>
-    <td><a href="https://www.steemit.com/poetry/@artedellavita/return-a-poem">Return~ A Poem</a></td>
+    <td>52.67</td>
+    <td>19</td>
+    <td><a href="https://www.steemit.com/@themanualbot">themanualbot</a></td>
+    <td>66.12</td>
+    <td>2018-01-05 14:32:27</td>
+    <td><a href="https://www.steemit.com/poetry/@themanualbot/random-thoughts-of-poetry-untitled-poems-12">Random Thoughts of Poetry ?? Untitled Poems#12</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>9</td>
-    <td>48.05</td>
-    <td>29</td>
-    <td><a href="https://www.steemit.com/@themanualbot">themanualbot</a></td>
-    <td>66.09</td>
-    <td>2018-01-04 14:39:24</td>
-    <td><a href="https://www.steemit.com/poetry/@themanualbot/random-thoughts-of-poetry-untitled-poems-11">Random Thoughts of Poetry ✍️ Untitled Poems#11</a></td>
+    <td>50.91</td>
+    <td>31</td>
+    <td><a href="https://www.steemit.com/@bania">bania</a></td>
+    <td>62.25</td>
+    <td>2018-01-05 21:10:15</td>
+    <td><a href="https://www.steemit.com/poetry/@bania/letter-to-bania-20-you-can-t-die-twice-live-life-right">Letter to Bania @20: You Can’t Die Twice - Live Life Right</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>10</td>
-    <td>29.72</td>
-    <td>2</td>
-    <td><a href="https://www.steemit.com/@kamillejohnson">kamillejohnson</a></td>
-    <td>44.94</td>
-    <td>2018-01-04 21:06:30</td>
-    <td><a href="https://www.steemit.com/poetry/@kamillejohnson/dreamscapes-none">dreamscapes // none</a></td>
+    <td>44.89</td>
+    <td>16</td>
+    <td><a href="https://www.steemit.com/@heretickitten">heretickitten</a></td>
+    <td>64.44</td>
+    <td>2018-01-05 10:23:18</td>
+    <td><a href="https://www.steemit.com/poetry/@heretickitten/i-was-told-of-gold-in-hills-so-far-away">I was told of gold, in hills so far away.</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>11</td>
-    <td>28.51</td>
-    <td>75</td>
-    <td><a href="https://www.steemit.com/@sazbird">sazbird</a></td>
-    <td>64.46</td>
-    <td>2018-01-04 01:07:30</td>
-    <td><a href="https://www.steemit.com/poetry/@sazbird/crypto-fish">Crypto Fish</a></td>
+    <td>42.45</td>
+    <td>27</td>
+    <td><a href="https://www.steemit.com/@sofer">sofer</a></td>
+    <td>53.58</td>
+    <td>2018-01-05 04:48:48</td>
+    <td><a href="https://www.steemit.com/poetry/@sofer/the-inspirational-wurm">The Inspirational Wurm</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>12</td>
-    <td>26.92</td>
-    <td>37</td>
-    <td><a href="https://www.steemit.com/@clayboyn">clayboyn</a></td>
-    <td>66.53</td>
-    <td>2018-01-04 09:05:42</td>
-    <td><a href="https://www.steemit.com/poetry/@clayboyn/spectrum-harmony-original-poetry-collaboration">Spectrum//Harmony (original poetry collaboration)</a></td>
+    <td>26.11</td>
+    <td>31</td>
+    <td><a href="https://www.steemit.com/@dobartim">dobartim</a></td>
+    <td>61.50</td>
+    <td>2018-01-05 09:33:18</td>
+    <td><a href="https://www.steemit.com/poetry/@dobartim/love-message">Love Message</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>13</td>
-    <td>23.00</td>
-    <td>21</td>
-    <td><a href="https://www.steemit.com/@lloyddavis">lloyddavis</a></td>
-    <td>67.69</td>
-    <td>2018-01-04 09:07:00</td>
-    <td><a href="https://www.steemit.com/poetry/@lloyddavis/tipi-trance-original-poetry">Tipi trance (original poetry)</a></td>
+    <td>24.40</td>
+    <td>66</td>
+    <td><a href="https://www.steemit.com/@anwenbaumeister">anwenbaumeister</a></td>
+    <td>71.43</td>
+    <td>2018-01-05 00:08:27</td>
+    <td><a href="https://www.steemit.com/poetry/@anwenbaumeister/30-day-poetry-challenge-day-4-spirits-of-stone-dragon-and-hot-chili-peppers">30 Day Poetry Challenge :: Day 4 :: Spirits of Stone, Dragon, and Hot Chili Peppers</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>14</td>
-    <td>20.61</td>
-    <td>20</td>
+    <td>20.42</td>
+    <td>22</td>
     <td><a href="https://www.steemit.com/@verbal-d">verbal-d</a></td>
-    <td>70.26</td>
-    <td>2018-01-04 22:06:33</td>
-    <td><a href="https://www.steemit.com/poetry/@verbal-d/life-and-death-haikus-mistress-of-murder-original-poem">Life &amp; Death Haikus:  Mistress Of Murder (Original Poem)</a></td>
+    <td>70.27</td>
+    <td>2018-01-05 20:59:36</td>
+    <td><a href="https://www.steemit.com/poetry/@verbal-d/pearlescent-poems-186-multifaceted-part-3-original-poem">Pearlescent Poems # 186:  Multifaceted Part 3 (Original Poem)</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>15</td>
-    <td>17.94</td>
-    <td>13</td>
-    <td><a href="https://www.steemit.com/@dobartim">dobartim</a></td>
-    <td>61.38</td>
-    <td>2018-01-04 19:38:45</td>
-    <td><a href="https://www.steemit.com/poetry/@dobartim/love-in-the-yoga-move">Love In The Yoga Move</a></td>
+    <td>19.58</td>
+    <td>23</td>
+    <td><a href="https://www.steemit.com/@verbal-d">verbal-d</a></td>
+    <td>70.27</td>
+    <td>2018-01-05 16:40:42</td>
+    <td><a href="https://www.steemit.com/poetry/@verbal-d/pearlescent-poems-185-multifaceted-part-2-original-poem">Pearlescent Poems # 185:  Multifaceted Part 2 (Original Poem)</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>16</td>
-    <td>16.21</td>
-    <td>21</td>
-    <td><a href="https://www.steemit.com/@untaljames">untaljames</a></td>
-    <td>52.29</td>
-    <td>2018-01-04 03:05:30</td>
-    <td><a href="https://www.steemit.com/poetry/@untaljames/un-tal-james-escritos-hojas-sueltas-enero-y-percepcion">UN TAL JAMES - ESCRITOS - HOJAS SUELTAS - ENERO Y PERCEPCIÓN.</a></td>
+    <td>19.24</td>
+    <td>12</td>
+    <td><a href="https://www.steemit.com/@jrswab">jrswab</a></td>
+    <td>59.91</td>
+    <td>2018-01-05 17:17:00</td>
+    <td><a href="https://www.steemit.com/poetry/@jrswab/melancholy-winter-an-original-poem">Melancholy Winter ~ An Original Poem</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>17</td>
-    <td>15.24</td>
-    <td>40</td>
-    <td><a href="https://www.steemit.com/@tegoshei">tegoshei</a></td>
-    <td>61.18</td>
-    <td>2018-01-04 10:21:27</td>
-    <td><a href="https://www.steemit.com/poetry/@tegoshei/no-other-an-original-poem-original-artwork">NO OTHER (an original poem + original artwork)</a></td>
+    <td>19.19</td>
+    <td>24</td>
+    <td><a href="https://www.steemit.com/@verbal-d">verbal-d</a></td>
+    <td>70.27</td>
+    <td>2018-01-05 23:09:12</td>
+    <td><a href="https://www.steemit.com/poetry/@verbal-d/pearlescent-poems-187-multifaceted-part-4-original-poem">Pearlescent Poems # 187:  Multifaceted Part 4 (Original Poem)</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>18</td>
-    <td>14.84</td>
-    <td>23</td>
-    <td><a href="https://www.steemit.com/@donaldtrumpfan">donaldtrumpfan</a></td>
-    <td>59.90</td>
-    <td>2018-01-04 02:38:45</td>
-    <td><a href="https://www.steemit.com/poetry/@donaldtrumpfan/5tegyg-poetry-series-49-untitled">Poetry Series #49: Untitled</a></td>
+    <td>17.45</td>
+    <td>5</td>
+    <td><a href="https://www.steemit.com/@reconditedeity">reconditedeity</a></td>
+    <td>37.92</td>
+    <td>2018-01-05 18:04:57</td>
+    <td><a href="https://www.steemit.com/poetry/@reconditedeity/muse">Muse.</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>19</td>
-    <td>14.74</td>
-    <td>25</td>
-    <td><a href="https://www.steemit.com/@mysupermando">mysupermando</a></td>
-    <td>45.54</td>
-    <td>2018-01-04 14:19:51</td>
-    <td><a href="https://www.steemit.com/poetry/@mysupermando/lights-out">Lights Out</a></td>
+    <td>16.75</td>
+    <td>26</td>
+    <td><a href="https://www.steemit.com/@dianargenti">dianargenti</a></td>
+    <td>64.19</td>
+    <td>2018-01-05 12:36:45</td>
+    <td><a href="https://www.steemit.com/poetry/@dianargenti/the-story-of-us">The Story Of Us</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>20</td>
-    <td>14.22</td>
-    <td>60</td>
-    <td><a href="https://www.steemit.com/@anwenbaumeister">anwenbaumeister</a></td>
-    <td>71.43</td>
-    <td>2018-01-04 07:10:57</td>
-    <td><a href="https://www.steemit.com/poetry/@anwenbaumeister/30-day-poetry-challenge-day-3-a-hollowed-out-family-tree">30 Day Poetry Challenge :: Day 3 :: A Hollowed Out Family Tree</a></td>
+    <td>15.12</td>
+    <td>12</td>
+    <td><a href="https://www.steemit.com/@jeanelleybee">jeanelleybee</a></td>
+    <td>51.83</td>
+    <td>2018-01-05 17:15:18</td>
+    <td><a href="https://www.steemit.com/poetry/@jeanelleybee/in-jeannie-s-eyes-bright-lights">In Jeannie’s Eyes: Bright Lights</a></td>
   </tr>
   
   
   <tr style="background-color: #EAF3F3; border: 1px solid black;">
   
     <td>21</td>
-    <td>13.83</td>
-    <td>20</td>
-    <td><a href="https://www.steemit.com/@grace44">grace44</a></td>
-    <td>53.08</td>
-    <td>2018-01-04 07:49:51</td>
-    <td><a href="https://www.steemit.com/poetry/@grace44/akong-hinigugma">"Akong Hinigugma"</a></td>
+    <td>14.74</td>
+    <td>18</td>
+    <td><a href="https://www.steemit.com/@mayann">mayann</a></td>
+    <td>44.85</td>
+    <td>2018-01-05 02:27:48</td>
+    <td><a href="https://www.steemit.com/poetry/@mayann/i-m-inlove-with-you">"I'M INLOVE WITH YOU"</a></td>
   </tr>
   
   
   <tr style="background-color: #D9E4E6; border: 1px solid black;">
   
     <td>22</td>
-    <td>13.79</td>
+    <td>13.99</td>
+    <td>19</td>
+    <td><a href="https://www.steemit.com/@blacks">blacks</a></td>
+    <td>61.61</td>
+    <td>2018-01-05 05:08:24</td>
+    <td><a href="https://www.steemit.com/poetry/@blacks/my-poetry-i-am-bearing-a-live-crematory">My Poetry :I am bearing a live crematory</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>23</td>
+    <td>12.97</td>
+    <td>27</td>
+    <td><a href="https://www.steemit.com/@dwaeji-aizelle">dwaeji-aizelle</a></td>
+    <td>55.31</td>
+    <td>2018-01-05 15:59:30</td>
+    <td><a href="https://www.steemit.com/poetry/@dwaeji-aizelle/this-and-that-short-poetry">"This and That" -- (Short Poetry) ??</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>24</td>
+    <td>11.90</td>
+    <td>30</td>
+    <td><a href="https://www.steemit.com/@walkingkeys">walkingkeys</a></td>
+    <td>59.23</td>
+    <td>2018-01-05 08:33:45</td>
+    <td><a href="https://www.steemit.com/poetry/@walkingkeys/the-owl-and-the-night">The Owl And The Night</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>25</td>
+    <td>11.33</td>
+    <td>13</td>
+    <td><a href="https://www.steemit.com/@jessandthesea">jessandthesea</a></td>
+    <td>56.90</td>
+    <td>2018-01-05 05:29:27</td>
+    <td><a href="https://www.steemit.com/poetry/@jessandthesea/steemitpoetrycontest-10-learning-to-sail">SteemitPoetryContest #10 - Learning To Sail</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>26</td>
+    <td>10.36</td>
+    <td>25</td>
+    <td><a href="https://www.steemit.com/@macksby">macksby</a></td>
+    <td>73.43</td>
+    <td>2018-01-05 01:07:12</td>
+    <td><a href="https://www.steemit.com/poetry/@macksby/into-the-abyss">Into The Abyss…</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>27</td>
+    <td>9.47</td>
+    <td>15</td>
+    <td><a href="https://www.steemit.com/@geekorner">geekorner</a></td>
+    <td>49.76</td>
+    <td>2018-01-05 17:08:45</td>
+    <td><a href="https://www.steemit.com/poetry/@geekorner/1-4-poem-prose">1:4 (Poem/Prose)</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>28</td>
+    <td>9.10</td>
+    <td>11</td>
+    <td><a href="https://www.steemit.com/@horpey">horpey</a></td>
+    <td>57.49</td>
+    <td>2018-01-05 09:04:33</td>
+    <td><a href="https://www.steemit.com/poetry/@horpey/early-morning-feel-poetry-ee8419a99ca26">EARLY MORNING FEEL(POETRY).</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #EAF3F3; border: 1px solid black;">
+  
+    <td>29</td>
+    <td>8.81</td>
+    <td>7</td>
+    <td><a href="https://www.steemit.com/@aaqib11b">aaqib11b</a></td>
+    <td>50.13</td>
+    <td>2018-01-05 04:00:24</td>
+    <td><a href="https://www.steemit.com/poetry/@aaqib11b/shrouding-the-stars-ee270b3d28bee">Shrouding the stars</a></td>
+  </tr>
+  
+  
+  <tr style="background-color: #D9E4E6; border: 1px solid black;">
+  
+    <td>30</td>
+    <td>8.78</td>
     <td>18</td>
     <td><a href="https://www.steemit.com/@beginningtoend">beginningtoend</a></td>
     <td>69.08</td>
-    <td>2018-01-04 11:41:24</td>
-    <td><a href="https://www.steemit.com/poetry/@beginningtoend/poetry-and-photography-open-for-business">POETRY AND PHOTOGRAPHY / Open for Business</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>23</td>
-    <td>12.66</td>
-    <td>18</td>
-    <td><a href="https://www.steemit.com/@blacks">blacks</a></td>
-    <td>61.59</td>
-    <td>2018-01-04 09:34:36</td>
-    <td><a href="https://www.steemit.com/poetry/@blacks/a-bengali-poetry">A bengali poetry:অনেক বছর তোমার প্রতীক্ষায়।(I am waiting for you)</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>24</td>
-    <td>12.02</td>
-    <td>25</td>
-    <td><a href="https://www.steemit.com/@louielowa">louielowa</a></td>
-    <td>55.32</td>
-    <td>2018-01-04 02:25:57</td>
-    <td><a href="https://www.steemit.com/poetry/@louielowa/aninipot">Aninipot</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>25</td>
-    <td>11.29</td>
-    <td>15</td>
-    <td><a href="https://www.steemit.com/@angelveselinov">angelveselinov</a></td>
-    <td>45.10</td>
-    <td>2018-01-04 23:41:30</td>
-    <td><a href="https://www.steemit.com/poetry/@angelveselinov/the-burnout-original-steemit-poem-happens-to-everyone">The Burnout - Original Steemit Poem (Happens To Everyone)</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>26</td>
-    <td>11.06</td>
-    <td>26</td>
-    <td><a href="https://www.steemit.com/@leslyfay">leslyfay</a></td>
-    <td>55.07</td>
-    <td>2018-01-04 02:26:03</td>
-    <td><a href="https://www.steemit.com/poetry/@leslyfay/poetry-91-lives-must-go-on">POETRY #91:LIVES MUST GO ON!</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>27</td>
-    <td>10.98</td>
-    <td>86</td>
-    <td><a href="https://www.steemit.com/@evanjames">evanjames</a></td>
-    <td>48.99</td>
-    <td>2018-01-04 18:59:39</td>
-    <td><a href="https://www.steemit.com/poetry/@evanjames/trash-mountain">Trash Mountain</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>28</td>
-    <td>10.39</td>
-    <td>6</td>
-    <td><a href="https://www.steemit.com/@aaqib11b">aaqib11b</a></td>
-    <td>50.02</td>
-    <td>2018-01-04 14:32:42</td>
-    <td><a href="https://www.steemit.com/poetry/@aaqib11b/contest-70ed6c1ac2a47">Contest</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #EAF3F3; border: 1px solid black;">
-  
-    <td>29</td>
-    <td>8.93</td>
-    <td>37</td>
-    <td><a href="https://www.steemit.com/@dante31">dante31</a></td>
-    <td>58.27</td>
-    <td>2018-01-04 06:09:21</td>
-    <td><a href="https://www.steemit.com/poetry/@dante31/candy-rain">Candy Rain</a></td>
-  </tr>
-  
-  
-  <tr style="background-color: #D9E4E6; border: 1px solid black;">
-  
-    <td>30</td>
-    <td>8.32</td>
-    <td>9</td>
-    <td><a href="https://www.steemit.com/@buterdaniel">buterdaniel</a></td>
-    <td>54.52</td>
-    <td>2018-01-04 08:14:30</td>
-    <td><a href="https://www.steemit.com/poetry/@buterdaniel/5racjf-a-temperate-nigerian-girl-a-poem"> A temperate Nigerian Girl (A poem) </a></td>
+    <td>2018-01-05 11:20:15</td>
+    <td><a href="https://www.steemit.com/poetry/@beginningtoend/poetry-and-art-what-walks-through-a-palette-of-color">POETRY AND ART / What Walks Through a Palette of Color</a></td>
   </tr>
   
 </table>
