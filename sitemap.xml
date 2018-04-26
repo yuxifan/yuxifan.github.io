@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yuxifan.com/2017/12/12/simple_form_checkbox_problem/</loc>
+    
+    <lastmod>2018-04-26T12:07:30.669Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yuxifan.com/2017/07/28/ruby-steem-4/</loc>
     
     <lastmod>2017-11-17T21:56:40.710Z</lastmod>
@@ -166,13 +173,6 @@
     <loc>https://www.yuxifan.com/2017/06/28/graphicsmagick/</loc>
     
     <lastmod>2017-06-28T10:22:44.373Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/05/05/how-to-add-hyperlink-cues-by-using-fontawesome/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
   </url>
   
@@ -479,6 +479,13 @@
   
   <url>
     <loc>https://www.yuxifan.com/2016/10/13/how-can-i-get-the-final-url-after-redirects-using-ruby/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/05/05/how-to-add-hyperlink-cues-by-using-fontawesome/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
