@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2018-04-26T12:07:30.669Z</updated>
+  <updated>2018-05-01T09:11:14.869Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Setup Node.js development environment in Windows</title>
+    <link href="https://www.yuxifan.com/2018/05/01/build-nodejs-dev-env/"/>
+    <id>https://www.yuxifan.com/2018/05/01/build-nodejs-dev-env/</id>
+    <published>2018-05-01T01:10:12.000Z</published>
+    <updated>2018-05-01T09:11:14.869Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/nodejs/nodejs.png" alt=""></p>
+<p>Download nodejs LTS：<a href="https://nodejs.org/en/" rel="external nofollow noopener noreferrer" target="_blank">https://nodejs.org/en/</a></p>
+<p>In windows command line, run:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">node</div></pre></td></tr></table></figure>
+<p>To exit:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">process.exit()</div></pre></td></tr></table></figure></p>
+<p>First script to run a server:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</div><div class="line">http.createServer(<span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</div><div class="line">    res.writeHead(<span class="number">200</span>,&#123;<span class="string">'Content-Type'</span>: <span class="string">'text/plain'</span>&#125;);</div><div class="line">    res.end(<span class="string">'Hello World!\n'</span>);</div><div class="line">&#125;).listen(<span class="number">8000</span>, <span class="string">"127.0.0.1"</span>);</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(<span class="string">'Server running at http://127.0.0.1:8000/'</span>);</div></pre></td></tr></table></figure>
+<p>Install Express:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install -g express</div><div class="line">npm install -g express-generator</div></pre></td></tr></table></figure>
+<p>Check npm and their locations:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm list -g</div></pre></td></tr></table></figure>
+<p>Create Express demo application:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">express demo</div><div class="line"></div><div class="line"><span class="built_in">cd</span> demo</div><div class="line">npm install</div><div class="line">SET DEBUG=demo:* &amp; npm start</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/nodejs/nodejs.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Download nodejs LTS：&lt;a href=&quot;https://nodejs.org/en/&quot; rel=&quot;external nofollow noopener 
+    
+    </summary>
+    
+      <category term="nodejs" scheme="https://www.yuxifan.com/categories/nodejs/"/>
+    
+    
+      <category term="nodejs" scheme="https://www.yuxifan.com/tags/nodejs/"/>
+    
+  </entry>
   
   <entry>
     <title>The problem with plataformatec simple_form checkboxes and the fix</title>
@@ -194,48 +230,6 @@
   </entry>
   
   <entry>
-    <title>Setup python development environment for Steem on Ubuntu 16</title>
-    <link href="https://www.yuxifan.com/2017/07/28/setup-python-steem-development-environment/"/>
-    <id>https://www.yuxifan.com/2017/07/28/setup-python-steem-development-environment/</id>
-    <published>2017-07-28T04:51:12.000Z</published>
-    <updated>2017-07-28T08:21:26.600Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/linux/steem/python-steem.png" alt="Python &amp; Steem"></p>
-<h2 id="Install-python-3"><a href="#Install-python-3" class="headerlink" title="Install python 3"></a>Install python 3</h2><p>Both Python 3 and Python 2 have been pre-installed on Ubuntu 16, you just need to make sure you have the latest versions by running:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get -y upgrade</div></pre></td></tr></table></figure>
-<p>Then run the following command to check the version of Python 3:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python -v</div></pre></td></tr></table></figure>
-<p>You also need to install pip to manage software packages:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -y python3-pip</div></pre></td></tr></table></figure>
-<p>Install development libraries:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install build-essential libffi-dev libssl-dev python3-dev</div></pre></td></tr></table></figure>
-<h2 id="Setting-up-a-virtual-environment"><a href="#Setting-up-a-virtual-environment" class="headerlink" title="Setting up a virtual environment"></a>Setting up a virtual environment</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install python3-venv</div><div class="line">mkdir environments</div><div class="line"><span class="built_in">cd</span> environments</div><div class="line">python3 -m venv myenv</div><div class="line"><span class="built_in">source</span> myenv/bin/activate</div></pre></td></tr></table></figure>
-<h2 id="Setting-up-python-steem-libraries"><a href="#Setting-up-python-steem-libraries" class="headerlink" title="Setting up python steem libraries"></a>Setting up python steem libraries</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">pip3 install wheel </div><div class="line">pip3 install piston-lib</div><div class="line">pip3 install steem</div></pre></td></tr></table></figure>
-<h2 id="Test-it-works"><a href="#Test-it-works" class="headerlink" title="Test it works"></a>Test it works</h2><p>To test the development environment has been set up correctly, run the following script to list the tags used by latest posts:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> piston <span class="keyword">import</span> Steem</div><div class="line">steem = Steem()</div><div class="line"><span class="keyword">for</span> c <span class="keyword">in</span> steem.stream_comments():</div><div class="line">  <span class="keyword">if</span> c.is_main_post():</div><div class="line">    <span class="keyword">print</span> (c.meta[<span class="string">"tags"</span>])</div></pre></td></tr></table></figure>
-<p><img src="/images/yuxi-steemit.png" alt="@yuxi"></p>
-<p>Thank you for reading my post, feel free to FOLLOW and Upvote <a href="https://steemit.com/@yuxi" rel="external nofollow noopener noreferrer" target="_blank">@yuxi</a>, which will motivate me to create more quality posts.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/linux/steem/python-steem.png&quot; alt=&quot;Python &amp;amp; Steem&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Install-python-3&quot;&gt;&lt;a href=&quot;#Install-python-3&quot; class
-    
-    </summary>
-    
-      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
-    
-    
-      <category term="Linux" scheme="https://www.yuxifan.com/tags/Linux/"/>
-    
-      <category term="Python" scheme="https://www.yuxifan.com/tags/Python/"/>
-    
-      <category term="Steem" scheme="https://www.yuxifan.com/tags/Steem/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Ruby Steem tutorial 4 - Claim rewards automatically</title>
     <link href="https://www.yuxifan.com/2017/07/28/ruby-steem-4/"/>
     <id>https://www.yuxifan.com/2017/07/28/ruby-steem-4/</id>
@@ -274,6 +268,48 @@
       <category term="Ubuntu" scheme="https://www.yuxifan.com/tags/Ubuntu/"/>
     
       <category term="Ruby" scheme="https://www.yuxifan.com/tags/Ruby/"/>
+    
+      <category term="Steem" scheme="https://www.yuxifan.com/tags/Steem/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Setup python development environment for Steem on Ubuntu 16</title>
+    <link href="https://www.yuxifan.com/2017/07/28/setup-python-steem-development-environment/"/>
+    <id>https://www.yuxifan.com/2017/07/28/setup-python-steem-development-environment/</id>
+    <published>2017-07-28T04:51:12.000Z</published>
+    <updated>2017-07-28T08:21:26.600Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/linux/steem/python-steem.png" alt="Python &amp; Steem"></p>
+<h2 id="Install-python-3"><a href="#Install-python-3" class="headerlink" title="Install python 3"></a>Install python 3</h2><p>Both Python 3 and Python 2 have been pre-installed on Ubuntu 16, you just need to make sure you have the latest versions by running:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get -y upgrade</div></pre></td></tr></table></figure>
+<p>Then run the following command to check the version of Python 3:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python -v</div></pre></td></tr></table></figure>
+<p>You also need to install pip to manage software packages:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -y python3-pip</div></pre></td></tr></table></figure>
+<p>Install development libraries:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install build-essential libffi-dev libssl-dev python3-dev</div></pre></td></tr></table></figure>
+<h2 id="Setting-up-a-virtual-environment"><a href="#Setting-up-a-virtual-environment" class="headerlink" title="Setting up a virtual environment"></a>Setting up a virtual environment</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install python3-venv</div><div class="line">mkdir environments</div><div class="line"><span class="built_in">cd</span> environments</div><div class="line">python3 -m venv myenv</div><div class="line"><span class="built_in">source</span> myenv/bin/activate</div></pre></td></tr></table></figure>
+<h2 id="Setting-up-python-steem-libraries"><a href="#Setting-up-python-steem-libraries" class="headerlink" title="Setting up python steem libraries"></a>Setting up python steem libraries</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">pip3 install wheel </div><div class="line">pip3 install piston-lib</div><div class="line">pip3 install steem</div></pre></td></tr></table></figure>
+<h2 id="Test-it-works"><a href="#Test-it-works" class="headerlink" title="Test it works"></a>Test it works</h2><p>To test the development environment has been set up correctly, run the following script to list the tags used by latest posts:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> piston <span class="keyword">import</span> Steem</div><div class="line">steem = Steem()</div><div class="line"><span class="keyword">for</span> c <span class="keyword">in</span> steem.stream_comments():</div><div class="line">  <span class="keyword">if</span> c.is_main_post():</div><div class="line">    <span class="keyword">print</span> (c.meta[<span class="string">"tags"</span>])</div></pre></td></tr></table></figure>
+<p><img src="/images/yuxi-steemit.png" alt="@yuxi"></p>
+<p>Thank you for reading my post, feel free to FOLLOW and Upvote <a href="https://steemit.com/@yuxi" rel="external nofollow noopener noreferrer" target="_blank">@yuxi</a>, which will motivate me to create more quality posts.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/linux/steem/python-steem.png&quot; alt=&quot;Python &amp;amp; Steem&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Install-python-3&quot;&gt;&lt;a href=&quot;#Install-python-3&quot; class
+    
+    </summary>
+    
+      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
+    
+    
+      <category term="Linux" scheme="https://www.yuxifan.com/tags/Linux/"/>
+    
+      <category term="Python" scheme="https://www.yuxifan.com/tags/Python/"/>
     
       <category term="Steem" scheme="https://www.yuxifan.com/tags/Steem/"/>
     
@@ -759,51 +795,6 @@
       <category term="gapps" scheme="https://www.yuxifan.com/tags/gapps/"/>
     
       <category term="samsung" scheme="https://www.yuxifan.com/tags/samsung/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Host multiple domains in Nginx</title>
-    <link href="https://www.yuxifan.com/2017/03/14/suppport-multiple-domains-in-nginx/"/>
-    <id>https://www.yuxifan.com/2017/03/14/suppport-multiple-domains-in-nginx/</id>
-    <published>2017-03-14T05:51:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/linux/nginx.jpg" alt="Host multiple domains in Nginx"></p>
-<p>By default, Nginx on Ubuntu 16.04 has one server block enabled by default. It is configured to serve documents at /var/www/html.</p>
-<p>To serve multiple sites/domains. We need to do the following:</p>
-<h2 id="Create-directories"><a href="#Create-directories" class="headerlink" title="Create directories"></a>Create directories</h2><p>We need to create these directories for each of our domains:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo mkdir -p /var/www/DOMAIN-1.com/html</div><div class="line">sudo mkdir -p /var/www/DOMAIN-2.com/html</div><div class="line"></div><div class="line">sudo chown -R <span class="variable">$USER</span>:<span class="variable">$USER</span> /var/www/DOMAIN-1.com/html</div><div class="line">sudo chown -R <span class="variable">$USER</span>:<span class="variable">$USER</span> /var/www/DOMAIN-2.com/html</div></pre></td></tr></table></figure>
-<h2 id="Create-Server-Block-Files-for-Each-Domain"><a href="#Create-Server-Block-Files-for-Each-Domain" class="headerlink" title="Create Server Block Files for Each Domain"></a>Create Server Block Files for Each Domain</h2><p>File: /etc/nginx/sites-available/DOMAIN-1.com</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">        listen 80;</div><div class="line">        listen [::]:80;</div><div class="line"></div><div class="line">        root /var/www/DOMAIN-1/html;</div><div class="line"></div><div class="line">        index index.html index.htm;</div><div class="line"></div><div class="line">        server_name www.DOMAIN-1.com;</div><div class="line"></div><div class="line">        location / &#123;</div><div class="line">                try_files <span class="variable">$uri</span> <span class="variable">$uri</span>/ =404;</div><div class="line">        &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>File: /etc/nginx/sites-available/DOMAIN-2.com</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">        listen 80;</div><div class="line">        listen [::]:80;</div><div class="line"></div><div class="line">        root /var/www/DOMAIN-2/html;</div><div class="line"></div><div class="line">        index index.html index.htm;</div><div class="line"></div><div class="line">        server_name www.DOMAIN-2.com;</div><div class="line"></div><div class="line">        location / &#123;</div><div class="line">                try_files <span class="variable">$uri</span> <span class="variable">$uri</span>/ =404;</div><div class="line">        &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>Run:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo ln -s /etc/nginx/sites-available/DOMAIN-1.com /etc/nginx/sites-enabled/</div><div class="line">sudo ln -s /etc/nginx/sites-available/DOMAIN-2.com /etc/nginx/sites-enabled/</div></pre></td></tr></table></figure></p>
-<p>In order to avoid a possible hash bucket memory problem while adding additional server names, modify /etc/nginx/nginx.conf. </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /etc/nginx/nginx.conf</div></pre></td></tr></table></figure>
-<p>Uncomment this line:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">server_names_hash_bucket_size 64;</div></pre></td></tr></table></figure>
-<p>Test:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nginx -t</div></pre></td></tr></table></figure></p>
-<p>Restart Nginx:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo systemctl restart nginx</div></pre></td></tr></table></figure></p>
-<h2 id="Add-hosts"><a href="#Add-hosts" class="headerlink" title="Add hosts"></a>Add hosts</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo nano /etc/hosts</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">YOUR_IP www.DOMAIN-1.com</div><div class="line">YOUR_IP www.DOMAIN-2.com</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/linux/nginx.jpg&quot; alt=&quot;Host multiple domains in Nginx&quot;&gt;&lt;/p&gt;
-&lt;p&gt;By default, Nginx on Ubuntu 16.04 has one server block en
-    
-    </summary>
-    
-      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
-    
-    
-      <category term="Linux" scheme="https://www.yuxifan.com/tags/Linux/"/>
-    
-      <category term="Nginx" scheme="https://www.yuxifan.com/tags/Nginx/"/>
-    
-      <category term="Ubuntu" scheme="https://www.yuxifan.com/tags/Ubuntu/"/>
     
   </entry>
   
