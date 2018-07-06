@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2018-05-01T09:11:14.869Z</updated>
+  <updated>2018-07-06T15:30:33.849Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,65 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Build Rails development environment in Ubuntu via Docker</title>
+    <link href="https://www.yuxifan.com/2018/05/01/build-rails-dev-env-with-docker/"/>
+    <id>https://www.yuxifan.com/2018/05/01/build-rails-dev-env-with-docker/</id>
+    <published>2018-05-01T05:40:12.000Z</published>
+    <updated>2018-07-06T15:30:33.849Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/docker/docker.png" alt=""></p>
+<p>Environments:<br>Ubuntu: 16.04.4 LTS<br>Docker: 18.03.1-ce, build 9ee9f40</p>
+<h2 id="Install-Docker-Docker-compose"><a href="#Install-Docker-Docker-compose" class="headerlink" title="Install Docker / Docker-compose"></a>Install Docker / Docker-compose</h2><p>Assuming you have not installed Docker / Docker-compose, if you have, go to next section.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~</div><div class="line">curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -</div><div class="line">sudo apt-get update</div><div class="line">apt-cache policy docker-ce</div><div class="line">sudo apt-get install -y docker-ce</div><div class="line">sudo systemctl status docker</div></pre></td></tr></table></figure>
+<p>To run docker as without sudo:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo usermod -aG docker <span class="variable">$&#123;USER&#125;</span></div></pre></td></tr></table></figure>
+<p>Then logout and login again.</p>
+<h2 id="Create-folder-and-files"><a href="#Create-folder-and-files" class="headerlink" title="Create folder and files"></a>Create folder and files</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~</div><div class="line">mkdir docker_rails</div><div class="line"><span class="built_in">cd</span> docker_rails</div></pre></td></tr></table></figure>
+<p>Create the following files: </p>
+<p><strong>Dockerfile</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">FROM ruby:2.5</div><div class="line">RUN apt-get update -qq &amp;&amp; apt-get install -y build-essential libpq-dev nodejs</div><div class="line">RUN mkdir /railsapp</div><div class="line">WORKDIR /railsapp</div><div class="line">COPY Gemfile /railsapp/Gemfile</div><div class="line">COPY Gemfile.lock /railsapp/Gemfile.lock</div><div class="line">RUN bundle install</div><div class="line">COPY . /railsapp</div></pre></td></tr></table></figure>
+<p><strong>Gemfile</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">source</span> <span class="string">'https://rubygems.org'</span></div><div class="line"></div><div class="line">ruby <span class="string">'2.5.0'</span></div><div class="line"></div><div class="line">gem <span class="string">'rails'</span>, <span class="string">'~&gt; 5.2.0'</span></div><div class="line">gem <span class="string">'sqlite3'</span></div></pre></td></tr></table></figure>
+<p><strong>Gemfile.lock</strong><br>Create an empty file: Gemfile.lock:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">touch Gemfile.lock</div></pre></td></tr></table></figure>
+<p><strong>docker-compose.yml</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">version: <span class="string">'3'</span></div><div class="line">services:</div><div class="line">  web:</div><div class="line">    build: .</div><div class="line">    <span class="built_in">command</span>: bundle <span class="built_in">exec</span> rails s -p 3000 -b <span class="string">'0.0.0.0'</span></div><div class="line">    volumes:</div><div class="line">      - .:/railsapp</div><div class="line">    ports:</div><div class="line">      - <span class="string">"3000:3000"</span></div></pre></td></tr></table></figure>
+<p>NT: if your docker-compose doesn’t support version 3, run the following command to upgrade docker-compose:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pip3 install docker-compose --upgrade</div></pre></td></tr></table></figure>
+<h2 id="Build-the-project"><a href="#Build-the-project" class="headerlink" title="Build the project"></a>Build the project</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker-compose run web rails new . --force</div></pre></td></tr></table></figure>
+<p>After the above command, you will the the Rails folders/files are created as those files will be shared between host and the docker container. You will see Gemfile and Gemfile.lock have been updated.</p>
+<p>Change permissions:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo chown -R <span class="variable">$USER</span>:<span class="variable">$USER</span> .</div></pre></td></tr></table></figure>
+<p>Now, you need to rebuild the container:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker-compose build</div></pre></td></tr></table></figure>
+<p>To run the application:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker-compose up</div></pre></td></tr></table></figure>
+<p>You will see the output like this:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">Creating docker_rails_web_1 ... <span class="keyword">done</span></div><div class="line">Attaching to docker_rails_web_1</div><div class="line">web_1  | =&gt; Booting Puma</div><div class="line">web_1  | =&gt; Rails 5.2.0 application starting <span class="keyword">in</span> development</div><div class="line">web_1  | =&gt; Run `rails server -h` <span class="keyword">for</span> more startup options</div><div class="line">web_1  | Puma starting <span class="keyword">in</span> single mode...</div><div class="line">web_1  | * Version 3.11.4 (ruby 2.5.1-p57), codename: Love Song</div><div class="line">web_1  | * Min threads: 5, max threads: 5</div><div class="line">web_1  | * Environment: development</div><div class="line">web_1  | * Listening on tcp://0.0.0.0:3000</div><div class="line">web_1  | Use Ctrl-C to stop</div></pre></td></tr></table></figure>
+<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><h3 id="Connect-to-container-via-SSH"><a href="#Connect-to-container-via-SSH" class="headerlink" title="Connect to container via SSH"></a>Connect to container via SSH</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker-compose run web bash</div></pre></td></tr></table></figure>
+<h3 id="list-files-within-container"><a href="#list-files-within-container" class="headerlink" title="list files within container"></a>list files within container</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker-compose run web ls /etc</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/docker/docker.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Environments:&lt;br&gt;Ubuntu: 16.04.4 LTS&lt;br&gt;Docker: 18.03.1-ce, build 9ee9f40&lt;/p&gt;
+&lt;h2 id=
+    
+    </summary>
+    
+      <category term="Ruby" scheme="https://www.yuxifan.com/categories/Ruby/"/>
+    
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/tags/ruby/"/>
+    
+      <category term="rails" scheme="https://www.yuxifan.com/tags/rails/"/>
+    
+      <category term="docker" scheme="https://www.yuxifan.com/tags/docker/"/>
+    
+  </entry>
   
   <entry>
     <title>Setup Node.js development environment in Windows</title>
@@ -751,50 +810,6 @@
     
     
       <category term="ads" scheme="https://www.yuxifan.com/tags/ads/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Install Android Nougat into Samsung Galaxy S5 step by step</title>
-    <link href="https://www.yuxifan.com/2017/05/04/install-android-nougat-into-galaxy-s5/"/>
-    <id>https://www.yuxifan.com/2017/05/04/install-android-nougat-into-galaxy-s5/</id>
-    <published>2017-05-04T20:51:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/mobile/s5/android-nougat.jpg" alt="Android Nougat"></p>
-<h2 id="1-Install-Odin-to-Windows-PC"><a href="#1-Install-Odin-to-Windows-PC" class="headerlink" title="1) Install Odin to Windows PC"></a>1) Install Odin to Windows PC</h2><p>Download Odin from: <a href="http://odindownload.com/SamsungOdin/" rel="external nofollow noopener noreferrer" target="_blank">http://odindownload.com/SamsungOdin/</a></p>
-<p>Extract download Odin zip file to Windows PC, then double click app to run it:</p>
-<p><img src="/images/mobile/s5/odin.jpg" alt="Install odin"></p>
-<h2 id="2-Install-TWRP"><a href="#2-Install-TWRP" class="headerlink" title="2) Install TWRP"></a>2) Install TWRP</h2><p>Download TWRP to your PC from: <a href="https://twrp.me/" rel="external nofollow noopener noreferrer" target="_blank">https://twrp.me/</a></p>
-<p><img src="/images/mobile/s5/odin-2.jpg" alt="Install TWRP in odin"></p>
-<p>Switch off your phone and press Volume up + Home + Power to Download mode. Connect your phone to PC via USB cable, then Odin should detect your phone. Now press ‘Start’ to flash TWRP to your phone.</p>
-<p>Power off your phone. </p>
-<h2 id="3-Install-Cyanogenmod-14-1-and-GAPPS-7-1"><a href="#3-Install-Cyanogenmod-14-1-and-GAPPS-7-1" class="headerlink" title="3) Install Cyanogenmod 14.1 and GAPPS 7.1"></a>3) Install Cyanogenmod 14.1 and GAPPS 7.1</h2><p>Download Cyanogenmod(CM) 14.1 from: <a href="http://mirror41.download.highonandroid.com/download/CM14.1/GalaxyS5/" rel="external nofollow noopener noreferrer" target="_blank">http://mirror41.download.highonandroid.com/download/CM14.1/GalaxyS5/</a><br>Download GAPPS 7.1 from: <a href="http://opengapps.org/" rel="external nofollow noopener noreferrer" target="_blank">http://opengapps.org/</a></p>
-<p><strong>NB</strong>: I have tried the recommended version of GAPPS, e.g. ‘stock’ but it won’t work in my phone and gives me “Unfortunately, Google Play Services has stopped “ error. When I switched to the minimal version, e.g. ‘pico’, it works fine.</p>
-<p>Copy downloaded GAPPS and Cyanogenmod zip files into your phone’s SD card. </p>
-<p>Now press Volume up + Home + Power to enter TWRP screen. Then Wipe your phone and install from Cyanogenmod and GAPPS zip files. </p>
-<p>Restart your phone and it’s ready to use!</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/mobile/s5/android-nougat.jpg&quot; alt=&quot;Android Nougat&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;1-Install-Odin-to-Windows-PC&quot;&gt;&lt;a href=&quot;#1-Install-Odin-
-    
-    </summary>
-    
-      <category term="mobile" scheme="https://www.yuxifan.com/categories/mobile/"/>
-    
-    
-      <category term="odin" scheme="https://www.yuxifan.com/tags/odin/"/>
-    
-      <category term="twrp" scheme="https://www.yuxifan.com/tags/twrp/"/>
-    
-      <category term="cyanogenmod" scheme="https://www.yuxifan.com/tags/cyanogenmod/"/>
-    
-      <category term="gapps" scheme="https://www.yuxifan.com/tags/gapps/"/>
-    
-      <category term="samsung" scheme="https://www.yuxifan.com/tags/samsung/"/>
     
   </entry>
   
