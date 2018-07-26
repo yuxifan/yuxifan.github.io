@@ -123,7 +123,7 @@
   <url>
     <loc>https://www.yuxifan.com/2017/07/04/configure-shibboleth-service-provider-ubuntu-16/</loc>
     
-    <lastmod>2017-07-13T15:31:57.631Z</lastmod>
+    <lastmod>2017-07-13T15:31:57.632Z</lastmod>
     
   </url>
   
@@ -137,14 +137,14 @@
   <url>
     <loc>https://www.yuxifan.com/2017/07/06/setting-up-ruby-development-environments/</loc>
     
-    <lastmod>2017-07-07T12:44:32.957Z</lastmod>
+    <lastmod>2017-07-07T12:44:32.958Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.yuxifan.com/2017/07/07/phusion-passenger/</loc>
     
-    <lastmod>2017-07-07T10:55:12.189Z</lastmod>
+    <lastmod>2017-07-07T10:55:12.190Z</lastmod>
     
   </url>
   
@@ -172,306 +172,33 @@
   <url>
     <loc>https://www.yuxifan.com/2017/01/27/ssl-certificate-problem-for-ruby-gems-and-solution/</loc>
     
-    <lastmod>2017-06-28T13:13:12.839Z</lastmod>
+    <lastmod>2017-06-28T13:13:12.840Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.yuxifan.com/2016/09/05/top-hexo-plugins/</loc>
     
-    <lastmod>2017-06-28T13:12:51.995Z</lastmod>
+    <lastmod>2017-06-28T13:12:51.996Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.yuxifan.com/2016/01/14/2016-01-14-git-basic-commands/</loc>
     
-    <lastmod>2017-06-28T13:11:50.064Z</lastmod>
+    <lastmod>2017-06-28T13:11:50.065Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.yuxifan.com/2017/06/28/graphicsmagick/</loc>
     
-    <lastmod>2017-06-28T10:22:44.373Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2017/05/09/how-to-remove-ads-from-android-charging-screen/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/10/10/how-to-shorten-url-in-ruby/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/11/14/how-to-trigger-a-cron-job-based-on-file-modifications/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/11/09/how-to-upload-files-to-dropbox-in-linux-command-line/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/11/25/image-manipulation-commands-in-ubuntu/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/01/06/2016-01-06-how-to-convert-string-to-inputstream-in-java/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/11/15/implement-a-distributed-redis-message-processing-system-in-rails/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/09/10/implement-a-slider-in-hexo/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2017/05/04/install-android-nougat-into-galaxy-s5/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/01/07/2016-01-07-dropbox-folder-icon-overlay-problem-and-solution/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/01/08/2016-01-08-most-useful-notepad-plus-plus-plugins/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2017/01/29/parse-excel-spreadsheet-in-ruby/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/11/17/qrcode-generator/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/11/23/report-disk-space-in-ruby/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/11/06/ruby-gem-command/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/10/17/ruby-tutorials-json/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/10/16/ruby-tutorials-nokogiri/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/11/28/ruby-tutorials-rss/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/01/09/2016-01-09-use-restful-web-services-in-faraday/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/11/15/simplified-chinese-traditional-chinese-converter/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/12/23/sqlite3-command-line/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/01/10/2016-01-10-send-email-via-gmail-in-ruby/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2017/03/14/suppport-multiple-domains-in-nginx/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    <lastmod>2017-06-28T10:22:44.374Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.yuxifan.com/2016/01/11/2016-01-11-pretty-print-in-nokogiri-by-using-xslt/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/10/24/ubuntu-apt-update-problems-and-solutions/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2017/01/03/useful-linux-commands/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/01/12/2016-01-12-push-git-repository-to-multiple-hosts/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/01/13/2016-01-13-how-to-connect-to-activemq-in-ruby/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/11/04/multi-phases-xslt-processing/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/01/15/2016-01-15-get-latest-year-in-xslt/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/02/01/2016-02-01-standalone-ruby-application-error-messages-and-fixes/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/02/02/2016-02-02-how-to-run-sudo-command-without-password/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/05/01/2016-05-01-how-to-add-configuration-to-ruby-gem/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2015/08/20/2016-08-20-create-ubuntu-16-vagrant-box/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/08/24/2016-08-20-notepad-plus-plus-not-starting/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/08/31/2016-08-31-how-to-pass-multiple-parameters-with-same-name-to-JSTL/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/09/02/2016-09-02-how-to-close-an-iframe-within-iframe-itself/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2016/09/06/2016-09-06-how-to-implement-hierarchical-faces/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2017/02/23/config-tomcat-session-timeout/</loc>
-    
-    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yuxifan.com/2017/01/11/create-shared-folder-in-virtualbox-vm/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
@@ -507,6 +234,272 @@
   
   <url>
     <loc>https://www.yuxifan.com/2016/10/05/how-to-implement-a-distributed-redis-in-ruby-standalone-application/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2017/05/09/how-to-remove-ads-from-android-charging-screen/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/10/10/how-to-shorten-url-in-ruby/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/11/14/how-to-trigger-a-cron-job-based-on-file-modifications/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2017/01/03/useful-linux-commands/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/01/12/2016-01-12-push-git-repository-to-multiple-hosts/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/11/25/image-manipulation-commands-in-ubuntu/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/01/13/2016-01-13-how-to-connect-to-activemq-in-ruby/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/11/15/implement-a-distributed-redis-message-processing-system-in-rails/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/09/10/implement-a-slider-in-hexo/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/11/09/how-to-upload-files-to-dropbox-in-linux-command-line/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2017/05/04/install-android-nougat-into-galaxy-s5/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/01/15/2016-01-15-get-latest-year-in-xslt/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/02/01/2016-02-01-standalone-ruby-application-error-messages-and-fixes/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2017/01/29/parse-excel-spreadsheet-in-ruby/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/02/02/2016-02-02-how-to-run-sudo-command-without-password/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/05/01/2016-05-01-how-to-add-configuration-to-ruby-gem/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/11/17/qrcode-generator/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/11/23/report-disk-space-in-ruby/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2015/08/20/2016-08-20-create-ubuntu-16-vagrant-box/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/11/06/ruby-gem-command/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/08/24/2016-08-20-notepad-plus-plus-not-starting/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/08/31/2016-08-31-how-to-pass-multiple-parameters-with-same-name-to-JSTL/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/09/02/2016-09-02-how-to-close-an-iframe-within-iframe-itself/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/10/17/ruby-tutorials-json/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/10/16/ruby-tutorials-nokogiri/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/11/28/ruby-tutorials-rss/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/09/06/2016-09-06-how-to-implement-hierarchical-faces/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/01/06/2016-01-06-how-to-convert-string-to-inputstream-in-java/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/01/07/2016-01-07-dropbox-folder-icon-overlay-problem-and-solution/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/01/08/2016-01-08-most-useful-notepad-plus-plus-plugins/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2017/02/23/config-tomcat-session-timeout/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/11/15/simplified-chinese-traditional-chinese-converter/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/12/23/sqlite3-command-line/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/01/09/2016-01-09-use-restful-web-services-in-faraday/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2017/03/14/suppport-multiple-domains-in-nginx/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/01/10/2016-01-10-send-email-via-gmail-in-ruby/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2016/10/24/ubuntu-apt-update-problems-and-solutions/</loc>
+    
+    <lastmod>2017-06-16T10:17:52.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yuxifan.com/2017/01/11/create-shared-folder-in-virtualbox-vm/</loc>
     
     <lastmod>2017-06-16T10:17:52.230Z</lastmod>
     
