@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>How to support Google OAuth authentication in Rails aplication | Yuxi Fan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="Rails,Ruby,OAuth,Google">
+    
+    <meta name="description" content="Create/Configure Google appFirst, access this page:https://console.developers.google.com/apis/dashboard
+Create a new project:
+Enter all information needed, then make sure enable Google+ APIs:
+Click “">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to support Google OAuth authentication in Rails aplication">
+<meta property="og:url" content="https://www.yuxifan.com/2018/07/25/google-oauth-rails/index.html">
+<meta property="og:site_name" content="Yuxi Fan">
+<meta property="og:description" content="Create/Configure Google appFirst, access this page:https://console.developers.google.com/apis/dashboard
+Create a new project:
+Enter all information needed, then make sure enable Google+ APIs:
+Click “">
+<meta property="og:image" content="https://www.yuxifan.com/images/ruby/omniauth/oauth.png">
+<meta property="og:updated_time" content="2018-07-26T11:50:01.023Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to support Google OAuth authentication in Rails aplication">
+<meta name="twitter:description" content="Create/Configure Google appFirst, access this page:https://console.developers.google.com/apis/dashboard
+Create a new project:
+Enter all information needed, then make sure enable Google+ APIs:
+Click “">
+<meta name="twitter:image" content="https://www.yuxifan.com/images/ruby/omniauth/oauth.png">
+    
+
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="Yuxi Fan" type="application/atom+xml">
+    
+
+    
+
+    
+        <link rel="icon" href="/favicon.ico">
+    
+
+    <link rel="stylesheet" href="/js/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/js/titillium-web/styles.css">
+    <link rel="stylesheet" href="/js/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/js/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/js/lightgallery/css/lightgallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-67297895-9', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">Yuxi Fan - Yuxi&#39;s development blog</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item">
+                                    <a class="main-nav-list-link" href="/">home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Ruby/">Ruby</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/css/">css</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/database/">database</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/git/">git</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/hexo/">hexo</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/java/">java</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/javascript/">javascript</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/jekyll/">jekyll</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/linux/">linux</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/mobile/">mobile</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/nodejs/">nodejs</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/ruby/">ruby</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/solr/">solr</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/tool/">tool</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/windows/">windows</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/xslt/">xslt</a></li></ul>
+                                    
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+
+  
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/ruby/">ruby</a>
+    </h1>
+  
+
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-google-oauth-rails" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        How to support Google OAuth authentication in Rails aplication
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-subtitle">
+                <a href="/2018/07/25/google-oauth-rails/" class="article-date">
+    <time datetime="2018-07-25T21:51:12.000Z" itemprop="datePublished">2018-07-25</time>
+</a>
+                
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Google/">Google</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OAuth/">OAuth</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Rails/">Rails</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ruby/">Ruby</a></li></ul>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+
+            
+
+            <p><img src="/images/ruby/omniauth/oauth.png" alt=""></p>
+<h2 id="Create-Configure-Google-app"><a href="#Create-Configure-Google-app" class="headerlink" title="Create/Configure Google app"></a>Create/Configure Google app</h2><p>First, access this page:<br><a href="https://console.developers.google.com/apis/dashboard" rel="external nofollow noopener noreferrer" target="_blank">https://console.developers.google.com/apis/dashboard</a></p>
+<p>Create a new project:<br><img src="/images/ruby/omniauth/01.png" alt=""></p>
+<p>Enter all information needed, then make sure enable Google+ APIs:<br><img src="/images/ruby/omniauth/02.png" alt=""></p>
+<p>Click “ENABLE APIS AND SERVICES”, then enter “Google+” in the search box, you will see the “Google+ API” widget, click it.<br><img src="/images/ruby/omniauth/03.png" alt=""></p>
+<p>Then, click “ENABLE”. Once enabled, click “Create credentials”:<br><img src="/images/ruby/omniauth/04.png" alt=""></p>
+<p>Enter your project info, then click “Create OAuth client ID”<br><img src="/images/ruby/omniauth/05.png" alt=""></p>
+<p>Configure consent page:<br><img src="/images/ruby/omniauth/06.png" alt=""></p>
+<p>Click “Download” to download the json file containing clicent id and secret. The json file looks like:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">   <span class="attr">"web"</span>:&#123;</div><div class="line">      <span class="attr">"client_id"</span>:<span class="string">"YOUR_CLIENT_ID"</span>,</div><div class="line">      <span class="attr">"project_id"</span>:<span class="string">"YOUR_PROJECT_ID"</span>,</div><div class="line">      <span class="attr">"auth_uri"</span>:<span class="string">"https://accounts.google.com/o/oauth2/auth"</span>,</div><div class="line">      <span class="attr">"token_uri"</span>:<span class="string">"https://accounts.google.com/o/oauth2/token"</span>,</div><div class="line">      <span class="attr">"auth_provider_x509_cert_url"</span>:<span class="string">"https://www.googleapis.com/oauth2/v1/certs"</span>,</div><div class="line">      <span class="attr">"client_secret"</span>:<span class="string">"YOUR_SECRET"</span>,</div><div class="line">      <span class="attr">"redirect_uris"</span>:[</div><div class="line">         <span class="string">"http://localhost:3000/auth/google_oauth2/callback"</span></div><div class="line">      ]</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Create-Rails-application"><a href="#Create-Rails-application" class="headerlink" title="Create Rails application"></a>Create Rails application</h2><p>Run the following command to create a Rails application:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rails new RailsGoogleOAuthTest</div></pre></td></tr></table></figure>
+<h2 id="Add-configure-omniauth-google-oauth2"><a href="#Add-configure-omniauth-google-oauth2" class="headerlink" title="Add/configure omniauth-google-oauth2"></a>Add/configure omniauth-google-oauth2</h2><p>Add the following into Gemfile:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem <span class="string">'omniauth-google-oauth2</span></div></pre></td></tr></table></figure>
+<p>Then run:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bundle install</div></pre></td></tr></table></figure>
+<p>Now create file config/initializers/omniauth.rb with the following content:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">OmniAuth.config.logger = Rails.logger</div><div class="line"></div><div class="line">Rails.application.config.middleware.use OmniAuth::Builder <span class="keyword">do</span></div><div class="line">  provider <span class="symbol">:google_oauth2</span>, <span class="string">"YOUR_GOOGLE_CLIENT_ID"</span>, <span class="string">"YOUR_GOOGLE_CLIENT_SECRET"</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="Create-User-model"><a href="#Create-User-model" class="headerlink" title="Create User model"></a>Create User model</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rails g model User provider uid email first_name last_name picture oauth_token oauth_expires_at:datetime</div><div class="line">rake db:migrate</div></pre></td></tr></table></figure>
+<p>Edit app/models/user.rb:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">User</span> &lt; ApplicationRecord</span></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">self</span>.<span class="title">retrieve_user_info_from_omniauth</span><span class="params">(auth)</span></span></div><div class="line">    where(<span class="symbol">provider:</span> auth.provider, <span class="symbol">uid:</span> auth.uid).first_or_initialize.tap <span class="keyword">do</span> <span class="params">|user|</span></div><div class="line">      user.provider         = auth.provider</div><div class="line">      user.uid                 = auth.uid</div><div class="line">      user.first_name       = auth.info.first_name</div><div class="line">      user.last_name        = auth.info.last_name</div><div class="line">      user.email            = auth.info.email</div><div class="line">      user.picture          = auth.info.image</div><div class="line">      user.oauth_token      = auth.credentials.token</div><div class="line">      user.oauth_expires_at = Time.at(auth.credentials.expires_at)</div><div class="line">      user.save!</div><div class="line">    <span class="keyword">end</span></div><div class="line">  <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="Configure-the-Routes"><a href="#Configure-the-Routes" class="headerlink" title="Configure the Routes"></a>Configure the Routes</h2><p>Edit config/routes.rb:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">Rails.application.routes.draw <span class="keyword">do</span></div><div class="line">  get <span class="string">'auth/:provider/callback'</span>, <span class="symbol">to:</span> <span class="string">'sessions#create'</span></div><div class="line">  get <span class="string">'auth/failure'</span>, <span class="symbol">to:</span> redirect(<span class="string">'/'</span>)</div><div class="line">  get <span class="string">'login'</span>, <span class="symbol">to:</span> redirect(<span class="string">'/auth/google_oauth2'</span>), <span class="symbol">as:</span> <span class="string">'login'</span></div><div class="line">  get <span class="string">'logout'</span>, <span class="symbol">to:</span> <span class="string">'sessions#destroy'</span>, <span class="symbol">as:</span> <span class="string">'logout'</span></div><div class="line">  get <span class="string">'home'</span>, <span class="symbol">to:</span> <span class="string">'home#index'</span></div><div class="line">  root <span class="symbol">to:</span> <span class="string">"home#index"</span></div><div class="line"></div><div class="line">  resources <span class="symbol">:sessions</span>, <span class="symbol">only:</span> [<span class="symbol">:create</span>, <span class="symbol">:destroy</span>]</div><div class="line">  resource <span class="symbol">:home</span>, <span class="symbol">only:</span> [<span class="symbol">:index</span>]</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="Create-Edit-controllers"><a href="#Create-Edit-controllers" class="headerlink" title="Create/Edit controllers"></a>Create/Edit controllers</h2><p>Create Home and Sessions controller:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rails g controller Home index</div><div class="line">rails g controller Sessions create destroy</div></pre></td></tr></table></figure>
+<p>app/controllers/sessions_controller.rb:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SessionsController</span> &lt; ApplicationController</span></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">create</span></span></div><div class="line">    user = User.retrieve_user_info_from_omniauth(request.env[<span class="string">"omniauth.auth"</span>])</div><div class="line">    session[<span class="symbol">:user_id</span>] = user.id</div><div class="line">    redirect_to root_path</div><div class="line">  <span class="keyword">end</span></div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">destroy</span></span></div><div class="line">    session[<span class="symbol">:user_id</span>] = <span class="literal">nil</span></div><div class="line">    redirect_to root_path</div><div class="line">  <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<p>app/controllers/home_controller.rb:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">HomeController</span> &lt; ApplicationController</span></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">index</span></span></div><div class="line">  <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<p>Edit app/controllers/application_controller.rb:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ApplicationController</span> &lt; ActionController::Base</span></div><div class="line">  protect_from_forgery <span class="symbol">with:</span> <span class="symbol">:exception</span></div><div class="line">  helper_method <span class="symbol">:current_user</span></div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">authenticate</span></span></div><div class="line">    redirect_to <span class="symbol">:login</span> <span class="keyword">unless</span> user_signed_in?</div><div class="line">  <span class="keyword">end</span></div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">current_user</span></span></div><div class="line">    @current_user <span class="params">||</span>= User.find(session[<span class="symbol">:user_id</span>]) <span class="keyword">if</span> session[<span class="symbol">:user_id</span>]</div><div class="line">  <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="Edit-pages"><a href="#Edit-pages" class="headerlink" title="Edit pages"></a>Edit pages</h2><p>Edit app/views/layouts/application.html.erb:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>RailsGoogleOAuthTest<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">%=</span> <span class="attr">csrf_meta_tags</span> %&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">%=</span> <span class="attr">csp_meta_tag</span> %&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">%=</span> <span class="attr">stylesheet_link_tag</span>    '<span class="attr">application</span>', <span class="attr">media:</span> '<span class="attr">all</span>', '<span class="attr">data-turbolinks-track</span>'<span class="attr">:</span> '<span class="attr">reload</span>' %&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">%=</span> <span class="attr">javascript_include_tag</span> '<span class="attr">application</span>', '<span class="attr">data-turbolinks-track</span>'<span class="attr">:</span> '<span class="attr">reload</span>' %&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"></div><div class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span> <span class="attr">current_user</span> %&gt;</span></div><div class="line">          Signed in as <span class="tag">&lt;<span class="name">strong</span>&gt;</span><span class="tag">&lt;<span class="name">%=</span> <span class="attr">current_user.first_name</span> %&gt;</span> <span class="tag">&lt;<span class="name">%=</span> <span class="attr">current_user.last_name</span> %&gt;</span><span class="tag">&lt;/<span class="name">strong</span>&gt;</span>!</div><div class="line">          <span class="tag">&lt;<span class="name">%=</span> <span class="attr">link_to</span> "<span class="attr">Sign</span> <span class="attr">out</span>", <span class="attr">logout_path</span>, <span class="attr">id:</span> "<span class="attr">sign_out</span>" %&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">%</span> <span class="attr">else</span> %&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">%=</span> <span class="attr">link_to</span> "<span class="attr">Sign</span> <span class="attr">in</span> <span class="attr">with</span> <span class="attr">Google</span>", "/<span class="attr">auth</span>/<span class="attr">google_oauth2</span>", <span class="attr">id:</span> "<span class="attr">sign_in</span>" %&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">%</span> <span class="attr">end</span> %&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">%=</span> <span class="attr">yield</span> %&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>Edit app/views/home/index.html.erb:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Welcome!<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p>Run your application:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rails s -b 0.0.0.0</div></pre></td></tr></table></figure>
+<p>Then access <a href="http://localhost:3000" rel="external nofollow noopener noreferrer" target="_blank">http://localhost:3000</a></p>
+<p>Click “Sign in with Google”, you will be redirected to Google:</p>
+<p><img src="/images/ruby/omniauth/07.png" alt=""></p>
+<p>Authorize the access and you will be redirected back to your application</p>
+<p><img src="/images/ruby/omniauth/08.png" alt=""></p>
+
+
+            
+              <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+              <!-- autosize -->
+              <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9869806761757481" data-ad-slot="8827673952" data-ad-format="auto"></ins>
+
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://www.yuxifan.com/2018/07/25/google-oauth-rails/" data-id="cjk2hxew400005pxuv8g4zbmd" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="https://plus.google.com/104826207350368986265" target="_blank" rel="external nofollow noopener noreferrer">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/atom.xml" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+    <div class="widgets-container">
+        
+            
+                <div class="widget-wrap widget-list">
+    <div class="widget">
+      <a href="https://www.vultr.com/?ref=6856003" target="_blank" rel="external nofollow noopener noreferrer">
+        <img src="/images/ads/vultr2_300x250.png">
+      </a>
+    </div>
+</div>
+
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">recents</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/07/25/google-oauth-rails/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/ruby/omniauth/oauth.png)" alt="How to support Google OAuth authentication in Rails aplication" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ruby/">ruby</a></p>
+                            <p class="item-title"><a href="/2018/07/25/google-oauth-rails/" class="title">How to support Google OAuth authentication in Rails aplication</a></p>
+                            <p class="item-date"><time datetime="2018-07-25T21:51:12.000Z" itemprop="datePublished">2018-07-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/01/build-rails-dev-env-with-docker/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/docker/docker.png)" alt="Build Rails development environment in Ubuntu via Docker" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Ruby/">Ruby</a></p>
+                            <p class="item-title"><a href="/2018/05/01/build-rails-dev-env-with-docker/" class="title">Build Rails development environment in Ubuntu via Docker</a></p>
+                            <p class="item-date"><time datetime="2018-05-01T05:40:12.000Z" itemprop="datePublished">2018-05-01</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/01/build-nodejs-dev-env/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/nodejs/nodejs.png)" alt="Setup Node.js development environment in Windows" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/nodejs/">nodejs</a></p>
+                            <p class="item-title"><a href="/2018/05/01/build-nodejs-dev-env/" class="title">Setup Node.js development environment in Windows</a></p>
+                            <p class="item-date"><time datetime="2018-05-01T01:10:12.000Z" itemprop="datePublished">2018-05-01</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/12/12/simple_form_checkbox_problem/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/ruby/simple-form.jpg)" alt="The problem with plataformatec simple_form checkboxes and the fix" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ruby/">ruby</a></p>
+                            <p class="item-title"><a href="/2017/12/12/simple_form_checkbox_problem/" class="title">The problem with plataformatec simple_form checkboxes and the fix</a></p>
+                            <p class="item-date"><time datetime="2017-12-12T02:10:12.000Z" itemprop="datePublished">2017-12-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/09/27/how-to-use-imagemagick-in-ruby/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/linuximagemagick.jpg)" alt="How to use imagemagick in Ruby" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/ruby/">ruby</a></p>
+                            <p class="item-title"><a href="/2017/09/27/how-to-use-imagemagick-in-ruby/" class="title">How to use imagemagick in Ruby</a></p>
+                            <p class="item-date"><time datetime="2017-09-27T01:10:12.000Z" itemprop="datePublished">2017-09-27</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Ruby/">Ruby</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/css/">css</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/database/">database</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/java/">java</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jekyll/">jekyll</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mobile/">mobile</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/nodejs/">nodejs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ruby/">ruby</a><span class="category-list-count">30</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/solr/">solr</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/">tool</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/windows/">windows</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/xslt/">xslt</a><span class="category-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                <div class="widget-wrap widget-list">
+    <div class="widget">
+      <a href="https://m.do.co/c/65b73b833dd9" target="_blank" rel="external nofollow noopener noreferrer">
+        <img src="/images/ads/digital-ocean-promo.gif">
+      </a>
+    </div>
+</div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Apache/" style="font-size: 10px;">Apache</a> <a href="/tags/Chinese-converter/" style="font-size: 10px;">Chinese converter</a> <a href="/tags/Google/" style="font-size: 10px;">Google</a> <a href="/tags/GraphicsMagick/" style="font-size: 10px;">GraphicsMagick</a> <a href="/tags/ImageMagick/" style="font-size: 10px;">ImageMagick</a> <a href="/tags/JSTL/" style="font-size: 11.43px;">JSTL</a> <a href="/tags/LEMP/" style="font-size: 10px;">LEMP</a> <a href="/tags/Linux/" style="font-size: 12.86px;">Linux</a> <a href="/tags/Nginx/" style="font-size: 10px;">Nginx</a> <a href="/tags/OAuth/" style="font-size: 10px;">OAuth</a> <a href="/tags/Phusion-Passenger/" style="font-size: 10px;">Phusion Passenger</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/QR-code/" style="font-size: 10px;">QR code</a> <a href="/tags/Rails/" style="font-size: 11.43px;">Rails</a> <a href="/tags/Ruby/" style="font-size: 17.14px;">Ruby</a> <a href="/tags/Steem/" style="font-size: 15.71px;">Steem</a> <a href="/tags/Tomcat/" style="font-size: 10px;">Tomcat</a> <a href="/tags/URL-redirects/" style="font-size: 10px;">URL redirects</a> <a href="/tags/Ubuntu/" style="font-size: 15.71px;">Ubuntu</a> <a href="/tags/VM/" style="font-size: 10px;">VM</a> <a href="/tags/Wordpress/" style="font-size: 10px;">Wordpress</a> <a href="/tags/activemq/" style="font-size: 10px;">activemq</a> <a href="/tags/ads/" style="font-size: 10px;">ads</a> <a href="/tags/apt/" style="font-size: 10px;">apt</a> <a href="/tags/clipboard-API/" style="font-size: 10px;">clipboard API</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/cyanogenmod/" style="font-size: 10px;">cyanogenmod</a> <a href="/tags/disqus/" style="font-size: 10px;">disqus</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/dropbox/" style="font-size: 11.43px;">dropbox</a> <a href="/tags/excel/" style="font-size: 10px;">excel</a> <a href="/tags/faceting/" style="font-size: 10px;">faceting</a> <a href="/tags/faraday/" style="font-size: 10px;">faraday</a> <a href="/tags/feed/" style="font-size: 10px;">feed</a> <a href="/tags/fontawesome/" style="font-size: 10px;">fontawesome</a> <a href="/tags/gapps/" style="font-size: 10px;">gapps</a> <a href="/tags/gem/" style="font-size: 12.86px;">gem</a> <a href="/tags/git/" style="font-size: 11.43px;">git</a> <a href="/tags/gmail/" style="font-size: 12.86px;">gmail</a> <a href="/tags/google/" style="font-size: 10px;">google</a> <a href="/tags/hexo/" style="font-size: 12.86px;">hexo</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/http-server/" style="font-size: 10px;">http server</a> <a href="/tags/hyperlink/" style="font-size: 10px;">hyperlink</a> <a href="/tags/image/" style="font-size: 11.43px;">image</a> <a href="/tags/imagemagick/" style="font-size: 11.43px;">imagemagick</a> <a href="/tags/incron/" style="font-size: 10px;">incron</a> <a href="/tags/java/" style="font-size: 17.14px;">java</a> <a href="/tags/javascript/" style="font-size: 11.43px;">javascript</a> <a href="/tags/jekyll/" style="font-size: 10px;">jekyll</a> <a href="/tags/json/" style="font-size: 10px;">json</a> <a href="/tags/linux/" style="font-size: 18.57px;">linux</a> <a href="/tags/mailgun/" style="font-size: 10px;">mailgun</a> <a href="/tags/minify/" style="font-size: 11.43px;">minify</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/nofollow/" style="font-size: 10px;">nofollow</a> <a href="/tags/nokogiri/" style="font-size: 11.43px;">nokogiri</a> <a href="/tags/notepad/" style="font-size: 11.43px;">notepad++</a> <a href="/tags/odin/" style="font-size: 10px;">odin</a> <a href="/tags/passenger/" style="font-size: 10px;">passenger</a> <a href="/tags/plugin/" style="font-size: 10px;">plugin</a> <a href="/tags/proxy-server/" style="font-size: 10px;">proxy server</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/qr/" style="font-size: 10px;">qr</a> <a href="/tags/rails/" style="font-size: 14.29px;">rails</a> <a href="/tags/rbenv/" style="font-size: 10px;">rbenv</a> <a href="/tags/redis/" style="font-size: 11.43px;">redis</a> <a href="/tags/rss/" style="font-size: 10px;">rss</a> <a href="/tags/ruby/" style="font-size: 20px;">ruby</a> <a href="/tags/samsung/" style="font-size: 10px;">samsung</a> <a href="/tags/seo/" style="font-size: 10px;">seo</a> <a href="/tags/sftp/" style="font-size: 10px;">sftp</a> <a href="/tags/shibboleth/" style="font-size: 11.43px;">shibboleth</a> <a href="/tags/shortener/" style="font-size: 10px;">shortener</a> <a href="/tags/simple-form/" style="font-size: 10px;">simple_form</a> <a href="/tags/sitemap/" style="font-size: 10px;">sitemap</a> <a href="/tags/slider/" style="font-size: 10px;">slider</a> <a href="/tags/solr/" style="font-size: 11.43px;">solr</a> <a href="/tags/spreadsheet/" style="font-size: 10px;">spreadsheet</a> <a href="/tags/sqlite/" style="font-size: 10px;">sqlite</a> <a href="/tags/ssl/" style="font-size: 10px;">ssl</a> <a href="/tags/tutorials/" style="font-size: 10px;">tutorials</a> <a href="/tags/twrp/" style="font-size: 10px;">twrp</a> <a href="/tags/ubuntu/" style="font-size: 14.29px;">ubuntu</a> <a href="/tags/virtualbox/" style="font-size: 10px;">virtualbox</a> <a href="/tags/vultr/" style="font-size: 10px;">vultr</a> <a href="/tags/windows/" style="font-size: 11.43px;">windows</a> <a href="/tags/xslt/" style="font-size: 12.86px;">xslt</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <p style="text-align: center;">Contact me: <a href="mailto:yuxifanr@gmail.com" rel="external nofollow noopener noreferrer" target="_blank">yuxifanr@gmail.com</a></p><br>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'yuxifan';
+    
+    
+    var disqus_url = 'https://www.yuxifan.com/2018/07/25/google-oauth-rails/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+    
+        <script src="/js/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/js/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/js/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/js/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/js/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/js/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/js/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/js/lightgallery/js/lg-share.min.js"></script>
+        <script src="/js/lightgallery/js/lg-video.min.js"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.yuxifan.com/"/>
-  <updated>2018-07-06T15:30:33.849Z</updated>
+  <updated>2018-07-26T11:50:01.023Z</updated>
   <id>https://www.yuxifan.com/</id>
   
   <author>
@@ -14,6 +14,77 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to support Google OAuth authentication in Rails aplication</title>
+    <link href="https://www.yuxifan.com/2018/07/25/google-oauth-rails/"/>
+    <id>https://www.yuxifan.com/2018/07/25/google-oauth-rails/</id>
+    <published>2018-07-25T21:51:12.000Z</published>
+    <updated>2018-07-26T11:50:01.023Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/ruby/omniauth/oauth.png" alt=""></p>
+<h2 id="Create-Configure-Google-app"><a href="#Create-Configure-Google-app" class="headerlink" title="Create/Configure Google app"></a>Create/Configure Google app</h2><p>First, access this page:<br><a href="https://console.developers.google.com/apis/dashboard" rel="external nofollow noopener noreferrer" target="_blank">https://console.developers.google.com/apis/dashboard</a></p>
+<p>Create a new project:<br><img src="/images/ruby/omniauth/01.png" alt=""></p>
+<p>Enter all information needed, then make sure enable Google+ APIs:<br><img src="/images/ruby/omniauth/02.png" alt=""></p>
+<p>Click “ENABLE APIS AND SERVICES”, then enter “Google+” in the search box, you will see the “Google+ API” widget, click it.<br><img src="/images/ruby/omniauth/03.png" alt=""></p>
+<p>Then, click “ENABLE”. Once enabled, click “Create credentials”:<br><img src="/images/ruby/omniauth/04.png" alt=""></p>
+<p>Enter your project info, then click “Create OAuth client ID”<br><img src="/images/ruby/omniauth/05.png" alt=""></p>
+<p>Configure consent page:<br><img src="/images/ruby/omniauth/06.png" alt=""></p>
+<p>Click “Download” to download the json file containing clicent id and secret. The json file looks like:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">   <span class="attr">"web"</span>:&#123;</div><div class="line">      <span class="attr">"client_id"</span>:<span class="string">"YOUR_CLIENT_ID"</span>,</div><div class="line">      <span class="attr">"project_id"</span>:<span class="string">"YOUR_PROJECT_ID"</span>,</div><div class="line">      <span class="attr">"auth_uri"</span>:<span class="string">"https://accounts.google.com/o/oauth2/auth"</span>,</div><div class="line">      <span class="attr">"token_uri"</span>:<span class="string">"https://accounts.google.com/o/oauth2/token"</span>,</div><div class="line">      <span class="attr">"auth_provider_x509_cert_url"</span>:<span class="string">"https://www.googleapis.com/oauth2/v1/certs"</span>,</div><div class="line">      <span class="attr">"client_secret"</span>:<span class="string">"YOUR_SECRET"</span>,</div><div class="line">      <span class="attr">"redirect_uris"</span>:[</div><div class="line">         <span class="string">"http://localhost:3000/auth/google_oauth2/callback"</span></div><div class="line">      ]</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Create-Rails-application"><a href="#Create-Rails-application" class="headerlink" title="Create Rails application"></a>Create Rails application</h2><p>Run the following command to create a Rails application:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rails new RailsGoogleOAuthTest</div></pre></td></tr></table></figure>
+<h2 id="Add-configure-omniauth-google-oauth2"><a href="#Add-configure-omniauth-google-oauth2" class="headerlink" title="Add/configure omniauth-google-oauth2"></a>Add/configure omniauth-google-oauth2</h2><p>Add the following into Gemfile:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gem <span class="string">'omniauth-google-oauth2</span></div></pre></td></tr></table></figure>
+<p>Then run:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bundle install</div></pre></td></tr></table></figure>
+<p>Now create file config/initializers/omniauth.rb with the following content:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">OmniAuth.config.logger = Rails.logger</div><div class="line"></div><div class="line">Rails.application.config.middleware.use OmniAuth::Builder <span class="keyword">do</span></div><div class="line">  provider <span class="symbol">:google_oauth2</span>, <span class="string">"YOUR_GOOGLE_CLIENT_ID"</span>, <span class="string">"YOUR_GOOGLE_CLIENT_SECRET"</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="Create-User-model"><a href="#Create-User-model" class="headerlink" title="Create User model"></a>Create User model</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rails g model User provider uid email first_name last_name picture oauth_token oauth_expires_at:datetime</div><div class="line">rake db:migrate</div></pre></td></tr></table></figure>
+<p>Edit app/models/user.rb:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">User</span> &lt; ApplicationRecord</span></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">self</span>.<span class="title">retrieve_user_info_from_omniauth</span><span class="params">(auth)</span></span></div><div class="line">    where(<span class="symbol">provider:</span> auth.provider, <span class="symbol">uid:</span> auth.uid).first_or_initialize.tap <span class="keyword">do</span> <span class="params">|user|</span></div><div class="line">      user.provider         = auth.provider</div><div class="line">      user.uid                 = auth.uid</div><div class="line">      user.first_name       = auth.info.first_name</div><div class="line">      user.last_name        = auth.info.last_name</div><div class="line">      user.email            = auth.info.email</div><div class="line">      user.picture          = auth.info.image</div><div class="line">      user.oauth_token      = auth.credentials.token</div><div class="line">      user.oauth_expires_at = Time.at(auth.credentials.expires_at)</div><div class="line">      user.save!</div><div class="line">    <span class="keyword">end</span></div><div class="line">  <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="Configure-the-Routes"><a href="#Configure-the-Routes" class="headerlink" title="Configure the Routes"></a>Configure the Routes</h2><p>Edit config/routes.rb:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">Rails.application.routes.draw <span class="keyword">do</span></div><div class="line">  get <span class="string">'auth/:provider/callback'</span>, <span class="symbol">to:</span> <span class="string">'sessions#create'</span></div><div class="line">  get <span class="string">'auth/failure'</span>, <span class="symbol">to:</span> redirect(<span class="string">'/'</span>)</div><div class="line">  get <span class="string">'login'</span>, <span class="symbol">to:</span> redirect(<span class="string">'/auth/google_oauth2'</span>), <span class="symbol">as:</span> <span class="string">'login'</span></div><div class="line">  get <span class="string">'logout'</span>, <span class="symbol">to:</span> <span class="string">'sessions#destroy'</span>, <span class="symbol">as:</span> <span class="string">'logout'</span></div><div class="line">  get <span class="string">'home'</span>, <span class="symbol">to:</span> <span class="string">'home#index'</span></div><div class="line">  root <span class="symbol">to:</span> <span class="string">"home#index"</span></div><div class="line"></div><div class="line">  resources <span class="symbol">:sessions</span>, <span class="symbol">only:</span> [<span class="symbol">:create</span>, <span class="symbol">:destroy</span>]</div><div class="line">  resource <span class="symbol">:home</span>, <span class="symbol">only:</span> [<span class="symbol">:index</span>]</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="Create-Edit-controllers"><a href="#Create-Edit-controllers" class="headerlink" title="Create/Edit controllers"></a>Create/Edit controllers</h2><p>Create Home and Sessions controller:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rails g controller Home index</div><div class="line">rails g controller Sessions create destroy</div></pre></td></tr></table></figure>
+<p>app/controllers/sessions_controller.rb:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SessionsController</span> &lt; ApplicationController</span></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">create</span></span></div><div class="line">    user = User.retrieve_user_info_from_omniauth(request.env[<span class="string">"omniauth.auth"</span>])</div><div class="line">    session[<span class="symbol">:user_id</span>] = user.id</div><div class="line">    redirect_to root_path</div><div class="line">  <span class="keyword">end</span></div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">destroy</span></span></div><div class="line">    session[<span class="symbol">:user_id</span>] = <span class="literal">nil</span></div><div class="line">    redirect_to root_path</div><div class="line">  <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<p>app/controllers/home_controller.rb:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">HomeController</span> &lt; ApplicationController</span></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">index</span></span></div><div class="line">  <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<p>Edit app/controllers/application_controller.rb:</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ApplicationController</span> &lt; ActionController::Base</span></div><div class="line">  protect_from_forgery <span class="symbol">with:</span> <span class="symbol">:exception</span></div><div class="line">  helper_method <span class="symbol">:current_user</span></div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">authenticate</span></span></div><div class="line">    redirect_to <span class="symbol">:login</span> <span class="keyword">unless</span> user_signed_in?</div><div class="line">  <span class="keyword">end</span></div><div class="line"></div><div class="line">  <span class="function"><span class="keyword">def</span> <span class="title">current_user</span></span></div><div class="line">    @current_user <span class="params">||</span>= User.find(session[<span class="symbol">:user_id</span>]) <span class="keyword">if</span> session[<span class="symbol">:user_id</span>]</div><div class="line">  <span class="keyword">end</span></div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
+<h2 id="Edit-pages"><a href="#Edit-pages" class="headerlink" title="Edit pages"></a>Edit pages</h2><p>Edit app/views/layouts/application.html.erb:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>RailsGoogleOAuthTest<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">%=</span> <span class="attr">csrf_meta_tags</span> %&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">%=</span> <span class="attr">csp_meta_tag</span> %&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">%=</span> <span class="attr">stylesheet_link_tag</span>    '<span class="attr">application</span>', <span class="attr">media:</span> '<span class="attr">all</span>', '<span class="attr">data-turbolinks-track</span>'<span class="attr">:</span> '<span class="attr">reload</span>' %&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">%=</span> <span class="attr">javascript_include_tag</span> '<span class="attr">application</span>', '<span class="attr">data-turbolinks-track</span>'<span class="attr">:</span> '<span class="attr">reload</span>' %&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"></div><div class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span> <span class="attr">current_user</span> %&gt;</span></div><div class="line">          Signed in as <span class="tag">&lt;<span class="name">strong</span>&gt;</span><span class="tag">&lt;<span class="name">%=</span> <span class="attr">current_user.first_name</span> %&gt;</span> <span class="tag">&lt;<span class="name">%=</span> <span class="attr">current_user.last_name</span> %&gt;</span><span class="tag">&lt;/<span class="name">strong</span>&gt;</span>!</div><div class="line">          <span class="tag">&lt;<span class="name">%=</span> <span class="attr">link_to</span> "<span class="attr">Sign</span> <span class="attr">out</span>", <span class="attr">logout_path</span>, <span class="attr">id:</span> "<span class="attr">sign_out</span>" %&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">%</span> <span class="attr">else</span> %&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">%=</span> <span class="attr">link_to</span> "<span class="attr">Sign</span> <span class="attr">in</span> <span class="attr">with</span> <span class="attr">Google</span>", "/<span class="attr">auth</span>/<span class="attr">google_oauth2</span>", <span class="attr">id:</span> "<span class="attr">sign_in</span>" %&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">%</span> <span class="attr">end</span> %&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">%=</span> <span class="attr">yield</span> %&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>Edit app/views/home/index.html.erb:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>Welcome!<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h2><p>Run your application:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rails s -b 0.0.0.0</div></pre></td></tr></table></figure>
+<p>Then access <a href="http://localhost:3000" rel="external nofollow noopener noreferrer" target="_blank">http://localhost:3000</a></p>
+<p>Click “Sign in with Google”, you will be redirected to Google:</p>
+<p><img src="/images/ruby/omniauth/07.png" alt=""></p>
+<p>Authorize the access and you will be redirected back to your application</p>
+<p><img src="/images/ruby/omniauth/08.png" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/ruby/omniauth/oauth.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Create-Configure-Google-app&quot;&gt;&lt;a href=&quot;#Create-Configure-Google-app&quot; class=
+    
+    </summary>
+    
+      <category term="ruby" scheme="https://www.yuxifan.com/categories/ruby/"/>
+    
+    
+      <category term="Rails" scheme="https://www.yuxifan.com/tags/Rails/"/>
+    
+      <category term="Ruby" scheme="https://www.yuxifan.com/tags/Ruby/"/>
+    
+      <category term="OAuth" scheme="https://www.yuxifan.com/tags/OAuth/"/>
+    
+      <category term="Google" scheme="https://www.yuxifan.com/tags/Google/"/>
+    
+  </entry>
   
   <entry>
     <title>Build Rails development environment in Ubuntu via Docker</title>
@@ -783,33 +854,6 @@
       <category term="ImageMagick" scheme="https://www.yuxifan.com/tags/ImageMagick/"/>
     
       <category term="GraphicsMagick" scheme="https://www.yuxifan.com/tags/GraphicsMagick/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to remove ads from Android screen while charging?</title>
-    <link href="https://www.yuxifan.com/2017/05/09/how-to-remove-ads-from-android-charging-screen/"/>
-    <id>https://www.yuxifan.com/2017/05/09/how-to-remove-ads-from-android-charging-screen/</id>
-    <published>2017-05-09T20:51:12.000Z</published>
-    <updated>2017-06-16T10:17:52.230Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/mobile/android-charging-screen-ads.jpg" alt="Android lock screen ads"></p>
-<p>Recently a large number of users have been complaining that while charging their Android phone, instead of just showing date, time, battery status, the screen also shows advertisements. </p>
-<p>While googling the solution for it, lots of posts are saying it is caused by some particular APPs and from the list they provided, non of them worked for me. Here is the solution I finially found - so simple!</p>
-<p>Just click the dots/gear on the top right corner of the screen, as shown in the screen shot above, then click ‘turn off’. that is it!</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/mobile/android-charging-screen-ads.jpg&quot; alt=&quot;Android lock screen ads&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Recently a large number of users have bee
-    
-    </summary>
-    
-      <category term="mobile" scheme="https://www.yuxifan.com/categories/mobile/"/>
-    
-    
-      <category term="ads" scheme="https://www.yuxifan.com/tags/ads/"/>
     
   </entry>
   
