@@ -182,6 +182,65 @@
   </entry>
   
   <entry>
+    <title>How to install node.js with nvm on Ubuntu</title>
+    <link href="https://www.yuxifan.com/2018/01/18/how-to-install-nodejs-with-nvm-on-ubuntu/"/>
+    <id>https://www.yuxifan.com/2018/01/18/how-to-install-nodejs-with-nvm-on-ubuntu/</id>
+    <published>2018-01-18T02:10:12.000Z</published>
+    <updated>2018-10-18T09:09:28.925Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/nodejs/nodejs.jpg" alt="Node.js"></p>
+<p>It’s recommend to use <a href="https://github.com/creationix/nvm" rel="external nofollow noopener noreferrer" target="_blank">nvm</a></p>
+<pre><code>sudo apt-get update 
+sudo apt-get install build-essential libssl-dev
+</code></pre><p>Check <a href="https://github.com/creationix/nvm" rel="external nofollow noopener noreferrer" target="_blank">nvm github</a> to find the latest version and run command like:</p>
+<pre><code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+</code></pre><p>If you see “Command ‘nvm’ not found” while typing “nvm”, try to close and reopen your terminal. </p>
+<p>If the problem still exists, check if nvm has been configured in .bash_profile (sometimes it’s been configured in .bashrc on ubuntu 16)</p>
+<p>Check remote version:</p>
+<pre><code>nvm ls-remote
+</code></pre><p>Check current node version:</p>
+<pre><code>node -v
+v8.10.0
+</code></pre><p>Install a new version:</p>
+<pre><code>nvm install v10.12.0
+</code></pre><p>Switch version:</p>
+<pre><code>nvm use 10.12.0
+</code></pre><p>Install a module:</p>
+<pre><code>npm install -g hexo
+</code></pre><p>It will be installed in:</p>
+<p>~/.nvm/versions/node/v10.12.0/lib/node_modules</p>
+<p>Write a test script, name it as 01.js:</p>
+<pre><code>var http = require(&apos;http&apos;);
+
+http.createServer(function (request, response) {
+    response.writeHead(200, {&apos;Content-Type&apos;: &apos;text/plain&apos;});
+
+    response.end(&quot;Hello, I&apos;m running on port 4000!\n&quot;);
+}).listen(4000);
+
+console.log(&apos;Server running at http://127.0.0.1:4000/&apos;);
+</code></pre><p>Run:</p>
+<pre><code>node 01.js
+</code></pre><p>Now it can be accessed via <a href="http://127.0.0.1:4000" rel="external nofollow noopener noreferrer" target="_blank">http://127.0.0.1:4000</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/nodejs/nodejs.jpg&quot; alt=&quot;Node.js&quot;&gt;&lt;/p&gt;
+&lt;p&gt;It’s recommend to use &lt;a href=&quot;https://github.com/creationix/nvm&quot; rel=&quot;externa
+    
+    </summary>
+    
+      <category term="nodejs" scheme="https://www.yuxifan.com/categories/nodejs/"/>
+    
+    
+      <category term="nodejs" scheme="https://www.yuxifan.com/tags/nodejs/"/>
+    
+      <category term="nvm" scheme="https://www.yuxifan.com/tags/nvm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>The problem with plataformatec simple_form checkboxes and the fix</title>
     <link href="https://www.yuxifan.com/2017/12/12/simple_form_checkbox_problem/"/>
     <id>https://www.yuxifan.com/2017/12/12/simple_form_checkbox_problem/</id>
@@ -360,6 +419,48 @@
   </entry>
   
   <entry>
+    <title>Setup python development environment for Steem on Ubuntu 16</title>
+    <link href="https://www.yuxifan.com/2017/07/28/setup-python-steem-development-environment/"/>
+    <id>https://www.yuxifan.com/2017/07/28/setup-python-steem-development-environment/</id>
+    <published>2017-07-28T04:51:12.000Z</published>
+    <updated>2017-07-28T08:21:26.600Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/linux/steem/python-steem.png" alt="Python &amp; Steem"></p>
+<h2 id="Install-python-3"><a href="#Install-python-3" class="headerlink" title="Install python 3"></a>Install python 3</h2><p>Both Python 3 and Python 2 have been pre-installed on Ubuntu 16, you just need to make sure you have the latest versions by running:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get -y upgrade</div></pre></td></tr></table></figure>
+<p>Then run the following command to check the version of Python 3:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python -v</div></pre></td></tr></table></figure>
+<p>You also need to install pip to manage software packages:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -y python3-pip</div></pre></td></tr></table></figure>
+<p>Install development libraries:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install build-essential libffi-dev libssl-dev python3-dev</div></pre></td></tr></table></figure>
+<h2 id="Setting-up-a-virtual-environment"><a href="#Setting-up-a-virtual-environment" class="headerlink" title="Setting up a virtual environment"></a>Setting up a virtual environment</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install python3-venv</div><div class="line">mkdir environments</div><div class="line"><span class="built_in">cd</span> environments</div><div class="line">python3 -m venv myenv</div><div class="line"><span class="built_in">source</span> myenv/bin/activate</div></pre></td></tr></table></figure>
+<h2 id="Setting-up-python-steem-libraries"><a href="#Setting-up-python-steem-libraries" class="headerlink" title="Setting up python steem libraries"></a>Setting up python steem libraries</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">pip3 install wheel </div><div class="line">pip3 install piston-lib</div><div class="line">pip3 install steem</div></pre></td></tr></table></figure>
+<h2 id="Test-it-works"><a href="#Test-it-works" class="headerlink" title="Test it works"></a>Test it works</h2><p>To test the development environment has been set up correctly, run the following script to list the tags used by latest posts:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> piston <span class="keyword">import</span> Steem</div><div class="line">steem = Steem()</div><div class="line"><span class="keyword">for</span> c <span class="keyword">in</span> steem.stream_comments():</div><div class="line">  <span class="keyword">if</span> c.is_main_post():</div><div class="line">    <span class="keyword">print</span> (c.meta[<span class="string">"tags"</span>])</div></pre></td></tr></table></figure>
+<p><img src="/images/yuxi-steemit.png" alt="@yuxi"></p>
+<p>Thank you for reading my post, feel free to FOLLOW and Upvote <a href="https://steemit.com/@yuxi" rel="external nofollow noopener noreferrer" target="_blank">@yuxi</a>, which will motivate me to create more quality posts.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/linux/steem/python-steem.png&quot; alt=&quot;Python &amp;amp; Steem&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Install-python-3&quot;&gt;&lt;a href=&quot;#Install-python-3&quot; class
+    
+    </summary>
+    
+      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
+    
+    
+      <category term="Linux" scheme="https://www.yuxifan.com/tags/Linux/"/>
+    
+      <category term="Steem" scheme="https://www.yuxifan.com/tags/Steem/"/>
+    
+      <category term="Python" scheme="https://www.yuxifan.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Ruby Steem tutorial 4 - Claim rewards automatically</title>
     <link href="https://www.yuxifan.com/2017/07/28/ruby-steem-4/"/>
     <id>https://www.yuxifan.com/2017/07/28/ruby-steem-4/</id>
@@ -400,48 +501,6 @@
       <category term="Ubuntu" scheme="https://www.yuxifan.com/tags/Ubuntu/"/>
     
       <category term="Steem" scheme="https://www.yuxifan.com/tags/Steem/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Setup python development environment for Steem on Ubuntu 16</title>
-    <link href="https://www.yuxifan.com/2017/07/28/setup-python-steem-development-environment/"/>
-    <id>https://www.yuxifan.com/2017/07/28/setup-python-steem-development-environment/</id>
-    <published>2017-07-28T04:51:12.000Z</published>
-    <updated>2017-07-28T08:21:26.600Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/linux/steem/python-steem.png" alt="Python &amp; Steem"></p>
-<h2 id="Install-python-3"><a href="#Install-python-3" class="headerlink" title="Install python 3"></a>Install python 3</h2><p>Both Python 3 and Python 2 have been pre-installed on Ubuntu 16, you just need to make sure you have the latest versions by running:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get -y upgrade</div></pre></td></tr></table></figure>
-<p>Then run the following command to check the version of Python 3:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python -v</div></pre></td></tr></table></figure>
-<p>You also need to install pip to manage software packages:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install -y python3-pip</div></pre></td></tr></table></figure>
-<p>Install development libraries:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install build-essential libffi-dev libssl-dev python3-dev</div></pre></td></tr></table></figure>
-<h2 id="Setting-up-a-virtual-environment"><a href="#Setting-up-a-virtual-environment" class="headerlink" title="Setting up a virtual environment"></a>Setting up a virtual environment</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install python3-venv</div><div class="line">mkdir environments</div><div class="line"><span class="built_in">cd</span> environments</div><div class="line">python3 -m venv myenv</div><div class="line"><span class="built_in">source</span> myenv/bin/activate</div></pre></td></tr></table></figure>
-<h2 id="Setting-up-python-steem-libraries"><a href="#Setting-up-python-steem-libraries" class="headerlink" title="Setting up python steem libraries"></a>Setting up python steem libraries</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">pip3 install wheel </div><div class="line">pip3 install piston-lib</div><div class="line">pip3 install steem</div></pre></td></tr></table></figure>
-<h2 id="Test-it-works"><a href="#Test-it-works" class="headerlink" title="Test it works"></a>Test it works</h2><p>To test the development environment has been set up correctly, run the following script to list the tags used by latest posts:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> piston <span class="keyword">import</span> Steem</div><div class="line">steem = Steem()</div><div class="line"><span class="keyword">for</span> c <span class="keyword">in</span> steem.stream_comments():</div><div class="line">  <span class="keyword">if</span> c.is_main_post():</div><div class="line">    <span class="keyword">print</span> (c.meta[<span class="string">"tags"</span>])</div></pre></td></tr></table></figure>
-<p><img src="/images/yuxi-steemit.png" alt="@yuxi"></p>
-<p>Thank you for reading my post, feel free to FOLLOW and Upvote <a href="https://steemit.com/@yuxi" rel="external nofollow noopener noreferrer" target="_blank">@yuxi</a>, which will motivate me to create more quality posts.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/linux/steem/python-steem.png&quot; alt=&quot;Python &amp;amp; Steem&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Install-python-3&quot;&gt;&lt;a href=&quot;#Install-python-3&quot; class
-    
-    </summary>
-    
-      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
-    
-    
-      <category term="Linux" scheme="https://www.yuxifan.com/tags/Linux/"/>
-    
-      <category term="Steem" scheme="https://www.yuxifan.com/tags/Steem/"/>
-    
-      <category term="Python" scheme="https://www.yuxifan.com/tags/Python/"/>
     
   </entry>
   
@@ -818,42 +877,6 @@
       <category term="ubuntu" scheme="https://www.yuxifan.com/tags/ubuntu/"/>
     
       <category term="shibboleth" scheme="https://www.yuxifan.com/tags/shibboleth/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GraphicsMagick</title>
-    <link href="https://www.yuxifan.com/2017/06/28/graphicsmagick/"/>
-    <id>https://www.yuxifan.com/2017/06/28/graphicsmagick/</id>
-    <published>2017-06-28T01:10:12.000Z</published>
-    <updated>2017-06-28T10:22:44.374Z</updated>
-    
-    <content type="html"><![CDATA[<p>GraphicsMagick is originally derived from ImageMagick 5.5.2 as of November 2002 but has been completely independent of the ImageMagick project since then. As states in <a href="http://www.graphicsmagick.org/index.html" rel="external nofollow noopener noreferrer" target="_blank">GraphicsMagick’s website</a>: GraphicsMagick is better than ImageMagick.</p>
-<p><img src="/images/linux/graphicsmagick.jpg" alt="GraphicsMagick"></p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install graphicsmagick</div></pre></td></tr></table></figure>
-<h2 id="Identify-images"><a href="#Identify-images" class="headerlink" title="Identify images"></a>Identify images</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gm identify filename.jpg</div></pre></td></tr></table></figure>
-<p>Identify image height only:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gm identify -format %h filename.jpg</div></pre></td></tr></table></figure></p>
-<p>Identify image and output filename, size, height, and width:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gm identify -format %f/%b/%h/%w filename.jpg</div></pre></td></tr></table></figure></p>
-<h2 id="Resize-images"><a href="#Resize-images" class="headerlink" title="Resize images"></a>Resize images</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">gm convert -monitor -resize 50% source.jpg target.jpg</div><div class="line">gm convert -monitor -resize 600x source.jpg target.jpg</div></pre></td></tr></table></figure>
-<h2 id="Convert"><a href="#Convert" class="headerlink" title="Convert"></a>Convert</h2><p>To convert a multi-page PostScript document to individual FAX pages:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gm convert -monochrome document.ps fax:page</div></pre></td></tr></table></figure></p>
-<h2 id="Rotating-Images"><a href="#Rotating-Images" class="headerlink" title="Rotating Images"></a>Rotating Images</h2><h3 id="Clockwise-Rotation"><a href="#Clockwise-Rotation" class="headerlink" title="Clockwise Rotation"></a>Clockwise Rotation</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gm convert -monitor rotate 45 source.jpg target.jpg</div></pre></td></tr></table></figure>
-<h3 id="Anti-clockwise-Rotation"><a href="#Anti-clockwise-Rotation" class="headerlink" title="Anti-clockwise Rotation"></a>Anti-clockwise Rotation</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gm convert -monitor rotate -45 source.jpg target.jpg</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;GraphicsMagick is originally derived from ImageMagick 5.5.2 as of November 2002 but has been completely independent of the ImageMagick pr
-    
-    </summary>
-    
-      <category term="linux" scheme="https://www.yuxifan.com/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="https://www.yuxifan.com/tags/linux/"/>
-    
-      <category term="ImageMagick" scheme="https://www.yuxifan.com/tags/ImageMagick/"/>
-    
-      <category term="GraphicsMagick" scheme="https://www.yuxifan.com/tags/GraphicsMagick/"/>
     
   </entry>
   
